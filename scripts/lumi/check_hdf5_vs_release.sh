@@ -14,10 +14,11 @@
 #SBATCH --time=01:00:00
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
-set -euo pipefail
+set -eo pipefail  # no -u: the module scripts read unset variables
 
 CODE=$1 RELEASE=$2 HDF5=$3 OUT=$4
-SIF=/appl/local/laifs/containers/lumi-multitorch-u24r70f21m50t210-20260731_122833/lumi-multitorch-full-u24r70f21m50t210-20260731_122833.sif
+source "$CODE/scripts/lumi/container_env.sh"  # bindings module + $SIF
+singularity exec "$SIF" test -r "$CODE/scripts/compare_hdf5_with_release_shard.py"  # fail fast if paths are not bound
 echo "start $(date -Is) shards $(ls "$RELEASE"/images/*.tar | wc -l) hdf5 $HDF5"
 singularity exec "$SIF" python "$CODE/scripts/compare_hdf5_with_release_shard.py" --hdf5 "$HDF5" --out "$OUT" \
     --workers "$SLURM_CPUS_PER_TASK" "$RELEASE"/images/*.tar
