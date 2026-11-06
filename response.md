@@ -2,52 +2,43 @@
 
 ## 1. Task / status
 
-**Requested by the author in chat (2026-11-06):** first add the PyTorch Lightning utilities that every experiment will share. There must be no dead code, and each piece goes in its own module. `task.md` was not updated for this request. **Status: completed.** It contains no experiment, dataset or method.
+**Requested by the author in chat (2026-11-06):** use the same package versions as on LUMI. **Status: completed.** `task.md` was not updated for this request. The earlier step (shared Lightning utilities, commit 0ea7174) is unchanged.
 
 ## 2. Changes
 
-New package `src/lightning_utils/`, one responsibility per file:
+- [pyproject.toml](pyproject.toml): exact pins taken from the LUMI container, plus `requires-python = ">=3.12,<3.13"` (was `>=3.10`). `jupyter>=1.0` is left as it was, because it is not in the container.
+- [README.md](README.md): setup now uses Python 3.12, CPU torch locally and the container on LUMI.
+- A local `.venv` (git-ignored, 1.1 GB) built with `uv` from these pins, using CPU torch from the PyTorch index.
 
-| File | Content | Source in `Lightning_Aqua_Vision_Language_v1` (dev) | Changed and why |
+**Source of the versions:** I read the package metadata inside the container that all v1 LUMI jobs used:
+- container `/appl/local/laifs/containers/lumi-multitorch-u24r70f21m50t210-20260731_122833/lumi-multitorch-full-u24r70f21m50t210-20260731_122833.sif`, sha256 `9787e4a2…` in the v1 evidence;
+- one login-node command, metadata only, with no torch import and no job.
+
+The v1 extra-package folder (`/scratch/project_462001534/aqua_v1/pkgs`: open_clip, ftfy, regex, imbalanced-learn, sklearn_compat) overrides none of these.
+
+| Package | LUMI container | Local `.venv` | Before |
 |---|---|---|---|
-| [seeding.py](src/lightning_utils/seeding.py) | `seed_everything(seed)` = `pl.seed_everything(seed, workers=True)` | `src/aquamonitor_clip/train.py` line 336 | Seed is passed explicitly; the source read the `GLOBAL_SEED` environment variable |
-| [run_dir.py](src/lightning_utils/run_dir.py) | `make_run_dir(root, experiment, timestamp)`: `root/experiment/timestamp`. `write_resolved_config(run_dir, config)`: `config_resolved.json`, rank 0 only (`RANK`, then `SLURM_PROCID`) | `callbacks.py` `create_callbacks` (folder) and `train.py` lines 657–684 (shared timestamp, resolved config) | The experiment name is given by the caller instead of being built from Aqua settings; config is a plain dict |
-| [callbacks.py](src/lightning_utils/callbacks.py) | `EpochMetricsWriter` (unchanged behaviour). `standard_callbacks(run_dir, monitor, mode, save_top_k, patience)`: best checkpoint(s) by a validation metric, `last.ckpt`, per-epoch metrics, and early stopping only if `patience` is given | `callbacks.py` `EpochMetricsWriter`, `create_callbacks` | Monitored metric is a parameter (source: Aqua F1 at the finest taxonomy level); metrics file always on (source: config flag) |
-| [trainer.py](src/lightning_utils/trainer.py) | `build_trainer(callbacks, max_epochs, accelerator, devices, precision, **overrides)` with the source defaults: `deterministic=True`, `min_epochs=1`, `gradient_clip_val=1.0`, `logger=False`, each overridable | `train.py` lines 724–744 | Defaults precision to `32-true`; DDP setup and batch limits are not built in (passed as overrides when needed) |
-| [tests/test_lightning_utils.py](tests/test_lightning_utils.py) | One real CPU fit/validate/test cycle on seeded synthetic two-Gaussian data (DataModule and LightningModule are test fixtures only) | — | — |
+| Python | 3.12.3 | 3.12.12 | ≥3.10 |
+| torch | 2.10.0 (ROCm 7.0 LUMI build) | 2.10.0+cpu | ≥2.1 |
+| pytorch-lightning | 2.6.5 | 2.6.5 | ≥2.2 |
+| numpy | 2.3.5 | 2.3.5 | ≥1.24 |
+| scipy (needed by scikit-learn) | 1.18.0 | 1.18.0 | not listed |
+| scikit-learn | 1.9.0 | 1.9.0 | ≥1.3 |
+| matplotlib | 3.11.1 | 3.11.1 | ≥3.7 |
+| pytest | 9.1.1 | 9.1.1 | ≥7.4 |
 
-[README.md](README.md): one line in the layout for `src/lightning_utils/`.
+## 3. Validation
 
-**Deliberately not migrated, because nothing uses them yet:**
-- `LinearWarmup`, `LRRangeTest`;
-- snapshot checkpoints every N epochs;
-- DDP `find_unused_parameters`;
-- the print-only `CustomCallback`;
-- the local/cloud config switch;
-- Aqua-specific checkpoint names.
+`.venv/bin/python -m pytest -q`: **8 passed**, run on the Dell with the pinned versions above. The earlier run used torch 2.6.0, Lightning 2.6.1 and Python 3.11.
 
-They can be added when an experiment needs them.
+## 4. Interpretation and limits
 
-## 3. Validation (run on the Dell, `taxonomist` env: torch 2.6.0, pytorch-lightning 2.6.1, pytest 9.0.3)
-
-`python -m pytest -q`: **8 passed** (5 new and the 3 existing Gaussian tests). The new tests check:
-- **Full cycle:** `last.ckpt` and one `*_best.ckpt` are written; `epoch_metrics.jsonl` has epochs 0, 1, 2 with `train_loss`, `val_acc` and `lr`; testing from the best checkpoint gives `test_acc` > 0.9.
-- **Seeding:** the same seed gives identical weights.
-- **Early stopping:** off without `patience`; with a learning rate of 0 and `patience=1` it stops after epoch 1.
-- **Trainer:** the defaults hold and an override replaces them.
-- **Settings file:** written by rank 0 only.
-
-**Corrections made on the way:**
-- The first run had 1 failure, in my test data rather than the utilities: 12 SGD steps on classes 3 apart reached test accuracy 0.656. I moved the classes 6 apart and raised the test learning rate to 0.5.
-- No linter is installed, so I checked imports by hand: every import and every function is used by the tests.
-
-## 4. Scientific interpretation
-
-Infrastructure only, with no research result. Multi-process (DDP) behaviour is not tested beyond the rank-0 environment check.
+- **Differences that remain:** the Python patch version (3.12.12 locally against 3.12.3) and the torch build (CPU locally, ROCm on LUMI). GPU numerics on LUMI can differ from CPU results.
+- **Not yet run on LUMI:** the test suite has not been run inside the container.
 
 ## 5. Open decisions
 
-1. Which first experiment should use these utilities (the proposed Gaussian-replay task in `task.md`)?
-2. Pin the dependency versions in `pyproject.toml` to the tested ones, or keep the current lower bounds?
+1. Run the 8 tests once inside the LUMI container? This would be a small CPU job of a few minutes, or a short command on the login node.
+2. Which experiment should use these utilities first?
 
 **Stopped.**

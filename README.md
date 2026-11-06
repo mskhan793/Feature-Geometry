@@ -68,11 +68,12 @@ Create new subdirectories **only when their first real implementation is added**
 This conversation is for mathematical derivations, interpretation of papers and experimental results. Coding agents/sessions use `task.md` as the source of truth for the **currently approved** implementation task. We discuss the specific experiment first; only then do we edit its task specification and implement it. Do not silently launch the entire backlog.
 
 ## Setup
-Use Python >=3.10.
+Versions are pinned in `pyproject.toml` to the LUMI LAIF container `lumi-multitorch-full-u24r70f21m50t210-20260731_122833` (Python 3.12). On LUMI, run inside that container, which already provides every pinned package. Locally, use Python 3.12 and the CPU build of torch:
 
 ```bash
-python -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
+pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
 pip install -e ".[dev]"
 pytest -q
 ```
