@@ -19,6 +19,7 @@ experiments/
   03_gaussian_feature_replay/# Gaussian synthetic feature sampling
   04_gaussian_mixtures/      # Multimodal classes and mixture-based inference
 src/
+  lightning_utils/           # Shared Lightning pieces: seeding, run folder, callbacks, Trainer defaults
   statistics/                # Covariance, mean, shrinkage and related estimators
   classifiers/               # Prototype and statistical classifiers
   evaluation/                # Accuracy, balanced metrics, validation utilities
