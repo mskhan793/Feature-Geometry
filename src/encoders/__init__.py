@@ -1,0 +1,1 @@
+"""Frozen pretrained image encoders."""
