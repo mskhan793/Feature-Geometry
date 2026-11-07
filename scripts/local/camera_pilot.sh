@@ -31,11 +31,12 @@ for stage in "$@"; do
         analyse) $PY scripts/camera_gaussian_pilot.py --cohort "$OUT/cohort/cohort.parquet" --cache "$FEATURES/dinov3_l" \
                      --out "$OUT/analysis_$ACCEL" ;;
         geometry) $PY scripts/class_geometry_pilot.py --cohort "$OUT/cohort/cohort.parquet" \
-                      --cohort-summary "$OUT/cohort/cohort_summary.json" --cache "$FEATURES/dinov3_l" --out "$OUT/geometry_$ACCEL" ;;
+                      --caches "$OUT/cohort/cohort.parquet=$FEATURES/dinov3_l" --pcs 8 --out "$OUT/geometry_$ACCEL" ;;
         montage) $PY scripts/class_geometry_montage.py --cohort "$OUT/cohort/cohort.parquet" --hdf5 "$HDF5" \
                      --selection "$OUT/geometry_$ACCEL/selection.json" --out "$OUT/geometry_$ACCEL" ;;
         metadata) G=$OUT/geometry_$ACCEL; $PY scripts/component_metadata.py --cohort "$OUT/cohort/cohort.parquet" \
-                      --components "$G/specimen_components.csv" --per-class "$G/per_class.csv" --out "$G" ;;
+                      --components "$G/specimen_components.csv" --modality "$G/per_class_modality.csv" \
+                      --geometry "$G/per_class_geometry.csv" --out "$G" ;;
         *) echo "unknown stage $stage" >&2; exit 1 ;;
     esac
 done

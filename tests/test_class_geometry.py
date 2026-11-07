@@ -77,3 +77,18 @@ def test_fit_mixture_never_worse_than_kmeans_starts_and_complete_axis_starts():
             assert fit_mixture(z, 2, cov, 1e-3, seed).lower_bound_ >= km.lower_bound_ - 1e-9
         starts = axis_split_starts(z, 2, cov, 1e-3)
         assert len(starts) == 8 and all(np.isclose(s["weights_init"].sum(), 1) for s in starts)
+
+
+def test_source_gaussians_pools_small_groups_and_scores():
+    from scipy.stats import multivariate_normal
+
+    from src.statistics.class_modality import SourceGaussians
+    rng = np.random.default_rng(7)
+    z = np.vstack([rng.normal(0, 1, (40, 3)), rng.normal(5, 1, (40, 3)), rng.normal(2, 1, (3, 3))])
+    g = np.array(["a"] * 40 + ["b"] * 40 + ["c"] * 3)
+    m = SourceGaussians(1e-3).fit(z, g)
+    assert m.groups_ == ["a", "b"] and np.isclose(m.weights_.sum(), 1)  # "c" (3 rows) joined the largest group
+    assert m.n_parameters() == 2 * 3 + 1 + 6
+    x = np.array([[0.0, 0.0, 0.0]])
+    manual = np.log(sum(w * multivariate_normal(mu, m.covariance_).pdf(x) for w, mu in zip(m.weights_, m.means_)))
+    assert np.isclose(m.score_samples(x)[0], manual)

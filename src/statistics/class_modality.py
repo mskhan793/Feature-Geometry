@@ -101,3 +101,37 @@ def split_stability(z_train: np.ndarray, z_val: np.ndarray, k: int, covariance_t
         ari_train.append(adjusted_rand_score(ref_train, gm.predict(z_train)))
     return {"ari_val_median": float(np.median(ari_val)), "ari_train_median": float(np.median(ari_train)),
             "val_components_used": int(len(np.unique(ref_val))), "boot_failures": failures}
+
+
+class SourceGaussians:
+    """Sensitivity model: one Gaussian per source group (e.g. ``dataset``) with a shared covariance, mixed with the
+    train group proportions; scored unconditionally (the group of a scored row is not used). Groups with fewer than
+    ``min_group`` train rows are pooled into one group; if that pool is still too small it joins the largest group."""
+
+    def __init__(self, reg: float, min_group: int = 5):
+        self.reg, self.min_group = reg, min_group
+
+    def fit(self, z: np.ndarray, groups: np.ndarray) -> SourceGaussians:
+        groups = np.asarray(groups, dtype=object)
+        counts = {g: int((groups == g).sum()) for g in np.unique(groups)}
+        small = [g for g, n in counts.items() if n < self.min_group]
+        merged = np.where(np.isin(groups, small), "_pooled", groups)
+        if 0 < (merged == "_pooled").sum() < self.min_group:
+            merged = np.where(merged == "_pooled", max(counts, key=counts.get), merged)
+        self.groups_ = sorted(np.unique(merged))
+        self.weights_ = np.array([np.mean(merged == g) for g in self.groups_])
+        self.means_ = np.stack([z[merged == g].mean(0) for g in self.groups_])
+        resid = np.concatenate([z[merged == g] - m for g, m in zip(self.groups_, self.means_)])
+        self.covariance_ = resid.T @ resid / len(z) + self.reg * np.eye(z.shape[1])
+        return self
+
+    def n_parameters(self) -> int:
+        k, d = self.means_.shape
+        return k * d + (k - 1) + d * (d + 1) // 2
+
+    def score_samples(self, z: np.ndarray) -> np.ndarray:
+        from scipy.special import logsumexp
+        from scipy.stats import multivariate_normal
+        logs = [np.log(w) + np.atleast_1d(multivariate_normal(m, self.covariance_).logpdf(z))
+                for w, m in zip(self.weights_, self.means_)]
+        return logsumexp(np.stack(logs), axis=0)

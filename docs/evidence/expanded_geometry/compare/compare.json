@@ -1,0 +1,118 @@
+{
+ "verdict_transitions_old8_to_new": {
+  "8pcs": {
+   "credible multiple groups": {
+    "credible multiple groups": 1,
+    "inconclusive": 0,
+    "insufficient evidence": 0
+   },
+   "inconclusive": {
+    "credible multiple groups": 10,
+    "inconclusive": 3,
+    "insufficient evidence": 0
+   },
+   "insufficient evidence": {
+    "credible multiple groups": 12,
+    "inconclusive": 4,
+    "insufficient evidence": 1
+   },
+   "one Gaussian favoured": {
+    "credible multiple groups": 7,
+    "inconclusive": 3,
+    "insufficient evidence": 0
+   }
+  },
+  "16pcs": {
+   "credible multiple groups": {
+    "credible multiple groups": 0,
+    "inconclusive": 0,
+    "insufficient evidence": 1,
+    "one Gaussian favoured": 0
+   },
+   "inconclusive": {
+    "credible multiple groups": 7,
+    "inconclusive": 4,
+    "insufficient evidence": 1,
+    "one Gaussian favoured": 1
+   },
+   "insufficient evidence": {
+    "credible multiple groups": 8,
+    "inconclusive": 5,
+    "insufficient evidence": 3,
+    "one Gaussian favoured": 1
+   },
+   "one Gaussian favoured": {
+    "credible multiple groups": 6,
+    "inconclusive": 3,
+    "insufficient evidence": 0,
+    "one Gaussian favoured": 1
+   }
+  }
+ },
+ "closest_pairs": {
+  "pairs_in_both": 820,
+  "top10_overlap": 6,
+  "old_top10_still_top10": [
+   "Caenis horaria | Caenis luctuosa",
+   "Cloeon | Cloeon dipterum",
+   "Cyrnus flavidus | Polycentropus flavomaculatus",
+   "Lepidostoma hirtum | Limnephilidae",
+   "Mystacides | Mystacides azurea",
+   "Psychomyia pusilla | Tinodes waeneri"
+  ],
+  "spearman_dprime_val": 0.9355011228633521,
+  "dprime_val_below_2": {
+   "old": 22,
+   "new": 15
+  },
+  "median_dprime_train_minus_val": {
+   "old": 0.08544005864520132,
+   "new": 0.13752500354532848
+  }
+ },
+ "stability": {
+  "classes": 41,
+  "shift_over_reference_median_max": [
+   0.7607260104697771,
+   1.6633585126492516
+  ],
+  "classes_shift_over_reference_above_2": [],
+  "subspace_overlap_old_vs_new_median": 0.7131967167353434,
+  "subspace_overlap_new30_vs_new_all_median": 0.7306476712798977
+ },
+ "effective_rank_median": {
+  "old_n30": 14.721272295737746,
+  "new_n30": 13.836597272715592,
+  "new_all": 24.42129750538687
+ },
+ "dataset_aligned_split_train_8pcs": {
+  "old": 10,
+  "new": 18,
+  "both": [
+   "Caenis rivulorum",
+   "Centroptilum luteolum",
+   "Cyrnus trimaculatus",
+   "Lepidostoma hirtum",
+   "Polycentropus flavomaculatus",
+   "Psychomyia pusilla",
+   "Spirosperma ferox",
+   "Stylaria lacustris"
+  ],
+  "old_only": [
+   "Caenis luctuosa",
+   "Helobdella stagnalis"
+  ],
+  "new_only": [
+   "Ceratopogonidae",
+   "Cloeon",
+   "Cyrnus flavidus",
+   "Ecnomus tenellus",
+   "Ephemera vulgata",
+   "Hydrachnidia",
+   "Limnephilidae",
+   "Micronecta",
+   "Orthotrichia",
+   "Turbellaria"
+  ]
+ }
+}

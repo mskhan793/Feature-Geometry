@@ -1,0 +1,42 @@
+taxon_group,old_n_train,old_verdict_8pcs,new_verdict_8pcs,new_verdict_16pcs,new_n_train
+Asellus aquaticus,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Caenis horaria,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Caenis luctuosa,30,insufficient evidence,credible multiple groups,credible multiple groups,200
+Caenis rivulorum,30,credible multiple groups,credible multiple groups,insufficient evidence,36
+Centroptilum luteolum,30,insufficient evidence,credible multiple groups,insufficient evidence,58
+Ceratopogonidae,30,inconclusive,credible multiple groups,credible multiple groups,200
+Chironomidae,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Cloeon,30,inconclusive,credible multiple groups,one Gaussian favoured,85
+Cloeon dipterum,30,inconclusive,credible multiple groups,inconclusive,105
+Cyrnus flavidus,30,insufficient evidence,credible multiple groups,one Gaussian favoured,77
+Cyrnus trimaculatus,30,insufficient evidence,credible multiple groups,inconclusive,122
+Ecnomus tenellus,30,inconclusive,inconclusive,credible multiple groups,137
+Ephemera vulgata,30,insufficient evidence,credible multiple groups,credible multiple groups,200
+Erpobdella octoculata,30,insufficient evidence,credible multiple groups,inconclusive,107
+Gyraulus,30,insufficient evidence,credible multiple groups,credible multiple groups,111
+Helobdella stagnalis,30,inconclusive,credible multiple groups,credible multiple groups,181
+Heptagenia dalecarlica,30,inconclusive,credible multiple groups,inconclusive,135
+Hydrachnidia,30,inconclusive,credible multiple groups,credible multiple groups,200
+Hydroptila,30,inconclusive,inconclusive,inconclusive,70
+Kageronia fuscogrisea,30,insufficient evidence,inconclusive,credible multiple groups,200
+Lepidostoma hirtum,30,insufficient evidence,inconclusive,credible multiple groups,200
+Leptophlebia,30,one Gaussian favoured,inconclusive,inconclusive,200
+Limnephilidae,30,one Gaussian favoured,credible multiple groups,inconclusive,60
+Limnephilus,30,insufficient evidence,inconclusive,inconclusive,86
+Micronecta,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Mystacides,30,insufficient evidence,insufficient evidence,insufficient evidence,37
+Mystacides azurea,30,inconclusive,credible multiple groups,credible multiple groups,96
+Oligochaeta,30,insufficient evidence,credible multiple groups,inconclusive,200
+Orthotrichia,30,insufficient evidence,inconclusive,insufficient evidence,42
+Oulimnius tuberculatus,30,inconclusive,credible multiple groups,credible multiple groups,200
+Oulimnius tuberculatus adult,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Pedicia,30,inconclusive,inconclusive,insufficient evidence,40
+Pisidium,30,insufficient evidence,credible multiple groups,inconclusive,61
+Polycentropus flavomaculatus,30,insufficient evidence,credible multiple groups,credible multiple groups,92
+Psychomyia pusilla,30,inconclusive,credible multiple groups,credible multiple groups,124
+Sialis,30,one Gaussian favoured,inconclusive,one Gaussian favoured,40
+Spirosperma ferox,30,inconclusive,credible multiple groups,inconclusive,177
+Stylaria lacustris,30,insufficient evidence,credible multiple groups,credible multiple groups,200
+Tanypodinae,30,one Gaussian favoured,credible multiple groups,credible multiple groups,200
+Tinodes waeneri,30,insufficient evidence,credible multiple groups,credible multiple groups,200
+Turbellaria,30,one Gaussian favoured,inconclusive,inconclusive,82

@@ -31,7 +31,8 @@ for stage in "$@"; do
         montage) $PY scripts/class_geometry_montage.py --cohort "$OUT/cohort/cohort.parquet" --hdf5 "$HDF5" \
                      --selection "$OUT/geometry/selection.json" --out "$OUT/geometry" ;;
         metadata) $PY scripts/component_metadata.py --cohort "$OUT/cohort/cohort.parquet" \
-                      --components "$OUT/geometry/specimen_components.csv" --per-class "$OUT/geometry/per_class.csv" --out "$OUT/geometry" ;;
+                      --components "$OUT/geometry/specimen_components.csv" --modality "$OUT/geometry/per_class_modality.csv" \
+                      --geometry "$OUT/geometry/per_class_geometry.csv" --out "$OUT/geometry" ;;
         compare) $PY scripts/compare_geometry_runs.py --old "$PILOT/geometry_gpu" --old-cohort "$PILOT/cohort/cohort.parquet" \
                      --old-cache "$PILOT/features_gpu/dinov3_l" --new "$OUT/geometry" --new-cohort "$OUT/cohort/cohort.parquet" \
                      --new-caches "${CACHES[@]}" --out "$OUT/compare" ;;

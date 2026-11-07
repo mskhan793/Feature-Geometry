@@ -1,0 +1,229 @@
+{
+ "8_pcs_train": {
+  "dataset": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.4682823740105485,
+   "classes_ari_at_least_0.5": 18,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Cloeon",
+    "Cyrnus flavidus",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Ephemera vulgata",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Limnephilidae",
+    "Micronecta",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox",
+    "Stylaria lacustris",
+    "Turbellaria"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.008898846290751482,
+   "classes_ari_at_least_0.5": 12,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Turbellaria"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.012879641384087828,
+   "classes_ari_at_least_0.5": 0,
+   "classes_ari_at_least_0.5_list": []
+  }
+ },
+ "8_pcs_val": {
+  "dataset": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.3333333333333333,
+   "classes_ari_at_least_0.5": 13,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Heptagenia dalecarlica",
+    "Hydrachnidia",
+    "Micronecta",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 37,
+   "ari_median": 0.01281864150989789,
+   "classes_ari_at_least_0.5": 6,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Cloeon",
+    "Hydrachnidia",
+    "Orthotrichia"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.001953296401466124,
+   "classes_ari_at_least_0.5": 0,
+   "classes_ari_at_least_0.5_list": []
+  }
+ },
+ "16_pcs_train": {
+  "dataset": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.31362203219034696,
+   "classes_ari_at_least_0.5": 15,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Heptagenia dalecarlica",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Spirosperma ferox",
+    "Stylaria lacustris",
+    "Tanypodinae"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 39,
+   "ari_median": -0.005060264998840866,
+   "classes_ari_at_least_0.5": 12,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Tanypodinae"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.030138824600879167,
+   "classes_ari_at_least_0.5": 0,
+   "classes_ari_at_least_0.5_list": []
+  }
+ },
+ "16_pcs_val": {
+  "dataset": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.2903225806451613,
+   "classes_ari_at_least_0.5": 13,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Heptagenia dalecarlica",
+    "Hydrachnidia",
+    "Limnephilidae",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Tanypodinae"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 37,
+   "ari_median": 0.0567500899415251,
+   "classes_ari_at_least_0.5": 10,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Hydrachnidia",
+    "Limnephilidae",
+    "Orthotrichia",
+    "Pisidium",
+    "Tanypodinae"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0018592462103272744,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Micronecta"
+   ]
+  }
+ },
+ "8_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
+  "credible multiple groups": {
+   "classes": 30,
+   "dataset_ari_at_least_0.5": 14
+  },
+  "inconclusive": {
+   "classes": 10,
+   "dataset_ari_at_least_0.5": 4
+  },
+  "insufficient evidence": {
+   "classes": 1,
+   "dataset_ari_at_least_0.5": 0
+  }
+ },
+ "16_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
+  "credible multiple groups": {
+   "classes": 21,
+   "dataset_ari_at_least_0.5": 7
+  },
+  "inconclusive": {
+   "classes": 12,
+   "dataset_ari_at_least_0.5": 4
+  },
+  "insufficient evidence": {
+   "classes": 5,
+   "dataset_ari_at_least_0.5": 3
+  },
+  "one Gaussian favoured": {
+   "classes": 3,
+   "dataset_ari_at_least_0.5": 1
+  }
+ },
+ "train_classes_by_number_of_datasets": {
+  "1": 1,
+  "2": 5,
+  "3": 18,
+  "4": 17
+ }
+}
