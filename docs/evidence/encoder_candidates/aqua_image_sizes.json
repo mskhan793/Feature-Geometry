@@ -1,0 +1,68 @@
+{
+ "images": 2708023,
+ "distinct_sizes": 1919,
+ "top_sizes": [
+  {
+   "width": 464,
+   "height": 464,
+   "images": 1110232
+  },
+  {
+   "width": 448,
+   "height": 448,
+   "images": 833302
+  },
+  {
+   "width": 476,
+   "height": 476,
+   "images": 375265
+  },
+  {
+   "width": 460,
+   "height": 460,
+   "images": 175901
+  },
+  {
+   "width": 456,
+   "height": 456,
+   "images": 67256
+  },
+  {
+   "width": 480,
+   "height": 480,
+   "images": 53645
+  },
+  {
+   "width": 440,
+   "height": 440,
+   "images": 22800
+  },
+  {
+   "width": 432,
+   "height": 432,
+   "images": 13889
+  },
+  {
+   "width": 472,
+   "height": 472,
+   "images": 6012
+  },
+  {
+   "width": 512,
+   "height": 512,
+   "images": 5576
+  }
+ ],
+ "width_min_median_max": [
+  412,
+  464.0,
+  1114
+ ],
+ "height_min_median_max": [
+  412,
+  464.0,
+  849
+ ],
+ "square_share": 0.9896256420274127,
+ "width_476_share": 0.13871964898377895
+}

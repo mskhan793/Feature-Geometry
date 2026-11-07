@@ -1,10 +1,14 @@
 # Coding assistant response — Feature-Geometry
 
-**Current task:** `task.md` 9d732ba, "Prepare AquaMonitor Classification frozen features". It was extended by 17f864f and 442999a: a nine-encoder shortlist, a feasibility audit for the six new candidates, and the long-term research vision, which authorises no experiments.
+**Current task:** `task.md` 9d732ba, "Prepare AquaMonitor Classification frozen features". It was extended by:
+- 17f864f and 442999a: a nine-encoder shortlist, a feasibility audit for the six new candidates, and the long-term research vision, which authorises no experiments;
+- 8ac12a7: authorises the three-baseline LUMI smoke test (cap: 1 node, 1 h, about 4 GPU-hours) and asks for one recommendation per candidate;
+- 4405baa: sets the official-checkpoint resolution policy.
 
 **Status: partial, stopped before any GPU job.**
 - **Done:** data checks, manifest and integrity audit, extraction code for the three baselines, local tests, and the **metadata feasibility audit of the six new candidates** (section 2e).
-- **Not yet run:** the LUMI smoke test on real images, the v1 equivalence check, the throughput measurement and the compute estimate.
+- **Not yet run:** the LUMI smoke test, which is prepared and tested locally but **blocked because LUMI refuses SSH from the Dell** (section 4). So there is no v1 equivalence result, no throughput and no estimate yet.
+- **Done now:** one recommendation per new candidate (section 4b).
 - **Not started:** the full extraction. It waits for that estimate and the author's approval, as `task.md` requires.
 
 Section 1 covers the earlier work of 2026-11-06, kept briefly because it is in previous commits.
@@ -144,35 +148,57 @@ The fixtures are a tiny HDF5 and parquet. In the fixture HDF5 the images are in 
 - **The real-weight run on the Dell:** a DINOv3-L run of the CLI on 256 real images was stopped before it started (the permission request closed). Nothing was written.
 - **Any GPU run of the new code.**
 
-## 4. Next step (proposed): LUMI smoke test, then the estimate
+## 4. Three-baseline LUMI smoke test (`task.md` 8ac12a7): BLOCKED, not submitted
 
-The smoke test would be one `dev-g` job, 1 node, about 1 hour, project 462001534, at most about 4 GPU-hours. For each encoder it would:
-1. **Run the v1 equivalence gate:** 512 images of the v1 Aqua val cache.
-2. **Extract a short real-image subset** of the manifest (smoke only, not a research partition), verify it, rerun it to show resume, and repeat one chunk to measure run-to-run consistency on the GPU.
-3. **Record images per second** per GCD.
+**Blocker:** LUMI refuses SSH from the Dell. Every attempt on 2026-11-07, about 8 since 11:0x, ended with "Connection closed by 193.167.209.16x port 22", once during the initial handshake (`kex_exchange_identification`). Earlier the same day the handshake got as far as offering the key. LUMI's service-status page lists no current incident; its latest notice is the 2 November maintenance. Retrying more often might make a connection limit worse, so I stopped. **No job was submitted and no smoke or throughput result exists.**
 
-**Before it can run:** the manifest must be copied to `/flash`, and the code synced to LUMI.
+**Prepared and tested locally** (commit f5c71a7):
+- `scripts/lumi/smoke_baselines.sh` (job):
+  - `dev-g`, 1 node, **3 GCDs** (one per encoder, in parallel), 7 CPUs per task, 120 GB, **1 h limit**;
+  - at most 3 GCD-hours ≈ **1.5 GPU-hours**, under the 4 GPU-hour cap, on project 462001534;
+  - it first checks that the code, HDF5, manifest and v1 parquet are readable inside the container.
+- `scripts/lumi/smoke_baselines_task.sh` (per encoder):
+  1. **v1 equivalence gate** on the fixed 512 images (first 512 v1 val rows, order checked by v1's image-name hash). It reports max and mean error, the tolerance (1e-4 × max \|v1\|) and pass/fail.
+  2. **Extraction** of the first 16,384 manifest rows in 4 chunks of 4,096.
+  3. **Verification** (IDs, shape, finiteness, checksums).
+  4. **Rerun**, which must skip all 4 chunks.
+  5. **Repeat** of chunk 0 into a second cache, compared bitwise.
+  6. **Peak GPU and host memory**, and images per second for each chunk.
 
-**From the measured throughput I will report:**
-- per-encoder dimensions;
-- disk use (fp32);
-- runtime and GPU-hours for 2,708,023 images × 3 encoders (the six candidates follow once their adapters exist; each gets its own smoke check);
-- the exact extraction job.
+  Task 0 also runs the LUMI interface check (timm PE support, cached weights and configs, including DINOv3-H+).
+- New helpers: `scripts/compare_feature_caches.py` (repeat comparison), mean error and peak memory in `compare_with_v1_cache.py` and `extract_features.py`, and cached-config reading in `check_encoder_support.py`.
+- **Local check** on the Dell (CPU, real DINOv3-L weights, the first 64 real benchmark images, chunks of 32):
+  - extraction gave 2 chunks of 1024-d;
+  - verification **PASS** (64 of 64 rows);
+  - the rerun skipped 2 of 2 chunks;
+  - the repeat was **bitwise identical** (max diff 0.0).
 
-The cache would go under `/flash/project_462001534/feature_geometry/`.
+  The CPU speed (about 2.5 images/s) is no guide to GPU throughput.
+
+**Waiting on LUMI:** syncing the code (git archive of the commit) and the manifest to `/flash/project_462001534/feature_geometry/manifests/`, then submitting.
+
+**Estimate format once measured:** for each encoder, the images per GCD per second, dimension, disk (2,708,023 × dim × 4 bytes) and GPU-hours, kept separate from extrapolation, plus the proposed full-extraction job.
+
+## 4b. Recommendations for the six candidates (`task.md` 8ac12a7)
+
+Details and evidence: [docs/encoder_feasibility_audit.md](docs/encoder_feasibility_audit.md) section 5. No adapter is written.
+
+| Candidate | Recommendation | Feature, dim |
+|---|---|---|
+| SigLIP 2 So400M | `google/siglip2-so400m-patch16-384` (`dd658faa`). The patch-16 series matches the other patch-16 models and has fewer tokens. **But** an official `patch16-256` exists, and the 256-preference rule would pick it: author to confirm 384 or 256 | attention-pooled, 1152 |
+| SigLIP 2 Giant | `google/siglip2-giant-opt-patch16-256` (`46d7129e`), following the policy | attention-pooled, 1536 |
+| PE-Core-G | Meta's timm port (`f537e434`), adopted only after a numerical check against the official code; otherwise the official code | image embedding, 1280 |
+| C-RADIOv4-H | official implementation (`0057b339`, its remote code reviewed and pinned) at its preferred 512 px, with a 512 centre crop for batching. The crop affects only the 1.04 % of frames that aren't square | `summary`, dim to measure |
+| AIMv2 | `apple/aimv2-large-patch14-224` (`fcb5093a`): same capacity and input size as the baselines, so this slot isolates the objective. Feature: mean of the final patch tokens (no AIMv2 checkpoint has a pooled output, `use_head: false`) | 1024 |
+| DINOv3-H+ | `c807c9ee`, `pooler_output` | dim and cached weights **not yet confirmed** (LUMI blocked) |
 
 ## 5. Open decisions
 
-1. Approve the LUMI smoke test in section 4 (three baselines)?
-2. Choose the candidate variants (report section 3):
-   - SigLIP 2 So400M patch 16 or 14;
-   - SigLIP 2 Giant 384 or 256;
-   - PE-Core-G official code or timm port;
-   - C-RADIOv4-H remote code and input size;
-   - AIMv2 variant and pooling.
-3. Full extraction: only after the estimate, as `task.md` requires.
-4. Still open from before:
-   - aligning the README's synthetic-experiment wording with the rule (`task.md` step 6 asks for this);
+1. **LUMI access.** Can you check from the HP laptop whether `ssh muhamkha@lumi.csc.fi` works? That would show whether the block is specific to the Dell's address. The smoke test is ready to submit as soon as LUMI accepts connections.
+2. **The six candidate recommendations** (section 4b), in particular SigLIP 2 So400M at 384 or at 256.
+3. **Full extraction:** only after the smoke estimate, as `task.md` requires.
+4. **Still open from before:**
+   - aligning the README's synthetic-experiment wording with the rule;
    - the few-shot specimen-count mismatch.
 
 **Stopped.**
