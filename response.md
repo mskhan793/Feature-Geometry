@@ -7,7 +7,7 @@
 
 **Status: partial, stopped before any GPU job.**
 - **Done:** data checks, manifest and integrity audit, extraction code for the three baselines, local tests, and the **metadata feasibility audit of the six new candidates** (section 2e).
-- **Not yet run:** the LUMI smoke test, which is prepared and tested locally but **blocked because LUMI refuses SSH from the Dell** (section 4). So there is no v1 equivalence result, no throughput and no estimate yet.
+- **Not yet run:** the LUMI smoke test, which is prepared and tested locally but **blocked because LUMI is in a maintenance break**: its login node says so and then closes the connection (section 4). So there is no v1 equivalence result, no throughput and no estimate yet.
 - **Done now:** one recommendation per new candidate (section 4b).
 - **Not started:** the full extraction. It waits for that estimate and the author's approval, as `task.md` requires.
 
@@ -121,7 +121,7 @@ These old files are left unchanged. **Rule here:** a DataFrame index is never us
 - C-RADIOv4-H is distilled from SigLIP2-g (the Giant 384 checkpoint above), DINOv3-7B and SAM3.
 - DINOv3-L and DINOv3-H+ share a family and corpus.
 
-**Not yet checked:** the LUMI side of the interface check (timm 1.0.28's PE support, cached weights, the DINOv3-H+ config). LUMI refused SSH connections on 2026-11-07, and the check will be rerun when it is reachable.
+**Not yet checked:** the LUMI side of the interface check (timm 1.0.28's PE support, cached weights, the DINOv3-H+ config). LUMI logins were closed for a maintenance break on 2026-11-07 (section 4), and the check runs when it is reachable.
 
 **No adapter for the six candidates has been written.** `task.md` asks for them only after feasibility is confirmed and the variant questions are settled.
 
@@ -151,7 +151,12 @@ The fixtures are a tiny HDF5 and parquet. In the fixture HDF5 the images are in 
 
 ## 4. Three-baseline LUMI smoke test (`task.md` 8ac12a7): BLOCKED, not submitted
 
-**Blocker:** LUMI refuses SSH from the Dell. Every attempt on 2026-11-07, about 8 since 11:0x, ended with "Connection closed by 193.167.209.16x port 22", once during the initial handshake (`kex_exchange_identification`). Earlier the same day the handshake got as far as offering the key. LUMI's service-status page lists no current incident; its latest notice is the 2 November maintenance. Retrying more often might make a connection limit worse, so I stopped. **No job was submitted and no smoke or throughput result exists.**
+**Blocker: LUMI maintenance break.**
+- **What happened:** my SSH attempts on 2026-11-07 (about 8) all ended with "Connection closed by 193.167.209.16x port 22", once during the initial handshake (`kex_exchange_identification`).
+- **Cause, found by the author:** the author logged in by hand with the passphrase. After authentication the login node printed "Maintenance break ongoing. For more information see: https://lumi-supercomputer.eu/service-breaks/" and closed the connection. So the key works, and the Dell's address is not blocked: logins are closed for maintenance.
+- **What's still unknown:** LUMI's service-breaks page lists no break for 7 November. Its latest entry is the urgent kernel-patch maintenance of 2 November, extended to 3 November, which said overlapping jobs wait and jobs started during bring-up are requeued. When this break ends, and whether it affects compute or storage, is not known.
+
+**No job was submitted and no smoke or throughput result exists.** I will submit after one successful login.
 
 **Prepared and tested locally** (commit f5c71a7):
 - `scripts/lumi/smoke_baselines.sh` (job):
@@ -195,7 +200,7 @@ Details and evidence: [docs/encoder_feasibility_audit.md](docs/encoder_feasibili
 
 ## 5. Open decisions
 
-1. **LUMI access.** Can you check from the HP laptop whether `ssh muhamkha@lumi.csc.fi` works? That would show whether the block is specific to the Dell's address. The smoke test is ready to submit as soon as LUMI accepts connections.
+1. **LUMI access:** answered. Logins are closed for a maintenance break (section 4). Nothing is needed from the author. The smoke test is submitted, within the approved scope, once a login succeeds.
 2. **The six candidate recommendations** (section 4b), in particular SigLIP 2 So400M at 384 or at 256.
 3. **Full extraction:** only after the smoke estimate, as `task.md` requires.
 4. **Still open from before:**
