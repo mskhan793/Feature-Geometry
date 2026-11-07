@@ -62,19 +62,35 @@ Use the same **PyTorch Lightning design pattern** as the user's existing `mskhan
 ### Implement minimal extraction infrastructure
 1. Inspect and selectively reuse existing `Lightning_Aqua_Vision_Language_v1` data/image pipelines where compatible, preserving meaningful `torch.utils.data.Dataset`, `LightningDataModule` and predict lifecycle behavior. Small, focused files only; no blanket copying, dead code or complex abstractions.
 2. Build an image manifest and read-only integrity audit of all five original folds. Report missing/duplicate identifiers, label inconsistencies, class counts, specimen disjointness and image availability.
-3. Prepare frozen embedding extractors for **BioCLIP-2, DINOv2-L and DINOv3-L**. Verify exact original checkpoints/model IDs, embedding token or layer, preprocessing and output dimensionality using the older source/project documentation or authoritative checkpoint metadata. Do **not** silently substitute weights. Use deterministic eval-mode inference with no gradients or stochastic augmentations.
+3. Preserve the **three implemented baseline extractors** (BioCLIP-2, DINOv2-L, DINOv3-L) and **extend the planned encoder portfolio** to the following nine distinct checkpoint configurations. The additional six are author-discussed research candidates, **not yet verified or implemented**:
+
+   | Role | Encoder configuration | Status |
+   |---|---|---|
+   | Biology-specific vision–language | BioCLIP-2 | Implemented; needs real-image equivalence check |
+   | Image-only self-supervised | DINOv2-L | Implemented; needs real-image equivalence check |
+   | Image-only self-supervised | DINOv3-L | Implemented; needs real-image equivalence check |
+   | Capacity scaling | DINOv3-H+ | New candidate |
+   | General image–text alignment | SigLIP 2 So400M (384-pixel variant) | New candidate |
+   | Large image–text scaling | SigLIP 2 Giant | New candidate; resolve exact checkpoint/size |
+   | Contrastive perception encoder | Meta PE-Core-G | New candidate; resolve exact released checkpoint |
+   | Multi-teacher representation | NVIDIA C-RADIOv4-H | New candidate; resolve exact released checkpoint |
+   | Multimodal autoregressive | Apple AIMv2 | New candidate; resolve exact variant and feature interface |
+
+   **First do a metadata/checkpoint feasibility audit for the six new candidates:** source publication and release, current access/permissions/license, exact model ID and immutable revision, parameter count, feature dimension, whether outputs are native or normalized, image input resolution/eval preprocessing, extraction interface, local/LUMI runtime compatibility, and whether external access or gated weights require author action. Cite authoritative model documentation in an evidence report and distinguish verified fields from unknowns. **Do not automatically substitute a similarly named model.** Flag any unavailable candidate and recommend a scientifically comparable replacement for author review. Since model objectives/pretraining corpora differ, record known potential source-data overlap rather than assuming model independence.
+   
+   Implement the six additional adapters **incrementally after verifying feasibility and compatibility**, with a minimal real-image smoke check each; do not rewrite or disturb the baseline extractors. No full extraction for any encoder without the compute authorization gate below. Use deterministic eval-mode inference with no gradients or stochastic augmentation.
 4. Cache **raw/native model-output embeddings** as the canonical representation, describing any built-in normalization; if unit-normalized embeddings are later needed, derive them transparently, not as a silent replacement. Track image ID, label, specimen, original fold memberships, encoder/checkpoint/preprocess version, feature dimension, dtype, norms and checksums. Store in chunked/resumable files outside Git under `Feature_geometry_data` or approved LUMI storage; guard against duplicates and partial writes.
 5. Use a real Lightning DataModule and `LightningModule.predict_step`/`Trainer.predict` where sensible. Stream batches and avoid holding all images/features in memory. Make a deterministic **small subset of actual official images** a software smoke test only, never a new research partition.
 6. Test ID ↔ feature correspondence, repeated inference consistency, resume behavior, fold preservation, finite outputs, and known source counts. Add concise README setup and extraction instructions. Align README's obsolete synthetic-experiment wording with the official-benchmark-only rule; preserve reusable math utilities unless there is a justified reason to remove them.
 
 ### Mandatory computational gate
 - **Approved now:** code, metadata checks, lightweight correctness tests, small actual-image extraction smoke test and a grounded compute/storage estimate.
-- **Do not automatically start** extraction over ~2.7 million images × three encoders, download huge archives or submit large LUMI/GPU jobs. Present per-encoder exact images/dimensions, disk estimates, throughput measured on a small batch if possible, runtime and billing estimates with assumptions, and the proposed extraction command/job. Obtain author approval for full GPU execution first.
+- **Do not automatically start** extraction over ~2.7 million images × up to nine encoders, download huge archives or submit large LUMI/GPU jobs. Present per-encoder exact images/dimensions for all verified candidates, disk estimates, throughput measured on a small batch if possible, runtime and billing estimates with assumptions, and the proposed extraction command/job. Obtain author approval for full GPU execution first.
 - After explicit approval, extract all benchmark image features and verify complete coverage; do not silently skip corrupt images. Stop and report in root `response.md` with linked evidence and unresolved exceptions.
 - **Not authorized:** NCM, linear probe, covariance/GMM comparisons, learned W, classification evaluation, hyperparameter tuning, new dataset experiments or any final test scoring.
 
 ### Response expectations
-Record source dataset version, checkpoint IDs, source-to-new-code migration map, created files, counts for the five official folds, tests genuinely executed, exact output paths and hashes, workload estimate, and questions blocking full extraction. Report progress in **root `response.md`**, then stop for our scientific review.
+Record source dataset version, nine-candidate verification matrix (with missing/unavailable checkpoints explicitly marked), checkpoint IDs for verified models, source-to-new-code migration map, created files, counts for the five official folds, tests genuinely executed, exact output paths and hashes, workload estimate, and questions blocking full extraction. Report progress in **root `response.md`**, then stop for our scientific review.
 
 ## Task queue (planned, not started)
 1. **NCM / metric geometry:** Compare Euclidean and cosine NCM on an approved benchmark's official splits; analyze observed class separation and within-class variation. Later evaluate learned/shared Mahalanobis variants.
