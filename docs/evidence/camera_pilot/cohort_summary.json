@@ -1,0 +1,1238 @@
+{
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/manifests/aquamonitor_classif_manifest.parquet",
+ "manifest_sha256": "d6e63bb60df5300a6ccf83090b46a019446d3f91c03c69e479345b8bb13570c1",
+ "inventory_sha256": "811056f26dcbbad18bd96fdccbe37e70ff6fe60a72d4cb62e8d552aa4a29d0dc",
+ "rule": "fold0 train/val only; specimens imaged by every camera; per class first N specimens by sha1(seed:individual); per specimen and camera first F images by sha1(seed:img)",
+ "seed": 20261107,
+ "train_specimens_cap": 30,
+ "val_specimens_cap": 15,
+ "frames_cap": 3,
+ "classes": [
+  "Asellus aquaticus",
+  "Caenis horaria",
+  "Caenis luctuosa",
+  "Caenis rivulorum",
+  "Centroptilum luteolum",
+  "Ceratopogonidae",
+  "Chironomidae",
+  "Cloeon",
+  "Cloeon dipterum",
+  "Cyrnus flavidus",
+  "Cyrnus trimaculatus",
+  "Ecnomus tenellus",
+  "Ephemera vulgata",
+  "Erpobdella octoculata",
+  "Gyraulus",
+  "Helobdella stagnalis",
+  "Heptagenia dalecarlica",
+  "Hydrachnidia",
+  "Hydroptila",
+  "Kageronia fuscogrisea",
+  "Lepidostoma hirtum",
+  "Leptophlebia",
+  "Limnephilidae",
+  "Limnephilus",
+  "Micronecta",
+  "Mystacides",
+  "Mystacides azurea",
+  "Oligochaeta",
+  "Orthotrichia",
+  "Oulimnius tuberculatus",
+  "Oulimnius tuberculatus adult",
+  "Pedicia",
+  "Pisidium",
+  "Polycentropus flavomaculatus",
+  "Psychomyia pusilla",
+  "Sialis",
+  "Spirosperma ferox",
+  "Stylaria lacustris",
+  "Tanypodinae",
+  "Tinodes waeneri",
+  "Turbellaria"
+ ],
+ "excluded_classes": [
+  "Sisyra"
+ ],
+ "images": 10578,
+ "specimens": 1764,
+ "by_split": {
+  "train": {
+   "images": 7374,
+   "specimens": 1230
+  },
+  "val": {
+   "images": 3204,
+   "specimens": 534
+  }
+ },
+ "classes_below_cap": {
+  "train": [],
+  "val": [
+   "Caenis rivulorum",
+   "Centroptilum luteolum",
+   "Cloeon",
+   "Cyrnus flavidus",
+   "Gyraulus",
+   "Limnephilidae",
+   "Mystacides",
+   "Orthotrichia",
+   "Pedicia",
+   "Pisidium",
+   "Polycentropus flavomaculatus",
+   "Psychomyia pusilla",
+   "Sialis",
+   "Turbellaria"
+  ]
+ },
+ "cohort_sha256": "2a1dd891703b5abcda99209ba2f44f308d3ae685be284eca1b5dfec5020bb2b4",
+ "counts": [
+  {
+   "taxon_group": "Asellus aquaticus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Asellus aquaticus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Asellus aquaticus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Asellus aquaticus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Caenis horaria",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis horaria",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis horaria",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Caenis horaria",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Caenis luctuosa",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis luctuosa",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis luctuosa",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Caenis luctuosa",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Caenis rivulorum",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis rivulorum",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Caenis rivulorum",
+   "fold0": "val",
+   "camera": 1,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Caenis rivulorum",
+   "fold0": "val",
+   "camera": 2,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Centroptilum luteolum",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Centroptilum luteolum",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Centroptilum luteolum",
+   "fold0": "val",
+   "camera": 1,
+   "images": 30,
+   "specimens": 10
+  },
+  {
+   "taxon_group": "Centroptilum luteolum",
+   "fold0": "val",
+   "camera": 2,
+   "images": 30,
+   "specimens": 10
+  },
+  {
+   "taxon_group": "Ceratopogonidae",
+   "fold0": "train",
+   "camera": 1,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ceratopogonidae",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ceratopogonidae",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Ceratopogonidae",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Chironomidae",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Chironomidae",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Chironomidae",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Chironomidae",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Cloeon",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cloeon",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cloeon",
+   "fold0": "val",
+   "camera": 1,
+   "images": 27,
+   "specimens": 9
+  },
+  {
+   "taxon_group": "Cloeon",
+   "fold0": "val",
+   "camera": 2,
+   "images": 27,
+   "specimens": 9
+  },
+  {
+   "taxon_group": "Cloeon dipterum",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cloeon dipterum",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cloeon dipterum",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Cloeon dipterum",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Cyrnus flavidus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cyrnus flavidus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cyrnus flavidus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 42,
+   "specimens": 14
+  },
+  {
+   "taxon_group": "Cyrnus flavidus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 42,
+   "specimens": 14
+  },
+  {
+   "taxon_group": "Cyrnus trimaculatus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cyrnus trimaculatus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Cyrnus trimaculatus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Cyrnus trimaculatus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Ecnomus tenellus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ecnomus tenellus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ecnomus tenellus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Ecnomus tenellus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Ephemera vulgata",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ephemera vulgata",
+   "fold0": "train",
+   "camera": 2,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Ephemera vulgata",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Ephemera vulgata",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Erpobdella octoculata",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Erpobdella octoculata",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Erpobdella octoculata",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Erpobdella octoculata",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Gyraulus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Gyraulus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Gyraulus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 27,
+   "specimens": 9
+  },
+  {
+   "taxon_group": "Gyraulus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 27,
+   "specimens": 9
+  },
+  {
+   "taxon_group": "Helobdella stagnalis",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Helobdella stagnalis",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Helobdella stagnalis",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Helobdella stagnalis",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Heptagenia dalecarlica",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Heptagenia dalecarlica",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Heptagenia dalecarlica",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Heptagenia dalecarlica",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Hydrachnidia",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Hydrachnidia",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Hydrachnidia",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Hydrachnidia",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Hydroptila",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Hydroptila",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Hydroptila",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Hydroptila",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Kageronia fuscogrisea",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Kageronia fuscogrisea",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Kageronia fuscogrisea",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Kageronia fuscogrisea",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Lepidostoma hirtum",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Lepidostoma hirtum",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Lepidostoma hirtum",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Lepidostoma hirtum",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Leptophlebia",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Leptophlebia",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Leptophlebia",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Leptophlebia",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Limnephilidae",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Limnephilidae",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Limnephilidae",
+   "fold0": "val",
+   "camera": 1,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Limnephilidae",
+   "fold0": "val",
+   "camera": 2,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Limnephilus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Limnephilus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Limnephilus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Limnephilus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Micronecta",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Micronecta",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Micronecta",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Micronecta",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Mystacides",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Mystacides",
+   "fold0": "train",
+   "camera": 2,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Mystacides",
+   "fold0": "val",
+   "camera": 1,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Mystacides",
+   "fold0": "val",
+   "camera": 2,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Mystacides azurea",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Mystacides azurea",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Mystacides azurea",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Mystacides azurea",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Oligochaeta",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oligochaeta",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oligochaeta",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Oligochaeta",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Orthotrichia",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Orthotrichia",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Orthotrichia",
+   "fold0": "val",
+   "camera": 1,
+   "images": 18,
+   "specimens": 6
+  },
+  {
+   "taxon_group": "Orthotrichia",
+   "fold0": "val",
+   "camera": 2,
+   "images": 18,
+   "specimens": 6
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus adult",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus adult",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus adult",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Oulimnius tuberculatus adult",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Pedicia",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Pedicia",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Pedicia",
+   "fold0": "val",
+   "camera": 1,
+   "images": 24,
+   "specimens": 8
+  },
+  {
+   "taxon_group": "Pedicia",
+   "fold0": "val",
+   "camera": 2,
+   "images": 24,
+   "specimens": 8
+  },
+  {
+   "taxon_group": "Pisidium",
+   "fold0": "train",
+   "camera": 1,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Pisidium",
+   "fold0": "train",
+   "camera": 2,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Pisidium",
+   "fold0": "val",
+   "camera": 1,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Pisidium",
+   "fold0": "val",
+   "camera": 2,
+   "images": 21,
+   "specimens": 7
+  },
+  {
+   "taxon_group": "Polycentropus flavomaculatus",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Polycentropus flavomaculatus",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Polycentropus flavomaculatus",
+   "fold0": "val",
+   "camera": 1,
+   "images": 39,
+   "specimens": 13
+  },
+  {
+   "taxon_group": "Polycentropus flavomaculatus",
+   "fold0": "val",
+   "camera": 2,
+   "images": 39,
+   "specimens": 13
+  },
+  {
+   "taxon_group": "Psychomyia pusilla",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Psychomyia pusilla",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Psychomyia pusilla",
+   "fold0": "val",
+   "camera": 1,
+   "images": 36,
+   "specimens": 12
+  },
+  {
+   "taxon_group": "Psychomyia pusilla",
+   "fold0": "val",
+   "camera": 2,
+   "images": 36,
+   "specimens": 12
+  },
+  {
+   "taxon_group": "Sialis",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Sialis",
+   "fold0": "train",
+   "camera": 2,
+   "images": 89,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Sialis",
+   "fold0": "val",
+   "camera": 1,
+   "images": 18,
+   "specimens": 6
+  },
+  {
+   "taxon_group": "Sialis",
+   "fold0": "val",
+   "camera": 2,
+   "images": 18,
+   "specimens": 6
+  },
+  {
+   "taxon_group": "Spirosperma ferox",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Spirosperma ferox",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Spirosperma ferox",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Spirosperma ferox",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Stylaria lacustris",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Stylaria lacustris",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Stylaria lacustris",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Stylaria lacustris",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Tanypodinae",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Tanypodinae",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Tanypodinae",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Tanypodinae",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Tinodes waeneri",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Tinodes waeneri",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Tinodes waeneri",
+   "fold0": "val",
+   "camera": 1,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Tinodes waeneri",
+   "fold0": "val",
+   "camera": 2,
+   "images": 45,
+   "specimens": 15
+  },
+  {
+   "taxon_group": "Turbellaria",
+   "fold0": "train",
+   "camera": 1,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Turbellaria",
+   "fold0": "train",
+   "camera": 2,
+   "images": 90,
+   "specimens": 30
+  },
+  {
+   "taxon_group": "Turbellaria",
+   "fold0": "val",
+   "camera": 1,
+   "images": 42,
+   "specimens": 14
+  },
+  {
+   "taxon_group": "Turbellaria",
+   "fold0": "val",
+   "camera": 2,
+   "images": 42,
+   "specimens": 14
+  }
+ ]
+}

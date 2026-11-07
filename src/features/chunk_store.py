@@ -59,6 +59,22 @@ def chunk_done(cache_dir: Path, k: int, identity: dict) -> bool:
     return True
 
 
+def load_cache(cache_dir: Path, names: Sequence[str]) -> tuple[np.ndarray, dict]:
+    """All chunks of a complete cache, concatenated in row order, after checking that the chunks cover exactly
+    ``names`` (rows and image names) and match their checksums. Returns the features and the first chunk's metadata."""
+    parts, first, k, end = [], None, 0, 0
+    while paths(cache_dir, k)[1].exists():
+        meta = json.loads(paths(cache_dir, k)[1].read_text())
+        if meta["start"] != end or meta["names_sha1"] != names_sha1(names[meta["start"]:meta["end"]]):
+            raise RuntimeError(f"chunk {k} does not hold rows {end}.. of the given names")
+        chunk_done(cache_dir, k, {key: meta[key] for key in IDENTITY})
+        parts.append(np.load(paths(cache_dir, k)[0]))
+        first, k, end = first or meta, k + 1, meta["end"]
+    if end != len(names):
+        raise RuntimeError(f"cache covers {end} of {len(names)} rows")
+    return np.concatenate(parts), first
+
+
 def write_chunk(cache_dir: Path, k: int, features: np.ndarray, identity: dict, extra: dict) -> dict:
     if features.dtype != np.float32 or features.ndim != 2 or len(features) != identity["end"] - identity["start"]:
         raise ValueError(f"chunk {k}: expected float32 ({identity['end'] - identity['start']}, d), got {features.dtype} {features.shape}")

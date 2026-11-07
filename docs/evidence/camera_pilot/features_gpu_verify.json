@@ -1,0 +1,73 @@
+{
+ "cache_dir": "/home/aijyu/Documents/Research/Feature_geometry_data/camera_pilot/features_gpu/dinov3_l",
+ "encoder": "dinov3_l",
+ "manifest_rows": 10578,
+ "rows_covered": 10578,
+ "chunks_ok": 6,
+ "dims": [
+  1024
+ ],
+ "problems": [],
+ "chunks": [
+  {
+   "start": 0,
+   "end": 2048,
+   "dim": 1024,
+   "sha256": "2fc8f444fa4ca62eebfae02308cfbe9bf22944a246d9529fbdc070300d1eb0b7",
+   "norm_min": 12.643577575683594,
+   "norm_mean": 15.556314468383789,
+   "norm_max": 17.00282096862793,
+   "images_per_second": 57.9
+  },
+  {
+   "start": 2048,
+   "end": 4096,
+   "dim": 1024,
+   "sha256": "43eb71af2790b311804810e902c40f905b69140fb59e0244f07d7ca83a8cab01",
+   "norm_min": 13.740352630615234,
+   "norm_mean": 15.4319429397583,
+   "norm_max": 16.901098251342773,
+   "images_per_second": 56.7
+  },
+  {
+   "start": 4096,
+   "end": 6144,
+   "dim": 1024,
+   "sha256": "ef76bba4f27bfc062768020a1b9986165e2f48a541401a23eb13909ca1aa1f70",
+   "norm_min": 13.063583374023438,
+   "norm_mean": 15.547829627990723,
+   "norm_max": 17.00135612487793,
+   "images_per_second": 56.4
+  },
+  {
+   "start": 6144,
+   "end": 8192,
+   "dim": 1024,
+   "sha256": "1dc671c239c002789301ca85733145f8c2dd7c07b7434854c3c13de8d5104438",
+   "norm_min": 12.366972923278809,
+   "norm_mean": 15.415257453918457,
+   "norm_max": 16.96759033203125,
+   "images_per_second": 56.3
+  },
+  {
+   "start": 8192,
+   "end": 10240,
+   "dim": 1024,
+   "sha256": "426b0f5c413cc01ea743d2d26f5f45e602112210405e5efb48b46730b03917d2",
+   "norm_min": 13.011693954467773,
+   "norm_mean": 15.482856750488281,
+   "norm_max": 17.199304580688477,
+   "images_per_second": 56.5
+  },
+  {
+   "start": 10240,
+   "end": 10578,
+   "dim": 1024,
+   "sha256": "8b3fd373c622055e518a90dcd19656e6dd6ff9226f095b2138b5a3aad7b9b202",
+   "norm_min": 12.83132553100586,
+   "norm_mean": 15.370742797851562,
+   "norm_max": 16.810789108276367,
+   "images_per_second": 48.9
+  }
+ ]
+}

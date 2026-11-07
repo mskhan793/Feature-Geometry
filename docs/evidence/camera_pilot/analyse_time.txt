@@ -1,0 +1,1 @@
+analyse stage: wall 24.65 s, user 597.89 s, system 0.30 s

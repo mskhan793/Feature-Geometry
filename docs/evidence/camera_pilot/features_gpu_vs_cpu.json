@@ -1,0 +1,15 @@
+{
+ "a": "/home/aijyu/Documents/Research/Feature_geometry_data/camera_pilot/features_gpu/dinov3_l",
+ "b": "/home/aijyu/Documents/Research/Feature_geometry_data/camera_pilot/features_cpu/dinov3_l",
+ "chunks": [
+  {
+   "chunk": "chunk_00000.json",
+   "rows": 2048,
+   "bitwise_equal": false,
+   "max_abs_diff": 3.089010715484619e-05,
+   "mean_abs_diff": 2.488429572622408e-06
+  }
+ ],
+ "all_bitwise_equal": false,
+ "max_abs_diff": 3.089010715484619e-05
+}

@@ -44,8 +44,11 @@ def main():
     if a.limit_rows:
         manifest = manifest.iloc[:a.limit_rows]
     chunks = range(a.task, chunk_store.n_chunks(len(manifest), a.chunk_size), a.n_tasks)
+    torch.backends.cuda.matmul.allow_tf32 = False  # full fp32 on NVIDIA GPUs (cuDNN convolutions default to TF32)
+    torch.backends.cudnn.allow_tf32 = False
     encoder, transform, info = load_encoder(a.encoder)
     info["manifest_sha256"] = chunk_store.file_sha256(a.manifest)
+    info["tf32"] = False
     trainer = build_trainer([], max_epochs=1, accelerator=a.accelerator, devices=1, deterministic="warn",
                             enable_progress_bar=False, enable_model_summary=False)
     print(json.dumps({"task": a.task, "n_tasks": a.n_tasks, "rows": len(manifest), "chunks": list(chunks), **info}), flush=True)

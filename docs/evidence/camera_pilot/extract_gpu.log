@@ -1,0 +1,43 @@
+Loading weights:   0%|          | 0/415 [00:00<?, ?it/s]Loading weights: 100%|██████████| 415/415 [00:00<00:00, 13662.66it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+{"task": 0, "n_tasks": 1, "rows": 10578, "chunks": [0, 1, 2, 3, 4, 5], "encoder": "dinov3_l", "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m", "library": "transformers 5.10.1", "feature": "pooler_output (final-norm CLS token)", "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)", "torch": "2.10.0+cu128", "manifest_sha256": "2a1dd891703b5abcda99209ba2f44f308d3ae685be284eca1b5dfec5020bb2b4", "tf32": false}
+You are using a CUDA device ('NVIDIA GeForce RTX 4090 Laptop GPU') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/aijyu/Documents/Feature-Geometry/.venv-gpu/lib/python3.12/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+[task 0] chunk 0: rows 0-2048, dim 1024, 35 s, 57.9 img/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[task 0] chunk 1: rows 2048-4096, dim 1024, 36 s, 56.7 img/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[task 0] chunk 2: rows 4096-6144, dim 1024, 36 s, 56.4 img/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[task 0] chunk 3: rows 6144-8192, dim 1024, 36 s, 56.3 img/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[task 0] chunk 4: rows 8192-10240, dim 1024, 36 s, 56.5 img/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[task 0] chunk 5: rows 10240-10578, dim 1024, 7 s, 48.9 img/s
+{"task": 0, "peak_gpu_memory_bytes": 1683987456, "peak_host_rss_kib": 3292864}
+	Command being timed: ".venv-gpu/bin/python scripts/extract_features.py --manifest /home/aijyu/Documents/Research/Feature_geometry_data/camera_pilot/cohort/cohort.parquet --hdf5 /home/aijyu/Documents/aqua_data/aquamonitor_complete.h5 --encoder dinov3_l --cache-dir /home/aijyu/Documents/Research/Feature_geometry_data/camera_pilot/features_gpu --chunk-size 2048 --batch-size 32 --num-workers 8 --accelerator gpu"
+	User time (seconds): 262.56
+	System time (seconds): 40.71
+	Percent of CPU this job got: 158%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:11.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3422876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 5559994
+	Voluntary context switches: 24937
+	Involuntary context switches: 7432
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 84776
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

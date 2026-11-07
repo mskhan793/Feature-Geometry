@@ -1,0 +1,237 @@
+{
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/manifests/aquamonitor_classif_manifest.parquet",
+ "split_column": "fold0",
+ "images": 2708023,
+ "specimens": 42165,
+ "classes": 42,
+ "cameras": [
+  {
+   "camera": "1",
+   "images": 1458147,
+   "specimens": 42107
+  },
+  {
+   "camera": "2",
+   "images": 1249876,
+   "specimens": 42020
+  }
+ ],
+ "split_by_camera": [
+  {
+   "fold0": "test",
+   "camera": "1",
+   "images": 292157,
+   "specimens": 8427
+  },
+  {
+   "fold0": "test",
+   "camera": "2",
+   "images": 250897,
+   "specimens": 8411
+  },
+  {
+   "fold0": "train",
+   "camera": "1",
+   "images": 1013407,
+   "specimens": 29299
+  },
+  {
+   "fold0": "train",
+   "camera": "2",
+   "images": 868639,
+   "specimens": 29238
+  },
+  {
+   "fold0": "val",
+   "camera": "1",
+   "images": 152583,
+   "specimens": 4381
+  },
+  {
+   "fold0": "val",
+   "camera": "2",
+   "images": 130340,
+   "specimens": 4371
+  }
+ ],
+ "specimens_in_more_than_one_camera": 41962,
+ "specimens_in_more_than_one_class": 0,
+ "specimens_in_more_than_one_split": 0,
+ "imaging_runs": 43792,
+ "imaging_runs_with_more_than_one_camera": 43577,
+ "year_by_camera": [
+  {
+   "year": "2021",
+   "specimens_1": 22237,
+   "specimens_2": 22209
+  },
+  {
+   "year": "2022",
+   "specimens_1": 19870,
+   "specimens_2": 19811
+  }
+ ],
+ "dataset_by_camera": [
+  {
+   "dataset": "biomass",
+   "specimens_1": 1513,
+   "specimens_2": 1508
+  },
+  {
+   "dataset": "bulk21",
+   "specimens_1": 19217,
+   "specimens_2": 19194
+  },
+  {
+   "dataset": "bulk22",
+   "specimens_1": 19870,
+   "specimens_2": 19811
+  },
+  {
+   "dataset": "dna",
+   "specimens_1": 1507,
+   "specimens_2": 1507
+  }
+ ],
+ "sites": 50,
+ "sites_with_both_cameras": 50,
+ "lakes": 22,
+ "lakes_with_both_cameras": 22,
+ "support_rule": {
+  "min_train_specimens": 15,
+  "min_val_specimens": 5
+ },
+ "class_camera_pairs_eligible": 82,
+ "class_camera_pairs": 84,
+ "classes_eligible_in_every_camera": [
+  "Asellus aquaticus",
+  "Caenis horaria",
+  "Caenis luctuosa",
+  "Caenis rivulorum",
+  "Centroptilum luteolum",
+  "Ceratopogonidae",
+  "Chironomidae",
+  "Cloeon",
+  "Cloeon dipterum",
+  "Cyrnus flavidus",
+  "Cyrnus trimaculatus",
+  "Ecnomus tenellus",
+  "Ephemera vulgata",
+  "Erpobdella octoculata",
+  "Gyraulus",
+  "Helobdella stagnalis",
+  "Heptagenia dalecarlica",
+  "Hydrachnidia",
+  "Hydroptila",
+  "Kageronia fuscogrisea",
+  "Lepidostoma hirtum",
+  "Leptophlebia",
+  "Limnephilidae",
+  "Limnephilus",
+  "Micronecta",
+  "Mystacides",
+  "Mystacides azurea",
+  "Oligochaeta",
+  "Orthotrichia",
+  "Oulimnius tuberculatus",
+  "Oulimnius tuberculatus adult",
+  "Pedicia",
+  "Pisidium",
+  "Polycentropus flavomaculatus",
+  "Psychomyia pusilla",
+  "Sialis",
+  "Spirosperma ferox",
+  "Stylaria lacustris",
+  "Tanypodinae",
+  "Tinodes waeneri",
+  "Turbellaria"
+ ],
+ "classes_eligible_per_camera": {
+  "1": [
+   "Asellus aquaticus",
+   "Caenis horaria",
+   "Caenis luctuosa",
+   "Caenis rivulorum",
+   "Centroptilum luteolum",
+   "Ceratopogonidae",
+   "Chironomidae",
+   "Cloeon",
+   "Cloeon dipterum",
+   "Cyrnus flavidus",
+   "Cyrnus trimaculatus",
+   "Ecnomus tenellus",
+   "Ephemera vulgata",
+   "Erpobdella octoculata",
+   "Gyraulus",
+   "Helobdella stagnalis",
+   "Heptagenia dalecarlica",
+   "Hydrachnidia",
+   "Hydroptila",
+   "Kageronia fuscogrisea",
+   "Lepidostoma hirtum",
+   "Leptophlebia",
+   "Limnephilidae",
+   "Limnephilus",
+   "Micronecta",
+   "Mystacides",
+   "Mystacides azurea",
+   "Oligochaeta",
+   "Orthotrichia",
+   "Oulimnius tuberculatus",
+   "Oulimnius tuberculatus adult",
+   "Pedicia",
+   "Pisidium",
+   "Polycentropus flavomaculatus",
+   "Psychomyia pusilla",
+   "Sialis",
+   "Spirosperma ferox",
+   "Stylaria lacustris",
+   "Tanypodinae",
+   "Tinodes waeneri",
+   "Turbellaria"
+  ],
+  "2": [
+   "Asellus aquaticus",
+   "Caenis horaria",
+   "Caenis luctuosa",
+   "Caenis rivulorum",
+   "Centroptilum luteolum",
+   "Ceratopogonidae",
+   "Chironomidae",
+   "Cloeon",
+   "Cloeon dipterum",
+   "Cyrnus flavidus",
+   "Cyrnus trimaculatus",
+   "Ecnomus tenellus",
+   "Ephemera vulgata",
+   "Erpobdella octoculata",
+   "Gyraulus",
+   "Helobdella stagnalis",
+   "Heptagenia dalecarlica",
+   "Hydrachnidia",
+   "Hydroptila",
+   "Kageronia fuscogrisea",
+   "Lepidostoma hirtum",
+   "Leptophlebia",
+   "Limnephilidae",
+   "Limnephilus",
+   "Micronecta",
+   "Mystacides",
+   "Mystacides azurea",
+   "Oligochaeta",
+   "Orthotrichia",
+   "Oulimnius tuberculatus",
+   "Oulimnius tuberculatus adult",
+   "Pedicia",
+   "Pisidium",
+   "Polycentropus flavomaculatus",
+   "Psychomyia pusilla",
+   "Sialis",
+   "Spirosperma ferox",
+   "Stylaria lacustris",
+   "Tanypodinae",
+   "Tinodes waeneri",
+   "Turbellaria"
+  ]
+ }
+}

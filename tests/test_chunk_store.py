@@ -50,3 +50,18 @@ def test_rejects_wrong_shape_or_non_finite(tmp_path):
     bad[1, 1] = np.nan
     with pytest.raises(ValueError, match="non-finite"):
         chunk_store.write_chunk(tmp_path, 0, bad, IDENTITY, {})
+
+
+def test_load_cache_checks_names_and_coverage(tmp_path):
+    names = ["a", "b", "c", "d", "e"]
+    for k in range(chunk_store.n_chunks(5, 3)):
+        s, e = chunk_store.chunk_bounds(5, 3, k)
+        ident = {**IDENTITY, "start": s, "end": e, "names_sha1": chunk_store.names_sha1(names[s:e])}
+        chunk_store.write_chunk(tmp_path, k, np.full((e - s, 2), k, np.float32), ident, {})
+    x, meta = chunk_store.load_cache(tmp_path, names)
+    np.testing.assert_array_equal(x[:, 0], [0, 0, 0, 1, 1])
+    assert meta["encoder"] == "e"
+    with pytest.raises(RuntimeError, match="does not hold"):
+        chunk_store.load_cache(tmp_path, ["a", "b", "x", "d", "e"])
+    with pytest.raises(RuntimeError, match="covers 5 of 6"):
+        chunk_store.load_cache(tmp_path, names + ["f"])
