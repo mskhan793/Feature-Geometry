@@ -145,8 +145,9 @@ The fixtures are a tiny HDF5 and parquet. In the fixture HDF5 the images are in 
 **Encoder audit:** every number and revision in the report checked against the saved evidence. The only values not found literally are deliberate roundings (e.g. 309,197,824 → 309.2 M) or digits inside revision hashes.
 
 **Not run yet:**
-- **The real-weight run on the Dell:** a DINOv3-L run of the CLI on 256 real images was stopped before it started (the permission request closed). Nothing was written.
-- **Any GPU run of the new code.**
+- **Any GPU run of the new code** (LUMI blocked, section 4).
+
+**Real-weights run on the Dell** (replacing the earlier stopped attempt): DINOv3-L on CPU, on the first 64 real benchmark images. Extraction, verification, resume and repeat all passed, and the repeat was bitwise identical (section 4).
 
 ## 4. Three-baseline LUMI smoke test (`task.md` 8ac12a7): BLOCKED, not submitted
 
