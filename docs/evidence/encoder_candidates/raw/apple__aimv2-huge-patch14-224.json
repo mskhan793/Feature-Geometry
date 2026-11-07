@@ -1,0 +1,694 @@
+{
+ "api": {
+  "_id": "672100215c98f6ace0366fb1",
+  "id": "apple/aimv2-huge-patch14-224",
+  "private": false,
+  "pipeline_tag": "image-feature-extraction",
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "jax",
+   "safetensors",
+   "aimv2_vision_model",
+   "image-feature-extraction",
+   "vision",
+   "mlx",
+   "pytorch",
+   "custom_code",
+   "arxiv:2411.14402",
+   "license:apple-amlr",
+   "model-index",
+   "endpoints_compatible",
+   "region:us"
+  ],
+  "downloads": 121,
+  "likes": 13,
+  "modelId": "apple/aimv2-huge-patch14-224",
+  "author": "apple",
+  "sha": "172051d9df825cda55607cfe9016da30f249a133",
+  "lastModified": "2025-07-08T16:19:30.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": [
+   {
+    "name": "aimv2-huge-patch14-224",
+    "results": [
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "imagenet-1k",
+       "type": "imagenet-1k"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 87.5,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "inaturalist-18",
+       "type": "inaturalist-18"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 77.9,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "cifar10",
+       "type": "cifar10"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 99.3,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "cifar100",
+       "type": "cifar100"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 93.5,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "food101",
+       "type": "food101"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 96.3,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "dtd",
+       "type": "dtd"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 88.2,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "oxford-pets",
+       "type": "oxford-pets"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 96.6,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "stanford-cars",
+       "type": "stanford-cars"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 96.4,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "camelyon17",
+       "type": "camelyon17"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 93.3,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "patch-camelyon",
+       "type": "patch-camelyon"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 89.3,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "rxrx1",
+       "type": "rxrx1"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 5.8,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "eurosat",
+       "type": "eurosat"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 98.5,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "fmow",
+       "type": "fmow"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 62.2,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     },
+     {
+      "task": {
+       "type": "classification",
+       "name": "Classification"
+      },
+      "dataset": {
+       "name": "domainnet-infographic",
+       "type": "domainnet-infographic"
+      },
+      "metrics": [
+       {
+        "type": "accuracy",
+        "value": 70.4,
+        "name": "Accuracy",
+        "verified": false
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "config": {
+   "architectures": [
+    "Aimv2VisionModel"
+   ],
+   "auto_map": {
+    "AutoConfig": "configuration_aimv2.AIMv2Config",
+    "AutoModel": "modeling_aimv2.AIMv2Model",
+    "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+   },
+   "model_type": "aimv2_vision_model"
+  },
+  "cardData": {
+   "library_name": "transformers",
+   "license": "apple-amlr",
+   "metrics": [
+    "accuracy"
+   ],
+   "pipeline_tag": "image-feature-extraction",
+   "tags": [
+    "vision",
+    "image-feature-extraction",
+    "mlx",
+    "pytorch"
+   ],
+   "model-index": [
+    {
+     "name": "aimv2-huge-patch14-224",
+     "results": [
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "imagenet-1k",
+        "type": "imagenet-1k"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 87.5,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "inaturalist-18",
+        "type": "inaturalist-18"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 77.9,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "cifar10",
+        "type": "cifar10"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 99.3,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "cifar100",
+        "type": "cifar100"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 93.5,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "food101",
+        "type": "food101"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 96.3,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "dtd",
+        "type": "dtd"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 88.2,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "oxford-pets",
+        "type": "oxford-pets"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 96.6,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "stanford-cars",
+        "type": "stanford-cars"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 96.4,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "camelyon17",
+        "type": "camelyon17"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 93.3,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "patch-camelyon",
+        "type": "patch-camelyon"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 89.3,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "rxrx1",
+        "type": "rxrx1"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 5.8,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "eurosat",
+        "type": "eurosat"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 98.5,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "fmow",
+        "type": "fmow"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 62.2,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      },
+      {
+       "task": {
+        "type": "classification",
+        "name": "Classification"
+       },
+       "dataset": {
+        "name": "domainnet-infographic",
+        "type": "domainnet-infographic"
+       },
+       "metrics": [
+        {
+         "type": "accuracy",
+         "value": 70.4,
+         "name": "Accuracy",
+         "verified": false
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModel",
+   "pipeline_tag": "image-feature-extraction",
+   "processor": "AutoImageProcessor"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "LICENSE"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "aimv2_overview_light.png"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "configuration_aimv2.py"
+   },
+   {
+    "rfilename": "flax_model.msgpack"
+   },
+   {
+    "rfilename": "mlx_model.safetensors"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "modeling_aimv2.py"
+   },
+   {
+    "rfilename": "modeling_flax_aimv2.py"
+   },
+   {
+    "rfilename": "preprocessor_config.json"
+   }
+  ],
+  "spaces": [],
+  "createdAt": "2024-10-29T15:32:49.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 680851968
+   },
+   "total": 680851968
+  },
+  "usedStorage": 10894036721
+ },
+ "configs": {
+  "config.json": {
+   "architectures": [
+    "Aimv2VisionModel"
+   ],
+   "attention_dropout": 0.0,
+   "auto_map": {
+    "AutoConfig": "configuration_aimv2.AIMv2Config",
+    "AutoModel": "modeling_aimv2.AIMv2Model",
+    "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+   },
+   "hidden_act": "silu",
+   "hidden_size": 1536,
+   "image_size": 224,
+   "initializer_range": 0.02,
+   "intermediate_size": 4096,
+   "is_native": false,
+   "mlp_bias": false,
+   "model_type": "aimv2_vision_model",
+   "num_attention_heads": 12,
+   "num_channels": 3,
+   "num_hidden_layers": 24,
+   "patch_size": 14,
+   "projection_dropout": 0.0,
+   "qkv_bias": false,
+   "rms_norm_eps": 1e-05,
+   "torch_dtype": "float32",
+   "transformers_version": "4.54.0.dev0",
+   "use_bias": false,
+   "use_head": false
+  },
+  "preprocessor_config.json": {
+   "crop_size": {
+    "height": 224,
+    "width": 224
+   },
+   "data_format": "channels_first",
+   "default_to_square": false,
+   "device": null,
+   "disable_grouping": null,
+   "do_center_crop": true,
+   "do_convert_rgb": true,
+   "do_normalize": true,
+   "do_rescale": true,
+   "do_resize": true,
+   "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+   ],
+   "image_processor_type": "CLIPImageProcessorFast",
+   "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+   ],
+   "input_data_format": null,
+   "resample": 3,
+   "rescale_factor": 0.00392156862745098,
+   "return_tensors": null,
+   "size": {
+    "shortest_edge": 224
+   }
+  }
+ },
+ "model_card": "---\nlibrary_name: transformers\nlicense: apple-amlr\nmetrics:\n- accuracy\npipeline_tag: image-feature-extraction\ntags:\n- vision\n- image-feature-extraction\n- mlx\n- pytorch\nmodel-index:\n- name: aimv2-huge-patch14-224\n  results:\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: imagenet-1k\n      type: imagenet-1k\n    metrics:\n    - type: accuracy\n      value: 87.5\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: inaturalist-18\n      type: inaturalist-18\n    metrics:\n    - type: accuracy\n      value: 77.9\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: cifar10\n      type: cifar10\n    metrics:\n    - type: accuracy\n      value: 99.3\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: cifar100\n      type: cifar100\n    metrics:\n    - type: accuracy\n      value: 93.5\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: food101\n      type: food101\n    metrics:\n    - type: accuracy\n      value: 96.3\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: dtd\n      type: dtd\n    metrics:\n    - type: accuracy\n      value: 88.2\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: oxford-pets\n      type: oxford-pets\n    metrics:\n    - type: accuracy\n      value: 96.6\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: stanford-cars\n      type: stanford-cars\n    metrics:\n    - type: accuracy\n      value: 96.4\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: camelyon17\n      type: camelyon17\n    metrics:\n    - type: accuracy\n      value: 93.3\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: patch-camelyon\n      type: patch-camelyon\n    metrics:\n    - type: accuracy\n      value: 89.3\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: rxrx1\n      type: rxrx1\n    metrics:\n    - type: accuracy\n      value: 5.8\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: eurosat\n      type: eurosat\n    metrics:\n    - type: accuracy\n      value: 98.5\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: fmow\n      type: fmow\n    metrics:\n    - type: accuracy\n      value: 62.2\n      name: Accuracy\n      verified: false\n  - task:\n      type: classification\n      name: Classification\n    dataset:\n      name: domainnet-infographic\n      type: domainnet-infographic\n    metrics:\n    - type: accuracy\n      value: 70.4\n      name: Accuracy\n      verified: false\n---\n# Introduction\n[[`AIMv2 Paper`](https://arxiv.org/abs/2411.14402)] [[`BibTeX`](#citation)]\n\nWe introduce the AIMv2 family of vision models pre-trained with a multimodal autoregressive objective.\nAIMv2 pre-training is simple and straightforward to train and scale effectively. Some AIMv2 highlights include:\n\n1. Outperforms OAI CLIP and SigLIP on the majority of multimodal understanding benchmarks.\n2. Outperforms DINOv2 on open-vocabulary object detection and referring expression comprehension.\n3. Exhibits strong recognition performance with AIMv2-3B achieving *89.5% on ImageNet using a frozen trunk*.\n\n<img src=\"aimv2_overview_light.png\" alt=\"AIMv2 Overview\"/>\n\n## Usage\n\n### PyTorch\n```python\nimport requests\nfrom PIL import Image\nfrom transformers import AutoImageProcessor, AutoModel\n\nurl = \"http://images.cocodataset.org/val2017/000000039769.jpg\"\nimage = Image.open(requests.get(url, stream=True).raw)\n\nprocessor = AutoImageProcessor.from_pretrained(\n    \"apple/aimv2-huge-patch14-224\",\n    revision=\"9e0bab0e0abb7b20796d2d0b37f39b7c3b1c1af1\",\n)\nmodel = AutoModel.from_pretrained(\n    \"apple/aimv2-huge-patch14-224\",\n    revision=\"9e0bab0e0abb7b20796d2d0b37f39b7c3b1c1af1\",\n    trust_remote_code=True,\n)\n\ninputs = processor(images=image, return_tensors=\"pt\")\noutputs = model(**inputs)\n```\n\n### JAX\n```python\nimport requests\nfrom PIL import Image\nfrom transformers import AutoImageProcessor, FlaxAutoModel\n\nurl = \"http://images.cocodataset.org/val2017/000000039769.jpg\"\nimage = Image.open(requests.get(url, stream=True).raw)\n\nprocessor = AutoImageProcessor.from_pretrained(\n    \"apple/aimv2-huge-patch14-224\",\n)\nmodel = FlaxAutoModel.from_pretrained(\n    \"apple/aimv2-huge-patch14-224\",\n    trust_remote_code=True,\n)\n\ninputs = processor(images=image, return_tensors=\"jax\")\noutputs = model(**inputs)\n```\n\n## Citation\nIf you find our work useful, please consider citing us as:\n```bibtex\n@misc{fini2024multimodalautoregressivepretraininglarge,\n  author      = {Fini, Enrico and Shukor, Mustafa and Li, Xiujun and Dufter, Philipp and Klein, Michal and Haldimann, David and Aitharaju, Sai and da Costa, Victor Guilherme Turrisi and B\u00e9thune, Louis and Gan, Zhe and Toshev, Alexander T and Eichner, Marcin and Nabi, Moin and Yang, Yinfei and Susskind, Joshua M. and El-Nouby, Alaaeldin},\n  url         = {https://arxiv.org/abs/2411.14402},\n  eprint      = {2411.14402},\n  eprintclass = {cs.CV},\n  eprinttype  = {arXiv},\n  title       = {Multimodal Autoregressive Pre-training of Large Vision Encoders},\n  year        = {2024},\n}\n```\n\n"
+}

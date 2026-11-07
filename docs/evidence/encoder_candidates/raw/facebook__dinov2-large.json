@@ -1,0 +1,233 @@
+{
+ "api": {
+  "_id": "64b57085cf312e548807eff5",
+  "id": "facebook/dinov2-large",
+  "private": false,
+  "pipeline_tag": "image-feature-extraction",
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "pytorch",
+   "safetensors",
+   "dinov2",
+   "image-feature-extraction",
+   "dino",
+   "vision",
+   "arxiv:2304.07193",
+   "license:apache-2.0",
+   "endpoints_compatible",
+   "region:us"
+  ],
+  "downloads": 676982,
+  "likes": 127,
+  "modelId": "facebook/dinov2-large",
+  "author": "facebook",
+  "sha": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "lastModified": "2023-09-06T11:23:50.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "Dinov2Model"
+   ],
+   "model_type": "dinov2"
+  },
+  "cardData": {
+   "license": "apache-2.0",
+   "tags": [
+    "dino",
+    "vision"
+   ]
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModel",
+   "pipeline_tag": "image-feature-extraction",
+   "processor": "AutoImageProcessor"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "preprocessor_config.json"
+   },
+   {
+    "rfilename": "pytorch_model.bin"
+   }
+  ],
+  "spaces": [
+   "hugging-apps/hi3dv1",
+   "mteb/leaderboard",
+   "fffiloni/InstantIR",
+   "Viglong/Orient-Anything",
+   "SMSD75/SynthScope",
+   "stabilityai/stable-point-aware-3d",
+   "omnipart/OmniPart",
+   "JOY-Huang/InstantIR",
+   "nicolas-dufour/Plonk",
+   "TencentARC/ImageConductor",
+   "lhs9101/starvector-1b-im2svg",
+   "Viglong/Orient-Anything-V2",
+   "Alibaba-DAMO-Academy/clinfusion-medical-vlm",
+   "yunusserhat/Location_Predictor",
+   "ML4Sustain/EarthExplorer",
+   "theaiinstitute/theia",
+   "Yw22/BlobCtrl",
+   "cocktailpeanut/InstantIR",
+   "as-cle-bert/pokemon-bot",
+   "hugging-apps/rfmsr-super-resolution",
+   "RobinsAIWorld/Instant-Image-Restoration",
+   "SunderAli17/Blind_Image_Restoration",
+   "stagbrook-tech/stable-point-aware-3d",
+   "zerchen/HORT",
+   "AndrewKof/NEMOtools",
+   "Jensin/OmniPart",
+   "MNE-Zone/InstantIR",
+   "Timxjl/text2svg-demo-app",
+   "ML4RS-Anonymous/EarthEmbeddingExplorer",
+   "Reino0ne/tribev2",
+   "maxpar1/leaderboard",
+   "Thesilenthowler029/tribe-v2-api",
+   "dark-pen/quant-my-repo",
+   "shinrai/facebook-dinov2",
+   "mancai/InstantIR",
+   "DRANTECHUGSOLUTIONS/stable-point-aware-3d",
+   "rgndgn/sp3d",
+   "rgndgn/i3d",
+   "tronskel/DeLoFi",
+   "sakshi7502/SVFT_PEFT",
+   "ryfkn/house-price-prediction",
+   "Vuvo11/Demo3d_stabilityAI",
+   "GUOXIZHAO/InstantIR",
+   "fradav/text2svg-demo-app",
+   "bep40/Plonk",
+   "cavalierplance/gradio-refund-predicter",
+   "PGSCOM/starvector-8b-im2svg",
+   "MohmedAnik/ObjectOrientmodel",
+   "luquiT4/starvector-8b-im2svg",
+   "lyliang/InstantIR",
+   "liyb1995/image_embedding",
+   "ifire/OmniPart-ifire",
+   "aagha/text2svg-demo-app",
+   "akbarali9330/mening-3d-dasturim",
+   "procgne/Plonk",
+   "PsychoNay/stable-point-aware-3d",
+   "VoyagerXHF/EarthEmbeddingExplorer",
+   "fascinated23/mayascan",
+   "Truebees/DeepShield-Detectors",
+   "TerryTogyThomas/3d-object-orientation-estimation",
+   "TerryTogyThomas/3d-object-orientation-estimation-docker",
+   "souqhup/HATOO.ai",
+   "drcross/stable-point-aware-3d",
+   "geduozhao/InstantIR",
+   "poolvarine/theia",
+   "ladyFaye1998/ArtSleuth",
+   "choephix/Orient-Anything-V2",
+   "nilo-technologies/Orient-Anything-V2",
+   "sdadws/stable-point-aware-3d",
+   "bob178/stable-point-aware-3d",
+   "MasAndr/InstantIR",
+   "EliteBakerSchool/Higurama_0.1.0",
+   "alejandroalfaro/garde-embed",
+   "vaibhavshiroorkar/deepfake-detection-api",
+   "ceh-vedant/tribev2",
+   "Passpass119/InstantIR",
+   "carbonecar/recomendador-peliculas",
+   "EliteBakerSchool/copyright-api",
+   "abdelazizashraf/cloud-feature-bank",
+   "kiedistv/leaderboard",
+   "diprltz/diptrack-validador",
+   "qiaosong88/leaderboard",
+   "yeshaswi0009/D3_img",
+   "ArtemBolgov/leaderboard",
+   "mdabdulhadi/starvector-1b-im2svg",
+   "yeshaswi0009/final_Try",
+   "Keinnn1/crm-jakarta",
+   "arij155/cin-validator-service",
+   "alaa3/Statue_Story_Telling_App",
+   "vcraghav/mindmirror-brain",
+   "FDGod/OmniPart",
+   "bitirme79/ai-generated-image-detector",
+   "malyvena/leaderboard",
+   "PGSCOM/starvector-1b-im2svg",
+   "HuggingLLM/leaderboard",
+   "multimodalart/OmniPart-zerogpu",
+   "wangsh0111/leaderboard",
+   "kaotd/leaderboard",
+   "23456789ghjk/space",
+   "TheKernel01/DeForge-AIGIBench-Space"
+  ],
+  "createdAt": "2023-07-17T16:47:01.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 304368640
+   },
+   "total": 304368640
+  },
+  "usedStorage": 2435137457
+ },
+ "configs": {
+  "config.json": {
+   "architectures": [
+    "Dinov2Model"
+   ],
+   "attention_probs_dropout_prob": 0.0,
+   "drop_path_rate": 0.0,
+   "hidden_act": "gelu",
+   "hidden_dropout_prob": 0.0,
+   "hidden_size": 1024,
+   "image_size": 518,
+   "initializer_range": 0.02,
+   "layer_norm_eps": 1e-06,
+   "layerscale_value": 1.0,
+   "mlp_ratio": 4,
+   "model_type": "dinov2",
+   "num_attention_heads": 16,
+   "num_channels": 3,
+   "num_hidden_layers": 24,
+   "patch_size": 14,
+   "qkv_bias": true,
+   "torch_dtype": "float32",
+   "transformers_version": "4.31.0.dev0",
+   "use_swiglu_ffn": false
+  },
+  "preprocessor_config.json": {
+   "crop_size": {
+    "height": 224,
+    "width": 224
+   },
+   "do_center_crop": true,
+   "do_convert_rgb": true,
+   "do_normalize": true,
+   "do_rescale": true,
+   "do_resize": true,
+   "image_mean": [
+    0.485,
+    0.456,
+    0.406
+   ],
+   "image_processor_type": "BitImageProcessor",
+   "image_std": [
+    0.229,
+    0.224,
+    0.225
+   ],
+   "resample": 3,
+   "rescale_factor": 0.00392156862745098,
+   "size": {
+    "shortest_edge": 256
+   }
+  }
+ },
+ "model_card": "---\nlicense: apache-2.0\ntags:\n- dino\n- vision\n---\n\n# Vision Transformer (large-sized model) trained using DINOv2\n\nVision Transformer (ViT) model trained using the DINOv2 method. It was introduced in the paper [DINOv2: Learning Robust Visual Features without Supervision](https://arxiv.org/abs/2304.07193) by Oquab et al. and first released in [this repository](https://github.com/facebookresearch/dinov2). \n\nDisclaimer: The team releasing DINOv2 did not write a model card for this model so this model card has been written by the Hugging Face team.\n\n## Model description\n\nThe Vision Transformer (ViT) is a transformer encoder model (BERT-like) pretrained on a large collection of images in a self-supervised fashion. \n\nImages are presented to the model as a sequence of fixed-size patches, which are linearly embedded. One also adds a [CLS] token to the beginning of a sequence to use it for classification tasks. One also adds absolute position embeddings before feeding the sequence to the layers of the Transformer encoder.\n\nNote that this model does not include any fine-tuned heads. \n\nBy pre-training the model, it learns an inner representation of images that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled images for instance, you can train a standard classifier by placing a linear layer on top of the pre-trained encoder. One typically places a linear layer on top of the [CLS] token, as the last hidden state of this token can be seen as a representation of an entire image.\n\n## Intended uses & limitations\n\nYou can use the raw model for feature extraction. See the [model hub](https://huggingface.co/models?search=facebook/dinov2) to look for\nfine-tuned versions on a task that interests you.\n\n### How to use\n\nHere is how to use this model:\n\n```python\nfrom transformers import AutoImageProcessor, AutoModel\nfrom PIL import Image\nimport requests\n\nurl = 'http://images.cocodataset.org/val2017/000000039769.jpg'\nimage = Image.open(requests.get(url, stream=True).raw)\n\nprocessor = AutoImageProcessor.from_pretrained('facebook/dinov2-large')\nmodel = AutoModel.from_pretrained('facebook/dinov2-large')\n\ninputs = processor(images=image, return_tensors=\"pt\")\noutputs = model(**inputs)\nlast_hidden_states = outputs.last_hidden_state\n```\n\n### BibTeX entry and citation info\n\n```bibtex\nmisc{oquab2023dinov2,\n      title={DINOv2: Learning Robust Visual Features without Supervision}, \n      author={Maxime Oquab and Timoth\u00e9e Darcet and Th\u00e9o Moutakanni and Huy Vo and Marc Szafraniec and Vasil Khalidov and Pierre Fernandez and Daniel Haziza and Francisco Massa and Alaaeldin El-Nouby and Mahmoud Assran and Nicolas Ballas and Wojciech Galuba and Russell Howes and Po-Yao Huang and Shang-Wen Li and Ishan Misra and Michael Rabbat and Vasu Sharma and Gabriel Synnaeve and Hu Xu and Herv\u00e9 Jegou and Julien Mairal and Patrick Labatut and Armand Joulin and Piotr Bojanowski},\n      year={2023},\n      eprint={2304.07193},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV}\n}\n```"
+}

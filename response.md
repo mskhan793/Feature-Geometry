@@ -1,9 +1,9 @@
 # Coding assistant response — Feature-Geometry
 
-**Current task:** `task.md` 9d732ba, "Prepare AquaMonitor Classification frozen features".
+**Current task:** `task.md` 9d732ba, "Prepare AquaMonitor Classification frozen features". It was extended by 17f864f and 442999a: a nine-encoder shortlist, a feasibility audit for the six new candidates, and the long-term research vision, which authorises no experiments.
 
 **Status: partial, stopped before any GPU job.**
-- **Done:** data checks, manifest and integrity audit, extraction code, local tests.
+- **Done:** data checks, manifest and integrity audit, extraction code for the three baselines, local tests, and the **metadata feasibility audit of the six new candidates** (section 2e).
 - **Not yet run:** the LUMI smoke test on real images, the v1 equivalence check, the throughput measurement and the compute estimate.
 - **Not started:** the full extraction. It waits for that estimate and the author's approval, as `task.md` requires.
 
@@ -98,6 +98,29 @@ These old files are left unchanged. **Rule here:** a DataFrame index is never us
 
 **Removed while writing:** none of the earlier code. The transform-consistency check in `verify_feature_cache.py` was fixed before its first run: it had read chunk files by list position instead of chunk number.
 
+### 2e. Nine-encoder feasibility audit (`task.md` 17f864f, metadata only)
+
+**Report:** [docs/encoder_feasibility_audit.md](docs/encoder_feasibility_audit.md).
+
+**Evidence:** `docs/evidence/encoder_candidates/`. It holds the Hugging Face API answer, the config files and the model card of every repository at its immutable revision, plus a local interface check. It was produced by `scripts/encoder_candidate_audit.py` and `scripts/check_encoder_support.py`. No weights were downloaded and nothing was run.
+
+| Candidate | Exact repository found | Licence / access | Feature, dim | Blocking question |
+|---|---|---|---|---|
+| DINOv3-H+ | `facebook/dinov3-vith16plus-pretrain-lvd1689m` @ `c807c9ee` (the revision v1 pinned on LUMI) | DINOv3 licence, gated; v1 has the weights | `pooler_output`; dim to read from the LUMI cache | none |
+| SigLIP 2 So400M 384 | `…-patch16-384` @ `dd658faa` and `…-patch14-384` @ `e8e48729` | Apache-2.0 | `get_image_features`, 1152 | which patch size |
+| SigLIP 2 Giant | `…-giant-opt-patch16-384` @ `a713301b` and `…-256` @ `46d7129e` | Apache-2.0 | `get_image_features`, 1536 | which resolution |
+| PE-Core-G | `facebook/PE-Core-G14-448` @ `a6046680` (needs Meta's `perception_models` code) and Meta's timm port `…_timm` @ `f537e434` | Apache-2.0 | image embedding, 1280 | official code or timm port |
+| C-RADIOv4-H | `nvidia/C-RADIOv4-H` @ `0057b339` | NVIDIA Open Model Licence | `summary`, dim not stated | accept the repository's own code; fix one input size |
+| AIMv2 | 4 sizes × 3 resolutions (+ native / distilled / LiT) | Apple AMLR | no pooled output (patch tokens only) | which variant; which pooling |
+
+**Known dependence between models** (stated by the model cards):
+- C-RADIOv4-H is distilled from SigLIP2-g (the Giant 384 checkpoint above), DINOv3-7B and SAM3.
+- DINOv3-L and DINOv3-H+ share a family and corpus.
+
+**Not yet checked:** the LUMI side of the interface check (timm 1.0.28's PE support, cached weights, the DINOv3-H+ config). LUMI refused SSH connections on 2026-11-07, and the check will be rerun when it is reachable.
+
+**No adapter for the six candidates has been written.** `task.md` asks for them only after feasibility is confirmed and the variant questions are settled.
+
 ## 3. Validation actually run
 
 **Unit and integration tests:** `.venv/bin/python -m pytest -q` gives **24 passed**:
@@ -115,6 +138,8 @@ The fixtures are a tiny HDF5 and parquet. In the fixture HDF5 the images are in 
 
 **Data checks:** the alignment audit, the release download, the full byte comparison and the index check in sections 2a–2c.
 
+**Encoder audit:** every number and revision in the report checked against the saved evidence. The only values not found literally are deliberate roundings (e.g. 309,197,824 → 309.2 M) or digits inside revision hashes.
+
 **Not run yet:**
 - **The real-weight run on the Dell:** a DINOv3-L run of the CLI on 256 real images was stopped before it started (the permission request closed). Nothing was written.
 - **Any GPU run of the new code.**
@@ -131,16 +156,22 @@ The smoke test would be one `dev-g` job, 1 node, about 1 hour, project 462001534
 **From the measured throughput I will report:**
 - per-encoder dimensions;
 - disk use (fp32);
-- runtime and GPU-hours for 2,708,023 images × 3 encoders;
+- runtime and GPU-hours for 2,708,023 images × 3 encoders (the six candidates follow once their adapters exist; each gets its own smoke check);
 - the exact extraction job.
 
 The cache would go under `/flash/project_462001534/feature_geometry/`.
 
 ## 5. Open decisions
 
-1. Approve the LUMI smoke test in section 4?
-2. Full extraction: only after the estimate, as `task.md` requires.
-3. Still open from before:
+1. Approve the LUMI smoke test in section 4 (three baselines)?
+2. Choose the candidate variants (report section 3):
+   - SigLIP 2 So400M patch 16 or 14;
+   - SigLIP 2 Giant 384 or 256;
+   - PE-Core-G official code or timm port;
+   - C-RADIOv4-H remote code and input size;
+   - AIMv2 variant and pooling.
+3. Full extraction: only after the estimate, as `task.md` requires.
+4. Still open from before:
    - aligning the README's synthetic-experiment wording with the rule (`task.md` step 6 asks for this);
    - the few-shot specimen-count mismatch.
 

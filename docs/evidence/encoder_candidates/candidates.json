@@ -1,0 +1,1202 @@
+[
+ {
+  "repo": "imageomics/bioclip-2",
+  "revision": "2957b322090f9cb17ae72c71981c7218a28d81e0",
+  "last_modified": "2026-05-20T22:06:51.000Z",
+  "gated": false,
+  "private": false,
+  "license": [
+   "mit"
+  ],
+  "license_name": null,
+  "license_link": null,
+  "library": "open_clip",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": null,
+  "parameters_by_dtype": null,
+  "weight_files": [
+   "open_clip_model.safetensors",
+   "open_clip_pytorch_model.bin"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "open_clip_config.json": {
+    "preprocess_cfg": {
+     "mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+     ],
+     "std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+     ],
+     "interpolation": "bicubic",
+     "resize_mode": "shortest"
+    },
+    "model_cfg": {
+     "embed_dim": 768,
+     "vision_cfg": {
+      "image_size": 224,
+      "layers": 24,
+      "width": 1024,
+      "patch_size": 14
+     },
+     "text_cfg": {
+      "context_length": 77,
+      "vocab_size": 49408,
+      "width": 768,
+      "heads": 12,
+      "layers": 12
+     }
+    }
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "facebook/dinov2-large",
+  "revision": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "last_modified": "2023-09-06T11:23:50.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 304368640,
+  "parameters_by_dtype": {
+   "F32": 304368640
+  },
+  "weight_files": [
+   "model.safetensors",
+   "pytorch_model.bin"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Dinov2Model"
+    ],
+    "model_type": "dinov2",
+    "hidden_size": 1024,
+    "image_size": 518,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 16
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 256
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.485,
+     0.456,
+     0.406
+    ],
+    "image_std": [
+     0.229,
+     0.224,
+     0.225
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+  "last_modified": "2025-08-19T09:00:52.000Z",
+  "gated": "manual",
+  "private": false,
+  "license": "other",
+  "license_name": "dinov3-license",
+  "license_link": "https://ai.meta.com/resources/models-and-libraries/dinov3-license",
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 303129600,
+  "parameters_by_dtype": {
+   "F32": 303129600
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {},
+   "preprocessor_config.json": {}
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+  "revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc",
+  "last_modified": "2025-08-19T09:00:48.000Z",
+  "gated": "manual",
+  "private": false,
+  "license": "other",
+  "license_name": "dinov3-license",
+  "license_link": "https://ai.meta.com/resources/models-and-libraries/dinov3-license",
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 840592640,
+  "parameters_by_dtype": {
+   "F32": 840592640
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {},
+   "preprocessor_config.json": {}
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "google/siglip2-so400m-patch14-384",
+  "revision": "e8e487298228002f3d8a82e0cd5c8ea9c567f57f",
+  "last_modified": "2025-02-21T04:03:58.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": 1136008498,
+  "parameters_by_dtype": {
+   "F32": 1136008498
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "model_type": "siglip",
+    "vision_config": {
+     "model_type": "siglip_vision_model",
+     "hidden_size": 1152,
+     "image_size": 384,
+     "patch_size": 14,
+     "num_hidden_layers": 27,
+     "num_attention_heads": 16,
+     "intermediate_size": 4304
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "height": 384,
+     "width": 384
+    },
+    "resample": 2,
+    "image_mean": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "image_std": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "google/siglip2-so400m-patch16-384",
+  "revision": "dd658faac399427308559e2c3ac1e99cbe43845d",
+  "last_modified": "2025-02-21T04:04:04.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": 1136039602,
+  "parameters_by_dtype": {
+   "F32": 1136039602
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "model_type": "siglip",
+    "vision_config": {
+     "model_type": "siglip_vision_model",
+     "hidden_size": 1152,
+     "image_size": 384,
+     "num_hidden_layers": 27,
+     "num_attention_heads": 16,
+     "intermediate_size": 4304
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "height": 384,
+     "width": 384
+    },
+    "resample": 2,
+    "image_mean": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "image_std": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "google/siglip2-giant-opt-patch16-256",
+  "revision": "46d7129e1aa1527cc5a44d86fb35250df3abf0aa",
+  "last_modified": "2025-02-21T04:03:51.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": 1871393906,
+  "parameters_by_dtype": {
+   "F32": 1871393906
+  },
+  "weight_files": [
+   "model-00001-of-00002.safetensors",
+   "model-00002-of-00002.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "model_type": "siglip",
+    "vision_config": {
+     "model_type": "siglip_vision_model",
+     "hidden_size": 1536,
+     "image_size": 256,
+     "num_hidden_layers": 40,
+     "num_attention_heads": 16,
+     "intermediate_size": 6144
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "height": 256,
+     "width": 256
+    },
+    "resample": 2,
+    "image_mean": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "image_std": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "google/siglip2-giant-opt-patch16-384",
+  "revision": "a713301b217d38485fb2204c808367d10bc3cc40",
+  "last_modified": "2025-02-21T04:03:54.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": 1871885426,
+  "parameters_by_dtype": {
+   "F32": 1871885426
+  },
+  "weight_files": [
+   "model-00001-of-00002.safetensors",
+   "model-00002-of-00002.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "model_type": "siglip",
+    "vision_config": {
+     "model_type": "siglip_vision_model",
+     "hidden_size": 1536,
+     "image_size": 384,
+     "num_hidden_layers": 40,
+     "num_attention_heads": 16,
+     "intermediate_size": 6144
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "height": 384,
+     "width": 384
+    },
+    "resample": 2,
+    "image_mean": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "image_std": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "facebook/PE-Core-G14-448",
+  "revision": "a6046680086f67d1f24d4b465a240de0578dfc0b",
+  "last_modified": "2025-04-30T17:02:32.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "perception-encoder",
+  "pipeline": "zero-shot-image-classification",
+  "parameters_safetensors": null,
+  "parameters_by_dtype": null,
+  "weight_files": [
+   "PE-Core-G14-448.pt"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.yaml": ""
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "facebook/vit_pe_core_gigantic_patch14_448_timm",
+  "revision": "f537e43432d65cae21cc4e44738a8338482d7dcf",
+  "last_modified": "2025-04-25T22:06:30.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apache-2.0",
+  "license_name": null,
+  "license_link": null,
+  "library": "perception-encoder",
+  "pipeline": null,
+  "parameters_safetensors": 1882032640,
+  "parameters_by_dtype": {
+   "F32": 1882032640
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [],
+  "config_fields": {
+   "config.json": {
+    "image_size": 448,
+    "patch_size": 14
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "nvidia/C-RADIOv4-H",
+  "revision": "0057b339059c0b9e1b4ba996f975410ebbfdfcc8",
+  "last_modified": "2026-01-30T12:40:28.000Z",
+  "gated": false,
+  "private": false,
+  "license": "other",
+  "license_name": "nvidia-open-model-license",
+  "license_link": "https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf",
+  "library": "transformers",
+  "pipeline": "feature-extraction",
+  "parameters_safetensors": 651645448,
+  "parameters_by_dtype": {
+   "I64": 2,
+   "F32": 651645446
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [
+   "adaptor_attn.py",
+   "adaptor_base.py",
+   "adaptor_generic.py",
+   "adaptor_mlp.py",
+   "adaptor_module_factory.py",
+   "adaptor_registry.py",
+   "cls_token.py",
+   "common.py",
+   "dinov2_arch.py",
+   "dual_hybrid_vit.py",
+   "enable_cpe_support.py",
+   "enable_damp.py",
+   "enable_spectral_reparam.py",
+   "eradio_model.py",
+   "extra_models.py",
+   "extra_timm_models.py",
+   "feature_normalizer.py",
+   "forward_intermediates.py",
+   "hf_model.py",
+   "input_conditioner.py",
+   "open_clip_adaptor.py",
+   "radio_model.py",
+   "siglip2_adaptor.py",
+   "utils.py",
+   "vit_patch_generator.py",
+   "vitdet.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "RADIOModel"
+    ],
+    "patch_size": 16,
+    "auto_map": {
+     "AutoConfig": "hf_model.RADIOConfig",
+     "AutoModel": "hf_model.RADIOModel"
+    },
+    "max_resolution": 2048,
+    "preferred_resolution": [
+     512,
+     512
+    ]
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 512
+    },
+    "crop_size": {
+     "height": 512,
+     "width": 512
+    },
+    "do_center_crop": false,
+    "resample": 3,
+    "do_normalize": false
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "nvidia/C-RADIOv4-SO400M",
+  "revision": "c0457f5dc26ca145f954cd4fc5bb6114e5705ad8",
+  "last_modified": "2026-01-30T12:40:09.000Z",
+  "gated": false,
+  "private": false,
+  "license": "other",
+  "license_name": "nvidia-open-model-license",
+  "license_link": "https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf",
+  "library": "transformers",
+  "pipeline": "feature-extraction",
+  "parameters_safetensors": 431237240,
+  "parameters_by_dtype": {
+   "I64": 2,
+   "F32": 431237238
+  },
+  "weight_files": [
+   "model.safetensors"
+  ],
+  "code_files": [
+   "adaptor_attn.py",
+   "adaptor_base.py",
+   "adaptor_generic.py",
+   "adaptor_mlp.py",
+   "adaptor_module_factory.py",
+   "adaptor_registry.py",
+   "cls_token.py",
+   "common.py",
+   "dinov2_arch.py",
+   "dual_hybrid_vit.py",
+   "enable_cpe_support.py",
+   "enable_damp.py",
+   "enable_spectral_reparam.py",
+   "eradio_model.py",
+   "extra_models.py",
+   "extra_timm_models.py",
+   "feature_normalizer.py",
+   "forward_intermediates.py",
+   "hf_model.py",
+   "input_conditioner.py",
+   "open_clip_adaptor.py",
+   "radio_model.py",
+   "siglip2_adaptor.py",
+   "utils.py",
+   "vit_patch_generator.py",
+   "vitdet.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "RADIOModel"
+    ],
+    "patch_size": 16,
+    "auto_map": {
+     "AutoConfig": "hf_model.RADIOConfig",
+     "AutoModel": "hf_model.RADIOModel"
+    },
+    "max_resolution": 2048,
+    "preferred_resolution": [
+     512,
+     512
+    ]
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 512
+    },
+    "crop_size": {
+     "height": 512,
+     "width": 512
+    },
+    "do_center_crop": false,
+    "resample": 3,
+    "do_normalize": false
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-large-patch14-224",
+  "revision": "fcb5093a9c5b3efb7db5acee213849967fd18210",
+  "last_modified": "2025-07-08T16:19:14.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 309197824,
+  "parameters_by_dtype": {
+   "F32": 309197824
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 1024,
+    "image_size": 224,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 8,
+    "intermediate_size": 2816,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 224
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-huge-patch14-224",
+  "revision": "172051d9df825cda55607cfe9016da30f249a133",
+  "last_modified": "2025-07-08T16:19:30.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 680851968,
+  "parameters_by_dtype": {
+   "F32": 680851968
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 1536,
+    "image_size": 224,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 12,
+    "intermediate_size": 4096,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 224
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-1B-patch14-224",
+  "revision": "1f99ee5baffa9cfbebb0343b118458bb40c9c23c",
+  "last_modified": "2025-07-08T16:17:49.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 1234958336,
+  "parameters_by_dtype": {
+   "F32": 1234958336
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 2048,
+    "image_size": 224,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 16,
+    "intermediate_size": 5632,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 224
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-3B-patch14-224",
+  "revision": "0c4b6633c3128d8a977eef1612a486d33de51d8c",
+  "last_modified": "2025-07-08T16:18:34.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 2720658432,
+  "parameters_by_dtype": {
+   "F32": 2720658432
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model-00001-of-00003.safetensors",
+   "model-00002-of-00003.safetensors",
+   "model-00003-of-00003.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 3072,
+    "image_size": 224,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 24,
+    "intermediate_size": 8192,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 224
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-large-patch14-448",
+  "revision": "6ef0b3123a5ec9a1c0482773e261d96161c64927",
+  "last_modified": "2025-07-08T16:25:03.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 309984256,
+  "parameters_by_dtype": {
+   "F32": 309984256
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 1024,
+    "image_size": 448,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 8,
+    "intermediate_size": 2816,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 448
+    },
+    "crop_size": {
+     "height": 448,
+     "width": 448
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-huge-patch14-448",
+  "revision": "f723839533d3bbdc969f541c864789f531ec0e5c",
+  "last_modified": "2025-07-08T16:25:38.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 682031616,
+  "parameters_by_dtype": {
+   "F32": 682031616
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 1536,
+    "image_size": 448,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 12,
+    "intermediate_size": 4096,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 448
+    },
+    "crop_size": {
+     "height": 448,
+     "width": 448
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-1B-patch14-448",
+  "revision": "741197e994c36ab462592f9a5145c0cb34702f51",
+  "last_modified": "2025-07-08T16:26:22.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 1236531200,
+  "parameters_by_dtype": {
+   "F32": 1236531200
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 2048,
+    "image_size": 448,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 16,
+    "intermediate_size": 5632,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 448
+    },
+    "crop_size": {
+     "height": 448,
+     "width": 448
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-3B-patch14-448",
+  "revision": "3501a9161cce2bbf5e46ad86abab4bc57ec6b1e5",
+  "last_modified": "2025-07-08T16:27:04.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 2723017728,
+  "parameters_by_dtype": {
+   "F32": 2723017728
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model-00001-of-00003.safetensors",
+   "model-00002-of-00003.safetensors",
+   "model-00003-of-00003.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 3072,
+    "image_size": 448,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 24,
+    "intermediate_size": 8192,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 448
+    },
+    "crop_size": {
+     "height": 448,
+     "width": 448
+    },
+    "do_center_crop": true,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ },
+ {
+  "repo": "apple/aimv2-large-patch14-native",
+  "revision": "f733a03728c34470cf6df09bb16dc848b73e41ea",
+  "last_modified": "2025-07-08T16:31:17.000Z",
+  "gated": false,
+  "private": false,
+  "license": "apple-amlr",
+  "license_name": null,
+  "license_link": null,
+  "library": "transformers",
+  "pipeline": "image-feature-extraction",
+  "parameters_safetensors": 308935680,
+  "parameters_by_dtype": {
+   "F32": 308935680
+  },
+  "weight_files": [
+   "mlx_model.safetensors",
+   "model.safetensors"
+  ],
+  "code_files": [
+   "configuration_aimv2.py",
+   "modeling_aimv2.py",
+   "modeling_flax_aimv2.py"
+  ],
+  "config_fields": {
+   "config.json": {
+    "architectures": [
+     "Aimv2VisionModel"
+    ],
+    "model_type": "aimv2_vision_model",
+    "hidden_size": 1024,
+    "image_size": 224,
+    "patch_size": 14,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 8,
+    "intermediate_size": 2816,
+    "auto_map": {
+     "AutoConfig": "configuration_aimv2.AIMv2Config",
+     "AutoModel": "modeling_aimv2.AIMv2Model",
+     "FlaxAutoModel": "modeling_flax_aimv2.FlaxAIMv2Model"
+    }
+   },
+   "preprocessor_config.json": {
+    "size": {
+     "shortest_edge": 224
+    },
+    "crop_size": {
+     "height": 224,
+     "width": 224
+    },
+    "do_center_crop": false,
+    "resample": 3,
+    "image_mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "image_std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "do_normalize": true,
+    "rescale_factor": 0.00392156862745098
+   }
+  },
+  "model_card_saved": true
+ }
+]

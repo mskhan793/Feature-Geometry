@@ -1,0 +1,33 @@
+{
+ "versions": {
+  "torch": "2.10.0+cpu",
+  "torchvision": "0.25.0+cpu",
+  "transformers": "5.10.1",
+  "timm": "1.0.31",
+  "open_clip": "3.3.0",
+  "huggingface_hub": "1.33.0"
+ },
+ "transformers_classes": {
+  "Dinov2Model": true,
+  "DINOv3ViTModel": true,
+  "SiglipModel": true,
+  "SiglipVisionModel": true,
+  "Siglip2Model": true,
+  "Aimv2VisionModel": true,
+  "Aimv2Model": true,
+  "CLIPImageProcessor": true
+ },
+ "timm_pe_models": [
+  "vit_pe_core_base_patch16_224",
+  "vit_pe_core_gigantic_patch14_448",
+  "vit_pe_core_large_patch14_336",
+  "vit_pe_core_small_patch16_384",
+  "vit_pe_core_tiny_patch16_384"
+ ],
+ "hf_hub_dir": "/home/aijyu/.cache/huggingface/hub",
+ "cached": {
+  "facebook/dinov3-vitl16-pretrain-lvd1689m": [
+   "ea8dc2863c51be0a264bab82070e3e8836b02d51"
+  ]
+ }
+}

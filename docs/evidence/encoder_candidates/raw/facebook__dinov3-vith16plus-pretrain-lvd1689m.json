@@ -1,0 +1,137 @@
+{
+ "api": {
+  "_id": "6892f5130e01fa0d90417c3c",
+  "id": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+  "private": false,
+  "pipeline_tag": "image-feature-extraction",
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "safetensors",
+   "dinov3_vit",
+   "image-feature-extraction",
+   "dino",
+   "dinov3",
+   "arxiv:2508.10104",
+   "en",
+   "base_model:facebook/dinov3-vit7b16-pretrain-lvd1689m",
+   "base_model:finetune:facebook/dinov3-vit7b16-pretrain-lvd1689m",
+   "license:other",
+   "endpoints_compatible",
+   "region:us"
+  ],
+  "downloads": 59474,
+  "likes": 195,
+  "modelId": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+  "author": "facebook",
+  "sha": "c807c9eeea853df70aec4069e6f56b28ddc82acc",
+  "lastModified": "2025-08-19T09:00:48.000Z",
+  "gated": "manual",
+  "disabled": false,
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "DINOv3ViTModel"
+   ],
+   "model_type": "dinov3_vit"
+  },
+  "cardData": {
+   "extra_gated_fields": {
+    "First Name": "text",
+    "Last Name": "text",
+    "Date of birth": "date_picker",
+    "Country": "country",
+    "Affiliation": "text",
+    "Job title": {
+     "type": "select",
+     "options": [
+      "Student",
+      "Research Graduate",
+      "AI researcher",
+      "AI developer/engineer",
+      "Reporter",
+      "Other"
+     ]
+    },
+    "geo": "ip_location",
+    "By clicking Submit below I accept the terms of the license and acknowledge that the information I provide will be collected stored processed and shared in accordance with the Meta Privacy Policy": "checkbox"
+   },
+   "extra_gated_description": "The information you provide will be collected, stored, processed and shared in accordance with the [Meta Privacy Policy](https://www.facebook.com/privacy/policy/).",
+   "extra_gated_button_content": "Submit",
+   "language": [
+    "en"
+   ],
+   "tags": [
+    "dino",
+    "dinov3",
+    "arxiv:2508.10104"
+   ],
+   "license": "other",
+   "license_name": "dinov3-license",
+   "license_link": "https://ai.meta.com/resources/models-and-libraries/dinov3-license",
+   "base_model": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+   "pipeline_tag": "image-feature-extraction",
+   "library_name": "transformers"
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModel",
+   "pipeline_tag": "image-feature-extraction",
+   "processor": "AutoImageProcessor"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "LICENSE.md"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "preprocessor_config.json"
+   }
+  ],
+  "spaces": [
+   "mteb/leaderboard",
+   "merve/dinov3-viz",
+   "manu02/DINOv3-Interactive-Patch-Cosine-Similarity",
+   "sayedM/DINOv3-features",
+   "sayedM/DINOv3-PCA-visualization",
+   "silveroxides/Lodestone-Tagger-UI",
+   "Longxiang-ai/TransNormal",
+   "Thouph/lode-tagger-experiment",
+   "ShesterG/visual-tree",
+   "ClintHardwood/lode-tagger-experiment",
+   "xiaopht/ImageCluster4.0",
+   "AndreiM82/DINOv3-Interactive-Patch-Cosine-Similarity",
+   "0xjoy/DINOv3-Interactive-Patch-Cosine-Similarity",
+   "LiamCr965/DINOv3-Interactive-Patch-Cosine-Similarity",
+   "lalamony2017/tg-image-search",
+   "akhaliq/idol-studio"
+  ],
+  "createdAt": "2025-08-06T06:24:19.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 840592640
+   },
+   "total": 840592640
+  },
+  "usedStorage": 3362432800
+ },
+ "configs": {
+  "config.json": {
+   "_http_error": 401
+  },
+  "preprocessor_config.json": {
+   "_http_error": 401
+  }
+ },
+ "model_card": "---\nextra_gated_fields:\n  First Name: text\n  Last Name: text\n  Date of birth: date_picker\n  Country: country\n  Affiliation: text\n  Job title:\n    type: select\n    options:\n      - Student\n      - Research Graduate\n      - AI researcher\n      - AI developer/engineer\n      - Reporter\n      - Other\n  geo: ip_location\n  By clicking Submit below I accept the terms of the license and acknowledge that the information I provide will be collected stored processed and shared in accordance with the Meta Privacy Policy: checkbox\nextra_gated_description: >-\n  The information you provide will be collected, stored, processed and shared in\n  accordance with the [Meta Privacy\n  Policy](https://www.facebook.com/privacy/policy/).\nextra_gated_button_content: Submit\nlanguage:\n- en\ntags:\n- dino\n- dinov3\n- arxiv:2508.10104\nlicense: other\nlicense_name: dinov3-license\nlicense_link: https://ai.meta.com/resources/models-and-libraries/dinov3-license\nbase_model: facebook/dinov3-vit7b16-pretrain-lvd1689m\npipeline_tag: image-feature-extraction\nlibrary_name: transformers\n---\n\n# Model Card for DINOv3\n\nDINOv3 is a family of versatile vision foundation models that outperforms the specialized state of the art across a broad range of settings, without fine-tuning. DINOv3 produces high-quality dense features that achieve outstanding performance on various vision tasks, significantly surpassing previous self- and weakly-supervised foundation models.\n\n## Model Details\n\nThese are Vision Transformer and ConvNeXt models trained following the method described in the DINOv3 paper. 12 models are provided:\n\n- 10 models pretrained on web data (LVD-1689M dataset)\n  - 1 ViT-7B trained from scratch,\n  - 5 ViT-S/S+/B/L/H+ models distilled from the ViT-7B,\n  - 4 ConvNeXt-{T/S/B/L} models distilled from the ViT-7B,\n- 2 models pretrained on satellite data (SAT-493M dataset)\n  - 1 ViT-7B trained from scratch\n  - 1 ViT-L distilled from the ViT-7B\n\n\nEach Transformer-based model takes an image as input and returns a class token, patch tokens (and register tokens). These models follow a ViT architecture, with a patch size of 16. For a 224x224 image, this results in 1 class token + 4 register tokens + 196 patch tokens = 201 tokens (for DINOv2 with registers this resulted in 1 + 4 + 256 = 261 tokens).\n\nThe models can accept larger images provided the image shapes are multiples of the patch size (16). If this condition is not verified, the model will crop to the closest smaller multiple of the patch size.\n\n### Model Description\n\n- **Developed by:** Meta AI\n- **Model type:** Vision Transformer, ConvNeXt\n- **License:** [DINOv3 License](https://ai.meta.com/resources/models-and-libraries/dinov3-license/)\n\n### Model Sources\n\n- **Repository:** [https://github.com/facebookresearch/dinov3](https://github.com/facebookresearch/dinov3)\n- **Paper:** [https://arxiv.org/abs/2508.10104](https://arxiv.org/abs/2508.10104)\n\n## Uses\n\nThe models are vision backbones providing multi-purpose features for downstream tasks.\n\n### Direct Use\n\nThe models can be used without fine-tuning, with downstream classifiers as simple as linear layers, to obtain competitive results:\n\n- on image classification, using k-NN classifiers on the class token\n- on image classification, with logistic regression classifiers applied on the class token\n- on image classification, with a linear layer applied on the class token and the average of the patch tokens\n- on image retrieval using nearest neighbors\n- on geometric and semantic 3D keypoint correspondances\n- on depth estimation, semantic segmentation, using linear layers\n- on unsupervised object discovery\n- on video segmentation tracking\n- on video classification, using a small 4-layer attentive probe\n\n### Downstream Use\n\nWhile fine-tuning the models can yield some gains, it is recommended to keep this option as a last resort: the frozen features are expected to provide good performance out-of-the-box.\n\n## Bias, Risks, and Limitations\n\nCompared to DINOv2 and SEERv2, DINOv3 delivers somewhat consistent performance across income categories on geographical fairness and diversity, although with a notable performance drop in the low-income bucket compared to the highest-income bucket.\n\nDINOv3 also achieves relatively good scores across different regions, improving over its predecessor DINOv2. However, a relative difference is still observed between Europe and Africa.\n\n### Recommendations\n\nFine-tuning is expected to increase the biases in the features produced by the model as they will be tuned to the fine-tuning labels.\n\n## How to Get Started with the Model\n\nThe example below demonstrates how to obtain an image embedding with [Pipeline] or the [AutoModel] class.\n\n```python\nfrom transformers import pipeline\nfrom transformers.image_utils import load_image\n\nurl = \"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/pipeline-cat-chonk.jpeg\"\nimage = load_image(url)\n\nfeature_extractor = pipeline(\n    model=\"facebook/dinov3-vith16plus-pretrain-lvd1689m\",\n    task=\"image-feature-extraction\", \n)\nfeatures = feature_extractor(image)\n```\n\n```python\nimport torch\nfrom transformers import AutoImageProcessor, AutoModel\nfrom transformers.image_utils import load_image\n\nurl = \"http://images.cocodataset.org/val2017/000000039769.jpg\"\nimage = load_image(url)\n\npretrained_model_name = \"facebook/dinov3-vith16plus-pretrain-lvd1689m\"\nprocessor = AutoImageProcessor.from_pretrained(pretrained_model_name)\nmodel = AutoModel.from_pretrained(\n    pretrained_model_name, \n    device_map=\"auto\", \n)\n\ninputs = processor(images=image, return_tensors=\"pt\").to(model.device)\nwith torch.inference_mode():\n    outputs = model(**inputs)\n\npooled_output = outputs.pooler_output\nprint(\"Pooled output shape:\", pooled_output.shape)\n```\n\n## Training Details\n\n### Training Data\n\n- Web dataset (LVD-1689M): a curated dataset of 1,689 millions of images extracted from a large data\npool of 17 billions web images collected from public posts on Instagram\n\n- Satellite dataset (SAT-493M): a dataset of 493 millions of 512x512 images sampled randomly from Maxar RGB ortho-rectified imagery at 0.6 meter resolution\n\n### Training Procedure\n\n**Training objective:**\n\n- DINO self-distillation loss with multi-crop\n- iBOT masked-image modeling loss\n- KoLeo regularization on [CLS] tokens\n- Gram anchoring\n\n- **Training regime:** PyTorch FSDP2 (with bf16 and fp8 matrix multiplications)\n\n**Distillation:**\n\n- Distillation follows the standard DINOv3 pretraining procedure, except the teacher is a frozen pretrained ViT-7B.\n\n## Evaluation\n\n**Results**\n\nThe reader is referred to the associated paper for details on the evaluation protocols\n\n*Results for ViT backbones pretrained (or distilled) on web (LVD-1689M)*\n\n<table>\n  <tr>\n    <th></th>\n    <!-- <th></th> -->\n    <th colspan=\"4\">Global Tasks</th>\n    <th colspan=\"5\">Dense Tasks</th>\n  </tr>\n  <tr>\n    <th>Model</th>\n    <!-- <th>Dataset</th> -->\n    <th>IN-ReaL</th>\n    <th>IN-R</th>\n    <th>Obj.Net</th>\n    <th>Ox.-H</th>\n    <th>ADE20k</th>\n    <th>NYU\u2193</th>\n    <th>DAVIS</th>\n    <th>NAVI</th>\n    <th>SPair</th>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-S/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">87.0</td>\n    <td align=\"right\">60.4</td>\n    <td align=\"right\">50.9</td>\n    <td align=\"right\">49.5</td>\n    <td align=\"right\">47.0</td>\n    <td align=\"right\">0.403</td>\n    <td align=\"right\">72.7</td>\n    <td align=\"right\">56.3</td>\n    <td align=\"right\">50.4</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-S+/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">88.0</td>\n    <td align=\"right\">68.8</td>\n    <td align=\"right\">54.6</td>\n    <td align=\"right\">50.0</td>\n    <td align=\"right\">48.8</td>\n    <td align=\"right\">0.399</td>\n    <td align=\"right\">75.5</td>\n    <td align=\"right\">57.1</td>\n    <td align=\"right\">55.2</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-B/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">89.3</td>\n    <td align=\"right\">76.7</td>\n    <td align=\"right\">64.1</td>\n    <td align=\"right\">58.5</td>\n    <td align=\"right\">51.8</td>\n    <td align=\"right\">0.373</td>\n    <td align=\"right\">77.2</td>\n    <td align=\"right\">58.8</td>\n    <td align=\"right\">57.2</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-L/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">90.2</td>\n    <td align=\"right\">88.1</td>\n    <td align=\"right\">74.8</td>\n    <td align=\"right\">63.1</td>\n    <td align=\"right\">54.9</td>\n    <td align=\"right\">0.352</td>\n    <td align=\"right\">79.9</td>\n    <td align=\"right\">62.3</td>\n    <td align=\"right\">61.3</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-H+/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">90.3</td>\n    <td align=\"right\">90.0</td>\n    <td align=\"right\">78.6</td>\n    <td align=\"right\">64.5</td>\n    <td align=\"right\">54.8</td>\n    <td align=\"right\">0.352</td>\n    <td align=\"right\">79.3</td>\n    <td align=\"right\">63.3</td>\n    <td align=\"right\">56.3</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-7B/16</td>\n    <!-- <td>LVD-1689M</td> -->\n    <td align=\"right\">90.4</td>\n    <td align=\"right\">91.1</td>\n    <td align=\"right\">91.1</td>\n    <td align=\"right\">72.8</td>\n    <td align=\"right\">55.9</td>\n    <td align=\"right\">0.309</td>\n    <td align=\"right\">79.7</td>\n    <td align=\"right\">64.4</td>\n    <td align=\"right\">58.7</td>\n  </tr>\n</table>\n\n*Results for ConvNeXt backbones distilled on web (LVD-1689M)*\n\n<table>\n  <tr>\n    <th></th>\n    <th colspan=\"6\">Global Tasks</th>\n    <th colspan=\"2\">Dense Tasks</th>\n  </tr>\n  <tr>\n    <th>Model</th>\n    <th colspan=\"2\">IN-ReaL</th>\n    <th colspan=\"2\">IN-R</th>\n    <th colspan=\"2\">Obj.Net</th>\n    <th>ADE20k</th>\n    <th>NYU\u2193</th>\n  </tr>\n  <tr>\n    <td></th>\n    <td>@256px</td>\n    <td>@512px</td>\n    <td>@256px</td>\n    <td>@512px</td>\n    <td>@256px</td>\n    <td>@512px</td>\n    <td colspan=\"2\"></td>\n  </tr>\n  <tr>\n    <td>DINOv3 ConvNeXt Tiny</td>\n    <td align=\"right\">86.6</td>\n    <td align=\"right\">87.7</td>\n    <td align=\"right\">73.7</td>\n    <td align=\"right\">74.1</td>\n    <td align=\"right\">52.6</td>\n    <td align=\"right\">58.7</td>\n    <td align=\"right\">42.7</td>\n    <td align=\"right\">0.448</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ConvNeXt Small</td>\n    <td align=\"right\">87.9</td>\n    <td align=\"right\">88.7</td>\n    <td align=\"right\">73.7</td>\n    <td align=\"right\">74.1</td>\n    <td align=\"right\">52.6</td>\n    <td align=\"right\">58.7</td>\n    <td align=\"right\">44.8</td>\n    <td align=\"right\">0.432</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ConvNeXt Base</td>\n    <td align=\"right\">88.5</td>\n    <td align=\"right\">89.2</td>\n    <td align=\"right\">77.2</td>\n    <td align=\"right\">78.2</td>\n    <td align=\"right\">56.2</td>\n    <td align=\"right\">61.3</td>\n    <td align=\"right\">46.3</td>\n    <td align=\"right\">0.420</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ConvNeXt Large</td>\n    <td align=\"right\">88.9</td>\n    <td align=\"right\">89.4</td>\n    <td align=\"right\">81.3</td>\n    <td align=\"right\">82.4</td>\n    <td align=\"right\">59.3</td>\n    <td align=\"right\">65.2</td>\n    <td align=\"right\">47.8</td>\n    <td align=\"right\">0.403</td>\n  </tr>\n</table>\n\n*Results for ViT backbones pretrained (or distilled) on satellite (SAT-493M)*\n\n<table>\n  <tr>\n    <th></th>\n    <th colspan=\"7\">(GEO-Bench) Classification</th>\n  </tr>\n  <tr>\n    <th>Model</ht>\n    <th>m-BEnet</th>\n    <th>m-brick-kiln\n    <th>m-eurosat</th>\n    <th>m-forestnet</th>\n    <th>m-pv4ger</th>\n    <th>m-so2sat</th>\n    <th>mean</th>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-L/16</td>\n    <td>73.0</td>\n    <td>96.5</td>\n    <td>94.1</td>\n    <td>60.6</td>\n    <td>96.0</td>\n    <td>57.4</td>\n    <td>79.6</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-7B/16</td>\n    <td>74.0</td>\n    <td>97.2</td>\n    <td>94.8</td>\n    <td>62.3</td>\n    <td>96.1</td>\n    <td>62.1</td>\n    <td>81.1</td>\n  </tr>\n  <tr>\n    <th></th>\n    <th colspan=\"7\">(GEO-Bench) Segmentation</th>\n  </tr>\n  <tr>\n    <th>Model</th>\n    <th>m-cashew</th>\n    <th>m-chesapeake</th>\n    <th>m-NeonTree</th>\n    <th>m-nz-cattle</th>\n    <th>m-pv4ger-seg</th>\n    <th>m-SA-crop</th>\n    <th>mean</th>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-L/16</td>\n    <td>94.2</td>\n    <td>75.6</td>\n    <td>61.8</td>\n    <td>83.7</td>\n    <td>95.2</td>\n    <td>36.8</td>\n    <td>74.5</td>\n  </tr>\n  <tr>\n    <td>DINOv3 ViT-7B/16</td>\n    <td>94.1</td>\n    <td>76.6</td>\n    <td>62.6</td>\n    <td>83.4</td>\n    <td>95.5</td>\n    <td>37.6</td>\n    <td>75.0</td>\n  </tr>\n</table>\n\n\n## Environmental Impact\n\n- **Hardware Type:** Nvidia H100\n- **Hours used:** 61,440 hours for ViT-7B model training\n- **Cloud Provider:** Private infrastructure\n- **Compute Region:** USA\n- **Carbon Emitted:** 18t CO2eq\n\n## Technical Specifications\n\n### Model Architecture and Objective\n\nVision Transformer models:\n\n- ViT-S (21M parameters): patch size 16, embedding dimension 384, 4 register tokens, 6 heads, MLP FFN, RoPE\n- ViT-S+ (29M parameters): patch size 16, embedding dimension 384, 4 register tokens, 6 heads, SwiGLU FFN, RoPE\n- ViT-B (86M parameters): patch size 16, embedding dimension 768, 4 register tokens, 12 heads, MLP FFN, RoPE\n- ViT-L (300M parameters): patch size 16, embedding dimension 1024, 4 register tokens, 16 heads, MLP FFN, RoPE\n- ViT-H+ (840M parameters): patch size 16, embedding dimension 1280, 4 register tokens, 20 heads, SwiGLU FFN, RoPE\n- ViT-7B (6716M parameters): patch size 16, embedding dimension 4096, 4 register tokens, 32 heads, SwiGLU FFN, RoPE\n\nConvNeXt models:\n\n- ConvNeXt Tiny (29M parameters)\n- ConvNeXt Small (50M parameters)\n- ConvNeXt Base (89M parameters)\n- ConvNeXt Large (198M parameters)\n\n### Compute Infrastructure\n\n#### Hardware\n\nNvidia H100 GPUs\n\n#### Software\n\nPyTorch 2.7\n\n## More Information\n\nSee the [blog post](https://ai.meta.com/blog/dinov3-self-supervised-vision-model/) and the associated [website](https://ai.meta.com/dinov3/).\n\n## Citation\n\n**BibTeX**\n\n```\n@misc{simeoni2025dinov3,\n  title={{DINOv3}},\n  author={Sim{\\'e}oni, Oriane and Vo, Huy V. and Seitzer, Maximilian and Baldassarre, Federico and Oquab, Maxime and Jose, Cijo and Khalidov, Vasil and Szafraniec, Marc and Yi, Seungeun and Ramamonjisoa, Micha{\\\"e}l and Massa, Francisco and Haziza, Daniel and Wehrstedt, Luca and Wang, Jianyuan and Darcet, Timoth{\\'e}e and Moutakanni, Th{\\'e}o and Sentana, Leonel and Roberts, Claire and Vedaldi, Andrea and Tolan, Jamie and Brandt, John and Couprie, Camille and Mairal, Julien and J{\\'e}gou, Herv{\\'e} and Labatut, Patrick and Bojanowski, Piotr},\n  year={2025},\n  eprint={2508.10104},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  url={https://arxiv.org/abs/2508.10104},\n}\n```\n"
+}

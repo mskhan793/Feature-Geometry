@@ -1,0 +1,466 @@
+{
+ "api": {
+  "_id": "69777568157f0cf897c1ba12",
+  "id": "nvidia/C-RADIOv4-SO400M",
+  "private": false,
+  "pipeline_tag": "feature-extraction",
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "safetensors",
+   "feature-extraction",
+   "custom_code",
+   "arxiv:2312.06709",
+   "arxiv:2410.01680",
+   "arxiv:2412.07679",
+   "arxiv:2502.16025",
+   "arxiv:2601.17237",
+   "license:other",
+   "region:us"
+  ],
+  "downloads": 14740,
+  "likes": 50,
+  "modelId": "nvidia/C-RADIOv4-SO400M",
+  "author": "nvidia",
+  "sha": "c0457f5dc26ca145f954cd4fc5bb6114e5705ad8",
+  "lastModified": "2026-01-30T12:40:09.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "RADIOModel"
+   ],
+   "auto_map": {
+    "AutoConfig": "hf_model.RADIOConfig",
+    "AutoModel": "hf_model.RADIOModel"
+   }
+  },
+  "cardData": {
+   "license": "other",
+   "license_name": "nvidia-open-model-license",
+   "license_link": "https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf",
+   "library_name": "transformers"
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModel",
+   "custom_class": "hf_model.RADIOModel",
+   "pipeline_tag": "feature-extraction"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "adaptor_attn.py"
+   },
+   {
+    "rfilename": "adaptor_base.py"
+   },
+   {
+    "rfilename": "adaptor_generic.py"
+   },
+   {
+    "rfilename": "adaptor_mlp.py"
+   },
+   {
+    "rfilename": "adaptor_module_factory.py"
+   },
+   {
+    "rfilename": "adaptor_registry.py"
+   },
+   {
+    "rfilename": "c-radio_v4-so400m_half.pth.tar"
+   },
+   {
+    "rfilename": "cls_token.py"
+   },
+   {
+    "rfilename": "common.py"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "dinov2_arch.py"
+   },
+   {
+    "rfilename": "dual_hybrid_vit.py"
+   },
+   {
+    "rfilename": "enable_cpe_support.py"
+   },
+   {
+    "rfilename": "enable_damp.py"
+   },
+   {
+    "rfilename": "enable_spectral_reparam.py"
+   },
+   {
+    "rfilename": "eradio_model.py"
+   },
+   {
+    "rfilename": "extra_models.py"
+   },
+   {
+    "rfilename": "extra_timm_models.py"
+   },
+   {
+    "rfilename": "feature_normalizer.py"
+   },
+   {
+    "rfilename": "forward_intermediates.py"
+   },
+   {
+    "rfilename": "hf_model.py"
+   },
+   {
+    "rfilename": "input_conditioner.py"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "open_clip_adaptor.py"
+   },
+   {
+    "rfilename": "preprocessor_config.json"
+   },
+   {
+    "rfilename": "radio_model.py"
+   },
+   {
+    "rfilename": "siglip2_adaptor.py"
+   },
+   {
+    "rfilename": "utils.py"
+   },
+   {
+    "rfilename": "vit_patch_generator.py"
+   },
+   {
+    "rfilename": "vitdet.py"
+   }
+  ],
+  "spaces": [
+   "hugging-apps/eovsam-open-vocab-segmentation",
+   "Luminia/CorridorKey",
+   "drvikasgaur/T.B_Screening",
+   "HeckinD/Muse-CorridorKey-Alpha"
+  ],
+  "createdAt": "2026-01-26T14:08:40.000Z",
+  "safetensors": {
+   "parameters": {
+    "I64": 2,
+    "F32": 431237238
+   },
+   "total": 431237240
+  },
+  "usedStorage": 2930906625
+ },
+ "configs": {
+  "config.json": {
+   "adaptor_configs": {},
+   "adaptor_names": null,
+   "architectures": [
+    "RADIOModel"
+   ],
+   "args": {
+    "aa": null,
+    "amp": true,
+    "amp_dtype": "bfloat16",
+    "amp_impl": "native",
+    "aug_repeats": 0,
+    "aug_splits": 0,
+    "auto_workload_inspector": false,
+    "bn_eps": null,
+    "bn_momentum": null,
+    "cache_dir": null,
+    "channels_last": false,
+    "checkpoint_folder": null,
+    "checkpoint_hist": 10,
+    "chk_keep_forever": 50,
+    "class_map": "",
+    "clip_grad": 4000.0,
+    "clip_mode": "norm",
+    "cls_token_per_teacher": true,
+    "coco_annotations_file": "/datasets/coco2017-adlsa/annotations/captions_val2017.json",
+    "coco_image_dir": "/datasets/coco2017-adlsa/val2017",
+    "color_jitter": 0.4,
+    "cooldown_epochs": 0,
+    "cpe_max_size": 2048,
+    "cpe_num_registers": null,
+    "crd_loss": false,
+    "crd_loss_weight": 0.8,
+    "crop_pct": null,
+    "cutmix": 0.0,
+    "cutmix_minmax": null,
+    "dataset_download": false,
+    "debug_full_knn": false,
+    "decay_epochs": 90,
+    "decay_milestones": [
+     90,
+     180,
+     270
+    ],
+    "decay_rate": 0.1,
+    "depchain": true,
+    "detect_anomaly": false,
+    "dist_bn": "reduce",
+    "dist_norm_weight": 0.0,
+    "distributed": true,
+    "drop": 0.0,
+    "drop_block": null,
+    "drop_connect": null,
+    "drop_path": null,
+    "dtype": "float32",
+    "epoch": 293,
+    "epoch_repeats": 0.0,
+    "eval": false,
+    "eval_metric": "knn_top1",
+    "eval_teacher": false,
+    "eval_teacher_only": false,
+    "eval_throughput": false,
+    "fast_norm": false,
+    "fd_loss_fn": "MSE",
+    "feature_normalization": "PHI_STANDARDIZE",
+    "feature_summarizer": "cls_token",
+    "feature_upscale_factor": null,
+    "force_disable_damp": false,
+    "force_disable_spectral_reparam": false,
+    "force_new_wandb_id": false,
+    "force_spectral_reparam": false,
+    "freeze_bn": false,
+    "fsdp": true,
+    "full_equivariance": false,
+    "fuser": "",
+    "gp": null,
+    "grad_accum_steps": 1,
+    "grad_checkpointing": false,
+    "head_init_bias": null,
+    "head_init_scale": null,
+    "head_lr": null,
+    "head_warmup": 3,
+    "head_weight_decay": 0.03,
+    "hflip": 0.5,
+    "img_size": null,
+    "in_chans": null,
+    "initial_checkpoint": null,
+    "input_size": null,
+    "interpolation": "",
+    "layer_decay": null,
+    "local_rank": 0,
+    "log_interval": 50,
+    "log_mlflow": false,
+    "log_teacher_timings": true,
+    "log_train_metrics_per_epoch": true,
+    "log_train_metrics_per_log_interval": true,
+    "log_wandb": true,
+    "loss_auto_balance": false,
+    "lr_base": 0.1,
+    "lr_base_scale": "",
+    "lr_base_size": 256,
+    "lr_cycle_decay": 0.5,
+    "lr_cycle_limit": 1,
+    "lr_cycle_mul": 1.0,
+    "lr_k_decay": 1.0,
+    "lr_noise": null,
+    "lr_noise_pct": 0.67,
+    "lr_noise_std": 1.0,
+    "mean": null,
+    "mesa": {
+     "gaussian_kl": false,
+     "lambda": 0.1,
+     "ohem": true,
+     "shift_equivariance": {
+      "a": 0.5,
+      "b": 1.0
+     },
+     "start_epoch": 150
+    },
+    "min_lr": 0.0001,
+    "mixup": 0.0,
+    "mixup_mode": "batch",
+    "mixup_off_epoch": 0,
+    "mixup_prob": 1.0,
+    "mixup_switch_prob": 0.5,
+    "mlp_hidden_size": 1520,
+    "mlp_num_inner": 2,
+    "mlp_version": "v2",
+    "model": "vit_so400m_patch16_224",
+    "model_kwargs": {},
+    "model_norm": false,
+    "momentum": 0.9,
+    "no_custom_validation": false,
+    "no_ddp_bb": true,
+    "no_knn": false,
+    "no_prefetcher": false,
+    "no_resume_opt": false,
+    "no_save_checkpoint": false,
+    "no_val": false,
+    "num_classes": null,
+    "on_demand_workload_inspector": false,
+    "one_logger_app_tag": "",
+    "one_logger_is_baseline": false,
+    "one_logger_run_name": "",
+    "onelogger": null,
+    "opt_betas": null,
+    "opt_eps": null,
+    "overfit": false,
+    "patience_epochs": 10,
+    "perf_test_no_aug": false,
+    "perf_test_no_decode": false,
+    "perf_test_no_io": false,
+    "perf_test_only_dataloader": false,
+    "perf_test_simple_aug": false,
+    "pin_mem": false,
+    "prefetcher": true,
+    "pretrained": false,
+    "processed_neck_outputs": null,
+    "profile_train_exit_after_profiling": false,
+    "profile_train_export_chrome_trace": true,
+    "profile_train_export_csv": false,
+    "profile_train_iterations": 0,
+    "qradio": false,
+    "qradio_max_tokens": 512,
+    "qradio_min_tokens": 32,
+    "qradio_patch_token_mask_initial_ratio": 0.95,
+    "qradio_progressive_2d": false,
+    "qradio_quantizer": null,
+    "qradio_ramp_alpha": 1.5,
+    "rank": 0,
+    "ratio": [
+     0.75,
+     1.3333333333333333
+    ],
+    "recount": 1,
+    "recovery_interval": 0,
+    "register_multiple": 10,
+    "remode": "pixel",
+    "reprob": 0.0,
+    "reset_loss_state": true,
+    "resplit": false,
+    "sample_tracking": false,
+    "save_images": false,
+    "scale": [
+     0.5,
+     1.0
+    ],
+    "sched": "cosine",
+    "seed": 42,
+    "shift_equivariance": false,
+    "smoothing": 0.1,
+    "source_tracking": false,
+    "spectral_heads": false,
+    "spectral_reparam": false,
+    "spectral_weight_decay": null,
+    "split_bn": false,
+    "start_epoch": null,
+    "std": null,
+    "stream_teachers": false,
+    "student_intermediate_indices": null,
+    "student_load_skip_state_dict_keys_regex": null,
+    "student_reinit_model_layers_regex": null,
+    "student_strict_load_ignore_mismatched_shape_keys_regex": null,
+    "student_strict_load_ignore_missing_keys_regex": null,
+    "student_strict_load_ignore_unexpected_keys_regex": null,
+    "student_strict_load_state_dict": false,
+    "sync_bn": false,
+    "sync_resolutions_across_ranks": true,
+    "synchronize_step": false,
+    "teachers": [
+     {
+      "model": "siglip2-g-384",
+      "name": "siglip2-g",
+      "spatial_mlp_version": "attn",
+      "type": "siglip2",
+      "use_summary": true
+     },
+     {
+      "model": "dinov3_vit7b16",
+      "name": "dino_v3_7b",
+      "type": "dino_v3",
+      "use_summary": true
+     },
+     {
+      "model": "default",
+      "name": "sam3",
+      "type": "sam3",
+      "use_summary": false
+     }
+    ],
+    "timing_warmup_iters": 20,
+    "tokenizer_kwargs": {},
+    "tokenizer_type": null,
+    "tome": null,
+    "torchcompile": null,
+    "torchscript": false,
+    "train_interpolation": "random",
+    "train_split": "train",
+    "tta": 0,
+    "untie_neck_weights": false,
+    "use_coco": false,
+    "use_multi_epochs_loader": false,
+    "val_ema_only": false,
+    "val_split": "val",
+    "vflip": 0.0,
+    "vitdet_version": 1,
+    "wandb_entity": "",
+    "wandb_id": "",
+    "wandb_job_type": "",
+    "wandb_name": "",
+    "wandb_project": "",
+    "wandb_tags": null,
+    "warmup_lr": 1e-05,
+    "warmup_prefix": false,
+    "worker_seeding": "all",
+    "workers": 8,
+    "workload_inspector_analyze_nsys_traces": false,
+    "workload_inspector_baseline_start_iter": 1500,
+    "workload_inspector_major_slowdown_p95_factor": 10.0,
+    "workload_inspector_minor_slowdown_p95_factor": 3.0,
+    "workload_inspector_no_slowdown_check": false,
+    "workload_inspector_simulate_slowdown_num_times": 1,
+    "workload_inspector_simulate_slowdown_start_iter": null,
+    "world_size": 256
+   },
+   "auto_map": {
+    "AutoConfig": "hf_model.RADIOConfig",
+    "AutoModel": "hf_model.RADIOModel"
+   },
+   "feature_normalizer_config": null,
+   "inter_feature_normalizer_config": null,
+   "max_resolution": 2048,
+   "patch_size": 16,
+   "preferred_resolution": [
+    512,
+    512
+   ],
+   "torch_dtype": "float32",
+   "transformers_version": "4.51.3",
+   "version": "c-radio_v4-so400m",
+   "vitdet_window_size": null
+  },
+  "preprocessor_config.json": {
+   "crop_size": {
+    "height": 512,
+    "width": 512
+   },
+   "do_center_crop": false,
+   "do_convert_rgb": true,
+   "do_normalize": false,
+   "do_rescale": true,
+   "do_resize": false,
+   "image_processor_type": "CLIPImageProcessor",
+   "processor_class": "CLIPProcessor",
+   "resample": 3,
+   "size": {
+    "shortest_edge": 512
+   }
+  }
+ },
+ "model_card": "---\nlicense: other\nlicense_name: nvidia-open-model-license\nlicense_link: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf\nlibrary_name: transformers\n---\n\n# Model Overview\n\n## Description\n\nThis model performs visual feature extraction.\nFor instance, RADIO generates image embeddings that can be used by a downstream model to classify images.\n\nC-RADIOv4 models are available in multiple sizes:\n* Shape-Optimized (431M parameters).\n* Huge (653M parameters).\n\nC-RADIOv4 was trained using an updated set of teach models:\n* [SigLIP2-g](https://huggingface.co/google/siglip2-giant-opt-patch16-384)\n* [DINOv3-7B](https://huggingface.co/facebook/dinov3-vit7b16-pretrain-lvd1689m)\n* [SAM3](https://huggingface.co/facebook/sam3)\n\nThis model is ready for commercial/non-commercial use.\n\n### License/Terms of Use\n\nGOVERNING TERMS: Use of this model is governed by the [NVIDIA Open Model License Agreement](https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf).\n\n## Deployment Geography\n\nGlobal\n\n## Use Case\n\nThe embeddings generated by this model are expected to be used by a downstream application.\nFor example:\n\n* Image-level understanding (image classification, curation, etc.).\n* Dense processing (semantic segmentation, depth estimation, etc.).\n* Integration into a Vision-Language Model.\n\n## Release Date\n\nHugging Face: 01/27/2026 via [RADIO Collection of Models](https://huggingface.co/collections/nvidia/radio-669f77f1dd6b153f007dd1c6).\n\n## References\n\n* [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](https://arxiv.org/abs/2312.06709)\n* [PHI-S: Distribution Balancing for Label-Free Multi-Teacher Distillation](https://arxiv.org/abs/2410.01680)\n* [RADIOv2.5: Improved Baselines for Agglomerative Vision Foundation Models](https://arxiv.org/abs/2412.07679)\n* [FeatSharp: Your Vision Model Features, Sharper](https://arxiv.org/abs/2502.16025)\n* [C-RADIOv4 (Tech Report)](https://arxiv.org/abs/2601.17237)\n\n## Model Architecture\n\n**Architecture Type:** Neural Network  <br>\n**Network Architecture:** Vision Transformer <br>\n**Number of model parameters:** -SO400M size: 431M, -H size: 653M <br>\n\n## Input\n\n**Input Type(s):** Image <br>\n**Input Format(s):** Red, Green, Blue (RGB) <br>\n**Input Parameters:** Two Dimensional (2D) <br>\n**Other Properties Related to Input:** Image resolutions up to 2048x2028 in increments of 16 pixels <br>\n\n## Output\n\n**Output Type(s):** Embeddings <br>\n**Output Format:** Tensor <br>\n**Output Parameters:** Two Dimensional 2D <br>\n**Other Properties Related to Output:** Downstream model required to leverage image features. Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems. By leveraging NVIDIA\u2019s hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions. <br>\n\n## Usage:\n\nRADIO will return a tuple with two tensors.\nThe `summary` is similar to the `cls_token` in ViT and is meant to represent the general concept of the entire image.\nIt has shape `(B,C)` with `B` being the batch dimension, and `C` being some number of channels.\nThe `spatial_features` represent more localized content which should be suitable for dense tasks such as semantic segmentation, or for integration into an LLM.\n\n```python\nimport torch\nfrom PIL import Image\nfrom transformers import AutoModel, CLIPImageProcessor\n\nhf_repo = \"nvidia/C-RADIOv4-SO400M\"\n\nimage_processor = CLIPImageProcessor.from_pretrained(hf_repo)\nmodel = AutoModel.from_pretrained(hf_repo, trust_remote_code=True)\nmodel.eval().cuda()\n\nimage = Image.open('./assets/radio.png').convert('RGB')\npixel_values = image_processor(images=image, return_tensors='pt', do_resize=True).pixel_values\npixel_values = pixel_values.cuda()\n\nsummary, features = model(pixel_values)\n```\n\nSpatial features have shape `(B,T,D)` with `T` being the flattened spatial tokens, and `D` being the channels for spatial features. Note that `C!=D` in general.\nConverting to a spatial tensor format can be done using the downsampling size of the model, combined with the input tensor shape. For RADIO, the patch size is 16.\n\n```Python\nfrom einops import rearrange\nspatial_features = rearrange(spatial_features, 'b (h w) d -> b d h w', h=x.shape[-2] // patch_size, w=x.shape[-1] // patch_size)\n```\n\nThe resulting tensor will have shape `(B,D,H,W)`, as is typically seen with computer vision models.\n\n## Software Integration\n\n**Runtime Engine(s):**\n* [TAO-6.1] <br>\n\n\n**Supported Hardware Microarchitecture Compatibility:** <br>\n* NVIDIA Ampere <br>\n* NVIDIA Blackwell <br>\n* NVIDIA Jetson  <br>\n* NVIDIA Hopper <br>\n* NVIDIA Lovelace <br>\n* NVIDIA Pascal <br>\n* NVIDIA Turing <br>\n* NVIDIA Volta <br>\n\n**[Preferred/Supported] Operating System(s):** <br>\n* Linux\n* Linux 4 Tegra\n* QNX\n* Windows\n\nThe integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical standards before deployment.\n\nThis AI model can be embedded as an Application Programming Interface (API) call into the software environment described above.\n\n## Model Version(s)\n\n* C-RADIOv4-SO400M (400M parameters).\n* C-RADIOv4-H (653M parameters).\n\n**Links:**\n\n* https://huggingface.co/nvidia/C-RADIOv4-SO400M\n* https://huggingface.co/nvidia/C-RADIOv4-H\n\n# Training and Evaluation Datasets\n\n## Training Dataset\n\n**NV-CC-Img-Text-Dataset**\n\n**Data Modality:** Image <br>\n**Image Training Data Size:** 1 Million to 1 Billion Images <br>\n**Data Collection Method by dataset:** Automated <br>\n**Labeling Method by dataset:** Not Applicable (no labels are needed) <br>\n**Properties:** 700 Million Images <br>\n\n## Evaluation Datasets\n\n**ImageNet**\n\n**Link:** [ImageNet](https://www.image-net.org/) <br>\n**Data Collection:** Automated <br>\n**Labeling Method:** Human <br>\n**Training Images:** 1,281,167 <br>\n**Validation Images:** 50,000 <br>\n**Test Images:** 100,000 <br>\n\nTo perform the semantic segmentation evaluation, we use training sets from ADE20K and PascalVOC to train a linear layer, and subsequently performed evaluations on the validation set.\nSee below for further details:\n\n**ADE20k**\n\n**Link:** [ADE20K](https://ade20k.csail.mit.edu/) <br>\n**Data Collection:** Human <br>\n**Labeling Method:** Human <br>\n**Training Images:** 25,574 <br>\n**Validation Images:** 2,000 <br>\n\n**Pascal VOC**\n\n**Link:** [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/) <br>\n**Data Collection:** Human <br>\n**Labeling Method:** Human <br>\n**Training Images:** 1,464 <br>\n**Validation Images:** 1,449 <br>\n\n| Benchmark | C-RADIOv3-B | C-RADIOv3-L | C-RADIOv4-SO400M | C-RADIOv3-H | C-RADIOv4-H |\n|-----------|-------------|-------------|------------------|-------------|-------------|\n| **ImageNet Classification (Top1 accuracy)** |  | |\n| Zero-Shot | 71.30       | 79.95       | 82.01            | 82.65       | 83.09       |\n| KNN       | 81.22       | 84.33       | 85.75            | 86.23       | 86.68       |\n| **ADE20k Semantic Segmentation (mIoU)**     | 49.79 | 51.87 | 55.14 | 52.75 | 55.20 |\n| **Pascal VOC Semantic Segmentation (mIoU)** | 84.68 | 86.12 | 87.22 | 86.41 | 87.24 |\n\n\n## Inference\n\n**Acceleration Engine:** Tensor(RT), Tensor(RT)-LLM <br>\n**Engine:** PyTorch <br>\n**Test Hardware:** H100 <br>\n\n## Ethical Considerations\n\nNVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications.  When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.\n\nPlease make sure you have proper rights and permissions for all input image and video content; if image or video includes people, personal health information, or intellectual property, the image or video generated will not blur or maintain proportions of image subjects included.\n\nFor more detailed information on ethical considerations for this model, please see the Model Card++ Explainability, Bias, Safety & Security, and Privacy Subcards below.\n\nPlease report model quality, risk, security vulnerabilities or NVIDIA AI Concerns [here](https://www.nvidia.com/en-us/support/submit-security-vulnerability/).\n\n### Bias\n\nField                                                                                               |  Response\n:---------------------------------------------------------------------------------------------------|:---------------\nParticipation considerations from adversely impacted groups [protected classes](https://www.senate.ca.gov/content/protected-classes) in model design and testing:  |  None\nMeasures taken to mitigate against unwanted bias:                                                   |  None\n\n\n### Explainability\n\nField                                                                                                  |  Response\n:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------\nIntended Task/Domain:                                                                                  |  Visual Feature Extraction\nModel Type:                                                                                            |  Vision Transformer\nIntended Users:                                                                                        |  Developers of downstream vision applications\nOutput:                                                                                                |  Image embeddings\nDescribe how the model works:                                                                          |  The model takes an image as input, processes the image through multiple transformer blocks, and outputs summary and patch embeddings.\nName the adversely impacted groups this has been tested to deliver comparable outcomes regardless of:  |  Not Applicable\nTechnical Limitations:                                                                                 |  This model generates image embeddings that can be used by a downstream model to, for example, classify images. The downstream model must be trained to leverage the visual embeddings. This model is only tested on input resolutions ranging from 256 to 2048, in increments of 16 pixels. This model may fail to surface information about the orientation of objects (e.g. whether a traffic sign points left/right).\nVerified to have met prescribed NVIDIA quality standards:  |  Yes\nPerformance Metrics:                                                                                   |  Image classification accuracy, semantic segmentation mean-over-intersection.\nPotential Known Risks:                                                                                 |  This model may not perform well on visual domains that are not represented in the training data. The generated embeddings might fail to disambiguate differences that appear evident to humans (e.g. two images showing different breeds of dogs might in fact produce very similar embeddings). Domain-specific evaluation is required for the target application.\nLicensing:                                                                                             |  [NVIDIA Open Model License](https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf)\n\n\n### Privacy\n\nField                                                                                                                              |  Response\n:----------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------\nGeneratable or reverse engineerable personal data?                                                                               |  No\nPersonal data used to create this model?                                                                                       |  None Known\nHow often is dataset reviewed?                                                                                                     |  Before Every Release\nIs there provenance for all datasets used in training?                                                                                |  Yes\nDoes data labeling (annotation, metadata) comply with privacy laws?                                                                |  Yes\nIs data compliant with data subject requests for data correction or removal, if such a request was made?                           |  Yes\nWas data from user interactions with the AI model (e.g. user input and prompts) used to train the model?                           | No\nApplicable Privacy Policy                                                                          | https://www.nvidia.com/en-us/about-nvidia/privacy-policy/\n\n### Safety\n\nField                                               |  Response\n:---------------------------------------------------|:----------------------------------\nModel Application Field(s):                               |  Generation of visual embeddings\nDescribe the life critical impact (if present).   |  Not Applicable\nUse Case Restrictions:                              |  Abide by NVIDIA Open Model License Agreement\nModel and dataset restrictions:            |  The Principle of least privilege (PoLP) is applied limiting access for dataset generation and model development. Restrictions enforce dataset access during training, and dataset license constraints adhered to."
+}
