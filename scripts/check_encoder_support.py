@@ -24,6 +24,10 @@ CACHE_REPOS = ("imageomics/bioclip-2", "facebook/dinov2-large", "facebook/dinov3
                "facebook/vit_pe_core_gigantic_patch14_448_timm", "nvidia/C-RADIOv4-H", "apple/aimv2-huge-patch14-448")
 
 
+CONFIG_KEYS = ("architectures", "model_type", "hidden_size", "image_size", "patch_size", "num_hidden_layers",
+               "num_register_tokens", "intermediate_size", "num_attention_heads")
+
+
 def version(module: str) -> str | None:
     try:
         return getattr(importlib.import_module(module), "__version__", "unknown")
@@ -48,8 +52,16 @@ def main():
         report["timm_pe_models"] = f"error {e!r}"
     hub = Path(os.environ.get("HF_HOME", Path.home() / ".cache" / "huggingface")) / "hub"
     report["hf_hub_dir"] = str(hub)
-    report["cached"] = {repo: sorted(p.name for p in (hub / f"models--{repo.replace('/', '--')}" / "snapshots").glob("*"))
-                        for repo in CACHE_REPOS if (hub / f"models--{repo.replace('/', '--')}" / "snapshots").is_dir()}
+    report["cached"] = {}
+    for repo in CACHE_REPOS:
+        snapshots = hub / f"models--{repo.replace('/', '--')}" / "snapshots"
+        if not snapshots.is_dir():
+            continue
+        report["cached"][repo] = {}
+        for snap in sorted(snapshots.glob("*")):
+            config = snap / "config.json"
+            fields = {k: v for k, v in json.loads(config.read_text()).items() if k in CONFIG_KEYS} if config.exists() else None
+            report["cached"][repo][snap.name] = {"files": sorted(p.name for p in snap.iterdir()), "config": fields}
     a.out.write_text(json.dumps(report, indent=1))
     print(json.dumps(report, indent=1))
 

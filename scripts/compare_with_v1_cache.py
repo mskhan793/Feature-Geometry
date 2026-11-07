@@ -18,6 +18,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import torch
 
 from src.data.aquamonitor_manifest import hdf5_positions
 from src.data.hdf5_images import Hdf5ImageDataset
@@ -53,10 +54,12 @@ def main():
                             enable_progress_bar=False, enable_model_summary=False)
     dataset = Hdf5ImageDataset(a.hdf5, names, hdf5_positions(a.hdf5, pd.Series(names)), transform)
     ours = encode(trainer, FrozenEncoderModule(encoder), dataset, batch_size=128, num_workers=4)
-    diff, scale = float(np.abs(ours - ref).max()), float(np.abs(ref).max())
+    err = np.abs(ours - ref)
+    diff, scale = float(err.max()), float(np.abs(ref).max())
     result = {"encoder": a.encoder, "v1_cache": str(a.v1_cache), "v1_model": meta.get("model"), "v1_transform": meta.get("transform"),
-              "new_transform": info["transform"], "rows": a.n, "dim": int(ours.shape[1]), "max_abs_diff": diff,
-              "max_abs_v1": scale, "pass": diff <= 1e-4 * scale}
+              "new_transform": info["transform"], "rows": a.n, "dim": int(ours.shape[1]), "v1_dim": int(ref.shape[1]), "max_abs_diff": diff,
+              "mean_abs_diff": float(err.mean()), "max_abs_v1": scale, "tolerance": 1e-4 * scale, "pass": diff <= 1e-4 * scale,
+              "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated()) if torch.cuda.is_available() else None}
     a.out.parent.mkdir(parents=True, exist_ok=True)
     a.out.write_text(json.dumps(result, indent=1))
     print(json.dumps(result, indent=1))

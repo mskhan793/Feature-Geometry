@@ -13,9 +13,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import resource
 from pathlib import Path
 
 import pandas as pd
+import torch
 
 from src.encoders.frozen_encoders import load_encoder
 from src.features import chunk_store
@@ -49,6 +51,8 @@ def main():
     print(json.dumps({"task": a.task, "n_tasks": a.n_tasks, "rows": len(manifest), "chunks": list(chunks), **info}), flush=True)
     extract_chunks(trainer, encoder, transform, info, manifest, a.hdf5, a.cache_dir / a.encoder, a.chunk_size, chunks,
                    a.batch_size, a.num_workers, log=lambda s: print(f"[task {a.task}] {s}", flush=True))
+    print(json.dumps({"task": a.task, "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated()) if torch.cuda.is_available() else None,
+                      "peak_host_rss_kib": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}), flush=True)
 
 
 if __name__ == "__main__":
