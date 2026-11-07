@@ -1,0 +1,92 @@
+{
+ "manifest_sha256": "d6e63bb60df5300a6ccf83090b46a019446d3f91c03c69e479345b8bb13570c1",
+ "rule": {
+  "cap": 200,
+  "floor": 20,
+  "frames": 10,
+  "seed": 20261107
+ },
+ "classes": 42,
+ "classes_train_available_at_least": {
+  "50": 36,
+  "100": 26,
+  "200": 17
+ },
+ "classes_train_selected_at_least": {
+  "50": 36,
+  "100": 26,
+  "200": 17
+ },
+ "specimens_selected": {
+  "train": 5598,
+  "val": 4386
+ },
+ "specimens_available": {
+  "train": 29346,
+  "val": 4386
+ },
+ "selected_one_camera": {
+  "train": 38,
+  "val": 20
+ },
+ "train_source_share_full": {
+  "bulk22": 0.4709,
+  "bulk21": 0.4569,
+  "biomass": 0.0362,
+  "dna": 0.0359
+ },
+ "train_source_share_selected": {
+  "bulk22": 0.3975,
+  "bulk21": 0.3901,
+  "biomass": 0.1188,
+  "dna": 0.0936
+ },
+ "val_source_share": {
+  "bulk22": 0.4708,
+  "bulk21": 0.4569,
+  "biomass": 0.0363,
+  "dna": 0.036
+ },
+ "available_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 19.0,
+  "median": 27.0,
+  "p75": 39.0,
+  "max": 547.0
+ },
+ "available_runs_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 1.0,
+  "median": 1.0,
+  "p75": 1.0,
+  "max": 6.0
+ },
+ "available_frames_per_run_camera": {
+  "min": 1.0,
+  "p25": 20.0,
+  "median": 28.0,
+  "p75": 39.0,
+  "max": 375.0
+ },
+ "specimen_cameras_with_more_than_one_run": 1467,
+ "selected_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 10.0,
+  "median": 10.0,
+  "p75": 10.0,
+  "max": 10.0
+ },
+ "specimen_cameras_below_frame_cap": 668,
+ "images": {
+  "cohort": 196983,
+  "train": 109972,
+  "val": 87011,
+  "reused_from_camera_pilot": 4491,
+  "new": 192492
+ },
+ "estimate": {
+  "rate_images_per_second": 56.4,
+  "gpu_minutes": 56.9,
+  "feature_storage_gb": 0.79
+ }
+}
