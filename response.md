@@ -154,6 +154,7 @@ The fixtures are a tiny HDF5 and parquet. In the fixture HDF5 the images are in 
 **Blocker: LUMI maintenance break.**
 - **What happened:** my SSH attempts on 2026-11-07 (about 8) all ended with "Connection closed by 193.167.209.16x port 22", once during the initial handshake (`kex_exchange_identification`).
 - **Cause, found by the author:** the author logged in by hand with the passphrase. After authentication the login node printed "Maintenance break ongoing. For more information see: https://lumi-supercomputer.eu/service-breaks/" and closed the connection. So the key works, and the Dell's address is not blocked: logins are closed for maintenance.
+- **Reason, from LUMI's notice to users (shared by the author):** "access to LUMI has been temporarily closed due to recently published Linux kernel vulnerability." The notice gives no reopening date.
 - **What's still unknown:** LUMI's service-breaks page lists no break for 7 November. Its latest entry is the urgent kernel-patch maintenance of 2 November, extended to 3 November, which said overlapping jobs wait and jobs started during bring-up are requeued. When this break ends, and whether it affects compute or storage, is not known.
 
 **No job was submitted and no smoke or throughput result exists.** I will submit after one successful login.
