@@ -1,0 +1,102 @@
+{
+ "train": {
+  "dataset": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.14622160828935798,
+   "classes_ari_at_least_0.5": 10,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Cyrnus trimaculatus",
+    "Helobdella stagnalis",
+    "Lepidostoma hirtum",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox",
+    "Stylaria lacustris"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 38,
+   "ari_median": -0.008132382963173514,
+   "classes_ari_at_least_0.5": 7,
+   "classes_ari_at_least_0.5_list": [
+    "Asellus aquaticus",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Cyrnus trimaculatus",
+    "Lepidostoma hirtum",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0085535196191363,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Micronecta"
+   ]
+  }
+ },
+ "val": {
+  "dataset": {
+   "classes_with_field_varying": 37,
+   "ari_median": 0.05924300603400987,
+   "classes_ari_at_least_0.5": 9,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Cyrnus trimaculatus",
+    "Helobdella stagnalis",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 35,
+   "ari_median": -0.01694915254237288,
+   "classes_ari_at_least_0.5": 2,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0016750418760469012,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Cloeon"
+   ]
+  }
+ },
+ "train_classes_by_number_of_datasets": {
+  "1": 1,
+  "2": 8,
+  "3": 20,
+  "4": 12
+ },
+ "train_dataset_ari_at_least_0.5_by_verdict": {
+  "credible multiple groups": {
+   "classes": 1,
+   "dataset_ari_at_least_0.5": 1
+  },
+  "inconclusive": {
+   "classes": 13,
+   "dataset_ari_at_least_0.5": 3
+  },
+  "insufficient evidence": {
+   "classes": 17,
+   "dataset_ari_at_least_0.5": 6
+  },
+  "one Gaussian favoured": {
+   "classes": 10,
+   "dataset_ari_at_least_0.5": 0
+  }
+ }
+}

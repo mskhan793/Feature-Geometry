@@ -30,6 +30,7 @@ import pandas as pd
 from sklearn.decomposition import PCA
 
 from src.features.chunk_store import file_sha256, load_cache
+from src.features.specimen_means import specimen_camera_means
 from src.statistics.class_density_models import UNCONDITIONAL, component_camera_purity, fit_class_models, log_densities
 
 matplotlib.use("Agg")
@@ -41,16 +42,6 @@ MIN_TRAIN, MIN_VAL = 15, 5
 K_MIN_SPECIMENS = {2: 20, 3: 30}
 N_BOOT, N_PERM = 2000, 999
 MODELS = (*UNCONDITIONAL, "B_camera_conditional")
-
-
-def specimen_camera_means(x: np.ndarray, cohort: pd.DataFrame) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
-    """Keys (one row per specimen and camera), mean embeddings, and RMS distance of each group's frames to its mean."""
-    groups = cohort.groupby(["taxon_group", "fold0", "individual", "camera"], sort=True).indices
-    keys = pd.DataFrame(list(groups), columns=["taxon_group", "fold0", "individual", "camera"])
-    keys["frames"] = [len(i) for i in groups.values()]
-    means = np.stack([x[i].mean(0) for i in groups.values()])
-    spread = np.array([np.sqrt(((x[i] - x[i].mean(0)) ** 2).sum(1).mean()) for i in groups.values()])
-    return keys, means, spread
 
 
 def paired_difference(keys: pd.DataFrame, x: np.ndarray, cameras) -> np.ndarray:

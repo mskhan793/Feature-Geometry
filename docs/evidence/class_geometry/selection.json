@@ -1,0 +1,110 @@
+{
+ "candidate_groups": [
+  "Caenis rivulorum",
+  "Centroptilum luteolum",
+  "Caenis luctuosa"
+ ],
+ "candidate_single": [
+  "Ephemera vulgata",
+  "Tanypodinae"
+ ],
+ "all": [
+  "Caenis rivulorum",
+  "Centroptilum luteolum",
+  "Caenis luctuosa",
+  "Ephemera vulgata",
+  "Tanypodinae"
+ ],
+ "montage_specimens": {
+  "Caenis rivulorum": {
+   "component_0": [
+    "CaRi-haa1_3_22",
+    "CaRi-haa2_10_22",
+    "CaRi-haa2_11_22",
+    "CaRi-haa2_13_22"
+   ],
+   "component_1": [
+    "A-A3-CaRi-hau1-1",
+    "A-G2-CaRi-hau1-3",
+    "B-B12-CaRi-hau1-4",
+    "E-H5-CaRi-hau3-2"
+   ],
+   "outliers_lowest_G1_density": [
+    "CaRi-haa2_8_22",
+    "CaRi-vie1_10_22"
+   ]
+  },
+  "Centroptilum luteolum": {
+   "component_0": [
+    "CeLu-hau2_1_21",
+    "CeLu-hau2_2_21",
+    "CeLu-hii1_10_22",
+    "CeLu-hii1_16_22"
+   ],
+   "component_1": [
+    "G-C2-CeLu-sii1-7",
+    "L-C2-CeLu-sii1-10",
+    "L-D3-CeLu-sii1-11",
+    "L-E7-CeLu-sii1-12"
+   ],
+   "outliers_lowest_G1_density": [
+    "CeLu-kuh2_1_21",
+    "P-C6-CeLu-sii2-1"
+   ]
+  },
+  "Caenis luctuosa": {
+   "component_0": [
+    "CaLu-hii1_16_22",
+    "CaLu-hii1_1_22",
+    "CaLu-hii1_28_22",
+    "CaLu-hii1_29_22"
+   ],
+   "component_1": [
+    "11-A11-CaLu-kak3-8",
+    "13-H11-CaLu-lop2-1",
+    "13-H7-CaLu-lop1-5",
+    "7-C3-CaLu-kak2-3"
+   ],
+   "outliers_lowest_G1_density": [
+    "13-H11-CaLu-lop2-1",
+    "CaLu-val2_8_22"
+   ]
+  },
+  "Ephemera vulgata": {
+   "component_0": [
+    "4-C6-EpVu-iso2-1",
+    "EpVu-hii3_15_22",
+    "EpVu-kak1_40_21",
+    "EpVu-kak1_25_21"
+   ],
+   "component_1": [
+    "EpVu-kak1_3_21",
+    "EpVu-kak2_20_21",
+    "EpVu-kak3_14_21",
+    "EpVu-kak1_7_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "EpVu-kak1_3_21",
+    "8-C3-EpVu-kak1-9"
+   ]
+  },
+  "Tanypodinae": {
+   "component_0": [
+    "Tan-iso2_40_22",
+    "Tan-kuo2_2_21",
+    "Tan-hii3_1_22",
+    "Tan-kuo1_7_21"
+   ],
+   "component_1": [
+    "Tan-vie1_79_22",
+    "Tan-vie1_92_22",
+    "Tan-hii3_3_22",
+    "Tan-kir2_1_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "Tan-hii3_23_22",
+    "4-F11-Tan-iso2-4"
+   ]
+  }
+ }
+}

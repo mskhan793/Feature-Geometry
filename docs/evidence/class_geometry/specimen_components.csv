@@ -1,0 +1,1765 @@
+taxon_group,fold0,individual,g2_tied_component,g2_tied_responsibility,g1_full_log_density
+Asellus aquaticus,train,A-D4-AsAq-haa3-3,0,0.9999999999981064,-8.191704051353156
+Asellus aquaticus,train,AsAq-haa2_9_22,0,0.9997255842463565,-2.0879163045328584
+Asellus aquaticus,train,AsAq-hau1_12_21,0,0.9999999999999822,-7.220786011571257
+Asellus aquaticus,train,AsAq-hii3_12_22,1,0.999944452558245,-7.159779361365769
+Asellus aquaticus,train,AsAq-hii3_25_22,1,0.999999751976215,-3.3808249542120707
+Asellus aquaticus,train,AsAq-kaj1_47_21,0,0.9999999992591664,-3.320507947411264
+Asellus aquaticus,train,AsAq-kaj1_7_21,0,0.9999999999098712,-4.80412910608525
+Asellus aquaticus,train,AsAq-kak3_80_21,0,0.9999998665489915,-2.625037873490462
+Asellus aquaticus,train,AsAq-koy2_132_21,1,0.9999999999503051,-4.294569756125029
+Asellus aquaticus,train,AsAq-koy2_45_21,1,0.9999999996440385,-4.965006696198645
+Asellus aquaticus,train,AsAq-koy2_72_21,0,0.9999806668296184,-4.317973955952255
+Asellus aquaticus,train,AsAq-nie2_1_21,0,0.9999999999976223,-7.205180227151652
+Asellus aquaticus,train,AsAq-pus1_26_21,0,0.9999897579185566,-3.8970137080526355
+Asellus aquaticus,train,AsAq-pus1_90_21,0,0.9999999956438246,-4.473195051686239
+Asellus aquaticus,train,AsAq-pus1_9_22,1,0.999999999944901,-6.5152896942592635
+Asellus aquaticus,train,AsAq-pus2_4_22,1,0.9999999564742311,-2.0405217929906447
+Asellus aquaticus,train,AsAq-pus3_15_21,0,0.9999996926218973,-3.483377386219357
+Asellus aquaticus,train,AsAq-pus3_163_22,1,0.9999999999948024,-2.662168525651375
+Asellus aquaticus,train,AsAq-pus3_72_22,1,0.9999999999756257,-4.392284484691456
+Asellus aquaticus,train,AsAq-ull1_104_22,1,0.9999999991951776,-3.77480490925658
+Asellus aquaticus,train,AsAq-ull1_26_22,1,0.9999999986311554,-6.390221348006027
+Asellus aquaticus,train,AsAq-ull1_343_22,1,0.9999881188791868,-4.5748447169045265
+Asellus aquaticus,train,AsAq-ull1_344_22,1,0.9999999999709464,-4.359124508250685
+Asellus aquaticus,train,AsAq-ull1_346_22,1,0.9999952672201401,-2.2958014086453717
+Asellus aquaticus,train,AsAq-ull1_400_22,1,0.999999943043468,-6.123746878037029
+Asellus aquaticus,train,AsAq-ull1_450_22,1,0.9999999850642177,-4.18520998574617
+Asellus aquaticus,train,AsAq-ull1_522_22,1,0.9999999997715276,-4.312161568307187
+Asellus aquaticus,train,AsAq-ull1_532_22,1,0.999999999999944,-6.6195390244105985
+Asellus aquaticus,train,AsAq-ull1_99_22,0,0.9999996922213533,-7.087658665631108
+Asellus aquaticus,train,M-G12-AsAq-koy2-116,0,0.999999999996561,-6.093986259827315
+Asellus aquaticus,val,16-E4-AsAq-koy2-25,0,0.995857942173016,-15.983769565563485
+Asellus aquaticus,val,AsAq-kaj1_28_21,0,0.9999045260336606,-2.202953281424219
+Asellus aquaticus,val,AsAq-kom2_1_22,0,0.999997408573233,-4.8849914876744664
+Asellus aquaticus,val,AsAq-koy1_3_21,1,0.999997194546731,-5.007075907378828
+Asellus aquaticus,val,AsAq-koy1_69_21,1,0.9999644134973551,-5.198484859323798
+Asellus aquaticus,val,AsAq-koy1_9_21,1,0.9993392217030519,-2.5693851048070444
+Asellus aquaticus,val,AsAq-kur2_26_22,1,0.9999999980900052,-3.0688381135291083
+Asellus aquaticus,val,AsAq-kur2_32_22,1,0.9184292980901583,-6.137902525780416
+Asellus aquaticus,val,AsAq-sii3_59_21,0,0.9951539599734126,-4.587491667765396
+Asellus aquaticus,val,AsAq-ull1_244_22,1,0.8833980574892527,-2.120232583764415
+Asellus aquaticus,val,AsAq-ull1_528_22,1,0.999999999999976,-4.327378866014791
+Asellus aquaticus,val,AsAq-ull1_535_22,1,0.9999999805738817,-4.00755026880837
+Asellus aquaticus,val,AsAq-ull1_552_22,1,1.0,-5.605517531265044
+Asellus aquaticus,val,AsAq-val3_32_22,0,0.9993760290261438,-6.303228230976386
+Asellus aquaticus,val,G-D10-AsAq-koy2-14,0,0.999999998409419,-7.246325603231905
+Caenis horaria,train,CaHo-haa3_122_22,0,1.0,-3.7716281512328873
+Caenis horaria,train,CaHo-hii1_26_22,0,1.0,-3.0379252109480337
+Caenis horaria,train,CaHo-iso1_3_21,0,1.0,-3.6584874293404877
+Caenis horaria,train,CaHo-iso1_71_21,0,1.0,-3.5421641647086695
+Caenis horaria,train,CaHo-iva1_48_22,0,1.0,-6.109521287971267
+Caenis horaria,train,CaHo-iva1_81_22,0,1.0,-3.844532526922407
+Caenis horaria,train,CaHo-kak2_4_21,0,1.0,-4.332783790306223
+Caenis horaria,train,CaHo-kir1_11_22,0,1.0,-4.154997165037463
+Caenis horaria,train,CaHo-kom3_168_22,0,1.0,-3.6537125504349426
+Caenis horaria,train,CaHo-koy2_9_21,0,1.0,-2.977737975082862
+Caenis horaria,train,CaHo-lop1_76_21,0,1.0,-7.565149910493114
+Caenis horaria,train,CaHo-nie2_31_21,0,1.0,-4.250664135385611
+Caenis horaria,train,CaHo-nie2_36_21,0,1.0,-4.822351625313821
+Caenis horaria,train,CaHo-nie2_78_21,0,1.0,-3.1933219102433785
+Caenis horaria,train,CaHo-pus3_27_22,0,1.0,-4.321502337865963
+Caenis horaria,train,CaHo-sii1_76_21,0,1.0,-5.299248345315801
+Caenis horaria,train,CaHo-sii3_113_21,0,1.0,-1.8383485227018088
+Caenis horaria,train,CaHo-sii3_187_21,0,1.0,-3.4005093889770137
+Caenis horaria,train,CaHo-sii3_199_21,0,0.9999999999999982,-3.1779720618725857
+Caenis horaria,train,CaHo-val1_164_22,0,1.0,-5.700697807473501
+Caenis horaria,train,CaHo-val1_58_22,0,1.0,-4.777549903798304
+Caenis horaria,train,CaHo-val2_163_22,0,1.0,-10.470780946669004
+Caenis horaria,train,CaHo-val2_18_22,0,1.0,-7.999290566727895
+Caenis horaria,train,CaHo-val2_1_21,0,1.0,-8.528416317353685
+Caenis horaria,train,CaHo-val3_12_22,0,1.0,-3.2163008291922175
+Caenis horaria,train,CaHo-val3_19_21,0,1.0,-4.1220798615029075
+Caenis horaria,train,CaHo-val3_25_22,0,1.0,-4.79613926481513
+Caenis horaria,train,CaHo-val3_37_21,0,1.0,-4.9820803690070985
+Caenis horaria,train,M-E11-CaHo-sii1-18,1,1.0,-9.27295565290373
+Caenis horaria,train,Q-B6-CaHo-vii1-1,1,1.0,-9.874917889388792
+Caenis horaria,val,CaHo-haa2_19_21,0,1.0,-2.521548637100425
+Caenis horaria,val,CaHo-haa3_33_21,0,1.0,-3.7560265756744595
+Caenis horaria,val,CaHo-iso3_17_21,0,1.0,-4.017963464928959
+Caenis horaria,val,CaHo-iva1_21_22,0,1.0,-5.2139698563468375
+Caenis horaria,val,CaHo-iva1_76_22,0,1.0,-7.459639870367679
+Caenis horaria,val,CaHo-kir1_14_22,0,1.0,-2.5021705236816008
+Caenis horaria,val,CaHo-kom1_21_22,0,1.0,-6.0290356200356054
+Caenis horaria,val,CaHo-kom3_27_22,0,1.0,-2.626402191623468
+Caenis horaria,val,CaHo-kuh1_1_21,0,1.0,-8.72953910569598
+Caenis horaria,val,CaHo-pus2_15_22,0,1.0,-4.682828690203225
+Caenis horaria,val,CaHo-val1_12_21,0,1.0,-4.910319164737503
+Caenis horaria,val,CaHo-val2_106_22,0,1.0,-3.1571544041403072
+Caenis horaria,val,CaHo-val2_84_22,0,1.0,-6.214220791183969
+Caenis horaria,val,CaHo-val2_98_22,0,0.9999999999561524,-5.029047560589708
+Caenis horaria,val,CaHo-vii1_10_21,0,1.0,-4.444138834096487
+Caenis luctuosa,train,11-A11-CaLu-kak3-8,1,1.0,-6.939743915145339
+Caenis luctuosa,train,13-H11-CaLu-lop2-1,1,1.0,-9.127161805178448
+Caenis luctuosa,train,13-H7-CaLu-lop1-5,1,1.0,-6.786819782904116
+Caenis luctuosa,train,7-C3-CaLu-kak2-3,1,1.0,-4.937198538432426
+Caenis luctuosa,train,C-C3-CaLu-kak1-2,1,1.0,-5.108401720844354
+Caenis luctuosa,train,CaLu-hii1_16_22,0,1.0,-2.7361722585421475
+Caenis luctuosa,train,CaLu-hii1_1_22,0,1.0,-5.036648219012822
+Caenis luctuosa,train,CaLu-hii1_28_22,0,1.0,-4.51110961909867
+Caenis luctuosa,train,CaLu-hii1_29_22,0,1.0,-4.395890340653894
+Caenis luctuosa,train,CaLu-hii1_48_22,0,1.0,-3.7984802784987846
+Caenis luctuosa,train,CaLu-kaj2_3_21,0,1.0,-3.579955554508121
+Caenis luctuosa,train,CaLu-kak1_17_21,0,1.0,-4.524310615140639
+Caenis luctuosa,train,CaLu-kak1_22_21,0,1.0,-2.841762447180752
+Caenis luctuosa,train,CaLu-kak1_37_21,0,1.0,-4.058524729843059
+Caenis luctuosa,train,CaLu-kak2_25_21,0,1.0,-2.958836652996453
+Caenis luctuosa,train,CaLu-kak2_46_21,0,1.0,-3.2492615878994986
+Caenis luctuosa,train,CaLu-kak2_62_21,0,1.0,-4.620943629145804
+Caenis luctuosa,train,CaLu-kak3_17_21,0,1.0,-7.08021497085093
+Caenis luctuosa,train,CaLu-kak3_22_21,0,1.0,-3.385200836138832
+Caenis luctuosa,train,CaLu-kak3_53_21,0,1.0,-4.347613629571253
+Caenis luctuosa,train,CaLu-kak3_8_21,0,1.0,-3.1117434059484275
+Caenis luctuosa,train,CaLu-lop1_19_21,0,1.0,-4.16793167635212
+Caenis luctuosa,train,CaLu-lop1_28_21,0,1.0,-3.1592191089892285
+Caenis luctuosa,train,CaLu-lop1_52_21,0,1.0,-4.050717630370226
+Caenis luctuosa,train,CaLu-lop1_9_21,0,1.0,-2.2116169795438267
+Caenis luctuosa,train,CaLu-lop2_16_21,0,1.0,-5.498114158172857
+Caenis luctuosa,train,CaLu-lop2_7_21,0,1.0,-2.2566077043669495
+Caenis luctuosa,train,CaLu-val2_8_22,0,1.0,-9.018594467389828
+Caenis luctuosa,train,D-E10-CaLu-kak1-8,1,1.0,-6.300178751232716
+Caenis luctuosa,train,J-E4-CaLu-kak2-21,1,1.0,-7.891003293757841
+Caenis luctuosa,val,13-H12-CaLu-lop2-2,1,1.0,-7.654371210448938
+Caenis luctuosa,val,7-C10-CaLu-kak2-10,1,1.0,-3.7395227967186475
+Caenis luctuosa,val,C-C4-CaLu-kak1-3,1,1.0,-8.918853511893257
+Caenis luctuosa,val,CaLu-hii1_31_22,0,1.0,-7.3909953220927544
+Caenis luctuosa,val,CaLu-kak1_15_21,0,1.0,-5.102539910936786
+Caenis luctuosa,val,CaLu-kak1_51_21,0,1.0,-6.076159728068497
+Caenis luctuosa,val,CaLu-kak2_43_21,0,1.0,-3.0826152137441962
+Caenis luctuosa,val,CaLu-kak3_31_21,0,1.0,-3.8515775373159222
+Caenis luctuosa,val,CaLu-kak3_57_21,0,1.0,-11.172982348160769
+Caenis luctuosa,val,CaLu-lop1_15_21,0,1.0,-1.6891784456097998
+Caenis luctuosa,val,CaLu-lop1_39_21,0,1.0,-6.4332328689911655
+Caenis luctuosa,val,CaLu-lop1_45_21,0,1.0,-5.070339509148543
+Caenis luctuosa,val,CaLu-lop2_3_21,0,1.0,-7.743841294002369
+Caenis luctuosa,val,CaLu-val2_6_22,0,0.9999999999815117,-10.628201758530231
+Caenis luctuosa,val,P-B3-CaLu-lop1-9,1,1.0,-18.71083118882692
+Caenis rivulorum,train,A-A3-CaRi-hau1-1,1,1.0,-1.5228447128789817
+Caenis rivulorum,train,A-G2-CaRi-hau1-3,1,1.0,-2.8193106002399126
+Caenis rivulorum,train,B-B12-CaRi-hau1-4,1,1.0,-1.7212875478369263
+Caenis rivulorum,train,CaRi-haa1_3_22,0,1.0,-3.218553014947963
+Caenis rivulorum,train,CaRi-haa2_10_22,0,1.0,-1.1066197615125812
+Caenis rivulorum,train,CaRi-haa2_11_22,0,1.0,-5.6623238424406885
+Caenis rivulorum,train,CaRi-haa2_13_22,0,1.0,-3.963193610243877
+Caenis rivulorum,train,CaRi-haa2_2_22,0,1.0,-5.468286171368128
+Caenis rivulorum,train,CaRi-haa2_4_22,0,1.0,-4.584417318948997
+Caenis rivulorum,train,CaRi-haa2_5_22,0,1.0,-2.2702761571572427
+Caenis rivulorum,train,CaRi-haa2_6_22,0,1.0,-1.227706487621262
+Caenis rivulorum,train,CaRi-haa2_7_22,0,1.0,-1.941195484579449
+Caenis rivulorum,train,CaRi-haa2_8_22,0,1.0,-6.914861270220783
+Caenis rivulorum,train,CaRi-haa2_9_22,0,1.0,-2.747558101731089
+Caenis rivulorum,train,CaRi-hau1_2_21,0,1.0,-1.5951800255151625
+Caenis rivulorum,train,CaRi-vie1_10_22,0,1.0,-5.825574531668913
+Caenis rivulorum,train,CaRi-vie1_11_22,0,1.0,-4.2095716696581835
+Caenis rivulorum,train,CaRi-vie1_3_22,0,1.0,-4.916240742113885
+Caenis rivulorum,train,CaRi-vie1_7_22,0,1.0,-5.092442370939185
+Caenis rivulorum,train,CaRi-vie1_8_22,0,1.0,-4.410232671719498
+Caenis rivulorum,train,E-H5-CaRi-hau3-2,1,1.0,-3.526300564425698
+Caenis rivulorum,train,G-E10-CaRi-hau3-6,1,1.0,-2.5573092131523936
+Caenis rivulorum,train,H-C4-CaRi-hau3-8,1,1.0,-1.2750655099833246
+Caenis rivulorum,train,I-F10-CaRi-hau3-10,1,1.0,-2.271944438317341
+Caenis rivulorum,train,I-G6-CaRi-hau3-11,1,1.0,-1.950498905762288
+Caenis rivulorum,train,J-A11-CaRi-hau3-12,1,1.0,-2.930033900451212
+Caenis rivulorum,train,K-A1-CaRi-hau3-13,1,1.0,-4.7441254885677875
+Caenis rivulorum,train,K-F5-CaRi-hau3-14,1,1.0,-1.3884736810730889
+Caenis rivulorum,train,L-D4-CaRi-hau3-16,1,1.0,-3.753553146292459
+Caenis rivulorum,train,L-G12-CaRi-hau3-17,1,1.0,-4.050601856845454
+Caenis rivulorum,val,CaRi-haa1_4_22,0,1.0,-8.12896869323113
+Caenis rivulorum,val,CaRi-haa2_3_22,0,1.0,-5.45003305513996
+Caenis rivulorum,val,CaRi-vie1_6_22,0,1.0,-5.364094266196322
+Caenis rivulorum,val,CaRi-vie1_9_22,0,1.0,-4.871121006721781
+Caenis rivulorum,val,D-H8-CaRi-hau3-1,1,1.0,-1.9295896722652692
+Caenis rivulorum,val,G-E8-CaRi-hau3-5,1,1.0,-10.981790463664865
+Caenis rivulorum,val,M-H3-CaRi-hau3-18,1,1.0,-1.8096982715280738
+Centroptilum luteolum,train,CeLu-hau2_1_21,0,1.0,-6.465804034799343
+Centroptilum luteolum,train,CeLu-hau2_2_21,0,1.0,-6.719446964113504
+Centroptilum luteolum,train,CeLu-hii1_10_22,0,1.0,-4.161095529200515
+Centroptilum luteolum,train,CeLu-hii1_16_22,0,1.0,-5.673299723748607
+Centroptilum luteolum,train,CeLu-hii1_3_22,0,1.0,-4.974012933792149
+Centroptilum luteolum,train,CeLu-hii1_4_22,0,1.0,-4.466485721750062
+Centroptilum luteolum,train,CeLu-iva1_12_22,0,1.0,-3.7560804031986157
+Centroptilum luteolum,train,CeLu-iva1_13_22,0,1.0,-6.795709446898484
+Centroptilum luteolum,train,CeLu-iva1_16_22,0,1.0,-4.797511286296152
+Centroptilum luteolum,train,CeLu-iva1_18_22,0,1.0,-3.6214150714313424
+Centroptilum luteolum,train,CeLu-iva1_19_22,0,1.0,-5.110352730324496
+Centroptilum luteolum,train,CeLu-iva1_23_22,0,1.0,-4.983854916872981
+Centroptilum luteolum,train,CeLu-iva1_3_22,0,1.0,-5.926807438275602
+Centroptilum luteolum,train,CeLu-iva1_4_22,0,1.0,-3.45615574437861
+Centroptilum luteolum,train,CeLu-iva1_5_22,0,1.0,-3.509474320039799
+Centroptilum luteolum,train,CeLu-iva1_6_22,0,1.0,-3.0190287973400407
+Centroptilum luteolum,train,CeLu-iva1_9_22,0,1.0,-5.473728091563191
+Centroptilum luteolum,train,CeLu-kuh2_1_21,0,1.0,-9.169624638902004
+Centroptilum luteolum,train,CeLu-kur1_1_22,0,1.0,-5.518952909245988
+Centroptilum luteolum,train,CeLu-kur2_1_22,0,1.0,-3.210057454178801
+Centroptilum luteolum,train,CeLu-kur2_2_22,0,1.0,-3.5851894897327403
+Centroptilum luteolum,train,CeLu-pus1_1_22,0,1.0,-3.9797814697913863
+Centroptilum luteolum,train,G-C2-CeLu-sii1-7,1,1.0,-4.240501853862226
+Centroptilum luteolum,train,L-C2-CeLu-sii1-10,1,1.0,-5.829756363100802
+Centroptilum luteolum,train,L-D3-CeLu-sii1-11,1,1.0,-5.811499040056003
+Centroptilum luteolum,train,L-E7-CeLu-sii1-12,1,1.0,-5.837474100025623
+Centroptilum luteolum,train,O-C12-CeLu-sii1-15,1,1.0,-3.194634600485325
+Centroptilum luteolum,train,P-A6-CeLu-sii1-16,1,1.0,-6.952695549784894
+Centroptilum luteolum,train,P-C6-CeLu-sii2-1,1,1.0,-7.201636397399429
+Centroptilum luteolum,train,Q-A7-CeLu-val1-1,1,1.0,-6.202743082534991
+Centroptilum luteolum,val,CeLu-hii1_15_22,0,1.0,-4.56069930738474
+Centroptilum luteolum,val,CeLu-hii1_1_22,0,1.0,-4.71374396586143
+Centroptilum luteolum,val,CeLu-hii1_2_22,0,1.0,-16.00007687084283
+Centroptilum luteolum,val,CeLu-hii1_6_22,0,1.0,-4.297806466022224
+Centroptilum luteolum,val,CeLu-hii3_1_22,0,1.0,-5.592824078875338
+Centroptilum luteolum,val,CeLu-hii3_2_22,0,1.0,-3.193364340069029
+Centroptilum luteolum,val,CeLu-iva1_15_22,0,1.0,-4.315436524212994
+Centroptilum luteolum,val,CeLu-val1_1_21,0,1.0,-6.373079556588876
+Centroptilum luteolum,val,E-F9-CeLu-sii1-1,1,1.0,-7.678738244333775
+Centroptilum luteolum,val,E-H3-CeLu-sii1-2,1,1.0,-7.186942435149612
+Ceratopogonidae,train,14-B7-Ce-sii1-1,1,0.999997031747858,-8.429923241277942
+Ceratopogonidae,train,Ce-haa3_1_22,0,0.9999997189071356,-1.6118016423006498
+Ceratopogonidae,train,Ce-haa3_5_22,0,0.9999967306974082,-4.467502104864321
+Ceratopogonidae,train,Ce-hau3_1_21,1,0.9999312049866989,-2.0465300419571086
+Ceratopogonidae,train,Ce-iso1_19_21,1,0.9999998614350212,-3.665768829707627
+Ceratopogonidae,train,Ce-iso1_27_22,1,0.9999999946824607,-5.766851161923428
+Ceratopogonidae,train,Ce-iso3_17_22,0,0.9999998886478436,-4.355490105957314
+Ceratopogonidae,train,Ce-iso3_19_21,1,0.9999989427807423,-3.627417191269199
+Ceratopogonidae,train,Ce-iso3_26_22,0,0.9999999385807984,-3.872222958543958
+Ceratopogonidae,train,Ce-iva1_77_22,1,0.9999999674140844,-3.2318262006214287
+Ceratopogonidae,train,Ce-iva1_7_22,0,0.9999926732450852,-3.333789508480585
+Ceratopogonidae,train,Ce-kak3_13_21,1,0.9999998962507486,-3.2512278543001365
+Ceratopogonidae,train,Ce-kom2_19_22,1,0.9999287240647461,-3.3930806513390674
+Ceratopogonidae,train,Ce-kom2_46_22,1,0.9977069871306088,-1.6543130539381554
+Ceratopogonidae,train,Ce-koy2_11_21,0,0.9999954498590269,-4.303686046355535
+Ceratopogonidae,train,Ce-kur2_3_22,0,0.9990865134138064,-2.222193913153278
+Ceratopogonidae,train,Ce-kur2_6_21,0,0.9999703369206991,-3.7161306492391564
+Ceratopogonidae,train,Ce-kur2_7_21,0,0.9999970759742085,-3.05210423680745
+Ceratopogonidae,train,Ce-sii1_2_21,1,0.9999157636709294,-2.7275424987683845
+Ceratopogonidae,train,Ce-sii3_2_21,0,0.9999999890521619,-5.029741034791341
+Ceratopogonidae,train,Ce-ull1_3_22,1,0.999998583438492,-3.3870809081395965
+Ceratopogonidae,train,Ce-val1_27_22,0,0.9999989697264908,-2.3707355976923843
+Ceratopogonidae,train,Ce-val1_36_22,1,0.9978968197289723,-2.073045934204343
+Ceratopogonidae,train,Ce-val1_44_22,0,0.9999997985008128,-4.065866700465191
+Ceratopogonidae,train,Ce-val1_62_22,1,0.9999987242190775,-5.053012017261134
+Ceratopogonidae,train,Ce-val1_63_22,0,0.9972163873018495,-5.21530903368485
+Ceratopogonidae,train,Ce-val1_9_22,1,0.99993267156034,-3.461557857847394
+Ceratopogonidae,train,Ce-val2_20_22,0,0.9999999807014961,-2.7530156866434314
+Ceratopogonidae,train,Ce-val3_2_21,0,0.9970337541707308,-1.8095907174710657
+Ceratopogonidae,train,Ce-vie1_25_22,1,0.9999999970043607,-1.6847491393545102
+Ceratopogonidae,val,3-E5-Ce-iso1-4,0,0.9996205484574288,-33.361006811049386
+Ceratopogonidae,val,Ce-hau1_2_21,1,1.0,-5.417195325838895
+Ceratopogonidae,val,Ce-iva1_13_22,0,0.999993900813923,-2.0135455706056735
+Ceratopogonidae,val,Ce-kak2_6_21,0,0.9999999998053113,-2.4356335500165436
+Ceratopogonidae,val,Ce-kir2_6_21,0,1.0,-9.939187481585217
+Ceratopogonidae,val,Ce-kom2_55_22,0,0.8879121493669944,-2.5591076226060885
+Ceratopogonidae,val,Ce-sii1_5_21,0,0.9999929593632809,-6.524903140493441
+Ceratopogonidae,val,Ce-val1_28_22,1,1.0,-11.134703795275177
+Ceratopogonidae,val,Ce-val1_34_22,0,0.9998864066646757,-7.4051909225256995
+Ceratopogonidae,val,Ce-val1_45_22,1,0.999999997476472,-6.531469601636564
+Ceratopogonidae,val,Ce-val1_57_22,1,0.9999990936663149,-3.6119935198038764
+Ceratopogonidae,val,Ce-val1_8_22,0,0.9999801575386783,-7.3298432341363515
+Ceratopogonidae,val,Ce-val2_21_22,0,0.9999953534623047,-3.406619408396507
+Ceratopogonidae,val,Ce-val2_7_22,0,0.9994330267365403,-2.9725103909127153
+Ceratopogonidae,val,Ce-val3_3_22,1,0.9999997304140259,-5.60959958950882
+Chironomidae,train,Ch-iso1_111_21,1,0.9999999998813198,-2.107099011566996
+Chironomidae,train,Ch-iso1_152_22,0,0.999999999991493,-8.290058290622541
+Chironomidae,train,Ch-iso3_54_21,1,0.9999999994031157,-4.917492175794893
+Chironomidae,train,Ch-iva1_456_22,1,0.9917233824975058,-2.027058846075059
+Chironomidae,train,Ch-iva1_577_22,1,0.9999999971840672,-2.0529142052834093
+Chironomidae,train,Ch-kom2_533_22,0,0.9999999997152282,-2.4615289263607796
+Chironomidae,train,Ch-kom2_971_22,0,0.9999822472274457,-2.2218581952582657
+Chironomidae,train,Ch-kom2_976_22,0,0.9999992819611192,-1.4377656705555175
+Chironomidae,train,Ch-kom3_251_22,1,0.9999999999999423,-5.159070286169133
+Chironomidae,train,Ch-koy2_171_21,0,0.9999999975577838,-1.7156069309333741
+Chironomidae,train,Ch-kuo1_101_22,0,0.9999861400527973,-4.609942338782062
+Chironomidae,train,Ch-kuo2_25_21,0,0.9999999999684754,-4.746922228122715
+Chironomidae,train,Ch-kuo2_88_22,1,0.9999998698884203,-2.9704512174279127
+Chironomidae,train,Ch-kuo2_95_22,1,0.9999999997955884,-8.2049641034982
+Chironomidae,train,Ch-kuo2_96_22,0,0.9999999976285627,-4.999364417884756
+Chironomidae,train,Ch-kur1_193_22,0,0.999999999957239,-1.5906307833472795
+Chironomidae,train,Ch-kur2_17_21,1,0.9999999995908473,-5.938540389253802
+Chironomidae,train,Ch-kur2_27_22,0,0.9999999998961924,-6.648604192335524
+Chironomidae,train,Ch-kur2_47_22,0,0.9999997556682875,-3.210411697539014
+Chironomidae,train,Ch-nie2_12_21,0,0.9999999999783578,-5.448965624631542
+Chironomidae,train,Ch-sii1_48_21,0,0.9999823140116768,-4.689638524198234
+Chironomidae,train,Ch-ull1_124_22,1,0.9974154873244311,-2.3720772918287043
+Chironomidae,train,Ch-ull1_194_22,1,0.9999999830996327,-1.7565952683177581
+Chironomidae,train,Ch-ull1_349_22,0,0.9999999983002441,-6.142675168321775
+Chironomidae,train,Ch-ull1_396_22,0,0.9999929015298579,-3.5457971314569807
+Chironomidae,train,Ch-ull1_521_22,1,0.9998932516692122,-3.7692302906891086
+Chironomidae,train,Ch-vie1_30_22,1,0.9999999997832315,-1.6965196730949508
+Chironomidae,train,Ch-vie1_80_22,1,0.9999999977053207,-2.4481457495411547
+Chironomidae,train,Ch-vii1_20_21,0,0.9999999935656891,-5.961093870838198
+Chironomidae,train,Ch-vii2_2_21,0,0.9999999964945272,-3.7408582693663472
+Chironomidae,val,Ch-ala1_74_21,0,0.9999990730809517,-2.350703124730673
+Chironomidae,val,Ch-iso3_150_21,1,0.9999999999994724,-14.366198369865588
+Chironomidae,val,Ch-iso3_191_21,1,0.9999999770943806,-7.298646618936267
+Chironomidae,val,Ch-iso3_80_22,1,0.9853894703474818,-11.804827260242659
+Chironomidae,val,Ch-kaj2_17_21,0,0.9999999943566102,-3.337416958345548
+Chironomidae,val,Ch-kaj2_9_21,0,0.9785323453499621,-3.2716700021704384
+Chironomidae,val,Ch-kak1_3_21,1,0.9596411386928049,-5.373983378814392
+Chironomidae,val,Ch-kom2_834_22,0,0.9817507322583665,-1.7769880068464534
+Chironomidae,val,Ch-kuo1_2_22,1,0.5080291253199599,-1.3130971934420579
+Chironomidae,val,Ch-ull1_263_22,0,0.9999999925690646,-2.3444867757346532
+Chironomidae,val,Ch-ull1_400_22,0,0.9999872620083297,-0.9694226916846471
+Chironomidae,val,Ch-val1_392_22,0,0.9999946073687446,-4.563558512519384
+Chironomidae,val,Ch-val2_190_21,0,1.0,-7.689514137995717
+Chironomidae,val,Ch-val2_305_22,1,0.9999999999998685,-2.8589415123071813
+Chironomidae,val,Ch-val2_560_22,0,0.9331968164597694,-3.9654252324911017
+Cloeon,train,Cl-iso1_10_22,0,0.9999999411285168,-2.9280307609225353
+Cloeon,train,Cl-iso1_17_22,0,0.99999997777209,-4.723837997321343
+Cloeon,train,Cl-iso1_22_22,0,0.9999999999999938,-4.1302890734819915
+Cloeon,train,Cl-iso1_23_22,0,0.9999999990653938,-4.705445145085896
+Cloeon,train,Cl-iso1_26_22,0,0.9999999996060387,-3.9290263522963844
+Cloeon,train,Cl-iso1_7_22,1,0.9999999999904299,-6.793179461250881
+Cloeon,train,Cl-iso2_14_22,0,0.999999999886708,-1.5202286078314202
+Cloeon,train,Cl-iso2_2_22,0,0.9999999838074595,-5.606004987899382
+Cloeon,train,Cl-iso2_4_22,0,0.9999999999992504,-4.691354258842155
+Cloeon,train,Cl-iso2_5_22,0,0.9999999995568896,-2.2329670913749418
+Cloeon,train,Cl-iso2_8_22,0,0.9999999999986171,-7.058411783327255
+Cloeon,train,Cl-iso2_9_22,0,0.9999999999339986,-4.878840726593873
+Cloeon,train,Cl-iso3_11_22,1,0.9741665318350603,-2.699862870609188
+Cloeon,train,Cl-iso3_15_22,0,0.999976788402951,-3.6630325910051447
+Cloeon,train,Cl-iso3_22_22,1,0.9999999999985487,-5.678129685672783
+Cloeon,train,Cl-iso3_23_22,0,0.9999999785037421,-3.591290575182988
+Cloeon,train,Cl-iso3_30_22,0,0.999983747223879,-3.8027941613363048
+Cloeon,train,Cl-iso3_34_22,0,0.9999999479444703,-3.3004154165580886
+Cloeon,train,Cl-iso3_43_22,0,0.9999999977009977,-4.230483064230576
+Cloeon,train,Cl-iso3_44_22,1,0.9999997322596225,-4.269036023913003
+Cloeon,train,Cl-iso3_48_22,0,0.9999999999315441,-4.139492062805836
+Cloeon,train,Cl-iso3_5_22,1,0.9999999657601358,-3.3498135245591225
+Cloeon,train,Cl-iso3_9_22,0,0.9999959608429133,-2.2650801722636515
+Cloeon,train,Cl-kak1_1_21,1,0.9999999820944067,-11.428155384322018
+Cloeon,train,Cl-kak3_15_21,1,0.9999999999997229,-6.495380577584227
+Cloeon,train,Cl-kak3_16_21,1,0.9999993588117531,-6.83297828473968
+Cloeon,train,Cl-kak3_2_21,0,0.9999999695417516,-4.511578240613282
+Cloeon,train,Cl-kak3_3_21,1,0.999999926683099,-5.852996797512146
+Cloeon,train,Cl-kak3_6_21,1,0.9999999999669535,-6.870679470543108
+Cloeon,train,Cl-val1_1_22,1,0.9999999493476728,-3.589373839524665
+Cloeon,val,Cl-iso1_4_22,1,0.9992542377048402,-7.134933686380668
+Cloeon,val,Cl-iso2_1_22,0,0.9999649590248105,-1.614729255283894
+Cloeon,val,Cl-iso3_13_22,0,0.999999716805653,-3.683407622679395
+Cloeon,val,Cl-iso3_16_22,0,0.9901883674896341,-4.7962567774529035
+Cloeon,val,Cl-iso3_18_22,0,0.9999999435385944,-5.0869578793931645
+Cloeon,val,Cl-iso3_31_22,0,0.9999999999880378,-2.0809474696851993
+Cloeon,val,Cl-iso3_3_22,0,0.9998749451235652,-4.153553426667862
+Cloeon,val,Cl-iso3_7_22,0,0.99999999995577,-2.2329114129822027
+Cloeon,val,Cl-kak3_10_21,1,0.9999959572720828,-7.001306938686419
+Cloeon dipterum,train,5-F1-ClDi-iso1-1,1,1.0,-4.661746862907558
+Cloeon dipterum,train,5-F2-ClDi-iso1-2,1,1.0,-7.434904343314868
+Cloeon dipterum,train,9-F10-ClDi-pus2-2,1,1.0,-12.266739963242442
+Cloeon dipterum,train,9-F11-ClDi-pus2-3,1,1.0,-4.889848671177232
+Cloeon dipterum,train,9-F3-ClDi-koy2-2,1,1.0,-7.159438016840047
+Cloeon dipterum,train,9-F5-ClDi-koy2-4,1,1.0,-5.692166012235498
+Cloeon dipterum,train,9-F7-ClDi-pus1-2,1,1.0,-3.715406922919067
+Cloeon dipterum,train,B-B8-ClDi-iso1-2,1,1.0,-3.037136048512476
+Cloeon dipterum,train,C-G7-ClDi-iso3-1,1,1.0,-3.775968386449895
+Cloeon dipterum,train,ClDi-hau2_1_21,0,1.0,-6.054102497570046
+Cloeon dipterum,train,ClDi-iso2_4_22,0,1.0,-6.72798319977578
+Cloeon dipterum,train,ClDi-iso3_14_22,0,1.0,-4.548463514835371
+Cloeon dipterum,train,ClDi-iso3_15_22,0,1.0,-2.533054793705622
+Cloeon dipterum,train,ClDi-iso3_16_22,0,1.0,-4.618496959808921
+Cloeon dipterum,train,ClDi-iso3_1_21,0,1.0,-6.81296139753583
+Cloeon dipterum,train,ClDi-iso3_26_22,0,1.0,-6.433826499572964
+Cloeon dipterum,train,ClDi-iso3_36_22,0,1.0,-4.400189067626494
+Cloeon dipterum,train,ClDi-iso3_3_22,0,1.0,-3.1912374282423333
+Cloeon dipterum,train,ClDi-iso3_4_22,0,1.0,-4.6737605377838936
+Cloeon dipterum,train,ClDi-kaj2_1_21,0,1.0,-5.0311338290517575
+Cloeon dipterum,train,ClDi-koy2_6_21,0,1.0,-4.665733449043479
+Cloeon dipterum,train,ClDi-pus2_4_21,0,1.0,-3.8296105094387833
+Cloeon dipterum,train,ClDi-sii1_1_21,0,1.0,-5.332661310205131
+Cloeon dipterum,train,I-D10-ClDi-pus2-1,1,1.0,-3.335197744570813
+Cloeon dipterum,train,I-H1-ClDi-pus2-3,1,1.0,-4.363536149544508
+Cloeon dipterum,train,I-H10-ClDi-pus2-4,1,1.0,-3.506054994980751
+Cloeon dipterum,train,J-C10-ClDi-pus2-5,1,1.0,-5.064330792595072
+Cloeon dipterum,train,J-F12-ClDi-pus2-7,1,1.0,-3.262072945738243
+Cloeon dipterum,train,L-E5-ClDi-pus2-9,1,1.0,-2.880187337069577
+Cloeon dipterum,train,P-D12-ClDi-vii1-1,1,1.0,-7.628239150217203
+Cloeon dipterum,val,5-F8-ClDi-iso3-5,1,1.0,-2.614870664604025
+Cloeon dipterum,val,9-F12-ClDi-sii3-1,1,1.0,-3.8823938667683127
+Cloeon dipterum,val,9-F6-ClDi-pus1-1,1,1.0,-6.849668808614149
+Cloeon dipterum,val,A-E3-ClDi-iso1-1,1,1.0,-5.319791043602622
+Cloeon dipterum,val,ClDi-iso1_3_21,0,1.0,-4.570752870012267
+Cloeon dipterum,val,ClDi-iso3_23_22,0,1.0,-4.394382284855212
+Cloeon dipterum,val,ClDi-iso3_25_22,0,1.0,-3.723171636403178
+Cloeon dipterum,val,ClDi-iso3_30_22,0,1.0,-4.2004923915343575
+Cloeon dipterum,val,ClDi-iso3_32_22,0,1.0,-2.9230982834337276
+Cloeon dipterum,val,ClDi-pus2_1_21,0,1.0,-7.681680372548769
+Cloeon dipterum,val,ClDi-pus2_7_21,0,1.0,-58.354994670424645
+Cloeon dipterum,val,ClDi-sii2_1_21,0,1.0,-6.888466353122313
+Cloeon dipterum,val,ClDi-sii2_2_21,0,1.0,-3.848803030676029
+Cloeon dipterum,val,D-C5-ClDi-iso3-3,1,1.0,-6.9448068842887505
+Cloeon dipterum,val,D-E6-ClDi-iso3-4,1,1.0,-7.391314110374063
+Cyrnus flavidus,train,4-H1-CyFl-iso1-1,0,1.0,-3.4926839856114977
+Cyrnus flavidus,train,4-H5-CyFl-iso1-5,0,1.0,-4.09730840596624
+Cyrnus flavidus,train,4-H6-CyFl-iso1-6,0,1.0,-3.9817950149478207
+Cyrnus flavidus,train,8-H1-CyFl-iso2-6,0,1.0,-6.755201653294552
+Cyrnus flavidus,train,8-H3-CyFl-iso2-8,0,1.0,-6.885812237881952
+Cyrnus flavidus,train,8-H4-CyFl-iso2-9,0,1.0,-8.311561039953482
+Cyrnus flavidus,train,8-H7-CyFl-iso2-12,0,1.0,-4.903083751275357
+Cyrnus flavidus,train,CyFl-iso1_12_22,1,1.0,-4.463076311479117
+Cyrnus flavidus,train,CyFl-iso1_15_22,0,1.0,-2.351504156497624
+Cyrnus flavidus,train,CyFl-iso1_19_22,0,1.0,-1.921677283072043
+Cyrnus flavidus,train,CyFl-iso1_21_22,0,1.0,-2.343670083964682
+Cyrnus flavidus,train,CyFl-iso1_2_22,0,1.0,-2.1474307280477056
+Cyrnus flavidus,train,CyFl-iso1_8_22,0,1.0,-1.878146824131635
+Cyrnus flavidus,train,CyFl-iso1_9_22,0,1.0,-3.3361051453186796
+Cyrnus flavidus,train,CyFl-iso2_11_21,0,1.0,-5.113428089225568
+Cyrnus flavidus,train,CyFl-iso2_12_22,0,1.0,-4.06079628788995
+Cyrnus flavidus,train,CyFl-iso2_17_22,0,1.0,-2.8012705751980427
+Cyrnus flavidus,train,CyFl-iso2_1_21,0,1.0,-2.545373759620503
+Cyrnus flavidus,train,CyFl-iso2_1_22,0,1.0,-3.208890990407454
+Cyrnus flavidus,train,CyFl-iso2_24_22,0,1.0,-3.577492431468265
+Cyrnus flavidus,train,CyFl-iso2_2_22,0,1.0,-4.630288053612876
+Cyrnus flavidus,train,CyFl-iso2_4_22,0,1.0,-3.7597380032038217
+Cyrnus flavidus,train,CyFl-iso2_9_22,1,1.0,-3.008264458490359
+Cyrnus flavidus,train,CyFl-iso3_4_22,1,1.0,-6.590999618116239
+Cyrnus flavidus,train,CyFl-iso3_5_22,0,1.0,-3.8700914351545865
+Cyrnus flavidus,train,CyFl-iso3_8_22,1,1.0,-4.965165682330468
+Cyrnus flavidus,train,CyFl-kaj1_1_21,0,1.0,-1.9182723100988923
+Cyrnus flavidus,train,CyFl-kuo2_1_22,1,1.0,-5.755507359301067
+Cyrnus flavidus,train,CyFl-pus3_1_21,1,1.0,-9.970587021995236
+Cyrnus flavidus,train,CyFl-val2_1_22,1,1.0,-7.030979826976196
+Cyrnus flavidus,val,4-H7-CyFl-iso1-7,0,1.0,-3.2907405489439476
+Cyrnus flavidus,val,8-H5-CyFl-iso2-10,0,1.0,-4.4176006625251585
+Cyrnus flavidus,val,CyFl-iso1_11_22,0,0.9999999975745215,-5.659343038017276
+Cyrnus flavidus,val,CyFl-iso1_13_22,1,1.0,-7.624385650971334
+Cyrnus flavidus,val,CyFl-iso1_16_22,0,0.688354667383998,-4.8834844486986135
+Cyrnus flavidus,val,CyFl-iso1_1_22,0,1.0,-4.538400151639161
+Cyrnus flavidus,val,CyFl-iso1_20_22,0,0.9999999999999916,-2.5798626642294167
+Cyrnus flavidus,val,CyFl-iso1_2_21,0,1.0,-8.379173314772306
+Cyrnus flavidus,val,CyFl-iso2_14_22,1,0.999625537524196,-5.727859226948141
+Cyrnus flavidus,val,CyFl-iso2_6_21,0,0.9999999999990372,-8.325936858823027
+Cyrnus flavidus,val,CyFl-iso2_8_21,0,1.0,-5.805689401801313
+Cyrnus flavidus,val,CyFl-iso3_1_21,0,1.0,-3.6067639733261068
+Cyrnus flavidus,val,CyFl-kuo2_1_21,1,1.0,-8.210786912028725
+Cyrnus flavidus,val,CyFl-kuo2_3_22,1,0.9999999999945892,-5.822927556819325
+Cyrnus trimaculatus,train,B-C6-CyTr-hau3-1,1,1.0,-6.361913875334973
+Cyrnus trimaculatus,train,CyTr-haa1_1_22,0,1.0,-4.6886903530180915
+Cyrnus trimaculatus,train,CyTr-haa1_2_22,0,1.0,-5.346147054433417
+Cyrnus trimaculatus,train,CyTr-hau3_2_21,0,1.0,-6.6130115630184045
+Cyrnus trimaculatus,train,CyTr-hii1_2_22,0,1.0,-6.954028086896357
+Cyrnus trimaculatus,train,CyTr-hii3_4_22,0,1.0,-5.36966042446739
+Cyrnus trimaculatus,train,CyTr-iso1_13_22,0,1.0,-5.468044912719955
+Cyrnus trimaculatus,train,CyTr-iso1_1_21,0,1.0,-7.308166396018273
+Cyrnus trimaculatus,train,CyTr-iso2_3_22,0,1.0,-5.336755494398852
+Cyrnus trimaculatus,train,CyTr-iso2_4_22,0,1.0,-3.9446147292888556
+Cyrnus trimaculatus,train,CyTr-iso3_12_22,0,1.0,-5.201798728269524
+Cyrnus trimaculatus,train,CyTr-iso3_14_22,0,1.0,-3.984132399561397
+Cyrnus trimaculatus,train,CyTr-iso3_16_22,0,1.0,-4.769489705282775
+Cyrnus trimaculatus,train,CyTr-iso3_21_22,0,1.0,-4.961967953623581
+Cyrnus trimaculatus,train,CyTr-iso3_36_22,0,1.0,-7.230519571141563
+Cyrnus trimaculatus,train,CyTr-iso3_8_22,0,1.0,-4.411536522952113
+Cyrnus trimaculatus,train,CyTr-kuo1_12_22,0,1.0,-4.64795922139039
+Cyrnus trimaculatus,train,CyTr-kuo1_6_22,0,1.0,-11.529640980348194
+Cyrnus trimaculatus,train,CyTr-kuo1_8_22,0,1.0,-8.508464413733048
+Cyrnus trimaculatus,train,CyTr-lop2_1_21,0,1.0,-4.5921642914931295
+Cyrnus trimaculatus,train,CyTr-val3_14_22,0,1.0,-5.85391991754721
+Cyrnus trimaculatus,train,CyTr-val3_15_22,0,1.0,-5.018899567271512
+Cyrnus trimaculatus,train,CyTr-val3_6_22,0,1.0,-4.3667558557209665
+Cyrnus trimaculatus,train,CyTr-val3_8_22,0,1.0,-5.869484851382848
+Cyrnus trimaculatus,train,CyTr-vie1_14_22,0,1.0,-4.855946272896756
+Cyrnus trimaculatus,train,CyTr-vie1_26_22,0,1.0,-5.928539026843521
+Cyrnus trimaculatus,train,G-A12-CyTr-iso3-3,1,1.0,-5.153551007747242
+Cyrnus trimaculatus,train,H-B3-CyTr-iso3-4,1,1.0,-4.855118375549922
+Cyrnus trimaculatus,train,N-F2-CyTr-kak1-6,1,1.0,-6.112632562322003
+Cyrnus trimaculatus,train,Q-B10-CyTr-kak1-10,1,1.0,-6.2932076876430125
+Cyrnus trimaculatus,val,CyTr-hau3_3_21,0,1.0,-5.61003150820905
+Cyrnus trimaculatus,val,CyTr-hii3_2_22,0,1.0,-4.4852233179598935
+Cyrnus trimaculatus,val,CyTr-hii3_3_22,0,1.0,-3.569587500567528
+Cyrnus trimaculatus,val,CyTr-iso2_1_22,0,1.0,-4.626694457605335
+Cyrnus trimaculatus,val,CyTr-iso3_29_22,0,1.0,-4.814429594489236
+Cyrnus trimaculatus,val,CyTr-iso3_30_22,0,1.0,-5.536296436916184
+Cyrnus trimaculatus,val,CyTr-iso3_7_22,0,1.0,-3.574562707534743
+Cyrnus trimaculatus,val,CyTr-kuo2_1_22,0,1.0,-7.378783386890501
+Cyrnus trimaculatus,val,CyTr-kuo2_3_22,0,1.0,-5.707369634095234
+Cyrnus trimaculatus,val,CyTr-vie1_1_22,0,1.0,-5.514298906296461
+Cyrnus trimaculatus,val,CyTr-vie1_27_22,0,1.0,-5.397709521141384
+Cyrnus trimaculatus,val,CyTr-vii2_1_21,0,1.0,-5.94246930101546
+Cyrnus trimaculatus,val,D-C9-CyTr-iso2-2,1,1.0,-5.360964333746904
+Cyrnus trimaculatus,val,L-E6-CyTr-kak1-3,1,1.0,-12.393266554526292
+Cyrnus trimaculatus,val,M-C12-CyTr-kak1-5,1,1.0,-5.962573845186431
+Ecnomus tenellus,train,A-H9-EcTe-kaj2-2,1,0.9999997929603658,-6.380713027459678
+Ecnomus tenellus,train,D-A10-EcTe-kak2-4,1,0.9999999669398104,-6.857429624815315
+Ecnomus tenellus,train,E-A11-EcTe-kak2-5,0,0.999987729606083,-5.472364344229869
+Ecnomus tenellus,train,EcTe-hii1_8_22,1,0.9999999530076786,-4.469352980663513
+Ecnomus tenellus,train,EcTe-iso1_1_22,1,0.9991699607200518,-3.324097181067743
+Ecnomus tenellus,train,EcTe-kak3_2_21,1,0.9999994764915716,-3.8899021627457353
+Ecnomus tenellus,train,EcTe-kuo1_1_21,1,0.9999980054888131,-5.563132366343717
+Ecnomus tenellus,train,EcTe-kur1_8_22,1,0.9999984340993778,-3.9706870037404576
+Ecnomus tenellus,train,EcTe-kur2_5_22,1,0.9999999601133517,-2.8956599542672175
+Ecnomus tenellus,train,EcTe-lop3_1_21,1,0.999999973984954,-2.1306248657658413
+Ecnomus tenellus,train,EcTe-val1_2_22,1,0.9999999994832467,-2.9275241313425484
+Ecnomus tenellus,train,EcTe-val1_3_22,1,0.999999999991374,-7.366629095602158
+Ecnomus tenellus,train,EcTe-val3_4_22,0,0.9999999719777386,-5.548090379035572
+Ecnomus tenellus,train,EcTe-val3_9_22,1,0.9999999999969811,-5.080399890348699
+Ecnomus tenellus,train,EcTe-vie1_11_22,1,0.9999999999861235,-4.522001247441705
+Ecnomus tenellus,train,EcTe-vie1_16_22,0,0.9999968980426146,-6.814398406673127
+Ecnomus tenellus,train,EcTe-vie1_1_22,0,0.9999999959399526,-4.780750372832654
+Ecnomus tenellus,train,EcTe-vie1_22_22,1,0.99999861003406,-3.9022912511147902
+Ecnomus tenellus,train,EcTe-vie1_24_22,0,0.9999999999793108,-6.027797702298991
+Ecnomus tenellus,train,EcTe-vie1_35_22,0,0.9999999998974438,-5.834765158326657
+Ecnomus tenellus,train,EcTe-vie1_44_22,0,0.9999999999226468,-6.291646569532419
+Ecnomus tenellus,train,EcTe-vie1_4_22,1,0.9999999993472866,-3.499679906902011
+Ecnomus tenellus,train,EcTe-vie1_52_22,0,0.9999689780270116,-6.2041554479198355
+Ecnomus tenellus,train,EcTe-vie1_54_22,1,0.999999979069629,-5.687606235982186
+Ecnomus tenellus,train,EcTe-vie1_61_22,1,0.999999953513613,-4.837598362548047
+Ecnomus tenellus,train,EcTe-vie1_75_22,0,0.9998493349756548,-4.040395009267876
+Ecnomus tenellus,train,EcTe-vie1_76_22,1,0.9999999999082263,-5.0235690571282765
+Ecnomus tenellus,train,EcTe-vie1_8_22,1,0.9998922033810503,-3.388295105311699
+Ecnomus tenellus,train,EcTe-vie1_9_22,1,0.9999999999999716,-5.668227297815474
+Ecnomus tenellus,train,P-F4-EcTe-lop2-6,1,0.9999999999706701,-4.083151954242276
+Ecnomus tenellus,val,5-H1-EcTe-kaj2-1,1,0.9999992960133692,-6.64309912676742
+Ecnomus tenellus,val,5-H12-EcTe-lop2-6,0,0.9999999999999964,-8.061798539718698
+Ecnomus tenellus,val,B-F4-EcTe-kak2-1,1,0.9993789268048787,-10.118387544874771
+Ecnomus tenellus,val,C-F7-EcTe-kak2-3,1,0.9871966488246613,-5.898172537135612
+Ecnomus tenellus,val,EcTe-hii3_4_22,1,0.999999995159703,-3.938991528403549
+Ecnomus tenellus,val,EcTe-kur1_7_22,0,0.9999999949401737,-7.012297426224937
+Ecnomus tenellus,val,EcTe-kur2_1_22,1,0.9076685752662887,-7.02116159318241
+Ecnomus tenellus,val,EcTe-kur2_3_21,1,0.999999999987959,-7.330735522602603
+Ecnomus tenellus,val,EcTe-kur2_4_22,1,0.9999967432875099,-3.630067931300064
+Ecnomus tenellus,val,EcTe-lop2_1_21,1,0.9999999999998712,-4.130882144192673
+Ecnomus tenellus,val,EcTe-val1_1_22,1,0.9999999967187687,-3.5394094282125907
+Ecnomus tenellus,val,EcTe-vie1_41_22,1,0.9901619545232133,-8.597298505190423
+Ecnomus tenellus,val,EcTe-vie1_70_22,1,0.986520868447402,-1.2872393260482093
+Ecnomus tenellus,val,EcTe-vie1_72_22,1,0.9999999999982494,-5.89453831375224
+Ecnomus tenellus,val,Q-F1-EcTe-lop2-7,0,0.9999999968432256,-27.12941627305285
+Ephemera vulgata,train,12-A8-EpVu-kuo2-1,0,0.9999999992225503,-3.988510532118786
+Ephemera vulgata,train,12-A9-EpVu-kuo2-2,0,0.9999999088340902,-4.7985933534487355
+Ephemera vulgata,train,4-C1-EpVu-haa2-1,0,0.9999999982264374,-6.353960886265535
+Ephemera vulgata,train,4-C5-EpVu-hau2-4,0,0.9999999999470353,-4.890647584407072
+Ephemera vulgata,train,4-C6-EpVu-iso2-1,0,0.9999999999999982,-4.964227678747495
+Ephemera vulgata,train,8-C3-EpVu-kak1-9,0,0.9999997370188741,-7.931906540747002
+Ephemera vulgata,train,8-C4-EpVu-kak1-10,0,0.9999999999946527,-3.3469640327739345
+Ephemera vulgata,train,B-E5-EpVu-hau2-3,0,0.999999999999968,-6.546276113072901
+Ephemera vulgata,train,D-E11-EpVu-kak1-1,0,0.9999999999994178,-2.7614543920312347
+Ephemera vulgata,train,EpVu-haa1_2_22,0,0.9999999999990805,-2.346378300772468
+Ephemera vulgata,train,EpVu-haa1_3_22,0,0.9999999996110072,-6.641900460062063
+Ephemera vulgata,train,EpVu-haa2_2_21,0,0.9999999999995888,-2.730510244548606
+Ephemera vulgata,train,EpVu-hau2_14_21,0,0.9999999999314939,-1.8146548027199287
+Ephemera vulgata,train,EpVu-hii3_15_22,0,0.9999999999999978,-3.2445192431336043
+Ephemera vulgata,train,EpVu-hii3_6_22,0,0.9999999999999454,-4.20068388846753
+Ephemera vulgata,train,EpVu-iso2_3_22,0,0.9999999998647833,-3.976641524117488
+Ephemera vulgata,train,EpVu-iso2_5_21,0,0.9999999991468664,-4.709503576829791
+Ephemera vulgata,train,EpVu-iso3_1_21,0,0.9999999901351746,-5.930523890829663
+Ephemera vulgata,train,EpVu-kak1_12_21,0,0.9999999986008388,-3.5811953907423177
+Ephemera vulgata,train,EpVu-kak1_25_21,0,0.9999999999999742,-3.4522713430626286
+Ephemera vulgata,train,EpVu-kak1_3_21,1,0.9999999999757865,-10.340478397416101
+Ephemera vulgata,train,EpVu-kak1_40_21,0,0.9999999999999969,-3.8400285396787464
+Ephemera vulgata,train,EpVu-kak1_43_21,0,0.9999999999748592,-2.1468494853669498
+Ephemera vulgata,train,EpVu-kak1_7_21,0,0.9999940059146283,-2.9697409138513233
+Ephemera vulgata,train,EpVu-kak2_15_21,0,0.9999999999995497,-6.253147913752729
+Ephemera vulgata,train,EpVu-kak2_20_21,1,0.9999951451385757,-7.1846717413406775
+Ephemera vulgata,train,EpVu-kak2_21_21,0,0.9999999969352151,-7.115479809836922
+Ephemera vulgata,train,EpVu-kak3_14_21,0,0.9999790926584818,-3.7508102518773345
+Ephemera vulgata,train,EpVu-kak3_6_21,0,0.9999994085305293,-4.609458465493411
+Ephemera vulgata,train,J-B9-EpVu-kak1-11,0,0.9999999999480411,-4.55534635243105
+Ephemera vulgata,val,EpVu-haa1_5_22,0,0.9999999999999774,-3.2548364753997987
+Ephemera vulgata,val,EpVu-hii1_2_22,0,0.9999999999974345,-2.91668139776122
+Ephemera vulgata,val,EpVu-hii3_9_22,0,0.9999999997185585,-4.556275744677993
+Ephemera vulgata,val,EpVu-kak1_13_21,0,0.999999987021453,-4.153203750061637
+Ephemera vulgata,val,EpVu-kak1_20_21,0,0.999999999746878,-9.324710828761168
+Ephemera vulgata,val,EpVu-kak1_35_21,0,0.999999983283476,-4.828478408979333
+Ephemera vulgata,val,EpVu-kak2_26_21,0,0.9999999999623204,-2.590135687587324
+Ephemera vulgata,val,EpVu-kak3_13_21,0,0.9999999861747552,-10.36218341218222
+Ephemera vulgata,val,EpVu-kak3_8_21,0,0.9999999999950635,-11.990346087554785
+Ephemera vulgata,val,EpVu-kak3_9_21,0,0.9999999998438538,-3.6260770430145133
+Ephemera vulgata,val,EpVu-kuo2_2_21,0,0.9999999999968772,-6.323102211714428
+Ephemera vulgata,val,EpVu-kur1_1_22,0,0.9999999999999338,-3.0595272891588827
+Ephemera vulgata,val,EpVu-kur2_5_21,0,0.9999999999786195,-2.2959688858503657
+Ephemera vulgata,val,K-H6-EpVu-kak2-2,0,0.9999999999980256,-2.9840324949508297
+Ephemera vulgata,val,P-A8-EpVu-kuo2-2,0,0.9999999999973772,-6.06196453261712
+Erpobdella octoculata,train,5-A7-ErOc-koy2-1,1,0.999999977083782,-6.502397982037389
+Erpobdella octoculata,train,5-A9-ErOc-koy2-3,1,0.999992443646901,-5.754899330227997
+Erpobdella octoculata,train,9-A10-ErOc-pus3-1,1,1.0,-5.849892227781955
+Erpobdella octoculata,train,9-A5-ErOc-pus2-4,1,0.9999999999914659,-3.4525211787337353
+Erpobdella octoculata,train,9-A8-ErOc-pus2-7,1,1.0,-4.7876603398849165
+Erpobdella octoculata,train,B-A9-ErOc-hau3-1,1,0.9999999999999991,-6.700176877452001
+Erpobdella octoculata,train,ErOc-hau2_1_21,1,1.0,-5.061207107971716
+Erpobdella octoculata,train,ErOc-hii2_2_22,1,0.9999999999996745,-3.7589275016874533
+Erpobdella octoculata,train,ErOc-kir2_1_22,0,0.9999999999454419,-5.860098439233272
+Erpobdella octoculata,train,ErOc-kom1_1_22,0,0.9999999991786224,-6.941265651058367
+Erpobdella octoculata,train,ErOc-kom3_2_22,1,0.9999999997350009,-4.3440509052123675
+Erpobdella octoculata,train,ErOc-kom3_3_22,0,0.9999999999999911,-6.726287858848001
+Erpobdella octoculata,train,ErOc-kom3_4_22,1,0.9999999999990701,-3.767913012624395
+Erpobdella octoculata,train,ErOc-kom3_5_22,0,0.9999999997654321,-14.03510166286991
+Erpobdella octoculata,train,ErOc-koy1_2_21,1,0.9999999999970672,-5.75627042346714
+Erpobdella octoculata,train,ErOc-koy2_1_21,1,0.9999999989763388,-3.41587900651163
+Erpobdella octoculata,train,ErOc-koy2_5_21,1,0.9999999999967724,-6.845849711841518
+Erpobdella octoculata,train,ErOc-koy2_6_21,1,1.0,-7.464850255270931
+Erpobdella octoculata,train,ErOc-nie2_2_22,1,0.99999999997776,-5.53175452728424
+Erpobdella octoculata,train,ErOc-pus2_3_22,1,0.9999999999989218,-10.71263856096737
+Erpobdella octoculata,train,ErOc-pus3_1_21,1,0.9999999999315747,-5.297935029403239
+Erpobdella octoculata,train,ErOc-ull1_10_22,1,0.9999997740879871,-5.607588757676731
+Erpobdella octoculata,train,ErOc-ull1_17_22,1,0.9999999999994409,-3.325280664171136
+Erpobdella octoculata,train,ErOc-ull1_8_22,0,0.9999999790810545,-5.261511205948385
+Erpobdella octoculata,train,ErOc-val2_1_22,1,0.9999999999984235,-7.491866610059458
+Erpobdella octoculata,train,ErOc-val2_7_22,0,0.9999999999999964,-11.747239652752366
+Erpobdella octoculata,train,ErOc-vie1_4_22,1,0.9999999999999547,-5.259782969523273
+Erpobdella octoculata,train,N-E7-ErOc-pus2-5,1,0.9999999999999831,-5.381564546910732
+Erpobdella octoculata,train,O-H7-ErOc-pus2-6,1,0.999999999999849,-5.200217234571045
+Erpobdella octoculata,train,Q-A3-ErOc-pus3-3,1,0.9999999999937597,-8.967584758312974
+Erpobdella octoculata,val,9-A3-ErOc-pus2-2,1,0.9999999998404303,-3.8085150401276904
+Erpobdella octoculata,val,9-A6-ErOc-pus2-5,1,1.0,-8.18516794241372
+Erpobdella octoculata,val,ErOc-koy2_2_21,1,0.9999999988924886,-5.105873874129341
+Erpobdella octoculata,val,ErOc-koy2_4_21,1,1.0,-6.423364313951914
+Erpobdella octoculata,val,ErOc-kuh1_1_21,1,1.0,-4.7188096722506705
+Erpobdella octoculata,val,ErOc-pus2_2_21,1,0.9999999999999849,-4.574835654630193
+Erpobdella octoculata,val,ErOc-pus2_2_22,1,0.9999999463192509,-4.575687982377835
+Erpobdella octoculata,val,ErOc-pus2_4_22,1,0.9109713629549026,-9.370029000504971
+Erpobdella octoculata,val,ErOc-ull1_15_22,1,0.9999999999996003,-5.182500536585352
+Erpobdella octoculata,val,ErOc-ull1_1_22,1,0.9999999858362908,-4.592747909013229
+Erpobdella octoculata,val,ErOc-ull1_2_22,1,0.9999999999999991,-5.929774225080512
+Erpobdella octoculata,val,ErOc-ull1_9_22,0,0.9992608497386408,-3.9525181083104757
+Erpobdella octoculata,val,ErOc-val1_2_22,1,0.9999962348804838,-6.51735215998868
+Erpobdella octoculata,val,ErOc-val2_3_22,1,0.9999999999780038,-4.766245923699922
+Erpobdella octoculata,val,F-F6-ErOc-koy2-5,1,0.9998477789713089,-5.041955356274406
+Gyraulus,train,11-G2-Gy-iso3-20,1,0.9999999999999778,-5.6076364441398425
+Gyraulus,train,4-A10-Gy-iso3-4,1,0.9999999997489137,-6.4204014662824545
+Gyraulus,train,8-A12-Gy-iso3-18,1,1.0,-3.8131102029581037
+Gyraulus,train,8-A2-Gy-iso3-8,1,1.0,-4.373134961237907
+Gyraulus,train,Gy-iso1_2_21,0,0.9999999999999984,0.1733958490733638
+Gyraulus,train,Gy-iso1_2_22,0,1.0,-2.6096360560647707
+Gyraulus,train,Gy-iso1_3_21,0,0.9999999999997526,-1.4647608679620383
+Gyraulus,train,Gy-iso1_8_22,0,1.0,-1.4769727470670126
+Gyraulus,train,Gy-iso2_10_22,0,1.0,-1.6582603968786298
+Gyraulus,train,Gy-iso2_11_22,0,1.0,-3.7871402362157163
+Gyraulus,train,Gy-iso2_14_22,0,0.9999999999999996,-4.885342241204361
+Gyraulus,train,Gy-iso2_15_22,0,0.9999999999999998,-2.220420628562721
+Gyraulus,train,Gy-iso2_1_21,0,0.9999999999999953,-1.0724590576680608
+Gyraulus,train,Gy-iso3_14_21,0,1.0,-1.342459502691458
+Gyraulus,train,Gy-iso3_16_21,0,0.9999999999999957,-1.697808163494667
+Gyraulus,train,Gy-iso3_17_21,0,1.0,-2.1701048505607012
+Gyraulus,train,Gy-iso3_28_21,0,0.9999999999993792,-2.6573295155023455
+Gyraulus,train,Gy-iso3_30_21,0,0.9999999999999998,-1.0443258363218995
+Gyraulus,train,Gy-iso3_32_21,0,0.9999999999979056,-0.538783859610918
+Gyraulus,train,Gy-iso3_34_21,0,1.0,-0.58895200672535
+Gyraulus,train,Gy-iso3_3_22,0,1.0,-0.763026789161632
+Gyraulus,train,Gy-iso3_4_22,0,1.0,0.22963354491260723
+Gyraulus,train,Gy-iso3_6_21,0,1.0,-5.961032874859971
+Gyraulus,train,Gy-iso3_9_21,0,0.9999999999854223,-3.556908255284984
+Gyraulus,train,Gy-iso3_9_22,0,0.9999999999999254,-2.289061748746777
+Gyraulus,train,Gy-kaj2_3_21,0,1.0,-4.321097035733709
+Gyraulus,train,Gy-kom3_3_22,0,1.0,-1.9468936068518143
+Gyraulus,train,Gy-nie1_1_22,0,0.999999999999984,-7.328550457294327
+Gyraulus,train,Gy-sii3_1_21,0,1.0,-1.4524359981870063
+Gyraulus,train,Gy-val1_1_22,0,1.0,-2.7014771844419094
+Gyraulus,val,8-A9-Gy-iso3-15,1,0.999999999589448,-3.078367630554652
+Gyraulus,val,Gy-iso2_9_22,0,1.0,-4.340168183152834
+Gyraulus,val,Gy-iso3_21_21,0,1.0,-1.713802446055471
+Gyraulus,val,Gy-iso3_3_21,0,1.0,-5.610196013432304
+Gyraulus,val,Gy-iso3_5_22,0,1.0,0.13478230126074386
+Gyraulus,val,Gy-kaj2_5_21,0,1.0,-2.1205875553156144
+Gyraulus,val,Gy-kom1_1_22,0,0.999999999992438,-7.27341414427349
+Gyraulus,val,Gy-sii2_4_21,0,1.0,-2.109364057972755
+Gyraulus,val,Gy-sii2_5_21,0,1.0,-5.980211281979406
+Helobdella stagnalis,train,11-H6-HeSt-pus1-4,1,1.0,-6.410769988027657
+Helobdella stagnalis,train,4-B7-HeSt-iso1-5,1,1.0,-3.0293751420894717
+Helobdella stagnalis,train,8-B5-HeSt-iso1-15,1,1.0,-6.128177035882561
+Helobdella stagnalis,train,8-B6-HeSt-iso1-16,1,1.0,-3.526189763928252
+Helobdella stagnalis,train,8-B8-HeSt-iso2-1,1,1.0,-2.1882608020695544
+Helobdella stagnalis,train,A-A8-HeSt-ala1-1,1,1.0,-2.4624042026048807
+Helobdella stagnalis,train,F-C2-HeSt-iso1-12,1,1.0,-6.718655732220822
+Helobdella stagnalis,train,G-D12-HeSt-iso1-18,1,1.0,-7.997218528664573
+Helobdella stagnalis,train,HeSt-ala1_3_21,0,1.0,-2.1237402758696957
+Helobdella stagnalis,train,HeSt-ala1_4_21,0,1.0,-3.064043302353821
+Helobdella stagnalis,train,HeSt-hii2_8_22,0,1.0,-5.071195008760076
+Helobdella stagnalis,train,HeSt-iso1_17_21,0,1.0,-1.5644184032726605
+Helobdella stagnalis,train,HeSt-iso1_27_21,0,1.0,-2.8595231512976573
+Helobdella stagnalis,train,HeSt-iso1_28_21,0,1.0,-1.1799569057864128
+Helobdella stagnalis,train,HeSt-iso1_2_22,0,1.0,-2.7123467098919773
+Helobdella stagnalis,train,HeSt-iso1_32_21,0,1.0,-2.2136857503890672
+Helobdella stagnalis,train,HeSt-iso1_43_21,0,1.0,-1.8802793520660677
+Helobdella stagnalis,train,HeSt-iso1_4_21,0,1.0,-2.755114362885279
+Helobdella stagnalis,train,HeSt-iso1_56_21,0,1.0,-4.729885950223463
+Helobdella stagnalis,train,HeSt-iso1_7_21,0,1.0,-2.4368919302730356
+Helobdella stagnalis,train,HeSt-iso2_1_21,0,1.0,-1.8627607352831275
+Helobdella stagnalis,train,HeSt-iso2_3_21,0,1.0,-4.829291242112547
+Helobdella stagnalis,train,HeSt-iva1_1_22,0,1.0,-3.327333118214532
+Helobdella stagnalis,train,HeSt-iva1_4_22,0,1.0,-7.1554458479940015
+Helobdella stagnalis,train,HeSt-pus1_10_21,0,1.0,-4.079505387758673
+Helobdella stagnalis,train,HeSt-pus1_2_22,0,1.0,-8.655838371089168
+Helobdella stagnalis,train,HeSt-pus1_6_21,0,1.0,-3.3120192737807743
+Helobdella stagnalis,train,HeSt-pus2_3_21,0,1.0,-1.6464719689572975
+Helobdella stagnalis,train,HeSt-val3_1_21,0,1.0,-3.4743642541236133
+Helobdella stagnalis,train,Q-E11-HeSt-val3-1,1,1.0,-7.628773863949061
+Helobdella stagnalis,val,HeSt-haa2_2_22,0,1.0,-17.420755548833394
+Helobdella stagnalis,val,HeSt-hii2_6_22,0,1.0,-3.9400633295767706
+Helobdella stagnalis,val,HeSt-iso1_31_21,0,1.0,-2.800318201256224
+Helobdella stagnalis,val,HeSt-iso2_2_22,0,1.0,-8.027804114107003
+Helobdella stagnalis,val,HeSt-iva1_2_22,0,1.0,-9.426559161337508
+Helobdella stagnalis,val,HeSt-iva1_3_22,0,1.0,-1.9727334330652608
+Helobdella stagnalis,val,HeSt-iva1_6_22,0,1.0,-3.783992936618252
+Helobdella stagnalis,val,HeSt-koy2_4_21,0,1.0,-4.29276328403152
+Helobdella stagnalis,val,HeSt-pus1_9_21,0,1.0,-4.782501003090524
+Helobdella stagnalis,val,HeSt-pus3_1_22,0,1.0,-5.887446071433907
+Helobdella stagnalis,val,HeSt-val2_3_22,0,1.0,-3.398320528938817
+Helobdella stagnalis,val,HeSt-val2_7_22,0,1.0,-22.132892369155737
+Helobdella stagnalis,val,I-H7-HeSt-iso1-25,1,1.0,-4.776369933395116
+Helobdella stagnalis,val,K-B1-HeSt-koy2-1,1,1.0,-3.077267796999954
+Helobdella stagnalis,val,O-H6-HeSt-pus1-4,1,1.0,-5.523556071411417
+Heptagenia dalecarlica,train,12-B12-HeDa-kur1-4,0,1.0,-4.468935264040981
+Heptagenia dalecarlica,train,12-B7-HeDa-kaj2-1,0,0.9999999999998082,-6.426996052969782
+Heptagenia dalecarlica,train,4-D11-HeDa-hau3-4,0,0.9999999999999982,-8.282280184075582
+Heptagenia dalecarlica,train,8-D2-HeDa-hau3-7,0,0.9999999982399403,-5.569443650615993
+Heptagenia dalecarlica,train,8-D6-HeDa-hau3-11,1,0.9999999999999893,-9.043364106276297
+Heptagenia dalecarlica,train,8-D7-HeDa-hau3-12,0,0.999999999999984,-11.08107552490429
+Heptagenia dalecarlica,train,B-A11-HeDa-hau1-1,1,0.9999999996138298,-5.639734708627941
+Heptagenia dalecarlica,train,D-F9-HeDa-hau3-1,0,1.0,-5.306210766909844
+Heptagenia dalecarlica,train,F-H1-HeDa-hau3-12,0,0.999999999998014,-7.14400411146519
+Heptagenia dalecarlica,train,G-C4-HeDa-hau3-15,0,1.0,-5.614149452511455
+Heptagenia dalecarlica,train,G-E3-HeDa-hau3-17,0,0.9999999999194271,-5.609521804293992
+Heptagenia dalecarlica,train,HeDa-ala1_9_21,0,0.9999999999858407,-7.312485434381166
+Heptagenia dalecarlica,train,HeDa-hau3_14_21,0,0.999999999992208,-5.734513683400609
+Heptagenia dalecarlica,train,HeDa-hau3_15_21,0,0.9999999998976543,-4.386036775472414
+Heptagenia dalecarlica,train,HeDa-hau3_20_21,1,1.0,-6.054784077441846
+Heptagenia dalecarlica,train,HeDa-hau3_28_21,1,1.0,-4.999576403975993
+Heptagenia dalecarlica,train,HeDa-hau3_33_21,1,0.9999999991983479,-6.127230058401723
+Heptagenia dalecarlica,train,HeDa-hau3_35_21,0,1.0,-4.826994133154539
+Heptagenia dalecarlica,train,HeDa-hau3_42_21,0,0.9999999999999973,-6.827529123777927
+Heptagenia dalecarlica,train,HeDa-hau3_47_21,1,0.9999999999999893,-9.293368994276769
+Heptagenia dalecarlica,train,HeDa-hau3_49_21,1,0.9999999999895701,-5.616786725657498
+Heptagenia dalecarlica,train,HeDa-hau3_53_21,0,0.9999999999987175,-5.778898133577176
+Heptagenia dalecarlica,train,HeDa-kaj2_2_21,1,0.9999999999845963,-5.546502125857145
+Heptagenia dalecarlica,train,HeDa-kur1_10_22,1,1.0,-10.255906820496175
+Heptagenia dalecarlica,train,HeDa-kur1_12_21,0,1.0,-7.419665212374397
+Heptagenia dalecarlica,train,HeDa-kur1_14_22,0,1.0,-7.465193965125428
+Heptagenia dalecarlica,train,HeDa-kur1_4_22,0,0.9999999995208055,-7.94285526210022
+Heptagenia dalecarlica,train,I-C7-HeDa-hau3-18,1,1.0,-8.01777752133748
+Heptagenia dalecarlica,train,K-H9-HeDa-kaj1-2,0,0.9999999999996092,-7.056132819796057
+Heptagenia dalecarlica,train,L-G11-HeDa-kaj2-1,0,1.0,-8.11090845468974
+Heptagenia dalecarlica,val,8-D10-HeDa-hau3-15,1,0.9633066234953991,-5.486172760867133
+Heptagenia dalecarlica,val,B-A6-HeDa-ala1-4,0,1.0,-4.9106824938456874
+Heptagenia dalecarlica,val,F-D5-HeDa-hau3-10,0,0.9999936205724214,-5.213857351809059
+Heptagenia dalecarlica,val,HeDa-ala1_11_21,0,0.9999999264798651,-11.727292810495573
+Heptagenia dalecarlica,val,HeDa-hau3_11_21,0,1.0,-5.438235508174461
+Heptagenia dalecarlica,val,HeDa-hau3_19_21,1,1.0,-9.971291379046512
+Heptagenia dalecarlica,val,HeDa-hau3_22_21,1,0.999999999999563,-8.407621894676577
+Heptagenia dalecarlica,val,HeDa-hau3_2_21,0,0.9999997102692373,-8.696176660760386
+Heptagenia dalecarlica,val,HeDa-hau3_31_21,0,0.9999999999659837,-6.21004685640183
+Heptagenia dalecarlica,val,HeDa-hau3_4_21,0,1.0,-6.699854584773142
+Heptagenia dalecarlica,val,HeDa-kaj2_5_21,0,0.9999999999996287,-5.25202424172463
+Heptagenia dalecarlica,val,HeDa-kur1_13_21,0,0.9999999259467734,-10.948571639676612
+Heptagenia dalecarlica,val,HeDa-kur1_4_21,0,0.9999998064617329,-5.865155369137028
+Heptagenia dalecarlica,val,HeDa-kur1_9_21,0,0.999999999999936,-11.465689500097945
+Heptagenia dalecarlica,val,O-A8-HeDa-kur1-1,0,1.0,-7.464300568855149
+Hydrachnidia,train,11-E4-Hydrac-kur1-1,0,0.9999998762176535,-4.988377785634291
+Hydrachnidia,train,3-G10-Hydrac-ala1-10,1,0.9999976857457469,-5.066188653936266
+Hydrachnidia,train,3-G6-Hydrac-ala1-6,0,0.9999985474620248,-2.1040816004902565
+Hydrachnidia,train,3-G9-Hydrac-ala1-9,0,0.999999999608356,-4.767467701761199
+Hydrachnidia,train,7-G6-Hydrac-hau3-2,0,0.9999999439264842,-6.6365549325198065
+Hydrachnidia,train,Hydia-haa1_6_22,1,0.999999969237058,-5.066074166565467
+Hydrachnidia,train,Hydia-haa1_9_22,0,0.999999999993701,-4.8317856030791395
+Hydrachnidia,train,Hydia-haa2_5_22,1,0.9999889956439499,-2.4357380267953834
+Hydrachnidia,train,Hydia-hii1_1_22,0,0.9999999993793395,-1.4604216005872095
+Hydrachnidia,train,Hydia-hii3_1_22,1,0.9998977884273713,-3.4281467733069926
+Hydrachnidia,train,Hydia-iso1_5_22,0,0.9999999979319565,-5.279734804083996
+Hydrachnidia,train,Hydia-iva1_18_22,0,0.9999998099051782,-2.885968440668754
+Hydrachnidia,train,Hydia-iva1_19_22,0,0.9999999975443337,-1.8111260946547363
+Hydrachnidia,train,Hydia-iva1_4_22,0,0.9999471490607297,-3.113955883150168
+Hydrachnidia,train,Hydia-iva1_68_22,0,0.9999834995805946,-2.250642590966243
+Hydrachnidia,train,Hydia-kom1_3_22,0,0.9999999878706839,-3.8461187549389146
+Hydrachnidia,train,Hydia-kom1_4_22,0,0.9999988480203147,-2.5423218879708527
+Hydrachnidia,train,Hydia-kom2_1_22,0,0.999999995120326,-4.051734391465515
+Hydrachnidia,train,Hydia-nie2_3_22,1,0.9999999671923469,-2.798595375131314
+Hydrachnidia,train,Hydia-ull1_31_22,0,0.9999999999993401,-2.459549924224814
+Hydrachnidia,train,Hydia-ull1_48_22,0,0.9999989206540513,-3.753041331095697
+Hydrachnidia,train,Hydia-ull1_63_22,0,0.9999999999902682,-4.197383227431392
+Hydrachnidia,train,Hydia-ull1_73_22,0,0.9999999999989235,-7.510719879703262
+Hydrachnidia,train,Hydia-ull1_79_22,0,0.9999945711858252,-1.0994033901364935
+Hydrachnidia,train,Hydia-ull1_9_22,0,0.99452023290711,-1.7478414563254026
+Hydrachnidia,train,Hydrac-ala1_7_21,0,0.9999999999923848,-6.375283623058116
+Hydrachnidia,train,Hydrac-haa3_2_21,0,0.9999999984857255,-4.692852623679289
+Hydrachnidia,train,Hydrac-hau3_3_21,1,0.9999999609155864,-3.0731737053455506
+Hydrachnidia,train,Hydrac-iso2_2_21,0,0.9999999406872546,-3.700020859866698
+Hydrachnidia,train,Hydrac-kur1_5_21,1,0.9999999999871694,-6.23112743647081
+Hydrachnidia,val,7-G8-Hydrac-iso2-1,0,0.9989388511675333,-12.158148450968692
+Hydrachnidia,val,Hydia-haa3_1_22,1,0.9999903307862633,-1.815337293070205
+Hydrachnidia,val,Hydia-iso3_6_22,0,0.9999999386194515,-5.222397615808355
+Hydrachnidia,val,Hydia-iva1_21_22,0,0.999999999911853,-2.42902677799066
+Hydrachnidia,val,Hydia-iva1_30_22,0,0.9999976087987362,-5.057497259647934
+Hydrachnidia,val,Hydia-iva1_66_22,0,0.9999917706953005,-1.9330868942855473
+Hydrachnidia,val,Hydia-kur2_7_22,0,0.8800225495393318,-2.2526107287391826
+Hydrachnidia,val,Hydia-ull1_13_22,0,0.9999922808213807,-1.07683863335206
+Hydrachnidia,val,Hydia-ull1_38_22,0,0.9999999929525334,-2.605679146330515
+Hydrachnidia,val,Hydia-ull1_41_22,0,0.9999999995781166,-2.235884701580267
+Hydrachnidia,val,Hydia-ull1_43_22,0,0.9999999999936469,-4.59699306298717
+Hydrachnidia,val,Hydia-val1_4_22,0,0.9999999999998161,-7.248657620169271
+Hydrachnidia,val,Hydia-val3_1_22,0,0.999999999997069,-12.97162045523476
+Hydrachnidia,val,Hydia-vie1_8_22,0,0.9999999999976037,-6.406106699252704
+Hydrachnidia,val,Hydrac-lop2_1_21,0,0.9998851691192849,-31.517151508730965
+Hydroptila,train,5-B12-Hydro-koy1-1,0,0.9999999959760091,-5.033960901228105
+Hydroptila,train,5-B2-Hydro-haa2-1,0,0.9999999973232829,-3.8680570781781194
+Hydroptila,train,5-B4-Hydro-hau1-2,1,0.9999999988949524,-4.022889684850999
+Hydroptila,train,5-B8-Hydro-kak1-1,1,0.9999994612308413,-2.29351999477925
+Hydroptila,train,9-B10-Hydro-val1-1,1,0.999999999999547,-7.833215961454441
+Hydroptila,train,9-B12-Hydro-vii2-1,1,0.9999999999400828,-2.706795180070123
+Hydroptila,train,9-B4-Hydro-koy1-5,0,0.9999999999740385,-4.037346614175672
+Hydroptila,train,9-B8-Hydro-koy2-1,0,0.9999999991958548,-5.175187666490392
+Hydroptila,train,Hydro-haa1_1_22,1,0.9999999999999951,-3.5373753439668336
+Hydroptila,train,Hydro-haa2_8_22,1,1.0,-3.9225654589294505
+Hydroptila,train,Hydro-haa2_9_22,1,0.9999999999999991,-2.448644220861831
+Hydroptila,train,Hydro-hau1_1_21,0,0.9999999999786962,-7.828012088074691
+Hydroptila,train,Hydro-hau1_6_21,1,0.9999999999944702,-8.344678315324899
+Hydroptila,train,Hydro-kak1_4_21,0,0.9999998481569436,-4.7687400384902405
+Hydroptila,train,Hydro-koy1_1_21,0,1.0,-4.539321603512016
+Hydroptila,train,Hydro-koy1_2_21,0,0.99999999999421,-2.670810016984741
+Hydroptila,train,Hydro-koy1_5_21,0,0.9999999999999916,-3.6714009375401764
+Hydroptila,train,Hydro-koy1_6_21,0,0.9999999999999085,-3.368509418916765
+Hydroptila,train,Hydro-koy1_8_21,0,1.0,-5.36790994617778
+Hydroptila,train,Hydro-koy2_2_21,1,0.9999999999999973,-7.303766843107433
+Hydroptila,train,Hydro-kur1_1_21,1,0.9999999999999416,-2.6954800036871207
+Hydroptila,train,Hydro-kur2_1_21,1,0.9999999999484013,-2.2435316870006057
+Hydroptila,train,Hydro-kur2_2_21,1,0.9999999999999964,-2.6195280950376416
+Hydroptila,train,Hydro-nie1_12_22,1,0.9999999999998925,-2.840703964362528
+Hydroptila,train,Hydro-nie1_4_22,1,0.9999993716130773,-3.7913737597236095
+Hydroptila,train,Hydro-nie2_10_22,1,0.9999999999999449,-5.3040123951708535
+Hydroptila,train,Hydro-nie2_5_22,1,0.9999999999999991,-4.66044587289822
+Hydroptila,train,Hydro-nie2_7_22,1,0.9999999999992468,-3.6011519371431726
+Hydroptila,train,Hydro-val1_2_21,1,0.9999999999925402,-3.940975278166939
+Hydroptila,train,Hydro-vii2_2_21,1,0.9999999999988609,-3.756692357588979
+Hydroptila,val,5-B1-Hydro-ala1-1,1,0.9881867620307954,-7.066014960433718
+Hydroptila,val,5-B3-Hydro-hau1-1,0,0.9997728208066133,-2.5740851851505377
+Hydroptila,val,9-B9-Hydro-nie2-1,0,0.957131018442387,-3.9955083138913965
+Hydroptila,val,Hydro-ala1_1_21,1,0.9955812487455303,-7.841656316692085
+Hydroptila,val,Hydro-haa2_3_22,1,1.0,-3.096886355673594
+Hydroptila,val,Hydro-haa2_7_22,1,0.9999999999785456,-3.8183278511807925
+Hydroptila,val,Hydro-hau3_1_21,1,1.0,-5.0225252797273585
+Hydroptila,val,Hydro-kak2_1_21,1,0.9999999999986864,-4.841575718302598
+Hydroptila,val,Hydro-kak2_2_21,1,1.0,-7.507367950180993
+Hydroptila,val,Hydro-kuo2_1_21,1,0.9987631193332406,-8.549199115454883
+Hydroptila,val,Hydro-nie1_14_22,1,1.0,-4.104021974147012
+Hydroptila,val,Hydro-nie1_2_22,1,0.9999999999932081,-2.0509847567724
+Hydroptila,val,Hydro-nie1_3_22,1,0.9999999999972893,-9.30343233900724
+Hydroptila,val,Hydro-nie2_2_22,1,0.9999999998601352,-1.8997566165498148
+Hydroptila,val,Hydro-nie2_6_22,1,0.9999999999989582,-7.76865482280881
+Kageronia fuscogrisea,train,10-C6-KaFu-iso3-5,0,0.99999999999996,-5.203297047209921
+Kageronia fuscogrisea,train,16-G12-KaFu-sii2-1,0,0.9999999999979181,-6.666624915855794
+Kageronia fuscogrisea,train,D-B3-KaFu-iso3-4,0,1.0,-6.447378968487867
+Kageronia fuscogrisea,train,KaFu-ala1_129_21,1,0.9999999999919953,-3.5930734722566475
+Kageronia fuscogrisea,train,KaFu-ala1_67_21,0,0.9999999999999996,-3.2398606001626584
+Kageronia fuscogrisea,train,KaFu-ala1_86_21,1,0.9999999999934635,-4.463746163869799
+Kageronia fuscogrisea,train,KaFu-ala1_88_21,0,1.0,-5.859768614661259
+Kageronia fuscogrisea,train,KaFu-haa1_5_21,0,0.9999999999999822,-4.883150199074325
+Kageronia fuscogrisea,train,KaFu-haa1_7_22,0,0.9999999999939861,-5.235104449187705
+Kageronia fuscogrisea,train,KaFu-haa2_17_22,0,0.9999999999996971,-6.678854006951085
+Kageronia fuscogrisea,train,KaFu-hii3_2_22,0,0.9999999999999996,-2.476350593794316
+Kageronia fuscogrisea,train,KaFu-iso1_48_22,0,0.9999999999999991,-5.842439533802394
+Kageronia fuscogrisea,train,KaFu-iso2_12_22,0,1.0,-4.2021069520189895
+Kageronia fuscogrisea,train,KaFu-iso2_25_22,0,1.0,-2.94050819386971
+Kageronia fuscogrisea,train,KaFu-iso3_6_21,1,0.9999999999999982,-8.370470489565136
+Kageronia fuscogrisea,train,KaFu-iva1_25_22,0,1.0,-2.5605825554720587
+Kageronia fuscogrisea,train,KaFu-kaj2_5_21,0,1.0,-6.505155210038134
+Kageronia fuscogrisea,train,KaFu-kom1_29_22,0,1.0,-2.221319361072621
+Kageronia fuscogrisea,train,KaFu-kom1_37_22,0,1.0,-7.444975516177336
+Kageronia fuscogrisea,train,KaFu-kur2_20_22,0,0.9999999998602922,-6.112797952526702
+Kageronia fuscogrisea,train,KaFu-kur2_36_22,0,0.9999999999817231,-5.08589552825605
+Kageronia fuscogrisea,train,KaFu-nie2_34_22,0,0.9999999998395683,-7.996930140170808
+Kageronia fuscogrisea,train,KaFu-sii1_10_21,1,1.0,-5.2193469775844
+Kageronia fuscogrisea,train,KaFu-sii2_51_21,0,0.9999970687518456,-3.4133922233445704
+Kageronia fuscogrisea,train,KaFu-sii2_53_21,1,0.9999999999283307,-2.7383151251720603
+Kageronia fuscogrisea,train,KaFu-sii3_114_21,1,1.0,-4.576474731127877
+Kageronia fuscogrisea,train,KaFu-sii3_128_21,1,0.9999999999999956,-5.309200443239063
+Kageronia fuscogrisea,train,KaFu-sii3_53_21,0,0.9999999999981357,-8.143957380039136
+Kageronia fuscogrisea,train,KaFu-ull1_76_22,0,1.0,-4.418470479415439
+Kageronia fuscogrisea,train,O-A9-KaFu-sii3-3,0,0.9999999999999982,-6.9378282201356205
+Kageronia fuscogrisea,val,E-A1-KaFu-iso3-16,0,0.9999999999999982,-13.125596842498204
+Kageronia fuscogrisea,val,K-H5-KaFu-sii1-4,0,1.0,-11.023045649112774
+Kageronia fuscogrisea,val,KaFu-haa3_18_22,1,0.9999757583296753,-5.560150348998188
+Kageronia fuscogrisea,val,KaFu-iso2_50_21,0,1.0,-2.3498423072546286
+Kageronia fuscogrisea,val,KaFu-iso3_98_21,1,0.9506039431464643,-10.460838209872712
+Kageronia fuscogrisea,val,KaFu-kom3_65_22,0,0.99999999999778,-3.8233090129596716
+Kageronia fuscogrisea,val,KaFu-kur1_9_21,0,0.9999999999991691,-3.5070701737736405
+Kageronia fuscogrisea,val,KaFu-nie2_101_22,0,0.9999999999997435,-2.501780525838721
+Kageronia fuscogrisea,val,KaFu-nie2_48_22,0,1.0,-4.194087676942904
+Kageronia fuscogrisea,val,KaFu-sii2_42_21,0,1.0,-2.721915054203257
+Kageronia fuscogrisea,val,KaFu-sii3_115_21,1,1.0,-14.736884365066139
+Kageronia fuscogrisea,val,KaFu-sii3_14_21,0,1.0,-9.823550646701605
+Kageronia fuscogrisea,val,KaFu-sii3_178_21,1,0.9999999999999991,-7.889947001695023
+Kageronia fuscogrisea,val,KaFu-vii1_12_21,1,0.9999999999994227,-9.207231380469786
+Kageronia fuscogrisea,val,KaFu-vii1_13_21,1,1.0,-39.77161989349273
+Lepidostoma hirtum,train,5-G12-LeHi-kuo2-2,1,0.999999999894122,-6.935386503205574
+Lepidostoma hirtum,train,5-G6-LeHi-iso1-1,1,0.9999999961044788,-5.513592424682397
+Lepidostoma hirtum,train,A-H4-LeHi-hau3-3,1,0.9999999999999662,-12.358095262967673
+Lepidostoma hirtum,train,H-A7-LeHi-iso3-1,1,0.9999999999999964,-7.035148336161772
+Lepidostoma hirtum,train,LeHi-haa2_17_22,0,0.999999999874456,-7.116918406332882
+Lepidostoma hirtum,train,LeHi-haa2_4_22,0,0.9999999999997935,-3.227048025660393
+Lepidostoma hirtum,train,LeHi-hii3_19_22,0,0.9999997495254943,-3.510658761392758
+Lepidostoma hirtum,train,LeHi-hii3_22_22,0,0.9999999999717053,-3.77492694382134
+Lepidostoma hirtum,train,LeHi-hii3_31_22,0,0.9997593918201942,-2.767235609169491
+Lepidostoma hirtum,train,LeHi-kaj2_1_21,1,0.9999112292858171,-7.711411254326503
+Lepidostoma hirtum,train,LeHi-kur1_2_22,0,0.999999999997871,-4.949778856812674
+Lepidostoma hirtum,train,LeHi-kur2_1_22,0,0.999999999863953,-1.9371829975011607
+Lepidostoma hirtum,train,LeHi-vie1_111_22,0,0.9999999999999889,-2.320447925429187
+Lepidostoma hirtum,train,LeHi-vie1_13_22,0,0.999999999999744,-2.053897579749286
+Lepidostoma hirtum,train,LeHi-vie1_149_22,0,0.9999999999979192,-2.037214648163733
+Lepidostoma hirtum,train,LeHi-vie1_151_22,0,1.0,-6.2952873849811795
+Lepidostoma hirtum,train,LeHi-vie1_166_22,0,0.9999999999999434,-2.0966550765996033
+Lepidostoma hirtum,train,LeHi-vie1_169_22,0,0.9999999999995457,-3.1054004709107357
+Lepidostoma hirtum,train,LeHi-vie1_16_22,0,0.9999999982110035,-4.746378540706772
+Lepidostoma hirtum,train,LeHi-vie1_177_22,0,0.9999999999999976,-2.4523403017790812
+Lepidostoma hirtum,train,LeHi-vie1_196_22,0,0.9999999999920108,-5.833209277308466
+Lepidostoma hirtum,train,LeHi-vie1_199_22,0,0.9999999978179837,-3.6676003091355547
+Lepidostoma hirtum,train,LeHi-vie1_20_22,0,0.9999999999979896,-4.192204758259265
+Lepidostoma hirtum,train,LeHi-vie1_29_22,0,0.9999999996684708,-2.531042630367793
+Lepidostoma hirtum,train,LeHi-vie1_36_22,0,0.9999999999782716,-4.192648501888257
+Lepidostoma hirtum,train,LeHi-vie1_56_22,0,0.9999999999996222,-1.258527545474946
+Lepidostoma hirtum,train,LeHi-vie1_5_22,0,0.9999999999998223,-1.836275448043823
+Lepidostoma hirtum,train,LeHi-vie1_60_22,0,0.9999999999269438,-4.422693820825847
+Lepidostoma hirtum,train,LeHi-vie1_61_22,0,0.9999999999999996,-3.4508891814561036
+Lepidostoma hirtum,train,LeHi-vie1_93_22,0,0.9999999999999969,-3.495872057946155
+Lepidostoma hirtum,val,LeHi-hii2_1_22,0,0.9999999996448068,-14.21963785698938
+Lepidostoma hirtum,val,LeHi-hii3_11_22,0,0.9999999997572893,-4.541863529412652
+Lepidostoma hirtum,val,LeHi-hii3_30_22,0,0.9999996910105,-7.158445763332468
+Lepidostoma hirtum,val,LeHi-hii3_3_22,0,0.9999999960127637,-4.268344005003861
+Lepidostoma hirtum,val,LeHi-kuo1_10_22,1,0.9999909665540823,-12.881785057105919
+Lepidostoma hirtum,val,LeHi-vie1_115_22,0,0.999999999999992,-2.3493292714257272
+Lepidostoma hirtum,val,LeHi-vie1_118_22,0,0.9999999999999756,-2.5271254815635196
+Lepidostoma hirtum,val,LeHi-vie1_132_22,0,0.9999999999972706,-5.676340546874648
+Lepidostoma hirtum,val,LeHi-vie1_142_22,0,0.9999999999882014,-4.346955792717157
+Lepidostoma hirtum,val,LeHi-vie1_181_22,0,0.9999999999993925,-9.026414320320715
+Lepidostoma hirtum,val,LeHi-vie1_183_22,0,0.9999999999999982,-4.064895484824497
+Lepidostoma hirtum,val,LeHi-vie1_33_22,0,0.9999999999999538,-4.050349417184659
+Lepidostoma hirtum,val,LeHi-vie1_54_22,0,0.9999999999999796,-8.50706145529892
+Lepidostoma hirtum,val,LeHi-vie1_79_22,0,1.0,-4.09390277873235
+Lepidostoma hirtum,val,LeHi-vie1_89_22,0,0.9999999999999667,-2.5787694516305564
+Leptophlebia,train,15-E8-Le-iso2-27,0,0.9999999992937081,-13.393134334862399
+Leptophlebia,train,Le-iso1_118_22,0,0.9999999999958407,-2.2265690466974872
+Leptophlebia,train,Le-iso1_186_21,0,0.9999999999494442,-2.5713660786180172
+Leptophlebia,train,Le-iso1_292_21,0,0.9999999373945665,-3.0543157550236346
+Leptophlebia,train,Le-iso1_664_21,0,0.9999999999914135,-3.2877031797827074
+Leptophlebia,train,Le-iso2_22_21,1,1.0,-6.2388863163184505
+Leptophlebia,train,Le-iso2_346_22,1,0.9999999999999281,-4.8986329438583995
+Leptophlebia,train,Le-iso2_431_22,1,0.9999999983064747,-5.003443875054107
+Leptophlebia,train,Le-iso2_494_21,0,0.9999999999997278,-4.214586692145967
+Leptophlebia,train,Le-iso2_761_21,1,0.9999991431087144,-4.973886895391279
+Leptophlebia,train,Le-iso2_812_21,0,0.9999978826438242,-4.575861462711189
+Leptophlebia,train,Le-iso3_1132_21,0,0.9999999998503912,-3.9741796777856626
+Leptophlebia,train,Le-iso3_1256_21,0,0.9999999999999911,-3.863641515899981
+Leptophlebia,train,Le-iso3_1340_21,0,0.9999999982525862,-5.307095835274898
+Leptophlebia,train,Le-iso3_157_21,1,0.9999999967204527,-8.35172234459839
+Leptophlebia,train,Le-iso3_1813_21,0,0.9999999999999991,-3.544563694301222
+Leptophlebia,train,Le-iso3_18_21,0,0.9999999999024487,-2.893422142481753
+Leptophlebia,train,Le-iso3_1916_21,1,0.9999999999980904,-5.510672830813708
+Leptophlebia,train,Le-iso3_1_22,1,0.9999999999709299,-4.368029585069757
+Leptophlebia,train,Le-iso3_320_21,1,0.9999999789197089,-4.27128576384752
+Leptophlebia,train,Le-iso3_638_21,0,0.9999992641006167,-6.495483053989131
+Leptophlebia,train,Le-iso3_717_21,1,0.9999999999983977,-5.679406379453671
+Leptophlebia,train,Le-iso3_773_21,0,0.9999999999998095,-2.6238407343479215
+Leptophlebia,train,Le-kom3_18_22,0,0.9999999999999951,-4.094954427573943
+Leptophlebia,train,Le-kuo2_147_21,1,0.9999993540836049,-4.035801447709633
+Leptophlebia,train,Le-kuo2_19_21,1,0.9999999999999911,-8.00083132712664
+Leptophlebia,train,Le-kuo2_215_21,1,0.9999999999993037,-8.810960574203015
+Leptophlebia,train,Le-kuo2_38_21,0,0.9999999999988436,-8.08376519986021
+Leptophlebia,train,Le-vie1_22_22,1,0.999999758316659,-5.841179856271382
+Leptophlebia,train,Le-vie1_7_22,0,0.9999999967847875,-3.507216898665793
+Leptophlebia,val,Le-iso1_308_21,0,0.9999998927136944,-9.513476219930403
+Leptophlebia,val,Le-iso1_408_21,0,0.9999998814902583,-4.176941971826044
+Leptophlebia,val,Le-iso1_696_21,0,0.9999999999999987,-3.6030326576627756
+Leptophlebia,val,Le-iso1_72_22,1,1.0,-4.6841083321802595
+Leptophlebia,val,Le-iso2_1082_21,1,0.9999999999978408,-4.361583549077753
+Leptophlebia,val,Le-iso2_1091_21,0,0.9985170278856779,-4.759722563686105
+Leptophlebia,val,Le-iso2_236_21,1,1.0,-22.651731253532656
+Leptophlebia,val,Le-iso2_550_21,1,0.9972683235579223,-5.496807907554023
+Leptophlebia,val,Le-iso2_58_22,1,1.0,-5.514002471346363
+Leptophlebia,val,Le-iso3_1344_21,0,0.9999999798603605,-2.4469227475532014
+Leptophlebia,val,Le-iso3_1709_21,1,0.9999631983796553,-2.915852175438073
+Leptophlebia,val,Le-iso3_378_21,0,0.9999999999885123,-11.707063697276084
+Leptophlebia,val,Le-iso3_569_21,1,0.9999999582874244,-5.347631219393333
+Leptophlebia,val,Le-iso3_743_21,0,0.9999819257739787,-6.703384575658119
+Leptophlebia,val,Le-val2_2_22,1,0.999992921756373,-6.4216277654963205
+Limnephilidae,train,5-D12-LiPhidae-koy1-1,0,0.9968849604027051,-4.156993087138389
+Limnephilidae,train,5-D2-LiPhidae-haa3-1,1,0.999996829839454,-4.899844813161794
+Limnephilidae,train,5-D3-LiPhidae-haa3-2,0,0.9999999988507362,-7.575236984423002
+Limnephilidae,train,5-D4-LiPhidae-kir1-1,0,0.9999936780322539,-3.8875391187769317
+Limnephilidae,train,5-D6-LiPhidae-kir1-3,0,0.999999996742492,-5.894479141864689
+Limnephilidae,train,5-D7-LiPhidae-kir1-4,0,0.9999998577847306,-5.3072656346530795
+Limnephilidae,train,9-D1-LiPhidae-koy1-2,0,0.9999999931241716,-4.649958608350982
+Limnephilidae,train,9-D7-LiPhidae-nie1-4,1,0.9999999626324889,-8.949571853214636
+Limnephilidae,train,9-D8-LiPhidae-sii1-1,1,0.99640857170981,-6.265394729099256
+Limnephilidae,train,9-D9-LiPhidae-sii1-2,0,0.9999999998207625,-4.279938489020058
+Limnephilidae,train,LiPhidae-haa1_2_21,0,0.9999999994799449,-12.958191816338068
+Limnephilidae,train,LiPhidae-haa3_1_22,1,0.9999999957887273,-4.407305739632001
+Limnephilidae,train,LiPhidae-iso3_1_22,1,0.9999999965627975,-4.903572828910583
+Limnephilidae,train,LiPhidae-iva1_1_22,1,0.9999999999894822,-5.669273946259871
+Limnephilidae,train,LiPhidae-iva1_3_22,0,0.9999910865370447,-4.006759462770532
+Limnephilidae,train,LiPhidae-kir1_4_22,1,0.9987436620742952,-3.9735436780165756
+Limnephilidae,train,LiPhidae-kir1_5_22,1,0.9999999974696787,-4.664226485127108
+Limnephilidae,train,LiPhidae-kir1_7_22,0,0.9999999999946487,-5.294940440168684
+Limnephilidae,train,LiPhidae-kom1_1_22,1,0.9999990788182174,-2.645327632082413
+Limnephilidae,train,LiPhidae-kom1_2_22,0,0.9999999200298723,-8.148478184693797
+Limnephilidae,train,LiPhidae-kom2_2_22,1,0.9999999999992899,-3.4934334696498333
+Limnephilidae,train,LiPhidae-koy1_2_21,0,0.9999996863198367,-5.64755725144383
+Limnephilidae,train,LiPhidae-kuo1_2_22,1,0.999999999955385,-4.86991322382743
+Limnephilidae,train,LiPhidae-kuo2_1_22,1,0.9999999688012999,-4.520360246832077
+Limnephilidae,train,LiPhidae-kuo2_4_22,1,0.9999998385705987,-3.7034064563985503
+Limnephilidae,train,LiPhidae-nie1_2_21,1,0.9999999591454074,-5.502787517071443
+Limnephilidae,train,LiPhidae-nie1_5_21,1,0.9999999999993232,-4.748621771234992
+Limnephilidae,train,LiPhidae-sii2_1_21,1,0.9999999984382208,-5.493364022809814
+Limnephilidae,train,LiPhidae-ull1_2_22,1,0.9999945860513378,-6.740815062071421
+Limnephilidae,train,LiPhidae-val2_1_22,1,0.9999999983597814,-5.751085385235218
+Limnephilidae,val,9-D11-LiPhidae-sii2-2,0,0.5967426057443951,-3.8122487947856403
+Limnephilidae,val,LiPhidae-haa3_1_21,1,0.6325011593226861,-10.316690522345873
+Limnephilidae,val,LiPhidae-hii3_1_22,1,0.5506315432700991,-8.92824766906001
+Limnephilidae,val,LiPhidae-hii3_2_22,0,0.9594203294860739,-10.901411442915283
+Limnephilidae,val,LiPhidae-kak3_1_21,0,0.9999999999926255,-5.13376616127027
+Limnephilidae,val,LiPhidae-kuo2_1_21,0,0.9956763649530268,-5.890675168550477
+Limnephilidae,val,LiPhidae-pus1_1_21,1,0.9812107247237092,-17.56704101093145
+Limnephilus,train,12-E11-LiPhilus-sii3-1,0,0.9999999999988454,-3.835369431657309
+Limnephilus,train,12-E8-LiPhilus-koy2-1,0,0.9999999999999978,-3.111262788546563
+Limnephilus,train,12-E9-LiPhilus-lop2-1,1,0.999999999999388,-8.001376778374386
+Limnephilus,train,4-G3-LiPhilus-iso1-3,0,1.0,-2.9015150902060753
+Limnephilus,train,4-G8-LiPhilus-iso2-4,0,0.9999999999999987,-3.0790705810180636
+Limnephilus,train,4-G9-LiPhilus-iso2-5,0,0.9999999999996875,-1.4275384523586325
+Limnephilus,train,8-G1-LiPhilus-iso3-2,0,0.9999999999999996,-3.6211288555997605
+Limnephilus,train,8-G6-LiPhilus-iso3-7,0,0.9999999999999982,-3.1005084789034907
+Limnephilus,train,8-G7-LiPhilus-iso3-8,0,0.9999997301816217,-3.636912174963273
+Limnephilus,train,LiPhilus-iso1_1_22,0,0.999999999999631,-3.7999094080220086
+Limnephilus,train,LiPhilus-iso1_2_21,0,0.999999999996501,-3.715677439929088
+Limnephilus,train,LiPhilus-iso1_4_22,0,0.9999999999999631,-4.32340542349251
+Limnephilus,train,LiPhilus-iso2_2_21,0,0.9999999967319715,-2.538215492023271
+Limnephilus,train,LiPhilus-iso2_4_21,1,0.9997927212234831,-6.575149113310319
+Limnephilus,train,LiPhilus-iso2_5_21,0,0.9999999981308885,-3.9782501365671905
+Limnephilus,train,LiPhilus-iso2_6_22,0,0.9999999999897451,-7.329055659273205
+Limnephilus,train,LiPhilus-iso3_11_22,0,0.999999999999532,-1.7960991466223923
+Limnephilus,train,LiPhilus-iso3_12_21,0,1.0,-3.0038207600802806
+Limnephilus,train,LiPhilus-iso3_16_21,0,0.9999999999999991,-2.9556536395255524
+Limnephilus,train,LiPhilus-iso3_18_21,0,1.0,-4.8934673047746
+Limnephilus,train,LiPhilus-iso3_3_22,0,0.9999999999999925,-3.7422746564920253
+Limnephilus,train,LiPhilus-iso3_4_21,1,1.0,-8.188438880676955
+Limnephilus,train,LiPhilus-iso3_8_21,0,0.9999992057723849,-4.0223368163438415
+Limnephilus,train,LiPhilus-kir2_1_21,1,0.9999999999999796,-6.103784580028613
+Limnephilus,train,LiPhilus-koy1_1_21,0,0.999999999999929,-4.261091741811162
+Limnephilus,train,LiPhilus-kuo2_1_22,0,0.9999999999999711,-2.843948390061829
+Limnephilus,train,LiPhilus-kuo2_2_21,0,0.9999999999837308,-2.628905416506317
+Limnephilus,train,LiPhilus-kuo2_6_22,0,0.9999999999999982,-3.842245998171066
+Limnephilus,train,LiPhilus-lop2_2_21,0,1.0,-4.243663321601765
+Limnephilus,train,LiPhilus-sii3_1_21,0,1.0,-3.764443833456033
+Limnephilus,val,12-E1-LiPhilus-iso3-14,0,1.0,-8.688550340967181
+Limnephilus,val,12-E10-LiPhilus-lop3-1,0,0.9999999999923364,-2.4928364906072815
+Limnephilus,val,12-E2-LiPhilus-iso3-15,0,0.9999999999999982,-6.790127232023501
+Limnephilus,val,12-E3-LiPhilus-iso3-16,0,0.9999999999999991,-4.640855600311509
+Limnephilus,val,4-G1-LiPhilus-iso1-1,0,0.999999999999998,-2.445786666164107
+Limnephilus,val,4-G2-LiPhilus-iso1-2,0,0.9999999999999991,-4.26393158765034
+Limnephilus,val,8-G10-LiPhilus-iso3-11,0,0.9999999999978311,-9.179546733332
+Limnephilus,val,8-G8-LiPhilus-iso3-9,0,0.9999999998629594,-3.9884010500992115
+Limnephilus,val,LiPhilus-iso2_3_21,0,0.9999999999999858,-8.170937024522717
+Limnephilus,val,LiPhilus-iso2_7_21,0,1.0,-8.690551044048545
+Limnephilus,val,LiPhilus-iso3_13_21,0,0.9999999999999982,-1.5616204982277129
+Limnephilus,val,LiPhilus-iso3_2_21,0,0.9999999946221152,-13.994471868673227
+Limnephilus,val,LiPhilus-iso3_7_21,0,1.0,-5.2944078718650704
+Limnephilus,val,LiPhilus-iso3_8_22,0,0.9999999999999982,-10.109559721045823
+Limnephilus,val,LiPhilus-kuo2_2_22,0,0.999999999999936,-5.217929577561193
+Micronecta,train,Mi-iso3_14_21,1,1.0,-0.6363494372156548
+Micronecta,train,Mi-iso3_168_21,1,1.0,-1.087395195971233
+Micronecta,train,Mi-iso3_169_21,1,1.0,1.445203806942951
+Micronecta,train,Mi-iso3_17_21,1,1.0,1.680379156309181
+Micronecta,train,Mi-iso3_190_21,1,1.0,3.0209303143336044
+Micronecta,train,Mi-iso3_191_21,1,1.0,2.1673709605613762
+Micronecta,train,Mi-iso3_194_21,1,1.0,1.8004367085099542
+Micronecta,train,Mi-iso3_204_21,1,1.0,0.3475292812855777
+Micronecta,train,Mi-iso3_20_21,1,1.0,-2.4484429037131026
+Micronecta,train,Mi-iso3_210_21,1,1.0,0.6244694390212135
+Micronecta,train,Mi-iso3_217_21,1,1.0,1.1156127700682728
+Micronecta,train,Mi-iso3_45_21,1,1.0,0.04133815612920344
+Micronecta,train,Mi-iso3_4_21,1,1.0,0.756059702130699
+Micronecta,train,Mi-iso3_57_21,1,1.0,2.8863874098474156
+Micronecta,train,Mi-iso3_64_21,1,1.0,-3.1142587693564643
+Micronecta,train,Mi-iso3_6_22,1,1.0,-0.6232445160965661
+Micronecta,train,Mi-iso3_98_21,1,1.0,2.7671006107668674
+Micronecta,train,Mi-kaj2_7_21,0,1.0,-3.1972949456523576
+Micronecta,train,Mi-kaj2_9_21,0,1.0,1.3606246135248483
+Micronecta,train,Mi-sii1_102_21,0,1.0,-3.493516167997525
+Micronecta,train,Mi-sii1_122_21,0,1.0,0.4472618002663271
+Micronecta,train,Mi-sii1_15_21,0,1.0,-0.6398873858204333
+Micronecta,train,Mi-sii1_210_21,0,1.0,0.4120670771353261
+Micronecta,train,Mi-sii1_227_21,0,1.0,2.5337366531536727
+Micronecta,train,Mi-sii1_256_21,0,1.0,2.0144599302436603
+Micronecta,train,Mi-sii1_26_21,0,1.0,1.7671889787412312
+Micronecta,train,Mi-sii1_30_21,0,1.0,-4.434354563333587
+Micronecta,train,Mi-sii1_310_21,0,1.0,2.9465064326699437
+Micronecta,train,Mi-sii1_77_21,0,1.0,-2.8796336042822475
+Micronecta,train,Mi-sii2_3_21,0,1.0,0.507310934968265
+Micronecta,val,10-G1-Mi-iso3-22,0,1.0,-268.9202840396471
+Micronecta,val,13-F6-Mi-sii3-14,0,1.0,-254.77762763037484
+Micronecta,val,15-C3-Mi-sii1-23,0,1.0,-259.97279008894066
+Micronecta,val,Mi-iso3_121_21,1,0.9999999998748095,-3.5853390635736204
+Micronecta,val,Mi-iso3_211_21,1,1.0,-0.9005598774786474
+Micronecta,val,Mi-iso3_21_21,1,1.0,-1.808029283076932
+Micronecta,val,Mi-iso3_234_21,1,1.0,-4.232316016558814
+Micronecta,val,Mi-iso3_2_22,1,1.0,-1.6109679467605336
+Micronecta,val,Mi-pus3_3_21,0,0.9999999999952429,-14.308344560492758
+Micronecta,val,Mi-sii1_195_21,0,1.0,2.169369126158351
+Micronecta,val,Mi-sii1_201_21,0,1.0,-4.859224990385696
+Micronecta,val,Mi-sii1_216_21,0,1.0,-0.9343918769284709
+Micronecta,val,Mi-sii1_275_21,0,1.0,-0.7793414317356433
+Micronecta,val,Mi-sii1_288_21,0,1.0,-1.7863828218831639
+Micronecta,val,Mi-sii1_38_21,0,1.0,-7.11223303676419
+Mystacides,train,My-iso1_1_21,0,1.0,-4.2782832313919155
+Mystacides,train,My-iso1_2_21,0,1.0,-3.8711686234519256
+Mystacides,train,My-iva1_1_22,0,1.0,-7.5634488586009585
+Mystacides,train,My-kir1_1_22,0,1.0,-5.172254464755911
+Mystacides,train,My-kuh1_2_21,0,1.0,-6.716368453281623
+Mystacides,train,My-kuh1_3_21,0,1.0,-7.522785851488196
+Mystacides,train,My-kuh1_4_21,0,1.0,-10.77301184022899
+Mystacides,train,My-lop1_1_21,0,1.0,-6.888974172274372
+Mystacides,train,My-lop1_2_21,0,1.0,-5.046107755613701
+Mystacides,train,My-lop1_3_21,0,1.0,-4.7919607631052745
+Mystacides,train,My-lop2_11_21,1,1.0,-5.266725754815003
+Mystacides,train,My-lop2_12_21,1,1.0,-5.865424039775299
+Mystacides,train,My-lop2_16_21,1,1.0,-6.546773337090352
+Mystacides,train,My-lop2_17_21,1,1.0,-6.818066644114836
+Mystacides,train,My-lop2_1_21,0,1.0,-2.330959327864221
+Mystacides,train,My-lop2_4_21,0,1.0,-6.780848900430913
+Mystacides,train,My-lop2_5_21,0,1.0,-4.375267959162445
+Mystacides,train,My-lop2_6_21,0,1.0,-6.048978749856012
+Mystacides,train,My-lop2_8_21,0,1.0,-5.346937731882365
+Mystacides,train,My-lop3_10_21,0,1.0,-5.648940832161797
+Mystacides,train,My-lop3_13_21,0,1.0,-4.8690783743239745
+Mystacides,train,My-lop3_14_21,0,1.0,-6.911048967418532
+Mystacides,train,My-lop3_16_21,0,1.0,-3.074454760058586
+Mystacides,train,My-lop3_17_21,0,1.0,-3.760256292831107
+Mystacides,train,My-lop3_19_21,0,1.0,-4.261551891566603
+Mystacides,train,My-lop3_20_21,0,1.0,-6.81020794901446
+Mystacides,train,My-lop3_22_21,0,1.0,-4.210295430061839
+Mystacides,train,My-lop3_5_21,0,1.0,-2.5763925909466536
+Mystacides,train,My-lop3_6_21,0,1.0,-4.83383846995528
+Mystacides,train,My-lop3_8_21,0,1.0,-3.331673905175119
+Mystacides,val,My-kuo2_1_21,0,1.0,-9.834715517958108
+Mystacides,val,My-lop2_15_21,1,1.0,-5.833050884952728
+Mystacides,val,My-lop2_18_21,1,1.0,-9.816779902955517
+Mystacides,val,My-lop2_3_21,0,1.0,-4.8452654598430716
+Mystacides,val,My-lop3_1_21,0,1.0,-6.878326825570953
+Mystacides,val,My-lop3_7_21,0,1.0,-7.106558031952888
+Mystacides,val,My-val3_1_21,0,1.0,-2.722996911724831
+Mystacides azurea,train,11-F11-MyAz-sii1-1,1,0.9999989687480731,-3.4020468400236172
+Mystacides azurea,train,11-F2-MyAz-kak3-6,1,0.9999999993833044,-4.503130020236679
+Mystacides azurea,train,11-F4-MyAz-kuo2-1,1,0.9999991067652153,-3.9319472392122528
+Mystacides azurea,train,3-H11-MyAz-kak2-10,0,0.9999999900528866,-8.742579194340077
+Mystacides azurea,train,3-H5-MyAz-kak2-4,0,0.9993745381413542,-4.124501696563591
+Mystacides azurea,train,7-H5-MyAz-kak2-16,1,0.9999999999949347,-5.522887021182726
+Mystacides azurea,train,7-H9-MyAz-kak3-1,1,0.9999999999923155,-4.826378999275889
+Mystacides azurea,train,A-B7-MyAz-ala1-1,1,0.9999999999974567,-3.4026880326796594
+Mystacides azurea,train,D-A6-MyAz-kak2-1,1,1.0,-4.3008758213021725
+Mystacides azurea,train,D-D5-MyAz-kak2-4,1,0.9999999999999578,-4.370160017108541
+Mystacides azurea,train,D-G3-MyAz-kak2-6,1,0.9999999999947864,-7.658612923140527
+Mystacides azurea,train,G-F10-MyAz-kak2-11,1,0.9999999999999991,-4.871583215276239
+Mystacides azurea,train,MyAz-ala1_2_21,0,0.9999999999424181,-4.3207271494584845
+Mystacides azurea,train,MyAz-hii1_1_22,0,0.999999999999635,-6.005769309623572
+Mystacides azurea,train,MyAz-iso3_4_22,0,0.9999999998650946,-3.878779530466595
+Mystacides azurea,train,MyAz-iva1_10_22,0,1.0,-3.975762625615044
+Mystacides azurea,train,MyAz-iva1_1_22,0,0.9999999999999973,-5.2398451107200525
+Mystacides azurea,train,MyAz-iva1_7_22,0,0.9999999997500053,-7.956847255928338
+Mystacides azurea,train,MyAz-kaj1_1_21,0,0.9999999989625326,-3.4036247104334514
+Mystacides azurea,train,MyAz-kak1_1_21,0,0.9999999999999996,-4.478192348980553
+Mystacides azurea,train,MyAz-kak2_15_21,0,0.9999999999999236,-4.977517944764639
+Mystacides azurea,train,MyAz-kak2_20_21,0,0.9999999999999987,-3.9765623565489534
+Mystacides azurea,train,MyAz-kak2_22_21,0,0.9999999999999982,-5.446804304713432
+Mystacides azurea,train,MyAz-kak2_5_21,0,0.9999999999990741,-3.5536099962093335
+Mystacides azurea,train,MyAz-kak3_3_21,0,0.999999999999992,-6.689097396251324
+Mystacides azurea,train,MyAz-kuo2_1_22,0,0.9999999999994662,-8.832380336065032
+Mystacides azurea,train,MyAz-pus2_1_21,0,0.9999999999999925,-4.317714672914775
+Mystacides azurea,train,MyAz-sii1_1_21,0,0.999999999999706,-3.7551935501189995
+Mystacides azurea,train,MyAz-sii1_3_21,0,0.9999999816566538,-4.47834284302086
+Mystacides azurea,train,MyAz-sii1_4_21,0,0.9999999998972333,-7.072149897384628
+Mystacides azurea,val,11-F1-MyAz-kak3-5,1,0.9999999955811592,-3.921640766609384
+Mystacides azurea,val,3-H12-MyAz-kak2-11,0,0.9999503540374953,-6.430155288020375
+Mystacides azurea,val,3-H6-MyAz-kak2-5,0,0.5082608620407653,-4.846517726112641
+Mystacides azurea,val,7-H4-MyAz-kak2-15,1,0.9999999866329096,-11.250190937752528
+Mystacides azurea,val,7-H7-MyAz-kak2-18,1,0.999895800435318,-8.182556388482567
+Mystacides azurea,val,MyAz-iso3_2_22,0,0.9999999995565823,-5.064390712352665
+Mystacides azurea,val,MyAz-iva1_13_22,0,0.9999998990214449,-3.066378586341841
+Mystacides azurea,val,MyAz-iva1_9_22,0,0.9999999999999778,-5.46965927510478
+Mystacides azurea,val,MyAz-kak2_12_21,0,0.9999999995285602,-6.627008435937723
+Mystacides azurea,val,MyAz-kak2_7_21,0,0.9999999997713229,-2.8218241992518784
+Mystacides azurea,val,MyAz-kak3_8_21,0,0.9999999999980809,-2.5248323663019754
+Mystacides azurea,val,MyAz-kur2_1_21,0,0.9999895868431781,-4.471585750278599
+Mystacides azurea,val,MyAz-vie1_2_22,0,1.0,-6.812776060539942
+Mystacides azurea,val,MyAz-vie1_3_22,0,1.0,-11.883152815531634
+Mystacides azurea,val,P-C10-MyAz-sii1-2,1,0.9999999999942439,-2.655294423195027
+Oligochaeta,train,Ol-ala1_27_21,0,0.9999997724020951,-6.4749171632660385
+Oligochaeta,train,Ol-hau1_9_21,0,0.9999989701419106,-2.639110671868183
+Oligochaeta,train,Ol-hii1_45_22,0,0.9999998913091966,-7.158220603818307
+Oligochaeta,train,Ol-iso1_252_21,0,0.9999998058688873,-4.2621146387546975
+Oligochaeta,train,Ol-iso1_411_21,1,0.9999999999971863,-6.879086286973164
+Oligochaeta,train,Ol-iso3_48_21,0,1.0,-5.316855293979653
+Oligochaeta,train,Ol-iso3_55_21,0,0.9999999999432543,-4.80686314156933
+Oligochaeta,train,Ol-iva1_2_22,1,0.9999899330479864,-5.584030440476557
+Oligochaeta,train,Ol-kaj1_9_21,0,0.9999999998613962,-6.222617514032235
+Oligochaeta,train,Ol-kir2_22_21,0,0.9999914697749236,-5.421444309294563
+Oligochaeta,train,Ol-kir2_33_22,0,0.9999999998212425,-4.645536953456098
+Oligochaeta,train,Ol-kir2_36_22,0,0.9999999985331725,-3.165625616563844
+Oligochaeta,train,Ol-kom3_25_22,0,0.9999999999991562,-5.350769278026764
+Oligochaeta,train,Ol-koy2_22_21,0,0.9999999999999805,-7.004481603730875
+Oligochaeta,train,Ol-koy2_86_21,0,0.9999999999997025,-4.529257648281664
+Oligochaeta,train,Ol-koy2_97_21,0,0.9999997718148588,-3.363888082699706
+Oligochaeta,train,Ol-koy2_99_21,0,0.9999999789984395,-1.9079580384151296
+Oligochaeta,train,Ol-kuh2_14_21,0,0.9999999991683204,-2.971205104704122
+Oligochaeta,train,Ol-kur1_10_21,0,0.9999999948622147,-2.3357085961554205
+Oligochaeta,train,Ol-kur1_35_21,0,0.9999999999818541,-4.4075191162789125
+Oligochaeta,train,Ol-kur2_23_21,0,0.9999999554767,-2.715478502823263
+Oligochaeta,train,Ol-kur2_7_22,0,0.9999999816129972,-5.866844397363767
+Oligochaeta,train,Ol-lop1_6_21,0,0.999999980112791,-5.650417917576393
+Oligochaeta,train,Ol-pus1_57_22,0,0.9999999991753281,-10.62955809580749
+Oligochaeta,train,Ol-pus2_7_21,0,0.9999999999993054,-4.936975533318666
+Oligochaeta,train,Ol-pus3_47_21,0,0.9999999999788427,-4.909285404652598
+Oligochaeta,train,Ol-sii1_127_21,1,0.9999917801520798,-5.417969711629354
+Oligochaeta,train,Ol-sii1_1_21,0,0.999999999999535,-2.75863592715835
+Oligochaeta,train,Ol-sii1_27_21,1,0.9999999989456603,-6.53502708108649
+Oligochaeta,train,Ol-sii3_2_21,0,0.9999999178249028,-3.690393805093599
+Oligochaeta,val,Ol-hii3_3_22,0,0.9999998996408511,-4.82932557210102
+Oligochaeta,val,Ol-iso1_106_21,0,0.9999999487598599,-4.12857112126019
+Oligochaeta,val,Ol-iso1_225_21,1,0.9994318585854404,-6.922741457865449
+Oligochaeta,val,Ol-iso1_409_21,0,0.945627756275529,-6.516330028517963
+Oligochaeta,val,Ol-iso3_23_21,0,0.9999999999999849,-6.413585430397308
+Oligochaeta,val,Ol-iso3_8_21,0,0.9999912060572048,-6.558164128518062
+Oligochaeta,val,Ol-iva1_55_22,1,0.9993213553627709,-6.86824631836668
+Oligochaeta,val,Ol-kak2_13_21,0,0.9999999999998441,-3.4440722849085006
+Oligochaeta,val,Ol-kuo2_20_22,0,0.9999998948659992,-12.449526645421983
+Oligochaeta,val,Ol-nie1_13_22,0,1.0,-7.0312637501995
+Oligochaeta,val,Ol-nie1_31_22,0,0.9999999709744185,-15.002934597705234
+Oligochaeta,val,Ol-pus3_22_22,0,0.99999999347934,-4.57067318370032
+Oligochaeta,val,Ol-ull1_101_22,0,0.9999917721412347,-8.889180730845013
+Oligochaeta,val,Ol-ull1_3_22,1,0.7369260871993012,-8.255279535028732
+Oligochaeta,val,Ol-vie1_2_22,0,0.9998939046251604,-8.491148283930574
+Orthotrichia,train,Or-ala1_2_21,0,0.9999999999950511,-4.430507593509576
+Orthotrichia,train,Or-ala1_3_21,0,0.9999999945314997,-2.7270420615598407
+Orthotrichia,train,Or-ala1_7_21,1,0.9999887842320603,-2.402695437403855
+Orthotrichia,train,Or-haa3_1_21,0,0.9999999977411698,-1.765364784654727
+Orthotrichia,train,Or-hau3_1_21,1,0.9999999998977218,-6.24383812097199
+Orthotrichia,train,Or-hii1_2_22,0,0.9999999564918728,-2.803913313344319
+Orthotrichia,train,Or-hii3_1_22,0,0.999999999984741,-0.9794357741913693
+Orthotrichia,train,Or-hii3_2_22,0,0.9999999999885172,-1.9280064023724233
+Orthotrichia,train,Or-kom3_2_22,0,0.9999999999460525,-2.2273903777488187
+Orthotrichia,train,Or-nie2_1_21,0,0.9999999999979279,-1.96359063218687
+Orthotrichia,train,Or-nie2_2_21,0,0.9999999842491738,-0.44540893310556307
+Orthotrichia,train,Or-nie2_5_21,0,0.9987507523326252,-0.20231606240579936
+Orthotrichia,train,Or-ull1_10_22,0,0.9999999930476273,-0.7212547541628265
+Orthotrichia,train,Or-ull1_14_22,0,0.9999999417763829,0.48976369655058427
+Orthotrichia,train,Or-ull1_15_22,0,0.999999999978784,-0.2471347352422697
+Orthotrichia,train,Or-ull1_18_22,0,0.9999999959603645,-2.2037672032853344
+Orthotrichia,train,Or-ull1_19_22,1,0.9999999964464795,-1.142726446938612
+Orthotrichia,train,Or-ull1_20_22,1,0.999999884733609,-1.674665415443286
+Orthotrichia,train,Or-ull1_2_22,0,0.9999999999999214,-1.769194012915328
+Orthotrichia,train,Or-ull1_3_22,0,0.999999999999857,-3.344801129106509
+Orthotrichia,train,Or-ull1_4_22,0,0.9999999999498345,-1.3219028802988362
+Orthotrichia,train,Or-ull1_5_22,0,0.9999999999998543,-7.456283908354697
+Orthotrichia,train,Or-ull1_8_22,1,0.9999999973139959,-2.1385225771002876
+Orthotrichia,train,Or-val1_1_22,1,0.9999999998930331,-2.2947331759834118
+Orthotrichia,train,Or-val1_3_22,1,0.999999981327753,-1.9239969639526215
+Orthotrichia,train,Or-val2_1_22,0,0.9999999788020449,-1.024595233977431
+Orthotrichia,train,Or-val2_2_22,0,0.9999999997982483,-1.6177970647588165
+Orthotrichia,train,Or-val2_4_22,0,0.9999999999870505,-0.18295009486499048
+Orthotrichia,train,Or-val2_5_22,0,0.9647906017839504,-0.3894541125893003
+Orthotrichia,train,Or-val2_6_22,0,0.9999909849639265,-0.020283781360985742
+Orthotrichia,val,Or-ala1_4_21,0,0.9999996344741982,-3.351605130521829
+Orthotrichia,val,Or-hii1_1_22,0,0.999999994645929,-2.8488476436984005
+Orthotrichia,val,Or-nie2_4_21,1,0.9999677308657664,-1.3917681362026801
+Orthotrichia,val,Or-pus3_1_22,0,0.9999999999993221,-2.049336498314821
+Orthotrichia,val,Or-ull1_16_22,0,0.8987075871378345,-1.331384793642231
+Orthotrichia,val,Or-val2_3_22,1,0.9984404621483598,-3.8428453366865583
+Oulimnius tuberculatus,train,B-B3-OuTu-iso1-5,0,0.9999999998878417,-6.95070501475476
+Oulimnius tuberculatus,train,H-H6-OuTu-iso1-43,0,0.9999501980265876,-6.296698223923153
+Oulimnius tuberculatus,train,OuTu-iso1_144_21,0,0.9999605636084331,-3.893533144609174
+Oulimnius tuberculatus,train,OuTu-iso1_203_21,0,0.9995414516244028,-2.55553946348439
+Oulimnius tuberculatus,train,OuTu-iso1_275_21,0,0.9999994725471524,-1.6885458303079712
+Oulimnius tuberculatus,train,OuTu-iso1_296_21,0,0.9999999386216324,-4.548547103257123
+Oulimnius tuberculatus,train,OuTu-iso1_300_21,0,0.9999999999999338,-2.7122465196091543
+Oulimnius tuberculatus,train,OuTu-nie2_18_21,1,0.9999997381004239,-6.329421801717208
+Oulimnius tuberculatus,train,OuTu-nie2_76_21,1,0.9999997671404339,-2.1977740557774723
+Oulimnius tuberculatus,train,OuTu-sii1_1_21,1,0.9999999980511642,-5.2298500300718125
+Oulimnius tuberculatus,train,OuTu-sii1_3_21,1,0.9999999999999813,-3.2929276810992647
+Oulimnius tuberculatus,train,OuTuLa-haa2_34_22,0,0.9999999836259678,-2.965962973605457
+Oulimnius tuberculatus,train,OuTuLa-haa2_73_22,0,0.9999997837386448,-6.2277725933628645
+Oulimnius tuberculatus,train,OuTuLa-hau2_56_21,0,0.9999995167734455,-2.0509150231291375
+Oulimnius tuberculatus,train,OuTuLa-hau3_31_21,1,0.999980720775338,-1.4758406563012603
+Oulimnius tuberculatus,train,OuTuLa-hau3_74_21,1,0.9999290150698211,-5.73555122044807
+Oulimnius tuberculatus,train,OuTuLa-hii1_3_22,0,0.9999996743103428,-3.3688707472100763
+Oulimnius tuberculatus,train,OuTuLa-hii1_7_22,0,0.999999989593916,-3.4249991678889415
+Oulimnius tuberculatus,train,OuTuLa-iso1_101_22,0,0.9999999999352149,-4.154043102815518
+Oulimnius tuberculatus,train,OuTuLa-iso2_9_22,1,0.999509264012822,-2.3162900147054533
+Oulimnius tuberculatus,train,OuTuLa-iso3_134_21,1,0.9999999435412936,-4.144706553698716
+Oulimnius tuberculatus,train,OuTuLa-iso3_185_21,1,0.9999989691593736,-2.4075275148060005
+Oulimnius tuberculatus,train,OuTuLa-iso3_320_21,0,0.9999999964136506,-4.790208548616887
+Oulimnius tuberculatus,train,OuTuLa-iso3_333_21,1,0.9999999529365697,-5.159421662286782
+Oulimnius tuberculatus,train,OuTuLa-iso3_85_21,1,0.9999997487906185,-2.1932460359330523
+Oulimnius tuberculatus,train,OuTuLa-koy1_10_21,1,0.9999999998045093,-2.72566303576348
+Oulimnius tuberculatus,train,OuTuLa-koy1_27_21,1,0.9999995094877419,-2.3189089495497655
+Oulimnius tuberculatus,train,OuTuLa-koy1_40_21,1,0.9999999198968764,-5.948568356878706
+Oulimnius tuberculatus,train,OuTuLa-kur2_10_22,0,0.9999975229741987,-3.0235656125030754
+Oulimnius tuberculatus,train,OuTuLa-kur2_30_22,0,0.9999985029129916,-2.605049074206306
+Oulimnius tuberculatus,val,10-H12-OuTu-iso2-4,0,1.0,-21.84378784547512
+Oulimnius tuberculatus,val,A-C9-OuTu-ala1-2,0,0.9999999992852313,-16.785562744906095
+Oulimnius tuberculatus,val,C-D9-OuTu-iso1-15,0,0.9999999999998934,-16.790404436489105
+Oulimnius tuberculatus,val,OuTu-iso1_121_21,0,0.999999988291017,-6.399946428454909
+Oulimnius tuberculatus,val,OuTu-iso1_152_21,0,0.9999999894301485,-2.5527912195313807
+Oulimnius tuberculatus,val,OuTuLa-hau3_61_21,1,0.9999999999992353,-1.7406041605137936
+Oulimnius tuberculatus,val,OuTuLa-iso1_189_22,0,0.9999997391368078,-5.167623053746643
+Oulimnius tuberculatus,val,OuTuLa-iso1_191_22,0,0.9999999995951891,-3.739200832796195
+Oulimnius tuberculatus,val,OuTuLa-iso1_200_22,0,0.9999977647184719,-5.136055572939551
+Oulimnius tuberculatus,val,OuTuLa-iso1_31_22,0,0.9999612600905491,-7.276848303075026
+Oulimnius tuberculatus,val,OuTuLa-iso1_64_22,0,0.8254179278298095,-10.868279163125317
+Oulimnius tuberculatus,val,OuTuLa-iso3_1_22,1,0.9999999576810739,-3.93384696063241
+Oulimnius tuberculatus,val,OuTuLa-iso3_356_21,1,0.9999504595896623,-7.368472632866522
+Oulimnius tuberculatus,val,OuTuLa-koy1_64_21,1,0.9999999999708238,-3.330902408439144
+Oulimnius tuberculatus,val,OuTuLa-koy1_90_21,0,0.9997367636645715,-13.451071958972472
+Oulimnius tuberculatus adult,train,3-F6-OuTuAd-hau3-2,0,0.9994963062459682,-0.859049441958101
+Oulimnius tuberculatus adult,train,3-F8-OuTuAd-iso1-1,0,0.9998311419847641,-1.1762420693896392
+Oulimnius tuberculatus adult,train,7-F11-OuTuAd-koy1-1,1,0.9999933724609591,-6.741242752525698
+Oulimnius tuberculatus adult,train,B-H5-OuTuAd-hau3-2,1,0.9999999999982823,-2.3435850927098354
+Oulimnius tuberculatus adult,train,E-A10-OuTuAd-iso3-2,1,0.9999999999999991,-3.279218709865999
+Oulimnius tuberculatus adult,train,E-B8-OuTuAd-iso3-3,1,0.9999999999992994,0.010098548102561722
+Oulimnius tuberculatus adult,train,O-H8-OuTuAd-koy1-8,1,0.9999999999217142,-5.68883003482639
+Oulimnius tuberculatus adult,train,OuTuAd-hau3_2_21,0,0.9999999999960152,0.9158355774489326
+Oulimnius tuberculatus adult,train,OuTuAd-hau3_5_21,0,0.9999999999993188,-0.35919440459713137
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_24_22,0,0.9999999999969653,0.2630608533556664
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_28_22,0,0.9999999999989493,-1.9224361152534861
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_3_21,0,0.9999999999982538,-2.150234638116899
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_50_22,0,0.9999999999999958,0.5232183396190866
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_5_22,0,1.0,-0.07112772630339492
+Oulimnius tuberculatus adult,train,OuTuAd-iso1_70_22,0,0.9999999999993721,-8.382996462565226
+Oulimnius tuberculatus adult,train,OuTuAd-iso3_1_22,0,0.9999999999999998,-1.7191529811894721
+Oulimnius tuberculatus adult,train,OuTuAd-iso3_5_21,0,0.9999999987428028,-1.6023639636919196
+Oulimnius tuberculatus adult,train,OuTuAd-iso3_7_21,0,0.999999999999758,1.1921571863905562
+Oulimnius tuberculatus adult,train,OuTuAd-iso3_8_21,0,0.9999999999996172,-3.774603268152232
+Oulimnius tuberculatus adult,train,OuTuAd-kaj1_3_21,0,0.9999999999882604,-1.0394639624138104
+Oulimnius tuberculatus adult,train,OuTuAd-koy1_42_21,0,0.9999999999999314,-2.544309589816999
+Oulimnius tuberculatus adult,train,OuTuAd-koy1_9_21,0,0.999999999999798,-0.11549614875802838
+Oulimnius tuberculatus adult,train,OuTuAd-nie2_5_22,0,0.9999999999999352,-1.0522429056623945
+Oulimnius tuberculatus adult,train,OuTuAd-pus3_4_22,0,1.0,-1.1270399403464335
+Oulimnius tuberculatus adult,train,OuTuAd-vie1_10_22,0,0.9999999999998945,-2.4523839501264852
+Oulimnius tuberculatus adult,train,OuTuAd-vie1_5_22,0,0.9999999999961179,-1.3657421443804783
+Oulimnius tuberculatus adult,train,OuTuAd-vie1_6_22,0,0.9999999999999906,-0.46354951786040743
+Oulimnius tuberculatus adult,train,OuTuAd-vie1_7_22,0,0.9999999999999999,0.008286828705800886
+Oulimnius tuberculatus adult,train,P-F1-OuTuAd-koy1-10,1,0.9999999999884606,-1.2712798096635591
+Oulimnius tuberculatus adult,train,Q-A6-OuTuAd-koy1-12,1,0.9999999999998256,-1.0536827689687343
+Oulimnius tuberculatus adult,val,11-D3-OuTuAd-koy1-5,0,0.9985193781661544,-9.70211998404031
+Oulimnius tuberculatus adult,val,11-D5-OuTuAd-koy1-7,0,0.9981457405814285,-4.270623886512929
+Oulimnius tuberculatus adult,val,G-D8-OuTuAd-kur2-1,1,0.9999999999995617,-2.815491466970542
+Oulimnius tuberculatus adult,val,N-G12-OuTuAd-koy1-6,1,1.0,-11.82371051858288
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_32_22,0,1.0,-2.830655172111941
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_4_21,0,0.9999999999527488,-1.2329200316644648
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_60_22,0,0.9999999999999916,0.6392028856433551
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_62_22,0,1.0,-5.525232511478947
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_6_21,0,0.9999999774840804,-8.087936987366701
+Oulimnius tuberculatus adult,val,OuTuAd-iso1_9_22,0,0.9999999999999969,1.1885073839500464
+Oulimnius tuberculatus adult,val,OuTuAd-iso3_2_21,0,0.9999999999909381,-1.953175118929357
+Oulimnius tuberculatus adult,val,OuTuAd-kur2_6_21,0,0.9999999998986271,0.8907784884221481
+Oulimnius tuberculatus adult,val,OuTuAd-vie1_11_22,0,0.9999999999970437,-4.341367248675063
+Oulimnius tuberculatus adult,val,OuTuAd-vie1_8_22,0,0.9999999999999076,-27.67321234394324
+Oulimnius tuberculatus adult,val,Q-E4-OuTuAd-pus3-2,1,0.9999999996984406,-0.963640423087222
+Pedicia,train,Pe-koy1_15_21,1,0.9999973756969955,-0.5041265371552441
+Pedicia,train,Pe-koy1_16_21,1,0.9999999999999982,-2.364131422365725
+Pedicia,train,Pe-koy1_19_21,1,0.9999999782993128,-3.149877012325712
+Pedicia,train,Pe-koy1_21_21,0,0.999999994101263,-2.019012477859153
+Pedicia,train,Pe-koy1_22_21,0,0.9999999998788858,-2.6264495464100914
+Pedicia,train,Pe-koy1_27_21,0,0.9999999996308446,-8.555617223528222
+Pedicia,train,Pe-koy1_28_21,0,0.9999994894611695,-1.7633613795106058
+Pedicia,train,Pe-koy1_29_21,1,0.9999999966250916,-3.18262254466077
+Pedicia,train,Pe-koy1_31_21,0,0.9999999989091926,-3.4834833227104642
+Pedicia,train,Pe-koy1_33_21,0,0.9999999999734754,-4.330596012159765
+Pedicia,train,Pe-koy1_34_21,1,0.9999999996207352,-2.3139580280660734
+Pedicia,train,Pe-koy1_35_21,0,0.9999999999398543,-4.4690619041406965
+Pedicia,train,Pe-koy1_36_21,1,0.999761339256,-2.1007304376165106
+Pedicia,train,Pe-koy1_39_21,0,0.9999999287947471,-4.072972937321937
+Pedicia,train,Pe-koy1_40_21,1,0.9999999882240854,-2.0074771495888992
+Pedicia,train,Pe-koy1_43_21,0,0.9999999877963347,-2.8503395384107097
+Pedicia,train,Pe-koy1_44_21,1,0.9992715158244437,-2.3136376616120806
+Pedicia,train,Pe-koy1_47_21,0,0.9999999935202641,-5.1566364898235815
+Pedicia,train,Pe-koy1_48_21,0,0.9999991983208949,-3.0377346527520164
+Pedicia,train,Pe-koy1_4_21,1,0.9999999187279451,-2.486706292760754
+Pedicia,train,Pe-koy1_50_21,0,0.9870759960768491,-0.6240409837484169
+Pedicia,train,Pe-koy1_53_21,1,0.999999672459113,-4.508052749636992
+Pedicia,train,Pe-koy1_54_21,0,0.9999999934222366,-2.6582035510284516
+Pedicia,train,Pe-koy1_56_21,1,0.9999997964733728,-3.512104987542852
+Pedicia,train,Pe-koy1_57_21,0,0.9999755904552386,-2.7943909020026343
+Pedicia,train,Pe-koy1_5_21,0,0.9999999956331314,-5.884897331874301
+Pedicia,train,Pe-koy1_60_21,0,0.9999999999909508,-3.7239293913356324
+Pedicia,train,Pe-koy1_61_21,0,0.9999999876803027,-1.0308938173558122
+Pedicia,train,Pe-koy1_6_21,0,0.9999987670413846,-2.7864061149876083
+Pedicia,train,Pe-koy1_9_21,0,0.9999999669519118,-6.9387248843887015
+Pedicia,val,Pe-koy1_10_21,0,0.9999999723951365,-1.45686977601037
+Pedicia,val,Pe-koy1_17_21,1,1.0,-3.332066784887836
+Pedicia,val,Pe-koy1_20_21,1,0.9961649331567697,-3.1856078566974073
+Pedicia,val,Pe-koy1_23_21,1,0.9874021792150957,-6.573368509933356
+Pedicia,val,Pe-koy1_2_21,1,0.9956006763500672,-10.05046764047878
+Pedicia,val,Pe-koy1_32_21,1,0.9941216508357867,-3.076052958331415
+Pedicia,val,Pe-koy1_52_21,0,0.9999999864615513,-1.6347334171026322
+Pedicia,val,Pe-koy1_8_21,0,0.9999999999775797,-5.084407330238465
+Pisidium,train,5-C3-Pi-ala1-3,1,0.9999999797548083,-1.831358614879104
+Pisidium,train,5-C4-Pi-ala1-4,1,0.9999999999990139,-1.2904849281978024
+Pisidium,train,5-C9-Pi-ala1-9,1,0.9999999999973161,-0.09399073128641966
+Pisidium,train,9-C1-Pi-iso2-2,1,0.999999601390059,-0.013622978222644022
+Pisidium,train,9-C12-Pi-sii2-2,1,0.9999999998824587,-1.1913674757178114
+Pisidium,train,9-C3-Pi-kaj1-1,1,0.9999999996881939,-4.051931618903401
+Pisidium,train,9-C5-Pi-kak2-2,1,1.0,-4.419312518476691
+Pisidium,train,Pi-ala1_1_21,0,0.9999999999905457,-0.23452020404226026
+Pisidium,train,Pi-ala1_6_21,0,0.9999999697581242,0.06901994550046275
+Pisidium,train,Pi-ala1_8_21,0,0.9999999264394894,-4.98883254137349
+Pisidium,train,Pi-hii3_1_22,0,0.9999999999250102,-3.701264489240046
+Pisidium,train,Pi-iso1_1_22,0,0.9999999999999765,1.0471421765959512
+Pisidium,train,Pi-iso2_1_22,0,0.999999999999994,0.6017445302931623
+Pisidium,train,Pi-iso2_2_22,0,1.0,-2.189015434205775
+Pisidium,train,Pi-iso2_3_21,0,0.9999999976319063,-1.010735432870236
+Pisidium,train,Pi-iso3_1_22,0,0.9999999999999989,1.3167336488554486
+Pisidium,train,Pi-iso3_2_22,0,1.0,-0.25499881733857777
+Pisidium,train,Pi-iso3_5_22,0,0.9999999999999991,0.8738196655575567
+Pisidium,train,Pi-kir1_1_21,0,0.9999999777446897,-2.7896295826127986
+Pisidium,train,Pi-kom3_2_22,0,0.9999999972279786,-1.3518730044916136
+Pisidium,train,Pi-kuo1_1_21,0,0.9999999999772258,-3.9083413420881676
+Pisidium,train,Pi-kuo2_1_22,0,0.9999999999373577,-1.1077596380513608
+Pisidium,train,Pi-kuo2_2_21,0,0.9999999992705747,-0.09864313606886199
+Pisidium,train,Pi-kuo2_4_21,0,0.9999999999555891,-2.892456835579077
+Pisidium,train,Pi-kur2_2_21,0,0.9999999999999998,-1.538670344095129
+Pisidium,train,Pi-pus3_1_21,0,0.9999999999874394,-2.2983548506375016
+Pisidium,train,Pi-pus3_1_22,0,0.9999999974121778,-1.7939587558970977
+Pisidium,train,Pi-sii2_2_21,0,0.9999999993503021,-2.1833922500203222
+Pisidium,train,Pi-vie1_2_22,0,0.9999999999997928,-0.06713300359074204
+Pisidium,train,Pi-vie1_3_22,0,0.9999999999999063,1.3105989808033698
+Pisidium,val,5-C7-Pi-ala1-7,1,1.0,-6.312046062092882
+Pisidium,val,9-C10-Pi-kur2-2,1,0.999999999999998,-2.2925778826450287
+Pisidium,val,9-C2-Pi-iso2-3,1,0.999999998453255,-5.668849615104206
+Pisidium,val,Pi-ala1_4_21,0,0.9999999999031304,-3.2863985421336004
+Pisidium,val,Pi-kaj1_2_21,0,0.9999999998881961,0.6545005875482595
+Pisidium,val,Pi-kak3_1_21,0,0.9999956140166274,-8.41108699185703
+Pisidium,val,Pi-val2_2_22,0,1.0,-10.421677356090985
+Polycentropus flavomaculatus,train,B-E9-PoFl-kaj2-2,1,1.0,-5.2495943526152296
+Polycentropus flavomaculatus,train,F-B4-PoFl-kaj2-8,1,1.0,-4.956255562375757
+Polycentropus flavomaculatus,train,L-B1-PoFl-kuo1-3,1,1.0,-5.354787375857386
+Polycentropus flavomaculatus,train,L-F5-PoFl-kuo1-4,1,1.0,-7.024235613160343
+Polycentropus flavomaculatus,train,N-G11-PoFl-kuo2-2,1,1.0,-5.988079569825812
+Polycentropus flavomaculatus,train,O-F12-PoFl-pus3-1,1,1.0,-6.4312022215901266
+Polycentropus flavomaculatus,train,PoFl-haa1_1_22,0,1.0,-6.359760440098739
+Polycentropus flavomaculatus,train,PoFl-haa1_2_22,0,1.0,-5.703533271817443
+Polycentropus flavomaculatus,train,PoFl-haa1_5_22,0,1.0,-7.039669908155188
+Polycentropus flavomaculatus,train,PoFl-haa2_4_22,0,1.0,-2.7922815286304985
+Polycentropus flavomaculatus,train,PoFl-hii1_5_22,0,1.0,-4.210988477058436
+Polycentropus flavomaculatus,train,PoFl-kuo1_13_22,0,1.0,-6.471296555080023
+Polycentropus flavomaculatus,train,PoFl-kuo1_15_22,0,1.0,-3.2537352975779648
+Polycentropus flavomaculatus,train,PoFl-kuo1_19_22,0,1.0,-4.31239923949685
+Polycentropus flavomaculatus,train,PoFl-kuo1_22_22,0,1.0,-2.8327496605455185
+Polycentropus flavomaculatus,train,PoFl-kuo1_23_22,0,1.0,-7.18654701464496
+Polycentropus flavomaculatus,train,PoFl-kuo1_24_22,0,1.0,-4.667532217743098
+Polycentropus flavomaculatus,train,PoFl-kuo1_25_22,0,1.0,-3.440402048817825
+Polycentropus flavomaculatus,train,PoFl-kuo1_28_22,0,1.0,-3.7329004655682354
+Polycentropus flavomaculatus,train,PoFl-kuo1_6_22,0,1.0,-7.855693707736171
+Polycentropus flavomaculatus,train,PoFl-kuo2_2_21,0,1.0,-2.366169771002392
+Polycentropus flavomaculatus,train,PoFl-kuo2_2_22,0,1.0,-3.880666185976276
+Polycentropus flavomaculatus,train,PoFl-kuo2_3_22,0,1.0,-4.490537852761005
+Polycentropus flavomaculatus,train,PoFl-kur1_3_22,0,1.0,-2.913070783711893
+Polycentropus flavomaculatus,train,PoFl-pus3_1_21,0,1.0,-6.8188929419976105
+Polycentropus flavomaculatus,train,PoFl-ull1_6_22,0,1.0,-3.994983336630238
+Polycentropus flavomaculatus,train,PoFl-val1_1_22,0,1.0,-7.857017892026599
+Polycentropus flavomaculatus,train,PoFl-val2_3_22,0,1.0,-3.7828978588211886
+Polycentropus flavomaculatus,train,PoFl-vie1_1_22,0,1.0,-4.623911665091185
+Polycentropus flavomaculatus,train,PoFl-vie1_9_22,0,1.0,-5.8608392879410705
+Polycentropus flavomaculatus,val,A-D1-PoFl-haa1-1,1,1.0,-5.963480584267705
+Polycentropus flavomaculatus,val,K-G6-PoFl-kuo1-1,1,1.0,-6.028643117215074
+Polycentropus flavomaculatus,val,PoFl-haa1_1_21,0,1.0,-10.032031998261255
+Polycentropus flavomaculatus,val,PoFl-haa2_1_22,0,1.0,-7.37549502033613
+Polycentropus flavomaculatus,val,PoFl-hii1_2_22,0,1.0,-12.140823340805861
+Polycentropus flavomaculatus,val,PoFl-hii1_4_22,0,1.0,-4.085348248478143
+Polycentropus flavomaculatus,val,PoFl-iso3_2_21,0,1.0,-7.9789397558906625
+Polycentropus flavomaculatus,val,PoFl-kuo1_14_22,0,1.0,-6.018524891233419
+Polycentropus flavomaculatus,val,PoFl-kuo1_29_22,0,1.0,-11.557157777109085
+Polycentropus flavomaculatus,val,PoFl-kuo1_31_22,0,1.0,-6.94881942492397
+Polycentropus flavomaculatus,val,PoFl-kur2_1_22,0,1.0,-3.5709675970770665
+Polycentropus flavomaculatus,val,PoFl-ull1_3_22,0,1.0,-10.87945870952011
+Polycentropus flavomaculatus,val,PoFl-val1_2_22,0,1.0,-47.95010394420842
+Psychomyia pusilla,train,5-E10-PsPu-kur1-5,1,1.0,-5.916000655156321
+Psychomyia pusilla,train,5-E3-PsPu-hau3-3,1,1.0,-7.750889101957931
+Psychomyia pusilla,train,5-E8-PsPu-kur1-3,1,1.0,-4.791666765589621
+Psychomyia pusilla,train,9-E9-PsPu-kur1-16,1,1.0,-7.458042348292716
+Psychomyia pusilla,train,B-C12-PsPu-hau3-2,1,1.0,-6.344112513807678
+Psychomyia pusilla,train,D-C7-PsPu-hau3-5,1,1.0,-5.362828653441149
+Psychomyia pusilla,train,E-E9-PsPu-hau3-7,1,1.0,-4.221262892883795
+Psychomyia pusilla,train,H-H9-PsPu-kur1-6,1,1.0,-6.151822032957794
+Psychomyia pusilla,train,L-C1-PsPu-kur1-17,1,1.0,-4.518493361833032
+Psychomyia pusilla,train,P-A11-PsPu-kur1-22,1,1.0,-4.001502851482474
+Psychomyia pusilla,train,PsPu-hii1_6_22,0,1.0,-2.613630395808835
+Psychomyia pusilla,train,PsPu-kur1_12_21,0,1.0,-7.257393645069461
+Psychomyia pusilla,train,PsPu-kur1_14_22,0,1.0,-2.2479199659951608
+Psychomyia pusilla,train,PsPu-kur1_15_22,0,1.0,-6.255181990272364
+Psychomyia pusilla,train,PsPu-kur1_16_22,0,1.0,-2.039294972127786
+Psychomyia pusilla,train,PsPu-kur1_21_22,0,1.0,-1.5013430091599993
+Psychomyia pusilla,train,PsPu-kur1_24_22,0,1.0,-1.6340006557303344
+Psychomyia pusilla,train,PsPu-kur1_30_22,0,1.0,-8.966942732543183
+Psychomyia pusilla,train,PsPu-kur1_35_22,0,1.0,-3.5593180543070364
+Psychomyia pusilla,train,PsPu-kur1_36_22,0,1.0,-4.926019859118265
+Psychomyia pusilla,train,PsPu-kur1_37_22,0,1.0,-1.7742062440105428
+Psychomyia pusilla,train,PsPu-kur1_3_21,0,1.0,-5.069360772647267
+Psychomyia pusilla,train,PsPu-kur1_40_22,0,1.0,-3.3775574615965134
+Psychomyia pusilla,train,PsPu-kur1_54_22,0,1.0,-5.729034840194258
+Psychomyia pusilla,train,PsPu-kur1_65_22,0,1.0,-1.929738823862305
+Psychomyia pusilla,train,PsPu-kur1_75_22,0,1.0,-3.55803675422508
+Psychomyia pusilla,train,PsPu-kur1_78_22,0,1.0,-3.3488809974195313
+Psychomyia pusilla,train,PsPu-kur1_7_22,0,1.0,-3.119913243152782
+Psychomyia pusilla,train,PsPu-kur1_8_21,0,1.0,-4.760259169552084
+Psychomyia pusilla,train,PsPu-kur1_8_22,0,1.0,-2.165716833101305
+Psychomyia pusilla,val,5-E6-PsPu-kur1-1,1,1.0,-5.028754485263759
+Psychomyia pusilla,val,D-B12-PsPu-hau3-4,1,1.0,-3.374301741448244
+Psychomyia pusilla,val,G-H7-PsPu-kur1-3,1,1.0,-9.441430973934304
+Psychomyia pusilla,val,I-B6-PsPu-kur1-10,1,1.0,-3.964041576868736
+Psychomyia pusilla,val,J-D11-PsPu-kur1-13,1,1.0,-11.090542874696213
+Psychomyia pusilla,val,J-H4-PsPu-kur1-14,1,1.0,-4.234615785746515
+Psychomyia pusilla,val,PsPu-hau1_1_21,0,1.0,-17.090893924913267
+Psychomyia pusilla,val,PsPu-kur1_18_21,0,1.0,-14.511679470020626
+Psychomyia pusilla,val,PsPu-kur1_22_22,0,1.0,-3.6394463275146887
+Psychomyia pusilla,val,PsPu-kur1_2_22,0,1.0,-3.74024491700494
+Psychomyia pusilla,val,PsPu-kur1_39_22,0,1.0,-3.440231337579748
+Psychomyia pusilla,val,PsPu-kur1_43_22,0,1.0,-17.616105982697917
+Sialis,train,Sia-iso1_10_21,0,0.9999999627501359,-1.8803524694719513
+Sialis,train,Sia-iso1_11_21,1,0.9999994388139103,-0.1852411682324746
+Sialis,train,Sia-iso1_13_21,1,0.999999999999476,-3.6048597746890607
+Sialis,train,Sia-iso1_16_21,1,0.9999375834404695,-0.9454079484701534
+Sialis,train,Sia-iso1_1_22,1,0.999991023760389,-1.3007844238137451
+Sialis,train,Sia-iso1_3_21,0,0.9999998885325434,-2.020285341215864
+Sialis,train,Sia-iso1_4_21,1,0.9999998749683325,-3.0487436326788018
+Sialis,train,Sia-iso1_5_21,1,0.999999732983261,-2.3747759645646926
+Sialis,train,Sia-iso1_6_21,0,0.999999999999948,-2.304447806137718
+Sialis,train,Sia-iso1_9_21,0,0.9999996303852104,-5.656563016525478
+Sialis,train,Sia-iso2_1_21,0,0.9997128871093832,-0.7394842525228302
+Sialis,train,Sia-iso2_1_22,1,0.999999927288225,-1.8912166356431932
+Sialis,train,Sia-iso2_3_21,1,0.9999999843887145,-2.476486724093995
+Sialis,train,Sia-iso2_3_22,1,0.9999993100936635,-3.1077009063952943
+Sialis,train,Sia-iso2_4_22,0,0.9999999842867681,-4.052286463804329
+Sialis,train,Sia-iso2_5_22,1,0.9998481611608873,-0.10663077533515164
+Sialis,train,Sia-iso3_14_22,0,0.9999999181905275,-2.58586610064299
+Sialis,train,Sia-iso3_17_22,0,0.9999996528175871,-2.300090609817886
+Sialis,train,Sia-iso3_1_21,0,0.9997963943937827,-0.044022370303160585
+Sialis,train,Sia-iso3_1_22,0,0.9999993870257826,-1.033357535897892
+Sialis,train,Sia-iso3_22_22,0,0.99999861413017,-0.7677815066191087
+Sialis,train,Sia-iso3_24_22,0,0.9999999988958113,-1.1383141936121142
+Sialis,train,Sia-iso3_25_22,1,0.9999995662053097,-0.7257906703115165
+Sialis,train,Sia-iso3_26_22,1,0.9999995790574843,-3.84705730633598
+Sialis,train,Sia-iso3_2_21,0,0.999990709319101,-3.341457211185409
+Sialis,train,Sia-iso3_2_22,0,0.9998279367063501,-0.6121140158140204
+Sialis,train,Sia-iso3_3_22,1,0.9999999329216982,-2.0502931523405366
+Sialis,train,Sia-iso3_4_22,1,0.9999999961669304,-1.9241315494748683
+Sialis,train,Sia-iso3_5_22,1,0.9999978853981484,-5.112279622317484
+Sialis,train,Sia-iso3_9_22,0,0.9999999788863041,-2.6834559066288524
+Sialis,val,Sia-iso1_15_21,1,0.8223848200002744,0.27027033125611766
+Sialis,val,Sia-iso2_2_21,0,0.9125090286089313,-2.9910948623509377
+Sialis,val,Sia-iso3_11_22,0,1.0,-5.134433157035939
+Sialis,val,Sia-iso3_27_22,1,0.9999999999996412,-8.55213963748579
+Sialis,val,Sia-iso3_3_21,1,0.9996855340044739,-4.676362089596779
+Sialis,val,Sia-iso3_8_22,0,0.999999999217251,-6.887061535510696
+Spirosperma ferox,train,12-C11-SpFe-kur2-1,1,1.0,-4.108875701683425
+Spirosperma ferox,train,12-C7-SpFe-kur1-1,1,0.9999999999997788,-5.431090022152494
+Spirosperma ferox,train,8-E12-SpFe-kuh2-8,1,1.0,-7.912133060716025
+Spirosperma ferox,train,8-E3-SpFe-kaj2-3,1,0.9999999999999707,-3.457476273231361
+Spirosperma ferox,train,B-F5-SpFe-ala1-3,1,0.9999999999999998,-2.7083682627369203
+Spirosperma ferox,train,K-C4-SpFe-kuh2-4,1,1.0,-5.683427532744984
+Spirosperma ferox,train,L-E10-SpFe-kuh2-11,1,1.0,-4.647982195485078
+Spirosperma ferox,train,L-G5-SpFe-kuh2-13,1,1.0,-4.806131981833326
+Spirosperma ferox,train,N-B2-SpFe-kuh2-17,1,1.0,-5.647965078875455
+Spirosperma ferox,train,SpFe-ala1_7_21,0,0.9999999999991802,-2.9257346612966337
+Spirosperma ferox,train,SpFe-hau1_1_21,0,1.0,-1.7199950205996455
+Spirosperma ferox,train,SpFe-hau1_7_21,0,0.9999999999999991,-2.429212036485227
+Spirosperma ferox,train,SpFe-hau2_21_21,0,0.9999999999409734,-7.630429495001909
+Spirosperma ferox,train,SpFe-hau2_22_21,0,0.9999999999999997,-0.9899654742654178
+Spirosperma ferox,train,SpFe-iso2_3_21,0,0.9999999999999996,-3.4068988203158153
+Spirosperma ferox,train,SpFe-kaj1_2_21,0,0.9999999999999849,-5.024625441799426
+Spirosperma ferox,train,SpFe-kuh2_11_21,0,1.0,-2.0833487377209448
+Spirosperma ferox,train,SpFe-kuh2_26_21,0,1.0,-1.6758456214370856
+Spirosperma ferox,train,SpFe-kuh2_31_21,0,1.0,-2.9811045179632796
+Spirosperma ferox,train,SpFe-kuh2_33_21,0,1.0,-0.6151376609394372
+Spirosperma ferox,train,SpFe-kuh2_36_21,0,1.0,-2.4339616224701643
+Spirosperma ferox,train,SpFe-kuh2_38_21,0,0.999999999999944,-3.664855349452349
+Spirosperma ferox,train,SpFe-kuh2_3_21,0,1.0,-2.710167816118572
+Spirosperma ferox,train,SpFe-kuh2_47_21,0,1.0,-2.979536933062727
+Spirosperma ferox,train,SpFe-kuh2_5_21,0,1.0,-2.653286374172925
+Spirosperma ferox,train,SpFe-kuh2_6_21,0,1.0,-5.264299368429503
+Spirosperma ferox,train,SpFe-kuo2_1_21,0,1.0,-3.083503947847534
+Spirosperma ferox,train,SpFe-kuo2_2_21,0,1.0,-4.236280179212935
+Spirosperma ferox,train,SpFe-kur1_13_21,0,1.0,-2.6467228701519225
+Spirosperma ferox,train,SpFe-kur1_17_21,0,1.0,-3.6922282065849554
+Spirosperma ferox,val,4-E9-SpFe-hau2-2,1,0.9993043267179131,-6.304589617454642
+Spirosperma ferox,val,8-E6-SpFe-kuh2-2,1,1.0,-11.191917216143034
+Spirosperma ferox,val,F-G5-SpFe-hau2-5,1,1.0,-2.496858159132392
+Spirosperma ferox,val,K-E8-SpFe-kuh2-7,1,0.999999999946076,-7.004335193084188
+Spirosperma ferox,val,L-F10-SpFe-kuh2-12,1,0.9999999999993605,-3.8430446763761754
+Spirosperma ferox,val,SpFe-ala1_16_21,0,0.9999999999999702,-1.890359645687937
+Spirosperma ferox,val,SpFe-ala1_20_21,0,0.9999999999726183,-4.425565854890886
+Spirosperma ferox,val,SpFe-hau1_3_21,0,0.9999999999999858,-11.482046448355385
+Spirosperma ferox,val,SpFe-hau2_9_21,0,0.9999999956913674,-2.5509638164633284
+Spirosperma ferox,val,SpFe-kuh2_18_21,0,1.0,-8.901545697668206
+Spirosperma ferox,val,SpFe-kuh2_41_21,0,1.0,-1.3094540332910345
+Spirosperma ferox,val,SpFe-kur1_14_21,0,0.9999999999996168,-3.7742854771610403
+Spirosperma ferox,val,SpFe-kur1_1_21,0,0.9999999322629295,-9.378395141725674
+Spirosperma ferox,val,SpFe-kur1_3_21,0,1.0,-8.11821599543492
+Spirosperma ferox,val,SpFe-kur1_8_21,0,1.0,-5.197348687418074
+Stylaria lacustris,train,11-B4-StLa-kuh2-4,1,1.0,-6.482371193201358
+Stylaria lacustris,train,14-A5-StLa-val1-2,1,1.0,-5.3562757512655015
+Stylaria lacustris,train,7-D1-StLa-kuh1-4,1,1.0,-5.1128351646618135
+Stylaria lacustris,train,F-C8-StLa-kuh1-13,1,1.0,-5.036936156363952
+Stylaria lacustris,train,I-B5-StLa-kuh2-6,1,1.0,-3.9013062763703275
+Stylaria lacustris,train,N-E11-StLa-val1-3,1,1.0,-7.186645886230341
+Stylaria lacustris,train,StLa-hau2_13_21,0,1.0,-4.335535479008991
+Stylaria lacustris,train,StLa-hau2_14_21,0,1.0,-3.718583542869302
+Stylaria lacustris,train,StLa-hau2_9_21,0,1.0,-3.9015446291734666
+Stylaria lacustris,train,StLa-iso3_9_21,0,1.0,-7.966194326428052
+Stylaria lacustris,train,StLa-kuh1_14_21,0,1.0,-3.718754285689167
+Stylaria lacustris,train,StLa-kuh1_32_21,0,1.0,-2.5893993172567047
+Stylaria lacustris,train,StLa-kuh1_33_21,0,1.0,-2.932098481558876
+Stylaria lacustris,train,StLa-kuh1_35_21,0,1.0,-4.990309844792366
+Stylaria lacustris,train,StLa-kuh1_3_21,0,1.0,-4.548374017868225
+Stylaria lacustris,train,StLa-kuh1_64_21,0,1.0,-3.345112370195844
+Stylaria lacustris,train,StLa-kuh2_20_21,0,1.0,-3.6637701236909095
+Stylaria lacustris,train,StLa-kuh2_23_21,0,1.0,-4.295207858146966
+Stylaria lacustris,train,StLa-kuh2_38_21,0,1.0,-6.201439056592271
+Stylaria lacustris,train,StLa-kuh2_44_21,0,1.0,-4.112442955355121
+Stylaria lacustris,train,StLa-kuh2_48_21,0,1.0,-5.516474464972758
+Stylaria lacustris,train,StLa-kuh2_5_21,0,1.0,-5.4128535487477105
+Stylaria lacustris,train,StLa-kuo2_14_21,0,1.0,-5.332324817382817
+Stylaria lacustris,train,StLa-kuo2_15_21,0,1.0,-2.894465813863917
+Stylaria lacustris,train,StLa-pus1_1_21,0,1.0,-2.6287724269388946
+Stylaria lacustris,train,StLa-pus2_3_21,0,1.0,-4.63016646812256
+Stylaria lacustris,train,StLa-val1_9_21,0,1.0,-3.167764052108213
+Stylaria lacustris,train,StLa-val2_14_21,0,1.0,-3.6870455225796785
+Stylaria lacustris,train,StLa-val2_15_21,0,1.0,-3.189362053475337
+Stylaria lacustris,train,StLa-val2_7_21,0,1.0,-3.457323767972124
+Stylaria lacustris,val,StLa-hau1_12_21,0,1.0,-9.715084700237929
+Stylaria lacustris,val,StLa-hau2_10_21,0,1.0,-4.342103855751818
+Stylaria lacustris,val,StLa-hau3_2_21,0,1.0,-5.246706692017293
+Stylaria lacustris,val,StLa-kak3_4_21,0,1.0,-7.289944391306749
+Stylaria lacustris,val,StLa-kuh1_27_21,0,1.0,-2.5241767102437134
+Stylaria lacustris,val,StLa-kuh1_36_21,0,1.0,-10.26386964457348
+Stylaria lacustris,val,StLa-kuh1_40_21,0,1.0,-4.2902397308742355
+Stylaria lacustris,val,StLa-kuh1_48_21,0,1.0,-4.779769874097951
+Stylaria lacustris,val,StLa-kuh1_71_21,0,1.0,-2.9251355705110527
+Stylaria lacustris,val,StLa-kuh2_17_21,0,1.0,-19.725241116162167
+Stylaria lacustris,val,StLa-kuh2_39_21,0,1.0,-3.779979096229651
+Stylaria lacustris,val,StLa-kuh2_65_21,0,1.0,-2.8242835209422754
+Stylaria lacustris,val,StLa-kuh2_67_21,0,1.0,-6.281298728215642
+Stylaria lacustris,val,StLa-kur2_4_21,0,1.0,-4.437748137834303
+Stylaria lacustris,val,StLa-val1_19_21,0,1.0,-8.835392422274277
+Tanypodinae,train,4-F11-Tan-iso2-4,1,0.999997404828853,-7.071708476746851
+Tanypodinae,train,8-F8-Tan-kaj2-3,1,0.9999999058181652,-6.192917030182603
+Tanypodinae,train,Tan-ala1_7_21,1,0.9999999781200095,-4.430291042228463
+Tanypodinae,train,Tan-haa2_3_21,1,0.999999975131855,-4.269744128046691
+Tanypodinae,train,Tan-hii3_1_22,0,0.9999999993521449,-5.185514977745859
+Tanypodinae,train,Tan-hii3_20_22,1,0.9623653362327161,-2.504313768180861
+Tanypodinae,train,Tan-hii3_23_22,0,0.9999980227320008,-7.5806647637780085
+Tanypodinae,train,Tan-hii3_3_22,1,0.9999999893297727,-6.033238658848381
+Tanypodinae,train,Tan-hii3_5_22,1,0.9999430002734003,-4.933885529400696
+Tanypodinae,train,Tan-iso1_25_21,0,0.9994977436955327,-5.975228013773762
+Tanypodinae,train,Tan-iso1_37_22,0,0.9999999873229594,-3.697439750401692
+Tanypodinae,train,Tan-iso1_87_22,0,0.9999995777408314,-2.4049597212176597
+Tanypodinae,train,Tan-iso1_9_21,0,0.9999999759750805,-2.771412859565972
+Tanypodinae,train,Tan-iso2_103_22,0,0.9999466014747691,-6.938912298792751
+Tanypodinae,train,Tan-iso2_33_21,0,0.9999999777687638,-2.957625680693303
+Tanypodinae,train,Tan-iso2_40_22,0,0.999999999994662,-3.1775889886469493
+Tanypodinae,train,Tan-iso2_82_22,0,0.9999858476588704,-2.400455034548207
+Tanypodinae,train,Tan-kak2_2_21,1,0.9999998821867812,-6.278288094521351
+Tanypodinae,train,Tan-kir2_1_22,1,0.9999999822293014,-6.468241422738524
+Tanypodinae,train,Tan-kir2_2_22,0,0.9999276967900735,-3.3854499093571135
+Tanypodinae,train,Tan-kuo1_16_22,0,0.9920304320807684,-3.2757012106896557
+Tanypodinae,train,Tan-kuo1_28_22,0,0.9999940990089047,-3.246824068951822
+Tanypodinae,train,Tan-kuo1_7_21,0,0.9999999950549334,-5.090187682420359
+Tanypodinae,train,Tan-kuo2_2_21,0,0.9999999999471667,-5.464999297134874
+Tanypodinae,train,Tan-vie1_11_22,1,0.9999982964523315,-5.280180178583185
+Tanypodinae,train,Tan-vie1_28_22,1,0.9999999504778788,-3.303305492458014
+Tanypodinae,train,Tan-vie1_60_22,1,0.9999984180913273,-5.558502104384711
+Tanypodinae,train,Tan-vie1_61_22,1,0.9998903055344652,-6.152648802939678
+Tanypodinae,train,Tan-vie1_79_22,1,0.9999999998186317,-3.5841941557106924
+Tanypodinae,train,Tan-vie1_92_22,1,0.9999999988913988,-5.775978138998408
+Tanypodinae,val,8-F2-Tan-iso2-7,1,0.9999999999999787,-12.31681508376464
+Tanypodinae,val,Tan-hii3_42_22,1,0.9182832240027935,-3.054078051008892
+Tanypodinae,val,Tan-iso1_64_22,0,0.9685909150336254,-7.3218761874385905
+Tanypodinae,val,Tan-iso1_68_22,0,0.9997105138937478,-4.873004886722859
+Tanypodinae,val,Tan-iso2_19_21,0,0.9964732983852078,-5.819631181697742
+Tanypodinae,val,Tan-iso2_43_21,0,0.999999999998745,-3.512953590702134
+Tanypodinae,val,Tan-iso2_6_21,0,0.9999999999977573,-6.562856119697429
+Tanypodinae,val,Tan-iso2_84_22,0,0.9999999999834284,-3.718307133105677
+Tanypodinae,val,Tan-iso3_9_21,1,0.9812776074591869,-2.951012698265389
+Tanypodinae,val,Tan-kaj2_17_21,0,0.9999999999970868,-4.240758868589124
+Tanypodinae,val,Tan-kuo1_24_22,0,0.9996922596767674,-11.229026995189601
+Tanypodinae,val,Tan-kuo1_29_22,0,0.9999947089698961,-3.6005387688079047
+Tanypodinae,val,Tan-kuo1_3_22,0,0.9999999858128207,-3.643567375287269
+Tanypodinae,val,Tan-kur1_4_21,1,0.999999999638125,-8.469727334652456
+Tanypodinae,val,Tan-kur2_6_22,1,0.9996074611279036,-3.154837907481326
+Tinodes waeneri,train,15-B8-TiWa-pus3-4,0,1.0,-6.453793096258294
+Tinodes waeneri,train,B-E2-TiWa-iso1-1,0,1.0,-8.338209535076206
+Tinodes waeneri,train,TiWa-ala1_7_21,1,1.0,-1.0318423428667147
+Tinodes waeneri,train,TiWa-iso1_14_22,1,1.0,-2.374654620182125
+Tinodes waeneri,train,TiWa-iso2_11_22,1,1.0,-3.270427407315627
+Tinodes waeneri,train,TiWa-kaj2_1_21,1,1.0,-1.9867181799186868
+Tinodes waeneri,train,TiWa-kaj2_22_21,1,0.9999999999999987,-3.4916427322981773
+Tinodes waeneri,train,TiWa-kak1_3_21,1,1.0,-4.965237635559599
+Tinodes waeneri,train,TiWa-kak3_21_21,1,1.0,-3.9242073447578703
+Tinodes waeneri,train,TiWa-koy1_25_21,1,1.0,-2.0530063807581795
+Tinodes waeneri,train,TiWa-koy1_39_21,1,1.0,-1.9849896461001597
+Tinodes waeneri,train,TiWa-koy1_4_21,1,1.0,-2.9106833827896823
+Tinodes waeneri,train,TiWa-koy1_8_21,1,1.0,-5.960944172285589
+Tinodes waeneri,train,TiWa-kuo1_69_22,1,1.0,-1.6122218085957103
+Tinodes waeneri,train,TiWa-kuo2_118_22,1,1.0,-6.835388024368551
+Tinodes waeneri,train,TiWa-kuo2_17_22,1,1.0,-3.498686596088837
+Tinodes waeneri,train,TiWa-kuo2_27_21,1,1.0,-5.132026175808293
+Tinodes waeneri,train,TiWa-kuo2_33_21,1,1.0,-1.9763388857352089
+Tinodes waeneri,train,TiWa-kuo2_56_22,1,1.0,-3.4552192767116834
+Tinodes waeneri,train,TiWa-kuo2_60_22,1,1.0,-3.2341120338545624
+Tinodes waeneri,train,TiWa-kuo2_62_22,1,1.0,-8.697598212228367
+Tinodes waeneri,train,TiWa-kuo2_79_22,1,1.0,-3.3337944593074154
+Tinodes waeneri,train,TiWa-kur1_1_21,1,1.0,-4.440262813932486
+Tinodes waeneri,train,TiWa-kur2_2_22,1,0.9999999999999973,-3.886317183412971
+Tinodes waeneri,train,TiWa-pus1_4_21,1,1.0,-1.5713627015030882
+Tinodes waeneri,train,TiWa-pus3_20_21,1,1.0,-1.7224346954400156
+Tinodes waeneri,train,TiWa-pus3_28_21,1,1.0,-4.484814627786972
+Tinodes waeneri,train,TiWa-pus3_9_21,1,1.0,-5.034382582507985
+Tinodes waeneri,train,TiWa-vie1_24_22,1,1.0,-3.0085409978671676
+Tinodes waeneri,train,TiWa-vie1_57_22,1,1.0,-2.6128549466122495
+Tinodes waeneri,val,6-H2-TiWa-kak1-4,0,0.8003556900300843,-11.862460481742112
+Tinodes waeneri,val,Q-C3-TiWa-pus3-5,1,0.8867530100527381,-12.192959669021473
+Tinodes waeneri,val,TiWa-haa2_3_22,1,1.0,-9.927836827122121
+Tinodes waeneri,val,TiWa-kaj1_3_21,1,0.9999999999457643,-9.19677410076546
+Tinodes waeneri,val,TiWa-kak1_20_21,1,1.0,-6.343279883322489
+Tinodes waeneri,val,TiWa-koy1_11_21,1,1.0,-2.5057497049713087
+Tinodes waeneri,val,TiWa-koy1_30_21,1,1.0,-4.999146681384951
+Tinodes waeneri,val,TiWa-koy1_48_21,1,1.0,-1.4392481561894845
+Tinodes waeneri,val,TiWa-koy1_94_21,1,1.0,-4.302399707787896
+Tinodes waeneri,val,TiWa-kuo1_32_22,1,1.0,-4.701673147378098
+Tinodes waeneri,val,TiWa-kuo1_80_22,1,1.0,-4.826843578029183
+Tinodes waeneri,val,TiWa-kuo2_66_22,1,1.0,-5.07928185782973
+Tinodes waeneri,val,TiWa-kuo2_96_22,1,1.0,-8.048562873580611
+Tinodes waeneri,val,TiWa-pus3_68_21,1,1.0,-11.207288102134228
+Tinodes waeneri,val,TiWa-vie1_8_22,1,1.0,-2.2155358089048205
+Turbellaria,train,Tu-haa1_3_21,0,0.999970278341017,-5.4701370817064925
+Turbellaria,train,Tu-hii3_1_22,0,0.9989362324344317,-3.877229876806621
+Turbellaria,train,Tu-iso2_1_22,1,0.9999999999623572,-5.154320783361308
+Turbellaria,train,Tu-iva1_1_22,1,0.9999568820843613,-2.788275441243642
+Turbellaria,train,Tu-kak3_1_21,1,0.9999999877688986,-5.435964056345088
+Turbellaria,train,Tu-kuo1_13_22,0,0.9999992617131505,-4.053702649221134
+Turbellaria,train,Tu-kuo1_14_22,0,0.9999354686633116,-1.9618926536220451
+Turbellaria,train,Tu-kuo1_2_21,0,0.9999997477887159,-4.23161478568992
+Turbellaria,train,Tu-kuo1_3_22,1,0.9999983257770543,-0.5747822849990749
+Turbellaria,train,Tu-kuo1_5_22,1,0.9999485503140307,-1.391436983706826
+Turbellaria,train,Tu-kuo1_9_22,0,0.999999998400924,-3.0150969120821722
+Turbellaria,train,Tu-kuo2_1_22,0,0.9999999997596642,-6.428010451388022
+Turbellaria,train,Tu-kuo2_2_22,1,0.9999999675267103,-3.929706183422536
+Turbellaria,train,Tu-kuo2_3_22,1,0.9999994779185436,-1.3629971618810766
+Turbellaria,train,Tu-kuo2_4_21,1,0.9999999564460397,-3.75250012291015
+Turbellaria,train,Tu-kuo2_5_21,1,0.9999989275554846,-1.8504554130343296
+Turbellaria,train,Tu-kur2_4_22,1,0.9999998789000586,-4.14620757521227
+Turbellaria,train,Tu-sii3_3_21,1,0.9999999966998026,-7.422608868679068
+Turbellaria,train,Tu-sii3_5_21,0,0.9999999999996652,-4.750658245429887
+Turbellaria,train,Tu-ull1_15_22,0,0.9999989585271593,-2.5161171106714866
+Turbellaria,train,Tu-ull1_16_22,1,0.9998649602575613,-2.2523530648401975
+Turbellaria,train,Tu-ull1_17_22,0,0.9999995099639901,-2.833618623694311
+Turbellaria,train,Tu-ull1_21_22,0,0.9999999812564455,-3.128262115292558
+Turbellaria,train,Tu-ull1_24_22,1,0.9999840284382148,-5.637573961395947
+Turbellaria,train,Tu-ull1_25_22,1,0.9999999998661717,-2.182039475619125
+Turbellaria,train,Tu-ull1_27_22,0,0.9999973787121476,-2.9918579157027567
+Turbellaria,train,Tu-ull1_28_22,1,0.9999970103627304,-6.089813731330676
+Turbellaria,train,Tu-ull1_4_22,1,0.9999910875091615,-2.9846651848487307
+Turbellaria,train,Tu-ull1_5_22,0,0.9999405778645145,-3.5757429297802465
+Turbellaria,train,Tu-ull1_9_22,1,0.9999999999882361,-2.1345653833774536
+Turbellaria,val,Tu-hii2_5_22,0,0.999174652500123,-1.7842826883785046
+Turbellaria,val,Tu-hii2_6_22,1,0.999999975540037,-3.156075630691544
+Turbellaria,val,Tu-hii3_5_22,1,0.9999999917611873,-3.423459541282866
+Turbellaria,val,Tu-iso2_4_22,0,0.9998777085619899,-1.7893182577598266
+Turbellaria,val,Tu-iso3_1_21,0,1.0,-6.320108299285599
+Turbellaria,val,Tu-kuo1_4_22,0,0.7893477296631548,-1.1530416359986146
+Turbellaria,val,Tu-kur2_2_22,0,0.9999970271629179,-5.49036738184508
+Turbellaria,val,Tu-pus1_2_22,0,0.9988580965665281,-0.9810069690364012
+Turbellaria,val,Tu-pus1_3_21,1,0.9999999951953691,-3.6455196186543626
+Turbellaria,val,Tu-sii1_1_21,0,0.9999997561855185,-3.465619272190705
+Turbellaria,val,Tu-ull1_20_22,1,1.0,-9.056968305030484
+Turbellaria,val,Tu-ull1_26_22,1,0.9802435884228159,-3.241340198885843
+Turbellaria,val,Tu-ull1_3_22,1,1.0,-5.276079529805281
+Turbellaria,val,Tu-vie1_1_22,1,0.999046289352808,-7.878722350884719

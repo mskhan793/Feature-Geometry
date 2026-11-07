@@ -5,6 +5,9 @@
 #   extract    DINOv3-L features of the cohort images (official v1 preprocessing) into features_$ACCEL, with wall time
 #   compare    features_gpu vs features_cpu on the chunks both hold
 #   analyse    Gaussian model comparison and supporting evidence (on features_$ACCEL)
+#   geometry   within-/between-class geometry and one-vs-several Gaussians per specimen (task.md fb26afc)
+#   montage    real-image montages of the specimens the geometry stage selected (train geometry only)
+#   metadata   do the 2-component groups follow dataset / year / site? (after geometry)
 # ACCEL=gpu (default; .venv-gpu, torch 2.10.0+cu128) or cpu (.venv, torch 2.10.0+cpu).
 # Outputs go to $DATA/camera_pilot (outside git). Usage: [ACCEL=cpu] camera_pilot.sh STAGE...
 set -euo pipefail
@@ -27,6 +30,12 @@ for stage in "$@"; do
                      --out "$OUT/features_gpu_vs_cpu.json" ;;
         analyse) $PY scripts/camera_gaussian_pilot.py --cohort "$OUT/cohort/cohort.parquet" --cache "$FEATURES/dinov3_l" \
                      --out "$OUT/analysis_$ACCEL" ;;
+        geometry) $PY scripts/class_geometry_pilot.py --cohort "$OUT/cohort/cohort.parquet" \
+                      --cohort-summary "$OUT/cohort/cohort_summary.json" --cache "$FEATURES/dinov3_l" --out "$OUT/geometry_$ACCEL" ;;
+        montage) $PY scripts/class_geometry_montage.py --cohort "$OUT/cohort/cohort.parquet" --hdf5 "$HDF5" \
+                     --selection "$OUT/geometry_$ACCEL/selection.json" --out "$OUT/geometry_$ACCEL" ;;
+        metadata) G=$OUT/geometry_$ACCEL; $PY scripts/component_metadata.py --cohort "$OUT/cohort/cohort.parquet" \
+                      --components "$G/specimen_components.csv" --per-class "$G/per_class.csv" --out "$G" ;;
         *) echo "unknown stage $stage" >&2; exit 1 ;;
     esac
 done
