@@ -43,7 +43,7 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
                 for f in range(2):
                     rows.append({"img": f"{c}{s}_{cam}_{f}", "individual": f"{c}{s:02d}", "taxon_group": c, "fold0": split,
                                  "camera": cam, "hdf5_row": len(rows), "dataset": "dna" if odd else "bulk21",
-                                 "year": "2021", "site": "x"})
+                                 "year": "2021", "site": "x", "width": 40 if odd else 20, "height": 30})
                     feats.append(base + rng.normal(0, 0.1, 24))
     half = len(rows) // 2  # features split over two caches, looked up by name
     caches = [write_cache(tmp_path, "c1", rows[:half], feats[:half]), write_cache(tmp_path, "c2", rows[half:], feats[half:])]
@@ -69,3 +69,15 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     meta = json.loads((out / "component_metadata.json").read_text())
     assert meta["8_pcs_train"]["dataset"]["classes_ari_at_least_0.5_list"] == ["C"]
     assert len(pd.read_csv(out / "per_class_summary.csv")) == 6  # 3 classes x 2 dimensions
+
+    # a dataset without a source field (FIN-Benthic2): no GD_tied; numeric image-size check instead of ARIs
+    plain = tmp_path / "plain"
+    run(["scripts/class_geometry_pilot.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches,
+         "--out", str(plain), "--pcs", "8", "--n-stab", "30", "--jobs", "2", "--source-column", "none"])
+    mod = pd.read_csv(plain / "per_class_modality.csv").set_index("taxon_group")
+    assert "GD_tied_status" not in mod and mod.loc["C", "verdict"] == "credible multiple groups"
+    run(["scripts/component_metadata.py", "--cohort", str(tmp_path / "cohort.parquet"), "--components",
+         str(plain / "specimen_components.csv"), "--modality", str(plain / "per_class_modality.csv"),
+         "--geometry", str(plain / "per_class_geometry.csv"), "--out", str(plain), "--fields", "--numeric", "log_image_area"])
+    size = json.loads((plain / "component_metadata.json").read_text())["8_pcs_train"]["log_image_area"]
+    assert size["classes_auc_outside_0.2_0.8_list"] == ["C"]  # C's groups differ in image size

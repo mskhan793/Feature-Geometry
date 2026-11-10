@@ -68,6 +68,26 @@ def test_file_dataset_returns_the_named_image_and_raises_on_missing(fb2):
         image_dataset(f, T.PILToTensor())
 
 
+def test_packed_hdf5_holds_the_files_and_cohort_positions(fb2, tmp_path):
+    import subprocess
+    import sys
+    from pathlib import Path
+    csv, root = fb2
+    f = finbenthic2_frames(csv)
+    cohort = f.iloc[[5, 2, 30]].reset_index(drop=True)
+    cohort.to_parquet(tmp_path / "cohort.parquet")
+    repo = Path(__file__).resolve().parents[1]
+    r = subprocess.run([sys.executable, "scripts/pack_finbenthic2_hdf5.py", "--csv", str(csv), "--images", str(root),
+                        "--out", str(tmp_path / "fb2.h5"), "--cohort", str(tmp_path / "cohort.parquet")],
+                       cwd=repo, env={"PYTHONPATH": str(repo), "PATH": "/usr/bin:/bin"}, capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    rows = pd.read_parquet(tmp_path / "cohort_hdf5.parquet")
+    assert rows.img.tolist() == cohort.img.tolist() and rows.hdf5_row.tolist() == [5, 2, 30]
+    from_hdf5 = image_dataset(rows, T.PILToTensor(), hdf5=str(tmp_path / "fb2.h5"))
+    from_files = image_dataset(rows, T.PILToTensor(), image_root=str(root))
+    assert all(np.array_equal(from_hdf5[i][0], from_files[i][0]) for i in range(len(rows)))
+
+
 def test_source_free_selection_is_capped_and_deterministic(fb2):
     csv, _ = fb2
     f = finbenthic2_frames(csv)

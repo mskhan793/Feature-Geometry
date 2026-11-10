@@ -18,8 +18,9 @@ at least 15 train and 5 val specimens; the others are listed with their counts.
    src.statistics.class_modality.fit_mixture starts, seed): models in MODELS, eligible if free parameters <= n*d/2,
    unreliable if a component has < d+1 specimens. A class is analysed at d only if G1_full and G2_tied are eligible. Score: log density of each val specimen; differences to G1_full with
    95 % bootstrap intervals over val specimens (per-class generator seeded by seed, class index and d).
-   Sensitivity (not used in the verdict): GD_tied, one Gaussian per source ``dataset`` with shared covariance, mixed
-   with train proportions (SourceGaussians).
+   Sensitivity (not used in the verdict): GD_tied, one Gaussian per source group (``--source-column``, default
+   ``dataset``) with shared covariance, mixed with train proportions (SourceGaussians); skipped with
+   ``--source-column none`` for datasets without a source field (FIN-Benthic2).
    Predeclared per-class verdict over eligible, converged, reliable full/tied mixtures:
      credible multiple groups: some mixture's interval lies above 0 AND the 2-component tied split is stable
        (median val ARI over ``--n-stab`` 80 % train subsamples >= 0.5, both components used by val);
@@ -30,6 +31,7 @@ Plot/montage selection uses train BIC only, at the largest ``--pcs``: top 3 clas
 full/tied mixture over G1_full ("candidate groups") and the bottom 2 ("candidate single cloud").
 
 Usage: class_geometry_pilot.py --cohort cohort.parquet --caches MANIFEST=CACHE_DIR ... --out DIR [--pcs 8 16]
+       [--source-column dataset|none]
 """
 
 from __future__ import annotations
@@ -136,11 +138,12 @@ def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
             row.update({f"{m}_status": "unreliable" if small < d + 1 else "ok", f"{m}_smallest_component": small,
                         f"{m}_condition": condition_number(gm), f"{m}_bic_train": gm.bic(zt)})
             scores[m], fits[m] = gm.score_samples(zv), gm
-        gd = SourceGaussians(REG).fit(zt, groups_t)
-        row.update({"GD_tied_groups": len(gd.groups_), "GD_tied_params": gd.n_parameters(),
-                    "GD_tied_status": "ok" if eligible(1, d, "full", len(zt)) else "ineligible"})
-        if row["GD_tied_status"] == "ok":
-            scores["GD_tied"] = gd.score_samples(zv)
+        if groups_t is not None:
+            gd = SourceGaussians(REG).fit(zt, groups_t)
+            row.update({"GD_tied_groups": len(gd.groups_), "GD_tied_params": gd.n_parameters(),
+                        "GD_tied_status": "ok" if eligible(1, d, "full", len(zt)) else "ineligible"})
+            if row["GD_tied_status"] == "ok":
+                scores["GD_tied"] = gd.score_samples(zv)
         rng = np.random.default_rng([seed, ci_, d])
         idx = rng.integers(0, len(zv), size=(N_BOOT, len(zv)))
         boots = {}
@@ -182,7 +185,8 @@ def summarise(per_d: pd.DataFrame, boots: dict, classes, d) -> dict:
                       "classes_better": int((t[key] > 0).sum()), "classes_ci_above_0": int(sum(v[0] > 0 for v in t[f"{key}_ci95"])),
                       "classes_ci_below_0": int(sum(v[1] < 0 for v in t[f"{key}_ci95"]))}
     return {"pcs": d, "params": {m: free_parameters(k, d, cov) for m, (k, cov) in MODELS.items()},
-            "status_counts": {m: per_d[f"{m}_status"].fillna("not fitted").value_counts().to_dict() for m in [*MODELS, "GD_tied"]},
+            "status_counts": {m: per_d[f"{m}_status"].fillna("not fitted").value_counts().to_dict()
+                              for m in [*MODELS, "GD_tied"] if f"{m}_status" in per_d},
             "differences": diffs, "verdicts": per_d.verdict.value_counts().to_dict(),
             "verdict_classes": {v: sorted(g.taxon_group) for v, g in per_d.groupby("verdict")},
             "G2_tied_split_ari_val_median_over_classes": float(per_d.G2_tied_split_ari_val_median.median()),
@@ -291,6 +295,7 @@ def main():
     ap.add_argument("--n-stab", type=int, default=200)
     ap.add_argument("--jobs", type=int, default=16)
     ap.add_argument("--seed", type=int, default=20261107)
+    ap.add_argument("--source-column", default="dataset", help="'none' if the dataset has no source field")
     a = ap.parse_args()
     t0 = time.time()
     a.out.mkdir(parents=True, exist_ok=True)
@@ -303,7 +308,7 @@ def main():
     sp_keys, sp = specimen_means(cam_keys, cam_means)
     if set(sp_keys[sp_keys.fold0 == "train"].individual) & set(sp_keys[sp_keys.fold0 == "val"].individual):
         raise RuntimeError("specimen in both train and val")
-    source = cohort.groupby("individual").dataset.first()
+    source = None if a.source_column == "none" else cohort.groupby("individual")[a.source_column].first()
     tr, va = (sp_keys.fold0 == "train").values, (sp_keys.fold0 == "val").values
     sp_tr, sp_va = sp_keys[tr].reset_index(drop=True), sp_keys[va].reset_index(drop=True)
     x_tr, x_va = sp[tr], sp[va]
@@ -330,8 +335,8 @@ def main():
         for i, c in enumerate(classes_by_d[d]):
             mt, mv = (sp_tr.taxon_group == c).values, (sp_va.taxon_group == c).values
             r1, r2 = paired_views(cam_tr, sp_tr.individual[mt])
-            jobs.append(delayed(fit_class)(c, i, z_tr[mt], z_va[mv], source.reindex(sp_tr.individual[mt]).values,
-                                           (zc[r1], zc[r2]), d, a.seed, a.n_stab))
+            groups = None if source is None else source.reindex(sp_tr.individual[mt]).values
+            jobs.append(delayed(fit_class)(c, i, z_tr[mt], z_va[mv], groups, (zc[r1], zc[r2]), d, a.seed, a.n_stab))
         out = Parallel(n_jobs=a.jobs)(jobs)
         per_d = pd.DataFrame([o[0] for o in out])
         boots = {c: o[1] for c, o in zip(classes_by_d[d], out)}
