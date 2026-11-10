@@ -1,0 +1,190 @@
+{
+ "protocol": "FIN-Benthic2 five-split CSV created by the author with the taxonomist toolkit (StratifiedGroupKFold by specimen on taxon); author-approved, not a dataset-publisher split (task 2f6774c, e5f42d9)",
+ "csv": "/home/aijyu/Documents/Lightning_hier_transformer_embedding/01_finbenthic2_processed_5splits_taxon.csv",
+ "csv_sha256": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257",
+ "images": 460004,
+ "specimens": 9631,
+ "classes": 39,
+ "specimens_with_more_than_one_taxon": 0,
+ "per_fold": {
+  "fold0": {
+   "train": {
+    "images": 293966,
+    "specimens": 6165,
+    "classes": 39
+   },
+   "val": {
+    "images": 74043,
+    "specimens": 1542,
+    "classes": 39
+   },
+   "test": {
+    "images": 91995,
+    "specimens": 1924,
+    "classes": 39
+   },
+   "specimens_in_more_than_one_partition": 0,
+   "test_specimens_seen_in_train_or_val": 0,
+   "val_specimens_seen_in_train": 0,
+   "classes_missing": {
+    "train": [],
+    "val": [],
+    "test": []
+   },
+   "min_specimens_per_class": {
+    "train": 12,
+    "val": 1,
+    "test": 1
+   }
+  },
+  "fold1": {
+   "train": {
+    "images": 294140,
+    "specimens": 6165,
+    "classes": 39
+   },
+   "val": {
+    "images": 73664,
+    "specimens": 1540,
+    "classes": 39
+   },
+   "test": {
+    "images": 92200,
+    "specimens": 1926,
+    "classes": 39
+   },
+   "specimens_in_more_than_one_partition": 0,
+   "test_specimens_seen_in_train_or_val": 0,
+   "val_specimens_seen_in_train": 0,
+   "classes_missing": {
+    "train": [],
+    "val": [],
+    "test": []
+   },
+   "min_specimens_per_class": {
+    "train": 11,
+    "val": 2,
+    "test": 2
+   }
+  },
+  "fold2": {
+   "train": {
+    "images": 294218,
+    "specimens": 6163,
+    "classes": 39
+   },
+   "val": {
+    "images": 73317,
+    "specimens": 1541,
+    "classes": 39
+   },
+   "test": {
+    "images": 92469,
+    "specimens": 1927,
+    "classes": 39
+   },
+   "specimens_in_more_than_one_partition": 0,
+   "test_specimens_seen_in_train_or_val": 0,
+   "val_specimens_seen_in_train": 0,
+   "classes_missing": {
+    "train": [],
+    "val": [],
+    "test": []
+   },
+   "min_specimens_per_class": {
+    "train": 10,
+    "val": 2,
+    "test": 2
+   }
+  },
+  "fold3": {
+   "train": {
+    "images": 294793,
+    "specimens": 6163,
+    "classes": 39
+   },
+   "val": {
+    "images": 73630,
+    "specimens": 1542,
+    "classes": 39
+   },
+   "test": {
+    "images": 91581,
+    "specimens": 1926,
+    "classes": 39
+   },
+   "specimens_in_more_than_one_partition": 0,
+   "test_specimens_seen_in_train_or_val": 0,
+   "val_specimens_seen_in_train": 0,
+   "classes_missing": {
+    "train": [],
+    "val": [],
+    "test": []
+   },
+   "min_specimens_per_class": {
+    "train": 10,
+    "val": 1,
+    "test": 4
+   }
+  },
+  "fold4": {
+   "train": {
+    "images": 294663,
+    "specimens": 6160,
+    "classes": 39
+   },
+   "val": {
+    "images": 73582,
+    "specimens": 1543,
+    "classes": 39
+   },
+   "test": {
+    "images": 91759,
+    "specimens": 1928,
+    "classes": 39
+   },
+   "specimens_in_more_than_one_partition": 0,
+   "test_specimens_seen_in_train_or_val": 0,
+   "val_specimens_seen_in_train": 0,
+   "classes_missing": {
+    "train": [],
+    "val": [],
+    "test": []
+   },
+   "min_specimens_per_class": {
+    "train": 8,
+    "val": 2,
+    "test": 3
+   }
+  }
+ },
+ "test_overlap_between_folds": {
+  "fold0|fold1": 0,
+  "fold0|fold2": 0,
+  "fold0|fold3": 0,
+  "fold0|fold4": 0,
+  "fold1|fold2": 0,
+  "fold1|fold3": 0,
+  "fold1|fold4": 0,
+  "fold2|fold3": 0,
+  "fold2|fold4": 0,
+  "fold3|fold4": 0
+ },
+ "val_overlap_between_folds": {
+  "fold0|fold1": 230,
+  "fold0|fold2": 216,
+  "fold0|fold3": 225,
+  "fold0|fold4": 219,
+  "fold1|fold2": 221,
+  "fold1|fold3": 232,
+  "fold1|fold4": 266,
+  "fold2|fold3": 205,
+  "fold2|fold4": 218,
+  "fold3|fold4": 223
+ },
+ "specimens_by_times_in_test": {
+  "1": 9631
+ },
+ "image_files_missing": 0,
+ "released_images_labels_identical": true
+}

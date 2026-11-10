@@ -1,0 +1,61 @@
+{
+ "protocol": "DF24 official train and pubtest; validation derived from official train only (author-approved exception, task 2f6774c); not an official split",
+ "rule": {
+  "seed": 20261110,
+  "fraction": 0.1,
+  "min_observations": 10,
+  "unit": "observationID",
+  "near_duplicate_key": [
+   "rightsHolder",
+   "class_id",
+   "year",
+   "month",
+   "day",
+   "locality"
+  ]
+ },
+ "sources": {
+  "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/dataset_audit_20261105/dl/df24/x/DanishFungi2024-train.csv": "66b3d44c6ac088e7dbbc7e6fa1bed97c2f36ab3fa66b5962e90d8bcd9b845c97",
+  "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/dataset_audit_20261105/dl/df24/x/DanishFungi2024-pubtest.csv": "7c8041db8e1cf7b6e9fec2b2291c751e807f8ee4a28fd3dc34e234c470fa4ad2"
+ },
+ "assignment_sha256": "688564d2f4526060d50c6730cb4086fd732410910a5c5ac2f03e638185490817",
+ "counts": {
+  "train": {
+   "observations": 143155,
+   "images": 239727,
+   "classes": 1604
+  },
+  "val": {
+   "observations": 15871,
+   "images": 26546,
+   "classes": 1591
+  },
+  "pubtest": {
+   "observations": 18144,
+   "images": 29665,
+   "classes": 1604
+  }
+ },
+ "near_duplicate_groups": {
+  "groups": 155340,
+  "observations_in_multi_observation_groups": 6869
+ },
+ "species_status": {
+  "ok": 1591,
+  "train_only_too_few": 13
+ },
+ "near_duplicate_keys_shared_with_pubtest": {
+  "train": 713,
+  "val": 68
+ },
+ "checks": {
+  "every_train_observation_assigned_once": true,
+  "images_preserved": true,
+  "no_observation_in_val_and_pubtest": true,
+  "no_observation_in_train_and_pubtest": true,
+  "near_duplicate_groups_not_split": true,
+  "all_images_of_an_observation_on_one_side": true,
+  "labels_present": true,
+  "pubtest_unchanged": true
+ }
+}

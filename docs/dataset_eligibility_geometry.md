@@ -4,6 +4,41 @@ Task: `task.md` 1ece8de, "official-split benchmark eligibility and geometry repl
 and documentation audit only. No features were extracted, no statistics were fitted, nothing was downloaded and no
 remote job was run.
 
+## 0. Status after the author's decisions (task 2f6774c / e5f42d9, 2026-11-10)
+
+| Dataset | Status | Protocol in use | Frozen record |
+|---|---|---|---|
+| AquaMonitor Classification | Eligible, official | Original five folds; expanded-cohort result is the reference | earlier evidence |
+| **FIN-Benthic2** | **Eligible by author-approved derived protocol** | The author's five-split CSV (`01_finbenthic2_processed_5splits_taxon.csv`, sha256 `1c18f058…`), made with the taxonomist toolkit (StratifiedGroupKFold by specimen). **Not a dataset-publisher split.** The released 10 machine-learning splits remain a possible later sensitivity check | `docs/evidence/split_protocols/finbenthic2_fivefold.json`, `…_class_support.csv` |
+| **BIOSCAN-5M** | Eligible, official | Closed-world `train` / `val` / `test` | `docs/evidence/dataset_eligibility/bioscan5m.json` |
+| **DF24** | **Eligible by author-approved derived validation** | Official `DanishFungi2024-train.csv` minus a derived validation set (seed 20261110), official `pubtest` unchanged. **Validation is not official and not comparable with published validation numbers** | `docs/evidence/split_protocols/df24_*` |
+
+**FIN-Benthic2 five-split, measured** (`scripts/check_finbenthic2_folds.py`):
+- 460,004 images, 9,631 specimens, 39 taxa; images, specimens and taxa identical to the released files; 0 image files
+  missing.
+- Every fold: about 6,160 train / 1,540 val / 1,926 test specimens (fold0: 6,165 / 1,542 / 1,924); 0 specimens in
+  more than one partition; 0 test specimens seen in train or val; all 39 taxa in every partition. Smallest class:
+  8–12 train specimens, 1–2 val, 1–4 test.
+- **The test sets are a disjoint five-fold partition:** each specimen is a test specimen in exactly one fold
+  (0 overlap between any two folds). Validation sets are not disjoint across folds (205–266 shared specimens per
+  pair), which is allowed: val is drawn from each fold's non-test specimens.
+
+**DF24 derived validation, measured** (`scripts/derive_df24_validation.py`, `src/data/df24_validation.py`):
+- Rule: unit `observationID`; observations sharing recorder, species, date and locality on any image are linked
+  (union-find) and kept on one side; per species about 10 % of observations, drawn group by group in seeded order
+  without exceeding the target; species with fewer than 10 training observations stay train-only.
+- Result: train 143,155 observations / 239,727 images / 1,604 species; derived val 15,871 / 26,546 / 1,591;
+  pubtest unchanged, 18,144 / 29,665 / 1,604. 1,591 species reached their target exactly; 13 species (4–9
+  observations) are train-only. Val observations per species: median 5, range 1–101.
+- 6,869 training observations are in multi-observation near-duplicate groups (155,340 groups in all); no group is
+  split. All checks pass (each observation assigned once, images preserved, no observation in two partitions, labels
+  present, pubtest byte-identical). A rerun gives a byte-identical assignment (sha256 `688564d2…`).
+- **Inherited limitation of the official split:** 713 near-duplicate keys (recorder, species, date, place) occur in
+  both the train side and pubtest, and 68 in both the derived val and pubtest. These cross the official train/test
+  boundary set by the dataset authors and are reported, not changed.
+
+The sections below are the original audit (task 1ece8de) and are kept unchanged for provenance, except where marked.
+
 **Gate.** A dataset is eligible only if its original authors released train, validation and test partitions with
 labels for all three, and the partitions keep independent units (specimen, barcode or observation) apart.
 
@@ -115,19 +150,33 @@ have no official labelled three-way protocol.
 - **D2 (BIOSCAN-5M support threshold)** for "eligible species" in the geometry fits, e.g. ≥ 20 train records and
   ≥ 1 val record (1,579 species).
 
-## 7. Proposed first replication (not executed)
+*Marked 2026-11-10:* D1 resolved by the author in favour of option (b), the five-split CSV (section 0). DF24 joined
+by derived validation (section 0). D2 is still open.
 
-Same design as the AquaMonitor expanded cohort, frozen DINOv3-L with its official preprocessing, native 1024-D
-features, PCA and all models fitted on train only, test untouched:
-- **FIN-Benthic2 (SPLIT4 or the chosen protocol):** all train specimens up to 200 per taxon, all val specimens, up to
-  10 spread frames per camera per specimen, one camera-balanced mean per specimen. Upper bound (6,741 + 953
-  specimens × 20 frames) 153,880 images, about 45 min on the local RTX 4090 at the expanded-cohort rate (192,492
-  images in 55 min 44 s), about 0.6 GB of float32 features.
-- **BIOSCAN-5M:** train up to 200 records per species and all val records, one image each. Upper bound
-  289,203 + 14,757 = 303,960 images, about 1.5 h at the same rate, about 1.2 GB of features. Fits only for species
-  meeting D2.
-- Analyses as before: within-class spectra and effective rank, between-class d′, one Gaussian vs K = 2/3 tied and
-  regularised full mixtures at 8 and 16 PCs on val log density, and checks against camera (FIN-Benthic2) or
-  country/collection metadata (BIOSCAN-5M) instead of biological interpretation.
+## 7. Proposed geometry replication plan (revised 2026-11-10; not executed)
 
-Both runs fit on the Dell (49 GB free at the time of the audit). Nothing is started until the author approves.
+Common design, as in the AquaMonitor expanded cohort: frozen DINOv3-L with its official preprocessing; every image
+embedding cached with its image name, unit id, label and partition (native 1024-D, float32, resumable verified
+chunks outside Git); one embedding per independent unit for fitting and scoring; train-fitted centring and PCA;
+single regularised full Gaussian vs K = 2/3 tied and regularised full mixtures on val log predictive density at 8
+and 16 PCs; native-space spectra, effective rank and between-class d′ reported separately from the PCA density
+results; per-class support reported and ineligible fits marked, no class dropped silently; test never read.
+Image-count estimates use the expanded-cohort rate (192,492 images in 55 min 44 s on the local RTX 4090); feature
+storage is 4 KB per image.
+
+1. **FIN-Benthic2 first, fold0 of the five-split CSV.** Unit: specimen (`individual`). Train: up to 200 specimens per
+   taxon within fold0 train; val: all 1,542 fold0 val specimens. Up to 10 spread frames per camera per specimen
+   (cameras from the `0-`/`1-` image prefix), one camera-balanced mean per specimen. Upper bound
+   (6,165 + 1,542) × 20 = 154,140 images, about 45 min, about 0.6 GB. Folds 1–4 only as later approved replicates;
+   their test sets are disjoint, so a later locked test evaluation could pool them as in AquaMonitor.
+2. **BIOSCAN-5M second, official closed world.** Unit: specimen record (one image). Train: up to 200 records per
+   species; val: all 14,757 records. Fits only for species meeting D2 (open). Upper bound
+   289,203 + 14,757 = 303,960 images, about 1.5 h, about 1.2 GB. Acquisition checks against country and collection
+   fields instead of camera.
+3. **DF24 third, after image download and storage approval.** Unit: observation; one mean embedding over an
+   observation's images. Train: up to 200 observations per species from the derived train side; val: all 15,871
+   derived-val observations; pubtest untouched. Upper bound 239,727 + 26,546 = 266,273 images, about 1.3 h,
+   about 1.1 GB. Images are not on the Dell (the 2026-11-05 audit lists about 6.4 GB at 300 px for the DF20 images,
+   which DF24 reuses). Acquisition checks against recorder, substrate, habitat and year.
+
+All three fit on the Dell (49 GB free at the time of the audit). Nothing is started until the author approves.
