@@ -1,0 +1,1251 @@
+{
+ "files": {
+  "Machine_learning_splits.txt": "6f6fc525b662a6619c802c7500b43a65af8698c1e7c87c4ff93cf0f9ea9779a8",
+  "Comparison_data_splits.txt": "ef4f3763cb3e911b8e468f7c1a5e6d6a6a7d3f9026dcdad87be73bc23216c977",
+  "/home/aijyu/Documents/Lightning_hier_transformer_embedding/01_finbenthic2_processed_5splits_taxon.csv": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257"
+ },
+ "Machine_learning_splits.txt": {
+  "images": 460004,
+  "specimens": 9631,
+  "taxa": 39,
+  "values": [
+   "TEST",
+   "TRAIN",
+   "VAL"
+  ],
+  "specimens_with_more_than_one_taxon": 0,
+  "image_files_missing": 0,
+  "camera_prefix_counts": {
+   "1": 241620,
+   "0": 218384
+  },
+  "specimens_test_in_some_split": 8630,
+  "per_split": {
+   "SPLIT1": {
+    "partitions": {
+     "TEST": {
+      "images": 92685,
+      "units": 1937,
+      "classes": 38
+     },
+     "TRAIN": {
+      "images": 321407,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45912,
+      "units": 953,
+      "classes": 38
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Hydropsyche_saxonica"
+    ],
+    "taxa_in_train_missing_from_test": [
+     "Hydropsyche_saxonica"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 162.0,
+      "max": 610,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 1,
+      "median": 22.5,
+      "max": 100,
+      "classes_with_at_least_8": 31,
+      "classes_with_at_least_20": 23,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 38,
+      "min": 1,
+      "median": 46.5,
+      "max": 177,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT2": {
+    "partitions": {
+     "TEST": {
+      "images": 92928,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321735,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45341,
+      "units": 953,
+      "classes": 38
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Hydropsyche_saxonica"
+    ],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 158.0,
+      "max": 608,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 15
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 1,
+      "median": 25.5,
+      "max": 84,
+      "classes_with_at_least_8": 31,
+      "classes_with_at_least_20": 23,
+      "classes_with_at_least_50": 2,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 2,
+      "median": 43.0,
+      "max": 195,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 31,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT3": {
+    "partitions": {
+     "TEST": {
+      "images": 92486,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 322573,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 44945,
+      "units": 953,
+      "classes": 38
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Sialis_sp"
+    ],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 159.0,
+      "max": 602,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 2,
+      "median": 24.0,
+      "max": 93,
+      "classes_with_at_least_8": 31,
+      "classes_with_at_least_20": 24,
+      "classes_with_at_least_50": 2,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 1,
+      "median": 44.0,
+      "max": 192,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT4": {
+    "partitions": {
+     "TEST": {
+      "images": 92020,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 322666,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45318,
+      "units": 953,
+      "classes": 39
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 160.0,
+      "max": 647,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 15
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 23.0,
+      "max": 85,
+      "classes_with_at_least_8": 30,
+      "classes_with_at_least_20": 22,
+      "classes_with_at_least_50": 2,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 2,
+      "median": 45.0,
+      "max": 155,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 19,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT5": {
+    "partitions": {
+     "TEST": {
+      "images": 92827,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321972,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45205,
+      "units": 953,
+      "classes": 39
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 156.0,
+      "max": 616,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 15
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 22.0,
+      "max": 78,
+      "classes_with_at_least_8": 33,
+      "classes_with_at_least_20": 21,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 4,
+      "median": 44.0,
+      "max": 193,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT6": {
+    "partitions": {
+     "TEST": {
+      "images": 92607,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321687,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45710,
+      "units": 953,
+      "classes": 39
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 8,
+      "median": 163.0,
+      "max": 609,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 14
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 21.0,
+      "max": 99,
+      "classes_with_at_least_8": 30,
+      "classes_with_at_least_20": 22,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 3,
+      "median": 44.0,
+      "max": 179,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 32,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT7": {
+    "partitions": {
+     "TEST": {
+      "images": 92562,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321708,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45734,
+      "units": 953,
+      "classes": 39
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 164.0,
+      "max": 611,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 24.0,
+      "max": 95,
+      "classes_with_at_least_8": 31,
+      "classes_with_at_least_20": 22,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 2,
+      "median": 45.0,
+      "max": 181,
+      "classes_with_at_least_8": 35,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT8": {
+    "partitions": {
+     "TEST": {
+      "images": 92467,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321711,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45826,
+      "units": 953,
+      "classes": 38
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Hydropsyche_saxonica"
+    ],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 10,
+      "median": 153.0,
+      "max": 606,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 2,
+      "median": 23.0,
+      "max": 89,
+      "classes_with_at_least_8": 32,
+      "classes_with_at_least_20": 25,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 4,
+      "median": 44.0,
+      "max": 192,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT9": {
+    "partitions": {
+     "TEST": {
+      "images": 92799,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321731,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45474,
+      "units": 953,
+      "classes": 38
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Capnopsis_schilleri"
+    ],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 10,
+      "median": 154.0,
+      "max": 627,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 34,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 2,
+      "median": 22.5,
+      "max": 78,
+      "classes_with_at_least_8": 30,
+      "classes_with_at_least_20": 22,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 3,
+      "median": 45.0,
+      "max": 182,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT10": {
+    "partitions": {
+     "TEST": {
+      "images": 92624,
+      "units": 1937,
+      "classes": 39
+     },
+     "TRAIN": {
+      "images": 321575,
+      "units": 6741,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 45805,
+      "units": 953,
+      "classes": 39
+     }
+    },
+    "images_not_used": 0,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 10,
+      "median": 162.0,
+      "max": 643,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 16
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 24.0,
+      "max": 71,
+      "classes_with_at_least_8": 31,
+      "classes_with_at_least_20": 22,
+      "classes_with_at_least_50": 3,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 39,
+      "min": 3,
+      "median": 45.0,
+      "max": 173,
+      "classes_with_at_least_8": 35,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     }
+    }
+   }
+  }
+ },
+ "Comparison_data_splits.txt": {
+  "images": 460004,
+  "specimens": 9631,
+  "taxa": 39,
+  "values": [
+   "TEST",
+   "TRAIN",
+   "VAL"
+  ],
+  "specimens_with_more_than_one_taxon": 0,
+  "image_files_missing": 252392,
+  "camera_prefix_counts": {
+   "1": 241489,
+   "0": 218515
+  },
+  "specimens_test_in_some_split": 447,
+  "per_split": {
+   "SPLIT1": {
+    "partitions": {
+     "TEST": {
+      "images": 448,
+      "units": 45,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 365917,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91967,
+      "units": 1918,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1672,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_sp"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 13,
+      "median": 179.0,
+      "max": 711,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 46.0,
+      "max": 175,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 4,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT2": {
+    "partitions": {
+     "TEST": {
+      "images": 455,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366119,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91726,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1704,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_sp"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 182.0,
+      "max": 708,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 45.0,
+      "max": 178,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT3": {
+    "partitions": {
+     "TEST": {
+      "images": 457,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366206,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91618,
+      "units": 1917,
+      "classes": 38
+     }
+    },
+    "images_not_used": 1723,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [
+     "Nemoura_cinerea"
+    ],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 13,
+      "median": 179.0,
+      "max": 704,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 35,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 38,
+      "min": 3,
+      "median": 47.5,
+      "max": 182,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT4": {
+    "partitions": {
+     "TEST": {
+      "images": 450,
+      "units": 45,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 365914,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91947,
+      "units": 1918,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1693,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 14,
+      "median": 178.0,
+      "max": 705,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 2,
+      "median": 49.0,
+      "max": 181,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 19,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT5": {
+    "partitions": {
+     "TEST": {
+      "images": 459,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366074,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91819,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1652,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 13,
+      "median": 177.0,
+      "max": 713,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 18
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 45.0,
+      "max": 173,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT6": {
+    "partitions": {
+     "TEST": {
+      "images": 460,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366279,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91612,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1653,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 180.0,
+      "max": 701,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 34,
+      "classes_with_at_least_50": 31,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 3,
+      "median": 46.0,
+      "max": 185,
+      "classes_with_at_least_8": 35,
+      "classes_with_at_least_20": 31,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT7": {
+    "partitions": {
+     "TEST": {
+      "images": 450,
+      "units": 45,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366412,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91454,
+      "units": 1918,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1688,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 11,
+      "median": 185.0,
+      "max": 704,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 33,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 3,
+      "median": 46.0,
+      "max": 182,
+      "classes_with_at_least_8": 33,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT8": {
+    "partitions": {
+     "TEST": {
+      "images": 460,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 365971,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91854,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1719,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_sp",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 182.0,
+      "max": 703,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 1,
+      "median": 41.0,
+      "max": 183,
+      "classes_with_at_least_8": 34,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT9": {
+    "partitions": {
+     "TEST": {
+      "images": 460,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 366066,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 91747,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1731,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 188.0,
+      "max": 712,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 34,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 2,
+      "median": 46.0,
+      "max": 174,
+      "classes_with_at_least_8": 35,
+      "classes_with_at_least_20": 29,
+      "classes_with_at_least_50": 18,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 3,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   },
+   "SPLIT10": {
+    "partitions": {
+     "TEST": {
+      "images": 456,
+      "units": 46,
+      "classes": 37
+     },
+     "TRAIN": {
+      "images": 365558,
+      "units": 7668,
+      "classes": 39
+     },
+     "VAL": {
+      "images": 92348,
+      "units": 1917,
+      "classes": 39
+     }
+    },
+    "images_not_used": 1642,
+    "specimens_in_more_than_one_partition": 0,
+    "taxa_in_train_missing_from_val": [],
+    "taxa_in_train_missing_from_test": [
+     "Leuctra_nigra",
+     "Nemoura_cinerea"
+    ],
+    "specimens_per_taxon": {
+     "TRAIN": {
+      "classes": 39,
+      "min": 12,
+      "median": 176.0,
+      "max": 700,
+      "classes_with_at_least_8": 39,
+      "classes_with_at_least_20": 36,
+      "classes_with_at_least_50": 32,
+      "classes_with_at_least_200": 17
+     },
+     "VAL": {
+      "classes": 39,
+      "min": 3,
+      "median": 47.0,
+      "max": 186,
+      "classes_with_at_least_8": 33,
+      "classes_with_at_least_20": 30,
+      "classes_with_at_least_50": 17,
+      "classes_with_at_least_200": 0
+     },
+     "TEST": {
+      "classes": 37,
+      "min": 1,
+      "median": 1.0,
+      "max": 2,
+      "classes_with_at_least_8": 0,
+      "classes_with_at_least_20": 0,
+      "classes_with_at_least_50": 0,
+      "classes_with_at_least_200": 0
+     }
+    }
+   }
+  }
+ },
+ "fivefold_vs_released_machine_learning_splits": {
+  "fold0": {
+   "SPLIT1": 0.5069,
+   "SPLIT2": 0.4979,
+   "SPLIT3": 0.4979,
+   "SPLIT4": 0.5035,
+   "SPLIT5": 0.5016,
+   "SPLIT6": 0.5047,
+   "SPLIT7": 0.5102,
+   "SPLIT8": 0.4953,
+   "SPLIT9": 0.5079,
+   "SPLIT10": 0.5125
+  },
+  "fold1": {
+   "SPLIT1": 0.504,
+   "SPLIT2": 0.5032,
+   "SPLIT3": 0.5094,
+   "SPLIT4": 0.5069,
+   "SPLIT5": 0.5075,
+   "SPLIT6": 0.5001,
+   "SPLIT7": 0.5001,
+   "SPLIT8": 0.5042,
+   "SPLIT9": 0.5022,
+   "SPLIT10": 0.4983
+  },
+  "fold2": {
+   "SPLIT1": 0.5021,
+   "SPLIT2": 0.5016,
+   "SPLIT3": 0.5088,
+   "SPLIT4": 0.5072,
+   "SPLIT5": 0.504,
+   "SPLIT6": 0.5098,
+   "SPLIT7": 0.503,
+   "SPLIT8": 0.5032,
+   "SPLIT9": 0.509,
+   "SPLIT10": 0.5025
+  },
+  "fold3": {
+   "SPLIT1": 0.4992,
+   "SPLIT2": 0.5073,
+   "SPLIT3": 0.5068,
+   "SPLIT4": 0.5058,
+   "SPLIT5": 0.4996,
+   "SPLIT6": 0.5064,
+   "SPLIT7": 0.4979,
+   "SPLIT8": 0.504,
+   "SPLIT9": 0.5018,
+   "SPLIT10": 0.505
+  },
+  "fold4": {
+   "SPLIT1": 0.5033,
+   "SPLIT2": 0.5038,
+   "SPLIT3": 0.4982,
+   "SPLIT4": 0.5039,
+   "SPLIT5": 0.5017,
+   "SPLIT6": 0.4934,
+   "SPLIT7": 0.5056,
+   "SPLIT8": 0.51,
+   "SPLIT9": 0.5022,
+   "SPLIT10": 0.5048
+  }
+ }
+}

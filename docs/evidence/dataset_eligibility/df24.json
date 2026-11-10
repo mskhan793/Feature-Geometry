@@ -1,0 +1,44 @@
+{
+ "files": {
+  "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/dataset_audit_20261105/dl/df24/x/DanishFungi2024-train.csv": "66b3d44c6ac088e7dbbc7e6fa1bed97c2f36ab3fa66b5962e90d8bcd9b845c97",
+  "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/dataset_audit_20261105/dl/df24/x/DanishFungi2024-pubtest.csv": "7c8041db8e1cf7b6e9fec2b2291c751e807f8ee4a28fd3dc34e234c470fa4ad2"
+ },
+ "partition_files": [
+  "train",
+  "pubtest"
+ ],
+ "validation_file_released": false,
+ "train": {
+  "images": 266273,
+  "observations": 159026,
+  "species_labels_present": 266244,
+  "classes": 1604,
+  "observations_per_class": {
+   "classes": 1604,
+   "min": 4,
+   "median": 53.0,
+   "max": 1007,
+   "classes_with_at_least_8": 1597,
+   "classes_with_at_least_20": 1389,
+   "classes_with_at_least_50": 845,
+   "classes_with_at_least_200": 219
+  }
+ },
+ "pubtest": {
+  "images": 29665,
+  "observations": 18144,
+  "species_labels_present": 29662,
+  "classes": 1604,
+  "observations_per_class": {
+   "classes": 1604,
+   "min": 1,
+   "median": 6.0,
+   "max": 112,
+   "classes_with_at_least_8": 687,
+   "classes_with_at_least_20": 267,
+   "classes_with_at_least_50": 42,
+   "classes_with_at_least_200": 0
+  }
+ },
+ "observations_in_both": 0
+}

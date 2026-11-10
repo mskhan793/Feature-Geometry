@@ -1,0 +1,129 @@
+{
+ "files": {
+  "/home/aijyu/Documents/Visual_Memory/bioscan5m_data/bioscan5m/metadata/csv/BIOSCAN_5M_Insect_Dataset_metadata.csv": "5e7d21d48eef124644bd0717c58f75d1586e3ac4ebc1bc287a7794419eef1826"
+ },
+ "records_excluding_pretrain": 473094,
+ "processid_unique": true,
+ "partitions": {
+  "key_unseen": {
+   "records": 36465,
+   "with_species": 36465,
+   "species": 914,
+   "barcodes": 12166,
+   "bins": 1005
+  },
+  "other_heldout": {
+   "records": 76590,
+   "with_species": 76590,
+   "species": 9862,
+   "barcodes": 41250,
+   "bins": 10013
+  },
+  "test": {
+   "records": 39373,
+   "with_species": 39373,
+   "species": 3483,
+   "barcodes": 18362,
+   "bins": 4381
+  },
+  "test_unseen": {
+   "records": 7887,
+   "with_species": 7887,
+   "species": 880,
+   "barcodes": 3401,
+   "bins": 924
+  },
+  "train": {
+   "records": 289203,
+   "with_species": 289203,
+   "species": 11846,
+   "barcodes": 118051,
+   "bins": 14077
+  },
+  "val": {
+   "records": 14757,
+   "with_species": 14757,
+   "species": 3378,
+   "barcodes": 6588,
+   "bins": 3601
+  },
+  "val_unseen": {
+   "records": 8819,
+   "with_species": 8819,
+   "species": 903,
+   "barcodes": 2442,
+   "bins": 918
+  }
+ },
+ "barcodes_shared_between_partitions": {
+  "key_unseen|other_heldout": 0,
+  "key_unseen|test": 0,
+  "key_unseen|test_unseen": 0,
+  "key_unseen|train": 0,
+  "key_unseen|val": 0,
+  "key_unseen|val_unseen": 0,
+  "other_heldout|test": 0,
+  "other_heldout|test_unseen": 0,
+  "other_heldout|train": 0,
+  "other_heldout|val": 0,
+  "other_heldout|val_unseen": 0,
+  "test|test_unseen": 0,
+  "test|train": 0,
+  "test|val": 0,
+  "test|val_unseen": 0,
+  "test_unseen|train": 0,
+  "test_unseen|val": 0,
+  "test_unseen|val_unseen": 0,
+  "train|val": 0,
+  "train|val_unseen": 0,
+  "val|val_unseen": 0
+ },
+ "closed_world": {
+  "species_in_val_not_in_train": 0,
+  "species_in_test_not_in_train": 0,
+  "train_records_per_species": {
+   "classes": 11846,
+   "min": 1,
+   "median": 3.0,
+   "max": 5697,
+   "classes_with_at_least_8": 2668,
+   "classes_with_at_least_20": 1588,
+   "classes_with_at_least_50": 819,
+   "classes_with_at_least_200": 256
+  },
+  "val_records_per_species": {
+   "classes": 3378,
+   "min": 1,
+   "median": 1.0,
+   "max": 316,
+   "classes_with_at_least_8": 340,
+   "classes_with_at_least_20": 148,
+   "classes_with_at_least_50": 35,
+   "classes_with_at_least_200": 5
+  },
+  "test_records_per_species": {
+   "classes": 3483,
+   "min": 3,
+   "median": 8.0,
+   "max": 33,
+   "classes_with_at_least_8": 1775,
+   "classes_with_at_least_20": 812,
+   "classes_with_at_least_50": 0,
+   "classes_with_at_least_200": 0
+  },
+  "species_with_val_and_test": 2952,
+  "species_with_train_at_least_8_and_val": 2645,
+  "species_with_train_at_least_20_and_val": 1579,
+  "species_with_train_at_least_50_and_val": 818,
+  "species_with_train_at_least_200_and_val": 256
+ },
+ "local_images_per_split": {
+  "key_unseen": 36465,
+  "other_heldout": 76590,
+  "test": 39373,
+  "test_unseen": 7887,
+  "train": 289203,
+  "val": 14757,
+  "val_unseen": 8819
+ }
+}
