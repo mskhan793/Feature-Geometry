@@ -6,6 +6,10 @@
 - **Not done:** no image downloads, no weights, no GPU extraction, no Gaussian fits, no classifiers, nothing remote,
   no test evaluation.
 
+**Full details:** [`docs/dataset_eligibility_geometry.md`](docs/dataset_eligibility_geometry.md),
+**section 0** (the frozen FIN-Benthic2 and DF24 protocols, all counts and checks) and **section 7** (the proposed
+replication plan with image counts and run-time estimates). This file is the short summary.
+
 **Previous results:** eligibility audit, response at commit b04f4ae (`docs/dataset_eligibility_geometry.md`,
 sections 1–6 kept for provenance); expanded-cohort geometry at 83f6faa.
 
@@ -18,8 +22,7 @@ sections 1–6 kept for provenance); expanded-cohort geometry at 83f6faa.
 | BIOSCAN-5M | Eligible, official | Closed-world train / val / test |
 | **DF24** | **Eligible, author-approved derived validation** | Official train minus derived val (seed 20261110); official pubtest unchanged |
 
-Details: [`docs/dataset_eligibility_geometry.md`](docs/dataset_eligibility_geometry.md) section 0 (protocols) and
-section 7 (plan). Evidence: `docs/evidence/split_protocols/`.
+Evidence: `docs/evidence/split_protocols/`.
 
 ## 2. FIN-Benthic2 five-split (frozen, not regenerated)
 
@@ -48,7 +51,7 @@ section 7 (plan). Evidence: `docs/evidence/split_protocols/`.
 
 ## 4. Next (needs approval)
 
-Proposed order (section 7 of the report): FIN-Benthic2 fold0 (≤ 154,140 images, about 45 min local GPU), then
+Proposed order (`docs/dataset_eligibility_geometry.md`, section 7): FIN-Benthic2 fold0 (≤ 154,140 images, about 45 min local GPU), then
 BIOSCAN-5M (≤ 303,960 images, about 1.5 h; **D2, the species support threshold, is still open**), then DF24 after
 an image download (about 6.4 GB) and storage approval (≤ 266,273 images, about 1.3 h).
 
