@@ -1,0 +1,173 @@
+{
+ "cache_dir": "/home/aijyu/Documents/Research/Feature_geometry_data/finbenthic2_fold0/features_lumi/dinov3_l",
+ "encoder": "dinov3_l",
+ "manifest_rows": 128937,
+ "rows_covered": 128937,
+ "chunks_ok": 16,
+ "dims": [
+  1024
+ ],
+ "problems": [],
+ "chunks": [
+  {
+   "start": 0,
+   "end": 8192,
+   "dim": 1024,
+   "sha256": "e2421dc45fc9ffabdcf34fe7dd1a4531a2b68d080793e8b0d1dd782b485ef653",
+   "norm_min": 12.153035163879395,
+   "norm_mean": 15.587418556213379,
+   "norm_max": 16.826871871948242,
+   "images_per_second": 53.0
+  },
+  {
+   "start": 8192,
+   "end": 16384,
+   "dim": 1024,
+   "sha256": "342bf0b1263274ed32789a4f1e679b1d013cba96f1c4b9e988aa281ce38d79f5",
+   "norm_min": 12.071065902709961,
+   "norm_mean": 15.570045471191406,
+   "norm_max": 17.08658218383789,
+   "images_per_second": 53.0
+  },
+  {
+   "start": 16384,
+   "end": 24576,
+   "dim": 1024,
+   "sha256": "bfa7c4849389e9d30be3699b23a8c6581cb153e11543f95bcf0a77f56ccd3592",
+   "norm_min": 12.759784698486328,
+   "norm_mean": 16.112476348876953,
+   "norm_max": 17.32810401916504,
+   "images_per_second": 52.8
+  },
+  {
+   "start": 24576,
+   "end": 32768,
+   "dim": 1024,
+   "sha256": "4a49532103c70cc34b40e4ba8dbc4c3296d40f38f057e9e6dd741d545fdaca68",
+   "norm_min": 12.43664264678955,
+   "norm_mean": 15.812589645385742,
+   "norm_max": 17.106733322143555,
+   "images_per_second": 52.9
+  },
+  {
+   "start": 32768,
+   "end": 40960,
+   "dim": 1024,
+   "sha256": "d226a1cd9c1fdbf5829eeb0a677c929e272723e2d9c8dc3cd17a613fd483935b",
+   "norm_min": 13.011542320251465,
+   "norm_mean": 15.831001281738281,
+   "norm_max": 16.98719596862793,
+   "images_per_second": 53.1
+  },
+  {
+   "start": 40960,
+   "end": 49152,
+   "dim": 1024,
+   "sha256": "9e3b617bb10af77560ff404b3cdf93e3e8e6fc87638ff7050ce63d073b47def4",
+   "norm_min": 12.94593620300293,
+   "norm_mean": 15.962528228759766,
+   "norm_max": 17.277524948120117,
+   "images_per_second": 53.0
+  },
+  {
+   "start": 49152,
+   "end": 57344,
+   "dim": 1024,
+   "sha256": "6a762d4900717ac734ff1b89fa73636cc8d145fb5ca5300aff9c26ff9eba94d6",
+   "norm_min": 13.20650577545166,
+   "norm_mean": 15.979900360107422,
+   "norm_max": 17.193639755249023,
+   "images_per_second": 52.8
+  },
+  {
+   "start": 57344,
+   "end": 65536,
+   "dim": 1024,
+   "sha256": "4b23bcbf2c8266465873a3b7c7a3369ed7aebf294f2c94a0bf8bd6d19e6ba228",
+   "norm_min": 12.407222747802734,
+   "norm_mean": 15.752307891845703,
+   "norm_max": 16.927764892578125,
+   "images_per_second": 52.8
+  },
+  {
+   "start": 65536,
+   "end": 73728,
+   "dim": 1024,
+   "sha256": "d4a8f43edc7fde22728b41fd894720c20e7d996c14b6c97385db74e26f5e7825",
+   "norm_min": 12.759195327758789,
+   "norm_mean": 15.921981811523438,
+   "norm_max": 17.049480438232422,
+   "images_per_second": 126.1
+  },
+  {
+   "start": 73728,
+   "end": 81920,
+   "dim": 1024,
+   "sha256": "5d8f588477d8340455ca6b333788d0f6c3ad8d43f5189ce98a52a2f300c79960",
+   "norm_min": 12.801787376403809,
+   "norm_mean": 16.042226791381836,
+   "norm_max": 16.990209579467773,
+   "images_per_second": 126.2
+  },
+  {
+   "start": 81920,
+   "end": 90112,
+   "dim": 1024,
+   "sha256": "ea7cdf0447f709d8fe35c83fab841834c4850cde2d5068e228c1a11491984473",
+   "norm_min": 12.170347213745117,
+   "norm_mean": 15.48007583618164,
+   "norm_max": 17.27131462097168,
+   "images_per_second": 129.8
+  },
+  {
+   "start": 90112,
+   "end": 98304,
+   "dim": 1024,
+   "sha256": "8b1267eb8174358c1245e7f047723bb198c3b1f86e5e71650cd5a4bb40c7f386",
+   "norm_min": 11.636548042297363,
+   "norm_mean": 15.976082801818848,
+   "norm_max": 17.049997329711914,
+   "images_per_second": 130.5
+  },
+  {
+   "start": 98304,
+   "end": 106496,
+   "dim": 1024,
+   "sha256": "a9e3bff7c6ae1ec7bd72d170d3de2b8018fa34bc79597fc21195bf74dda8c4af",
+   "norm_min": 12.395256042480469,
+   "norm_mean": 15.453166961669922,
+   "norm_max": 16.90995979309082,
+   "images_per_second": 126.1
+  },
+  {
+   "start": 106496,
+   "end": 114688,
+   "dim": 1024,
+   "sha256": "98bcef5d69c768b88bdbee764dfebf62eb0d178b00423f291f63f7a31e3f30cc",
+   "norm_min": 13.312905311584473,
+   "norm_mean": 16.230289459228516,
+   "norm_max": 17.268720626831055,
+   "images_per_second": 132.9
+  },
+  {
+   "start": 114688,
+   "end": 122880,
+   "dim": 1024,
+   "sha256": "03ded71919a52f87ee1bd8d9754c2dcccc2e5354664d4c0ebe83d8f4d3b000da",
+   "norm_min": 12.33536148071289,
+   "norm_mean": 15.348335266113281,
+   "norm_max": 17.158292770385742,
+   "images_per_second": 135.7
+  },
+  {
+   "start": 122880,
+   "end": 128937,
+   "dim": 1024,
+   "sha256": "944ec1a35fe7f2e17cf769c0a70467fd2c356467b24522c5154087dae2cbe206",
+   "norm_min": 12.500061988830566,
+   "norm_mean": 16.177099227905273,
+   "norm_max": 17.13532257080078,
+   "images_per_second": 117.7
+  }
+ ]
+}

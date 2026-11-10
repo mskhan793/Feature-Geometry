@@ -1,0 +1,5 @@
+start 2026-11-11T00:37:36+02:00 job 23623689 node nid005009 code 61098b3 out /scratch/project_462001534/feature_geometry/finbenthic2_fold0/23623689
+extract done 2026-11-11T00:41:39+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/finbenthic2_fold0/23623689/features_gpu/dinov3_l", "encoder": "dinov3_l", "manifest_rows": 128937, "rows_covered": 128937, "chunks_ok": 16, "dims": [1024], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/finbenthic2_fold0/23623689/features_gpu/dinov3_l", "prefix": "/scratch/project_462001534/feature_geometry/finbenthic2_fold0/23623689/features_cpu256/dinov3_l", "rows": 256, "tf32": [false, false], "max_abs_diff": 1.990795135498047e-05, "mean_abs_diff": 2.182736293656186e-06, "max_rel_norm_diff": 1.50252503772208e-06, "bitwise_equal": false}
+end 2026-11-11T00:45:21+02:00

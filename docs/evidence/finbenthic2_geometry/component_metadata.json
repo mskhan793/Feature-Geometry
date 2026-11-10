@@ -1,0 +1,94 @@
+{
+ "8_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 36,
+   "abs_auc_minus_half_median": 0.33752180841348123,
+   "classes_auc_outside_0.2_0.8": 20,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_rhodani",
+    "Baetis_vernus_group",
+    "Diura_sp",
+    "Ephemerella_mucronata",
+    "Heptagenia_sulphurea",
+    "Hydropsyche_siltalai",
+    "Kageronia_fuscogrisea",
+    "Leuctra_sp",
+    "Nemoura_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Protonemura_sp",
+    "Sialis_sp",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Sphaerium_sp",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 33,
+   "abs_auc_minus_half_median": 0.28181818181818175,
+   "classes_auc_outside_0.2_0.8": 15,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Ephemerella_mucronata",
+    "Heptagenia_sulphurea",
+    "Kageronia_fuscogrisea",
+    "Leuctra_sp",
+    "Nemoura_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Sialis_sp",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.169387736322185,
+   "classes_auc_outside_0.2_0.8": 10,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Isoperla_sp",
+    "Nemoura_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 33,
+   "abs_auc_minus_half_median": 0.266304347826087,
+   "classes_auc_outside_0.2_0.8": 11,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Leuctra_sp",
+    "Nemoura_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Protonemura_sp",
+    "Silo_pallipes"
+   ]
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "csv": "/home/aijyu/Documents/Lightning_hier_transformer_embedding/01_finbenthic2_processed_5splits_taxon.csv",
+ "csv_sha256": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257",
+ "images": 460004,
+ "verified": "every image byte-identical to its file, names in CSV order",
+ "hdf5_sha256": "e23e2433f71190bc794b204653cf2f49856cb47db5a95f25ca811865471a28a5",
+ "hdf5_bytes": 11870061440
+}

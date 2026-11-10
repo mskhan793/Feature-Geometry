@@ -1,0 +1,24 @@
+[task 1] chunk 1: rows 8192-16384, dim 1024, 154 s, 53.0 img/s
+[task 1] chunk 9: rows 73728-81920, dim 1024, 65 s, 126.2 img/s
+{"task": 1, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4384212}
+[task 0] chunk 0: rows 0-8192, dim 1024, 155 s, 53.0 img/s
+[task 0] chunk 8: rows 65536-73728, dim 1024, 65 s, 126.1 img/s
+{"task": 0, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4380704}
+[task 3] chunk 3: rows 24576-32768, dim 1024, 155 s, 52.9 img/s
+[task 3] chunk 11: rows 90112-98304, dim 1024, 63 s, 130.5 img/s
+{"task": 3, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4386148}
+[task 6] chunk 6: rows 49152-57344, dim 1024, 155 s, 52.8 img/s
+[task 6] chunk 14: rows 114688-122880, dim 1024, 60 s, 135.7 img/s
+{"task": 6, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4377560}
+[task 2] chunk 2: rows 16384-24576, dim 1024, 155 s, 52.8 img/s
+[task 2] chunk 10: rows 81920-90112, dim 1024, 63 s, 129.8 img/s
+{"task": 2, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4376900}
+[task 7] chunk 7: rows 57344-65536, dim 1024, 155 s, 52.8 img/s
+[task 7] chunk 15: rows 122880-128937, dim 1024, 51 s, 117.7 img/s
+{"task": 7, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4402180}
+[task 5] chunk 5: rows 40960-49152, dim 1024, 155 s, 53.0 img/s
+[task 5] chunk 13: rows 106496-114688, dim 1024, 62 s, 132.9 img/s
+{"task": 5, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4377760}
+[task 4] chunk 4: rows 32768-40960, dim 1024, 154 s, 53.1 img/s
+[task 4] chunk 12: rows 98304-106496, dim 1024, 65 s, 126.1 img/s
+{"task": 4, "peak_gpu_memory_bytes": 2170002432, "peak_host_rss_kib": 4374996}
