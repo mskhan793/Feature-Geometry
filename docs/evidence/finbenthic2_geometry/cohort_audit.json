@@ -1,0 +1,73 @@
+{
+ "csv": "/home/aijyu/Documents/Lightning_hier_transformer_embedding/01_finbenthic2_processed_5splits_taxon.csv",
+ "csv_sha256": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257",
+ "fold0_specimens": {
+  "train": 6165,
+  "val": 1542,
+  "test": 1924
+ },
+ "fold0_checks": "no specimen in two partitions, no test or val specimen seen in train",
+ "rule": {
+  "cap": 200,
+  "frames": 10,
+  "seed": 20261111
+ },
+ "classes": 39,
+ "classes_train_available_at_least": {
+  "15": 37,
+  "50": 31,
+  "100": 28,
+  "200": 13
+ },
+ "classes_val_available_at_least": {
+  "5": 36,
+  "10": 33,
+  "20": 29
+ },
+ "specimens_selected": {
+  "train": 5148,
+  "val": 1542
+ },
+ "selected_one_camera": {
+  "train": 170,
+  "val": 51
+ },
+ "available_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 21.0,
+  "median": 25.0,
+  "p75": 28.0,
+  "max": 50.0
+ },
+ "available_runs_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 1.0,
+  "median": 1.0,
+  "p75": 1.0,
+  "max": 5.0
+ },
+ "specimen_cameras_with_more_than_one_run": 260,
+ "selected_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 10.0,
+  "median": 10.0,
+  "p75": 10.0,
+  "max": 10.0
+ },
+ "specimen_cameras_below_frame_cap": 551,
+ "image_width_height_median": [
+  108.0,
+  100.0
+ ],
+ "images": {
+  "cohort": 128937,
+  "train": 99052,
+  "val": 29885
+ },
+ "estimate": {
+  "rate_images_per_second": 57.6,
+  "gpu_minutes": 37.3,
+  "feature_storage_gb": 0.53,
+  "free_disk_gb": 51.5
+ }
+}

@@ -7,6 +7,7 @@ from torchvision import transforms as T
 
 from src.data.aquamonitor_manifest import build_manifest
 from src.data.hdf5_images import Hdf5ImageDataset
+from src.data.image_source import image_dataset
 from src.features import chunk_store
 from src.features.extract import extract_chunks
 from src.lightning_utils.trainer import build_trainer
@@ -25,8 +26,10 @@ def run(aqua_files, cache_dir, chunk_size=2):
     m = build_manifest(aqua_files["parquet"], aqua_files["hdf5"])
     trainer = build_trainer([], max_epochs=1, accelerator="cpu", deterministic="warn", enable_progress_bar=False,
                             enable_model_summary=False)
-    written = extract_chunks(trainer, MeanColour(), T.ToTensor(), INFO, m, str(aqua_files["hdf5"]), cache_dir, chunk_size,
-                             range(chunk_store.n_chunks(len(m), chunk_size)), batch_size=2, num_workers=0, log=lambda s: None)
+    written = extract_chunks(trainer, MeanColour(), INFO, m,
+                             lambda rows: image_dataset(rows, T.ToTensor(), hdf5=str(aqua_files["hdf5"])), cache_dir,
+                             chunk_size, range(chunk_store.n_chunks(len(m), chunk_size)), batch_size=2, num_workers=0,
+                             log=lambda s: None)
     return m, written
 
 

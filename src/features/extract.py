@@ -10,14 +10,14 @@ import numpy as np
 import pandas as pd
 import pytorch_lightning as pl
 import torch
+from torch.utils.data import Dataset
 
-from src.data.hdf5_images import Hdf5ImageDataset
 from src.data.image_prediction_datamodule import ImagePredictionDataModule
 from src.features import chunk_store
 from src.lightning_modules.frozen_encoder import FrozenEncoderModule
 
 
-def encode(trainer: pl.Trainer, module: FrozenEncoderModule, dataset: Hdf5ImageDataset, batch_size: int,
+def encode(trainer: pl.Trainer, module: FrozenEncoderModule, dataset: Dataset, batch_size: int,
            num_workers: int) -> np.ndarray:
     """Features of every dataset item, in dataset order (checked)."""
     batches = trainer.predict(module, datamodule=ImagePredictionDataModule(dataset, batch_size, num_workers),
@@ -29,9 +29,11 @@ def encode(trainer: pl.Trainer, module: FrozenEncoderModule, dataset: Hdf5ImageD
     return features
 
 
-def extract_chunks(trainer: pl.Trainer, encoder: torch.nn.Module, transform: Callable, info: dict, manifest: pd.DataFrame,
-                   hdf5_path: str, cache_dir: Path, chunk_size: int, chunks: Iterable[int], batch_size: int,
-                   num_workers: int, log: Callable[[str], None] = print) -> list[dict]:
+def extract_chunks(trainer: pl.Trainer, encoder: torch.nn.Module, info: dict, manifest: pd.DataFrame,
+                   make_dataset: Callable[[pd.DataFrame], Dataset], cache_dir: Path, chunk_size: int,
+                   chunks: Iterable[int], batch_size: int, num_workers: int,
+                   log: Callable[[str], None] = print) -> list[dict]:
+    """``make_dataset(rows)`` returns the transformed images of ``rows`` in row order (src.data.image_source)."""
     module = FrozenEncoderModule(encoder)
     written = []
     for k in chunks:
@@ -43,8 +45,7 @@ def extract_chunks(trainer: pl.Trainer, encoder: torch.nn.Module, transform: Cal
             log(f"chunk {k}: rows {start}-{end} already done")
             continue
         t0 = time.time()
-        dataset = Hdf5ImageDataset(hdf5_path, rows["img"].tolist(), rows["hdf5_row"].tolist(), transform)
-        features = encode(trainer, module, dataset, batch_size, num_workers).astype(np.float32, copy=False)
+        features = encode(trainer, module, make_dataset(rows), batch_size, num_workers).astype(np.float32, copy=False)
         seconds = time.time() - t0
         meta = chunk_store.write_chunk(cache_dir, k, features, identity,
                                        {**info, "seconds": round(seconds, 1), "images_per_second": round(len(rows) / seconds, 1)})

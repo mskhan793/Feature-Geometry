@@ -46,14 +46,20 @@ def allocate(available: dict[str, int], cap: int, floor: int) -> dict[str, int]:
     return take
 
 
-def select_specimens(rows: pd.DataFrame, cap: int | None, floor: int, seed: int) -> pd.DataFrame:
-    """One row per selected specimen (taxon_group, individual, dataset) from the rows of one split."""
-    spec = rows.groupby("individual").agg(taxon_group=("taxon_group", "first"), dataset=("dataset", "first")).reset_index()
+def select_specimens(rows: pd.DataFrame, cap: int | None, floor: int, seed: int,
+                     source: str | None = "dataset") -> pd.DataFrame:
+    """One row per selected specimen (taxon_group, individual and the ``source`` column) from the rows of one split.
+    Without a source column (``source=None``) a capped class keeps its first ``cap`` specimens in stable order."""
+    agg = {"taxon_group": ("taxon_group", "first")} | ({"dataset": (source, "first")} if source else {})
+    spec = rows.groupby("individual").agg(**agg).reset_index()
     spec["key"] = stable_order(spec.individual, seed)
     out = []
     for _, g in spec.groupby("taxon_group"):
         if cap is None:
             out.append(g)
+            continue
+        if source is None:
+            out.append(g.sort_values("key").head(cap))
             continue
         quota = allocate(g.dataset.value_counts().to_dict(), cap, floor)
         out += [s.sort_values("key").head(quota[d]) for d, s in g.groupby("dataset")]

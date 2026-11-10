@@ -2,9 +2,11 @@
 
 Per selected class, one row per group (2-component tied mixture components, then the two lowest-density outliers);
 each specimen shows its first cohort frame from camera 1 and from camera 2, labelled with the specimen ID.
-Images are read from the HDF5 by name (Hdf5ImageDataset checks the name at each position).
+Images are read from the HDF5 by name (Hdf5ImageDataset checks the name at each position) or, for cohorts with a
+``path`` column, from ``--image-root``.
 
-Usage: class_geometry_montage.py --cohort cohort.parquet --hdf5 H5 --selection selection.json --out DIR
+Usage: class_geometry_montage.py --cohort cohort.parquet (--hdf5 H5 | --image-root DIR) --selection selection.json
+       --out DIR
 """
 
 from __future__ import annotations
@@ -16,7 +18,7 @@ from pathlib import Path
 import matplotlib
 import pandas as pd
 
-from src.data.hdf5_images import Hdf5ImageDataset
+from src.data.image_source import image_dataset
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
@@ -25,7 +27,9 @@ import matplotlib.pyplot as plt  # noqa: E402
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cohort", required=True, type=Path)
-    ap.add_argument("--hdf5", required=True)
+    source = ap.add_mutually_exclusive_group(required=True)
+    source.add_argument("--hdf5")
+    source.add_argument("--image-root")
     ap.add_argument("--selection", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
     a = ap.parse_args()
@@ -40,8 +44,7 @@ def main():
         fig, axes = plt.subplots(len(rows), width, figsize=(1.6 * width, 1.9 * len(rows)), squeeze=False)
         for r, (group, ids) in enumerate(rows):
             picks = [(i, cam) for i in ids for cam in cameras]
-            names = [first.loc[p, "img"] for p in picks]
-            ds = Hdf5ImageDataset(a.hdf5, names, [int(first.loc[p, "hdf5_row"]) for p in picks], lambda im: im)
+            ds = image_dataset(first.loc[picks].reset_index(), lambda im: im, a.hdf5, a.image_root)
             for j in range(width):
                 ax = axes[r, j]
                 ax.axis("off")
