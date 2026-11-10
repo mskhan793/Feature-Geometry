@@ -41,10 +41,42 @@ all 10 splits; I had only looked at its first rows.
 - **D1, FIN-Benthic2 partitions:** (a) released machine-learning SPLIT4 as primary (recommended under the task's
   rule) or (b) the 5-fold taxonomist CSV chosen in chat, recorded as a derived protocol and an exception.
 - **D2, BIOSCAN-5M support threshold** for species entering the geometry fits (e.g. ≥ 20 train and ≥ 1 val record).
+- **D3, DF24 derived validation** (section 4): approve the exception and the rule, or keep DF24 excluded.
 - **Approval to run** the first replication proposed in section 7 of the report (local RTX 4090; FIN-Benthic2 upper
   bound 153,880 images, about 45 min; BIOSCAN-5M upper bound 303,960 images, about 1.5 h).
 
-## 4. Unknowns
+## 4. Author proposal in chat (2026-11-10): DF24 with a derived validation set
+
+**Author:** "What if we create val from train in DF24? The main priority is train and test; test should be the same,
+val is in our hand."
+
+**Assessment.** Sound design and fairer than the dataset authors' own practice (their training script selects models
+on the test file). The official `pubtest` stays exactly as released and is used once for final evaluation; only
+validation is ours. It is an **exception to the task rule** ("never invent … including training subsets"), so it
+needs the author's recorded approval before anything is drawn. DF24 would then move from ineligible to
+**eligible by exception**, reported everywhere as "DF24 official train/test + derived validation".
+
+**Proposed rule (to be committed before any draw, features or scores):**
+1. **Unit = observation.** All photos of one `observationID` go to the same side (0.4112 of observations have several
+   photos, 2026-11-05 audit).
+2. **Near-duplicates together.** Observations with the same recorder, species, day and place stay on one side, so
+   validation is not made easier by near-copies.
+3. **Stratified by species, about 10 % of each species' train observations,** close to the test share (18,144 test
+   vs 159,026 train observations). Species with fewer than about 10 train observations get no validation records
+   (the smallest classes have 4) and are reported as "no validation" instead of losing training examples.
+4. **One seeded, deterministic draw** within the official train set only, saved with its sha256; test untouched.
+
+**Consequences:** validation results are not comparable with published work (test results are); images are not
+downloaded yet (metadata only; the same images as DF20, about 6.4 GB at 300 px per the 2026-11-05 audit), so the
+download needs separate approval.
+
+**Related:** FIN-Benthic2 does not need a derived validation set, because its released splits already include VAL
+(decision D1 above).
+
+**Next steps once approved:** record the exception (the author may also add it to `task.md`), implement the draw with
+a regression test and commit the rule, then report validation counts per species; image download separately.
+
+## 5. Unknowns
 
 - FIN-Benthic2 licence and version: the Etsin landing page did not render for the audit.
 - BIOSCAN-5M is grouped by barcode, not by BIN; specimens with different barcodes of one BIN can sit in different
