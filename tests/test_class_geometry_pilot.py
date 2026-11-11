@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import pytest
 
 from src.features import chunk_store
 from src.statistics.class_modality import INCONCLUSIVE, INSUFFICIENT, SUPPORTED, WORSE
@@ -44,7 +45,7 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
             for cam in ((1,) if (c == "A" and s == 0) else (1, 2)):  # A00 has one camera only
                 for f in range(2):
                     rows.append({"img": f"{c}{s}_{cam}_{f}", "individual": f"{c}{s:02d}", "taxon_group": c, "fold0": split,
-                                 "camera": cam, "hdf5_row": len(rows), "dataset": "dna" if odd else "bulk21",
+                                 "camera": cam, "imaging_run": f"{c}{s:02d}.1", "hdf5_row": len(rows), "dataset": "dna" if odd else "bulk21",
                                  "year": "2021", "site": "x", "width": 40 if odd else 20, "height": 30})
                     feats.append(base + rng.normal(0, 0.1, 24))
     half = len(rows) // 2  # features split over two caches, looked up by name
@@ -116,6 +117,19 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     run(["scripts/summarise_pca_fda_gbc.py", "--dataset", "Toy", str(runs), "--out", str(tmp_path / "pfsum")])
     st = json.loads((tmp_path / "pfsum" / "Toy" / "summary.json").read_text())["cross_fold_stability"]["fda2"]
     assert st["spearman_between_folds_min_median_max"] == [1.0, 1.0, 1.0] and st["pairs_in_all_folds"] == 3
+
+    # Ledoit-Wolf diagnostics: frames per camera x specimens per class, per-class shrinkage, LW full-covariance pairs
+    lw = tmp_path / "lw"
+    run(["scripts/lw_fit_diagnostics.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches, "--fold", "fold0",
+         "--out", str(lw), "--frames", "1", "2", "--caps", "15", "30", "--pcs", "8", "4"])
+    pooled = pd.read_csv(lw / "pooled.csv")
+    assert len(pooled) == 2 * (2 * 3 + 1) and pooled.alpha_lw.between(0, 1).all()
+    ref = pooled[(pooled.frames == 2) & (pooled.cap == "all")].iloc[0]
+    assert ref.fda16_subspace_similarity == pytest.approx(1) and ref.fda16_gbc_spearman_vs_reference == pytest.approx(1)
+    assert pooled[pooled.cap == "15"].train_specimens.max() == 3 * 15 + 12  # D (12 specimens) below the cap keeps all
+    per = pd.read_csv(lw / "perclass.csv")
+    assert len(per) == 3 * 2 and per.val_loglik_lw.notna().all() and len(pd.read_csv(lw / "pairs_lw_pcs8.csv")) == 3
+    assert set(pd.read_csv(lw / "alpha_curve.csv").alpha.round(6)) >= {0.0, 1.0}
 
     # another fold column with test rows that have no features: they must be dropped before any feature lookup
     full = pd.DataFrame(rows).assign(fold3=lambda d: d.fold0)

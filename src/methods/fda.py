@@ -17,7 +17,8 @@ from dataclasses import dataclass
 
 import numpy as np
 from scipy.linalg import cholesky, eigh
-from sklearn.covariance import ledoit_wolf_shrinkage
+
+from src.statistics.covariance_fit import lw_alpha, shrunk
 
 RANK_TOL = 1e-10
 
@@ -60,10 +61,9 @@ class FDA:
 
 def fit_fda(x: np.ndarray, y: np.ndarray, alpha_scale: float = 1.0) -> FDA:
     s_b, s_w, mu, resid = scatter_matrices(x, y)
-    alpha_lw = float(ledoit_wolf_shrinkage(resid, assume_centered=True))
+    alpha_lw = lw_alpha(resid)
     alpha = min(1.0, alpha_lw * alpha_scale)
-    d = s_w.shape[0]
-    s_w_star = (1 - alpha) * s_w + alpha * np.trace(s_w) / d * np.eye(d)
+    s_w_star = shrunk(s_w, alpha)
     cholesky(s_w_star, lower=True)  # raises if not positive definite
     lam, vec = eigh(s_b, s_w_star)
     order = np.argsort(lam)[::-1]
