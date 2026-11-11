@@ -1,0 +1,96 @@
+{
+ "fold": "fold3",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 836159,
+  "train_val_used": 669063,
+  "test_rows_dropped": 167096
+ },
+ "train_specimens": 29346,
+ "val_specimens": 4386,
+ "gbc_classes": 41,
+ "reference": {
+  "frames": 10,
+  "cap": "all",
+  "seed": 20261112,
+  "train_specimens": 29346,
+  "classes": 42,
+  "alpha_lw": 0.0010229721781251728,
+  "condition_s_w_star": 146625.6595286558,
+  "val_loglik_micro_lw": 1360.7147250781125,
+  "val_loglik_macro_lw": 1154.4834902031612,
+  "val_loglik_macro_sample": 1164.519587594311,
+  "best_grid_alpha_macro": 0.01,
+  "val_loglik_macro_best_grid": 1173.9531729967723,
+  "fda16_subspace_similarity": 1.0000000000000002,
+  "fda16_gbc_spearman_vs_reference": 0.9999999999999999
+ },
+ "best_config_by_macro_val_loglik_lw": {
+  "frames": 10,
+  "cap": 256,
+  "seed": 20261112,
+  "train_specimens": 6430,
+  "classes": 42,
+  "alpha_lw": 0.005620080391739918,
+  "condition_s_w_star": 23613.768901656087,
+  "val_loglik_micro_lw": 1283.9861304363963,
+  "val_loglik_macro_lw": 1195.9275923843384,
+  "val_loglik_macro_sample": 1188.220540312239,
+  "best_grid_alpha_macro": 0.01,
+  "val_loglik_macro_best_grid": 1200.87361496185,
+  "fda16_subspace_similarity": 0.5540094536481944,
+  "fda16_gbc_spearman_vs_reference": 0.9278520712821535
+ },
+ "per_class": {
+  "64": {
+   "classes": 41,
+   "alpha_lw_min_median_max": [
+    0.0008777597546700507,
+    0.062199634634604914,
+    0.32656604900412284
+   ],
+   "spearman_alpha_vs_n_train": -0.9589196481016613,
+   "best_estimator_counts": {
+    "lw": 39,
+    "sample": 2
+   },
+   "mean_val_loglik": {
+    "lw": -30.202792198155333,
+    "sample": -56.813025193494155,
+    "diagonal": -49.01629559361646,
+    "spherical": -65.21229607934836
+   },
+   "sample_covariance_available": 33,
+   "lw_full_pairs": 820,
+   "spearman_lw_full_vs_spherical": 0.9053871432826305,
+   "spearman_lw_full_vs_dprime_val": 0.8090343135766622,
+   "spearman_spherical_vs_dprime_val": 0.7520195162867691,
+   "lw_full_cov_term_share_median": 0.4134190498585691
+  },
+  "16": {
+   "classes": 41,
+   "alpha_lw_min_median_max": [
+    0.0006000115388671549,
+    0.047867202098924574,
+    0.30934835658765936
+   ],
+   "spearman_alpha_vs_n_train": -0.9513396000020025,
+   "best_estimator_counts": {
+    "lw": 26,
+    "sample": 15
+   },
+   "mean_val_loglik": {
+    "lw": -17.455543019206925,
+    "sample": -17.999024582779555,
+    "diagonal": -21.95732791617589,
+    "spherical": -23.96069817276693
+   },
+   "sample_covariance_available": 41,
+   "lw_full_pairs": 820,
+   "spearman_lw_full_vs_spherical": 0.926347368009826,
+   "spearman_lw_full_vs_dprime_val": 0.8453041546651362,
+   "spearman_spherical_vs_dprime_val": 0.7894965456594641,
+   "lw_full_cov_term_share_median": 0.24465009928844805
+  }
+ }
+}

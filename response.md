@@ -138,3 +138,92 @@ New: `src/methods/fda.py`, `src/statistics/pair_overlap.py` (moved from `bhattac
 d′ undefined for equal means, mean term ≥ d′²/8 with the equality case, scatter decomposition, FDA finds a
 low-variance discriminative axis that PCA misses, generalised eigen equation) and end-to-end checks. Changed:
 `class_geometry.direction` raises for coinciding means. Full suite: 82 passed.
+
+## 8. Addendum (2026-11-12): Ledoit–Wolf fit — frames per specimen and specimens per class
+
+**Request:** the author asked in chat to check how many images per specimen and how many specimens per class to use
+for Ledoit–Wolf (LW) estimation, and to check all proposed options. Diagnostic only; all five folds of both datasets;
+existing embeddings; train fits, val judges, no test rows.
+
+**Source:** Ledoit & Wolf, *A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices* (JMVA 2004;
+authors' preprint Feb 2001, http://www.ledoit.net/ole1a.pdf, `~/Documents/Research/methods/ledoit_wolf2004/paper.pdf`,
+SHA256 `08e79244bf0ea47acb4a35189cfd7614bbc21cc058684da3d0cfe50d83717f1c`): Lemmas 3.2–3.5 and Eq. (14), p. 12,
+S* = (b²/d²) m I + (1 − b²/d²) S, i.e. intensity α = b²/d² toward the average variance m. No code with the paper;
+sklearn's `ledoit_wolf_shrinkage` equals the paper's formulas to 1e-10 (`tests/test_covariance_fit.py`). LW is
+optimal for the Frobenius (squared-error) loss, not for likelihood.
+
+**Predeclared criterion:** held-out Gaussian log-likelihood of val specimens (val residual = val specimen − train
+class mean for the pooled S_W; val specimen under N(μ_c, Σ_c) per class), averaged per specimen (micro) and per class
+(macro); every configuration is compared with its fold's reference (10 frames per camera, all train specimens).
+
+**What ran:** LUMI array 23659692 (small, 10 × 16 cores, 2:00–4:49 per task, 18.7 CPU-hours, code 831c318).
+Evidence `docs/evidence/lw_fit/` (`summary/<dataset>/`, per fold `pooled.csv`, `alpha_curve.csv`, `perclass*.csv`,
+`pairs_lw_pcs*.csv`, `summary.json`); scripts `scripts/lw_fit_diagnostics.py`, `scripts/summarise_lw_fit.py`.
+
+**D1 — frames per camera** (train specimens built from 1/3/5/10 frames; held-out log-likelihood minus 10 frames, fold mean):
+
+| Frames per camera | FIN-Benthic2 macro / micro | AquaMonitor macro / micro |
+|---|---|---|
+| 1 | −46.22 / −57.98 | −14.41 / −85.53 |
+| 3 | +0.91 / −0.53 | +5.27 / −5.53 |
+| 5 | +0.30 / −0.03 | +1.76 / −1.20 |
+| 10 | 0 / 0 | 0 / 0 |
+
+One frame per camera is clearly too few (frame-to-frame variation leaks into S_W); from 3 frames on the differences
+are small and change sign between the criteria; per specimen (micro) 10 frames is best in both datasets. The current
+choice (up to 10) is adequate; more than 10 are not extracted, so not tested.
+
+**D2 — train specimens per class** for the pooled S_W (10 frames; fold mean):
+
+| Cap per class | FIN-Benthic2 specimens; macro / micro | AquaMonitor specimens; macro / micro |
+|---|---|---|
+| 15 | 575.2; −347.37 / −373.81 | 630.0; −333.43 / −470.43 |
+| 64 | 2,162.8; −72.27 / −90.69 | 2,522.8; −22.93 / −173.58 |
+| 128 | 3,899.4; −16.60 / −30.85 | 4,255.8; +24.02 / −115.40 |
+| 256 | 5,613.4; +0.59 / −5.08 | 6,428.2; +39.58 / −77.32 |
+| all | 6,163.2; 0 / 0 | 29,346.0; 0 / 0 |
+
+- FIN-Benthic2 (largest class 563): more specimens is better; capping only hurts.
+- AquaMonitor (Chironomidae 7,414, top three classes 52 % of train specimens): capping the dominant classes at 128–256
+  fits the **average class** better (macro +24 / +40) but the **average specimen** worse (micro −115 / −77). The
+  N_c/N weighting of Mensink's S_W describes the typical specimen; a balanced S_W the typical class. This is a choice
+  of target, not a better estimate; for class-pair overlap (where every class counts once) the balanced choice is the
+  better-motivated one.
+- Capping changes FDA a lot: FDA-16 subspace similarity to the reference falls to 0.96 / 0.55 at cap 256 (FIN-Benthic2 /
+  AquaMonitor) and its GBC pair ranking to Spearman 0.996 / 0.925.
+
+**LW intensity for the pooled S_W:** α_LW = 0.0068–0.0071 (FIN-Benthic2) and 0.0010 (AquaMonitor) at the reference;
+on a fixed α grid the held-out macro optimum is **α = 0.01 in all 10 runs**, better than α_LW by +2.3 to +3.1
+(FIN-Benthic2) and +15.5 to +21.5 (AquaMonitor) per class. In AquaMonitor α_LW is even below the unshrunk sample
+covariance (−9.6 to −10.9). LW under-shrinks for held-out likelihood here: it is tuned to squared error, dominated by
+the large eigenvalues, while likelihood depends on the small ones, and the pooled residuals come from 39–42 classes
+with different covariances (LW assumes one distribution).
+
+**D3 — per-class covariances** (train-fitted PCA, 16 and 64 dimensions; held-out log-likelihood of each class's val
+specimens, classes × folds):
+- Per-class LW (full covariance shrunk toward the class's average variance) has the best held-out fit for almost every
+  class at 64 PCs (FIN-Benthic2 173 of 175 class-folds, AquaMonitor 197 of 204; the sample covariance wins only for 7
+  large AquaMonitor classes, diagonal for 2 small FIN-Benthic2 ones) and for most at 16 PCs (the sample covariance
+  wins 39 and 65 times, mainly for large classes). **Spherical never has the best fit**; mean held-out log-likelihood
+  at 16 PCs: LW −17.76 / −17.39, sample −18.84 / −18.14 (where n > d), diagonal −21.81 / −21.92, spherical −23.59 /
+  −23.95 (FIN-Benthic2 / AquaMonitor).
+- α_c falls with the class's specimen count (Spearman −0.82 to −0.96 over folds and dimensions). Learning curve on classes with ≥ 256
+  train specimens (7 FIN-Benthic2, 14 AquaMonitor): α_c ≈ 0.33–0.39 at n = 15, 0.11–0.15 at 64, 0.03–0.04 at 256;
+  LW beats spherical already at n = 15 (+3.5 to +3.8 at 16 PCs, +13.5 to +14.8 at 64 PCs) and the gap grows with n.
+- With per-class LW every class gets a full covariance (no ≥ 2 d rule): full-covariance Bhattacharyya for all pairs
+  agrees with the spherical form at Spearman 0.87–0.93 and with held-out d′ at 0.77–0.88 (spherical: 0.77–0.82); the
+  covariance term is a median 0.18–0.41 of the distance.
+
+**Answer to the question.**
+- **Images per specimen:** at least 3 frames per camera; 1 is clearly too few; the current 10 is (marginally) best per
+  specimen.
+- **Specimens per class:** for the pooled S_W, all specimens in FIN-Benthic2; in AquaMonitor the choice depends on
+  whether S_W should describe the typical specimen (all) or the typical class (cap 128–256).
+- **LW itself:** for the pooled S_W, LW's α is too small for held-out likelihood (α = 0.01 fits better in every run);
+  for per-class Gaussians, LW per class is the best of the tested estimators at every class size, and the paper's
+  spherical form is the worst fit.
+
+**Decisions for the author:** (1) S_W target for FDA: typical specimen (all, N_c/N) or typical class (cap / balanced);
+(2) whether to replace α_LW by a held-out-chosen α (fitted on val, so it would need its own validation split or
+cross-validation within train to stay fair); (3) whether per-class LW full covariance should become the main class
+model for the Bhattacharyya analysis (with the spherical paper form kept as the baseline). None of these is applied.
