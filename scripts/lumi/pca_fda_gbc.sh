@@ -25,7 +25,8 @@ source "$CODE/scripts/lumi/geometry_inputs.sh"
 echo "inputs ok $(date -Is) code $(cat "$CODE/CODE_COMMIT")"
 OUT=$ROOT/$DATASET/$FOLD
 mkdir -p "$OUT"
-EXTRA=$([ "$FOLD" = fold0 ] && echo "--previous $PREV/$DATASET")
+EXTRA=""
+if [ "$FOLD" = fold0 ]; then EXTRA="--previous $PREV/$DATASET"; fi  # not $(test && echo): fails under set -e
 singularity exec "$SIF" bash -c "export PYTHONPATH=$CODE PYTHONUNBUFFERED=1 OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK; cd $CODE; \
     python scripts/pca_fda_gbc.py --cohort $COHORT --caches $CACHES --fold $FOLD --out $OUT --dims 8 16 32 $EXTRA \
     > $OUT/run.log 2>&1"
