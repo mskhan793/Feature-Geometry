@@ -14,6 +14,7 @@ model comparison, verdict, nearest class, component-metadata scores).
 
 Usage: component_metadata.py --cohort cohort.parquet --components specimen_components.csv
        --modality per_class_modality.csv --geometry per_class_geometry.csv --out DIR [--fields F ...] [--numeric N ...]
+       [--fold foldK]
 """
 
 from __future__ import annotations
@@ -43,8 +44,10 @@ def main():
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--fields", nargs="*", default=["dataset", "year", "site"])
     ap.add_argument("--numeric", nargs="*", default=[])
+    ap.add_argument("--fold", default="fold0", help="partition column of the components file")
     a = ap.parse_args()
     cohort = pd.read_parquet(a.cohort)
+    cohort = cohort[cohort[a.fold].isin(["train", "val"])]  # test rows are not read
     if "log_image_area" in a.numeric:
         cohort["log_image_area"] = np.log(cohort.width * cohort.height)
     meta = (cohort.groupby("individual")[a.fields].agg(lambda s: s.iloc[0] if s.nunique() == 1 else None) if a.fields
@@ -55,7 +58,7 @@ def main():
     comp = comp.join(cohort.groupby("individual")[a.numeric].mean(), on="individual")
     mod = pd.read_csv(a.modality)
     rows = []
-    for (c, d, split), g in comp.groupby(["taxon_group", "pcs", "fold0"]):
+    for (c, d, split), g in comp.groupby(["taxon_group", "pcs", a.fold]):
         row = {"taxon_group": c, "pcs": d, "split": split, "specimens": len(g),
                "component_sizes": json.dumps(g.g2_tied_component.value_counts().sort_index().to_dict())}
         if "dataset" in a.fields:
@@ -85,7 +88,7 @@ def main():
         for d, g in t[t.split == "train"].groupby("pcs"):
             summary[f"{d}_pcs_train_dataset_ari_at_least_0.5_by_verdict"] = {
                 v: {"classes": len(h), "dataset_ari_at_least_0.5": int((h.ari_dataset >= 0.5).sum())} for v, h in g.groupby("verdict")}
-        datasets = comp[comp.fold0 == "train"].groupby("taxon_group").dataset.nunique()
+        datasets = comp[comp[a.fold] == "train"].groupby("taxon_group").dataset.nunique()
         summary["train_classes_by_number_of_datasets"] = datasets.value_counts().sort_index().to_dict()
     (a.out / "component_metadata.json").write_text(json.dumps(summary, indent=1, default=str))
     geometry = pd.read_csv(a.geometry)

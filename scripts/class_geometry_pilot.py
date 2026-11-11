@@ -1,8 +1,9 @@
 """Within-class and between-class geometry of DINOv3-L specimen embeddings, and one Gaussian vs a small mixture per
 class (task.md fb26afc on the 30-specimen cohort; task.md fb46e1f on the expanded cohort). Local and descriptive.
 
-Inputs: a cohort (official fold0 train/val rows only) and the verified feature caches holding its images (looked up by
-image name, src.features.feature_lookup). Unit: one embedding per independent specimen = mean of its camera-level means
+Inputs: a cohort and the verified feature caches holding its images (looked up by image name,
+src.features.feature_lookup). ``--fold`` names the partition column (default fold0); only its train and val rows are
+used, test rows are dropped before any feature is loaded (task.md 92a605a: five folds, full specimens). Unit: one embedding per independent specimen = mean of its camera-level means
 (each the mean of its frames; a specimen imaged by one camera uses that camera). Everything fitted (PCA, centroids,
 covariances, mixtures, directions) uses train specimens only; val specimens are only scored or projected. Classes need
 at least 15 train and 5 val specimens; the others are listed with their counts.
@@ -37,7 +38,6 @@ Usage: class_geometry_pilot.py --cohort cohort.parquet --caches MANIFEST=CACHE_D
 from __future__ import annotations
 
 import argparse
-import itertools
 import json
 import time
 from pathlib import Path
@@ -51,14 +51,13 @@ from scipy.stats import spearmanr
 from sklearn.decomposition import PCA
 from threadpoolctl import threadpool_limits
 
-from src.data.expanded_cohort import stable_order
 from src.features.chunk_store import file_sha256
 from src.features.feature_lookup import features_by_name
 from src.features.specimen_means import specimen_camera_means, specimen_means
-from src.statistics.class_geometry import (direction, direction_separation, eigen_summary, principal_axes,
-                                           radius_separation, subspace_overlap)
+from src.statistics.class_geometry import direction, principal_axes
 from src.statistics.class_modality import (MODELS, SourceGaussians, condition_number, eligible, fit_mixture,
                                            free_parameters, smallest_component, split_stability)
+from src.statistics.specimen_geometry import between_classes, paired_views, within_class
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
@@ -69,53 +68,6 @@ FT = [m for m, (k, c) in MODELS.items() if k > 1 and c != "diag"]
 
 def ci(a: np.ndarray) -> list[float]:
     return [float(np.quantile(a, 0.025)), float(np.quantile(a, 0.975))]
-
-
-def reidentification(a: np.ndarray, b: np.ndarray) -> float:
-    d = ((a[:, None, :] - b[None, :, :]) ** 2).sum(-1)
-    return float(np.mean(d.argmin(1) == np.arange(len(a))))
-
-
-def paired_views(cam_keys: pd.DataFrame, ids) -> tuple[np.ndarray, np.ndarray]:
-    """Rows of camera 1 and camera 2 views for the given specimens that have both, in the same specimen order."""
-    cams = sorted(cam_keys.camera.unique())
-    k = cam_keys[cam_keys.individual.isin(ids)]
-    both = k.groupby("individual").camera.nunique() == len(cams)
-    keep = sorted(both.index[both])
-    rows = [k[k.camera == c].set_index("individual").loc[keep, "row"].values for c in cams]
-    return rows[0], rows[1]
-
-
-def within_class(classes, sp_tr, x_tr, cam_tr, xc, frame_rms, seed) -> pd.DataFrame:
-    rows = []
-    for c in classes:
-        k = sp_tr[sp_tr.taxon_group == c]
-        first = k.index[np.argsort(stable_order(k.individual, seed).values)[:N_FIXED]]
-        r1, r2 = paired_views(cam_tr, k.individual)
-        fixed = {f"{key}_n30": v for key, v in eigen_summary(x_tr[first]).items() if key != "n"}
-        rows.append({"taxon_group": c, **eigen_summary(x_tr[k.index]), **fixed,
-                     "camera_reid": reidentification(xc[r1], xc[r2]), "camera_reid_chance": 1 / len(r1),
-                     "paired_specimens": len(r1), "frame_rms_within_specimen_median": float(np.median(
-                         frame_rms[cam_tr.index[cam_tr.taxon_group == c]]))})
-    return pd.DataFrame(rows)
-
-
-def between_classes(classes, sp_tr, x_tr, sp_va, x_va, z2_tr) -> pd.DataFrame:
-    xn_tr = x_tr / np.linalg.norm(x_tr, axis=1, keepdims=True)
-    tr = {c: sp_tr.index[sp_tr.taxon_group == c] for c in classes}
-    va = {c: sp_va.index[sp_va.taxon_group == c] for c in classes}
-    rows = []
-    for a, b in itertools.combinations(classes, 2):
-        u = direction(x_tr[tr[a]], x_tr[tr[b]])
-        rows.append({"class_a": a, "class_b": b,
-                     "dprime_val": direction_separation(x_va[va[a]], x_va[va[b]], u),
-                     "dprime_train": direction_separation(x_tr[tr[a]], x_tr[tr[b]], u),
-                     "radius_sep": radius_separation(x_tr[tr[a]], x_tr[tr[b]]),
-                     "radius_sep_l2norm": radius_separation(xn_tr[tr[a]], xn_tr[tr[b]]),
-                     "radius_sep_pca2d": radius_separation(z2_tr[tr[a]], z2_tr[tr[b]]),
-                     "centroid_distance": float(np.linalg.norm(x_tr[tr[a]].mean(0) - x_tr[tr[b]].mean(0))),
-                     "subspace_overlap_top5": subspace_overlap(x_tr[tr[a]], x_tr[tr[b]], K_SUB)})
-    return pd.DataFrame(rows)
 
 
 def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
@@ -296,33 +248,37 @@ def main():
     ap.add_argument("--jobs", type=int, default=16)
     ap.add_argument("--seed", type=int, default=20261107)
     ap.add_argument("--source-column", default="dataset", help="'none' if the dataset has no source field")
+    ap.add_argument("--fold", default="fold0", help="cohort column with the train/val/test partition to use")
     a = ap.parse_args()
     t0 = time.time()
     a.out.mkdir(parents=True, exist_ok=True)
+    S = a.fold
     cohort = pd.read_parquet(a.cohort)
-    if not set(cohort.fold0) <= {"train", "val"}:
-        raise RuntimeError("cohort holds rows outside fold0 train/val")
+    rows_in = len(cohort)
+    if not set(cohort[S]) <= {"train", "val", "test"}:
+        raise RuntimeError(f"unexpected values in {S}")
+    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # test rows: features never loaded
     pairs_in = [tuple(Path(p) for p in s.split("=", 1)) for s in a.caches]
     x, meta = features_by_name(pairs_in, cohort.img.tolist())
-    cam_keys, cam_means, frame_rms = specimen_camera_means(x, cohort)
-    sp_keys, sp = specimen_means(cam_keys, cam_means)
-    if set(sp_keys[sp_keys.fold0 == "train"].individual) & set(sp_keys[sp_keys.fold0 == "val"].individual):
+    cam_keys, cam_means, frame_rms = specimen_camera_means(x, cohort, S)
+    sp_keys, sp = specimen_means(cam_keys, cam_means, S)
+    if set(sp_keys[sp_keys[S] == "train"].individual) & set(sp_keys[sp_keys[S] == "val"].individual):
         raise RuntimeError("specimen in both train and val")
     source = None if a.source_column == "none" else cohort.groupby("individual")[a.source_column].first()
-    tr, va = (sp_keys.fold0 == "train").values, (sp_keys.fold0 == "val").values
+    tr, va = (sp_keys[S] == "train").values, (sp_keys[S] == "val").values
     sp_tr, sp_va = sp_keys[tr].reset_index(drop=True), sp_keys[va].reset_index(drop=True)
     x_tr, x_va = sp[tr], sp[va]
-    ctr = (cam_keys.fold0 == "train").values
+    ctr = (cam_keys[S] == "train").values
     cam_tr = cam_keys[ctr].reset_index(drop=True).assign(row=lambda d: np.arange(len(d)))
     xc, frame_rms_tr = cam_means[ctr], frame_rms[ctr]
-    support = sp_keys.groupby(["taxon_group", "fold0"]).size().unstack(fill_value=0)
+    support = sp_keys.groupby(["taxon_group", S]).size().unstack(fill_value=0)
     ok = (support.get("train", 0) >= MIN_TRAIN) & (support.get("val", 0) >= MIN_VAL)
     classes = sorted(support.index[ok])
     insufficient = {c: support.loc[c].to_dict() for c in support.index[~ok]}
 
-    geo = within_class(classes, sp_tr, x_tr, cam_tr, xc, frame_rms_tr, a.seed)
+    geo = within_class(classes, sp_tr, x_tr, cam_tr, xc, frame_rms_tr, a.seed, N_FIXED)
     pca2 = PCA(n_components=2, svd_solver="full").fit(x_tr)
-    pairs = between_classes(classes, sp_tr, x_tr, sp_va, x_va, pca2.transform(x_tr))
+    pairs = between_classes(classes, sp_tr, x_tr, pca2.transform(x_tr), sp_va, x_va, K_SUB)
     pca = PCA(n_components=max(a.pcs), whiten=True, svd_solver="full").fit(x_tr)
     z_tr_all, z_va_all, zc_all = pca.transform(x_tr), pca.transform(x_va), pca.transform(xc)
 
@@ -348,7 +304,7 @@ def main():
             for keys, z in ((sp_tr, z_tr), (sp_va, z_va)):
                 m = (keys.taxon_group == c).values
                 resp = fits_by_d[d][c]["G2_tied"].predict_proba(z[m])
-                comp_rows.append(keys[m][["taxon_group", "fold0", "individual"]].assign(
+                comp_rows.append(keys[m][["taxon_group", S, "individual"]].assign(
                     pcs=d, g2_tied_component=resp.argmax(1), g2_tied_responsibility=resp.max(1),
                     g1_full_log_density=fits_by_d[d][c]["G1_full"].score_samples(z[m])))
     modality = pd.concat(tables, ignore_index=True)
@@ -389,12 +345,14 @@ def main():
     nearest.to_csv(a.out / "nearest_class.csv", index=False)
 
     result = {
-        "cohort_sha256": file_sha256(a.cohort), "encoder": meta["encoder"], "model_id": meta["model_id"],
+        "cohort_sha256": file_sha256(a.cohort), "fold": S,
+        "cohort_rows": {"in_file": rows_in, "train_val_used": len(cohort), "test_not_loaded": rows_in - len(cohort)},
+        "encoder": meta["encoder"], "model_id": meta["model_id"],
         "transform": meta["transform"], "tf32": meta.get("tf32"), "seed": a.seed, "n_stab": a.n_stab,
         "unit": "specimen = mean of its camera-level means", "classes": len(classes),
         "classes_insufficient_support": insufficient,
         "specimens": {"train": len(sp_tr), "val": len(sp_va)},
-        "specimens_one_camera": {s: int((sp_keys[sp_keys.fold0 == s].cameras == 1).sum()) for s in ("train", "val")},
+        "specimens_one_camera": {s: int((sp_keys[sp_keys[S] == s].cameras == 1).sum()) for s in ("train", "val")},
         "train_specimens_per_class_min_median_max": [int(geo.n.min()), float(geo.n.median()), int(geo.n.max())],
         "val_specimens_per_class_min_median_max": [int(support.loc[classes, "val"].min()), float(support.loc[classes, "val"].median()),
                                                    int(support.loc[classes, "val"].max())],

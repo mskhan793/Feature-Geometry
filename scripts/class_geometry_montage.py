@@ -32,9 +32,10 @@ def main():
     source.add_argument("--image-root")
     ap.add_argument("--selection", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
+    ap.add_argument("--fold", default="fold0", help="partition column; montages show its train specimens")
     a = ap.parse_args()
     cohort = pd.read_parquet(a.cohort)
-    cohort = cohort[cohort.fold0 == "train"].sort_values(["individual", "camera", "img"])
+    cohort = cohort[cohort[a.fold] == "train"].sort_values(["individual", "camera", "img"])
     first = cohort.groupby(["individual", "camera"]).head(1).set_index(["individual", "camera"])
     cameras = sorted(cohort.camera.unique())
     sel = json.loads(a.selection.read_text())["montage_specimens"]

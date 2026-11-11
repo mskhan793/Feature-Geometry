@@ -1,4 +1,5 @@
-"""Specimen-level embeddings from image-level features of a cohort (frames are not independent samples)."""
+"""Specimen-level embeddings from image-level features of a cohort (frames are not independent samples). ``split`` names
+the cohort column holding each row's partition (``fold0``..``fold4``); the keys keep that column name."""
 
 from __future__ import annotations
 
@@ -6,11 +7,12 @@ import numpy as np
 import pandas as pd
 
 
-def specimen_camera_means(x: np.ndarray, cohort: pd.DataFrame) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
+def specimen_camera_means(x: np.ndarray, cohort: pd.DataFrame, split: str = "fold0"
+                          ) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
     """Keys (one row per specimen and camera), mean embeddings, and RMS distance of each group's frames to its mean.
     Computed in float64: downstream PCA and mixture fits inherit the dtype, and float32 mixture fits lose narrow splits."""
-    groups = cohort.groupby(["taxon_group", "fold0", "individual", "camera"], sort=True).indices
-    keys = pd.DataFrame(list(groups), columns=["taxon_group", "fold0", "individual", "camera"])
+    groups = cohort.groupby(["taxon_group", split, "individual", "camera"], sort=True).indices
+    keys = pd.DataFrame(list(groups), columns=["taxon_group", split, "individual", "camera"])
     keys["frames"] = [len(i) for i in groups.values()]
     x = x.astype(np.float64)
     means = np.stack([x[i].mean(0) for i in groups.values()])
@@ -18,9 +20,10 @@ def specimen_camera_means(x: np.ndarray, cohort: pd.DataFrame) -> tuple[pd.DataF
     return keys, means, spread
 
 
-def specimen_means(camera_keys: pd.DataFrame, camera_means: np.ndarray) -> tuple[pd.DataFrame, np.ndarray]:
+def specimen_means(camera_keys: pd.DataFrame, camera_means: np.ndarray, split: str = "fold0"
+                   ) -> tuple[pd.DataFrame, np.ndarray]:
     """One embedding per specimen: the average of its camera-level means (each camera weighted equally)."""
-    groups = camera_keys.groupby(["taxon_group", "fold0", "individual"], sort=True).indices
-    keys = pd.DataFrame(list(groups), columns=["taxon_group", "fold0", "individual"])
+    groups = camera_keys.groupby(["taxon_group", split, "individual"], sort=True).indices
+    keys = pd.DataFrame(list(groups), columns=["taxon_group", split, "individual"])
     keys["cameras"] = [len(i) for i in groups.values()]
     return keys, np.stack([camera_means[i].mean(0) for i in groups.values()])
