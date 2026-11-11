@@ -1,0 +1,14 @@
+{
+ "pcs": 64,
+ "full_pairs": 210,
+ "classes_with_full_covariance": 21,
+ "along_ratio_median": 4.094256620396272,
+ "share_along_below_1": 0.0,
+ "share_along_above_2": 0.9952380952380953,
+ "spearman_log_along_vs_dprime_val": -0.2746566977547271,
+ "spearman_log_along_vs_rank_gap": 0.01690767814972652,
+ "high_variance_yet_separated_pairs": 0,
+ "high_variance_yet_separated_examples": [],
+ "top20_rank_gap_share_with_mixture_supported_class": 0.85,
+ "all_pairs_share_with_mixture_supported_class": 0.9714285714285714
+}
