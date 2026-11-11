@@ -1,5 +1,5 @@
 """Exploratory, in-sample geometry of one pooled cohort (task.md 92a605a, output A): every train and val specimen of
-one fold (default fold0), so that fold's test specimens stay unread. NOT held-out evidence: everything is fitted and
+one fold (default fold0), so that fold's test specimens are not used. NOT held-out evidence: everything is fitted and
 described on the same specimens; held-out comparisons are in class_geometry_pilot.py runs per fold (output B).
 
 Unit: one embedding per specimen (mean of its camera-level means). Classes with at least 15 pooled specimens.
@@ -9,9 +9,11 @@ Predeclared statistics, no tuning:
 - between classes (native, pooled): radius separation, in-sample d' along the centroid direction, centroid distance,
   top-5 subspace overlap, 2-D PCA radius separation;
 - per class at each of ``--pcs`` (global PCA on the pool, whitened, reg_covar 1e-3): one full Gaussian vs a
-  2-component tied mixture by in-sample BIC; component share of the smaller group; both camera views in the same
-  component; association of the components with metadata: ARI with ``--source-column`` (if given), AUC of each
-  ``--numeric`` field (``log_image_area`` = log(width * height)).
+  2-component tied mixture by in-sample BIC (a ranking score, not a mode test); "unreliable" if a component's
+  responsibility mass is < d + 1 (summaries use reliable fits only); component share of the smaller group; both camera
+  views in the same component; agreement of the components with metadata: ARI with ``--source-column`` (partition
+  agreement, if given), AUC of each ``--numeric`` field (rank separation; ``log_image_area`` = log(width * height),
+  averaged per specimen like the embeddings: mean over cameras of the camera means).
 
 Writes per_class_geometry.csv, class_pairs.csv, per_class_mixture.csv, eigenspectra.png and results.json to ``--out``.
 
@@ -38,7 +40,7 @@ from src.features.chunk_store import file_sha256
 from src.features.feature_lookup import features_by_name
 from src.features.specimen_means import specimen_camera_means, specimen_means
 from src.statistics.class_geometry import principal_axes
-from src.statistics.class_modality import eligible, fit_mixture
+from src.statistics.class_modality import eligible, fit_mixture, smallest_component
 from src.statistics.specimen_geometry import between_classes, paired_views, within_class
 
 matplotlib.use("Agg")
@@ -54,7 +56,9 @@ def mixture_row(c, d, z, views, groups, numeric, seed) -> dict:
             return {**row, "status": "ineligible"}
         g1, g2 = fit_mixture(z, 1, "full", REG, seed), fit_mixture(z, 2, "tied", REG, seed)
         lab = g2.predict(z)
-        row.update({"status": "ok", "bic_gain_G2_tied": g1.bic(z) - g2.bic(z),
+        small = smallest_component(g2, z)
+        row.update({"status": "unreliable" if small < d + 1 else "ok", "G2_tied_smallest_component": small,
+                    "bic_gain_G2_tied": g1.bic(z) - g2.bic(z),
                     "smaller_component_share": float(np.bincount(lab, minlength=2).min() / len(lab)),
                     "both_views_same_component": float(np.mean(g2.predict(views[0]) == g2.predict(views[1])))})
         if groups is not None:
@@ -81,7 +85,7 @@ def main():
     S = a.fold
     cohort = pd.read_parquet(a.cohort)
     rows_in = len(cohort)
-    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # this fold's test rows are never read
+    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # test rows: dropped before lookup, never used
     if "log_image_area" in a.numeric:
         cohort["log_image_area"] = np.log(cohort.width * cohort.height)
     x, meta = features_by_name([tuple(Path(p) for p in s.split("=", 1)) for s in a.caches], cohort.img.tolist())
@@ -98,7 +102,8 @@ def main():
     pca = PCA(n_components=max(a.pcs), whiten=True, svd_solver="full").fit(sp)
     z_all, zc_all = pca.transform(sp), pca.transform(cam_means)
     source = None if a.source_column == "none" else cohort.groupby("individual")[a.source_column].first()
-    numeric = cohort.groupby("individual")[a.numeric].mean() if a.numeric else None
+    # numeric fields per specimen: mean over cameras of the camera means (camera-balanced, like the embeddings)
+    numeric = cohort.groupby(["individual", "camera"])[a.numeric].mean().groupby("individual").mean() if a.numeric else None
     jobs = []
     for d in a.pcs:
         for c in classes:
@@ -126,7 +131,8 @@ def main():
     by_d = {}
     for d, g in mix.groupby("pcs"):
         ok = g[g.status == "ok"]
-        s = {"classes_fitted": len(ok), "classes_ineligible": int((g.status != "ok").sum()),
+        s = {"classes_reliable": len(ok), "classes_unreliable": sorted(g.taxon_group[g.status == "unreliable"]),
+             "classes_ineligible": int((g.status == "ineligible").sum()),
              "bic_prefers_G2_tied": int((ok.bic_gain_G2_tied > 0).sum()),
              "both_views_same_component_median": float(ok.both_views_same_component.median())}
         if "ari_source" in ok:
@@ -136,13 +142,15 @@ def main():
         by_d[str(d)] = s
     result = {
         "status": "exploratory, in-sample: fitted and described on the same specimens; not held-out evidence",
-        "pool": f"{S} train + val specimens; {S} test rows not read", "cohort_sha256": file_sha256(a.cohort),
-        "cohort_rows": {"in_file": rows_in, "pool": len(cohort), "not_read": rows_in - len(cohort)},
+        "pool": f"{S} train + val specimens; {S} test rows dropped before feature lookup, never used",
+        "cohort_sha256": file_sha256(a.cohort),
+        "cohort_rows": {"in_file": rows_in, "pool": len(cohort), "test_rows_dropped": rows_in - len(cohort)},
         "encoder": meta["encoder"], "model_id": meta["model_id"], "transform": meta["transform"], "tf32": meta.get("tf32"),
         "seed": a.seed, "specimens": len(sp_keys), "classes": len(classes),
         "classes_below_min": {c: int(n[c]) for c in sorted(set(n.index) - set(classes))},
         "specimens_per_class_min_median_max": [int(n[classes].min()), float(n[classes].median()), int(n[classes].max())],
         "pca_explained_variance": {str(d): float(pca.explained_variance_ratio_[:d].sum()) for d in a.pcs},
+        "within_class_n30_classes": int(geo.effective_rank_n30.notna().sum()),
         "within_class_native_min_median_max": {k: [float(geo[k].min()), float(geo[k].median()), float(geo[k].max())]
                                               for k in ("rms_radius", "top1_share", "effective_rank", "effective_rank_n30",
                                                         "camera_reid", "frame_rms_within_specimen_median")},

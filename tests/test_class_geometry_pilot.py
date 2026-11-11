@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 from src.features import chunk_store
+from src.statistics.class_modality import INCONCLUSIVE, INSUFFICIENT, SUPPORTED, WORSE
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -57,7 +58,12 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     assert r["specimens_one_camera"] == {"train": 1, "val": 0}
     assert set(r["modality"]["by_pcs"]) == {"8", "16"} and r["modality"]["by_pcs"]["16"]["params"]["G1_full"] == 152
     mod = pd.read_csv(out / "per_class_modality.csv").set_index(["taxon_group", "pcs"])
-    assert mod.loc[("C", 8), "verdict"] == mod.loc[("C", 16), "verdict"] == "credible multiple groups"
+    assert mod.loc[("C", 8), "verdict"] == mod.loc[("C", 16), "verdict"] == SUPPORTED
+    assert set(mod.verdict) <= {SUPPORTED, INCONCLUSIVE, WORSE, INSUFFICIENT}
+    by8 = r["modality"]["by_pcs"]["8"]
+    g2 = by8["differences"]["G2_tied-G1_full"]  # primary over reliable fits, all fits kept as a diagnostic
+    assert g2["classes"] + len(g2["classes_excluded_unreliable"]) == g2["classes_fitted"] == 3
+    assert g2["all_fits_diagnostic"]["classes"] == 3 and by8["common_reliable_classes"]["classes"] <= 3
     assert mod.loc[("C", 8), "GD_tied-G1_full"] > 0  # the dataset model also explains C's split
     assert json.loads((out / "selection.json").read_text())["candidate_groups"][0] == "C"
     for f in ("eigenspectra.png", "class_internal_geometry.png", "class_pair_separation.png", "closest_pairs.png",
@@ -75,7 +81,7 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     run(["scripts/class_geometry_pilot.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches,
          "--out", str(plain), "--pcs", "8", "--n-stab", "30", "--jobs", "2", "--source-column", "none"])
     mod = pd.read_csv(plain / "per_class_modality.csv").set_index("taxon_group")
-    assert "GD_tied_status" not in mod and mod.loc["C", "verdict"] == "credible multiple groups"
+    assert "GD_tied_status" not in mod and mod.loc["C", "verdict"] == SUPPORTED
     run(["scripts/component_metadata.py", "--cohort", str(tmp_path / "cohort.parquet"), "--components",
          str(plain / "specimen_components.csv"), "--modality", str(plain / "per_class_modality.csv"),
          "--geometry", str(plain / "per_class_geometry.csv"), "--out", str(plain), "--fields", "--numeric", "log_image_area"])
@@ -90,7 +96,7 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     run(["scripts/class_geometry_pilot.py", "--cohort", str(tmp_path / "five_fold.parquet"), "--caches", *caches,
          "--out", str(f3), "--pcs", "8", "--n-stab", "30", "--jobs", "2", "--fold", "fold3"])
     r3 = json.loads((f3 / "results.json").read_text())
-    assert r3["fold"] == "fold3" and r3["cohort_rows"]["test_not_loaded"] == 6
+    assert r3["fold"] == "fold3" and r3["cohort_rows"]["test_rows_dropped"] == 6
     assert r3["specimens"] == r["specimens"]
     assert "fold3" in pd.read_csv(f3 / "specimen_components.csv")
     run(["scripts/component_metadata.py", "--cohort", str(tmp_path / "five_fold.parquet"), "--components",
@@ -104,7 +110,7 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     run(["scripts/descriptive_geometry.py", "--cohort", str(tmp_path / "five_fold.parquet"), "--caches", *caches,
          "--out", str(desc), "--fold", "fold3", "--pcs", "8", "--jobs", "2", "--numeric", "log_image_area"])
     rd = json.loads((desc / "results.json").read_text())
-    assert rd["cohort_rows"]["not_read"] == 6 and rd["specimens"] == 3 * 70 + 12 and rd["classes"] == 3
+    assert rd["cohort_rows"]["test_rows_dropped"] == 6 and rd["specimens"] == 3 * 70 + 12 and rd["classes"] == 3
     assert rd["classes_below_min"] == {"D": 12}
     m8 = rd["mixture_in_sample_by_pcs"]["8"]
     assert m8["source_ari_at_least_0.5"] == ["C"] and m8["log_image_area_auc_outside_0.2_0.8"] == ["C"]
@@ -119,8 +125,11 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     s = json.loads((tmp_path / "sum" / "Toy" / "summary.json").read_text())
     q = s["across_folds"]["pcs8_G2_tied-G1_full"]
     assert q["min"] == q["max"] and s["folds_ci_above_0"]["pcs8_G3_tied-G1_full"] in (0, 5)
-    assert s["classes_credible_in_all_folds"]["8"] == ["C"] and s["pairs"]["in_all_folds"] == 3
-    assert s["across_folds"]["pcs8_dataset_associated"]["mean"] == 1
+    assert s["classes_supported_in_all_folds"]["8"] == ["C"] and s["pairs"]["measured_in_all_folds"] == 3
+    labels = pd.read_csv(tmp_path / "sum" / "Toy" / "per_class_labels.csv")
+    assert {"n_train_fold0", "n_val_fold4", "folds_analysed"} <= set(labels) and (labels.folds_analysed == 5).all()
+    assert "pcs8_G2_tied-G1_full_classes_included" in s["across_folds"]
+    assert s["across_folds"]["pcs8_train_dataset_associated"]["mean"] == 1
     assert (tmp_path / "sum" / "comparison.md").exists()
 
 

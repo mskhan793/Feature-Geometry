@@ -38,14 +38,16 @@ def paired_views(cam_keys: pd.DataFrame, ids) -> tuple[np.ndarray, np.ndarray]:
 
 
 def within_class(classes, sp, x, cam, xc, frame_rms, seed, n_fixed: int = 30) -> pd.DataFrame:
-    """Per class: eigenvalue summary on all specimens and on the first ``n_fixed`` in sha1(seed:individual) order,
-    camera-pair re-identification, median RMS distance of a specimen-camera's frames to their mean."""
+    """Per class: eigenvalue summary on all specimens and, for classes with at least ``n_fixed`` specimens, on the first
+    ``n_fixed`` in sha1(seed:individual) order (NaN for smaller classes, so the fixed-size values always use exactly
+    ``n_fixed``), camera-pair re-identification, median RMS distance of a specimen-camera's frames to their mean."""
     rows = []
     for c in classes:
         k = sp[sp.taxon_group == c]
         first = k.index[np.argsort(stable_order(k.individual, seed).values)[:n_fixed]]
         r1, r2 = paired_views(cam, k.individual)
-        fixed = {f"{key}_n{n_fixed}": v for key, v in eigen_summary(x[first]).items() if key != "n"}
+        summary = eigen_summary(x[first]) if len(k) >= n_fixed else dict.fromkeys(eigen_summary(x[first]), np.nan)
+        fixed = {f"{key}_n{n_fixed}": v for key, v in summary.items() if key != "n"}
         rows.append({"taxon_group": c, **eigen_summary(x[k.index]), **fixed,
                      "camera_reid": reidentification(xc[r1], xc[r2]), "camera_reid_chance": 1 / len(r1),
                      "paired_specimens": len(r1), "frame_rms_within_specimen_median": float(np.median(

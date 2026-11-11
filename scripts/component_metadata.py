@@ -4,11 +4,17 @@ class_geometry_pilot.py)
 Per class, PCA dimension and split (train components from the train fit; val components predicted by the same train
 fit):
 - for each categorical field in ``--fields`` (default ``dataset year site``; AquaMonitor), the adjusted Rand index
-  (ARI) between the component labels and the field; near 1 = the split reproduces that field, near 0 = unrelated.
-  Only classes whose specimens span at least two values of a field get an ARI for it;
-- for each numeric field in ``--numeric`` (specimen mean of the image values), the AUC of the field for telling
-  component 1 from component 0; 0.5 = unrelated, near 0 or 1 = the components differ in that field. ``log_image_area``
-  is derived as log(width * height) of each image (FIN-Benthic2 crops: a rough proxy for specimen size).
+  (ARI) between the component labels and the field: partition agreement (near 1 = the split reproduces that field;
+  near 0 = no agreement between the two partitions, which does not show independence: a 2-group split can follow a
+  coarser grouping of several values without a high ARI). Only classes whose specimens span at least two values of a
+  field get an ARI for it;
+- for each numeric field in ``--numeric`` (per specimen: mean over cameras of the camera means of the image values,
+  camera-balanced like the embeddings), the AUC of the field for telling component 1 from component 0: rank
+  separation (near 0 or 1 = the components differ in that field; near 0.5 = no rank separation, which can miss
+  non-monotonic differences). ``log_image_area`` is derived as log(width * height) of each image (FIN-Benthic2 crops:
+  not calibrated specimen size, also orientation and zoom).
+Counts in the summary are per split (train components from the train fit, val components predicted by it); the
+thresholds (ARI >= 0.5, AUC outside 0.2-0.8) are descriptive, without uncertainty or multiplicity control.
 Also writes per_class_summary.csv: the compact per-class table, one row per class and PCA dimension (geometry,
 model comparison, verdict, nearest class, component-metadata scores).
 
@@ -55,7 +61,8 @@ def main():
     if meta.isna().any().any():
         raise RuntimeError("a specimen has more than one value of a metadata field")
     comp = pd.read_csv(a.components).join(meta.astype(str), on="individual")
-    comp = comp.join(cohort.groupby("individual")[a.numeric].mean(), on="individual")
+    comp = comp.join(cohort.groupby(["individual", "camera"])[a.numeric].mean().groupby("individual").mean(),
+                     on="individual")
     mod = pd.read_csv(a.modality)
     rows = []
     for (c, d, split), g in comp.groupby(["taxon_group", "pcs", a.fold]):

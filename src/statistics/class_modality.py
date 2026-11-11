@@ -60,8 +60,13 @@ def free_parameters(k: int, d: int, covariance_type: str) -> int:
     return k * d + (k - 1) + cov
 
 
+def within_budget(params: int, n: int, d: int) -> bool:
+    """The declared parameter budget: free parameters at most half the training scalars (n * d / 2)."""
+    return params <= n * d / 2
+
+
 def eligible(k: int, d: int, covariance_type: str, n: int) -> bool:
-    return free_parameters(k, d, covariance_type) <= n * d / 2
+    return within_budget(free_parameters(k, d, covariance_type), n, d)
 
 
 def covariances(gm) -> list[np.ndarray]:
@@ -82,31 +87,67 @@ def smallest_component(gm, z: np.ndarray) -> float:
 
 
 def split_stability(z_train: np.ndarray, z_val: np.ndarray, k: int, covariance_type: str, reg: float, seed: int,
-                    n_boot: int) -> dict:
+                    n_boot: int, min_mass: float) -> dict:
     """Median adjusted Rand index between the full-train fit's component labels and those of fits on 80 % train
     subsamples drawn without replacement (bootstrap duplicates let a component collapse onto repeated rows), on val
-    rows (held out) and on train rows. Val is never used for fitting."""
+    rows (held out) and on train rows. Val is never used for fitting. A resample whose fit fails or has a component
+    with responsibility mass below ``min_mass`` on its subsample does not reproduce a supported split: it counts as
+    ARI 0, so the median is over all ``n_boot`` resamples, never over the survivors only."""
     ref = fit_mixture(z_train, k, covariance_type, reg, seed)
     ref_val, ref_train = ref.predict(z_val), ref.predict(z_train)
     rng = np.random.default_rng(seed)
-    ari_val, ari_train, failures = [], [], 0
+    ari_val, ari_train, failures, under = [], [], 0, 0
     for _ in range(n_boot):
         idx = rng.choice(len(z_train), size=int(0.8 * len(z_train)), replace=False)
         try:
             gm = fit_mixture(z_train[idx], k, covariance_type, reg, seed)
         except (RuntimeError, ValueError):
             failures += 1
+            ari_val.append(0.0)
+            ari_train.append(0.0)
+            continue
+        if smallest_component(gm, z_train[idx]) < min_mass:
+            under += 1
+            ari_val.append(0.0)
+            ari_train.append(0.0)
             continue
         ari_val.append(adjusted_rand_score(ref_val, gm.predict(z_val)))
         ari_train.append(adjusted_rand_score(ref_train, gm.predict(z_train)))
     return {"ari_val_median": float(np.median(ari_val)), "ari_train_median": float(np.median(ari_train)),
-            "val_components_used": int(len(np.unique(ref_val))), "boot_failures": failures}
+            "val_components_used": int(len(np.unique(ref_val))), "boot_failures": failures,
+            "boot_under_supported": under}
+
+
+def is_stable(stability: dict, min_ari: float = 0.5) -> bool:
+    return stability["ari_val_median"] >= min_ari and stability["val_components_used"] == 2
+
+
+SUPPORTED, WORSE, INCONCLUSIVE, INSUFFICIENT = ("mixture-supported split (exploratory)", "single Gaussian predicts better",
+                                                "inconclusive", "insufficient evidence")
+
+
+def split_verdict(g2_tied_reliable: bool, g2_tied_ci95: list[float] | None, stable: bool) -> str:
+    """Per-class label from ONE model, the 2-component tied mixture (G2_tied): reliable fit, its paired held-out
+    log-density difference to G1_full (95 % interval, pointwise) and the stability of its own split.
+    - SUPPORTED: interval above 0 and the split is stable (exploratory: a better-predicting 2-component model with a
+      repeatable partition, not evidence of biological modes; a mixture can also fit skew or heavy tails);
+    - WORSE: interval below 0; INCONCLUSIVE: otherwise; INSUFFICIENT: G2_tied not fitted or not reliable."""
+    if not g2_tied_reliable or g2_tied_ci95 is None:
+        return INSUFFICIENT
+    if g2_tied_ci95[0] > 0 and stable:
+        return SUPPORTED
+    if g2_tied_ci95[1] < 0:
+        return WORSE
+    return INCONCLUSIVE
 
 
 class SourceGaussians:
     """Sensitivity model: one Gaussian per source group (e.g. ``dataset``) with a shared covariance, mixed with the
     train group proportions; scored unconditionally (the group of a scored row is not used). Groups with fewer than
-    ``min_group`` train rows are pooled into one group; if that pool is still too small it joins the largest group."""
+    ``min_group`` train rows are pooled into one group; if that pool is still too small it joins the largest group, so
+    the fitted groups are *pooled source groups*. Its support policy is this ``min_group`` rule (known labels), not the
+    d+1 responsibility-mass rule of the unsupervised mixtures; eligibility uses its own parameter count
+    (``n_parameters``) against the same n * d / 2 budget."""
 
     def __init__(self, reg: float, min_group: int = 5):
         self.reg, self.min_group = reg, min_group

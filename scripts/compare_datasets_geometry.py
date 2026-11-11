@@ -39,7 +39,7 @@ def summary(d: Path) -> dict:
         out[f"pcs{d_}_G2_tied_split_stable_share"] = s["G2_tied_split_stable_classes"] / n
         out[f"pcs{d_}_both_views_same_component_median"] = s["G2_tied_both_views_same_component_median"]
         for k in KEYS:
-            if k in s["differences"]:
+            if s["differences"].get(k, {}).get("classes"):  # primary (reliable) comparison with at least one class
                 v = s["differences"][k]
                 out[f"pcs{d_}_{k}"] = {"mean": round(v["mean"], 3), "ci95": [round(x, 3) for x in v["ci95"]],
                                        "classes": v["classes"], "share_ci_above_0": round(v["classes_ci_above_0"] / v["classes"], 3),

@@ -3,31 +3,36 @@ class (task.md fb26afc on the 30-specimen cohort; task.md fb46e1f on the expande
 
 Inputs: a cohort and the verified feature caches holding its images (looked up by image name,
 src.features.feature_lookup). ``--fold`` names the partition column (default fold0); only its train and val rows are
-used, test rows are dropped before any feature is loaded (task.md 92a605a: five folds, full specimens). Unit: one embedding per independent specimen = mean of its camera-level means
-(each the mean of its frames; a specimen imaged by one camera uses that camera). Everything fitted (PCA, centroids,
-covariances, mixtures, directions) uses train specimens only; val specimens are only scored or projected. Classes need
-at least 15 train and 5 val specimens; the others are listed with their counts.
+used: test rows are dropped before the feature lookup and never used (task.md 92a605a: five folds, full specimens).
+Unit: one embedding per independent specimen = mean of its camera-level means (each the mean of its frames; a
+specimen imaged by one camera uses that camera). Everything fitted (PCA, centroids, covariances, mixtures, directions)
+uses train specimens only; val specimens are only scored or projected. Classes need at least 15 train and 5 val
+specimens; the others are listed with their counts.
 
-1. Within class (native 1024-d, train): eigenvalue summary (src.statistics.class_geometry) on all train specimens and
-   on the first 30 in sha1(seed:individual) order (ranks depend on n; the n=30 values compare across classes and runs);
-   camera-pair re-identification on specimens with both cameras (share whose camera-1 view's nearest camera-2 view is
-   its own; chance 1/n); median RMS distance of a specimen-camera's frames to their mean.
+1. Within class (native 1024-d, train): eigenvalue summary (src.statistics.class_geometry) on all train specimens and,
+   for classes with at least 30, on the first 30 in sha1(seed:individual) order (ranks depend on n; the n=30 values
+   compare across classes and runs); camera-pair re-identification on specimens with both cameras (share whose
+   camera-1 view's nearest camera-2 view is its own; chance 1/n); median RMS distance of a specimen-camera's frames to
+   their mean.
 2. Between classes (native, train centroids): radius separation, d' along the train centroid direction measured on val
    specimens (primary closeness), d' on train, top-5 subspace overlap; radius separation also on L2-normalised
    embeddings and in the global 2-D PCA.
 3. One Gaussian or several, for each of ``--pcs`` (global PCA fitted on train specimens, whitened, reg_covar 1e-3,
    src.statistics.class_modality.fit_mixture starts, seed): models in MODELS, eligible if free parameters <= n*d/2,
-   unreliable if a component has < d+1 specimens. A class is analysed at d only if G1_full and G2_tied are eligible. Score: log density of each val specimen; differences to G1_full with
-   95 % bootstrap intervals over val specimens (per-class generator seeded by seed, class index and d).
-   Sensitivity (not used in the verdict): GD_tied, one Gaussian per source group (``--source-column``, default
-   ``dataset``) with shared covariance, mixed with train proportions (SourceGaussians); skipped with
-   ``--source-column none`` for datasets without a source field (FIN-Benthic2).
-   Predeclared per-class verdict over eligible, converged, reliable full/tied mixtures:
-     credible multiple groups: some mixture's interval lies above 0 AND the 2-component tied split is stable
-       (median val ARI over ``--n-stab`` 80 % train subsamples >= 0.5, both components used by val);
-     one Gaussian favoured: every mixture's interval lies below 0;
-     inconclusive: otherwise; insufficient evidence: no usable mixture.
-   Diagonal models are a diagnostic only.
+   unreliable if a component's responsibility mass is < d+1. A class is analysed at d only if G1_full and G2_tied are
+   eligible. Score: log density of each val specimen; paired differences to G1_full with 95 % bootstrap intervals over
+   val specimens (per-class generator seeded by seed, class index and d; pointwise intervals).
+   Class-macro summaries (src.statistics.class_macro): primary over classes where the model and G1_full are reliable;
+   all fitted comparisons kept as a diagnostic; all models also on the classes where every one is reliable.
+   Sensitivity (not used in the label): GD_tied, one Gaussian per pooled source group (``--source-column``, default
+   ``dataset``) with shared covariance, mixed with train proportions (SourceGaussians; eligibility with its own
+   parameter count); skipped with ``--source-column none`` (FIN-Benthic2).
+   Predeclared per-class label from the 2-component tied mixture alone (class_modality.split_verdict): "mixture-supported
+   split (exploratory)" if G1_full and G2_tied are reliable, the G2_tied interval lies above 0 and its own split is
+   stable (median val ARI over ``--n-stab`` 80 % train subsamples >= 0.5, failed or under-supported resamples counted as
+   ARI 0, both components used by val); "single Gaussian predicts better" if the interval lies below 0; "inconclusive"
+   otherwise; "insufficient evidence" if G2_tied is not reliable. Other mixtures are reported separately
+   (``other_mixtures_ci_above_0``). The label is not evidence of biological modes. Diagonal models are diagnostics.
 Plot/montage selection uses train BIC only, at the largest ``--pcs``: top 3 classes by BIC gain of the best 2-component
 full/tied mixture over G1_full ("candidate groups") and the bottom 2 ("candidate single cloud").
 
@@ -55,8 +60,10 @@ from src.features.chunk_store import file_sha256
 from src.features.feature_lookup import features_by_name
 from src.features.specimen_means import specimen_camera_means, specimen_means
 from src.statistics.class_geometry import direction, principal_axes
+from src.statistics.class_macro import ci95, compare, macro_difference, reliable
 from src.statistics.class_modality import (MODELS, SourceGaussians, condition_number, eligible, fit_mixture,
-                                           free_parameters, smallest_component, split_stability)
+                                           free_parameters, is_stable, smallest_component, split_stability,
+                                           split_verdict, within_budget)
 from src.statistics.specimen_geometry import between_classes, paired_views, within_class
 
 matplotlib.use("Agg")
@@ -64,10 +71,6 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 REG, N_BOOT, K_SUB, STABLE_ARI, MIN_TRAIN, MIN_VAL, N_FIXED = 1e-3, 2000, 5, 0.5, 15, 5, 30
 FT = [m for m, (k, c) in MODELS.items() if k > 1 and c != "diag"]
-
-
-def ci(a: np.ndarray) -> list[float]:
-    return [float(np.quantile(a, 0.025)), float(np.quantile(a, 0.975))]
 
 
 def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
@@ -93,7 +96,7 @@ def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
         if groups_t is not None:
             gd = SourceGaussians(REG).fit(zt, groups_t)
             row.update({"GD_tied_groups": len(gd.groups_), "GD_tied_params": gd.n_parameters(),
-                        "GD_tied_status": "ok" if eligible(1, d, "full", len(zt)) else "ineligible"})
+                        "GD_tied_status": "ok" if within_budget(gd.n_parameters(), len(zt), d) else "ineligible"})
             if row["GD_tied_status"] == "ok":
                 scores["GD_tied"] = gd.score_samples(zv)
         rng = np.random.default_rng([seed, ci_, d])
@@ -104,46 +107,47 @@ def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
             diff = scores[m] - scores[base]
             boots[f"{m}-{base}"] = diff[idx].mean(1)
             row[f"{m}-{base}"] = float(diff.mean())
-            row[f"{m}-{base}_ci95"] = ci(boots[f"{m}-{base}"])
-        st = split_stability(zt, zv, 2, "tied", REG, seed, n_stab)
+            row[f"{m}-{base}_ci95"] = ci95(boots[f"{m}-{base}"])
+        st = split_stability(zt, zv, 2, "tied", REG, seed, n_stab, d + 1)
         row.update({f"G2_tied_split_{key}": v for key, v in st.items()})
+        row["G2_tied_split_stable"] = is_stable(st, STABLE_ARI)
         la, lb = fits["G2_tied"].predict(views[0]), fits["G2_tied"].predict(views[1])
         row["G2_tied_both_views_same_component_train"] = float(np.mean(la == lb))
-        usable = [m for m in FT if row.get(f"{m}_status") == "ok"]
+        reliable_g1 = row.get("G1_full_status") == "ok"
+        row["verdict"] = split_verdict(reliable_g1 and row.get("G2_tied_status") == "ok",
+                                       row.get("G2_tied-G1_full_ci95"), row["G2_tied_split_stable"])
+        usable = [m for m in FT if row.get(f"{m}_status") == "ok"] if reliable_g1 else []
         row["usable_mixtures"] = ",".join(usable)
-        if not usable:
-            verdict = "insufficient evidence"
-        elif any(row[f"{m}-G1_full_ci95"][0] > 0 for m in usable) and st["ari_val_median"] >= STABLE_ARI \
-                and st["val_components_used"] == 2:
-            verdict = "credible multiple groups"
-        elif all(row[f"{m}-G1_full_ci95"][1] < 0 for m in usable):
-            verdict = "one Gaussian favoured"
-        else:
-            verdict = "inconclusive"
-        row["verdict"] = verdict
+        row["other_mixtures_ci_above_0"] = ",".join(m for m in usable if m != "G2_tied" and row[f"{m}-G1_full_ci95"][0] > 0)
         two = [row[f"{m}_bic_train"] for m in ("G2_full", "G2_tied") if f"{m}_bic_train" in row]
         row["bic_gain_best2_train"] = row["G1_full_bic_train"] - min(two)
     return row, boots, {"G1_full": fits["G1_full"], "G2_tied": fits["G2_tied"]}
 
 
 def summarise(per_d: pd.DataFrame, boots: dict, classes, d) -> dict:
-    diffs = {}
-    for key in [f"{m}-G1_full" for m in [*FT, "GD_tied"]] + ["G2_diag-G1_diag"]:
-        have = [c for c in classes if key in boots[c]]
-        if not have:
-            continue
-        t = per_d.set_index("taxon_group").loc[have]
-        diffs[key] = {"classes": len(have), "mean": float(t[key].mean()), "ci95": ci(np.mean([boots[c][key] for c in have], axis=0)),
-                      "classes_better": int((t[key] > 0).sum()), "classes_ci_above_0": int(sum(v[0] > 0 for v in t[f"{key}_ci95"])),
-                      "classes_ci_below_0": int(sum(v[1] < 0 for v in t[f"{key}_ci95"]))}
+    """Class-macro differences to the baseline (src.statistics.class_macro): primary over classes where model and
+    baseline are reliable, all fitted comparisons as a diagnostic, and every model on the classes where all of them are
+    reliable (``common_reliable_classes``)."""
+    t = per_d.set_index("taxon_group")
+    pairs = [(m, "G1_full") for m in FT] + ([("GD_tied", "G1_full")] if "GD_tied_status" in t else []) + [("G2_diag", "G1_diag")]
+    diffs = {f"{m}-{b}": compare(t, boots, m, b, classes) for m, b in pairs}
+    models = ["G1_full", *FT] + (["GD_tied"] if "GD_tied_status" in t else [])
+    common = reliable(t, classes, models)
+    stable = per_d.G2_tied_split_stable
     return {"pcs": d, "params": {m: free_parameters(k, d, cov) for m, (k, cov) in MODELS.items()},
             "status_counts": {m: per_d[f"{m}_status"].fillna("not fitted").value_counts().to_dict()
                               for m in [*MODELS, "GD_tied"] if f"{m}_status" in per_d},
-            "differences": diffs, "verdicts": per_d.verdict.value_counts().to_dict(),
+            "differences": diffs, "differences_note": "primary = reliable model and baseline; intervals pointwise",
+            "common_reliable_classes": {"models": models, "classes": len(common), "taxa": common,
+                                        "differences": {f"{m}-G1_full": macro_difference(t, boots, f"{m}-G1_full", common)
+                                                        for m in models if m != "G1_full"}},
+            "verdicts": per_d.verdict.value_counts().to_dict(),
             "verdict_classes": {v: sorted(g.taxon_group) for v, g in per_d.groupby("verdict")},
+            "other_mixtures_ci_above_0_classes": sorted(per_d.taxon_group[per_d.other_mixtures_ci_above_0.fillna("") != ""]),
             "G2_tied_split_ari_val_median_over_classes": float(per_d.G2_tied_split_ari_val_median.median()),
-            "G2_tied_split_stable_classes": int(((per_d.G2_tied_split_ari_val_median >= STABLE_ARI)
-                                                 & (per_d.G2_tied_split_val_components_used == 2)).sum()),
+            "G2_tied_split_stable_classes": int(stable.sum()),
+            "G2_tied_split_resamples_failed_or_under_supported": int((per_d.G2_tied_split_boot_failures
+                                                                      + per_d.G2_tied_split_boot_under_supported).sum()),
             "G2_tied_both_views_same_component_median": float(per_d.G2_tied_both_views_same_component_train.median()),
             "condition_max": {m: float(per_d[f"{m}_condition"].max()) for m in MODELS if f"{m}_condition" in per_d}}
 
@@ -257,7 +261,7 @@ def main():
     rows_in = len(cohort)
     if not set(cohort[S]) <= {"train", "val", "test"}:
         raise RuntimeError(f"unexpected values in {S}")
-    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # test rows: features never loaded
+    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # test rows dropped before lookup, never used
     pairs_in = [tuple(Path(p) for p in s.split("=", 1)) for s in a.caches]
     x, meta = features_by_name(pairs_in, cohort.img.tolist())
     cam_keys, cam_means, frame_rms = specimen_camera_means(x, cohort, S)
@@ -346,7 +350,7 @@ def main():
 
     result = {
         "cohort_sha256": file_sha256(a.cohort), "fold": S,
-        "cohort_rows": {"in_file": rows_in, "train_val_used": len(cohort), "test_not_loaded": rows_in - len(cohort)},
+        "cohort_rows": {"in_file": rows_in, "train_val_used": len(cohort), "test_rows_dropped": rows_in - len(cohort)},
         "encoder": meta["encoder"], "model_id": meta["model_id"],
         "transform": meta["transform"], "tf32": meta.get("tf32"), "seed": a.seed, "n_stab": a.n_stab,
         "unit": "specimen = mean of its camera-level means", "classes": len(classes),
@@ -362,7 +366,9 @@ def main():
                                 for k in ("rms_radius", "top1_share", "top5_share", "effective_rank", "participation_ratio",
                                           "effective_rank_n30", "participation_ratio_n30", "top1_share_n30", "camera_reid",
                                           "frame_rms_within_specimen_median")},
-        "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) order",
+        "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) "
+                             "order, only for classes with at least 30 (others NaN)",
+        "within_class_n30_classes": int(geo.effective_rank_n30.notna().sum()),
         "between_classes": {
             "pairs": len(pairs), "dprime_val_below_1": int((pairs.dprime_val < 1).sum()),
             "dprime_val_below_2": int((pairs.dprime_val < 2).sum()),

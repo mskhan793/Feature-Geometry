@@ -4,7 +4,8 @@ import numpy as np
 
 from src.statistics.class_geometry import (direction, direction_separation, eigen_summary, radius_separation,
                                            subspace_overlap)
-from src.statistics.class_modality import eligible, free_parameters, split_stability
+from src.statistics.class_modality import (INCONCLUSIVE, INSUFFICIENT, SUPPORTED, WORSE, SourceGaussians, eligible,
+                                           free_parameters, split_stability, split_verdict, within_budget)
 
 
 def test_eigen_summary_isotropic_vs_elongated():
@@ -47,8 +48,36 @@ def test_split_stability_two_clusters_vs_one():
     rng = np.random.default_rng(3)
     two = np.vstack([rng.normal(-4, 1, (40, 2)), rng.normal(4, 1, (40, 2))])
     val = np.vstack([rng.normal(-4, 1, (10, 2)), rng.normal(4, 1, (10, 2))])
-    s = split_stability(two, val, 2, "tied", 1e-3, 0, 30)
+    s = split_stability(two, val, 2, "tied", 1e-3, 0, 30, 3)
     assert s["ari_val_median"] > 0.95 and s["val_components_used"] == 2
+    assert s["boot_failures"] == 0 and s["boot_under_supported"] == 0
+
+
+def test_split_stability_counts_under_supported_resamples_as_not_reproduced():
+    """A split that only isolates a tiny group fails the support rule in every resample: ARI 0 for each, median 0,
+    instead of a median over the few survivors."""
+    rng = np.random.default_rng(4)
+    z = np.vstack([rng.normal(0, 1, (60, 2)), [[30, 30], [31, 30]]])  # two far outliers
+    val = rng.normal(0, 1, (20, 2))
+    s = split_stability(z, val, 2, "full", 1e-3, 0, 20, 3)
+    assert s["boot_under_supported"] + s["boot_failures"] > 10 and s["ari_val_median"] == 0
+
+
+def test_split_verdict_uses_the_two_component_tied_model_only():
+    assert split_verdict(True, [0.1, 0.4], True) == SUPPORTED
+    assert split_verdict(True, [0.1, 0.4], False) == INCONCLUSIVE  # better prediction, unstable split
+    assert split_verdict(True, [-0.4, 0.2], True) == INCONCLUSIVE
+    assert split_verdict(True, [-0.4, -0.1], True) == WORSE
+    assert split_verdict(False, [0.1, 0.4], True) == INSUFFICIENT  # unreliable G2_tied never supports a split
+    assert split_verdict(True, None, True) == INSUFFICIENT
+
+
+def test_source_model_budget_uses_its_own_parameter_count():
+    rng = np.random.default_rng(6)
+    z, groups = rng.normal(size=(40, 8)), np.repeat(["a", "b", "c", "d"], 10)
+    gd = SourceGaussians(1e-3).fit(z, groups)
+    assert gd.n_parameters() == 4 * 8 + 3 + 36  # 4 means, 3 weights, one shared covariance
+    assert eligible(1, 8, "full", 17) and not within_budget(gd.n_parameters(), 17, 8)  # 44 <= 68 < 71
 
 
 def test_specimen_means_are_float64():

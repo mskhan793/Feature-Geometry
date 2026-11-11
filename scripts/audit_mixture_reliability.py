@@ -1,5 +1,7 @@
 """How much do the reliability points of the 2026-11-11 methods review affect saved class_geometry_pilot.py outputs?
-(read-only; counts from per_class_modality.csv and per_class_geometry.csv of each fold run)
+(read-only; counts from per_class_modality.csv and per_class_geometry.csv of each fold run). Applies to outputs made
+before the correction (code up to commit 86a067a, label "credible multiple groups"); it produced
+docs/evidence/full_geometry_reliability_audit.json. Corrected runs report these quantities themselves.
 
 Per run and PCA dimension:
 - comparisons (class x mixture) whose mixture is "unreliable" (a component's responsibility mass < d + 1) but still
