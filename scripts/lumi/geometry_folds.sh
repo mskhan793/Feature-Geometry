@@ -18,12 +18,13 @@
 set -eo pipefail  # no -u: the module scripts read unset variables
 
 export CODE=$1 DATASET=$2 ROOT=$3
-source "$CODE/scripts/lumi/geometry_inputs.sh"
 FOLD=fold$SLURM_ARRAY_TASK_ID
+echo "start $(date -Is) job ${SLURM_ARRAY_JOB_ID}_$SLURM_ARRAY_TASK_ID node $SLURM_NODELIST $DATASET $FOLD"
+source "$CODE/scripts/lumi/geometry_inputs.sh"
+echo "inputs ok $(date -Is) code $(cat "$CODE/CODE_COMMIT")"
 OUT=$ROOT/$DATASET/geometry/$FOLD
 mkdir -p "$OUT"
 ENV="export PYTHONPATH=$CODE PYTHONUNBUFFERED=1 OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK; cd $CODE"
-echo "start $(date -Is) job ${SLURM_ARRAY_JOB_ID}_$SLURM_ARRAY_TASK_ID node $SLURM_NODELIST code $(cat "$CODE/CODE_COMMIT") $DATASET $FOLD"
 singularity exec "$SIF" bash -c "$ENV; python scripts/class_geometry_pilot.py --cohort $COHORT --caches $CACHES \
     --out $OUT --fold $FOLD --source-column $SOURCE --jobs $SLURM_CPUS_PER_TASK > $OUT/geometry.log 2>&1"
 singularity exec "$SIF" bash -c "$ENV; python scripts/component_metadata.py --cohort $COHORT \

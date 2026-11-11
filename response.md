@@ -66,4 +66,13 @@ exploratory.
 
 ## 3. LUMI jobs
 
-To be filled with job IDs, times and checks.
+| Job | What | Resources | Elapsed | Result |
+|---|---|---|---|---|
+| 23642052 | FIN-Benthic2 extraction, 57,347 new images (code d072185) | dev-g, 1 node, 8 GCDs | 7:34 | cache covers 57,347 / 57,347 rows (8 chunks); CPU vs GPU on 256 images max abs diff 1.8e-5, mean 2.2e-6 |
+| 23642060 | AquaMonitor extraction, 836,159 images (code d072185) | standard-g, 1 node, 8 GCDs | 20:25 | cache covers 836,159 / 836,159 rows (103 chunks); 138 img/s per GCD; CPU vs GPU max abs diff 2.1e-5, mean 2.1e-6 |
+| 23644988 | FIN-Benthic2 five-fold geometry (code 2844e9b) | small, 5 × 8 cores, 45 min | — | hung in the job setup with no output (0 CPU used); being diagnosed |
+
+GPU use so far: about 0.5 + 1.4 = 1.9 GPU-h (GCD-hours / 2), project 462001534.
+
+Features: FIN-Benthic2 = fold-0 cache (job 23623689, 128,937 images) + this job (57,347), both on LUMI MI250X;
+AquaMonitor = this job only. Paths: `/scratch/project_462001534/feature_geometry/full_specimen/<dataset>/extract/`.

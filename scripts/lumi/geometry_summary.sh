@@ -24,7 +24,7 @@ set -eo pipefail  # no -u: the module scripts read unset variables
 
 export CODE=$1 ROOT=$2
 N=$SLURM_CPUS_PER_TASK
-echo "start $(date -Is) job $SLURM_JOB_ID node $SLURM_NODELIST code $(cat "$CODE/CODE_COMMIT")"
+echo "start $(date -Is) job $SLURM_JOB_ID node $SLURM_NODELIST code $(cat "$CODE/CODE_COMMIT")"  # before any setup
 declare -A H5=([finbenthic2]=/flash/project_462001534/feature_geometry/finbenthic2/finbenthic2_images.h5
                [aquamonitor]=/flash/project_462001534/data_hdf_aqua/aquamonitor_complete.h5)
 declare -A NUMERIC=([finbenthic2]="--numeric log_image_area" [aquamonitor]="")
