@@ -88,6 +88,18 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     size = json.loads((plain / "component_metadata.json").read_text())["8_pcs_train"]["log_image_area"]
     assert size["classes_auc_outside_0.2_0.8_list"] == ["C"]  # C's groups differ in image size
 
+    # Bhattacharyya vs d' on the same fold: native d' reproduces the geometry run's d', pairs and labels line up
+    bh = tmp_path / "bh"
+    run(["scripts/bhattacharyya_overlap.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches,
+         "--out", str(bh), "--pcs", "8", "4", "--existing-pairs", str(out / "class_pairs.csv"),
+         "--labels", str(out / "per_class_modality.csv")])
+    sb = json.loads((bh / "summary.json").read_text())
+    assert sb["classes"] == 3 and sb["pairs"] == 3 and sb["native_dprime_regression"]["max_abs_diff_vs_existing_dprime_val"] < 1e-9
+    p8 = pd.read_csv(bh / "pairs_pcs8.csv")
+    assert p8.full_train_valid.all() and ((p8.spherical_train_bc > 0) & (p8.spherical_train_bc <= 1)).all()
+    assert np.allclose(p8.spherical_train_distance, p8.spherical_train_mean_term + p8.spherical_train_cov_term)
+    assert set(p8.label8_a.dropna()) | set(p8.label8_b.dropna()) and (bh / "bc_vs_dprime_pcs8.png").exists()
+
     # another fold column with test rows that have no features: they must be dropped before any feature lookup
     full = pd.DataFrame(rows).assign(fold3=lambda d: d.fold0)
     test_rows = full.head(6).assign(img=lambda d: "test_" + d.img, individual="T1", fold3="test")

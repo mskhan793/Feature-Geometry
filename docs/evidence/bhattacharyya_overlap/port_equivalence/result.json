@@ -1,0 +1,56 @@
+{
+ "original_sha256": "4f2dd55ca2068b75dd986b51115db0eccac0d511edff5fb336176c7df1ea1ead",
+ "tensorflow": "2.18.0",
+ "numpy": "2.0.2",
+ "checks": {
+  "dummy_diagonal": {
+   "classes": 7,
+   "rows": 558,
+   "max_abs_diff_class_mean": 2.1457672119140625e-06,
+   "max_abs_diff_class_variance": 4.76837158203125e-06,
+   "max_rel_diff_pair_distance": 3.2385852823139563e-07,
+   "max_abs_pair_distance": 107.3486099243164,
+   "gbc_original": -1.93371997559387e-13,
+   "gbc_port": -1.9337198400685984e-13,
+   "gbc_rel_diff": 7.008526222576074e-08,
+   "pass": true
+  },
+  "dummy_spherical": {
+   "classes": 7,
+   "rows": 558,
+   "max_abs_diff_class_mean": 2.1457672119140625e-06,
+   "max_abs_diff_class_variance": 4.76837158203125e-06,
+   "max_rel_diff_pair_distance": 2.0489216934911494e-07,
+   "max_abs_pair_distance": 28.16556739807129,
+   "gbc_original": -1.4944241684133885e-06,
+   "gbc_port": -1.4944240547265508e-06,
+   "gbc_rel_diff": 7.607400905615433e-08,
+   "pass": true
+  },
+  "real_diagonal": {
+   "classes": 39,
+   "rows": 5148,
+   "max_abs_diff_class_mean": 1.9073486328125e-06,
+   "max_abs_diff_class_variance": 1.9073486328125e-06,
+   "max_rel_diff_pair_distance": 2.008761817294676e-06,
+   "max_abs_pair_distance": 85.4788818359375,
+   "gbc_original": -5.379876613616943,
+   "gbc_port": -5.379873752593994,
+   "gbc_rel_diff": 5.318008487364279e-07,
+   "pass": true
+  },
+  "real_spherical": {
+   "classes": 39,
+   "rows": 5148,
+   "max_abs_diff_class_mean": 1.9073486328125e-06,
+   "max_abs_diff_class_variance": 1.9073486328125e-06,
+   "max_rel_diff_pair_distance": 7.319439670543237e-07,
+   "max_abs_pair_distance": 123.8803482055664,
+   "gbc_original": -3.9086625576019287,
+   "gbc_port": -3.9086618423461914,
+   "gbc_rel_diff": 1.8299244991450898e-07,
+   "pass": true
+  }
+ },
+ "pass": true
+}
