@@ -45,15 +45,19 @@ def main():
         fig, axes = plt.subplots(len(rows), width, figsize=(1.6 * width, 1.9 * len(rows)), squeeze=False)
         for r, (group, ids) in enumerate(rows):
             picks = [(i, cam) for i in ids for cam in cameras]
-            ds = image_dataset(first.loc[picks].reset_index(), lambda im: im, a.hdf5, a.image_root)
+            present = [p for p in picks if p in first.index]  # single-camera specimens leave an empty panel
+            ds = image_dataset(first.loc[present].reset_index(), lambda im: im, a.hdf5, a.image_root)
             for j in range(width):
                 ax = axes[r, j]
                 ax.axis("off")
                 if j < len(picks):
-                    image, _ = ds[j]
-                    image.thumbnail((200, 200))
-                    ax.imshow(image)
                     ax.set_title(f"{picks[j][0]} cam {picks[j][1]}", fontsize=5)
+                    if picks[j] in present:
+                        image, _ = ds[present.index(picks[j])]
+                        image.thumbnail((200, 200))
+                        ax.imshow(image)
+                    else:
+                        ax.text(0.5, 0.5, "no image\nfrom this camera", ha="center", va="center", fontsize=5)
             axes[r, 0].text(-0.1, 0.5, group.replace("_", " "), transform=axes[r, 0].transAxes, rotation=90,
                             va="center", ha="right", fontsize=7)
         fig.suptitle(f"{cls}: train specimens per group (camera 1 and 2 frames)", fontsize=9)
