@@ -1,0 +1,237 @@
+{
+ "d": 8,
+ "pairs_in_all_arms": 630,
+ "largest_rank_changes_among_hardest": [
+  {
+   "pair": "Diura_sp | Nemoura_sp",
+   "pca_distance": 3.0637,
+   "pca_bc": 0.0471,
+   "fda_distance": 0.9086,
+   "fda_bc": 0.4186,
+   "dprime_val_pca": 2.4386,
+   "folds": 5,
+   "rank_pca": 255.0,
+   "rank_fda": 17.0,
+   "rank_change": -238.0
+  },
+  {
+   "pair": "Diura_sp | Protonemura_sp",
+   "pca_distance": 1.9585,
+   "pca_bc": 0.1428,
+   "fda_distance": 0.6182,
+   "fda_bc": 0.5426,
+   "dprime_val_pca": 2.1158,
+   "folds": 5,
+   "rank_pca": 137.0,
+   "rank_fda": 10.0,
+   "rank_change": -127.0
+  },
+  {
+   "pair": "Baetis_vernus_group | Isoperla_sp",
+   "pca_distance": 0.4334,
+   "pca_bc": 0.6496,
+   "fda_distance": 10.7063,
+   "fda_bc": 0.0,
+   "dprime_val_pca": 1.7039,
+   "folds": 5,
+   "rank_pca": 13.0,
+   "rank_fda": 113.0,
+   "rank_change": 100.0
+  },
+  {
+   "pair": "Agapetus_sp | Hydropsyche_siltalai",
+   "pca_distance": 0.429,
+   "pca_bc": 0.652,
+   "fda_distance": 6.1499,
+   "fda_bc": 0.0025,
+   "dprime_val_pca": 1.6505,
+   "folds": 5,
+   "rank_pca": 12.0,
+   "rank_fda": 76.0,
+   "rank_change": 64.0
+  },
+  {
+   "pair": "Baetis_vernus_group | Kageronia_fuscogrisea",
+   "pca_distance": 1.1926,
+   "pca_bc": 0.3055,
+   "fda_distance": 0.642,
+   "fda_bc": 0.5272,
+   "dprime_val_pca": 1.9039,
+   "folds": 5,
+   "rank_pca": 74.0,
+   "rank_fda": 11.0,
+   "rank_change": -63.0
+  },
+  {
+   "pair": "Neureclipsis_bimaculata | Polycentropus_irroratus",
+   "pca_distance": 0.9985,
+   "pca_bc": 0.3737,
+   "fda_distance": 0.4763,
+   "fda_bc": 0.6286,
+   "dprime_val_pca": 2.1221,
+   "folds": 5,
+   "rank_pca": 63.0,
+   "rank_fda": 8.0,
+   "rank_change": -55.0
+  },
+  {
+   "pair": "Protonemura_sp | Taeniopteryx_nebulosa",
+   "pca_distance": 0.2141,
+   "pca_bc": 0.8077,
+   "fda_distance": 3.835,
+   "fda_bc": 0.0244,
+   "dprime_val_pca": 1.7276,
+   "folds": 5,
+   "rank_pca": 3.0,
+   "rank_fda": 56.0,
+   "rank_change": 53.0
+  },
+  {
+   "pair": "Ephemerella_mucronata | Kageronia_fuscogrisea",
+   "pca_distance": 0.2853,
+   "pca_bc": 0.752,
+   "fda_distance": 3.0136,
+   "fda_bc": 0.0523,
+   "dprime_val_pca": 1.1594,
+   "folds": 5,
+   "rank_pca": 5.0,
+   "rank_fda": 50.0,
+   "rank_change": 45.0
+  }
+ ],
+ "hardest_in_both": [
+  {
+   "pair": "Polycentropus_flavomaculatus | Polycentropus_irroratus",
+   "pca_distance": 0.1778,
+   "pca_bc": 0.8386,
+   "fda_distance": 0.1278,
+   "fda_bc": 0.8806,
+   "dprime_val_pca": 0.5511,
+   "folds": 5,
+   "rank_pca": 2.0,
+   "rank_fda": 2.0,
+   "rank_change": 0.0
+  },
+  {
+   "pair": "Leuctra_nigra | Leuctra_sp",
+   "pca_distance": 0.3721,
+   "pca_bc": 0.6943,
+   "fda_distance": 0.1934,
+   "fda_bc": 0.8255,
+   "dprime_val_pca": 0.9806,
+   "folds": 3,
+   "rank_pca": 8.0,
+   "rank_fda": 3.0,
+   "rank_change": -5.0
+  },
+  {
+   "pair": "Heptagenia_sulphurea | Kageronia_fuscogrisea",
+   "pca_distance": 0.3873,
+   "pca_bc": 0.6794,
+   "fda_distance": 0.0861,
+   "fda_bc": 0.9177,
+   "dprime_val_pca": 1.4257,
+   "folds": 5,
+   "rank_pca": 9.0,
+   "rank_fda": 1.0,
+   "rank_change": -8.0
+  },
+  {
+   "pair": "Baetis_rhodani | Kageronia_fuscogrisea",
+   "pca_distance": 0.392,
+   "pca_bc": 0.6761,
+   "fda_distance": 0.4832,
+   "fda_bc": 0.617,
+   "dprime_val_pca": 1.9677,
+   "folds": 5,
+   "rank_pca": 10.0,
+   "rank_fda": 9.0,
+   "rank_change": -1.0
+  }
+ ],
+ "covariance_dominated_pairs_full_pca": {
+  "count": 8,
+  "pairs": [
+   {
+    "pair": "Lepidostoma_hirtum | Micrasema_gelidum",
+    "min_share": 0.6647,
+    "mean_term": 0.1723,
+    "cov_term": 0.3797,
+    "dprime_val": 0.6085,
+    "folds": 5
+   },
+   {
+    "pair": "Lepidostoma_hirtum | Micrasema_setiferum",
+    "min_share": 0.6515,
+    "mean_term": 0.2986,
+    "cov_term": 0.6338,
+    "dprime_val": 1.1796,
+    "folds": 5
+   },
+   {
+    "pair": "Elmis_aenea | Hydraena_sp",
+    "min_share": 0.6419,
+    "mean_term": 0.8207,
+    "cov_term": 1.5949,
+    "dprime_val": 1.9181,
+    "folds": 5
+   },
+   {
+    "pair": "Plectrocnemia_sp | Polycentropus_flavomaculatus",
+    "min_share": 0.5988,
+    "mean_term": 0.128,
+    "cov_term": 0.2466,
+    "dprime_val": 0.8354,
+    "folds": 5
+   },
+   {
+    "pair": "Polycentropus_flavomaculatus | Polycentropus_irroratus",
+    "min_share": 0.5739,
+    "mean_term": 0.1258,
+    "cov_term": 0.2254,
+    "dprime_val": 0.5511,
+    "folds": 5
+   },
+   {
+    "pair": "Plectrocnemia_sp | Polycentropus_irroratus",
+    "min_share": 0.5547,
+    "mean_term": 0.3232,
+    "cov_term": 0.4598,
+    "dprime_val": 1.2023,
+    "folds": 5
+   },
+   {
+    "pair": "Leuctra_nigra | Leuctra_sp",
+    "min_share": 0.5279,
+    "mean_term": 0.3397,
+    "cov_term": 0.3799,
+    "dprime_val": 0.3853,
+    "folds": 1
+   },
+   {
+    "pair": "Micrasema_setiferum | Silo_pallipes",
+    "min_share": 0.5136,
+    "mean_term": 0.8774,
+    "cov_term": 0.9762,
+    "dprime_val": 1.9208,
+    "folds": 5
+   }
+  ]
+ },
+ "val_over_train_gbc_ratio": {
+  "pca": {
+   "fold0": 0.9412958170043825,
+   "fold1": 0.9221585823856079,
+   "fold2": 0.9157239763281121,
+   "fold3": 1.0396171248951942,
+   "fold4": 0.9641041647601097
+  },
+  "fda": {
+   "fold0": 1.3095692737823408,
+   "fold1": 1.233070167656777,
+   "fold2": 1.2616448492442816,
+   "fold3": 1.2548373265261281,
+   "fold4": 1.2998833458488253
+  }
+ }
+}

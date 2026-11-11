@@ -1,0 +1,213 @@
+{
+ "d": 8,
+ "pairs_in_all_arms": 861,
+ "largest_rank_changes_among_hardest": [
+  {
+   "pair": "Caenis horaria | Kageronia fuscogrisea",
+   "pca_distance": 0.3387,
+   "pca_bc": 0.7127,
+   "fda_distance": 9.1635,
+   "fda_bc": 0.0001,
+   "dprime_val_pca": 1.4331,
+   "folds": 5,
+   "rank_pca": 19.0,
+   "rank_fda": 349.0,
+   "rank_change": 330.0
+  },
+  {
+   "pair": "Caenis luctuosa | Kageronia fuscogrisea",
+   "pca_distance": 0.2812,
+   "pca_bc": 0.7549,
+   "fda_distance": 6.7781,
+   "fda_bc": 0.0012,
+   "dprime_val_pca": 1.5922,
+   "folds": 5,
+   "rank_pca": 14.0,
+   "rank_fda": 278.0,
+   "rank_change": 264.0
+  },
+  {
+   "pair": "Cloeon dipterum | Leptophlebia",
+   "pca_distance": 2.2082,
+   "pca_bc": 0.1106,
+   "fda_distance": 0.4748,
+   "fda_bc": 0.6223,
+   "dprime_val_pca": 2.277,
+   "folds": 5,
+   "rank_pca": 227.0,
+   "rank_fda": 15.0,
+   "rank_change": -212.0
+  },
+  {
+   "pair": "Ephemera vulgata | Sisyra",
+   "pca_distance": 1.7496,
+   "pca_bc": 0.1836,
+   "fda_distance": 0.3554,
+   "fda_bc": 0.7011,
+   "dprime_val_pca": 3.3499,
+   "folds": 3,
+   "rank_pca": 168.0,
+   "rank_fda": 10.0,
+   "rank_change": -158.0
+  },
+  {
+   "pair": "Cloeon | Leptophlebia",
+   "pca_distance": 1.2354,
+   "pca_bc": 0.2912,
+   "fda_distance": 0.3478,
+   "fda_bc": 0.7066,
+   "dprime_val_pca": 1.9322,
+   "folds": 5,
+   "rank_pca": 104.0,
+   "rank_fda": 8.0,
+   "rank_change": -96.0
+  },
+  {
+   "pair": "Limnephilidae | Limnephilus",
+   "pca_distance": 1.2076,
+   "pca_bc": 0.3031,
+   "fda_distance": 0.4257,
+   "fda_bc": 0.6622,
+   "dprime_val_pca": 1.4979,
+   "folds": 5,
+   "rank_pca": 99.0,
+   "rank_fda": 14.0,
+   "rank_change": -85.0
+  },
+  {
+   "pair": "Erpobdella octoculata | Helobdella stagnalis",
+   "pca_distance": 0.8624,
+   "pca_bc": 0.4233,
+   "fda_distance": 0.1665,
+   "fda_bc": 0.8482,
+   "dprime_val_pca": 2.2144,
+   "folds": 5,
+   "rank_pca": 67.0,
+   "rank_fda": 4.0,
+   "rank_change": -63.0
+  },
+  {
+   "pair": "Lepidostoma hirtum | Mystacides azurea",
+   "pca_distance": 0.838,
+   "pca_bc": 0.4333,
+   "fda_distance": 0.1469,
+   "fda_bc": 0.8638,
+   "dprime_val_pca": 1.6173,
+   "folds": 5,
+   "rank_pca": 64.0,
+   "rank_fda": 3.0,
+   "rank_change": -61.0
+  }
+ ],
+ "hardest_in_both": [
+  {
+   "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+   "pca_distance": 0.0698,
+   "pca_bc": 0.9328,
+   "fda_distance": 0.0994,
+   "fda_bc": 0.9055,
+   "dprime_val_pca": 0.2026,
+   "folds": 5,
+   "rank_pca": 1.0,
+   "rank_fda": 1.0,
+   "rank_change": 0.0
+  },
+  {
+   "pair": "Ecnomus tenellus | Tinodes waeneri",
+   "pca_distance": 0.2454,
+   "pca_bc": 0.7826,
+   "fda_distance": 0.2963,
+   "fda_bc": 0.7442,
+   "dprime_val_pca": 1.2439,
+   "folds": 5,
+   "rank_pca": 10.0,
+   "rank_fda": 6.0,
+   "rank_change": -4.0
+  }
+ ],
+ "covariance_dominated_pairs_full_pca": {
+  "count": 14,
+  "pairs": [
+   {
+    "pair": "Mystacides | Mystacides azurea",
+    "min_share": 0.8073,
+    "mean_term": 0.1753,
+    "cov_term": 0.8251,
+    "dprime_val": 1.237,
+    "folds": 4
+   },
+   {
+    "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+    "min_share": 0.767,
+    "mean_term": 0.0432,
+    "cov_term": 0.1822,
+    "dprime_val": 0.2026,
+    "folds": 5
+   },
+   {
+    "pair": "Mystacides | Psychomyia pusilla",
+    "min_share": 0.6799,
+    "mean_term": 0.4168,
+    "cov_term": 1.0066,
+    "dprime_val": 1.5092,
+    "folds": 4
+   },
+   {
+    "pair": "Mystacides | Tinodes waeneri",
+    "min_share": 0.6101,
+    "mean_term": 0.4657,
+    "cov_term": 0.8507,
+    "dprime_val": 2.2505,
+    "folds": 4
+   },
+   {
+    "pair": "Ecnomus tenellus | Mystacides",
+    "min_share": 0.6001,
+    "mean_term": 0.5906,
+    "cov_term": 1.0659,
+    "dprime_val": 2.0189,
+    "folds": 4
+   },
+   {
+    "pair": "Hydroptila | Mystacides",
+    "min_share": 0.5631,
+    "mean_term": 0.831,
+    "cov_term": 1.3023,
+    "dprime_val": 1.7056,
+    "folds": 4
+   },
+   {
+    "pair": "Lepidostoma hirtum | Leptophlebia",
+    "min_share": 0.5629,
+    "mean_term": 0.5979,
+    "cov_term": 0.7932,
+    "dprime_val": 1.8848,
+    "folds": 5
+   },
+   {
+    "pair": "Cyrnus trimaculatus | Mystacides",
+    "min_share": 0.5486,
+    "mean_term": 0.4982,
+    "cov_term": 0.7294,
+    "dprime_val": 2.1671,
+    "folds": 4
+   }
+  ]
+ },
+ "val_over_train_gbc_ratio": {
+  "pca": {
+   "fold0": 0.9579033461462778,
+   "fold1": 0.8955217318617187,
+   "fold2": 1.0261125312196222,
+   "fold3": 0.905026669144814,
+   "fold4": 0.9178557835911388
+  },
+  "fda": {
+   "fold0": 0.9842927084911495,
+   "fold1": 1.0587374442705475,
+   "fold2": 0.9917984093130328,
+   "fold3": 1.0150407321501582,
+   "fold4": 0.9356821064436188
+  }
+ }
+}

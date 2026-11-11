@@ -1,0 +1,237 @@
+{
+ "d": 32,
+ "pairs_in_all_arms": 861,
+ "largest_rank_changes_among_hardest": [
+  {
+   "pair": "Centroptilum luteolum | Cloeon dipterum",
+   "pca_distance": 4.1031,
+   "pca_bc": 0.0172,
+   "fda_distance": 7.5307,
+   "fda_bc": 0.0006,
+   "dprime_val_pca": 1.9333,
+   "folds": 5,
+   "rank_pca": 94.0,
+   "rank_fda": 15.0,
+   "rank_change": -79.0
+  },
+  {
+   "pair": "Centroptilum luteolum | Cloeon",
+   "pca_distance": 3.6223,
+   "pca_bc": 0.0272,
+   "fda_distance": 6.7277,
+   "fda_bc": 0.0013,
+   "dprime_val_pca": 2.6523,
+   "folds": 5,
+   "rank_pca": 73.0,
+   "rank_fda": 13.0,
+   "rank_change": -60.0
+  },
+  {
+   "pair": "Hydroptila | Orthotrichia",
+   "pca_distance": 3.4935,
+   "pca_bc": 0.0323,
+   "fda_distance": 4.6145,
+   "fda_bc": 0.0146,
+   "dprime_val_pca": 2.4776,
+   "folds": 5,
+   "rank_pca": 67.0,
+   "rank_fda": 7.0,
+   "rank_change": -60.0
+  },
+  {
+   "pair": "Limnephilidae | Limnephilus",
+   "pca_distance": 3.5791,
+   "pca_bc": 0.03,
+   "fda_distance": 8.6638,
+   "fda_bc": 0.0003,
+   "dprime_val_pca": 1.8006,
+   "folds": 5,
+   "rank_pca": 70.0,
+   "rank_fda": 19.0,
+   "rank_change": -51.0
+  },
+  {
+   "pair": "Caenis luctuosa | Kageronia fuscogrisea",
+   "pca_distance": 1.6163,
+   "pca_bc": 0.1988,
+   "fda_distance": 17.4742,
+   "fda_bc": 0.0,
+   "dprime_val_pca": 2.9927,
+   "folds": 5,
+   "rank_pca": 17.0,
+   "rank_fda": 66.0,
+   "rank_change": 49.0
+  },
+  {
+   "pair": "Lepidostoma hirtum | Limnephilidae",
+   "pca_distance": 3.4298,
+   "pca_bc": 0.036,
+   "fda_distance": 7.6926,
+   "fda_bc": 0.0007,
+   "dprime_val_pca": 2.0552,
+   "folds": 5,
+   "rank_pca": 61.0,
+   "rank_fda": 16.0,
+   "rank_change": -45.0
+  },
+  {
+   "pair": "Chironomidae | Tanypodinae",
+   "pca_distance": 0.8634,
+   "pca_bc": 0.4218,
+   "fda_distance": 15.5453,
+   "fda_bc": 0.0,
+   "dprime_val_pca": 1.8843,
+   "folds": 5,
+   "rank_pca": 5.0,
+   "rank_fda": 48.0,
+   "rank_change": 43.0
+  },
+  {
+   "pair": "Limnephilidae | Mystacides",
+   "pca_distance": 2.9838,
+   "pca_bc": 0.0563,
+   "fda_distance": 9.1649,
+   "fda_bc": 0.0002,
+   "dprime_val_pca": 2.1524,
+   "folds": 4,
+   "rank_pca": 45.0,
+   "rank_fda": 20.0,
+   "rank_change": -25.0
+  }
+ ],
+ "hardest_in_both": [
+  {
+   "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+   "pca_distance": 0.2195,
+   "pca_bc": 0.8035,
+   "fda_distance": 1.5242,
+   "fda_bc": 0.2224,
+   "dprime_val_pca": 0.401,
+   "folds": 5,
+   "rank_pca": 1.0,
+   "rank_fda": 2.0,
+   "rank_change": 1.0
+  },
+  {
+   "pair": "Cyrnus trimaculatus | Ecnomus tenellus",
+   "pca_distance": 0.8041,
+   "pca_bc": 0.4485,
+   "fda_distance": 2.866,
+   "fda_bc": 0.0613,
+   "dprime_val_pca": 1.5344,
+   "folds": 5,
+   "rank_pca": 3.0,
+   "rank_fda": 6.0,
+   "rank_change": 3.0
+  },
+  {
+   "pair": "Cloeon | Cloeon dipterum",
+   "pca_distance": 1.0056,
+   "pca_bc": 0.3684,
+   "fda_distance": 0.7232,
+   "fda_bc": 0.4861,
+   "dprime_val_pca": 1.4402,
+   "folds": 5,
+   "rank_pca": 8.0,
+   "rank_fda": 1.0,
+   "rank_change": -7.0
+  },
+  {
+   "pair": "Mystacides | Mystacides azurea",
+   "pca_distance": 1.0558,
+   "pca_bc": 0.3576,
+   "fda_distance": 2.0857,
+   "fda_bc": 0.1484,
+   "dprime_val_pca": 1.365,
+   "folds": 4,
+   "rank_pca": 10.0,
+   "rank_fda": 4.0,
+   "rank_change": -6.0
+  }
+ ],
+ "covariance_dominated_pairs_full_pca": {
+  "count": 55,
+  "pairs": [
+   {
+    "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+    "min_share": 0.8612,
+    "mean_term": 0.2861,
+    "cov_term": 2.0912,
+    "dprime_val": 0.401,
+    "folds": 5
+   },
+   {
+    "pair": "Oligochaeta | Spirosperma ferox",
+    "min_share": 0.7701,
+    "mean_term": 0.9521,
+    "cov_term": 3.2663,
+    "dprime_val": 2.3897,
+    "folds": 5
+   },
+   {
+    "pair": "Cloeon | Cloeon dipterum",
+    "min_share": 0.7563,
+    "mean_term": 0.8754,
+    "cov_term": 3.1018,
+    "dprime_val": 1.4402,
+    "folds": 5
+   },
+   {
+    "pair": "Oligochaeta | Stylaria lacustris",
+    "min_share": 0.6767,
+    "mean_term": 1.4513,
+    "cov_term": 3.0839,
+    "dprime_val": 2.575,
+    "folds": 5
+   },
+   {
+    "pair": "Ecnomus tenellus | Polycentropus flavomaculatus",
+    "min_share": 0.6326,
+    "mean_term": 1.3836,
+    "cov_term": 2.6145,
+    "dprime_val": 1.7513,
+    "folds": 5
+   },
+   {
+    "pair": "Caenis horaria | Caenis luctuosa",
+    "min_share": 0.6325,
+    "mean_term": 0.4893,
+    "cov_term": 0.8921,
+    "dprime_val": 0.9716,
+    "folds": 5
+   },
+   {
+    "pair": "Helobdella stagnalis | Turbellaria",
+    "min_share": 0.6274,
+    "mean_term": 2.2248,
+    "cov_term": 4.1668,
+    "dprime_val": 2.6267,
+    "folds": 5
+   },
+   {
+    "pair": "Hydroptila | Tinodes waeneri",
+    "min_share": 0.6184,
+    "mean_term": 2.9132,
+    "cov_term": 5.0199,
+    "dprime_val": 2.8298,
+    "folds": 5
+   }
+  ]
+ },
+ "val_over_train_gbc_ratio": {
+  "pca": {
+   "fold0": 0.7669300090978576,
+   "fold1": 0.7432611407688515,
+   "fold2": 0.9740698353292531,
+   "fold3": 0.7991618327782452,
+   "fold4": 0.7698747346471563
+  },
+  "fda": {
+   "fold0": 0.6842077680887869,
+   "fold1": 1.1595413288189587,
+   "fold2": 0.959943472694609,
+   "fold3": 1.377256015854111,
+   "fold4": 0.8050123691511136
+  }
+ }
+}

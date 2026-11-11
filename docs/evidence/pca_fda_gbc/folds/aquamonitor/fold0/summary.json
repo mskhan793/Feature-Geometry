@@ -1,0 +1,820 @@
+{
+ "fold": "fold0",
+ "cohort_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 836159,
+  "train_val_used": 668818,
+  "test_rows_dropped": 167341
+ },
+ "specimens": {
+  "train": 29346,
+  "val": 4386
+ },
+ "classes_train": 42,
+ "classes_gbc": 41,
+ "pairs": 820,
+ "classes_below_support": [
+  "Sisyra"
+ ],
+ "dims_requested": [
+  8,
+  16,
+  32
+ ],
+ "dims_used": [
+  8,
+  16,
+  32
+ ],
+ "dims_omitted": [],
+ "pca_explained_variance": {
+  "64": 0.8813360140035635,
+  "8": 0.6191975126124357,
+  "16": 0.7216977989225923,
+  "32": 0.8114760404523775
+ },
+ "fda": {
+  "main": {
+   "alpha": 0.0010229270825538744,
+   "alpha_ledoit_wolf": 0.0010229270825538744,
+   "condition_s_w": 146606.66634810832,
+   "rank": 41,
+   "eigenvalues_top32": [
+    30.229570792593318,
+    12.139533394972045,
+    10.228718429430822,
+    8.699254860102519,
+    7.832725582071718,
+    6.265596542315804,
+    5.855560308713221,
+    4.669140279216108,
+    4.153003983465266,
+    3.7940131594913953,
+    3.693685641691746,
+    3.1637920370117634,
+    2.8307272742128715,
+    2.536274560031392,
+    2.258565588093555,
+    1.9966205711869462,
+    1.9145379183414106,
+    1.490945520936271,
+    1.3631003654776666,
+    1.2561747403465044,
+    1.211374364990666,
+    0.9284028128655176,
+    0.8332626978229857,
+    0.809831711291295,
+    0.7026985246067428,
+    0.5894884724886424,
+    0.5363795356685577,
+    0.5135143937500554,
+    0.4702626932656255,
+    0.42960345805698263,
+    0.37575501886173657,
+    0.36552359979116533
+   ]
+  },
+  "shrink0.5": {
+   "alpha": 0.0005114635412769372,
+   "alpha_ledoit_wolf": 0.0010229270825538744,
+   "condition_s_w": 293362.45316507074,
+   "rank": 41,
+   "eigenvalues_top32": [
+    30.351720666467497,
+    12.224670505385259,
+    10.283785236726338,
+    8.74132861429562,
+    7.866941126206885,
+    6.303515500504206,
+    5.885206389071374,
+    4.700503491756444,
+    4.172737494030194,
+    3.81671396469218,
+    3.718835724706855,
+    3.1861300371569787,
+    2.846612948953637,
+    2.5497339341859058,
+    2.274940347082574,
+    2.0121220275143497,
+    1.9280422709095584,
+    1.5020732548007372,
+    1.374914307797907,
+    1.265181930515416,
+    1.2213913310504345,
+    0.9360012322725636,
+    0.8402148959365328,
+    0.8155401620412605,
+    0.7082355758989807,
+    0.593937834822033,
+    0.5414333147421166,
+    0.5185934320934417,
+    0.4745851425493863,
+    0.43322870847824946,
+    0.37917531489229894,
+    0.36919635352509167
+   ]
+  },
+  "shrink2": {
+   "alpha": 0.002045854165107749,
+   "alpha_ledoit_wolf": 0.0010229270825538744,
+   "condition_s_w": 73228.77293962576,
+   "rank": 41,
+   "eigenvalues_top32": [
+    30.01286359096828,
+    11.985934881515147,
+    10.13062922542388,
+    8.621514246652433,
+    7.771271245146306,
+    6.196128198663201,
+    5.801677397796728,
+    4.612344542940461,
+    4.117001944426849,
+    3.753086781965686,
+    3.6473509514357634,
+    3.122628225998558,
+    2.8017933284872907,
+    2.5112703846839497,
+    2.2281904657992944,
+    1.968220495317743,
+    1.8893075261261003,
+    1.4705754732487444,
+    1.3414584901968116,
+    1.2394466501548715,
+    1.1934753333501489,
+    0.9145534308303717,
+    0.8205561159399669,
+    0.7996296610334312,
+    0.6924724480925297,
+    0.5812925122936846,
+    0.5273606029541955,
+    0.5042794909366762,
+    0.46229283537129173,
+    0.42309829998993265,
+    0.3695440875107607,
+    0.35876159250951045
+   ]
+  }
+ },
+ "arms": {
+  "pca64": {
+   "dims": 64,
+   "full": {
+    "pairs_valid_train": 210,
+    "spearman_distance_vs_dprime_val": 0.8245881830815729,
+    "gbc_train": -0.09146780068723342,
+    "distance_train_median": 24.99205542214834,
+    "cov_term_share_median": 0.47965899233308484,
+    "pairs_valid_train_and_val": 21,
+    "spearman_distance_train_vs_val": 0.9753246753246754,
+    "top20_hardest_overlap_train_vs_val": 20,
+    "gbc_val": -0.0015327735331078312,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7010504324903777,
+    "gbc_train": -6.923697264919745,
+    "distance_train_median": 11.024662597742438,
+    "cov_term_share_median": 0.09797981805393896,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9250938004688636,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -2.512638835403424
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8110154761115813,
+    "gbc_train": -7.157319778728096,
+    "distance_train_median": 18.598362033586298,
+    "cov_term_share_median": 0.004429068185830439,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9548294115003362,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -3.889346645840985
+   }
+  },
+  "pca8": {
+   "dims": 8,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8835595328688224,
+    "gbc_train": -87.86292238435686,
+    "distance_train_median": 4.888069907017922,
+    "cov_term_share_median": 0.2075288027768423,
+    "pairs_valid_train_and_val": 325,
+    "spearman_distance_train_vs_val": 0.9426291227518223,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -21.496266239307133,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8752143789189628,
+    "gbc_train": -151.33689721803887,
+    "distance_train_median": 3.791507614900079,
+    "cov_term_share_median": 0.06228008537465757,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9514259009758251,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -128.06630372073695
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8325522531101688,
+    "gbc_train": -179.30277149955825,
+    "distance_train_median": 3.5886518624359462,
+    "cov_term_share_median": 0.010832753415557853,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9664829451763887,
+    "top20_hardest_overlap_train_vs_val": 15,
+    "gbc_val": -171.75472479272827
+   }
+  },
+  "fda8": {
+   "dims": 8,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.825884478651776,
+    "gbc_train": -88.29437852525666,
+    "distance_train_median": 7.442254202239143,
+    "cov_term_share_median": 0.06168265043947571,
+    "pairs_valid_train_and_val": 325,
+    "spearman_distance_train_vs_val": 0.9415381119675599,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -19.42212110876119,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7774786595023665,
+    "gbc_train": -94.56311915864065,
+    "distance_train_median": 9.649174123494753,
+    "cov_term_share_median": 0.02577416987411902,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.942236191860386,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -76.85054391433185
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.763338209575695,
+    "gbc_train": -90.79205394272583,
+    "distance_train_median": 12.667283121039182,
+    "cov_term_share_median": 0.0059739336138685695,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9716855834618229,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -89.36595668476016
+   }
+  },
+  "fda8_raw": {
+   "dims": 8,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8150936731489893,
+    "gbc_train": -88.2943785252566,
+    "distance_train_median": 7.442254202239135,
+    "cov_term_share_median": 0.0616826504394756,
+    "pairs_valid_train_and_val": 325,
+    "spearman_distance_train_vs_val": 0.9415381119675599,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -19.422121108761175,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7575066764039166,
+    "gbc_train": -94.40728134683444,
+    "distance_train_median": 9.670363868519296,
+    "cov_term_share_median": 0.025518124313154658,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.94547856112872,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -78.15908562602615
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7316048517795346,
+    "gbc_train": -92.45894059320511,
+    "distance_train_median": 11.823606920282641,
+    "cov_term_share_median": 0.007295357552539565,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9774700409262661,
+    "top20_hardest_overlap_train_vs_val": 14,
+    "gbc_val": -91.38900001366467
+   }
+  },
+  "fda8_shrink0.5": {
+   "dims": 8,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8227809859846935,
+    "gbc_train": -88.80414092769756,
+    "distance_train_median": 7.441081489234483,
+    "cov_term_share_median": 0.06097956838720868,
+    "pairs_valid_train_and_val": 325,
+    "spearman_distance_train_vs_val": 0.9412906157691435,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -19.535845386545237,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7752493211511066,
+    "gbc_train": -95.46984655036943,
+    "distance_train_median": 9.689068209239062,
+    "cov_term_share_median": 0.025832682958649454,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9426775021320637,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -77.3951968868107
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7568051330149901,
+    "gbc_train": -91.992964009922,
+    "distance_train_median": 12.566252275623238,
+    "cov_term_share_median": 0.0060985031592869585,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9721700519062452,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -90.25600501833856
+   }
+  },
+  "fda8_shrink2": {
+   "dims": 8,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8263242872018606,
+    "gbc_train": -87.3502754495791,
+    "distance_train_median": 7.438662429902985,
+    "cov_term_share_median": 0.0624426413787251,
+    "pairs_valid_train_and_val": 325,
+    "spearman_distance_train_vs_val": 0.9417041581458759,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -19.230152250865743,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7771500001142614,
+    "gbc_train": -93.66275487617398,
+    "distance_train_median": 9.628394867544372,
+    "cov_term_share_median": 0.02579813965168984,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9414816094059134,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -76.22658182701862
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7650378754861688,
+    "gbc_train": -89.90292416220774,
+    "distance_train_median": 12.713603605797118,
+    "cov_term_share_median": 0.005873748344429954,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.971322819758695,
+    "top20_hardest_overlap_train_vs_val": 13,
+    "gbc_val": -88.60640112558016
+   }
+  },
+  "pca16": {
+   "dims": 16,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8284969518860371,
+    "gbc_train": -16.338561189804572,
+    "distance_train_median": 8.842808945156536,
+    "cov_term_share_median": 0.29399566434854996,
+    "pairs_valid_train_and_val": 91,
+    "spearman_distance_train_vs_val": 0.9783882783882786,
+    "top20_hardest_overlap_train_vs_val": 18,
+    "gbc_val": -2.3386381405886874,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8346648706946974,
+    "gbc_train": -58.08390258547371,
+    "distance_train_median": 5.479065096391297,
+    "cov_term_share_median": 0.06975536173050899,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9374904469286691,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -39.076165372069816
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.82845353254432,
+    "gbc_train": -74.42892490035678,
+    "distance_train_median": 6.038606849693389,
+    "cov_term_share_median": 0.007923128659972273,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9567590802194645,
+    "top20_hardest_overlap_train_vs_val": 15,
+    "gbc_val": -64.89158130896871
+   }
+  },
+  "fda16": {
+   "dims": 16,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.6241858138890313,
+    "gbc_train": -18.89977661082714,
+    "distance_train_median": 11.004786140808454,
+    "cov_term_share_median": 0.13458340366580365,
+    "pairs_valid_train_and_val": 91,
+    "spearman_distance_train_vs_val": 0.9378563465519988,
+    "top20_hardest_overlap_train_vs_val": 18,
+    "gbc_val": -1.7817047250222546,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.5040068870258109,
+    "gbc_train": -21.442588352467396,
+    "distance_train_median": 17.196777312911326,
+    "cov_term_share_median": 0.04856555590793121,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9113457786878064,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -13.700722245673962
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.4732705635471447,
+    "gbc_train": -19.000620141191792,
+    "distance_train_median": 24.403279410047368,
+    "cov_term_share_median": 0.01500570110381174,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9296442998293805,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -15.662730681363826
+   }
+  },
+  "fda16_raw": {
+   "dims": 16,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.5942024623228389,
+    "gbc_train": -18.899776610827143,
+    "distance_train_median": 11.004786140808445,
+    "cov_term_share_median": 0.1345834036658049,
+    "pairs_valid_train_and_val": 91,
+    "spearman_distance_train_vs_val": 0.9378563465519988,
+    "top20_hardest_overlap_train_vs_val": 18,
+    "gbc_val": -1.7817047250222613,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.4734416292242856,
+    "gbc_train": -22.051453206437365,
+    "distance_train_median": 16.920704495858992,
+    "cov_term_share_median": 0.0487531724808268,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9201103264797152,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -14.483105053428847
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.4041172635629128,
+    "gbc_train": -19.183594764299425,
+    "distance_train_median": 23.127687730403316,
+    "cov_term_share_median": 0.017769610682336512,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9383864523818773,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -16.112093417078654
+   }
+  },
+  "fda16_shrink0.5": {
+   "dims": 16,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.6209966142707297,
+    "gbc_train": -18.970706085411148,
+    "distance_train_median": 10.990088729745034,
+    "cov_term_share_median": 0.13364619643200526,
+    "pairs_valid_train_and_val": 91,
+    "spearman_distance_train_vs_val": 0.9375696767001115,
+    "top20_hardest_overlap_train_vs_val": 18,
+    "gbc_val": -1.7828849856626396,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.5024996808841614,
+    "gbc_train": -21.520549479414555,
+    "distance_train_median": 17.371991631695685,
+    "cov_term_share_median": 0.0482094821492194,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9119099036689126,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -13.71582750200118
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.46190290107583115,
+    "gbc_train": -19.06806521193272,
+    "distance_train_median": 24.388470117421292,
+    "cov_term_share_median": 0.015303101218809935,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9291197854758056,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -15.692581359500828
+   }
+  },
+  "fda16_shrink2": {
+   "dims": 16,
+   "full": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.6257583775661075,
+    "gbc_train": -18.77420014225104,
+    "distance_train_median": 11.040514268335889,
+    "cov_term_share_median": 0.1351069047323123,
+    "pairs_valid_train_and_val": 91,
+    "spearman_distance_train_vs_val": 0.9376493072145248,
+    "top20_hardest_overlap_train_vs_val": 18,
+    "gbc_val": -1.7798406018211594,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.5059133552345281,
+    "gbc_train": -21.285984173556386,
+    "distance_train_median": 17.175867664427486,
+    "cov_term_share_median": 0.04884450115645128,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9099830425162411,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -13.622032342386571
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.48031860002983856,
+    "gbc_train": -18.891290831139287,
+    "distance_train_median": 24.46755792564325,
+    "cov_term_share_median": 0.01468557417414283,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9290267222651881,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -15.582296904479414
+   }
+  },
+  "pca32": {
+   "dims": 32,
+   "full": {
+    "pairs_valid_train": 528,
+    "spearman_distance_vs_dprime_val": 0.817555801791749,
+    "gbc_train": -1.9874799400685683,
+    "distance_train_median": 14.977279848512943,
+    "cov_term_share_median": 0.37400541176465973,
+    "pairs_valid_train_and_val": 55,
+    "spearman_distance_train_vs_val": 0.9837662337662341,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -0.16971585200716405,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.7777552809726542,
+    "gbc_train": -19.786984268742046,
+    "distance_train_median": 8.181258499358341,
+    "cov_term_share_median": 0.08044192787941616,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9337495496195475,
+    "top20_hardest_overlap_train_vs_val": 14,
+    "gbc_val": -10.322335130318876
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.8163651742927462,
+    "gbc_train": -23.20881017771685,
+    "distance_train_median": 10.47651014493796,
+    "cov_term_share_median": 0.0059084382678003915,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9559515675198512,
+    "top20_hardest_overlap_train_vs_val": 17,
+    "gbc_val": -17.799533000746838
+   }
+  },
+  "fda32": {
+   "dims": 32,
+   "full": {
+    "pairs_valid_train": 528,
+    "spearman_distance_vs_dprime_val": 0.4926479148167702,
+    "gbc_train": -1.4828642953103717,
+    "distance_train_median": 15.069779544861396,
+    "cov_term_share_median": 0.19412569848703726,
+    "pairs_valid_train_and_val": 55,
+    "spearman_distance_train_vs_val": 0.9709956709956711,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -0.07702945483725489,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3758371907446504,
+    "gbc_train": -3.110727656421401,
+    "distance_train_median": 25.188716151349638,
+    "cov_term_share_median": 0.07006975585424668,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.8906701628486482,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.1285214480498924
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3905814198081213,
+    "gbc_train": -2.793152199034105,
+    "distance_train_median": 36.378805191859655,
+    "cov_term_share_median": 0.018127233719343314,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9213302902795193,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.9110964320334134
+   }
+  },
+  "fda32_raw": {
+   "dims": 32,
+   "full": {
+    "pairs_valid_train": 528,
+    "spearman_distance_vs_dprime_val": 0.4397709296869218,
+    "gbc_train": -1.4828642953103723,
+    "distance_train_median": 15.069779544861383,
+    "cov_term_share_median": 0.19412569848703723,
+    "pairs_valid_train_and_val": 55,
+    "spearman_distance_train_vs_val": 0.9709956709956711,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -0.0770294548372551,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3342788955991178,
+    "gbc_train": -3.0755677934785957,
+    "distance_train_median": 24.347911696271325,
+    "cov_term_share_median": 0.07207818039654068,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.8881006083822398,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.121277717642475
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3165681569947634,
+    "gbc_train": -2.58042171529385,
+    "distance_train_median": 32.93640447881957,
+    "cov_term_share_median": 0.020869242680093283,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9303000733558351,
+    "top20_hardest_overlap_train_vs_val": 14,
+    "gbc_val": -1.7534815059768227
+   }
+  },
+  "fda32_shrink0.5": {
+   "dims": 32,
+   "full": {
+    "pairs_valid_train": 528,
+    "spearman_distance_vs_dprime_val": 0.4889104852813186,
+    "gbc_train": -1.4833610106614756,
+    "distance_train_median": 15.054889539777749,
+    "cov_term_share_median": 0.19303571983542966,
+    "pairs_valid_train_and_val": 55,
+    "spearman_distance_train_vs_val": 0.9720057720057722,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -0.07702052207940209,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3753628861260839,
+    "gbc_train": -3.1309462794483944,
+    "distance_train_median": 25.24284348601751,
+    "cov_term_share_median": 0.06938508974676101,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.8907286646985407,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.126569476154104
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.37986983556039733,
+    "gbc_train": -2.7960698998111804,
+    "distance_train_median": 36.26647851664772,
+    "cov_term_share_median": 0.018470185313971058,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9208185079133654,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.9031492455781691
+   }
+  },
+  "fda32_shrink2": {
+   "dims": 32,
+   "full": {
+    "pairs_valid_train": 528,
+    "spearman_distance_vs_dprime_val": 0.49526219969719043,
+    "gbc_train": -1.4812962150416962,
+    "distance_train_median": 15.071147665817879,
+    "cov_term_share_median": 0.19582235189289035,
+    "pairs_valid_train_and_val": 55,
+    "spearman_distance_train_vs_val": 0.9715728715728718,
+    "top20_hardest_overlap_train_vs_val": 19,
+    "gbc_val": -0.07709785946256321,
+    "share_mean_term_ge_dprime2_over_8": 1.0
+   },
+   "diagonal": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3786660207087407,
+    "gbc_train": -3.0818251159826984,
+    "distance_train_median": 25.04319074481699,
+    "cov_term_share_median": 0.07079120991954818,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.8900156298748141,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.119488958476996
+   },
+   "spherical": {
+    "pairs_valid_train": 820,
+    "spearman_distance_vs_dprime_val": 0.3992127931880167,
+    "gbc_train": -2.7912901582768685,
+    "distance_train_median": 36.6753236087928,
+    "cov_term_share_median": 0.018127346238750758,
+    "pairs_valid_train_and_val": 820,
+    "spearman_distance_train_vs_val": 0.9216485682009582,
+    "top20_hardest_overlap_train_vs_val": 16,
+    "gbc_val": -1.9126087896148922
+   }
+  }
+ },
+ "between_arms": {
+  "fda8_vs_pca8": {
+   "spearman_spherical_distance": 0.6658194780472787,
+   "top20_hardest_overlap": 7
+  },
+  "fda8_vs_fda8_raw": {
+   "spearman_spherical_distance": 0.9954748340298384,
+   "top20_hardest_overlap": 19
+  },
+  "fda8_vs_fda8_shrink0.5": {
+   "spearman_spherical_distance": 0.9998236674152422,
+   "top20_hardest_overlap": 20
+  },
+  "fda8_vs_fda8_shrink2": {
+   "spearman_spherical_distance": 0.999925327437879,
+   "top20_hardest_overlap": 20
+  },
+  "fda16_vs_pca16": {
+   "spearman_spherical_distance": 0.7562728706485575,
+   "top20_hardest_overlap": 10
+  },
+  "fda16_vs_fda16_raw": {
+   "spearman_spherical_distance": 0.985670180804015,
+   "top20_hardest_overlap": 20
+  },
+  "fda16_vs_fda16_shrink0.5": {
+   "spearman_spherical_distance": 0.99968559608499,
+   "top20_hardest_overlap": 19
+  },
+  "fda16_vs_fda16_shrink2": {
+   "spearman_spherical_distance": 0.9998614716240455,
+   "top20_hardest_overlap": 20
+  },
+  "fda32_vs_pca32": {
+   "spearman_spherical_distance": 0.7784277257852018,
+   "top20_hardest_overlap": 13
+  },
+  "fda32_vs_fda32_raw": {
+   "spearman_spherical_distance": 0.9663058073206315,
+   "top20_hardest_overlap": 19
+  },
+  "fda32_vs_fda32_shrink0.5": {
+   "spearman_spherical_distance": 0.9995900952972934,
+   "top20_hardest_overlap": 19
+  },
+  "fda32_vs_fda32_shrink2": {
+   "spearman_spherical_distance": 0.9997988781269135,
+   "top20_hardest_overlap": 20
+  }
+ },
+ "regression_vs_previous_fold0": {
+  "pca64": {
+   "pairs": 820,
+   "columns": 20,
+   "max_abs_diff": 1.602273869139026e-12
+  },
+  "pca8": {
+   "pairs": 820,
+   "columns": 20,
+   "max_abs_diff": 2.1671553440683056e-13
+  },
+  "pca16": {
+   "pairs": 820,
+   "columns": 20,
+   "max_abs_diff": 6.465938895416912e-13
+  }
+ }
+}

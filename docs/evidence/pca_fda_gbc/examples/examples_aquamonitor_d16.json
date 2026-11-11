@@ -1,0 +1,225 @@
+{
+ "d": 16,
+ "pairs_in_all_arms": 861,
+ "largest_rank_changes_among_hardest": [
+  {
+   "pair": "Caenis luctuosa | Kageronia fuscogrisea",
+   "pca_distance": 0.9341,
+   "pca_bc": 0.3931,
+   "fda_distance": 12.4798,
+   "fda_bc": 0.0,
+   "dprime_val_pca": 2.804,
+   "folds": 5,
+   "rank_pca": 20.0,
+   "rank_fda": 189.0,
+   "rank_change": 169.0
+  },
+  {
+   "pair": "Centroptilum luteolum | Cloeon dipterum",
+   "pca_distance": 2.3736,
+   "pca_bc": 0.0943,
+   "fda_distance": 1.1704,
+   "fda_bc": 0.3152,
+   "dprime_val_pca": 1.8478,
+   "folds": 5,
+   "rank_pca": 119.0,
+   "rank_fda": 12.0,
+   "rank_change": -107.0
+  },
+  {
+   "pair": "Lepidostoma hirtum | Psychomyia pusilla",
+   "pca_distance": 0.8562,
+   "pca_bc": 0.425,
+   "fda_distance": 9.2877,
+   "fda_bc": 0.0001,
+   "dprime_val_pca": 2.2555,
+   "folds": 5,
+   "rank_pca": 17.0,
+   "rank_fda": 119.0,
+   "rank_change": 102.0
+  },
+  {
+   "pair": "Centroptilum luteolum | Cloeon",
+   "pca_distance": 2.0892,
+   "pca_bc": 0.1244,
+   "fda_distance": 1.5191,
+   "fda_bc": 0.2213,
+   "dprime_val_pca": 2.5146,
+   "folds": 5,
+   "rank_pca": 88.0,
+   "rank_fda": 15.0,
+   "rank_change": -73.0
+  },
+  {
+   "pair": "Gyraulus | Pisidium",
+   "pca_distance": 0.8776,
+   "pca_bc": 0.416,
+   "fda_distance": 7.4438,
+   "fda_bc": 0.0007,
+   "dprime_val_pca": 2.5935,
+   "folds": 4,
+   "rank_pca": 18.0,
+   "rank_fda": 82.0,
+   "rank_change": 64.0
+  },
+  {
+   "pair": "Hydroptila | Orthotrichia",
+   "pca_distance": 1.8919,
+   "pca_bc": 0.1529,
+   "fda_distance": 1.8537,
+   "fda_bc": 0.1661,
+   "dprime_val_pca": 2.2161,
+   "folds": 5,
+   "rank_pca": 75.0,
+   "rank_fda": 18.0,
+   "rank_change": -57.0
+  },
+  {
+   "pair": "Lepidostoma hirtum | Mystacides azurea",
+   "pca_distance": 1.5561,
+   "pca_bc": 0.2118,
+   "fda_distance": 0.7733,
+   "fda_bc": 0.4639,
+   "dprime_val_pca": 1.907,
+   "folds": 5,
+   "rank_pca": 56.0,
+   "rank_fda": 8.0,
+   "rank_change": -48.0
+  },
+  {
+   "pair": "Oligochaeta | Stylaria lacustris",
+   "pca_distance": 1.4516,
+   "pca_bc": 0.2343,
+   "fda_distance": 1.1301,
+   "fda_bc": 0.3249,
+   "dprime_val_pca": 2.4303,
+   "folds": 5,
+   "rank_pca": 48.0,
+   "rank_fda": 10.0,
+   "rank_change": -38.0
+  }
+ ],
+ "hardest_in_both": [
+  {
+   "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+   "pca_distance": 0.1093,
+   "pca_bc": 0.8967,
+   "fda_distance": 0.7658,
+   "fda_bc": 0.4814,
+   "dprime_val_pca": 0.2871,
+   "folds": 5,
+   "rank_pca": 1.0,
+   "rank_fda": 7.0,
+   "rank_change": 6.0
+  },
+  {
+   "pair": "Caenis horaria | Caenis luctuosa",
+   "pca_distance": 0.2031,
+   "pca_bc": 0.8163,
+   "fda_distance": 0.7066,
+   "fda_bc": 0.4944,
+   "dprime_val_pca": 0.8064,
+   "folds": 5,
+   "rank_pca": 2.0,
+   "rank_fda": 6.0,
+   "rank_change": 4.0
+  },
+  {
+   "pair": "Heptagenia dalecarlica | Kageronia fuscogrisea",
+   "pca_distance": 0.5076,
+   "pca_bc": 0.602,
+   "fda_distance": 0.5151,
+   "fda_bc": 0.5988,
+   "dprime_val_pca": 1.6423,
+   "folds": 5,
+   "rank_pca": 10.0,
+   "rank_fda": 2.0,
+   "rank_change": -8.0
+  }
+ ],
+ "covariance_dominated_pairs_full_pca": {
+  "count": 32,
+  "pairs": [
+   {
+    "pair": "Mystacides | Mystacides azurea",
+    "min_share": 0.8474,
+    "mean_term": 0.3713,
+    "cov_term": 2.267,
+    "dprime_val": 1.3546,
+    "folds": 4
+   },
+   {
+    "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+    "min_share": 0.7995,
+    "mean_term": 0.1245,
+    "cov_term": 0.5939,
+    "dprime_val": 0.2871,
+    "folds": 5
+   },
+   {
+    "pair": "Caenis horaria | Caenis rivulorum",
+    "min_share": 0.7121,
+    "mean_term": 0.8273,
+    "cov_term": 2.1036,
+    "dprime_val": 1.9327,
+    "folds": 3
+   },
+   {
+    "pair": "Oligochaeta | Spirosperma ferox",
+    "min_share": 0.69,
+    "mean_term": 0.7361,
+    "cov_term": 1.6636,
+    "dprime_val": 2.271,
+    "folds": 5
+   },
+   {
+    "pair": "Limnephilidae | Limnephilus",
+    "min_share": 0.6889,
+    "mean_term": 0.5377,
+    "cov_term": 1.3408,
+    "dprime_val": 1.7948,
+    "folds": 5
+   },
+   {
+    "pair": "Hydroptila | Orthotrichia",
+    "min_share": 0.6383,
+    "mean_term": 1.363,
+    "cov_term": 2.5961,
+    "dprime_val": 2.2161,
+    "folds": 5
+   },
+   {
+    "pair": "Heptagenia dalecarlica | Mystacides",
+    "min_share": 0.6288,
+    "mean_term": 1.3625,
+    "cov_term": 2.7359,
+    "dprime_val": 1.4563,
+    "folds": 4
+   },
+   {
+    "pair": "Caenis luctuosa | Caenis rivulorum",
+    "min_share": 0.6205,
+    "mean_term": 1.169,
+    "cov_term": 1.9761,
+    "dprime_val": 2.2743,
+    "folds": 3
+   }
+  ]
+ },
+ "val_over_train_gbc_ratio": {
+  "pca": {
+   "fold0": 0.8718597157737212,
+   "fold1": 0.8241915645607097,
+   "fold2": 0.9876579373836961,
+   "fold3": 0.864509168134184,
+   "fold4": 0.8534386815293866
+  },
+  "fda": {
+   "fold0": 0.8243273411591606,
+   "fold1": 0.9631449047355484,
+   "fold2": 1.111842452048115,
+   "fold3": 0.9595275917818513,
+   "fold4": 0.8514382746042266
+  }
+ }
+}

@@ -1,119 +1,140 @@
 # Coding assistant response — Feature-Geometry
 
-**Current task:** `task.md` 0237ac7, "Small addition: Bhattacharyya class overlap versus existing d′".
-**Status: done for fold 0 of FIN-Benthic2 and AquaMonitor; stopped for the author's review.** Frozen DINOv3-L,
-existing full-specimen caches, fold-0 train specimens for fitting, fold-0 val specimens for d′ and the held-out
-re-estimate; no test rows used, no classifiers, no other folds, encoders or methods.
+**Current task:** `task.md` eeb9707, "PCA-GBC vs regularized FDA-GBC".
+**Status: done for all five folds of FIN-Benthic2 and AquaMonitor; stopped for the author's review.** Frozen DINOv3-L,
+existing specimen embeddings; train specimens fit PCA, FDA and the class Gaussians; val specimens give d′ and the
+held-out re-estimate; no test rows used, no classifiers, no other methods.
 
-Previous response (corrected five-fold geometry): commit c05a7e6.
+Previous response (Bhattacharyya vs d′, fold 0): commit bf7a2fa.
 
-## 1. Source and decisions
+## 1. Sources and our choices
 
-- **Paper:** Pándy et al., arXiv:2111.12780v3, `~/Documents/Research/methods/gbc_pandy2022/paper.pdf`, SHA256
-  `18d703e3…`; equations, page references and code provenance in `docs/bhattacharyya_source_note.md`.
-- **Code:** the paper links none. The authors' later code release (google-research `stable_transfer`, ECCV 2022 paper,
-  commit 5b09c22) differs from Eq. (2) for spherical Gaussians (no factor d, ÷n variance, 1e-4 floor).
-- **Author's decisions (chat, 2026-11-11):** main = **Eq. (2) exactly** (factor d, unbiased ÷(n−1) variance, no floor;
-  spherical variance s_c = trace(Σ_c)/d, our definition since the paper gives none); the authors' code formula
-  recorded as a labelled reproduction. Q2/Q3 as recommended: diagonal and full covariance as sensitivity (full only for
-  classes with ≥ 2 × d train specimens); Gaussians fitted on fold-0 train, re-estimated on fold-0 val; d′ recomputed in
-  the same space. PCA unwhitened, fitted on fold-0 train specimens; 64 PCs main, 8 and 16 sensitivity.
-- **Code port verified against the original TensorFlow code** (TensorFlow 2.18.0 installed locally for the check, then
-  deleted): dummy data (7 classes, incl. a class that triggers the floor) and real FIN-Benthic2 fold-0 train specimens
-  (39 taxa, 5,148 specimens, 64 PCs), diagonal and spherical: largest relative pair-distance difference 2.0e-6, GBC
-  −5.379877 vs −5.379874 and −3.908663 vs −3.908662 (float32 rounding). Evidence
-  `docs/evidence/bhattacharyya_overlap/port_equivalence/`.
+Full note: `docs/pca_fda_gbc_method_note.md`.
 
-## 2. What ran
+- **Pándy et al. 2022** (local, SHA256 `18d703e3…`): Eq. (2) Gaussian Bhattacharyya, 64-PC spherical baseline;
+  manuscript formula main, the authors' code release only as a diagnostic (`docs/bhattacharyya_source_note.md`).
+- **Mensink et al. 2013**, TPAMI (local UvA manuscript, SHA256 `5dfaa5a3…`, already verified): FDA in Sect. 3.2,
+  Eq. (8), S_B = Σ_c (N_c/N)(μ − μ_c)(μ − μ_c)ᵀ, S_W = Σ_c (N_c/N) Σ_c, details referred to Webb (2002, a textbook,
+  not available locally). **No code** in either paper for FDA.
+- **Our choices:** Σ_c biased (S_W = pooled within-class scatter / N); **Ledoit–Wolf shrinkage** S_W* = (1 − α) S_W +
+  α (tr S_W / D) I with α estimated from the training residuals (α/2 and 2α as sensitivity); generalised eigenproblem
+  S_B v = λ S_W* v by `scipy.linalg.eigh`; **orthonormal basis (QR) of the top-d FDA directions**, centred on the train
+  mean like PCA (raw eigenvector scaling as sensitivity); d ∈ {8, 16, 32} matched with PCA-d; PCA-64 as the separate
+  paper baseline (no FDA-64: rank ≤ C − 1).
 
-LUMI job 23655191 (small, 16 cores, 1:16, project 462001534; code abb8ac9), both datasets, fold 0:
+## 2. Equal means, different covariances (part A)
 
-| | FIN-Benthic2 | AquaMonitor |
+- With equal means the Bhattacharyya mean term is 0 and the covariance term ½ ln(|Σ̄| / √(|Σ_a||Σ_b|)) is > 0
+  whenever the covariances differ, from **orientation alone** (same eigenvalues, rotated axes) or **scale alone**.
+  Hand-checked 2-D cases give BC = 0.8 in both (diag(4, 1) vs diag(1, 4); I vs 4I).
+- d′ is **undefined** when the means coincide (its direction u = Δμ/‖Δμ‖ is 0/0); the code now raises for that case
+  and the pair tables report d′ as undefined (`dprime_defined`), never as 0. d′ sees the covariances only through
+  uᵀΣ̄u, the average variance along u.
+- **Link:** for the same Σ̄, Bhattacharyya mean term = ⅛ Δμᵀ Σ̄⁻¹ Δμ ≥ d′²/8 (Cauchy–Schwarz), equality iff u is an
+  eigenvector of Σ̄. **Verified on all real full-covariance pairs**: in every arm and fold the share of pairs
+  satisfying it is 1.000; in the earlier fold-0 tables the mean term is 1.6–4.8× d′²/8 (median over pairs, by
+  dimension), i.e. the Mahalanobis direction separates class means clearly better than the centroid direction.
+- **Real equal-mean-like pairs:** some of the closest taxon pairs have nearly coincident means and differ mainly in
+  covariance. Full covariance, PCA-16, covariance term > 50 % of the distance in every fold: 8 FIN-Benthic2 and 32
+  AquaMonitor pairs, e.g. *Polycentropus flavomaculatus* / *P. irroratus* (covariance share ≥ 0.74, mean term 0.25 vs
+  covariance term 0.94, d′ 0.57), AquaMonitor *Cyrnus trimaculatus* / *Polycentropus flavomaculatus* (≥ 0.80; d′ 0.29),
+  *Mystacides* / *Mystacides azurea* (≥ 0.85; genus vs species label).
+
+## 3. What ran
+
+| Job (LUMI, project 462001534, small) | What | Result |
 |---|---|---|
-| Train / val specimens | 6,165 / 1,542 | 29,346 / 4,386 |
-| Taxa (≥ 15 train, ≥ 5 val) / pairs | 36 / 630 | 41 / 820 |
-| Variance in 64 PCs | 0.846 | 0.881 |
-| Taxa with a full covariance at 64 PCs (≥ 128 train) | 23 (253 pairs) | 21 (210 pairs) |
-| Native 1024-D d′ vs the existing fold-0 values | max diff 3.6e-15 | max diff 1.8e-15 |
+| 23658769 (array, code cb5c21a) | 10 tasks = 2 datasets × 5 folds | folds 0 completed (26 s, 1:04); folds 1–4 **failed in 1–3 s**: my job-script bug (`EXTRA=$(test && echo)` exits under `set -e`) |
+| 23658770 | summary | cancelled by me (its dependency could never be met) |
+| 23658824 (array, code 87f0542) | folds 1–4 of both datasets, fixed script | completed, 23–64 s each |
+| 23658825 | five-fold summary | completed |
 
-Orientation summary on the Dell from the fetched tables (`scripts/bhattacharyya_orientation_summary.py`, read-only).
-Evidence: `docs/evidence/bhattacharyya_overlap/{finbenthic2,aquamonitor}/` (`pairs_pcs{64,8,16}.csv` per class
-pair, `classes_pcs*.csv`, `summary.json`, `orientation_pcs*.json`, figures).
+About 2 CPU-hours in total. Every fold used d = 8, 16 and 32 (FDA rank 38 for FIN-Benthic2, 41 for AquaMonitor).
+**Regression:** the fold-0 PCA-64, PCA-8 and PCA-16 arms reproduce the previous task's tables (max difference
+1.6e-12). Evidence `docs/evidence/pca_fda_gbc/` (`summary/<dataset>/`: indicators per fold, cross-fold stability,
+per-pair fold summaries; `examples/`; `folds/`: per-fold summaries and class counts); full pair tables (74 MB) outside
+Git in `Feature_geometry_data/pca_fda_gbc/`.
 
-## 3. Results
+## 4. Results (spherical covariance, the paper's form; fold mean [min, max] over five correlated folds)
 
-**Paper formula vs the authors' code (spherical):** nearly the same ranking on our data. BC Spearman 0.998 (FIN-Benthic2)
-and 0.999 (AquaMonitor) at 64 PCs; the 20 most overlapping pairs agree in 18 and 19 of 20; dataset-level GBC −3.548 vs
-−3.707 and −7.157 vs −7.514. The missing factor d changes little here because the spherical covariance term is a small
-part of the distance (median 1.4 % and 0.4 %). The 1e-4 floor never applies.
+| | FIN-Benthic2 PCA-d | FIN-Benthic2 FDA-d | AquaMonitor PCA-d | AquaMonitor FDA-d |
+|---|---|---|---|---|
+| **d = 8** train→val Spearman of pair distance | 0.972 [0.949, 0.982] | 0.974 [0.962, 0.981] | 0.945 [0.925, 0.966] | 0.975 [0.968, 0.987] |
+| 20 hardest pairs shared train / val | 15.2 [14, 16] | 17.2 [17, 18] | 14.4 [13, 15] | 14.4 [13, 17] |
+| Spearman with d′ (val, same space) | 0.852 | 0.851 | 0.812 | 0.842 |
+| val / train GBC per fold | 0.92–1.04 | **1.23–1.31** | 0.90–1.03 | 0.94–1.06 |
+| **d = 16** train→val Spearman | 0.971 | 0.971 | 0.942 | 0.938 |
+| 20 hardest shared train / val | 15.4 | 19.0 | 14.4 | 16.6 |
+| Spearman with d′ | 0.815 | 0.737 | 0.803 | **0.599** |
+| val / train GBC per fold | 0.88–1.00 | 1.08–1.62 | 0.82–0.99 | 0.82–1.11 |
+| **d = 32** train→val Spearman | 0.971 | 0.955 | 0.945 | 0.907 |
+| 20 hardest shared train / val | 15.8 | 17.4 | 16.0 | 16.6 |
+| Spearman with d′ | 0.795 | 0.719 | 0.783 | **0.485** |
 
-**d′ vs Bhattacharyya distance (same 64-PC space; Spearman over pairs; 20 closest pairs shared):**
+**PCA-64 baseline:** train→val Spearman 0.972 (FIN-Benthic2) and 0.947 (AquaMonitor); Spearman with d′ 0.783 and 0.770.
 
-| Covariance | FIN-Benthic2 | AquaMonitor | Covariance-term share of the distance (median) |
-|---|---|---|---|
-| spherical (paper setting) | 0.760; 12 of 20 | 0.811; 11 of 20 | 0.014 / 0.004 |
-| diagonal | 0.746; 14 of 20 | 0.701; 9 of 20 | 0.109 / 0.098 |
-| full (eligible taxa only) | 0.754; 15 of 20 | 0.825; 15 of 20 | 0.425 / 0.480 |
+**PCA vs FDA rank the pairs differently:** Spearman of the pair distance between FDA-d and PCA-d 0.73 / 0.80 / 0.84
+(FIN-Benthic2, d = 8 / 16 / 32) and 0.66 / 0.73 / 0.77 (AquaMonitor); of the 20 hardest pairs only 6–13 are shared.
 
-At 16 PCs, where every taxon has a full covariance: full 0.890 and 0.828, covariance-term share 0.216 and 0.294.
-Pair BC from train vs val specimens (spherical, 64 PCs): Spearman 0.948 and 0.955.
+**Fold-to-fold reproducibility** (Spearman between folds on pairs analysed in all folds, median; 20 hardest pairs that
+recur in all five folds): PCA 0.996–0.997, 15–17 pairs; FDA 0.986–0.996, 11–16 pairs (AquaMonitor FDA-8 and FDA-16:
+11).
+
+**Shrinkage sensitivity is uninformative here:** the Ledoit–Wolf intensity is small (α = 0.007 FIN-Benthic2,
+0.001 AquaMonitor), S_W* stays ill-conditioned (condition number 1.7e4 and 1.5e5), and halving or doubling α leaves
+the pair ranking unchanged (Spearman 1.000). Raw vs orthonormal FDA scaling: Spearman 0.96–1.00.
 
 **Reading.**
-- The spherical Bhattacharyya of the paper is almost entirely the mean term, i.e. the class-mean distance scaled by the
-  average variance over all 64 directions. d′ scales the same distance by the variance *along* the separating
-  direction only. The two rank pairs similarly (0.76–0.81) but share only about half of the 20 closest pairs.
-- With a full covariance, the covariance-shape term is about half of the distance (0.43–0.48 at 64 PCs), so here the
-  Bhattacharyya distance carries information d′ does not have: the two classes' ellipsoids differ in shape and
-  orientation.
+- FDA does what it is trained to do: classes look more separated in its subspace (dataset-level GBC −35.5 vs −124.3
+  at d = 8 in FIN-Benthic2; −89.2 vs −174.1 in AquaMonitor). That alone is **not** better overlap estimation.
+- **Train-to-val stability** of the pair ranking is similar for PCA and FDA (both ≥ 0.9); FDA keeps more of the 20
+  hardest pairs from train to val in FIN-Benthic2, not consistently in AquaMonitor.
+- **Supervised optimism (FIN-Benthic2):** with FDA the held-out val specimens overlap 1.23–1.31× more than the train
+  specimens it was fitted on (d = 8, every fold); with PCA the ratio is about 1. This is the expected overfitting
+  signal of a label-trained projection with ~6,000 train specimens; AquaMonitor (~29,000) shows no consistent
+  optimism.
+- **Agreement with held-out d′** falls in FDA at higher d, strongly in AquaMonitor (0.60 at 16, 0.49 at 32 vs about
+  0.8 for PCA), and FDA's hardest pairs recur less across folds there.
+- Net: in these data FDA-GBC **does not show more held-out-stable overlap information** than PCA-GBC; it changes
+  which pairs look hardest, with signs of optimism on the training specimens in the smaller dataset.
 
-**Orientation (full covariance; `orientation_pcs*.json`).** Along-ratio = class variance along the train
-centroid-difference direction u divided by its mean variance per dimension (geometric mean over the pair):
-- class spread is elongated **along** the separating direction, not across it: median along-ratio 3.87 and 4.09 at
-  64 PCs (no pair below 1), 1.56 and 1.57 at 16 PCs (11 % and 5 % of pairs below 1). The ratio depends on the number of
-  dimensions, because the mean variance per dimension falls as low-variance directions are added;
-- the more the spread lies along u, the smaller d′ (Spearman −0.45 and −0.27 at 64 PCs);
-- **no pair** has high variance in both classes, d′ above the median and spread mostly across u, so "large variance
-  but well separated thanks to orientation" does not occur in either dataset (negative result).
+**Pair examples (d = 16, fold means; ranks 1 = hardest of all pairs):**
 
-**Pair examples where the full Bhattacharyya distance and d′ disagree:**
+| Pair | PCA rank | FDA rank | d′ (val, PCA) | Comment |
+|---|---|---|---|---|
+| *Polycentropus flavomaculatus* / *P. irroratus* (FIN-Benthic2) | 1 | 1 | 0.57 | hardest in both; covariance-dominated (section 2) |
+| *Caenis horaria* / *C. luctuosa* (AquaMonitor) | 2 | 6 | 0.81 | hard in both |
+| *Limnius volckmari* / *Oulimnius tuberculatus* (FIN-Benthic2) | 13 | 69 | 1.74 | riffle beetles with larva / adult groups; FDA pushes them apart (BC 0.38 → 0.00) |
+| *Centroptilum luteolum* / *Cloeon dipterum* (AquaMonitor) | 119 | 12 | 1.85 | FDA brings them together (BC 0.09 → 0.32) |
+| *Gyraulus* / *Pisidium* (AquaMonitor) | 18 | 82 | 2.59 | close in PCA, separated by FDA (BC 0.42 → 0.00) |
 
-| Pair (dataset, PCs) | d′ (rank) | Full Bhattacharyya (rank) | What the covariances show |
-|---|---|---|---|
-| *Heptagenia dalecarlica* / Hydrachnidia (AquaMonitor, 64) | 4.00 (36 of 210) | mean 17.83 + covariance 15.76 (160) | *Heptagenia*'s spread along u is 12.1× its mean variance (top eigenvector \|cos\| with u 0.78): close along the 1-D direction, very different ellipsoids; *Heptagenia* is in 4 of AquaMonitor's 6 largest disagreements |
-| *Kageronia fuscogrisea* / *Micrasema setiferum* (FIN-Benthic2, 64) | 2.96 (25 of 253) | mean 15.78 + covariance 12.81 (159) | spread along u 5.4× and 8.5× |
-| *Elmis aenea* / *Limnius volckmari* (FIN-Benthic2, 16) | 2.24 (31) | 2.96 + 1.34, BC 0.014 (77) | *Elmis* is mixture-supported (larva / adult in the fold-0 montages); one Gaussian over two life stages spreads along u (2.9×, 5.6×) |
-| *Nemoura* sp. / *Protonemura* sp. (FIN-Benthic2, 16) | 2.97 (60) | 0.84 + 0.97, BC 0.165 (14) | the reverse: the full Gaussians overlap more than d′ suggests |
-| Limnephilidae / *Limnephilus* (AquaMonitor, 16) | 2.93 (111) | 0.54 + 1.19, BC 0.178 (15) | both elongated along u (top eigenvector \|cos\| 0.85, 0.87); nested labels (family vs genus); *Limnephilus* has an unreliable 2-group fit |
+Taxonomic context (from general knowledge, not checked against the dataset taxonomy files): *Centroptilum* and
+*Cloeon* are both Baetidae, *Gyraulus* is a snail and *Pisidium* a bivalve.
 
-**Mixture-supported taxa:** among the 20 pairs with the largest rank disagreement, the share involving a
-mixture-supported taxon is 0.65 (FIN-Benthic2, baseline over all full-covariance pairs 0.64 at 64 PCs, 0.47 at 16 PCs)
-and 0.85 / 0.55 (AquaMonitor, baselines 0.97 / 0.79). Disagreements are therefore **not** concentrated in mixture
-taxa. Where a taxon is a two-group mixture (e.g. *Elmis aenea*), its single Gaussian is stretched along the
-between-group direction, and BC describes that stretched Gaussian, not the actual overlap of the groups.
+## 5. Limits and negative findings
 
-**Dataset-level GBC (descriptive only):** spherical, 64 PCs: −3.548 (FIN-Benthic2, 36 taxa) and −7.157 (AquaMonitor,
-41 taxa). With one encoder and different taxon counts these say nothing about model ranking or transferability.
+- GBC values are overlaps of fitted Gaussians: one Gaussian per class misrepresents two-group taxa (e.g. the riffle
+  beetles), and spherical Gaussians ignore orientation (median covariance-term share ≤ 2 % of the distance in every arm).
+- FDA's projection is fitted with the same train labels that define the pairs, so train-set FDA-GBC is optimistic by
+  construction; val re-estimates are the fairer view but are small for rare taxa (classes below the 15/5 rule are
+  excluded per fold, e.g. *Leuctra nigra* in FIN-Benthic2 folds 2 and 4).
+- Shrinkage was data-estimated and small; the conditioning (up to 1.5e5) means the trailing FDA directions are
+  noise-sensitive, which fits the weaker d′ agreement at d = 32. A stronger, fixed shrinkage was not tried (no grid).
+- No claim about classification, transfer or model ranking: one encoder, no outcomes.
 
-## 4. Limits
+## 6. Decisions for the author
 
-- Gaussian BC is the overlap of the fitted Gaussians; for multimodal or skewed classes it is not the true class
-  overlap. BC values span many orders of magnitude (median spherical BC 7e-8 and 8e-9 at 64 PCs), so only rankings
-  and the largest values are meaningful.
-- Full covariance at 64 PCs exists only for 23 / 21 well-sampled taxa; the 16-PC results cover all taxa.
-- d′ uses val specimens (train direction); BC uses train specimens (val only as a re-estimate). Part of a rank
-  disagreement can come from train–val differences (e.g. small val sets).
-- Fold 0 and one encoder only; no claim that BC predicts classification or transfer.
+- Whether FDA-GBC is worth pursuing (current evidence: no held-out advantage, optimism in FIN-Benthic2), or
+  whether a stronger fixed shrinkage, or a class-balanced S_W / S_B (instead of Mensink's N_c/N weights, which let
+  large classes dominate AquaMonitor), should be tested as a separately approved sensitivity.
+- Whether to follow up the covariance-dominated close pairs (full covariance, shrinkage) as the next geometry
+  question.
 
-## 5. Code and tests
+## 7. Code and tests
 
-New: `src/methods/bhattacharyya.py` (Eq. 2, Eq. 3, covariance forms, port of the authors' code),
-`scripts/bhattacharyya_overlap.py`, `scripts/bhattacharyya_orientation_summary.py`,
-`scripts/lumi/bhattacharyya_fold0.sh`, `tests/test_bhattacharyya.py` (8 tests: identical Gaussians, symmetry, 1-D
-closed form, BC equal to the overlap integral of two correlated 2-D Gaussians, orientation effect at equal variances,
-unbiased covariance forms, paper term = d × code term, port floor and dtype, ordered-pair GBC, singular covariance) and
-an end-to-end check in `tests/test_class_geometry_pilot.py`. Full suite: 75 passed.
-
-## 6. Open items
-
-- Code cleanup from the earlier review (separate task, see commit c05a7e6 response).
-- Next steps (other folds, full covariance with shrinkage, encoders) only with a new task.
+New: `src/methods/fda.py`, `src/statistics/pair_overlap.py` (moved from `bhattacharyya_overlap.py`, now shared),
+`scripts/pca_fda_gbc.py`, `scripts/summarise_pca_fda_gbc.py`, `scripts/pca_fda_examples.py`,
+`scripts/lumi/pca_fda_gbc{,_summary}.sh`, `tests/test_pca_fda_gbc.py` (equal-mean BC = 0.8 cases, rotated covariance,
+d′ undefined for equal means, mean term ≥ d′²/8 with the equality case, scatter decomposition, FDA finds a
+low-variance discriminative axis that PCA misses, generalised eigen equation) and end-to-end checks. Changed:
+`class_geometry.direction` raises for coinciding means. Full suite: 82 passed.
