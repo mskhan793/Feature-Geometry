@@ -40,6 +40,14 @@ Mensink, Ferrari, *How stable are Transferability Metrics evaluations?*, ECCV 20
 authors; the file's docstring cites the GBC paper. It is therefore the authors' later implementation, **not linked from
 the GBC manuscript**.
 
+Further checks (2026-11-11): the `master` copy of gbc.py is byte-identical to commit 5b09c22; the first release
+(commit `4963f325fe8bf41c69aeb2717d0ef408f623500e`, 2022-07-19) differs only in the copyright year. The ECCV 2022 paper
+(arXiv:2204.01403, `~/Documents/Research/methods/gbc_pandy2022/eccv2022/paper.pdf`, SHA256 `78a67dfd…`) links
+`github.com/google-research/google-research/tree/master/stable_transfer` as "the source code for our experiments"
+(footnote 2) and describes GBC only in words (Sect. 3.1); it does not define the spherical variance or say this code
+produced the CVPR 2022 GBC results. Label: **the authors' published GBC implementation (ECCV 2022 code release), not
+verified as the code behind the GBC paper's own results.**
+
 What the code does (read, not run; TensorFlow):
 - per class: mean and **population** variance per dimension (`tf.math.reduce_variance`, divides by N), floored at
   1e-4;
