@@ -2,6 +2,7 @@
 caches (software test only)."""
 
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -100,6 +101,22 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     assert np.allclose(p8.spherical_train_distance, p8.spherical_train_mean_term + p8.spherical_train_cov_term)
     assert set(p8.label8_a.dropna()) | set(p8.label8_b.dropna()) and (bh / "bc_vs_dprime_pcs8.png").exists()
 
+    # PCA vs FDA GBC on the same fold: PCA arm reproduces the Bhattacharyya run, FDA dims limited by the rank
+    pf = tmp_path / "pf"
+    run(["scripts/pca_fda_gbc.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches, "--fold", "fold0",
+         "--out", str(pf), "--dims", "2", "8", "--pca-base", "4", "--previous", str(bh)])
+    sp = json.loads((pf / "summary.json").read_text())
+    assert sp["dims_used"] == [2] and sp["dims_omitted"] == [8] and sp["fda"]["main"]["rank"] == 3  # 4 train classes
+    assert sp["regression_vs_previous_fold0"]["pca4"]["max_abs_diff"] < 1e-9
+    assert {"pca4", "pca2", "fda2", "fda2_raw", "fda2_shrink0.5", "fda2_shrink2"} == set(sp["arms"])
+    assert sp["arms"]["fda2"]["full"]["share_mean_term_ge_dprime2_over_8"] == 1.0
+    runs = tmp_path / "pfruns"
+    for k in range(5):
+        shutil.copytree(pf, runs / f"fold{k}")
+    run(["scripts/summarise_pca_fda_gbc.py", "--dataset", "Toy", str(runs), "--out", str(tmp_path / "pfsum")])
+    st = json.loads((tmp_path / "pfsum" / "Toy" / "summary.json").read_text())["cross_fold_stability"]["fda2"]
+    assert st["spearman_between_folds_min_median_max"] == [1.0, 1.0, 1.0] and st["pairs_in_all_folds"] == 3
+
     # another fold column with test rows that have no features: they must be dropped before any feature lookup
     full = pd.DataFrame(rows).assign(fold3=lambda d: d.fold0)
     test_rows = full.head(6).assign(img=lambda d: "test_" + d.img, individual="T1", fold3="test")
@@ -129,7 +146,6 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     assert len(pd.read_csv(desc / "class_pairs.csv")) == 3
 
     # five-fold summary: five identical copies of the fold3 run give zero spread across folds
-    import shutil
     runs = tmp_path / "runs"
     for k in range(5):
         shutil.copytree(f3, runs / f"fold{k}")

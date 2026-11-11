@@ -44,56 +44,14 @@ from sklearn.decomposition import PCA
 from src.features.chunk_store import file_sha256
 from src.features.feature_lookup import features_by_name
 from src.features.specimen_means import specimen_camera_means, specimen_means
-from src.methods.bhattacharyya import (KINDS, bhattacharyya_terms, class_covariance, gbc_score,
-                                       stable_transfer_class_stats, stable_transfer_distance)
+from src.methods.bhattacharyya import KINDS, stable_transfer_class_stats
 from src.statistics.class_geometry import direction, direction_separation, eigen_summary
+from src.statistics.pair_overlap import class_gaussians, pair_overlap
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 MIN_TRAIN, MIN_VAL, TOP = 15, 5, 20
-
-
-def gaussians(z: np.ndarray, groups: dict, d: int) -> dict:
-    """Per class and covariance form: (mean, covariance) or None if not estimable (full needs >= 2 d specimens)."""
-    out = {}
-    for c, idx in groups.items():
-        x = z[idx]
-        out[c] = {k: (x.mean(0), class_covariance(x, k)) if (k != "full" or len(x) >= 2 * d) and len(x) >= 2 else None
-                  for k in KINDS}
-    return out
-
-
-def pair_row(a, b, g_tr, g_va, code, z_tr, z_va, tr, va, d) -> dict:
-    u = direction(z_tr[tr[a]], z_tr[tr[b]])
-    row = {"class_a": a, "class_b": b, "n_train_a": len(tr[a]), "n_train_b": len(tr[b]), "n_val_a": len(va[a]),
-           "n_val_b": len(va[b]), "dprime_val": direction_separation(z_va[va[a]], z_va[va[b]], u),
-           "dprime_train": direction_separation(z_tr[tr[a]], z_tr[tr[b]], u)}
-    for k in KINDS:
-        for split, g in (("train", g_tr), ("val", g_va)):
-            p, q = g[a][k], g[b][k]
-            key = f"{k}_{split}"
-            if p is None or q is None:
-                row[f"{key}_valid"] = False
-                continue
-            try:
-                mean_term, cov_term = bhattacharyya_terms(p[0], q[0], p[1], q[1])
-            except np.linalg.LinAlgError:
-                row[f"{key}_valid"] = False
-                continue
-            row.update({f"{key}_valid": True, f"{key}_mean_term": mean_term, f"{key}_cov_term": cov_term,
-                        f"{key}_distance": mean_term + cov_term, f"{key}_bc": float(np.exp(-(mean_term + cov_term)))})
-    dist = stable_transfer_distance(code[a][0], code[b][0], code[a][1], code[b][1], "spherical")
-    row.update({"code_spherical_distance": float(dist), "code_spherical_bc": float(np.exp(-dist))})
-    for c in (a, b):  # orientation of each class's full train covariance relative to u
-        p = g_tr[c]["full"]
-        side = "a" if c == a else "b"
-        if p is None:
-            continue
-        _, vec = np.linalg.eigh(p[1])
-        row[f"along_ratio_{side}"] = float(u @ p[1] @ u / (np.trace(p[1]) / d))
-        row[f"top_eigvec_cos_{side}"] = float(abs(vec[:, -1] @ u))
-    return row
 
 
 def rank_summary(pairs: pd.DataFrame, k: str) -> dict:
@@ -170,9 +128,9 @@ def main():
                "native_dprime_regression": regression, "by_pcs": {}}
     for d in a.pcs:
         z_tr, z_va = z_tr_all[:, :d], z_va_all[:, :d]
-        g_tr, g_va = gaussians(z_tr, tr, d), gaussians(z_va, va, d)
+        g_tr, g_va = class_gaussians(z_tr, tr, d), class_gaussians(z_va, va, d)
         code = {c: stable_transfer_class_stats(z_tr[tr[c]].astype(np.float32)) for c in classes}
-        pairs = pd.DataFrame([pair_row(c1, c2, g_tr, g_va, code, z_tr, z_va, tr, va, d)
+        pairs = pd.DataFrame([pair_overlap(c1, c2, g_tr, g_va, code, z_tr, z_va, tr, va, d)
                               for c1, c2 in itertools.combinations(classes, 2)])
         pairs = pairs.merge(native, on=["class_a", "class_b"])
         for ld, lab in labels.items():  # labels exist at the geometry run's PCA dimensions (8, 16)

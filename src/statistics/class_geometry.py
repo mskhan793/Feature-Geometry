@@ -38,8 +38,12 @@ def radius_separation(xa: np.ndarray, xb: np.ndarray) -> float:
 
 
 def direction(xa: np.ndarray, xb: np.ndarray) -> np.ndarray:
+    """Unit centroid-difference direction; undefined (ValueError, never 0) when the two class means coincide."""
     d = xa.mean(0) - xb.mean(0)
-    return d / np.linalg.norm(d)
+    norm = np.linalg.norm(d)
+    if norm == 0:
+        raise ValueError("class means coincide: the centroid-difference direction (and d') is undefined")
+    return d / norm
 
 
 def direction_separation(xa: np.ndarray, xb: np.ndarray, u: np.ndarray) -> float:
