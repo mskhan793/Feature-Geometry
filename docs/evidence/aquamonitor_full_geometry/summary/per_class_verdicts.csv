@@ -1,0 +1,85 @@
+taxon_group,pcs,fold0,fold1,fold2,fold3,fold4,folds_credible,folds_one_gaussian
+Asellus aquaticus,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Asellus aquaticus,16,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,4,0
+Caenis horaria,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Caenis horaria,16,credible multiple groups,inconclusive,credible multiple groups,inconclusive,credible multiple groups,3,0
+Caenis luctuosa,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Caenis luctuosa,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Caenis rivulorum,8,credible multiple groups,credible multiple groups,,,inconclusive,2,0
+Caenis rivulorum,16,insufficient evidence,insufficient evidence,,,insufficient evidence,0,0
+Centroptilum luteolum,8,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,4,0
+Centroptilum luteolum,16,insufficient evidence,insufficient evidence,credible multiple groups,insufficient evidence,insufficient evidence,1,0
+Ceratopogonidae,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Ceratopogonidae,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Chironomidae,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Chironomidae,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Cloeon,8,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,4,0
+Cloeon,16,inconclusive,insufficient evidence,inconclusive,inconclusive,insufficient evidence,0,0
+Cloeon dipterum,8,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,4,0
+Cloeon dipterum,16,credible multiple groups,credible multiple groups,inconclusive,inconclusive,credible multiple groups,3,0
+Cyrnus flavidus,8,inconclusive,inconclusive,inconclusive,inconclusive,credible multiple groups,1,0
+Cyrnus flavidus,16,one Gaussian favoured,inconclusive,one Gaussian favoured,credible multiple groups,inconclusive,1,2
+Cyrnus trimaculatus,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,4,0
+Cyrnus trimaculatus,16,insufficient evidence,insufficient evidence,credible multiple groups,insufficient evidence,inconclusive,1,0
+Ecnomus tenellus,8,inconclusive,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,3,0
+Ecnomus tenellus,16,inconclusive,inconclusive,credible multiple groups,inconclusive,credible multiple groups,2,0
+Ephemera vulgata,8,inconclusive,credible multiple groups,inconclusive,inconclusive,inconclusive,1,0
+Ephemera vulgata,16,credible multiple groups,inconclusive,inconclusive,inconclusive,inconclusive,1,0
+Erpobdella octoculata,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Erpobdella octoculata,16,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,inconclusive,3,0
+Gyraulus,8,credible multiple groups,credible multiple groups,inconclusive,inconclusive,inconclusive,2,0
+Gyraulus,16,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,4,0
+Helobdella stagnalis,8,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,4,0
+Helobdella stagnalis,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Heptagenia dalecarlica,8,inconclusive,inconclusive,inconclusive,inconclusive,credible multiple groups,1,0
+Heptagenia dalecarlica,16,inconclusive,credible multiple groups,inconclusive,inconclusive,inconclusive,1,0
+Hydrachnidia,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Hydrachnidia,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Hydroptila,8,inconclusive,inconclusive,inconclusive,credible multiple groups,inconclusive,1,0
+Hydroptila,16,one Gaussian favoured,inconclusive,inconclusive,inconclusive,inconclusive,0,1
+Kageronia fuscogrisea,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Kageronia fuscogrisea,16,inconclusive,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,3,0
+Lepidostoma hirtum,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Lepidostoma hirtum,16,inconclusive,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,3,0
+Leptophlebia,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Leptophlebia,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Limnephilidae,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Limnephilidae,16,inconclusive,inconclusive,inconclusive,insufficient evidence,one Gaussian favoured,0,1
+Limnephilus,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Limnephilus,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Micronecta,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Micronecta,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Mystacides,8,inconclusive,insufficient evidence,,insufficient evidence,inconclusive,0,0
+Mystacides,16,insufficient evidence,insufficient evidence,,insufficient evidence,insufficient evidence,0,0
+Mystacides azurea,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Mystacides azurea,16,inconclusive,credible multiple groups,inconclusive,inconclusive,credible multiple groups,2,0
+Oligochaeta,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oligochaeta,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Orthotrichia,8,inconclusive,inconclusive,credible multiple groups,credible multiple groups,inconclusive,2,0
+Orthotrichia,16,insufficient evidence,insufficient evidence,insufficient evidence,insufficient evidence,insufficient evidence,0,0
+Oulimnius tuberculatus,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oulimnius tuberculatus,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oulimnius tuberculatus adult,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oulimnius tuberculatus adult,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Pedicia,8,inconclusive,inconclusive,inconclusive,inconclusive,insufficient evidence,0,0
+Pedicia,16,insufficient evidence,insufficient evidence,insufficient evidence,one Gaussian favoured,insufficient evidence,0,1
+Pisidium,8,inconclusive,credible multiple groups,inconclusive,credible multiple groups,,2,0
+Pisidium,16,insufficient evidence,credible multiple groups,inconclusive,insufficient evidence,,1,0
+Polycentropus flavomaculatus,8,inconclusive,inconclusive,inconclusive,inconclusive,credible multiple groups,1,0
+Polycentropus flavomaculatus,16,credible multiple groups,insufficient evidence,insufficient evidence,insufficient evidence,insufficient evidence,1,0
+Psychomyia pusilla,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Psychomyia pusilla,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Sialis,8,one Gaussian favoured,inconclusive,credible multiple groups,one Gaussian favoured,insufficient evidence,1,2
+Sialis,16,inconclusive,insufficient evidence,one Gaussian favoured,insufficient evidence,inconclusive,0,1
+Sisyra,8,,,insufficient evidence,insufficient evidence,one Gaussian favoured,0,1
+Sisyra,16,,,insufficient evidence,insufficient evidence,insufficient evidence,0,0
+Spirosperma ferox,8,inconclusive,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,3,0
+Spirosperma ferox,16,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,4,0
+Stylaria lacustris,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Stylaria lacustris,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Tanypodinae,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Tanypodinae,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Tinodes waeneri,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Tinodes waeneri,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Turbellaria,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Turbellaria,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0

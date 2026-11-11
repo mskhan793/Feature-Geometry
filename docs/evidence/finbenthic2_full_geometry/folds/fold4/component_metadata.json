@@ -1,0 +1,95 @@
+{
+ "8_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.29982142857142857,
+   "classes_auc_outside_0.2_0.8": 17,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Agapetus_sp",
+    "Ameletus_inopinatus",
+    "Baetis_vernus_group",
+    "Heptagenia_sulphurea",
+    "Hydraena_sp",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Protonemura_sp",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.2763157894736842,
+   "classes_auc_outside_0.2_0.8": 13,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Ameletus_inopinatus",
+    "Baetis_vernus_group",
+    "Heptagenia_sulphurea",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.20494374956958228,
+   "classes_auc_outside_0.2_0.8": 13,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Protonemura_sp",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.2324809234038443,
+   "classes_auc_outside_0.2_0.8": 14,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Amphinemura_borealis",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_pellucidula",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Protonemura_sp",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ }
+}

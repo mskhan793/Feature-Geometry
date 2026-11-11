@@ -1,0 +1,93 @@
+{
+ "cache_dir": "/scratch/project_462001534/feature_geometry/full_specimen/finbenthic2/extract/features_gpu/dinov3_l",
+ "encoder": "dinov3_l",
+ "manifest_rows": 57347,
+ "rows_covered": 57347,
+ "chunks_ok": 8,
+ "dims": [
+  1024
+ ],
+ "problems": [],
+ "chunks": [
+  {
+   "start": 0,
+   "end": 8192,
+   "dim": 1024,
+   "sha256": "055e162cc1a24f76c0b34907e7c54530f06c5a71c1943b8284314d38132f0be6",
+   "norm_min": 12.390666961669922,
+   "norm_mean": 15.757500648498535,
+   "norm_max": 17.25149917602539,
+   "images_per_second": 40.7
+  },
+  {
+   "start": 8192,
+   "end": 16384,
+   "dim": 1024,
+   "sha256": "3e77320523c857d344630f4450c5b46d425bfcae0617bc5218c50533062f4a0a",
+   "norm_min": 12.049642562866211,
+   "norm_mean": 15.68533706665039,
+   "norm_max": 17.251840591430664,
+   "images_per_second": 40.6
+  },
+  {
+   "start": 16384,
+   "end": 24576,
+   "dim": 1024,
+   "sha256": "1c81386e7746114f15bbb9d842745ad5c35d94a62c6c37c3e96374b4e9723773",
+   "norm_min": 13.203614234924316,
+   "norm_mean": 15.900659561157227,
+   "norm_max": 17.00110626220703,
+   "images_per_second": 40.6
+  },
+  {
+   "start": 24576,
+   "end": 32768,
+   "dim": 1024,
+   "sha256": "dbc9923bb250cc52b7f26d121045f80aeebdc7b9364908dd3c0e633700eab4e0",
+   "norm_min": 12.701102256774902,
+   "norm_mean": 15.881447792053223,
+   "norm_max": 17.010244369506836,
+   "images_per_second": 40.5
+  },
+  {
+   "start": 32768,
+   "end": 40960,
+   "dim": 1024,
+   "sha256": "06ed29a6b0cb7dbae0f66cd719af75edf141f03808f21da244ec7c8a91162d07",
+   "norm_min": 12.292409896850586,
+   "norm_mean": 15.735726356506348,
+   "norm_max": 17.027469635009766,
+   "images_per_second": 40.4
+  },
+  {
+   "start": 40960,
+   "end": 49152,
+   "dim": 1024,
+   "sha256": "0256b8873d9e986ae895bb6d095b7b033f6319bdfcd6e7dab0d41b0e0334c22e",
+   "norm_min": 12.185796737670898,
+   "norm_mean": 15.542089462280273,
+   "norm_max": 17.205381393432617,
+   "images_per_second": 40.4
+  },
+  {
+   "start": 49152,
+   "end": 57344,
+   "dim": 1024,
+   "sha256": "892726557a679ead8daf7e41d4054e2e346bbcd589f3d6cd16db0bceba6e514a",
+   "norm_min": 12.649931907653809,
+   "norm_mean": 15.429056167602539,
+   "norm_max": 17.2636775970459,
+   "images_per_second": 41.0
+  },
+  {
+   "start": 57344,
+   "end": 57347,
+   "dim": 1024,
+   "sha256": "f6bd5d6706eb5d9859904c0cb17fc3059162dc77363ac52ce64cd69b1a5a27a2",
+   "norm_min": 16.8996639251709,
+   "norm_mean": 16.93507194519043,
+   "norm_max": 16.96242332458496,
+   "images_per_second": 0.0
+  }
+ ]
+}

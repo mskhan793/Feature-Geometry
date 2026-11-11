@@ -1,0 +1,5 @@
+start 2026-11-11T14:55:03+02:00 job 23642060 node nid005150 code d072185 manifest /flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet out /scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract
+extract done 2026-11-11T15:11:29+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract/features_gpu/dinov3_l", "encoder": "dinov3_l", "manifest_rows": 836159, "rows_covered": 836159, "chunks_ok": 103, "dims": [1024], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract/features_gpu/dinov3_l", "prefix": "/scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract/features_cpu256/dinov3_l", "rows": 256, "tf32": [false, false], "max_abs_diff": 2.0503997802734375e-05, "mean_abs_diff": 2.0658933009386335e-06, "max_rel_norm_diff": 2.684075752767967e-06, "bitwise_equal": false}
+end 2026-11-11T15:15:25+02:00

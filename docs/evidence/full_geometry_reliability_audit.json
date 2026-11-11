@@ -1,0 +1,731 @@
+{
+ "docs/evidence/finbenthic2_full_geometry/folds/fold0": {
+  "classes_n30_below_30": [
+   "Leuctra_nigra",
+   "Sialis_sp"
+  ],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 36,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": -0.06885794434451571,
+    "macro_mean_ok_only": 0.1165959284803818
+   },
+   "G3_tied": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -1.5889508340231762,
+    "macro_mean_ok_only": 0.2419663565468681
+   },
+   "G2_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": -0.10728007330770283,
+    "macro_mean_ok_only": -0.04624001483896578
+   },
+   "G3_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": -0.3342378486282723,
+    "macro_mean_ok_only": -0.11344979033997106
+   },
+   "credible": 13,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Ephemerella_aurivillii",
+    "Leptophlebia_sp",
+    "Simuliidae"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 5,
+    "macro_mean_as_reported": -0.008014175300405182,
+    "macro_mean_ok_only": 0.041679379512202346
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 12,
+    "macro_mean_as_reported": -0.23118203850352312,
+    "macro_mean_ok_only": 0.030216999951052034
+   },
+   "G2_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -0.9495883587544065,
+    "macro_mean_ok_only": -0.09193873860698008
+   },
+   "G3_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 19,
+    "macro_mean_as_reported": -1.755021564271535,
+    "macro_mean_ok_only": -0.3197590068322223
+   },
+   "credible": 8,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Hydropsyche_siltalai",
+    "Oxyethira_sp"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  }
+ },
+ "docs/evidence/finbenthic2_full_geometry/folds/fold1": {
+  "classes_n30_below_30": [
+   "Leuctra_nigra"
+  ],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": -0.08743263806853421,
+    "macro_mean_ok_only": 0.05986961878212786
+   },
+   "G3_tied": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -0.04409642081910245,
+    "macro_mean_ok_only": 0.14042613451461874
+   },
+   "G2_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": -0.020500737309360348,
+    "macro_mean_ok_only": 0.025469464707728443
+   },
+   "G3_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -0.5964059254549221,
+    "macro_mean_ok_only": 0.08725437720959815
+   },
+   "credible": 11,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Lepidostoma_hirtum",
+    "Micrasema_setiferum",
+    "Taeniopteryx_nebulosa"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": -0.10861539677997586,
+    "macro_mean_ok_only": -0.12172447040356746
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 12,
+    "macro_mean_as_reported": -0.33572176900227324,
+    "macro_mean_ok_only": 0.07419784559782477
+   },
+   "G2_full": {
+    "classes_in_macro": 33,
+    "unreliable_in_macro": 8,
+    "macro_mean_as_reported": -1.1385631604188737,
+    "macro_mean_ok_only": -0.08436647172545797
+   },
+   "G3_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 20,
+    "macro_mean_as_reported": -1.9628575700355249,
+    "macro_mean_ok_only": -0.1310261049231318
+   },
+   "credible": 6,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  }
+ },
+ "docs/evidence/finbenthic2_full_geometry/folds/fold2": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 0,
+    "macro_mean_as_reported": 0.08233365056575481,
+    "macro_mean_ok_only": 0.08233365056575481
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 5,
+    "macro_mean_as_reported": -0.006708013346799912,
+    "macro_mean_ok_only": 0.20598943329224628
+   },
+   "G2_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": -0.20448984222069244,
+    "macro_mean_ok_only": -0.18196505297503074
+   },
+   "G3_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 5,
+    "macro_mean_as_reported": -0.6251265386400879,
+    "macro_mean_ok_only": -0.29498734316168
+   },
+   "credible": 11,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Polycentropus_flavomaculatus",
+    "Simuliidae"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": -0.054456205602120916,
+    "macro_mean_ok_only": 0.029028827695324562
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 13,
+    "macro_mean_as_reported": -0.34270341708946794,
+    "macro_mean_ok_only": 0.12272865482502329
+   },
+   "G2_full": {
+    "classes_in_macro": 32,
+    "unreliable_in_macro": 8,
+    "macro_mean_as_reported": -0.6920626626604013,
+    "macro_mean_ok_only": -0.16155575427907945
+   },
+   "G3_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 16,
+    "macro_mean_as_reported": -1.9782640190879142,
+    "macro_mean_ok_only": -0.625311869094809
+   },
+   "credible": 6,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Baetis_rhodani"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  }
+ },
+ "docs/evidence/finbenthic2_full_geometry/folds/fold3": {
+  "classes_n30_below_30": [
+   "Leuctra_nigra"
+  ],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": -0.16916968373086572,
+    "macro_mean_ok_only": 0.00014872882776780072
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": 0.10160253721048053,
+    "macro_mean_ok_only": 0.15137094996014763
+   },
+   "G2_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 3,
+    "macro_mean_as_reported": -0.28022609493503886,
+    "macro_mean_ok_only": -0.22066972389510311
+   },
+   "G3_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -0.7015183555399859,
+    "macro_mean_ok_only": -0.09484404854898006
+   },
+   "credible": 9,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Hydropsyche_siltalai",
+    "Leptophlebia_sp",
+    "Simuliidae"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": -0.20518992421776158,
+    "macro_mean_ok_only": 0.07070426802412887
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 11,
+    "macro_mean_as_reported": -0.20827587189450264,
+    "macro_mean_ok_only": 0.032648670991684565
+   },
+   "G2_full": {
+    "classes_in_macro": 32,
+    "unreliable_in_macro": 6,
+    "macro_mean_as_reported": -4.174988984475898,
+    "macro_mean_ok_only": -0.1780301668667403
+   },
+   "G3_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 18,
+    "macro_mean_as_reported": -2.376502898279173,
+    "macro_mean_ok_only": -0.4813586076471497
+   },
+   "credible": 10,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Baetis_rhodani",
+    "Heptagenia_sulphurea",
+    "Neureclipsis_bimaculata"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  }
+ },
+ "docs/evidence/finbenthic2_full_geometry/folds/fold4": {
+  "classes_n30_below_30": [
+   "Sialis_sp"
+  ],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": -0.04003465997746915,
+    "macro_mean_ok_only": 0.028259903520676154
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 6,
+    "macro_mean_as_reported": 0.0014935498786499658,
+    "macro_mean_ok_only": 0.07181550614206542
+   },
+   "G2_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": -0.22503514496312607,
+    "macro_mean_ok_only": -0.22911467088093904
+   },
+   "G3_full": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": -0.8699747531575092,
+    "macro_mean_ok_only": -0.019820515083941777
+   },
+   "credible": 8,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Micrasema_setiferum"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": 0.0012335412916405137,
+    "macro_mean_ok_only": 0.032930833642028465
+   },
+   "G3_tied": {
+    "classes_in_macro": 34,
+    "unreliable_in_macro": 11,
+    "macro_mean_as_reported": -0.18144732044962605,
+    "macro_mean_ok_only": 0.17045620624720206
+   },
+   "G2_full": {
+    "classes_in_macro": 32,
+    "unreliable_in_macro": 6,
+    "macro_mean_as_reported": -2.2631011007275132,
+    "macro_mean_ok_only": -0.7497854494716663
+   },
+   "G3_full": {
+    "classes_in_macro": 31,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": -1.638753766684934,
+    "macro_mean_ok_only": -0.8263510432523943
+   },
+   "credible": 7,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Baetis_rhodani"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0
+  }
+ },
+ "docs/evidence/aquamonitor_full_geometry/folds/fold0": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": 0.2532779403060254,
+    "macro_mean_ok_only": 0.2696148370608074
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": 0.47396247537146863,
+    "macro_mean_ok_only": 0.6019131659288675
+   },
+   "G2_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": -0.2281341625897983,
+    "macro_mean_ok_only": -0.19526102416240007
+   },
+   "G3_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 10,
+    "macro_mean_as_reported": -1.3627876897281765,
+    "macro_mean_ok_only": 0.15108709987313235
+   },
+   "credible": 23,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Cloeon dipterum"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": 0.32288072274601765,
+    "macro_mean_ok_only": 0.5058349453791023
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": 0.5723636937876287,
+    "macro_mean_ok_only": 0.9507565212986563
+   },
+   "G2_full": {
+    "classes_in_macro": 39,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -3.188958566857328,
+    "macro_mean_ok_only": -0.22324489258598704
+   },
+   "G3_full": {
+    "classes_in_macro": 36,
+    "unreliable_in_macro": 13,
+    "macro_mean_as_reported": -4.240107252486073,
+    "macro_mean_ok_only": 0.4760868809637293
+   },
+   "credible": 21,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  }
+ },
+ "docs/evidence/aquamonitor_full_geometry/folds/fold1": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": 0.3277122628346523,
+    "macro_mean_ok_only": 0.32105625020293527
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 6,
+    "macro_mean_as_reported": 0.46371550651778465,
+    "macro_mean_ok_only": 0.5016010794345429
+   },
+   "G2_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": -0.13736488504784444,
+    "macro_mean_ok_only": -0.007156179353627079
+   },
+   "G3_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -1.1440759080639382,
+    "macro_mean_ok_only": 0.23541674034164828
+   },
+   "credible": 27,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Cloeon dipterum",
+    "Spirosperma ferox",
+    "Stylaria lacustris"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 10,
+    "macro_mean_as_reported": 0.43656626530188697,
+    "macro_mean_ok_only": 0.6291308553357076
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 13,
+    "macro_mean_as_reported": 0.4843169163485523,
+    "macro_mean_ok_only": 1.0024820448623022
+   },
+   "G2_full": {
+    "classes_in_macro": 39,
+    "unreliable_in_macro": 11,
+    "macro_mean_as_reported": -2.528364987311001,
+    "macro_mean_ok_only": 0.2760702830620481
+   },
+   "G3_full": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 9,
+    "macro_mean_as_reported": -3.0509045849110032,
+    "macro_mean_ok_only": -1.0106770268811762
+   },
+   "credible": 23,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Helobdella stagnalis",
+    "Oulimnius tuberculatus adult"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  }
+ },
+ "docs/evidence/aquamonitor_full_geometry/folds/fold2": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 1,
+    "macro_mean_as_reported": 0.24500588860237943,
+    "macro_mean_ok_only": 0.26245135534003766
+   },
+   "G3_tied": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": 0.36760349306067386,
+    "macro_mean_ok_only": 0.4138901170233288
+   },
+   "G2_full": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 3,
+    "macro_mean_as_reported": 0.10363329390550824,
+    "macro_mean_ok_only": 0.19364625625716245
+   },
+   "G3_full": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": -0.5037738137625108,
+    "macro_mean_ok_only": 0.2250771743021297
+   },
+   "credible": 23,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Caenis luctuosa",
+    "Cloeon",
+    "Ecnomus tenellus",
+    "Oulimnius tuberculatus adult"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 5,
+    "macro_mean_as_reported": 0.3632078619576034,
+    "macro_mean_ok_only": 0.39857050370574987
+   },
+   "G3_tied": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 13,
+    "macro_mean_as_reported": 0.666967704451076,
+    "macro_mean_ok_only": 0.9473333393997996
+   },
+   "G2_full": {
+    "classes_in_macro": 39,
+    "unreliable_in_macro": 5,
+    "macro_mean_as_reported": -1.6670644041531277,
+    "macro_mean_ok_only": -0.07255743979537047
+   },
+   "G3_full": {
+    "classes_in_macro": 36,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": -3.0821589755444823,
+    "macro_mean_ok_only": -0.39199116454949595
+   },
+   "credible": 21,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Caenis luctuosa",
+    "Spirosperma ferox"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  }
+ },
+ "docs/evidence/aquamonitor_full_geometry/folds/fold3": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 2,
+    "macro_mean_as_reported": 0.2991616738375172,
+    "macro_mean_ok_only": 0.2746081636855226
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": 0.4736678320904722,
+    "macro_mean_ok_only": 0.4577423367871736
+   },
+   "G2_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": -0.14288173501861354,
+    "macro_mean_ok_only": -0.0835803790949365
+   },
+   "G3_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": -0.7808911380295561,
+    "macro_mean_ok_only": -0.17288609388213683
+   },
+   "credible": 26,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Cyrnus trimaculatus",
+    "Helobdella stagnalis",
+    "Hydrachnidia",
+    "Hydroptila",
+    "Pisidium",
+    "Spirosperma ferox"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 11,
+    "macro_mean_as_reported": 0.5653892935531583,
+    "macro_mean_ok_only": 0.5177309718708917
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": 0.6390348684750451,
+    "macro_mean_ok_only": 0.9511816209190336
+   },
+   "G2_full": {
+    "classes_in_macro": 39,
+    "unreliable_in_macro": 8,
+    "macro_mean_as_reported": -7.574073408507281,
+    "macro_mean_ok_only": -0.37753798373803465
+   },
+   "G3_full": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 12,
+    "macro_mean_as_reported": -7.1844228516473905,
+    "macro_mean_ok_only": 0.15684295649010266
+   },
+   "credible": 20,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Spirosperma ferox"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  }
+ },
+ "docs/evidence/aquamonitor_full_geometry/folds/fold4": {
+  "classes_n30_below_30": [],
+  "pcs8": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 3,
+    "macro_mean_as_reported": 0.20633842352848367,
+    "macro_mean_ok_only": 0.26111128725852994
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 8,
+    "macro_mean_as_reported": 0.3825496696273748,
+    "macro_mean_ok_only": 0.5457694396919709
+   },
+   "G2_full": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 4,
+    "macro_mean_as_reported": 0.06414309551338025,
+    "macro_mean_ok_only": 0.19556230045176062
+   },
+   "G3_full": {
+    "classes_in_macro": 40,
+    "unreliable_in_macro": 6,
+    "macro_mean_as_reported": -1.0322638798049635,
+    "macro_mean_ok_only": 0.021834723158251416
+   },
+   "credible": 26,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [
+    "Cloeon",
+    "Ecnomus tenellus",
+    "Helobdella stagnalis",
+    "Lepidostoma hirtum",
+    "Tinodes waeneri"
+   ],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  },
+  "pcs16": {
+   "G2_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 8,
+    "macro_mean_as_reported": 0.392392910229591,
+    "macro_mean_ok_only": 0.5308052840300787
+   },
+   "G3_tied": {
+    "classes_in_macro": 41,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": 0.3226627438581159,
+    "macro_mean_ok_only": 0.984815531152652
+   },
+   "G2_full": {
+    "classes_in_macro": 37,
+    "unreliable_in_macro": 7,
+    "macro_mean_as_reported": -2.067170644257724,
+    "macro_mean_ok_only": 0.6201726677624096
+   },
+   "G3_full": {
+    "classes_in_macro": 35,
+    "unreliable_in_macro": 14,
+    "macro_mean_as_reported": -3.91169825567885,
+    "macro_mean_ok_only": 0.8088451530019608
+   },
+   "credible": 23,
+   "credible_G2_tied_not_ok": 0,
+   "credible_without_G2_tied_interval_above_0": [],
+   "classes_with_stability_failures": 0,
+   "stability_failures_max": 0,
+   "GD_tied_over_budget": []
+  }
+ }
+}

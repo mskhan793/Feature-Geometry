@@ -1,0 +1,391 @@
+{
+ "dataset": "FIN-Benthic2",
+ "note": "five folds share specimens: fold results are correlated repeats",
+ "across_folds": {
+  "classes": {
+   "mean": 35.0,
+   "min": 34.0,
+   "max": 36.0
+  },
+  "classes_insufficient": {
+   "mean": 4.0,
+   "min": 3.0,
+   "max": 5.0
+  },
+  "specimens_train": {
+   "mean": 6163.2,
+   "min": 6160.0,
+   "max": 6165.0
+  },
+  "specimens_val": {
+   "mean": 1541.6,
+   "min": 1540.0,
+   "max": 1543.0
+  },
+  "pairs_dprime_val_below_2_share": {
+   "mean": 0.015777947542653426,
+   "min": 0.013445378151260505,
+   "max": 0.01904761904761905
+  },
+  "pairs_dprime_val_median": {
+   "mean": 5.408630386159157,
+   "min": 5.203508823576373,
+   "max": 5.490802016940475
+  },
+  "effective_rank_median": {
+   "mean": 35.77455458809673,
+   "min": 34.667648163842635,
+   "max": 36.44173015576908
+  },
+  "effective_rank_n30_median": {
+   "mean": 16.663016876787093,
+   "min": 16.380390147218968,
+   "max": 16.92187667530317
+  },
+  "pcs8_classes_fitted": {
+   "mean": 35.0,
+   "min": 34.0,
+   "max": 36.0
+  },
+  "pcs8_credible multiple groups": {
+   "mean": 10.4,
+   "min": 8.0,
+   "max": 13.0
+  },
+  "pcs8_inconclusive": {
+   "mean": 23.0,
+   "min": 20.0,
+   "max": 26.0
+  },
+  "pcs8_one Gaussian favoured": {
+   "mean": 0.4,
+   "min": 0.0,
+   "max": 1.0
+  },
+  "pcs8_insufficient evidence": {
+   "mean": 1.2,
+   "min": 0.0,
+   "max": 3.0
+  },
+  "pcs8_split_stable": {
+   "mean": 18.0,
+   "min": 15.0,
+   "max": 21.0
+  },
+  "pcs8_both_views_same_component_median": {
+   "mean": 0.8280170369487522,
+   "min": 0.7916666666666666,
+   "max": 0.8627423629515971
+  },
+  "pcs8_G2_tied-G1_full": {
+   "mean": -0.056632255111126,
+   "min": -0.1691696837308657,
+   "max": 0.08233365056575481
+  },
+  "pcs8_G2_tied-G1_full_ci_lo": {
+   "mean": -0.199187836666689,
+   "min": -0.3501334484472129,
+   "max": 0.024055845425655437
+  },
+  "pcs8_G2_tied-G1_full_ci_hi": {
+   "mean": 0.06588420220949709,
+   "min": -0.009961878665692654,
+   "max": 0.13609614322033362
+  },
+  "pcs8_G3_tied-G1_full": {
+   "mean": -0.3073318362199896,
+   "min": -1.5889508340231762,
+   "max": 0.10160253721048053
+  },
+  "pcs8_G3_tied-G1_full_ci_lo": {
+   "mean": -0.9202580222728273,
+   "min": -4.140136051478066,
+   "max": 0.009874922782591772
+  },
+  "pcs8_G3_tied-G1_full_ci_hi": {
+   "mean": 0.12866061015234515,
+   "min": 0.10377563083723333,
+   "max": 0.18451106205807438
+  },
+  "pcs8_G2_full-G1_full": {
+   "mean": -0.16750637854718406,
+   "min": -0.28022609493503886,
+   "max": -0.020500737309360292
+  },
+  "pcs8_G2_full-G1_full_ci_lo": {
+   "mean": -0.3995307867421075,
+   "min": -0.6102688060506668,
+   "max": -0.17985914020512025
+  },
+  "pcs8_G2_full-G1_full_ci_hi": {
+   "mean": 0.03135321909847975,
+   "min": -0.04591168919268941,
+   "max": 0.12156430697174345
+  },
+  "pcs8_G3_full-G1_full": {
+   "mean": -0.6254526842841555,
+   "min": -0.8699747531575094,
+   "max": -0.3342378486282723
+  },
+  "pcs8_G3_full-G1_full_ci_lo": {
+   "mean": -1.0174389040609373,
+   "min": -1.2263087544576066,
+   "max": -0.6319325198398242
+  },
+  "pcs8_G3_full-G1_full_ci_hi": {
+   "mean": -0.2967296838787946,
+   "min": -0.5145996621255545,
+   "max": -0.0925002521126531
+  },
+  "pcs8_log_image_area_associated": {
+   "mean": 15.6,
+   "min": 13.0,
+   "max": 17.0
+  },
+  "pcs8_credible_and_log_image_area_associated": {
+   "mean": 4.8,
+   "min": 4.0,
+   "max": 6.0
+  },
+  "pcs16_classes_fitted": {
+   "mean": 34.0,
+   "min": 34.0,
+   "max": 34.0
+  },
+  "pcs16_credible multiple groups": {
+   "mean": 7.4,
+   "min": 6.0,
+   "max": 10.0
+  },
+  "pcs16_inconclusive": {
+   "mean": 21.0,
+   "min": 18.0,
+   "max": 23.0
+  },
+  "pcs16_one Gaussian favoured": {
+   "mean": 2.2,
+   "min": 0.0,
+   "max": 5.0
+  },
+  "pcs16_insufficient evidence": {
+   "mean": 3.4,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "pcs16_split_stable": {
+   "mean": 13.2,
+   "min": 12.0,
+   "max": 16.0
+  },
+  "pcs16_both_views_same_component_median": {
+   "mean": 0.8321067135692687,
+   "min": 0.818359375,
+   "max": 0.8396844049017962
+  },
+  "pcs16_G2_tied-G1_full": {
+   "mean": -0.07500843212172462,
+   "min": -0.20518992421776158,
+   "max": 0.0012335412916405007
+  },
+  "pcs16_G2_tied-G1_full_ci_lo": {
+   "mean": -0.21919920192299505,
+   "min": -0.4504791535722181,
+   "max": -0.08841781665865255
+  },
+  "pcs16_G2_tied-G1_full_ci_hi": {
+   "mean": 0.03890335449363166,
+   "min": -0.0277743592660618,
+   "max": 0.08296742264618194
+  },
+  "pcs16_G3_tied-G1_full": {
+   "mean": -0.2598660833878786,
+   "min": -0.34270341708946794,
+   "max": -0.181447320449626
+  },
+  "pcs16_G3_tied-G1_full_ci_lo": {
+   "mean": -0.49276789208294713,
+   "min": -0.5948541782497057,
+   "max": -0.335802918833915
+  },
+  "pcs16_G3_tied-G1_full_ci_hi": {
+   "mean": -0.06255890629852404,
+   "min": -0.1507022246748265,
+   "max": 0.024185084899140077
+  },
+  "pcs16_G2_full-G1_full": {
+   "mean": -1.8436608534074186,
+   "min": -4.174988984475898,
+   "max": -0.6920626626604013
+  },
+  "pcs16_G2_full-G1_full_ci_lo": {
+   "mean": -2.944759756271778,
+   "min": -6.751960132705053,
+   "max": -1.231410533791195
+  },
+  "pcs16_G2_full-G1_full_ci_hi": {
+   "mean": -0.9159825028397479,
+   "min": -1.9828945629693902,
+   "max": -0.2705841059642638
+  },
+  "pcs16_G3_full-G1_full": {
+   "mean": -1.942279963671816,
+   "min": -2.376502898279173,
+   "max": -1.638753766684934
+  },
+  "pcs16_G3_full-G1_full_ci_lo": {
+   "mean": -2.6331625435586004,
+   "min": -3.056273247401931,
+   "max": -2.234623351529221
+  },
+  "pcs16_G3_full-G1_full_ci_hi": {
+   "mean": -1.3542112651819342,
+   "min": -1.7612053437504878,
+   "max": -1.0191230961969915
+  },
+  "pcs16_log_image_area_associated": {
+   "mean": 11.4,
+   "min": 9.0,
+   "max": 13.0
+  },
+  "pcs16_credible_and_log_image_area_associated": {
+   "mean": 2.8,
+   "min": 1.0,
+   "max": 4.0
+  }
+ },
+ "folds_ci_above_0": {
+  "pcs8_G2_tied-G1_full": 1,
+  "pcs8_G3_tied-G1_full": 1,
+  "pcs8_G2_full-G1_full": 0,
+  "pcs8_G3_full-G1_full": 0,
+  "pcs16_G2_tied-G1_full": 0,
+  "pcs16_G3_tied-G1_full": 0,
+  "pcs16_G2_full-G1_full": 0,
+  "pcs16_G3_full-G1_full": 0
+ },
+ "folds_ci_below_0": {
+  "pcs8_G2_tied-G1_full": 1,
+  "pcs8_G3_tied-G1_full": 0,
+  "pcs8_G2_full-G1_full": 2,
+  "pcs8_G3_full-G1_full": 5,
+  "pcs16_G2_tied-G1_full": 1,
+  "pcs16_G3_tied-G1_full": 4,
+  "pcs16_G2_full-G1_full": 5,
+  "pcs16_G3_full-G1_full": 5
+ },
+ "classes_credible_in_k_folds": {
+  "8": {
+   "0": 20,
+   "1": 3,
+   "2": 3,
+   "3": 2,
+   "4": 3,
+   "5": 5
+  },
+  "16": {
+   "0": 22,
+   "1": 3,
+   "3": 5,
+   "4": 1,
+   "5": 3
+  }
+ },
+ "classes_credible_in_all_folds": {
+  "8": [
+   "Elmis_aenea",
+   "Micrasema_gelidum",
+   "Micrasema_setiferum",
+   "Oulimnius_tuberculatus",
+   "Simuliidae"
+  ],
+  "16": [
+   "Elmis_aenea",
+   "Micrasema_setiferum",
+   "Oulimnius_tuberculatus"
+  ]
+ },
+ "pairs": {
+  "in_all_folds": 561,
+  "spearman_dprime_val_between_folds_min_median_max": [
+   0.8634960130930405,
+   0.9100675857531624,
+   0.9474929247014237
+  ],
+  "below_2_in_all_folds": 5,
+  "below_2_in_some_fold": 14,
+  "closest_by_mean": [
+   {
+    "pair": "Polycentropus_flavomaculatus | Polycentropus_irroratus",
+    "mean": 0.8177574162,
+    "min": 0.5564260601,
+    "max": 1.0231646024,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Plectrocnemia_sp | Polycentropus_flavomaculatus",
+    "mean": 1.3035479141,
+    "min": 0.9052330427,
+    "max": 1.7217729788,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Leuctra_nigra | Leuctra_sp",
+    "mean": 1.4115264163,
+    "min": 0.8837499387,
+    "max": 1.7751130564,
+    "folds_below_2": 3
+   },
+   {
+    "pair": "Baetis_rhodani | Baetis_vernus_group",
+    "mean": 1.4721844071,
+    "min": 1.0682560661,
+    "max": 1.8501560261,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Elmis_aenea | Oulimnius_tuberculatus",
+    "mean": 1.4869783924,
+    "min": 1.4319578008,
+    "max": 1.5800660874,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Plectrocnemia_sp | Polycentropus_irroratus",
+    "mean": 1.5051918305,
+    "min": 1.0665027666,
+    "max": 1.8996578008,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Lepidostoma_hirtum | Micrasema_setiferum",
+    "mean": 1.703811662,
+    "min": 1.4662984747,
+    "max": 2.0596903253,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Heptagenia_sulphurea | Kageronia_fuscogrisea",
+    "mean": 1.7690054155,
+    "min": 1.3751103507,
+    "max": 2.0750665119,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Micrasema_gelidum | Micrasema_setiferum",
+    "mean": 1.7700534433,
+    "min": 1.4824476293,
+    "max": 2.12320398,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Kageronia_fuscogrisea | Leptophlebia_sp",
+    "mean": 1.8899379577,
+    "min": 1.3390763151,
+    "max": 2.2899868606,
+    "folds_below_2": 2
+   }
+  ]
+ },
+ "classes_same_nearest_class_in_all_folds": 13,
+ "classes_with_nearest_class": 36
+}

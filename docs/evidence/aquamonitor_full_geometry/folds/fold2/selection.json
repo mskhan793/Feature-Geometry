@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria"
+ ],
+ "candidate_single": [
+  "Cloeon",
+  "Limnephilidae"
+ ],
+ "all": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria",
+  "Cloeon",
+  "Limnephilidae"
+ ],
+ "montage_specimens": {
+  "Chironomidae": {
+   "component_0": [
+    "Ch-vie1_186_22",
+    "Ch-kom2_83_22",
+    "Ch-kom2_177_22",
+    "Ch-kom2_197_22"
+   ],
+   "component_1": [
+    "15-F6-Ch-iso3-18",
+    "12-G3-Ch-iso2-4",
+    "12-G7-Ch-iso2-8",
+    "15-F2-Ch-iso3-14"
+   ],
+   "outliers_lowest_G1_density": [
+    "15-F6-Ch-iso3-18",
+    "Ch-lop3_81_21"
+   ]
+  },
+  "Leptophlebia": {
+   "component_0": [
+    "6-A7-Le-iso1-16",
+    "Le-iso1_147_22",
+    "Le-iso1_279_22",
+    "Le-iso1_442_21"
+   ],
+   "component_1": [
+    "14-C6-Le-iso2-13",
+    "Le-iso1_68_22",
+    "Le-iso3_1783_21",
+    "15-E11-Le-iso2-30"
+   ],
+   "outliers_lowest_G1_density": [
+    "6-A9-Le-iso1-18",
+    "6-A7-Le-iso1-16"
+   ]
+  },
+  "Caenis horaria": {
+   "component_0": [
+    "10-B10-CaHo-kir1-4",
+    "10-B8-CaHo-kir1-2",
+    "13-A10-CaHo-kuh2-4",
+    "13-A6-CaHo-kuh1-4"
+   ],
+   "component_1": [
+    "CaHo-haa1_11_22",
+    "CaHo-haa1_12_22",
+    "CaHo-haa1_13_22",
+    "CaHo-haa1_14_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "CaHo-val1_62_21",
+    "CaHo-val1_61_21"
+   ]
+  },
+  "Cloeon": {
+   "component_0": [
+    "Cl-iso1_3_22",
+    "Cl-iso1_21_22",
+    "Cl-iso3_29_22",
+    "Cl-iso1_9_22"
+   ],
+   "component_1": [
+    "Cl-kak3_14_21",
+    "Cl-kak3_15_21",
+    "Cl-kak3_5_21",
+    "Cl-kak3_13_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "Cl-kak1_1_21",
+    "Cl-iso3_22_22"
+   ]
+  },
+  "Limnephilidae": {
+   "component_0": [
+    "LiPhidae-kuo1_1_22",
+    "LiPhidae-kom2_4_22",
+    "9-D7-LiPhidae-nie1-4",
+    "LiPhidae-iva1_2_22"
+   ],
+   "component_1": [
+    "9-D3-LiPhidae-lop3-2",
+    "LiPhidae-kir1_2_21",
+    "LiPhidae-kir1_6_22",
+    "9-D12-LiPhidae-vii2-1"
+   ],
+   "outliers_lowest_G1_density": [
+    "LiPhidae-haa1_2_21",
+    "5-D6-LiPhidae-kir1-3"
+   ]
+  }
+ }
+}

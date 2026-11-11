@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria"
+ ],
+ "candidate_single": [
+  "Limnephilus",
+  "Turbellaria"
+ ],
+ "all": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria",
+  "Limnephilus",
+  "Turbellaria"
+ ],
+ "montage_specimens": {
+  "Chironomidae": {
+   "component_0": [
+    "Ch-kom2_534_22",
+    "Ch-ull1_242_22",
+    "Ch-hii2_22_22",
+    "Ch-kom2_177_22"
+   ],
+   "component_1": [
+    "15-F6-Ch-iso3-18",
+    "2-B11-Ch-haa1-2",
+    "16-D7-Ch-kak2-4",
+    "12-G4-Ch-iso2-5"
+   ],
+   "outliers_lowest_G1_density": [
+    "Ch-kur1_71_21",
+    "15-F6-Ch-iso3-18"
+   ]
+  },
+  "Leptophlebia": {
+   "component_0": [
+    "14-C6-Le-iso2-13",
+    "15-E11-Le-iso2-30",
+    "17-A11-Le-iso3-7",
+    "17-G6-Le-iso3-14"
+   ],
+   "component_1": [
+    "Le-ala1_2_21",
+    "Le-iso1_442_21",
+    "Le-iso2_173_22",
+    "Le-iso2_240_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "6-A11-Le-iso1-20",
+    "16-C6-Le-iso2-37"
+   ]
+  },
+  "Caenis horaria": {
+   "component_0": [
+    "10-B3-CaHo-kaj2-2",
+    "CaHo-val3_7_21",
+    "CaHo-pus2_111_21",
+    "CaHo-val3_81_21"
+   ],
+   "component_1": [
+    "CaHo-hii1_21_22",
+    "CaHo-hii1_20_22",
+    "CaHo-iva1_121_22",
+    "CaHo-hii1_3_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "CaHo-val1_61_21",
+    "CaHo-pus2_111_21"
+   ]
+  },
+  "Limnephilus": {
+   "component_0": [
+    "LiPhilus-iso1_4_22",
+    "LiPhilus-kuo2_1_22",
+    "LiPhilus-iso2_4_22",
+    "LiPhilus-iso3_8_22"
+   ],
+   "component_1": [
+    "12-E5-LiPhilus-kir1-2",
+    "LiPhilus-kir1_2_21",
+    "8-G10-LiPhilus-iso3-11",
+    "LiPhilus-iso3_1_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "LiPhilus-kir2_1_21",
+    "LiPhilus-iso3_5_21"
+   ]
+  },
+  "Turbellaria": {
+   "component_0": [
+    "Tu-kuo2_1_22",
+    "Tu-ull1_14_22",
+    "Tu-iso3_1_21",
+    "Tu-ull1_4_22"
+   ],
+   "component_1": [
+    "Tu-ull1_6_22",
+    "Tu-sii3_3_21",
+    "Tu-sii3_5_21",
+    "Tu-sii3_7_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "Tu-sii3_3_21",
+    "Tu-haa1_2_21"
+   ]
+  }
+ }
+}

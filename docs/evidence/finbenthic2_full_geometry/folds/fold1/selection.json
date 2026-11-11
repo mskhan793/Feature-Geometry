@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus",
+  "Limnius_volckmari"
+ ],
+ "candidate_single": [
+  "Agapetus_sp",
+  "Sphaerium_sp"
+ ],
+ "all": [
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus",
+  "Limnius_volckmari",
+  "Agapetus_sp",
+  "Sphaerium_sp"
+ ],
+ "montage_specimens": {
+  "Elmis_aenea": {
+   "component_0": [
+    "Elmis_aen176",
+    "Elmis_aen177",
+    "Elmis_aen178",
+    "Elmis_aen179"
+   ],
+   "component_1": [
+    "Elmis_aen1",
+    "Elmis_aen101",
+    "Elmis_aen102",
+    "Elmis_aen103"
+   ],
+   "outliers_lowest_G1_density": [
+    "Elmis_aen324",
+    "Elmis_aen43"
+   ]
+  },
+  "Oulimnius_tuberculatus": {
+   "component_0": [
+    "Oulimnius_tub1",
+    "Oulimnius_tub100",
+    "Oulimnius_tub103",
+    "Oulimnius_tub104"
+   ],
+   "component_1": [
+    "Oulimnius_tub134",
+    "Oulimnius_tub135",
+    "Oulimnius_tub136",
+    "Oulimnius_tub137"
+   ],
+   "outliers_lowest_G1_density": [
+    "Oulimnius_tub304",
+    "Oulimnius_tub32"
+   ]
+  },
+  "Limnius_volckmari": {
+   "component_0": [
+    "Limnius_vol152",
+    "Limnius_vol241",
+    "Limnius_vol136",
+    "Limnius_vol140"
+   ],
+   "component_1": [
+    "Limnius_vol123",
+    "Limnius_vol307",
+    "Limnius_vol311",
+    "Limnius_vol112"
+   ],
+   "outliers_lowest_G1_density": [
+    "Limnius_vol183",
+    "Limnius_vol192"
+   ]
+  },
+  "Agapetus_sp": {
+   "component_0": [
+    "Agapetus286",
+    "Agapetus212",
+    "Agapetus217",
+    "Agapetus48"
+   ],
+   "component_1": [
+    "Agapetus107",
+    "Agapetus149",
+    "Agapetus70",
+    "Agapetus63"
+   ],
+   "outliers_lowest_G1_density": [
+    "Agapetus290",
+    "Agapetus110"
+   ]
+  },
+  "Sphaerium_sp": {
+   "component_0": [
+    "Sphaerium100",
+    "Sphaerium94",
+    "Sphaerium19",
+    "Sphaerium102"
+   ],
+   "component_1": [
+    "Sphaerium85",
+    "Sphaerium30",
+    "Sphaerium36",
+    "Sphaerium29"
+   ],
+   "outliers_lowest_G1_density": [
+    "Sphaerium90",
+    "Sphaerium85"
+   ]
+  }
+ }
+}

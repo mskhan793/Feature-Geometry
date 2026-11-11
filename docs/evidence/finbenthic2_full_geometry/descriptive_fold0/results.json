@@ -1,0 +1,168 @@
+{
+ "status": "exploratory, in-sample: fitted and described on the same specimens; not held-out evidence",
+ "pool": "fold0 train + val specimens; fold0 test rows not read",
+ "cohort_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+ "cohort_rows": {
+  "in_file": 186284,
+  "pool": 148979,
+  "not_read": 37305
+ },
+ "encoder": "dinov3_l",
+ "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+ "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+ "tf32": false,
+ "seed": 20261107,
+ "specimens": 7707,
+ "classes": 38,
+ "classes_below_min": {
+  "Hydropsyche_saxonica": 13
+ },
+ "specimens_per_class_min_median_max": [
+  15,
+  185.0,
+  707
+ ],
+ "pca_explained_variance": {
+  "8": 0.5377085221540694,
+  "16": 0.6565984347201266
+ },
+ "within_class_native_min_median_max": {
+  "rms_radius": [
+   5.3329343298611045,
+   6.321301601242888,
+   7.9230806791323705
+  ],
+  "top1_share": [
+   0.12341004550869203,
+   0.21392925945211672,
+   0.431017499811866
+  ],
+  "effective_rank": [
+   10.160881714016016,
+   36.867855929057654,
+   53.77550345177487
+  ],
+  "effective_rank_n30": [
+   9.940920551336733,
+   15.912249882387188,
+   18.35361332008571
+  ],
+  "camera_reid": [
+   0.062111801242236024,
+   0.14476190476190476,
+   0.4
+  ],
+  "frame_rms_within_specimen_median": [
+   3.4181294175302943,
+   4.280659564733911,
+   5.665351497956431
+  ]
+ },
+ "between_classes": {
+  "pairs": 703,
+  "dprime_in_sample_below_2": 10,
+  "dprime_in_sample_median": 5.457375451581573,
+  "closest_pairs": [
+   {
+    "class_a": "Polycentropus_flavomaculatus",
+    "class_b": "Polycentropus_irroratus",
+    "dprime_in_sample": 0.9705725671
+   },
+   {
+    "class_a": "Plectrocnemia_sp",
+    "class_b": "Polycentropus_flavomaculatus",
+    "dprime_in_sample": 1.3192978385
+   },
+   {
+    "class_a": "Elmis_aenea",
+    "class_b": "Oulimnius_tuberculatus",
+    "dprime_in_sample": 1.411376267
+   },
+   {
+    "class_a": "Lepidostoma_hirtum",
+    "class_b": "Micrasema_setiferum",
+    "dprime_in_sample": 1.5527981568
+   },
+   {
+    "class_a": "Baetis_rhodani",
+    "class_b": "Baetis_vernus_group",
+    "dprime_in_sample": 1.5569016417
+   },
+   {
+    "class_a": "Plectrocnemia_sp",
+    "class_b": "Polycentropus_irroratus",
+    "dprime_in_sample": 1.5818958537
+   },
+   {
+    "class_a": "Micrasema_gelidum",
+    "class_b": "Micrasema_setiferum",
+    "dprime_in_sample": 1.7645331504
+   },
+   {
+    "class_a": "Leuctra_nigra",
+    "class_b": "Leuctra_sp",
+    "dprime_in_sample": 1.8026266861
+   },
+   {
+    "class_a": "Heptagenia_sulphurea",
+    "class_b": "Kageronia_fuscogrisea",
+    "dprime_in_sample": 1.842036262
+   },
+   {
+    "class_a": "Kageronia_fuscogrisea",
+    "class_b": "Leptophlebia_sp",
+    "dprime_in_sample": 1.9714173709
+   }
+  ]
+ },
+ "mixture_in_sample_by_pcs": {
+  "8": {
+   "classes_fitted": 38,
+   "classes_ineligible": 0,
+   "bic_prefers_G2_tied": 23,
+   "both_views_same_component_median": 0.8126213592233009,
+   "log_image_area_auc_outside_0.2_0.8": [
+    "Amphinemura_borealis",
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Ephemerella_mucronata",
+    "Heptagenia_sulphurea",
+    "Hydropsyche_siltalai",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Rhyacophila_nubila",
+    "Sialis_sp",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  },
+  "16": {
+   "classes_fitted": 34,
+   "classes_ineligible": 4,
+   "bic_prefers_G2_tied": 13,
+   "both_views_same_component_median": 0.8329846582984659,
+   "log_image_area_auc_outside_0.2_0.8": [
+    "Agapetus_sp",
+    "Ameletus_inopinatus",
+    "Baetis_rhodani",
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "wall_seconds": 67.4
+}

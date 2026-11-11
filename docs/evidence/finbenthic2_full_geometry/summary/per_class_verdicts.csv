@@ -1,0 +1,71 @@
+taxon_group,pcs,fold0,fold1,fold2,fold3,fold4,folds_credible,folds_one_gaussian
+Agapetus_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Agapetus_sp,16,inconclusive,one Gaussian favoured,inconclusive,inconclusive,inconclusive,0,1
+Ameletus_inopinatus,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Ameletus_inopinatus,16,one Gaussian favoured,inconclusive,one Gaussian favoured,inconclusive,one Gaussian favoured,0,3
+Amphinemura_borealis,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Amphinemura_borealis,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Baetis_rhodani,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Baetis_rhodani,16,inconclusive,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,3,0
+Baetis_vernus_group,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Baetis_vernus_group,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Diura_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Diura_sp,16,insufficient evidence,one Gaussian favoured,inconclusive,insufficient evidence,inconclusive,0,1
+Elmis_aenea,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Elmis_aenea,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Ephemerella_aurivillii,8,credible multiple groups,inconclusive,inconclusive,inconclusive,inconclusive,1,0
+Ephemerella_aurivillii,16,credible multiple groups,inconclusive,inconclusive,credible multiple groups,credible multiple groups,3,0
+Ephemerella_mucronata,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Ephemerella_mucronata,16,one Gaussian favoured,inconclusive,inconclusive,inconclusive,inconclusive,0,1
+Heptagenia_sulphurea,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Heptagenia_sulphurea,16,inconclusive,inconclusive,inconclusive,credible multiple groups,inconclusive,1,0
+Hydraena_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Hydraena_sp,16,one Gaussian favoured,inconclusive,inconclusive,inconclusive,inconclusive,0,1
+Hydropsyche_pellucidula,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Hydropsyche_pellucidula,16,inconclusive,inconclusive,inconclusive,inconclusive,one Gaussian favoured,0,1
+Hydropsyche_siltalai,8,credible multiple groups,inconclusive,inconclusive,credible multiple groups,inconclusive,2,0
+Hydropsyche_siltalai,16,credible multiple groups,inconclusive,inconclusive,inconclusive,inconclusive,1,0
+Isoperla_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Isoperla_sp,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Kageronia_fuscogrisea,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Kageronia_fuscogrisea,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Lepidostoma_hirtum,8,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,inconclusive,3,0
+Lepidostoma_hirtum,16,inconclusive,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,3,0
+Leptophlebia_sp,8,credible multiple groups,inconclusive,inconclusive,credible multiple groups,inconclusive,2,0
+Leptophlebia_sp,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Leuctra_nigra,8,insufficient evidence,insufficient evidence,,insufficient evidence,,0,0
+Leuctra_sp,8,credible multiple groups,inconclusive,inconclusive,inconclusive,inconclusive,1,0
+Leuctra_sp,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Limnius_volckmari,8,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,4,0
+Limnius_volckmari,16,insufficient evidence,inconclusive,insufficient evidence,credible multiple groups,insufficient evidence,1,0
+Micrasema_gelidum,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Micrasema_gelidum,16,credible multiple groups,inconclusive,credible multiple groups,inconclusive,credible multiple groups,3,0
+Micrasema_setiferum,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Micrasema_setiferum,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Nemoura_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Nemoura_sp,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Neureclipsis_bimaculata,8,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,4,0
+Neureclipsis_bimaculata,16,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,credible multiple groups,4,0
+Oulimnius_tuberculatus,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oulimnius_tuberculatus,16,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Oxyethira_sp,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,inconclusive,4,0
+Oxyethira_sp,16,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,inconclusive,3,0
+Plectrocnemia_sp,8,inconclusive,inconclusive,credible multiple groups,inconclusive,inconclusive,1,0
+Plectrocnemia_sp,16,insufficient evidence,insufficient evidence,insufficient evidence,insufficient evidence,insufficient evidence,0,0
+Polycentropus_flavomaculatus,8,inconclusive,credible multiple groups,credible multiple groups,inconclusive,inconclusive,2,0
+Polycentropus_flavomaculatus,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Polycentropus_irroratus,8,insufficient evidence,inconclusive,inconclusive,one Gaussian favoured,inconclusive,0,1
+Polycentropus_irroratus,16,insufficient evidence,one Gaussian favoured,insufficient evidence,insufficient evidence,insufficient evidence,0,1
+Protonemura_sp,8,inconclusive,one Gaussian favoured,inconclusive,inconclusive,inconclusive,0,1
+Protonemura_sp,16,inconclusive,inconclusive,inconclusive,insufficient evidence,inconclusive,0,0
+Rhyacophila_nubila,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Rhyacophila_nubila,16,inconclusive,one Gaussian favoured,inconclusive,inconclusive,inconclusive,0,1
+Sialis_sp,8,insufficient evidence,,,,insufficient evidence,0,0
+Silo_pallipes,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Silo_pallipes,16,insufficient evidence,one Gaussian favoured,insufficient evidence,inconclusive,inconclusive,0,1
+Simuliidae,8,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,credible multiple groups,5,0
+Simuliidae,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Sphaerium_sp,8,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Sphaerium_sp,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0
+Taeniopteryx_nebulosa,8,inconclusive,credible multiple groups,credible multiple groups,inconclusive,credible multiple groups,3,0
+Taeniopteryx_nebulosa,16,inconclusive,inconclusive,inconclusive,inconclusive,inconclusive,0,0

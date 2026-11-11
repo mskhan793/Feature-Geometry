@@ -1,0 +1,5 @@
+start 2026-11-11T14:54:52+02:00 job 23642052 node nid007971 code d072185 manifest /flash/project_462001534/feature_geometry/finbenthic2/full_new_images.parquet out /scratch/project_462001534/feature_geometry/full_specimen/finbenthic2/extract
+extract done 2026-11-11T14:58:42+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/full_specimen/finbenthic2/extract/features_gpu/dinov3_l", "encoder": "dinov3_l", "manifest_rows": 57347, "rows_covered": 57347, "chunks_ok": 8, "dims": [1024], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/full_specimen/finbenthic2/extract/features_gpu/dinov3_l", "prefix": "/scratch/project_462001534/feature_geometry/full_specimen/finbenthic2/extract/features_cpu256/dinov3_l", "rows": 256, "tf32": [false, false], "max_abs_diff": 1.8358230590820312e-05, "mean_abs_diff": 2.1877154442982716e-06, "max_rel_norm_diff": 1.7560203104949323e-06, "bitwise_equal": false}
+end 2026-11-11T15:02:23+02:00

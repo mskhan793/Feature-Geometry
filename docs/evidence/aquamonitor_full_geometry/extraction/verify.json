@@ -1,0 +1,1043 @@
+{
+ "cache_dir": "/scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract/features_gpu/dinov3_l",
+ "encoder": "dinov3_l",
+ "manifest_rows": 836159,
+ "rows_covered": 836159,
+ "chunks_ok": 103,
+ "dims": [
+  1024
+ ],
+ "problems": [],
+ "chunks": [
+  {
+   "start": 0,
+   "end": 8192,
+   "dim": 1024,
+   "sha256": "eb5d4a0ab9a4eea3b30e3b521bcde69851f3b037e5a385638a2f4e0ae0606a38",
+   "norm_min": 13.455439567565918,
+   "norm_mean": 15.83967399597168,
+   "norm_max": 17.093338012695312,
+   "images_per_second": 36.1
+  },
+  {
+   "start": 8192,
+   "end": 16384,
+   "dim": 1024,
+   "sha256": "8bd3e063f3784837b07f40382bd39c97b8b01c1d4e1a4c9fbb41d8436d4ef071",
+   "norm_min": 13.256732940673828,
+   "norm_mean": 15.862187385559082,
+   "norm_max": 17.175655364990234,
+   "images_per_second": 35.9
+  },
+  {
+   "start": 16384,
+   "end": 24576,
+   "dim": 1024,
+   "sha256": "f94bc885fb2e2ed558dc3db8fc4a81cd8adcfed44faaa2db550eb935fa9dbff7",
+   "norm_min": 13.32409381866455,
+   "norm_mean": 15.932817459106445,
+   "norm_max": 17.245506286621094,
+   "images_per_second": 36.1
+  },
+  {
+   "start": 24576,
+   "end": 32768,
+   "dim": 1024,
+   "sha256": "692d2d5fb6cae9b482b74ab71406e22babb2125b3dc1897d25655e49bfc78b28",
+   "norm_min": 13.242772102355957,
+   "norm_mean": 15.77067756652832,
+   "norm_max": 17.030088424682617,
+   "images_per_second": 36.0
+  },
+  {
+   "start": 32768,
+   "end": 40960,
+   "dim": 1024,
+   "sha256": "3298741a06ffa53bbf5bd0d0d91d6de3e734a3c4a8f8850dc4a51b95a4c9c04e",
+   "norm_min": 12.963911056518555,
+   "norm_mean": 15.461530685424805,
+   "norm_max": 17.06085777282715,
+   "images_per_second": 36.1
+  },
+  {
+   "start": 40960,
+   "end": 49152,
+   "dim": 1024,
+   "sha256": "2ec17d0f9c620402c0f9dbe0506b14a366c029ae59f9774c40b72061a6dcb697",
+   "norm_min": 13.095742225646973,
+   "norm_mean": 15.50968074798584,
+   "norm_max": 17.063953399658203,
+   "images_per_second": 36.0
+  },
+  {
+   "start": 49152,
+   "end": 57344,
+   "dim": 1024,
+   "sha256": "f10bcf2ad4143e4c46f45f42fd12dc60b65f8ab10691d92a4c602c53a78e5a81",
+   "norm_min": 12.88458251953125,
+   "norm_mean": 15.686147689819336,
+   "norm_max": 17.238828659057617,
+   "images_per_second": 36.0
+  },
+  {
+   "start": 57344,
+   "end": 65536,
+   "dim": 1024,
+   "sha256": "58a000d1af9558af981dcd6198bf0a4b0906810d8cbb334085b1c39aacb34dd7",
+   "norm_min": 12.569369316101074,
+   "norm_mean": 15.598851203918457,
+   "norm_max": 17.25091552734375,
+   "images_per_second": 36.0
+  },
+  {
+   "start": 65536,
+   "end": 73728,
+   "dim": 1024,
+   "sha256": "deb9477db6410ba94aab108cd7b9f3e96a74d01165c6fb3fa4176a83052d0287",
+   "norm_min": 13.55955982208252,
+   "norm_mean": 15.606328964233398,
+   "norm_max": 17.21650505065918,
+   "images_per_second": 132.1
+  },
+  {
+   "start": 73728,
+   "end": 81920,
+   "dim": 1024,
+   "sha256": "6d55882cfc75398232915a24e7f29e0b6300eaa84a8e12a478d32859488a7a47",
+   "norm_min": 13.599172592163086,
+   "norm_mean": 15.446216583251953,
+   "norm_max": 16.98570442199707,
+   "images_per_second": 130.0
+  },
+  {
+   "start": 81920,
+   "end": 90112,
+   "dim": 1024,
+   "sha256": "f19685d66f3df2190e16613e125d9bf4429a7fcf0f7d6042dfcf023d25dfcbd3",
+   "norm_min": 13.611969947814941,
+   "norm_mean": 15.686758041381836,
+   "norm_max": 17.188478469848633,
+   "images_per_second": 130.5
+  },
+  {
+   "start": 90112,
+   "end": 98304,
+   "dim": 1024,
+   "sha256": "a0cc1c8b760686fc7175114d2c306ed7ee1b8d5bbeacff511ad6131faf67c69a",
+   "norm_min": 13.502856254577637,
+   "norm_mean": 15.711175918579102,
+   "norm_max": 17.240856170654297,
+   "images_per_second": 128.9
+  },
+  {
+   "start": 98304,
+   "end": 106496,
+   "dim": 1024,
+   "sha256": "ae5f5add25b301b0a122d47dad2fdfe637d9402a4016a055aa6afee84db16f80",
+   "norm_min": 13.596894264221191,
+   "norm_mean": 15.508886337280273,
+   "norm_max": 17.203889846801758,
+   "images_per_second": 133.4
+  },
+  {
+   "start": 106496,
+   "end": 114688,
+   "dim": 1024,
+   "sha256": "d28c958e89c73fa396f2aa23a906f31a6b8efb52c0905335f46b4b98731287d4",
+   "norm_min": 13.400280952453613,
+   "norm_mean": 15.666990280151367,
+   "norm_max": 17.130939483642578,
+   "images_per_second": 132.4
+  },
+  {
+   "start": 114688,
+   "end": 122880,
+   "dim": 1024,
+   "sha256": "2037f967f1225b53871488867f58d6ae25b56b3417eea2c1047c03ee3e34c224",
+   "norm_min": 12.951131820678711,
+   "norm_mean": 15.684900283813477,
+   "norm_max": 17.21166229248047,
+   "images_per_second": 129.3
+  },
+  {
+   "start": 122880,
+   "end": 131072,
+   "dim": 1024,
+   "sha256": "11083c549d8f7b4b342873119a32157ca4fe6c016ea72d317c17eb79e7c2b0ca",
+   "norm_min": 13.925888061523438,
+   "norm_mean": 15.652311325073242,
+   "norm_max": 17.203413009643555,
+   "images_per_second": 131.3
+  },
+  {
+   "start": 131072,
+   "end": 139264,
+   "dim": 1024,
+   "sha256": "8db343dcfdac5ed3ec96ef5b3f6665542b41ac1658435ca7ebd963694330975f",
+   "norm_min": 13.583148002624512,
+   "norm_mean": 15.577398300170898,
+   "norm_max": 17.125185012817383,
+   "images_per_second": 137.1
+  },
+  {
+   "start": 139264,
+   "end": 147456,
+   "dim": 1024,
+   "sha256": "05d3aed29e2053daeffc768b4aed133c4d52b0de90fb4fe55c922e1847fc2d76",
+   "norm_min": 13.952588081359863,
+   "norm_mean": 15.744626998901367,
+   "norm_max": 17.151762008666992,
+   "images_per_second": 135.3
+  },
+  {
+   "start": 147456,
+   "end": 155648,
+   "dim": 1024,
+   "sha256": "9969a6a45f3431c1f573041ad66a0aa1172b3bfa2656db7cb81ce49c3003d5cb",
+   "norm_min": 13.707494735717773,
+   "norm_mean": 15.616998672485352,
+   "norm_max": 16.847585678100586,
+   "images_per_second": 133.8
+  },
+  {
+   "start": 155648,
+   "end": 163840,
+   "dim": 1024,
+   "sha256": "c4db2201cf26b2f7f7a04455203056d6f5c91fc9307c9e520b1298b421213258",
+   "norm_min": 13.454752922058105,
+   "norm_mean": 15.683236122131348,
+   "norm_max": 17.067842483520508,
+   "images_per_second": 135.8
+  },
+  {
+   "start": 163840,
+   "end": 172032,
+   "dim": 1024,
+   "sha256": "842c11d3172464beb7f8aa7ced8fe36bee3de77c25eb20a7cd56df6b6bd0456e",
+   "norm_min": 13.829079627990723,
+   "norm_mean": 15.678343772888184,
+   "norm_max": 17.114255905151367,
+   "images_per_second": 137.4
+  },
+  {
+   "start": 172032,
+   "end": 180224,
+   "dim": 1024,
+   "sha256": "2983a8193c04049f889b570c480ea132f54e1a1a75581a1fe594b5c8c4b2c84a",
+   "norm_min": 13.824142456054688,
+   "norm_mean": 15.79664421081543,
+   "norm_max": 17.13595962524414,
+   "images_per_second": 136.9
+  },
+  {
+   "start": 180224,
+   "end": 188416,
+   "dim": 1024,
+   "sha256": "43b40948eb6941bd94cd469b86cfa697985d5730a775020d39f1abef7ee499f0",
+   "norm_min": 13.532059669494629,
+   "norm_mean": 15.714881896972656,
+   "norm_max": 17.21178436279297,
+   "images_per_second": 138.7
+  },
+  {
+   "start": 188416,
+   "end": 196608,
+   "dim": 1024,
+   "sha256": "3d4d3d3a9b203a6f1270cf2d3316dc25694407d2ccad20826418d824c0c16c72",
+   "norm_min": 13.430363655090332,
+   "norm_mean": 15.522210121154785,
+   "norm_max": 17.17696189880371,
+   "images_per_second": 137.4
+  },
+  {
+   "start": 196608,
+   "end": 204800,
+   "dim": 1024,
+   "sha256": "140312a891bd35ab82ac4f6c753b52e9939a58f9e2d82258a837d94fff14e8ad",
+   "norm_min": 13.606571197509766,
+   "norm_mean": 15.53186321258545,
+   "norm_max": 16.969158172607422,
+   "images_per_second": 138.5
+  },
+  {
+   "start": 204800,
+   "end": 212992,
+   "dim": 1024,
+   "sha256": "9752a0ca2b03f517aa0617c0afa25c343909083b434f82a681f1985bc27e8667",
+   "norm_min": 13.517316818237305,
+   "norm_mean": 15.58248519897461,
+   "norm_max": 17.28420639038086,
+   "images_per_second": 135.9
+  },
+  {
+   "start": 212992,
+   "end": 221184,
+   "dim": 1024,
+   "sha256": "988a4d47b15fed3be8de2776c41ee5aa6ec95422022ed5661c5ab63521c0c931",
+   "norm_min": 13.710190773010254,
+   "norm_mean": 15.725948333740234,
+   "norm_max": 17.123666763305664,
+   "images_per_second": 137.1
+  },
+  {
+   "start": 221184,
+   "end": 229376,
+   "dim": 1024,
+   "sha256": "a781b5b9573f5b82bd17005cbce7b5bdce3580a7ecbe81bba489b54e24a854e9",
+   "norm_min": 14.084641456604004,
+   "norm_mean": 15.529035568237305,
+   "norm_max": 16.78904151916504,
+   "images_per_second": 136.8
+  },
+  {
+   "start": 229376,
+   "end": 237568,
+   "dim": 1024,
+   "sha256": "c0681764deb48a9937a714a76ba42ee2691b5a5ca33f4c6dd44724a15940e5f0",
+   "norm_min": 14.374885559082031,
+   "norm_mean": 15.708028793334961,
+   "norm_max": 17.111106872558594,
+   "images_per_second": 138.9
+  },
+  {
+   "start": 237568,
+   "end": 245760,
+   "dim": 1024,
+   "sha256": "ca9862e85e0dd7393b949b46b70169babacdc76cbedafc454498ce97b6b853df",
+   "norm_min": 14.16395378112793,
+   "norm_mean": 15.648066520690918,
+   "norm_max": 16.963926315307617,
+   "images_per_second": 134.9
+  },
+  {
+   "start": 245760,
+   "end": 253952,
+   "dim": 1024,
+   "sha256": "589917cae34c7d14f74e1c57527c9b10d66ff8a4ef9bc3ef632ca4c12afe9112",
+   "norm_min": 14.00005054473877,
+   "norm_mean": 15.622407913208008,
+   "norm_max": 16.879863739013672,
+   "images_per_second": 136.1
+  },
+  {
+   "start": 253952,
+   "end": 262144,
+   "dim": 1024,
+   "sha256": "1d51c39ece3e16ca0db0a253bdc507a9c92ce5c460f6f2a712c7fa0e87ecfb49",
+   "norm_min": 13.586705207824707,
+   "norm_mean": 15.680646896362305,
+   "norm_max": 17.108516693115234,
+   "images_per_second": 136.4
+  },
+  {
+   "start": 262144,
+   "end": 270336,
+   "dim": 1024,
+   "sha256": "63a4e81744b6a373f1f77b0c0a95e63519050ad60b7d8f119e239d2282bc9866",
+   "norm_min": 14.039946556091309,
+   "norm_mean": 15.811623573303223,
+   "norm_max": 17.1154727935791,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 270336,
+   "end": 278528,
+   "dim": 1024,
+   "sha256": "c86ffb0944f5a039fa33b1f622f2bc91908bff5b31543dcf5201e11d2711cc87",
+   "norm_min": 13.074978828430176,
+   "norm_mean": 15.546215057373047,
+   "norm_max": 17.020488739013672,
+   "images_per_second": 136.3
+  },
+  {
+   "start": 278528,
+   "end": 286720,
+   "dim": 1024,
+   "sha256": "4089257bfec56f730637b930184ea72053d2cbbf23c073beb4653b825ce02455",
+   "norm_min": 13.040741920471191,
+   "norm_mean": 15.451702117919922,
+   "norm_max": 17.27011489868164,
+   "images_per_second": 136.4
+  },
+  {
+   "start": 286720,
+   "end": 294912,
+   "dim": 1024,
+   "sha256": "54816f0977bb93e9849e06ca23823da8f02160a8c94bb54eb55450bb7103ef7e",
+   "norm_min": 13.487281799316406,
+   "norm_mean": 15.356794357299805,
+   "norm_max": 17.23340606689453,
+   "images_per_second": 136.2
+  },
+  {
+   "start": 294912,
+   "end": 303104,
+   "dim": 1024,
+   "sha256": "0f12b9659a6403e0f0a8e31dbb2871caba1a9b6fa1e9d2fd930912b4879c9eaf",
+   "norm_min": 13.736132621765137,
+   "norm_mean": 15.560949325561523,
+   "norm_max": 17.13405990600586,
+   "images_per_second": 139.0
+  },
+  {
+   "start": 303104,
+   "end": 311296,
+   "dim": 1024,
+   "sha256": "777039186337165eeac965c636314146f6bf35fd7721e8f19123dc8cd9eaaac2",
+   "norm_min": 13.527502059936523,
+   "norm_mean": 15.848255157470703,
+   "norm_max": 17.382810592651367,
+   "images_per_second": 133.9
+  },
+  {
+   "start": 311296,
+   "end": 319488,
+   "dim": 1024,
+   "sha256": "bd2fd7644c8c14ba96a40c84e09c949ea8db2486faebb8dd39e2565ae17229ac",
+   "norm_min": 13.376954078674316,
+   "norm_mean": 15.528514862060547,
+   "norm_max": 16.959758758544922,
+   "images_per_second": 137.7
+  },
+  {
+   "start": 319488,
+   "end": 327680,
+   "dim": 1024,
+   "sha256": "0f59cc4e776116693d1cf42754bd7e3db638bba4f12b575ef45220ccc0149267",
+   "norm_min": 13.526516914367676,
+   "norm_mean": 15.394225120544434,
+   "norm_max": 17.033447265625,
+   "images_per_second": 138.3
+  },
+  {
+   "start": 327680,
+   "end": 335872,
+   "dim": 1024,
+   "sha256": "2b20147da550b857ba0ca97f0de8497a6dbdae24e1cf55343d6f097bdfb5458b",
+   "norm_min": 13.165648460388184,
+   "norm_mean": 15.445272445678711,
+   "norm_max": 17.104633331298828,
+   "images_per_second": 138.8
+  },
+  {
+   "start": 335872,
+   "end": 344064,
+   "dim": 1024,
+   "sha256": "fe6bf4895c63a1a583c718259c519b2423b1dab305ed29e598937fa13488e391",
+   "norm_min": 12.737685203552246,
+   "norm_mean": 15.304344177246094,
+   "norm_max": 16.545488357543945,
+   "images_per_second": 136.0
+  },
+  {
+   "start": 344064,
+   "end": 352256,
+   "dim": 1024,
+   "sha256": "761ba118f8b6a6499092e4b8edd59c4f0d3ba84987bf6c2abe606883dddea46d",
+   "norm_min": 13.194854736328125,
+   "norm_mean": 15.663808822631836,
+   "norm_max": 17.19870948791504,
+   "images_per_second": 138.8
+  },
+  {
+   "start": 352256,
+   "end": 360448,
+   "dim": 1024,
+   "sha256": "dec7d47961ce4e97ce230493a84ce52d8362a7683db6e6a23ff39829a2cc67d6",
+   "norm_min": 13.16304874420166,
+   "norm_mean": 15.51993179321289,
+   "norm_max": 16.999298095703125,
+   "images_per_second": 137.3
+  },
+  {
+   "start": 360448,
+   "end": 368640,
+   "dim": 1024,
+   "sha256": "15b26db617c26b43d22dae90ab1b1a77b1f224bf905e6a136943b14afa5fe4cb",
+   "norm_min": 13.751838684082031,
+   "norm_mean": 15.454184532165527,
+   "norm_max": 16.52564811706543,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 368640,
+   "end": 376832,
+   "dim": 1024,
+   "sha256": "3eea39f4866bf4bec77095a489256c35b9c71de9f115b273dc4efae456b5f432",
+   "norm_min": 12.729825019836426,
+   "norm_mean": 15.371413230895996,
+   "norm_max": 16.46004295349121,
+   "images_per_second": 136.0
+  },
+  {
+   "start": 376832,
+   "end": 385024,
+   "dim": 1024,
+   "sha256": "e3d63247412b1e0952e91b7f3908a2f1b24a105e04b9b823dd174f3ece08974b",
+   "norm_min": 12.759374618530273,
+   "norm_mean": 15.771465301513672,
+   "norm_max": 16.971464157104492,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 385024,
+   "end": 393216,
+   "dim": 1024,
+   "sha256": "264500065d967d3d19d511e58dc33a8402f1b8b60a8610d5198ee446ebf03473",
+   "norm_min": 13.457414627075195,
+   "norm_mean": 15.935835838317871,
+   "norm_max": 17.35013198852539,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 393216,
+   "end": 401408,
+   "dim": 1024,
+   "sha256": "92de4f24c4ca5ca16fa47310bb95b8b9a60fb0b720c664c9c26f72d0b56e8550",
+   "norm_min": 12.724580764770508,
+   "norm_mean": 15.624860763549805,
+   "norm_max": 17.211294174194336,
+   "images_per_second": 138.5
+  },
+  {
+   "start": 401408,
+   "end": 409600,
+   "dim": 1024,
+   "sha256": "b17dc023f678fba42af14707bfd0fe525ef69384ca91938eab87852e4043cc92",
+   "norm_min": 12.68703556060791,
+   "norm_mean": 15.540894508361816,
+   "norm_max": 17.235746383666992,
+   "images_per_second": 136.8
+  },
+  {
+   "start": 409600,
+   "end": 417792,
+   "dim": 1024,
+   "sha256": "5e9bf2a11ee7fdb9cd049887ec837f0450743bb07537c5841ebdb3d4a3cf96be",
+   "norm_min": 13.037510871887207,
+   "norm_mean": 15.59933853149414,
+   "norm_max": 17.17148208618164,
+   "images_per_second": 139.0
+  },
+  {
+   "start": 417792,
+   "end": 425984,
+   "dim": 1024,
+   "sha256": "22d58b262355cc867f3c7e7748e573fdd3884398c13aead97f0b3ad423c6959b",
+   "norm_min": 13.323250770568848,
+   "norm_mean": 15.60025405883789,
+   "norm_max": 17.093603134155273,
+   "images_per_second": 138.1
+  },
+  {
+   "start": 425984,
+   "end": 434176,
+   "dim": 1024,
+   "sha256": "a4f11327d276dca8007505353298d72883725c7a2786fa89bda4280d92b3b30a",
+   "norm_min": 13.534623146057129,
+   "norm_mean": 15.688730239868164,
+   "norm_max": 17.166723251342773,
+   "images_per_second": 138.5
+  },
+  {
+   "start": 434176,
+   "end": 442368,
+   "dim": 1024,
+   "sha256": "be99958cd873fcc80df47b76d4648adaa14f0769f357ff5c985ef24282be3219",
+   "norm_min": 13.28416919708252,
+   "norm_mean": 16.04412078857422,
+   "norm_max": 17.19568634033203,
+   "images_per_second": 136.5
+  },
+  {
+   "start": 442368,
+   "end": 450560,
+   "dim": 1024,
+   "sha256": "c54db1a52d771b94d7df551e85f9e767f2525ac8735bc45639c33065131705bb",
+   "norm_min": 13.403473854064941,
+   "norm_mean": 16.000246047973633,
+   "norm_max": 16.817386627197266,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 450560,
+   "end": 458752,
+   "dim": 1024,
+   "sha256": "31c292ed38d74190c12d60fd18ddc0477925f3954fee54419cf8c32394186a70",
+   "norm_min": 13.283676147460938,
+   "norm_mean": 15.949596405029297,
+   "norm_max": 16.69330596923828,
+   "images_per_second": 138.7
+  },
+  {
+   "start": 458752,
+   "end": 466944,
+   "dim": 1024,
+   "sha256": "28bd753d10a6ffc55e7acce35ce92a0ff6e91cd2b818b8ad76e140f161e9ec7e",
+   "norm_min": 13.358708381652832,
+   "norm_mean": 15.901500701904297,
+   "norm_max": 16.842378616333008,
+   "images_per_second": 137.7
+  },
+  {
+   "start": 466944,
+   "end": 475136,
+   "dim": 1024,
+   "sha256": "aa5fc6eceeb2f885e87e6c5760e8a2e5ccff9d3ea71319cfc6d14d1660d21e4a",
+   "norm_min": 13.256122589111328,
+   "norm_mean": 15.792896270751953,
+   "norm_max": 16.814777374267578,
+   "images_per_second": 136.6
+  },
+  {
+   "start": 475136,
+   "end": 483328,
+   "dim": 1024,
+   "sha256": "284079d3fda5c00eaa9e6705cc86d58dff8af9a614ccbe100a8113b17d0ec1d6",
+   "norm_min": 12.759305000305176,
+   "norm_mean": 15.93447494506836,
+   "norm_max": 17.2676944732666,
+   "images_per_second": 137.2
+  },
+  {
+   "start": 483328,
+   "end": 491520,
+   "dim": 1024,
+   "sha256": "0a01a1014ce3c21330af0d8038f6a91f6ab7cac81d799f2f0fb735d338dfc1cf",
+   "norm_min": 13.46164321899414,
+   "norm_mean": 15.933286666870117,
+   "norm_max": 16.874473571777344,
+   "images_per_second": 137.4
+  },
+  {
+   "start": 491520,
+   "end": 499712,
+   "dim": 1024,
+   "sha256": "72979492ecfc53daaab5593e280e8e100186909045727dcff2e3cfdc9077bf70",
+   "norm_min": 13.199471473693848,
+   "norm_mean": 15.625494003295898,
+   "norm_max": 16.930402755737305,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 499712,
+   "end": 507904,
+   "dim": 1024,
+   "sha256": "e41e86525e42d63961796904f7444a9e8df2d8f78af697d258f2cc3e584be45d",
+   "norm_min": 13.767019271850586,
+   "norm_mean": 15.521787643432617,
+   "norm_max": 16.611995697021484,
+   "images_per_second": 136.3
+  },
+  {
+   "start": 507904,
+   "end": 516096,
+   "dim": 1024,
+   "sha256": "6814f9b808fbe13c46e883b0be1a8769a167e2621602f7e94ebcdfd886d731ae",
+   "norm_min": 13.390395164489746,
+   "norm_mean": 15.467864036560059,
+   "norm_max": 16.532316207885742,
+   "images_per_second": 136.7
+  },
+  {
+   "start": 516096,
+   "end": 524288,
+   "dim": 1024,
+   "sha256": "5a5f667d08399ad2358cee24f83fca2a74951107f59fadd6178e1d60dee0cb4d",
+   "norm_min": 13.856369018554688,
+   "norm_mean": 15.678253173828125,
+   "norm_max": 17.09684944152832,
+   "images_per_second": 139.1
+  },
+  {
+   "start": 524288,
+   "end": 532480,
+   "dim": 1024,
+   "sha256": "e8e9ffb04aff44325893a2fd581357bdcf70ee5f70b441efaf59a8dbe94abf8b",
+   "norm_min": 14.05436897277832,
+   "norm_mean": 15.661033630371094,
+   "norm_max": 16.617956161499023,
+   "images_per_second": 137.6
+  },
+  {
+   "start": 532480,
+   "end": 540672,
+   "dim": 1024,
+   "sha256": "d2a373ec58931c92b01a90ff5b1ea566348ca9dd6b4b3335d7b70561af41f929",
+   "norm_min": 13.895644187927246,
+   "norm_mean": 15.373295783996582,
+   "norm_max": 16.421537399291992,
+   "images_per_second": 136.1
+  },
+  {
+   "start": 540672,
+   "end": 548864,
+   "dim": 1024,
+   "sha256": "afcbf328e717d03b12181d79dbfbaa4aa1e8fffe31b3841a559d248b7c809b79",
+   "norm_min": 13.47815990447998,
+   "norm_mean": 15.50182819366455,
+   "norm_max": 16.71546173095703,
+   "images_per_second": 138.1
+  },
+  {
+   "start": 548864,
+   "end": 557056,
+   "dim": 1024,
+   "sha256": "f488f039e1449f2621fae8e060cd044d8ea2caf0a4cf38ba6c57e33dbd56ea9e",
+   "norm_min": 13.201600074768066,
+   "norm_mean": 15.816216468811035,
+   "norm_max": 17.07665252685547,
+   "images_per_second": 137.7
+  },
+  {
+   "start": 557056,
+   "end": 565248,
+   "dim": 1024,
+   "sha256": "a57f0a87870c7ddde071fca7db05da9cc6ccb39428b45ad755079db6fd653a1e",
+   "norm_min": 13.332573890686035,
+   "norm_mean": 15.820402145385742,
+   "norm_max": 17.233930587768555,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 565248,
+   "end": 573440,
+   "dim": 1024,
+   "sha256": "0f898ef18dcdc1f54d0eb2a6634650fcbce694f275e53d8f15da5e05679cd5f3",
+   "norm_min": 13.821459770202637,
+   "norm_mean": 15.651643753051758,
+   "norm_max": 16.69074249267578,
+   "images_per_second": 135.3
+  },
+  {
+   "start": 573440,
+   "end": 581632,
+   "dim": 1024,
+   "sha256": "e6a7290ddd75b7125594f978d6e9d6a8a6a18820687c010a9e91118ccbf28761",
+   "norm_min": 13.870157241821289,
+   "norm_mean": 15.386281967163086,
+   "norm_max": 16.61338996887207,
+   "images_per_second": 138.0
+  },
+  {
+   "start": 581632,
+   "end": 589824,
+   "dim": 1024,
+   "sha256": "59d284b9bdb7ea33a74e9f95872463015858f769bd1a80c77ec98edcdfa72a17",
+   "norm_min": 13.922469139099121,
+   "norm_mean": 15.35923957824707,
+   "norm_max": 16.459182739257812,
+   "images_per_second": 139.0
+  },
+  {
+   "start": 589824,
+   "end": 598016,
+   "dim": 1024,
+   "sha256": "e554ad7355ad1297103bf236e69f582300186190b02c55aeb4c5dd1705a944e9",
+   "norm_min": 13.981815338134766,
+   "norm_mean": 15.550926208496094,
+   "norm_max": 16.615732192993164,
+   "images_per_second": 139.2
+  },
+  {
+   "start": 598016,
+   "end": 606208,
+   "dim": 1024,
+   "sha256": "c91674286d0d8f23555e96bc5a59ca460e1ef6fb0b206cf0553415be5de16aea",
+   "norm_min": 13.864947319030762,
+   "norm_mean": 15.44987678527832,
+   "norm_max": 16.695911407470703,
+   "images_per_second": 135.8
+  },
+  {
+   "start": 606208,
+   "end": 614400,
+   "dim": 1024,
+   "sha256": "5f9ed48fc90c99c6aeae0187d0dc8eaacc03b33d13ca3678ee022505a919f2cc",
+   "norm_min": 13.77517318725586,
+   "norm_mean": 15.597517967224121,
+   "norm_max": 17.1398868560791,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 614400,
+   "end": 622592,
+   "dim": 1024,
+   "sha256": "c9235ad45f8b953c6a89f2c14b47bd0664ac2f84f13c1b35937b9af2dfbdb4de",
+   "norm_min": 13.650389671325684,
+   "norm_mean": 15.391130447387695,
+   "norm_max": 16.60847282409668,
+   "images_per_second": 137.8
+  },
+  {
+   "start": 622592,
+   "end": 630784,
+   "dim": 1024,
+   "sha256": "775e0e455aacbadb4367b5a20da2cb30f2fbc5d892f3ab0863ad7abcc8e2d61a",
+   "norm_min": 13.918435096740723,
+   "norm_mean": 15.436206817626953,
+   "norm_max": 16.513288497924805,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 630784,
+   "end": 638976,
+   "dim": 1024,
+   "sha256": "50af463199abb67d0b3476e210a3629c3ee5924939a1b8bb93046a0d548c2277",
+   "norm_min": 13.122373580932617,
+   "norm_mean": 15.401409149169922,
+   "norm_max": 16.750656127929688,
+   "images_per_second": 136.0
+  },
+  {
+   "start": 638976,
+   "end": 647168,
+   "dim": 1024,
+   "sha256": "127b93c4be3ce234fe6ff3b96b6e3ab6ed848893ca1708b2c1e35dc9cb2b268a",
+   "norm_min": 12.970813751220703,
+   "norm_mean": 15.359258651733398,
+   "norm_max": 16.584299087524414,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 647168,
+   "end": 655360,
+   "dim": 1024,
+   "sha256": "921b26fb9f3cfc1e9ef970043af28b364397c061f7cfaae82fe7277725cc7a85",
+   "norm_min": 13.163481712341309,
+   "norm_mean": 15.369821548461914,
+   "norm_max": 16.614965438842773,
+   "images_per_second": 138.9
+  },
+  {
+   "start": 655360,
+   "end": 663552,
+   "dim": 1024,
+   "sha256": "54807ea3655a2dafed5657e125ed4b37e9c9c0e5970323a1a5d4f046e1ae0817",
+   "norm_min": 13.293127059936523,
+   "norm_mean": 15.492961883544922,
+   "norm_max": 16.96515655517578,
+   "images_per_second": 139.1
+  },
+  {
+   "start": 663552,
+   "end": 671744,
+   "dim": 1024,
+   "sha256": "ebf944a6c191854848f218548071d191debedbd5ef78b655fbf2a26ccac18ebe",
+   "norm_min": 13.106890678405762,
+   "norm_mean": 15.4027681350708,
+   "norm_max": 16.69365692138672,
+   "images_per_second": 136.1
+  },
+  {
+   "start": 671744,
+   "end": 679936,
+   "dim": 1024,
+   "sha256": "81746bdded6879ee35efb4507dc6dac1612d7ca0aeab329bd8269ae6c386536a",
+   "norm_min": 13.011696815490723,
+   "norm_mean": 15.182768821716309,
+   "norm_max": 16.89784812927246,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 679936,
+   "end": 688128,
+   "dim": 1024,
+   "sha256": "a55d131f7e3d61984dd30eb69a8e12cffe6da03e54365e0507f0364ebb917fb2",
+   "norm_min": 13.301859855651855,
+   "norm_mean": 15.565413475036621,
+   "norm_max": 17.067514419555664,
+   "images_per_second": 137.9
+  },
+  {
+   "start": 688128,
+   "end": 696320,
+   "dim": 1024,
+   "sha256": "1d824b6c58e8a6e93a3edddea1b7925c05ee7b83c825eb5e756c1c4e9dd3e772",
+   "norm_min": 12.928705215454102,
+   "norm_mean": 15.4713134765625,
+   "norm_max": 17.16445541381836,
+   "images_per_second": 138.4
+  },
+  {
+   "start": 696320,
+   "end": 704512,
+   "dim": 1024,
+   "sha256": "5e59c4281a8fbd9eb2b36ddf5153a0bc4df014852c2ab01857319bbb1f252843",
+   "norm_min": 12.889023780822754,
+   "norm_mean": 15.620849609375,
+   "norm_max": 17.38700294494629,
+   "images_per_second": 136.5
+  },
+  {
+   "start": 704512,
+   "end": 712704,
+   "dim": 1024,
+   "sha256": "a3c2c7070d4370822456a08fd97d4a882487e23bb9ef5ed50a903b618e56abbc",
+   "norm_min": 13.629485130310059,
+   "norm_mean": 16.02615737915039,
+   "norm_max": 17.1374454498291,
+   "images_per_second": 139.3
+  },
+  {
+   "start": 712704,
+   "end": 720896,
+   "dim": 1024,
+   "sha256": "916fbf45b00298efb5b50fdf92462c542a2d5b49174511487ca86a3fa531b907",
+   "norm_min": 13.374720573425293,
+   "norm_mean": 15.750621795654297,
+   "norm_max": 17.191570281982422,
+   "images_per_second": 138.9
+  },
+  {
+   "start": 720896,
+   "end": 729088,
+   "dim": 1024,
+   "sha256": "1db5e332b1b4803ff37338d85f839968f6cd1bbc9d98fe3d537956c9acbcef06",
+   "norm_min": 12.763190269470215,
+   "norm_mean": 15.753165245056152,
+   "norm_max": 16.739513397216797,
+   "images_per_second": 136.1
+  },
+  {
+   "start": 729088,
+   "end": 737280,
+   "dim": 1024,
+   "sha256": "9dd56c8d0bd2aa46342504939ed120e64fc8af540a03577037392c35ed5649d6",
+   "norm_min": 13.115727424621582,
+   "norm_mean": 15.716975212097168,
+   "norm_max": 16.506763458251953,
+   "images_per_second": 135.0
+  },
+  {
+   "start": 737280,
+   "end": 745472,
+   "dim": 1024,
+   "sha256": "afe59fe0441e1ceceb143016a298aebc091b4dc70d8c6671cb75afb7bafb1428",
+   "norm_min": 12.831335067749023,
+   "norm_mean": 15.347404479980469,
+   "norm_max": 16.865678787231445,
+   "images_per_second": 137.7
+  },
+  {
+   "start": 745472,
+   "end": 753664,
+   "dim": 1024,
+   "sha256": "92d42bb5c0c0801ae228c1cca7d3a3f5e91834c941badab3961edbe3f04c55df",
+   "norm_min": 13.039609909057617,
+   "norm_mean": 15.784034729003906,
+   "norm_max": 17.010366439819336,
+   "images_per_second": 137.7
+  },
+  {
+   "start": 753664,
+   "end": 761856,
+   "dim": 1024,
+   "sha256": "d6a570afb5a78711bcf7c388366bb1855510ed11261008575044274dc01d81c3",
+   "norm_min": 13.349708557128906,
+   "norm_mean": 15.993814468383789,
+   "norm_max": 16.967304229736328,
+   "images_per_second": 138.7
+  },
+  {
+   "start": 761856,
+   "end": 770048,
+   "dim": 1024,
+   "sha256": "9ae7aeaaf6b24df379233babd0088fe1f7b8803c03cc2eb6f3225ee39ada2615",
+   "norm_min": 13.080769538879395,
+   "norm_mean": 15.536486625671387,
+   "norm_max": 17.160768508911133,
+   "images_per_second": 135.8
+  },
+  {
+   "start": 770048,
+   "end": 778240,
+   "dim": 1024,
+   "sha256": "4a03ba033fb60be72d5f44c123bb4ce11955d0aef8f95a712488deda5236138b",
+   "norm_min": 13.04922866821289,
+   "norm_mean": 15.177858352661133,
+   "norm_max": 16.957551956176758,
+   "images_per_second": 137.4
+  },
+  {
+   "start": 778240,
+   "end": 786432,
+   "dim": 1024,
+   "sha256": "54909828a0b6b8e2bb8f60cdb6413ff74ad4effe5d6a96e6ac6e92f73e59fffd",
+   "norm_min": 13.103402137756348,
+   "norm_mean": 15.648605346679688,
+   "norm_max": 16.96444320678711,
+   "images_per_second": 139.1
+  },
+  {
+   "start": 786432,
+   "end": 794624,
+   "dim": 1024,
+   "sha256": "2cb1155f49afc213287a720c4d0ae74b3b7740710056d8b6febaa5f631602450",
+   "norm_min": 13.435523986816406,
+   "norm_mean": 15.850643157958984,
+   "norm_max": 16.57835578918457,
+   "images_per_second": 138.7
+  },
+  {
+   "start": 794624,
+   "end": 802816,
+   "dim": 1024,
+   "sha256": "0db13bf746c41d91e6f8f1194f4e9e2c922e3f518b2ae3e49e93a4d8daf9a64d",
+   "norm_min": 12.844322204589844,
+   "norm_mean": 15.92941665649414,
+   "norm_max": 16.80303382873535,
+   "images_per_second": 136.9
+  },
+  {
+   "start": 802816,
+   "end": 811008,
+   "dim": 1024,
+   "sha256": "e5844a7e5d538ec9fb3e307604b550c3f069e373ae8e71396a3ad92c9a36802b",
+   "norm_min": 12.4132661819458,
+   "norm_mean": 15.788716316223145,
+   "norm_max": 16.567394256591797,
+   "images_per_second": 138.1
+  },
+  {
+   "start": 811008,
+   "end": 819200,
+   "dim": 1024,
+   "sha256": "639a6b07b3b4f5ec299f66e3a3b84a74ed0c76721e463bf2cfffd74e4f85cbe5",
+   "norm_min": 11.95598316192627,
+   "norm_mean": 15.580727577209473,
+   "norm_max": 16.967588424682617,
+   "images_per_second": 137.5
+  },
+  {
+   "start": 819200,
+   "end": 827392,
+   "dim": 1024,
+   "sha256": "079909e4d1e6ac6e7764e82fc3198fcb2eca9e074fb3edb4c00d9ee31cd18fd0",
+   "norm_min": 12.268583297729492,
+   "norm_mean": 15.091172218322754,
+   "norm_max": 16.39727783203125,
+   "images_per_second": 138.6
+  },
+  {
+   "start": 827392,
+   "end": 835584,
+   "dim": 1024,
+   "sha256": "78496138d73bdf411f11fab285d50ffa7a7e6f15d306211e5c1b068727973867",
+   "norm_min": 11.87581729888916,
+   "norm_mean": 14.925527572631836,
+   "norm_max": 16.870094299316406,
+   "images_per_second": 136.3
+  },
+  {
+   "start": 835584,
+   "end": 836159,
+   "dim": 1024,
+   "sha256": "c2bb0aac60ebdf78903942b85f59f58f8dc181367e11bc10689602f2f3e61df9",
+   "norm_min": 12.077173233032227,
+   "norm_mean": 14.708218574523926,
+   "norm_max": 16.666418075561523,
+   "images_per_second": 66.9
+  }
+ ]
+}
