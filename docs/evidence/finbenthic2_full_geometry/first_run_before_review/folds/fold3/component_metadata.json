@@ -1,0 +1,101 @@
+{
+ "8_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.27460249247958746,
+   "classes_auc_outside_0.2_0.8": 16,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydraena_sp",
+    "Hydropsyche_pellucidula",
+    "Lepidostoma_hirtum",
+    "Leptophlebia_sp",
+    "Leuctra_nigra",
+    "Leuctra_sp",
+    "Limnius_volckmari",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.3498498498498499,
+   "classes_auc_outside_0.2_0.8": 19,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Amphinemura_borealis",
+    "Baetis_vernus_group",
+    "Diura_sp",
+    "Ephemerella_aurivillii",
+    "Hydraena_sp",
+    "Hydropsyche_pellucidula",
+    "Lepidostoma_hirtum",
+    "Leptophlebia_sp",
+    "Leuctra_nigra",
+    "Leuctra_sp",
+    "Limnius_volckmari",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Polycentropus_irroratus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.22895745011924384,
+   "classes_auc_outside_0.2_0.8": 13,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Agapetus_sp",
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Leptophlebia_sp",
+    "Leuctra_sp",
+    "Limnius_volckmari",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.2821308386054651,
+   "classes_auc_outside_0.2_0.8": 15,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Agapetus_sp",
+    "Amphinemura_borealis",
+    "Baetis_vernus_group",
+    "Diura_sp",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Leptophlebia_sp",
+    "Limnius_volckmari",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Protonemura_sp",
+    "Silo_pallipes",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ }
+}

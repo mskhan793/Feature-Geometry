@@ -1,158 +1,168 @@
 # Coding assistant response — Feature-Geometry
 
-**Current task:** `task.md` 92a605a, "Full-specimen FIN-Benthic2 and AquaMonitor geometry on LUMI".
-**Status: all planned runs done (extraction, five folds × two datasets, output A, summary). Stopped for the author's
-review, with three decisions open (section 6) from a methods review by Codex Astra (section 5).** The decisions change
-how the dataset-level averages and the per-taxon label are computed, so the headline numbers in section 3 are given
-both as computed and under the reviewer's correction. No test evaluation, BIOSCAN, DF24 or classifiers.
+**Current task:** `task.md` 92a605a, "Full-specimen FIN-Benthic2 and AquaMonitor geometry on LUMI", with the author's
+decisions D1–D3 on the Codex Astra methods review (author, 2026-11-11: all three recommended options).
+**Status: corrections applied and the CPU analysis rerun on LUMI for all five folds of both datasets, reusing the
+existing embeddings (no GPU). Stopped for the author's review.** No test evaluation, BIOSCAN, DF24 or classifiers.
 
-Previous response (FIN-Benthic2 fold 0, task 366ee62): commit 6c4c515, `docs/evidence/finbenthic2_geometry/`.
+Code: corrections e0f39a5 (run on LUMI), per-class summary columns in the commit of this response. Evidence (corrected):
+`docs/evidence/{finbenthic2,aquamonitor}_full_geometry/{folds,summary,descriptive_fold0,baseline_capped_fold0}` and
+`docs/evidence/full_geometry_comparison.md`. The first run (before the review) is kept unchanged in
+`docs/evidence/*_full_geometry/first_run_before_review/` and `docs/evidence/full_geometry_comparison_first_run_before_review.md`.
 
-## 1. Preflight and selection (unchanged since commit d072185)
+## 1. What changed (D1–D3)
 
-One global, fold-independent selection per dataset: every eligible specimen, up to 10 frames per specimen and camera,
-spread over imaging runs and capture time (the pilots' rule; earlier fold-0 cohorts are exact subsets). Evidence
-`docs/evidence/*_full_geometry/selection/`.
-
-| | FIN-Benthic2 (derived five-split CSV `1c18f058…`) | AquaMonitor Classification (official folds, manifest `d6e63bb6…`) |
+| Decision | Change | Where |
 |---|---|---|
-| Eligible images / specimens / classes | 460,004 / 9,631 / 39 | 2,708,023 / 42,165 / 42 |
-| Specimens per fold train / val / test | 6,160–6,165 / 1,540–1,543 / 1,924–1,928 | 29,346 / 4,386 / 8,433 |
-| Selected images | 186,284 | 836,159 |
-| Train specimens per class (min / median / max) | 8 / 143 / 567 | 31 / 129 / 7,436 |
-| New images encoded | 57,347 (128,937 reused from fold-0 job 23623689) | 836,159 |
+| D1 | Dataset-level averages over **reliable fits only** (the mixture and one Gaussian both `ok`: eligible, converged, every component's responsibility mass ≥ d+1), with taxa included / excluded per comparison. All-fit averages kept as labelled diagnostics. All models also compared on the **same taxa** (classes where every model is reliable). | `src/statistics/class_macro.py`, `class_geometry_pilot.py` `summarise` |
+| D2 | Per-taxon label from **one model**, the reliable 2-component tied mixture: "mixture-supported split (exploratory)" only if its own held-out interval lies above 0 **and** its own split is stable. Other labels: "single Gaussian predicts better", "inconclusive", "insufficient evidence". Other mixtures reported separately (`other_mixtures_ci_above_0`). No claim of biological modes. | `class_modality.split_verdict` |
+| D3 | Stability: a failed or under-supported resample (a component below d+1 on its subsample) counts as ARI 0, median over all 200 resamples. Source-model eligibility with its own parameter count. n = 30 summaries only for taxa with ≥ 30 specimens. Reliability flag in output A. Metadata per specimen camera-balanced like the embeddings; wording "partition agreement" / "rank separation"; train and val association counts both reported. Five-fold summary carries taxa counts, "not analysed" entries, per-fold support and pair coverage. Test rows: "dropped before the feature lookup, never used" (their features are read with the cache and discarded). | `class_modality.py`, `specimen_geometry.py`, `descriptive_geometry.py`, `component_metadata.py`, `summarise_five_folds.py` |
 
-## 2. What ran on LUMI (project 462001534)
+Regression tests (full suite 67 passed): reliable-only vs all-fit summary, common-taxa comparison, same-model label,
+source-model budget, exact n = 30, five-fold per-class columns. The stability test separates old from new behaviour:
+for a "split" that only isolates two outlier specimens the old code gave median ARI 1.0, the corrected code 0.
 
-| Job | What | Resources | Elapsed | Checks |
-|---|---|---|---|---|
-| 23642052 | FIN-Benthic2 extraction (code d072185) | dev-g, 1 node, 8 GCDs | 7:34 | 57,347 / 57,347 rows; CPU vs GPU max abs diff 1.8e-5 |
-| 23642060 | AquaMonitor extraction | standard-g, 1 node, 8 GCDs | 20:25 | 836,159 / 836,159 rows (103 chunks); CPU vs GPU 2.1e-5 |
-| 23644988 | FIN-Benthic2 folds, first attempt | small, 5 × 8 cores | 45:01 each | TIMEOUT: hung before printing anything, while LUMI logins also hung (~15:25–16:56); cause not confirmed |
-| 23645913 | FIN-Benthic2 five folds (code 08d6f39) | small, 5 × 8 cores | 4:48–18:42 | done |
-| 23645914 | AquaMonitor five folds | small, 5 × 16 cores | 7:57–23:28 | done |
-| 23648776 | output A, montages, code regression, LUMI-vs-Dell, five-fold summary (code 54dffdd) | small, 16 cores | 11:19 | done (first attempt 23645915 failed in the montage step on a single-camera specimen; fixed with a test) |
+## 2. LUMI rerun (project 462001534, code e0f39a5, small partition)
 
-Use: about 1.9 GPU-h; 114.4 CPU-hours as sacct counts them (logical CPUs), 60 of them in the hung first attempt.
-
-Checks:
-- **Code regression:** the earlier capped FIN-Benthic2 fold-0 cohort rerun on LUMI with the new code reproduces every
-  reported number of the original run (`docs/evidence/finbenthic2_full_geometry/baseline_regression/`).
-- **LUMI vs Dell features (AquaMonitor):** on the 196,983 images of the earlier pilot, max abs diff 4.8e-5, min
-  cosine 0.99999999973 (`aquamonitor_full_geometry/extraction/lumi_vs_dell.json`).
-- Test rows are removed before any feature lookup and never used. (Correction of my earlier wording: their features
-  are read into memory with each cache chunk and then discarded, so "never loaded" was too strong.)
-
-## 3. Results (output B, five folds; fold mean [min, max])
-
-Full table: `docs/evidence/full_geometry_comparison.md`; per fold, per taxon and per pair:
-`docs/evidence/*_full_geometry/summary/`.
-
-**One Gaussian vs a 2-group tied mixture (held-out log density per val specimen, class-macro mean).** As computed,
-averages include fits our own rule marks unreliable (section 5, finding 1); the right-hand columns use reliable fits
-only (`docs/evidence/full_geometry_reliability_audit.json`):
-
-| | FIN-Benthic2 as computed | FIN-Benthic2 reliable only, per fold | AquaMonitor as computed | AquaMonitor reliable only, per fold |
-|---|---|---|---|---|
-| 8 PCs | −0.057 [−0.169, 0.082]; interval above 0 in 1 fold, below 0 in 1 | +0.117, +0.060, +0.082, 0.000, +0.028 | +0.266 [0.206, 0.328]; above 0 in 5 of 5 | +0.270, +0.321, +0.262, +0.275, +0.261 |
-| 16 PCs | −0.075 [−0.205, 0.001]; below 0 in 1 | +0.042, −0.122, +0.029, +0.071, +0.033 | +0.416 [0.323, 0.565]; above 0 in 5 of 5 | +0.506, +0.629, +0.399, +0.518, +0.531 |
-| Earlier capped fold-0 pilot (as computed) | −0.094 | | +0.577 | |
-
-"Reliable only" averages over a different set of taxa for each model, so those columns are not like-for-like either.
-
-**What holds under both computations:**
-- AquaMonitor's mixture gain persists with all specimens and in all five folds, but is about half the capped pilot's
-  (+0.266 vs +0.577 at 8 PCs). The one-Gaussian-per-source-dataset model is better still: +0.455 [0.403, 0.494] at
-  8 PCs, interval above 0 in 5 of 5 folds.
-- FIN-Benthic2 shows at most a small gain (reliable fits) or none (all fits), far below AquaMonitor's.
-- Taxa labelled "credible multiple groups" at 8 PCs: FIN-Benthic2 10.4 [8, 13] (in all 5 folds: *Elmis aenea*,
-  *Oulimnius tuberculatus*, *Micrasema gelidum*, *M. setiferum*, Simuliidae); AquaMonitor 25.0 [23, 27] (17 taxa in all
-  5 folds). This label is the subject of finding 2.
-- Both camera views of a specimen fall in the same group: median 0.83 FIN-Benthic2 vs 0.97 AquaMonitor (8 PCs).
-- Metadata association of the 2-group split (train, 8 PCs): AquaMonitor source-dataset ARI ≥ 0.5 in 18.8 [17, 20]
-  taxa; FIN-Benthic2 crop-size AUC outside 0.2–0.8 in 15.6 [13, 17] taxa.
-
-**Between taxa (robust across folds):** pairs with val d′ < 2: 1.6 % FIN-Benthic2, 1.8 % AquaMonitor. Closest pairs in
-every fold: *Polycentropus flavomaculatus* / *P. irroratus* (mean d′ 0.82), *Baetis rhodani* / *B. vernus* group
-(1.47), *Elmis aenea* / *Oulimnius tuberculatus* (1.49); AquaMonitor *Cyrnus trimaculatus* / *Polycentropus
-flavomaculatus* (0.68), *Caenis horaria* / *C. luctuosa* (1.21). Rank agreement of pair d′ between folds: Spearman
-median 0.91 (FIN-Benthic2), 0.79 (AquaMonitor).
-
-**Output A (exploratory, in-sample: fold-0 train + val pooled, fold-0 test not read):** FIN-Benthic2 7,707
-specimens / 38 taxa; AquaMonitor 33,732 / 42. In-sample BIC prefers the 2-group tied model in 23 of 38 FIN-Benthic2
-taxa and 40 of 42 AquaMonitor taxa (8 PCs); both views in the same group: 0.81 vs 0.97. Not held-out evidence.
-
-## 4. Limits
-
-- Five folds share specimens: fold ranges show consistency across assignments, not independent replications.
-- Intervals are conditional on the fitted PCA and models and on the included taxa; no familywise error control.
-- Mixture gains can reflect skew or heavy tails, not separate groups; ARI and AUC show partition agreement or rank
-  separation, not cause. Crop area is not specimen size; life stage is not annotated.
-- FIN-Benthic2 has no source field, so the source model cannot be fitted there.
-
-## 5. Methods review by Codex Astra (high effort, read-only)
-
-**What was asked.** After the code for this task was written, the author asked for an Astra review of the
-mathematical and statistical methods (not the results, not the code style). Fresh session; handed over:
-`task.md`, this file, the geometry, mixture, specimen-mean, frame-selection, metadata, summary and output-A code, and
-a context note (`Feature_geometry_data/full_specimen/astra_methods_review/context.md`, outside Git). Nine questions:
-specimen unit; global whitened PCA and held-out density comparison (regularisation, starts, eligibility, d+1 rule);
-bootstrap and class-macro interval; verdict rule and split stability; source model; d′, radius separation, subspace
-overlap and effective rank with unequal class sizes; five-fold aggregation; output A; metadata measures.
-Record: `~/agent_consults/2026-11-11_183354_codex_gpt-6-astra_high.md` (session `01a1cb75-723b-7eb0-ba3a-10db70d181be`).
-
-**Astra's verdict:** "needs changes — the core density comparison is sound, but reliability filtering, fixed-size
-summaries, and interpretation of the verdict need correction." Judged correct: specimen embedding, train-only PCA,
-float64 fits, parameter counts, paired bootstrap, stratified class-macro interval, source model, geometry formulas,
-fold aggregation, in-sample labelling of output A.
-
-**Findings, my check in the code, and their effect on the saved outputs** (`scripts/audit_mixture_reliability.py`):
-
-| # | Astra finding | Confirmed in code | Effect in this run |
+| Job | What | Elapsed | Result |
 |---|---|---|---|
-| 1 (high) | Averages include fits marked unreliable (a group with < d+1 specimens), while verdicts exclude them | yes: scores of unreliable fits enter the bootstrap and macro mean (`class_geometry_pilot.py`, `fit_class` / `summarise`) | large for FIN-Benthic2 (section 3, e.g. fold 0 at 8 PCs −0.069 → +0.117; 3-group tied −1.589 → +0.242), small for AquaMonitor's 2-group model. Also affects the earlier capped pilots |
-| 2 (high) | "Credible" passes if *any* mixture beats one Gaussian while stability is checked for the 2-group tied split only; a mixture gain may be skew, not groups; no multiplicity control | yes | at 8 PCs, 1–3 FIN-Benthic2 and 1–6 AquaMonitor credible taxa per fold have no 2-group-tied interval above 0 (16 PCs: 0–3 and 0–2). Stability refits never failed in any fold (that sub-point has no effect here) |
-| 3 (medium) | "n30" summaries use fewer than 30 specimens for small taxa | yes (`specimen_geometry.py`, `within_class`) | 0–2 FIN-Benthic2 taxa per fold; none in AquaMonitor |
-| 4 (medium) | Source-model eligibility uses the one-Gaussian parameter count | yes | none: no source fit exceeds its true budget |
-| 5 (medium) | Five-fold summary drops the taxon count behind each average; missing verdicts count as non-credible | yes (`summarise_five_folds.py`) | denominators: FIN-Benthic2 34–36 taxa per fold, AquaMonitor 40–41 |
-| 6 (medium) | ARI near 0 / AUC near 0.5 described as "unrelated"; five-fold metadata counts are train-only but not labelled | yes (`component_metadata.py` docstring, `summarise_five_folds.py`) | wording only |
-| — | "Features never loaded" for test rows too strong | yes (`feature_lookup.py` loads whole caches) | wording only; no leakage |
+| 23652423 | FIN-Benthic2 five folds (8 cores each) | 4:36–6:10 | completed |
+| 23652424 | AquaMonitor five folds (16 cores each) | 8:03–9:05 | completed |
+| 23652425 | output A, montages, capped fold-0 baselines rerun with the corrected code, LUMI-vs-Dell, five-fold summary | 12:07 | completed |
 
-**What needs to change (Astra's proposals, not applied):**
-1. Primary averages over reliable fits only (both the mixture and one Gaussian), with the taxon count per
-   comparison; all-fit averages kept as a labelled diagnostic. Add the same reliability flag to output A.
-2. Per-taxon label: require the 2-group tied model itself to beat one Gaussian and its split to be stable, and rename
-   it to an exploratory "mixture-supported split"; report other mixtures separately; state intervals as pointwise.
-3. n = 30 summaries only for taxa with at least 30 specimens, with the count of contributing taxa.
-4. Source-model eligibility with its own parameter count; document its pooled-group rule.
-5. Carry taxon and pair counts through the five-fold summary; mark unavailable verdicts explicitly.
-6. Metadata wording ("partition agreement", "rank separation"); label train vs val association counts.
+35.7 CPU-hours (sacct, logical CPUs). Earlier steps of this task: extraction 1.9 GPU-h (jobs 23642052, 23642060) and
+the first CPU run (114.4 CPU-hours incl. 60 in a hung attempt). The per-class columns of the five-fold summary were
+added after the run and recomputed on the Dell from the fetched outputs (read-only aggregation, seconds); every other
+summary file is byte-identical to the LUMI one.
 
-## 6. Decisions for the author
+## 3. Dataset-level results (held-out log density per val specimen, class-macro; reliable fits only)
 
-- **D1 (finding 1):** dataset-level averages over reliable fits only (recommended), or all fits as now.
-- **D2 (finding 2):** per-taxon label from the same model (2-group tied gain + its stability, renamed exploratory;
-  recommended), or keep the any-mixture rule and only rename, or keep as is.
-- **D3 (findings 3–6):** apply the smaller fixes with regression tests and rerun the CPU stage on LUMI (about
-  1 h; extraction does not need to be repeated).
+**2-component tied mixture minus one Gaussian**, per fold: mean [95 % interval], taxa included / fitted:
 
-## 7. Code and tests
+| | FIN-Benthic2, 8 PCs | AquaMonitor, 8 PCs |
+|---|---|---|
+| fold 0 | +0.117 [+0.050, +0.177], 32/36 | +0.270 [+0.198, +0.336], 39/41 |
+| fold 1 | +0.060 [−0.013, +0.126], 33/35 | +0.321 [+0.269, +0.374], 39/41 |
+| fold 2 | +0.082 [+0.024, +0.136], 34/34 | +0.262 [+0.195, +0.323], 39/40 |
+| fold 3 | +0.000 [−0.093, +0.081], 34/35 | +0.275 [+0.212, +0.334], 39/41 |
+| fold 4 | +0.028 [−0.065, +0.123], 33/35 | +0.261 [+0.191, +0.328], 38/41 |
+| fold mean [min, max] | +0.057 [0.000, 0.117]; interval above 0 in 2 folds | +0.278 [0.261, 0.321]; above 0 in 5 of 5 |
+| all fits (diagnostic) | −0.057 [−0.169, 0.082] | +0.266 [0.206, 0.328] |
+| capped fold-0 pilot, corrected | +0.119 [+0.049, +0.184] | +0.621 [+0.550, +0.683] |
 
-New since the preflight: `scripts/descriptive_geometry.py`, `scripts/summarise_five_folds.py`,
-`scripts/compare_caches_by_name.py`, `scripts/audit_mixture_reliability.py`, `src/statistics/specimen_geometry.py`,
-`scripts/lumi/geometry_{folds,inputs,summary}.sh`, `tests/test_class_geometry_montage.py`. Changed: `--fold` in the
-geometry, metadata and montage scripts (test rows dropped before lookup); chunked camera re-identification;
-specimen-mean helpers take the split column; montage handles single-camera specimens. Full suite: 61 passed.
+At 16 PCs: FIN-Benthic2 +0.011 [−0.122, 0.071], no fold interval above or below 0; AquaMonitor +0.516 [0.399, 0.629],
+above 0 in 5 of 5 (taxa included 30.2 and 32.2 of the fitted taxa on average; more fits are unreliable at 16 PCs).
 
-## 8. Rerun
+**Source-dataset model (AquaMonitor only)** minus one Gaussian, 8 PCs: +0.494, +0.426, +0.403, +0.490, +0.462 per fold
+(all 41 or 40 taxa; intervals above 0 in 5 of 5); 16 PCs fold mean +0.963.
+
+**All models on the same taxa** (taxa where every model is reliable; 8 PCs, fold mean [min, max]):
+
+| | FIN-Benthic2 (23.4 taxa) | AquaMonitor (30.2 taxa) |
+|---|---|---|
+| 2-component tied | +0.193 [0.155, 0.219] | +0.327 [0.263, 0.366] |
+| 3-component tied | +0.266 [0.239, 0.316] | +0.571 [0.415, 0.656] |
+| 2-component full | +0.238 [0.187, 0.293] | +0.337 [0.202, 0.471] |
+| 3-component full | +0.061 [−0.043, 0.147] | +0.243 [0.078, 0.331] |
+| source-dataset model | — | +0.517 [0.415, 0.581] |
+
+**Reading.** With reliable fits only, FIN-Benthic2 shows a small mixture gain (fold mean +0.057 at 8 PCs; none at
+16 PCs), not the slightly negative value of the first run; it remains about a fifth of AquaMonitor's (+0.278), and on
+the same taxa about 0.6 of it. AquaMonitor's gain holds in every fold but is less than half the capped pilot's; the
+source-dataset model predicts better than any unsupervised mixture in AquaMonitor. On the common taxa the FIN-Benthic2
+gain is larger than over all reliable taxa, because the common set leaves out taxa whose larger mixtures are
+unreliable; neither set is a random sample of taxa.
+
+## 4. Per-taxon results (labels and 2-component tied difference over folds)
+
+Full table, one row per taxon and PCA dimension, with each fold's label, difference, interval and train / val
+specimens: `docs/evidence/*_full_geometry/summary/per_class_labels.csv`.
+
+| Labels at 8 PCs (fold mean [min, max]) | FIN-Benthic2 (34–36 taxa) | AquaMonitor (40–41 taxa) |
+|---|---|---|
+| mixture-supported split (exploratory) | 7.6 [6, 9] | 21.0 [18, 24] |
+| inconclusive | 23.0 [20, 25] | 16.8 [15, 21] |
+| single Gaussian predicts better | 2.6 [2, 3] | 1.0 [0, 2] |
+| insufficient evidence | 1.8 [0, 4] | 2.0 [1, 3] |
+| supported in all 5 folds | *Elmis aenea*, *Micrasema gelidum*, *Oulimnius tuberculatus* | 11: *Asellus aquaticus*, *Caenis horaria*, Ceratopogonidae, Chironomidae, *Kageronia fuscogrisea*, *Leptophlebia*, *Micronecta*, Oligochaeta, *Oulimnius tuberculatus*, *Psychomyia pusilla*, Tanypodinae |
+
+Largest 2-component tied gains, 8 PCs: fold mean [min, max], folds with interval above 0, folds supported:
+
+| FIN-Benthic2 | | AquaMonitor | |
+|---|---|---|---|
+| *Limnius volckmari* | +1.200 [0.261, 1.624]; 5; 3 | *Micronecta* | +0.917 [0.853, 0.974]; 5; 5 |
+| *Oulimnius tuberculatus* | +1.091 [1.007, 1.179]; 5; 5 | *Centroptilum luteolum* | +0.762 [0.487, 1.095]; 4; 4 |
+| *Elmis aenea* | +1.060 [0.829, 1.137]; 5; 5 | *Caenis rivulorum* (reliable in 3 folds) | +0.718 [0.341, 1.040]; 2; 2 |
+| *Oxyethira* sp. | +0.526 [0.391, 0.674]; 4; 4 | *Psychomyia pusilla* | +0.663 [0.607, 0.722]; 5; 5 |
+| *Micrasema gelidum* | +0.475 [0.397, 0.560]; 5; 5 | *Stylaria lacustris* | +0.622 [0.461, 0.757]; 4; 4 |
+| *Micrasema setiferum* | +0.321 [0.156, 0.459]; 3; 3 | *Leptophlebia* | +0.479 [0.436, 0.515]; 5; 5 |
+
+- The three riffle-beetle taxa (larva vs adult in the fold-0 montages) remain the strongest FIN-Benthic2 groups;
+  *Limnius volckmari* beats one Gaussian in all 5 folds but its split is stable in only 3.
+- Taxa whose 2-component interval is below 0 in at least one fold (8 PCs): 10 FIN-Benthic2 taxa (e.g. *Agapetus* sp.,
+  *Polycentropus irroratus*, *Rhyacophila nubila*), 4 AquaMonitor taxa (Limnephilidae, *Limnephilus*, *Sialis*,
+  *Sisyra*).
+- Supported taxa that also follow metadata (train, 8 PCs, fold mean): AquaMonitor 11.6 of 21.0 have source-dataset ARI
+  ≥ 0.5; FIN-Benthic2 3.4 of 7.6 have crop-size AUC outside 0.2–0.8. Val counts are the same means (11.6, 3.4).
+
+## 5. Unchanged by the corrections
+
+- Between taxa (fold means): pairs with val d′ < 2: 1.6 % FIN-Benthic2, 1.8 % AquaMonitor; closest pairs in every fold
+  as before (*Polycentropus flavomaculatus* / *P. irroratus*, *Baetis*, *Elmis* / *Oulimnius*; *Cyrnus trimaculatus* /
+  *Polycentropus flavomaculatus*, *Caenis horaria* / *C. luctuosa*); Spearman of pair d′ between folds, median 0.91
+  and 0.79.
+- Both camera views in the same component (median, 8 PCs): 0.828 vs 0.967.
+- Feature checks: CPU vs GPU ≤ 2.1e-5; LUMI vs Dell features (AquaMonitor, 196,983 images) max 4.8e-5.
+
+## 6. Output A (exploratory, in-sample: fold-0 train + val pooled, fold-0 test not used)
+
+FIN-Benthic2 7,707 specimens / 38 taxa; AquaMonitor 33,732 / 42. Reliable 2-component fits at 8 PCs: 34 of 38 and
+40 of 42; in-sample BIC prefers the 2-component tied model in 22 of 34 and 38 of 40 of them; both views in the same
+component 0.83 vs 0.97. Not held-out evidence.
+
+## 7. Limits
+
+- Five folds share specimens: fold ranges show consistency across assignments, not replications. Averaged interval
+  endpoints are descriptive. Intervals are pointwise and conditional on the fitted PCA, models and included taxa.
+- Reliable-only averages use different taxa per model; the common-taxa table fixes the taxa but is a selected subset.
+- A better-predicting mixture with a stable split can still reflect skew, heavy tails, acquisition or pose; ARI and AUC
+  show partition agreement and rank separation, not cause. Life stage is not annotated; crop area is not size.
+- Numerical tie: in the AquaMonitor capped baseline, *Mystacides*' source-model interval has its lower end at 0 within
+  rounding (+1.3e-15 on the Dell, −6.3e-15 on LUMI), so counts of intervals above 0 can differ by one between machines.
+
+## 8. Methods review by Codex Astra (high effort, read-only)
+
+**Asked** (at the author's request, after the code was written): review of the mathematical and statistical methods
+only — specimen unit; global whitened PCA and held-out density comparison; bootstrap and class-macro interval; verdict
+and split stability; source model; d′, radius separation, subspace overlap, effective rank with unequal class sizes;
+five-fold aggregation; output A; metadata measures. Handed over: `task.md`, the previous response, the analysis code
+and a context note (`Feature_geometry_data/full_specimen/astra_methods_review/context.md`). Record
+`~/agent_consults/2026-11-11_183354_codex_gpt-6-astra_high.md` (session `01a1cb75-723b-7eb0-ba3a-10db70d181be`).
+
+**Found:** "needs changes — the core density comparison is sound". Six findings, all confirmed in the code:
+(1) averages included fits marked unreliable; (2) the label mixed models and its stability median ignored failed
+resamples; (3) n = 30 summaries used fewer specimens for small taxa; (4) source-model eligibility used the wrong
+parameter count; (5) the five-fold summary dropped denominators; (6) metadata wording overstated ARI / AUC. Plus my
+"never loaded" wording. Impact on the first run: `docs/evidence/full_geometry_reliability_audit.json`.
+
+**Done:** all proposed changes (section 1), decided by the author as D1–D3; results above are the corrected ones.
+
+## 9. Open items for the author
+
+- **Code cleanup (asked in chat, not yet done):** two unused imports in older files; three overlapping cache-comparison
+  scripts that could become one; `class_geometry_pilot.py` (390 lines, fitting + summaries + plots + montage
+  selection) to be split into modules shared with `descriptive_geometry.py` and renamed; `audit_mixture_reliability.py`
+  only reads pre-correction outputs; `src/statistics/gaussian.py` and `src/lightning_utils/` are used only by their
+  tests (kept on the author's earlier instructions). Proposed as a separate task with a check that outputs are
+  reproduced exactly.
+- Next research steps (folds of other datasets, life-stage labels, BIOSCAN-5M / DF24) need a new task.
+
+## 10. Rerun
 
 ```bash
-# Dell (metadata only)
-python scripts/build_full_specimen_selection.py --dataset finbenthic2 --csv CSV --hdf5 H5 --ida IDA --out DIR --reuse FOLD0_COHORT
-python scripts/build_full_specimen_selection.py --dataset aquamonitor --manifest MANIFEST --out DIR
-# LUMI (code dir C, results O)
-sbatch scripts/lumi/extract_dinov3_l.sh C MANIFEST HDF5 OUT          # per dataset
-sbatch --array=0-4 [--cpus-per-task 8 --mem 32G --time 00:45:00] scripts/lumi/geometry_folds.sh C finbenthic2 O
-sbatch --array=0-4 scripts/lumi/geometry_folds.sh C aquamonitor O
-sbatch scripts/lumi/geometry_summary.sh C O
+# LUMI (code dir C; embeddings already in /scratch/project_462001534/feature_geometry/full_specimen/<dataset>/extract)
+sbatch --array=0-4 --cpus-per-task=8 --mem=32G --time=00:45:00 scripts/lumi/geometry_folds.sh C finbenthic2 OUT
+sbatch --array=0-4 scripts/lumi/geometry_folds.sh C aquamonitor OUT
+sbatch --dependency=afterok:<both arrays> scripts/lumi/geometry_summary.sh C OUT
+# selection and extraction: see commit d072185 (scripts/build_full_specimen_selection.py, scripts/lumi/extract_dinov3_l.sh)
 ```

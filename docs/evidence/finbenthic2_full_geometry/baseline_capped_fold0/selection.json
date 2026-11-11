@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Limnius_volckmari",
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus"
+ ],
+ "candidate_single": [
+  "Leuctra_sp",
+  "Ephemerella_mucronata"
+ ],
+ "all": [
+  "Limnius_volckmari",
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus",
+  "Leuctra_sp",
+  "Ephemerella_mucronata"
+ ],
+ "montage_specimens": {
+  "Limnius_volckmari": {
+   "component_0": [
+    "Limnius_vol1",
+    "Limnius_vol10",
+    "Limnius_vol101",
+    "Limnius_vol102"
+   ],
+   "component_1": [
+    "Limnius_vol181",
+    "Limnius_vol185",
+    "Limnius_vol186",
+    "Limnius_vol190"
+   ],
+   "outliers_lowest_G1_density": [
+    "Limnius_vol192",
+    "Limnius_vol311"
+   ]
+  },
+  "Elmis_aenea": {
+   "component_0": [
+    "Elmis_aen10",
+    "Elmis_aen101",
+    "Elmis_aen102",
+    "Elmis_aen107"
+   ],
+   "component_1": [
+    "Elmis_aen184",
+    "Elmis_aen186",
+    "Elmis_aen193",
+    "Elmis_aen195"
+   ],
+   "outliers_lowest_G1_density": [
+    "Elmis_aen345",
+    "Elmis_aen68"
+   ]
+  },
+  "Oulimnius_tuberculatus": {
+   "component_0": [
+    "Oulimnius_tub1",
+    "Oulimnius_tub10",
+    "Oulimnius_tub101",
+    "Oulimnius_tub102"
+   ],
+   "component_1": [
+    "Oulimnius_tub134",
+    "Oulimnius_tub135",
+    "Oulimnius_tub136",
+    "Oulimnius_tub137"
+   ],
+   "outliers_lowest_G1_density": [
+    "Oulimnius_tub32",
+    "Oulimnius_tub327"
+   ]
+  },
+  "Leuctra_sp": {
+   "component_0": [
+    "Leuctra_hip197",
+    "Leuctra_hip10",
+    "Leuctra_hip245",
+    "Leuctra_hip240"
+   ],
+   "component_1": [
+    "Leuctra_hip35",
+    "Leuctra_hip272",
+    "Leuctra_hip32",
+    "Leuctra_hip207"
+   ],
+   "outliers_lowest_G1_density": [
+    "Leuctra_hip189",
+    "Leuctra_hip233"
+   ]
+  },
+  "Ephemerella_mucronata": {
+   "component_0": [
+    "Ephemerella_muc85",
+    "Ephemerella_muc252",
+    "Ephemerella_muc70",
+    "Ephemerella_muc106"
+   ],
+   "component_1": [
+    "Ephemerella_muc249",
+    "Ephemerella_muc57",
+    "Ephemerella_muc127",
+    "Ephemerella_muc233"
+   ],
+   "outliers_lowest_G1_density": [
+    "Ephemerella_muc193",
+    "Ephemerella_muc224"
+   ]
+  }
+ }
+}

@@ -1,11 +1,11 @@
 {
  "status": "exploratory, in-sample: fitted and described on the same specimens; not held-out evidence",
- "pool": "fold0 train + val specimens; fold0 test rows not read",
+ "pool": "fold0 train + val specimens; fold0 test rows dropped before feature lookup, never used",
  "cohort_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
  "cohort_rows": {
   "in_file": 186284,
   "pool": 148979,
-  "not_read": 37305
+  "test_rows_dropped": 37305
  },
  "encoder": "dinov3_l",
  "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
@@ -26,6 +26,7 @@
   "8": 0.5377085221540694,
   "16": 0.6565984347201266
  },
+ "within_class_n30_classes": 34,
  "within_class_native_min_median_max": {
   "rms_radius": [
    5.3329343298611045,
@@ -44,7 +45,7 @@
   ],
   "effective_rank_n30": [
    9.940920551336733,
-   15.912249882387188,
+   16.47358855246987,
    18.35361332008571
   ],
   "camera_reid": [
@@ -117,10 +118,16 @@
  },
  "mixture_in_sample_by_pcs": {
   "8": {
-   "classes_fitted": 38,
+   "classes_reliable": 34,
+   "classes_unreliable": [
+    "Capnopsis_schilleri",
+    "Leuctra_nigra",
+    "Nemoura_cinerea",
+    "Sialis_sp"
+   ],
    "classes_ineligible": 0,
-   "bic_prefers_G2_tied": 23,
-   "both_views_same_component_median": 0.8126213592233009,
+   "bic_prefers_G2_tied": 22,
+   "both_views_same_component_median": 0.826683859223301,
    "log_image_area_auc_outside_0.2_0.8": [
     "Amphinemura_borealis",
     "Baetis_vernus_group",
@@ -136,17 +143,22 @@
     "Polycentropus_flavomaculatus",
     "Polycentropus_irroratus",
     "Rhyacophila_nubila",
-    "Sialis_sp",
     "Silo_pallipes",
     "Simuliidae",
     "Taeniopteryx_nebulosa"
    ]
   },
   "16": {
-   "classes_fitted": 34,
+   "classes_reliable": 30,
+   "classes_unreliable": [
+    "Diura_sp",
+    "Limnius_volckmari",
+    "Plectrocnemia_sp",
+    "Silo_pallipes"
+   ],
    "classes_ineligible": 4,
-   "bic_prefers_G2_tied": 13,
-   "both_views_same_component_median": 0.8329846582984659,
+   "bic_prefers_G2_tied": 11,
+   "both_views_same_component_median": 0.8119530102790015,
    "log_image_area_auc_outside_0.2_0.8": [
     "Agapetus_sp",
     "Ameletus_inopinatus",
@@ -156,13 +168,11 @@
     "Hydropsyche_siltalai",
     "Neureclipsis_bimaculata",
     "Oulimnius_tuberculatus",
-    "Plectrocnemia_sp",
     "Polycentropus_flavomaculatus",
-    "Silo_pallipes",
     "Simuliidae",
     "Taeniopteryx_nebulosa"
    ]
   }
  },
- "wall_seconds": 67.4
+ "wall_seconds": 64.1
 }

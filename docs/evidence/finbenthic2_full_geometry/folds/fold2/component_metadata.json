@@ -2,7 +2,7 @@
  "8_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.2528425797671989,
+   "abs_auc_minus_half_median": 0.2521378581322447,
    "classes_auc_outside_0.2_0.8": 13,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_vernus_group",
@@ -44,7 +44,7 @@
  "16_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.2084766655200092,
+   "abs_auc_minus_half_median": 0.2079480001064754,
    "classes_auc_outside_0.2_0.8": 9,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_vernus_group",
@@ -62,7 +62,7 @@
  "16_pcs_val": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.1729591836734694,
+   "abs_auc_minus_half_median": 0.17500000000000004,
    "classes_auc_outside_0.2_0.8": 9,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_rhodani",

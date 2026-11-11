@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria"
+ ],
+ "candidate_single": [
+  "Limnephilus",
+  "Cyrnus flavidus"
+ ],
+ "all": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria",
+  "Limnephilus",
+  "Cyrnus flavidus"
+ ],
+ "montage_specimens": {
+  "Chironomidae": {
+   "component_0": [
+    "15-F6-Ch-iso3-18",
+    "12-G7-Ch-iso2-8",
+    "12-G3-Ch-iso2-4",
+    "2-B11-Ch-haa1-2"
+   ],
+   "component_1": [
+    "Ch-kom2_534_22",
+    "Ch-vie1_186_22",
+    "Ch-kom2_205_22",
+    "Ch-kom2_83_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "Ch-kur1_71_21",
+    "15-F6-Ch-iso3-18"
+   ]
+  },
+  "Leptophlebia": {
+   "component_0": [
+    "Le-ala1_9_21",
+    "Le-iso1_147_22",
+    "Le-iso1_279_22",
+    "Le-iso2_129_21"
+   ],
+   "component_1": [
+    "14-C6-Le-iso2-13",
+    "Le-iso1_68_22",
+    "Le-iso1_75_21",
+    "Le-iso3_1389_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "6-A9-Le-iso1-18",
+    "6-A11-Le-iso1-20"
+   ]
+  },
+  "Caenis horaria": {
+   "component_0": [
+    "10-B10-CaHo-kir1-4",
+    "10-B3-CaHo-kaj2-2",
+    "13-A4-CaHo-kuh1-2",
+    "14-F10-CaHo-lop1-3"
+   ],
+   "component_1": [
+    "CaHo-ala1_2_21",
+    "CaHo-haa1_10_22",
+    "CaHo-haa1_12_22",
+    "CaHo-haa1_13_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "CaHo-val1_62_21",
+    "CaHo-val1_61_21"
+   ]
+  },
+  "Limnephilus": {
+   "component_0": [
+    "LiPhilus-iso3_16_21",
+    "LiPhilus-iso1_4_22",
+    "LiPhilus-iso2_6_22",
+    "LiPhilus-iso3_5_22"
+   ],
+   "component_1": [
+    "LiPhilus-kir2_1_21",
+    "LiPhilus-val1_2_21",
+    "LiPhilus-val1_1_21",
+    "LiPhilus-iso3_1_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "12-E9-LiPhilus-lop2-1",
+    "LiPhilus-iso3_4_21"
+   ]
+  },
+  "Cyrnus flavidus": {
+   "component_0": [
+    "CyFl-iso2_4_22",
+    "CyFl-iso2_12_22",
+    "CyFl-iso2_1_21",
+    "CyFl-iso1_8_22"
+   ],
+   "component_1": [
+    "8-H6-CyFl-iso2-11",
+    "CyFl-iso2_11_21",
+    "CyFl-kuo2_1_22",
+    "8-H12-CyFl-sii3-1"
+   ],
+   "outliers_lowest_G1_density": [
+    "CyFl-iso1_12_22",
+    "CyFl-sii3_1_21"
+   ]
+  }
+ }
+}

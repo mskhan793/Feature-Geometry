@@ -2,12 +2,11 @@
  "8_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 36,
-   "abs_auc_minus_half_median": 0.29016635464228496,
-   "classes_auc_outside_0.2_0.8": 17,
+   "abs_auc_minus_half_median": 0.2903037172796476,
+   "classes_auc_outside_0.2_0.8": 16,
    "classes_auc_outside_0.2_0.8_list": [
     "Amphinemura_borealis",
     "Baetis_vernus_group",
-    "Diura_sp",
     "Heptagenia_sulphurea",
     "Hydropsyche_siltalai",
     "Kageronia_fuscogrisea",
@@ -53,10 +52,11 @@
  "16_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.23335964734102857,
-   "classes_auc_outside_0.2_0.8": 11,
+   "abs_auc_minus_half_median": 0.23415841846238034,
+   "classes_auc_outside_0.2_0.8": 12,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_rhodani",
+    "Diura_sp",
     "Ephemerella_aurivillii",
     "Hydropsyche_siltalai",
     "Neureclipsis_bimaculata",

@@ -2,10 +2,9 @@
  "8_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 35,
-   "abs_auc_minus_half_median": 0.29982142857142857,
-   "classes_auc_outside_0.2_0.8": 17,
+   "abs_auc_minus_half_median": 0.29696637426900585,
+   "classes_auc_outside_0.2_0.8": 16,
    "classes_auc_outside_0.2_0.8_list": [
-    "Agapetus_sp",
     "Ameletus_inopinatus",
     "Baetis_vernus_group",
     "Heptagenia_sulphurea",
@@ -28,7 +27,7 @@
  "8_pcs_val": {
   "log_image_area": {
    "classes_with_two_components": 35,
-   "abs_auc_minus_half_median": 0.2763157894736842,
+   "abs_auc_minus_half_median": 0.2647058823529411,
    "classes_auc_outside_0.2_0.8": 13,
    "classes_auc_outside_0.2_0.8_list": [
     "Ameletus_inopinatus",
@@ -50,7 +49,7 @@
  "16_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.20494374956958228,
+   "abs_auc_minus_half_median": 0.2046416681779502,
    "classes_auc_outside_0.2_0.8": 13,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_vernus_group",

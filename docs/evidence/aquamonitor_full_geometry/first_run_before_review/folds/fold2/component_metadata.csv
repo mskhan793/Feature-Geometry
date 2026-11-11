@@ -1,0 +1,161 @@
+taxon_group,pcs,split,specimens,component_sizes,datasets,ari_dataset,ari_year,ari_site,verdict,G2_tied_status
+Asellus aquaticus,8,train,2104,"{""0"": 1059, ""1"": 1045}","{""biomass"": 73, ""bulk21"": 895, ""bulk22"": 951, ""dna"": 185}",0.5709493138324991,0.7350346015159717,0.09301397155356045,credible multiple groups,ok
+Asellus aquaticus,8,val,335,"{""0"": 166, ""1"": 169}","{""biomass"": 8, ""bulk21"": 149, ""bulk22"": 151, ""dna"": 27}",0.5734555288244256,0.7127949856320152,0.10963484181132903,credible multiple groups,ok
+Asellus aquaticus,16,train,2104,"{""0"": 1187, ""1"": 917}","{""biomass"": 73, ""bulk21"": 895, ""bulk22"": 951, ""dna"": 185}",0.5177992010349876,0.43485091384038493,0.09701675745468649,inconclusive,ok
+Asellus aquaticus,16,val,335,"{""0"": 189, ""1"": 146}","{""biomass"": 8, ""bulk21"": 149, ""bulk22"": 151, ""dna"": 27}",0.5244163551457462,0.441400490634709,0.11615439448485597,inconclusive,ok
+Caenis horaria,8,train,2864,"{""0"": 497, ""1"": 2367}","{""biomass"": 64, ""bulk21"": 1323, ""bulk22"": 1325, ""dna"": 152}",-0.010983750262634573,0.002500540937921237,0.004046530036873725,credible multiple groups,ok
+Caenis horaria,8,val,423,"{""0"": 74, ""1"": 349}","{""biomass"": 12, ""bulk21"": 186, ""bulk22"": 199, ""dna"": 26}",-0.013700029630125116,0.00657378320024048,0.006124554742406626,credible multiple groups,ok
+Caenis horaria,16,train,2864,"{""0"": 204, ""1"": 2660}","{""biomass"": 64, ""bulk21"": 1323, ""bulk22"": 1325, ""dna"": 152}",0.206264412337024,0.00039234693286598993,0.0018475252210291841,credible multiple groups,ok
+Caenis horaria,16,val,423,"{""0"": 34, ""1"": 389}","{""biomass"": 12, ""bulk21"": 186, ""bulk22"": 199, ""dna"": 26}",0.22074972426642198,0.007198021449481006,0.005807100398192373,credible multiple groups,ok
+Caenis luctuosa,8,train,345,"{""0"": 64, ""1"": 281}","{""biomass"": 31, ""bulk21"": 206, ""bulk22"": 64, ""dna"": 44}",0.4694182465767898,1.0,0.12697375436641922,credible multiple groups,ok
+Caenis luctuosa,8,val,55,"{""0"": 14, ""1"": 41}","{""biomass"": 8, ""bulk21"": 26, ""bulk22"": 15, ""dna"": 6}",0.42015226648478254,0.9239609706141724,0.16343764633831823,credible multiple groups,ok
+Caenis luctuosa,16,train,345,"{""0"": 281, ""1"": 64}","{""biomass"": 31, ""bulk21"": 206, ""bulk22"": 64, ""dna"": 44}",0.4694182465767898,1.0,0.12697375436641922,credible multiple groups,ok
+Caenis luctuosa,16,val,55,"{""0"": 40, ""1"": 15}","{""biomass"": 8, ""bulk21"": 26, ""bulk22"": 15, ""dna"": 6}",0.4812534974818131,1.0,0.19689131551594366,credible multiple groups,ok
+Centroptilum luteolum,8,train,61,"{""0"": 44, ""1"": 17}","{""bulk21"": 7, ""bulk22"": 37, ""dna"": 17}",0.7220407488250493,0.5846483074661709,0.21066704865587546,credible multiple groups,ok
+Centroptilum luteolum,8,val,8,"{""0"": 7, ""1"": 1}","{""bulk21"": 1, ""bulk22"": 6, ""dna"": 1}",0.5555555555555556,0.46153846153846156,0.05,credible multiple groups,ok
+Centroptilum luteolum,16,train,61,"{""0"": 44, ""1"": 17}","{""bulk21"": 7, ""bulk22"": 37, ""dna"": 17}",0.7220407488250493,0.5846483074661709,0.21066704865587546,credible multiple groups,ok
+Centroptilum luteolum,16,val,8,"{""0"": 7, ""1"": 1}","{""bulk21"": 1, ""bulk22"": 6, ""dna"": 1}",0.5555555555555556,0.46153846153846156,0.05,credible multiple groups,ok
+Ceratopogonidae,8,train,627,"{""0"": 374, ""1"": 253}","{""biomass"": 32, ""bulk21"": 222, ""bulk22"": 373}",0.9219811755963115,0.9936125508815331,0.05692136572709112,credible multiple groups,ok
+Ceratopogonidae,8,val,92,"{""0"": 57, ""1"": 35}","{""biomass"": 3, ""bulk21"": 32, ""bulk22"": 57}",0.9541307714065189,1.0,0.05122164811687824,credible multiple groups,ok
+Ceratopogonidae,16,train,627,"{""0"": 373, ""1"": 254}","{""biomass"": 32, ""bulk21"": 222, ""bulk22"": 373}",0.9276974439994887,1.0,0.05721144401838044,credible multiple groups,ok
+Ceratopogonidae,16,val,92,"{""0"": 57, ""1"": 35}","{""biomass"": 3, ""bulk21"": 32, ""bulk22"": 57}",0.9541307714065189,1.0,0.05122164811687824,credible multiple groups,ok
+Chironomidae,8,train,7392,"{""0"": 5748, ""1"": 1644}","{""biomass"": 67, ""bulk21"": 2013, ""bulk22"": 5312}",0.737029828793647,0.7418974069967129,0.032986660934135666,credible multiple groups,ok
+Chironomidae,8,val,1122,"{""0"": 863, ""1"": 259}","{""biomass"": 19, ""bulk21"": 323, ""bulk22"": 780}",0.6804129744529971,0.6879428108750189,0.03481813303140231,credible multiple groups,ok
+Chironomidae,16,train,7392,"{""0"": 5725, ""1"": 1667}","{""biomass"": 67, ""bulk21"": 2013, ""bulk22"": 5312}",0.7666083564438841,0.7720082625500778,0.03474128768023444,credible multiple groups,ok
+Chironomidae,16,val,1122,"{""0"": 857, ""1"": 265}","{""biomass"": 19, ""bulk21"": 323, ""bulk22"": 780}",0.7237520898350993,0.7328495255578747,0.03744409067596214,credible multiple groups,ok
+Cloeon,8,train,77,"{""0"": 58, ""1"": 19}","{""bulk21"": 17, ""bulk22"": 60}",0.5922251856400023,0.5922251856400023,0.2133979851238113,credible multiple groups,ok
+Cloeon,8,val,16,"{""0"": 13, ""1"": 3}","{""bulk21"": 3, ""bulk22"": 13}",1.0,1.0,0.42380591357088704,credible multiple groups,ok
+Cloeon,16,train,77,"{""0"": 56, ""1"": 21}","{""bulk21"": 17, ""bulk22"": 60}",0.5988651061876747,0.5988651061876747,0.21897153145043322,inconclusive,ok
+Cloeon,16,val,16,"{""0"": 12, ""1"": 4}","{""bulk21"": 3, ""bulk22"": 13}",0.7311827956989247,0.7311827956989247,0.2902208201892745,inconclusive,ok
+Cloeon dipterum,8,train,108,"{""0"": 40, ""1"": 68}","{""biomass"": 18, ""bulk21"": 31, ""bulk22"": 37, ""dna"": 22}",0.48036218805396314,0.16935590432379113,0.050045880857605335,inconclusive,ok
+Cloeon dipterum,8,val,12,"{""0"": 3, ""1"": 9}","{""biomass"": 2, ""bulk21"": 4, ""bulk22"": 5, ""dna"": 1}",0.38734177215189874,0.04087193460490463,0.1580246913580247,inconclusive,ok
+Cloeon dipterum,16,train,108,"{""0"": 84, ""1"": 24}","{""biomass"": 18, ""bulk21"": 31, ""bulk22"": 37, ""dna"": 22}",0.28787523087323114,-0.028888359175346885,0.0655169640040816,inconclusive,ok
+Cloeon dipterum,16,val,12,"{""0"": 9, ""1"": 3}","{""biomass"": 2, ""bulk21"": 4, ""bulk22"": 5, ""dna"": 1}",0.38734177215189874,0.04087193460490463,0.1580246913580247,inconclusive,ok
+Cyrnus flavidus,8,train,79,"{""0"": 68, ""1"": 11}","{""biomass"": 14, ""bulk21"": 21, ""bulk22"": 44}",-0.053509580199705344,-0.00893185274096152,0.12664510791907949,inconclusive,ok
+Cyrnus flavidus,8,val,11,"{""0"": 8, ""1"": 3}","{""bulk21"": 3, ""bulk22"": 8}",-0.03494623655913978,-0.03494623655913978,0.21961752004935226,inconclusive,ok
+Cyrnus flavidus,16,train,79,"{""0"": 66, ""1"": 13}","{""biomass"": 14, ""bulk21"": 21, ""bulk22"": 44}",-0.05235959142848483,-0.008908466330270705,0.14561414561414562,one Gaussian favoured,unreliable
+Cyrnus flavidus,16,val,11,"{""0"": 8, ""1"": 3}","{""bulk21"": 3, ""bulk22"": 8}",-0.03494623655913978,-0.03494623655913978,0.21961752004935226,one Gaussian favoured,unreliable
+Cyrnus trimaculatus,8,train,125,"{""0"": 108, ""1"": 17}","{""bulk21"": 15, ""bulk22"": 93, ""dna"": 17}",0.6055010801306534,0.5149843384033637,0.019271569049218482,credible multiple groups,ok
+Cyrnus trimaculatus,8,val,18,"{""0"": 17, ""1"": 1}","{""bulk22"": 17, ""dna"": 1}",1.0,1.0,0.03278688524590164,credible multiple groups,ok
+Cyrnus trimaculatus,16,train,125,"{""0"": 17, ""1"": 108}","{""bulk21"": 15, ""bulk22"": 93, ""dna"": 17}",0.6055010801306534,0.5149843384033637,0.019271569049218482,credible multiple groups,ok
+Cyrnus trimaculatus,16,val,18,"{""0"": 1, ""1"": 17}","{""bulk22"": 17, ""dna"": 1}",1.0,1.0,0.03278688524590164,credible multiple groups,ok
+Ecnomus tenellus,8,train,137,"{""0"": 112, ""1"": 25}","{""biomass"": 10, ""bulk21"": 11, ""bulk22"": 101, ""dna"": 15}",0.7146972630018897,0.6739085107612411,0.13921269412252876,credible multiple groups,ok
+Ecnomus tenellus,8,val,21,"{""0"": 16, ""1"": 5}","{""biomass"": 2, ""bulk21"": 3, ""bulk22"": 13, ""dna"": 3}",0.5900216919739696,0.48454545454545456,0.12130518234165068,credible multiple groups,ok
+Ecnomus tenellus,16,train,137,"{""0"": 24, ""1"": 113}","{""biomass"": 10, ""bulk21"": 11, ""bulk22"": 101, ""dna"": 15}",0.6899233813234464,0.6454766535188079,0.13236691159687974,credible multiple groups,ok
+Ecnomus tenellus,16,val,21,"{""0"": 5, ""1"": 16}","{""biomass"": 2, ""bulk21"": 3, ""bulk22"": 13, ""dna"": 3}",0.5900216919739696,0.48454545454545456,0.12130518234165068,credible multiple groups,ok
+Ephemera vulgata,8,train,200,"{""0"": 27, ""1"": 173}","{""biomass"": 21, ""bulk21"": 104, ""bulk22"": 39, ""dna"": 36}",-0.05242599594369857,-0.08768174377519763,-0.020674175980555234,inconclusive,ok
+Ephemera vulgata,8,val,27,"{""0"": 5, ""1"": 22}","{""biomass"": 7, ""bulk21"": 16, ""bulk22"": 3, ""dna"": 1}",-0.09475557989867178,-0.11052828774822031,0.006022475365512999,inconclusive,ok
+Ephemera vulgata,16,train,200,"{""0"": 54, ""1"": 146}","{""biomass"": 21, ""bulk21"": 104, ""bulk22"": 39, ""dna"": 36}",0.5095320173295618,-0.08307136693788396,-0.01772398604730912,inconclusive,ok
+Ephemera vulgata,16,val,27,"{""0"": 8, ""1"": 19}","{""biomass"": 7, ""bulk21"": 16, ""bulk22"": 3, ""dna"": 1}",0.6939649022685119,-0.08883248730964467,0.0171854397842931,inconclusive,ok
+Erpobdella octoculata,8,train,112,"{""0"": 59, ""1"": 53}","{""biomass"": 14, ""bulk21"": 28, ""bulk22"": 47, ""dna"": 23}",0.5000035807440661,0.7953881257316391,0.08355303517442955,inconclusive,ok
+Erpobdella octoculata,8,val,19,"{""0"": 8, ""1"": 11}","{""biomass"": 2, ""bulk21"": 3, ""bulk22"": 10, ""dna"": 4}",0.6217860105059442,0.7891491985203453,0.026839036042998664,inconclusive,ok
+Erpobdella octoculata,16,train,112,"{""0"": 88, ""1"": 24}","{""biomass"": 14, ""bulk21"": 28, ""bulk22"": 47, ""dna"": 23}",0.32136666787110735,0.0401212631452722,0.002546773215078293,credible multiple groups,ok
+Erpobdella octoculata,16,val,19,"{""0"": 15, ""1"": 4}","{""biomass"": 2, ""bulk21"": 3, ""bulk22"": 10, ""dna"": 4}",0.40801186943620177,0.19393939393939394,-0.02196737199160071,credible multiple groups,ok
+Gyraulus,8,train,104,"{""0"": 81, ""1"": 23}","{""biomass"": 23, ""bulk21"": 44, ""bulk22"": 37}",0.4434990124809188,-0.008619874259201693,-0.043536476793644203,inconclusive,ok
+Gyraulus,8,val,16,"{""0"": 13, ""1"": 3}","{""biomass"": 3, ""bulk21"": 9, ""bulk22"": 4}",0.4482758620689655,-0.12903225806451613,-0.07268877911079746,inconclusive,ok
+Gyraulus,16,train,104,"{""0"": 81, ""1"": 23}","{""biomass"": 23, ""bulk21"": 44, ""bulk22"": 37}",0.4434990124809188,-0.008619874259201693,-0.043536476793644203,inconclusive,ok
+Gyraulus,16,val,16,"{""0"": 13, ""1"": 3}","{""biomass"": 3, ""bulk21"": 9, ""bulk22"": 4}",0.4482758620689655,-0.12903225806451613,-0.07268877911079746,inconclusive,ok
+Helobdella stagnalis,8,train,184,"{""0"": 93, ""1"": 91}","{""biomass"": 24, ""bulk21"": 80, ""bulk22"": 53, ""dna"": 27}",0.2138666567566514,0.2689195163750776,0.07329471104994176,inconclusive,ok
+Helobdella stagnalis,8,val,26,"{""0"": 12, ""1"": 14}","{""biomass"": 2, ""bulk21"": 10, ""bulk22"": 7, ""dna"": 7}",0.25614986632815956,0.35779212225003293,-0.001193730986945974,inconclusive,ok
+Helobdella stagnalis,16,train,184,"{""0"": 133, ""1"": 51}","{""biomass"": 24, ""bulk21"": 80, ""bulk22"": 53, ""dna"": 27}",0.4598787191814945,-0.023179481749445688,-0.02416238694425016,credible multiple groups,ok
+Helobdella stagnalis,16,val,26,"{""0"": 17, ""1"": 9}","{""biomass"": 2, ""bulk21"": 10, ""bulk22"": 7, ""dna"": 7}",0.49657003761894225,0.004822781903085049,-0.04697825966901681,credible multiple groups,ok
+Heptagenia dalecarlica,8,train,138,"{""0"": 31, ""1"": 107}","{""biomass"": 23, ""bulk21"": 72, ""bulk22"": 11, ""dna"": 32}",-0.00895850322205447,0.052925413637045705,0.0012851266507902144,inconclusive,ok
+Heptagenia dalecarlica,8,val,18,"{""0"": 5, ""1"": 13}","{""biomass"": 7, ""bulk21"": 7, ""bulk22"": 1, ""dna"": 3}",-0.07096307023895727,-0.06578947368421052,-0.005256241787122208,inconclusive,ok
+Heptagenia dalecarlica,16,train,138,"{""0"": 57, ""1"": 81}","{""biomass"": 23, ""bulk21"": 72, ""bulk22"": 11, ""dna"": 32}",0.6557491397960482,-0.022075135350168477,-0.0073074537930667574,inconclusive,ok
+Heptagenia dalecarlica,16,val,18,"{""0"": 10, ""1"": 8}","{""biomass"": 7, ""bulk21"": 7, ""bulk22"": 1, ""dna"": 3}",0.6269592476489029,0.028050490883590462,-0.019029495718363463,inconclusive,ok
+Hydrachnidia,8,train,318,"{""0"": 204, ""1"": 114}","{""biomass"": 26, ""bulk21"": 88, ""bulk22"": 204}",0.90930690424649,1.0,0.11463565611235468,credible multiple groups,ok
+Hydrachnidia,8,val,58,"{""0"": 37, ""1"": 21}","{""biomass"": 4, ""bulk21"": 17, ""bulk22"": 37}",0.9178354955571345,1.0,0.10986575164053498,credible multiple groups,ok
+Hydrachnidia,16,train,318,"{""0"": 114, ""1"": 204}","{""biomass"": 26, ""bulk21"": 88, ""bulk22"": 204}",0.90930690424649,1.0,0.11463565611235468,credible multiple groups,ok
+Hydrachnidia,16,val,58,"{""0"": 21, ""1"": 37}","{""biomass"": 4, ""bulk21"": 17, ""bulk22"": 37}",0.9178354955571345,1.0,0.10986575164053498,credible multiple groups,ok
+Hydroptila,8,train,78,"{""0"": 33, ""1"": 45}","{""biomass"": 20, ""bulk21"": 28, ""bulk22"": 30}",0.399460385751267,0.3703459637561779,0.129799460196767,inconclusive,ok
+Hydroptila,8,val,7,"{""0"": 1, ""1"": 6}","{""bulk21"": 6, ""bulk22"": 1}",-0.16666666666666666,-0.16666666666666666,-0.09803921568627451,inconclusive,ok
+Hydroptila,16,train,78,"{""0"": 54, ""1"": 24}","{""biomass"": 20, ""bulk21"": 28, ""bulk22"": 30}",0.3680426857829461,0.0944910128357474,0.02857936776100879,inconclusive,ok
+Hydroptila,16,val,7,"{""0"": 6, ""1"": 1}","{""bulk21"": 6, ""bulk22"": 1}",-0.16666666666666666,-0.16666666666666666,0.0392156862745098,inconclusive,ok
+Kageronia fuscogrisea,8,train,1981,"{""0"": 1326, ""1"": 655}","{""biomass"": 63, ""bulk21"": 967, ""bulk22"": 836, ""dna"": 115}",-0.010997710344281094,-0.0032317012494137336,-0.0004847950109637424,credible multiple groups,ok
+Kageronia fuscogrisea,8,val,326,"{""0"": 224, ""1"": 102}","{""biomass"": 11, ""bulk21"": 151, ""bulk22"": 148, ""dna"": 16}",0.0016694978912476174,-0.0007638545692973221,0.0016568855317757657,credible multiple groups,ok
+Kageronia fuscogrisea,16,train,1981,"{""0"": 1304, ""1"": 677}","{""biomass"": 63, ""bulk21"": 967, ""bulk22"": 836, ""dna"": 115}",-0.010696919890763521,-0.00279679541988665,-0.00029429181483252867,inconclusive,ok
+Kageronia fuscogrisea,16,val,326,"{""0"": 220, ""1"": 106}","{""biomass"": 11, ""bulk21"": 151, ""bulk22"": 148, ""dna"": 16}",0.0008871130845352677,-0.0006671771546036793,0.0023843652555585546,inconclusive,ok
+Lepidostoma hirtum,8,train,228,"{""0"": 42, ""1"": 186}","{""biomass"": 6, ""bulk21"": 8, ""bulk22"": 203, ""dna"": 11}",0.48086329062895844,0.4833521222312123,0.4447254519687557,credible multiple groups,ok
+Lepidostoma hirtum,8,val,37,"{""0"": 10, ""1"": 27}","{""biomass"": 2, ""bulk21"": 2, ""bulk22"": 27, ""dna"": 6}",0.7487578668433256,0.781986531986532,0.4427710843373494,credible multiple groups,ok
+Lepidostoma hirtum,16,train,228,"{""0"": 196, ""1"": 32}","{""biomass"": 6, ""bulk21"": 8, ""bulk22"": 203, ""dna"": 11}",0.2133286145538434,0.20479033747681386,0.34617968513402525,credible multiple groups,ok
+Lepidostoma hirtum,16,val,37,"{""0"": 33, ""1"": 4}","{""biomass"": 2, ""bulk21"": 2, ""bulk22"": 27, ""dna"": 6}",0.24328384077647466,0.2134872640645043,0.17727883490095792,credible multiple groups,ok
+Leptophlebia,8,train,4945,"{""0"": 4270, ""1"": 675}","{""biomass"": 82, ""bulk21"": 3387, ""bulk22"": 1476}",-0.016515715305882615,-0.0755122071764726,0.12822851680061717,credible multiple groups,ok
+Leptophlebia,8,val,695,"{""0"": 602, ""1"": 93}","{""biomass"": 9, ""bulk21"": 495, ""bulk22"": 191}",-0.029829049310873917,-0.0803776034525044,0.13439004107757305,credible multiple groups,ok
+Leptophlebia,16,train,4945,"{""0"": 664, ""1"": 4281}","{""biomass"": 82, ""bulk21"": 3387, ""bulk22"": 1476}",0.03532757696746796,0.02358758587461681,0.029780059578074166,credible multiple groups,ok
+Leptophlebia,16,val,695,"{""0"": 86, ""1"": 609}","{""biomass"": 9, ""bulk21"": 495, ""bulk22"": 191}",0.0001970344236912328,0.0010534555652636976,0.02133868674729649,credible multiple groups,ok
+Limnephilidae,8,train,58,"{""0"": 35, ""1"": 23}","{""biomass"": 20, ""bulk21"": 21, ""bulk22"": 17}",0.28781834429054703,0.125291407841627,-0.014440852014565454,inconclusive,ok
+Limnephilidae,8,val,9,"{""0"": 8, ""1"": 1}","{""bulk21"": 4, ""bulk22"": 5}",0.05813953488372093,0.05813953488372093,0.016194331983805668,inconclusive,ok
+Limnephilidae,16,train,58,"{""0"": 33, ""1"": 25}","{""biomass"": 20, ""bulk21"": 21, ""bulk22"": 17}",-0.01568603354897606,-0.0166230297492488,-0.0038938402341566086,inconclusive,ok
+Limnephilidae,16,val,9,"{""0"": 5, ""1"": 4}","{""bulk21"": 4, ""bulk22"": 5}",-0.0125,-0.0125,-0.05517241379310345,inconclusive,ok
+Limnephilus,8,train,93,"{""0"": 23, ""1"": 70}","{""biomass"": 25, ""bulk21"": 42, ""bulk22"": 26}",0.008039411814196106,-0.05937954435288415,0.0627369379908998,inconclusive,ok
+Limnephilus,8,val,11,"{""0"": 3, ""1"": 8}","{""biomass"": 2, ""bulk21"": 5, ""bulk22"": 4}",-0.10970996216897856,-0.08839050131926121,-0.016696481812760882,inconclusive,ok
+Limnephilus,16,train,93,"{""0"": 18, ""1"": 75}","{""biomass"": 25, ""bulk21"": 42, ""bulk22"": 26}",0.010869578028884178,-0.08202458513292077,0.12334016654787217,inconclusive,ok
+Limnephilus,16,val,11,"{""0"": 1, ""1"": 10}","{""biomass"": 2, ""bulk21"": 5, ""bulk22"": 4}",-0.05319148936170213,-0.0784313725490196,0.034261241970021415,inconclusive,ok
+Micronecta,8,train,509,"{""0"": 188, ""1"": 321}","{""biomass"": 39, ""bulk21"": 449, ""bulk22"": 21}",0.009540707314694627,0.06414823558576112,0.5502262804055822,credible multiple groups,ok
+Micronecta,8,val,72,"{""0"": 22, ""1"": 50}","{""biomass"": 6, ""bulk21"": 62, ""bulk22"": 4}",0.05185894535237354,0.14578301985399694,0.6341952829413956,credible multiple groups,ok
+Micronecta,16,train,509,"{""0"": 321, ""1"": 188}","{""biomass"": 39, ""bulk21"": 449, ""bulk22"": 21}",0.009540707314694627,0.06414823558576112,0.5502262804055822,credible multiple groups,ok
+Micronecta,16,val,72,"{""0"": 50, ""1"": 22}","{""biomass"": 6, ""bulk21"": 62, ""bulk22"": 4}",0.05185894535237354,0.14578301985399694,0.6341952829413956,credible multiple groups,ok
+Mystacides azurea,8,train,95,"{""0"": 80, ""1"": 15}","{""biomass"": 23, ""bulk21"": 36, ""bulk22"": 13, ""dna"": 23}",0.19106120584211414,0.8901365075291463,0.1313519068217755,inconclusive,ok
+Mystacides azurea,8,val,19,"{""0"": 13, ""1"": 6}","{""biomass"": 5, ""bulk21"": 6, ""bulk22"": 4, ""dna"": 4}",0.19781078967943705,0.5916561314791403,0.08029197080291971,inconclusive,ok
+Mystacides azurea,16,train,95,"{""0"": 23, ""1"": 72}","{""biomass"": 23, ""bulk21"": 36, ""bulk22"": 13, ""dna"": 23}",0.3608515654960048,-0.09979221021396155,-0.00010691722324515815,inconclusive,ok
+Mystacides azurea,16,val,19,"{""0"": 4, ""1"": 15}","{""biomass"": 5, ""bulk21"": 6, ""bulk22"": 4, ""dna"": 4}",0.2597402597402597,-0.12972972972972974,-0.04430379746835443,inconclusive,ok
+Oligochaeta,8,train,2065,"{""0"": 831, ""1"": 1234}","{""biomass"": 62, ""bulk21"": 1117, ""bulk22"": 886}",0.39877680953979133,0.4210050812420557,0.07310264038494348,credible multiple groups,ok
+Oligochaeta,8,val,300,"{""0"": 126, ""1"": 174}","{""biomass"": 13, ""bulk21"": 153, ""bulk22"": 134}",0.4586785051434682,0.4976128639517898,0.06048411493624763,credible multiple groups,ok
+Oligochaeta,16,train,2065,"{""0"": 1237, ""1"": 828}","{""biomass"": 62, ""bulk21"": 1117, ""bulk22"": 886}",0.4049967095630178,0.42731292393843573,0.07317466233728336,credible multiple groups,ok
+Oligochaeta,16,val,300,"{""0"": 176, ""1"": 124}","{""biomass"": 13, ""bulk21"": 153, ""bulk22"": 134}",0.47791739666535027,0.5166847489574218,0.06064542921454429,credible multiple groups,ok
+Orthotrichia,8,train,41,"{""0"": 11, ""1"": 30}","{""bulk21"": 11, ""bulk22"": 30}",1.0,1.0,0.18716827973774586,credible multiple groups,ok
+Orthotrichia,8,val,7,"{""0"": 2, ""1"": 5}","{""bulk21"": 2, ""bulk22"": 5}",1.0,1.0,0.3524229074889868,credible multiple groups,ok
+Orthotrichia,16,train,41,"{""0"": 11, ""1"": 30}","{""bulk21"": 11, ""bulk22"": 30}",1.0,1.0,0.18716827973774586,insufficient evidence,unreliable
+Orthotrichia,16,val,7,"{""0"": 2, ""1"": 5}","{""bulk21"": 2, ""bulk22"": 5}",1.0,1.0,0.3524229074889868,insufficient evidence,unreliable
+Oulimnius tuberculatus,8,train,1708,"{""0"": 995, ""1"": 713}","{""biomass"": 80, ""bulk21"": 1021, ""bulk22"": 484, ""dna"": 123}",0.12697920944904073,0.12265559233691123,0.1564179520711816,credible multiple groups,ok
+Oulimnius tuberculatus,8,val,243,"{""0"": 144, ""1"": 99}","{""biomass"": 12, ""bulk21"": 139, ""bulk22"": 78, ""dna"": 14}",0.17361116813795935,0.1874914652464837,0.15084955984228943,credible multiple groups,ok
+Oulimnius tuberculatus,16,train,1708,"{""0"": 185, ""1"": 1523}","{""biomass"": 80, ""bulk21"": 1021, ""bulk22"": 484, ""dna"": 123}",0.3190785387055917,-0.07737618510980068,0.0035027258226408135,credible multiple groups,ok
+Oulimnius tuberculatus,16,val,243,"{""0"": 22, ""1"": 221}","{""biomass"": 12, ""bulk21"": 139, ""bulk22"": 78, ""dna"": 14}",0.2594462737055197,-0.06116907245962555,-0.006823356615751484,credible multiple groups,ok
+Oulimnius tuberculatus adult,8,train,210,"{""0"": 165, ""1"": 45}","{""biomass"": 24, ""bulk21"": 69, ""bulk22"": 93, ""dna"": 24}",0.36983295862422594,0.08031837120587491,0.03663266376977025,credible multiple groups,ok
+Oulimnius tuberculatus adult,8,val,32,"{""0"": 28, ""1"": 4}","{""biomass"": 2, ""bulk21"": 19, ""bulk22"": 9, ""dna"": 2}",0.3503772003352892,-0.09526534115291088,0.06962084862169536,credible multiple groups,ok
+Oulimnius tuberculatus adult,16,train,210,"{""0"": 24, ""1"": 186}","{""biomass"": 24, ""bulk21"": 69, ""bulk22"": 93, ""dna"": 24}",0.2207615379169206,0.003409475967735738,0.0032502149622215897,credible multiple groups,ok
+Oulimnius tuberculatus adult,16,val,32,"{""0"": 2, ""1"": 30}","{""biomass"": 2, ""bulk21"": 19, ""bulk22"": 9, ""dna"": 2}",0.1821721192399326,-0.0649118893598037,0.04785808482579657,credible multiple groups,ok
+Pedicia,8,train,43,"{""0"": 20, ""1"": 23}","{""bulk21"": 43}",,,,inconclusive,ok
+Pedicia,8,val,6,"{""0"": 1, ""1"": 5}","{""bulk21"": 6}",,,,inconclusive,ok
+Pedicia,16,train,43,"{""0"": 9, ""1"": 34}","{""bulk21"": 43}",,,,insufficient evidence,unreliable
+Pedicia,16,val,6,"{""0"": 1, ""1"": 5}","{""bulk21"": 6}",,,,insufficient evidence,unreliable
+Pisidium,8,train,63,"{""0"": 40, ""1"": 23}","{""biomass"": 19, ""bulk21"": 21, ""bulk22"": 23}",0.5995250299747097,1.0,0.13308117797720892,inconclusive,ok
+Pisidium,8,val,5,"{""0"": 5}","{""bulk21"": 5}",,,0.0,inconclusive,ok
+Pisidium,16,train,63,"{""0"": 44, ""1"": 19}","{""biomass"": 19, ""bulk21"": 21, ""bulk22"": 23}",0.5291384867424366,0.08919178438559497,-0.018726821703391853,inconclusive,ok
+Pisidium,16,val,5,"{""0"": 5}","{""bulk21"": 5}",,,0.0,inconclusive,ok
+Polycentropus flavomaculatus,8,train,93,"{""0"": 16, ""1"": 77}","{""bulk21"": 14, ""bulk22"": 63, ""dna"": 16}",0.5856040640981091,0.45608783398835445,0.057528231995930934,inconclusive,ok
+Polycentropus flavomaculatus,8,val,12,"{""0"": 2, ""1"": 10}","{""bulk22"": 10, ""dna"": 2}",1.0,1.0,-0.15877862595419848,inconclusive,ok
+Polycentropus flavomaculatus,16,train,93,"{""0"": 77, ""1"": 16}","{""bulk21"": 14, ""bulk22"": 63, ""dna"": 16}",0.5856040640981091,0.45608783398835445,0.057528231995930934,insufficient evidence,unreliable
+Polycentropus flavomaculatus,16,val,12,"{""0"": 10, ""1"": 2}","{""bulk22"": 10, ""dna"": 2}",1.0,1.0,-0.15877862595419848,insufficient evidence,unreliable
+Psychomyia pusilla,8,train,114,"{""0"": 77, ""1"": 37}","{""biomass"": 16, ""bulk21"": 15, ""bulk22"": 62, ""dna"": 21}",0.6190974583440264,0.5389492766285059,0.07846208669241857,credible multiple groups,ok
+Psychomyia pusilla,8,val,21,"{""0"": 15, ""1"": 6}","{""biomass"": 2, ""bulk21"": 4, ""bulk22"": 11, ""dna"": 4}",0.5284974093264249,0.3567567567567568,0.1646090534979424,credible multiple groups,ok
+Psychomyia pusilla,16,train,114,"{""0"": 77, ""1"": 37}","{""biomass"": 16, ""bulk21"": 15, ""bulk22"": 62, ""dna"": 21}",0.6190974583440264,0.5389492766285059,0.07846208669241857,credible multiple groups,ok
+Psychomyia pusilla,16,val,21,"{""0"": 15, ""1"": 6}","{""biomass"": 2, ""bulk21"": 4, ""bulk22"": 11, ""dna"": 4}",0.5284974093264249,0.3567567567567568,0.1646090534979424,credible multiple groups,ok
+Sialis,8,train,42,"{""0"": 33, ""1"": 9}","{""bulk21"": 18, ""bulk22"": 24}",0.125219303564643,0.125219303564643,0.2807693512514488,credible multiple groups,ok
+Sialis,8,val,5,"{""0"": 4, ""1"": 1}","{""bulk21"": 2, ""bulk22"": 3}",0.23076923076923078,0.23076923076923078,-0.07142857142857142,credible multiple groups,ok
+Sialis,16,train,42,"{""0"": 20, ""1"": 22}","{""bulk21"": 18, ""bulk22"": 24}",-0.02214595609661335,-0.02214595609661335,0.019730810731873535,one Gaussian favoured,ok
+Sialis,16,val,5,"{""0"": 2, ""1"": 3}","{""bulk21"": 2, ""bulk22"": 3}",1.0,1.0,0.5454545454545454,one Gaussian favoured,ok
+Sisyra,8,train,35,"{""0"": 2, ""1"": 33}","{""bulk21"": 16, ""bulk22"": 19}",0.028285431780560154,0.028285431780560154,0.021282043188378348,insufficient evidence,unreliable
+Sisyra,8,val,5,"{""1"": 5}","{""bulk21"": 2, ""bulk22"": 3}",0.0,0.0,0.0,insufficient evidence,unreliable
+Sisyra,16,train,35,"{""0"": 3, ""1"": 32}","{""bulk21"": 16, ""bulk22"": 19}",0.006301772512692616,0.006301772512692616,-0.03368337187814675,insufficient evidence,unreliable
+Sisyra,16,val,5,"{""1"": 5}","{""bulk21"": 2, ""bulk22"": 3}",0.0,0.0,0.0,insufficient evidence,unreliable
+Spirosperma ferox,8,train,170,"{""0"": 115, ""1"": 55}","{""biomass"": 23, ""bulk21"": 115, ""dna"": 32}",0.8973213487964833,,-0.008015213219909221,inconclusive,ok
+Spirosperma ferox,8,val,30,"{""0"": 19, ""1"": 11}","{""biomass"": 5, ""bulk21"": 18, ""dna"": 7}",0.7714904078502238,,-0.013008196805400248,inconclusive,ok
+Spirosperma ferox,16,train,170,"{""0"": 116, ""1"": 54}","{""biomass"": 23, ""bulk21"": 115, ""dna"": 32}",0.8826560074251834,,-0.008330514564220196,credible multiple groups,ok
+Spirosperma ferox,16,val,30,"{""0"": 18, ""1"": 12}","{""biomass"": 5, ""bulk21"": 18, ""dna"": 7}",0.839251211554908,,0.003027818078597111,credible multiple groups,ok
+Stylaria lacustris,8,train,322,"{""0"": 244, ""1"": 78}","{""biomass"": 38, ""bulk21"": 235, ""bulk22"": 2, ""dna"": 47}",0.8474788972114587,-0.008300336914053406,-0.009790553635178837,credible multiple groups,ok
+Stylaria lacustris,8,val,54,"{""0"": 42, ""1"": 12}","{""biomass"": 1, ""bulk21"": 41, ""bulk22"": 1, ""dna"": 11}",0.9221967102043889,-0.025657472738935216,-0.017292062943109112,credible multiple groups,ok
+Stylaria lacustris,16,train,322,"{""0"": 241, ""1"": 81}","{""biomass"": 38, ""bulk21"": 235, ""bulk22"": 2, ""dna"": 47}",0.8739166859856861,-0.00810482867175315,-0.00838362968185476,credible multiple groups,ok
+Stylaria lacustris,16,val,54,"{""0"": 42, ""1"": 12}","{""biomass"": 1, ""bulk21"": 41, ""bulk22"": 1, ""dna"": 11}",0.9221967102043889,-0.025657472738935216,-0.017292062943109112,credible multiple groups,ok
+Tanypodinae,8,train,559,"{""0"": 368, ""1"": 191}","{""biomass"": 29, ""bulk21"": 160, ""bulk22"": 370}",0.925892598402554,0.9855673956911052,0.0621463023848677,credible multiple groups,ok
+Tanypodinae,8,val,78,"{""0"": 47, ""1"": 31}","{""biomass"": 2, ""bulk21"": 30, ""bulk22"": 46}",0.91147520490527,0.9486880708435753,0.023133568705793167,credible multiple groups,ok
+Tanypodinae,16,train,559,"{""0"": 189, ""1"": 370}","{""biomass"": 29, ""bulk21"": 160, ""bulk22"": 370}",0.9402280678136044,1.0,0.061160157057455186,credible multiple groups,ok
+Tanypodinae,16,val,78,"{""0"": 32, ""1"": 46}","{""biomass"": 2, ""bulk21"": 30, ""bulk22"": 46}",0.9600559013426432,1.0,0.018844353901002277,credible multiple groups,ok
+Tinodes waeneri,8,train,757,"{""0"": 281, ""1"": 476}","{""biomass"": 41, ""bulk21"": 363, ""bulk22"": 298, ""dna"": 55}",0.6066777072683406,0.8520152266926434,0.05557593473051093,credible multiple groups,ok
+Tinodes waeneri,8,val,114,"{""0"": 47, ""1"": 67}","{""biomass"": 6, ""bulk21"": 49, ""bulk22"": 49, ""dna"": 10}",0.6133952887924439,0.8633418078861754,0.11737508253295674,credible multiple groups,ok
+Tinodes waeneri,16,train,757,"{""0"": 92, ""1"": 665}","{""biomass"": 41, ""bulk21"": 363, ""bulk22"": 298, ""dna"": 55}",0.29686112179820356,-0.026226611732477527,0.00604079751789661,credible multiple groups,ok
+Tinodes waeneri,16,val,114,"{""0"": 15, ""1"": 99}","{""biomass"": 6, ""bulk21"": 49, ""bulk22"": 49, ""dna"": 10}",0.30145934035920186,0.00042773964331751374,0.009745975748395218,credible multiple groups,ok
+Turbellaria,8,train,82,"{""0"": 64, ""1"": 18}","{""bulk21"": 27, ""bulk22"": 55}",0.016029873855822215,0.016029873855822215,0.0025273721542278626,inconclusive,ok
+Turbellaria,8,val,14,"{""0"": 13, ""1"": 1}","{""bulk21"": 5, ""bulk22"": 9}",-0.06329113924050633,-0.06329113924050633,0.015209125475285171,inconclusive,ok
+Turbellaria,16,train,82,"{""0"": 55, ""1"": 27}","{""bulk21"": 27, ""bulk22"": 55}",1.0,1.0,0.1621131966084499,inconclusive,ok
+Turbellaria,16,val,14,"{""0"": 9, ""1"": 5}","{""bulk21"": 5, ""bulk22"": 9}",1.0,1.0,0.08608321377331421,inconclusive,ok

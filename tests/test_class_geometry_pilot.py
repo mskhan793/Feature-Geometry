@@ -128,6 +128,8 @@ def test_geometry_pilot_runs_end_to_end(tmp_path):
     assert s["classes_supported_in_all_folds"]["8"] == ["C"] and s["pairs"]["measured_in_all_folds"] == 3
     labels = pd.read_csv(tmp_path / "sum" / "Toy" / "per_class_labels.csv")
     assert {"n_train_fold0", "n_val_fold4", "folds_analysed"} <= set(labels) and (labels.folds_analysed == 5).all()
+    c8 = labels[(labels.taxon_group == "C") & (labels.pcs == 8)].iloc[0]  # identical folds: no spread, reliable in all
+    assert c8.g2_folds_reliable == 5 and c8.g2_diff_min == c8.g2_diff_max == c8.g2_diff_mean > 0 and c8.g2_folds_ci_above_0 == 5
     assert "pcs8_G2_tied-G1_full_classes_included" in s["across_folds"]
     assert s["across_folds"]["pcs8_train_dataset_associated"]["mean"] == 1
     assert (tmp_path / "sum" / "comparison.md").exists()

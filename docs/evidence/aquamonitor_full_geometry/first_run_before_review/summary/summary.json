@@ -1,0 +1,449 @@
+{
+ "dataset": "AquaMonitor",
+ "note": "five folds share specimens: fold results are correlated repeats",
+ "across_folds": {
+  "classes": {
+   "mean": 40.8,
+   "min": 40.0,
+   "max": 41.0
+  },
+  "classes_insufficient": {
+   "mean": 1.2,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "specimens_train": {
+   "mean": 29346.0,
+   "min": 29346.0,
+   "max": 29346.0
+  },
+  "specimens_val": {
+   "mean": 4386.0,
+   "min": 4386.0,
+   "max": 4386.0
+  },
+  "pairs_dprime_val_below_2_share": {
+   "mean": 0.017736085053158223,
+   "min": 0.00853658536585366,
+   "max": 0.024390243902439025
+  },
+  "pairs_dprime_val_median": {
+   "mean": 5.587753318505639,
+   "min": 5.475841761355834,
+   "max": 5.845854183237882
+  },
+  "effective_rank_median": {
+   "mean": 27.044991085208114,
+   "min": 26.79475589958121,
+   "max": 27.535445748804516
+  },
+  "effective_rank_n30_median": {
+   "mean": 14.241723031228375,
+   "min": 13.836597340323683,
+   "max": 14.594471550930535
+  },
+  "pcs8_classes_fitted": {
+   "mean": 40.8,
+   "min": 40.0,
+   "max": 41.0
+  },
+  "pcs8_credible multiple groups": {
+   "mean": 25.0,
+   "min": 23.0,
+   "max": 27.0
+  },
+  "pcs8_inconclusive": {
+   "mean": 14.0,
+   "min": 12.0,
+   "max": 17.0
+  },
+  "pcs8_one Gaussian favoured": {
+   "mean": 0.6,
+   "min": 0.0,
+   "max": 1.0
+  },
+  "pcs8_insufficient evidence": {
+   "mean": 1.2,
+   "min": 0.0,
+   "max": 2.0
+  },
+  "pcs8_split_stable": {
+   "mean": 32.8,
+   "min": 31.0,
+   "max": 34.0
+  },
+  "pcs8_both_views_same_component_median": {
+   "mean": 0.967386174124853,
+   "min": 0.9636363636363636,
+   "max": 0.974025974025974
+  },
+  "pcs8_G2_tied-G1_full": {
+   "mean": 0.2662992378218116,
+   "min": 0.20633842352848372,
+   "max": 0.32771226283465227
+  },
+  "pcs8_G2_tied-G1_full_ci_lo": {
+   "mean": 0.19930848168288465,
+   "min": 0.12928006922737906,
+   "max": 0.2720014112803091
+  },
+  "pcs8_G2_tied-G1_full_ci_hi": {
+   "mean": 0.33007553446011645,
+   "min": 0.27777757763197575,
+   "max": 0.37922513199817853
+  },
+  "pcs8_G3_tied-G1_full": {
+   "mean": 0.43229979533355484,
+   "min": 0.36760349306067386,
+   "max": 0.47396247537146863
+  },
+  "pcs8_G3_tied-G1_full_ci_lo": {
+   "mean": 0.3185851193072379,
+   "min": 0.2542035161176139,
+   "max": 0.3682760518462886
+  },
+  "pcs8_G3_tied-G1_full_ci_hi": {
+   "mean": 0.5384033749408278,
+   "min": 0.47361776769912917,
+   "max": 0.578496010808414
+  },
+  "pcs8_G2_full-G1_full": {
+   "mean": -0.06812087864747354,
+   "min": -0.2281341625897983,
+   "max": 0.10363329390550824
+  },
+  "pcs8_G2_full-G1_full_ci_lo": {
+   "mean": -0.34190595727802536,
+   "min": -0.4980683756270372,
+   "max": -0.10182272154328859
+  },
+  "pcs8_G2_full-G1_full_ci_hi": {
+   "mean": 0.1794052304573858,
+   "min": 0.03650540621777118,
+   "max": 0.3017097809684713
+  },
+  "pcs8_G3_full-G1_full": {
+   "mean": -0.9647584858778291,
+   "min": -1.3627876897281765,
+   "max": -0.5037738137625108
+  },
+  "pcs8_G3_full-G1_full_ci_lo": {
+   "mean": -1.7638389356889128,
+   "min": -2.495221786332684,
+   "max": -1.0871549392336042
+  },
+  "pcs8_G3_full-G1_full_ci_hi": {
+   "mean": -0.2715018071238674,
+   "min": -0.4387215812054225,
+   "max": 0.017332338360021602
+  },
+  "pcs8_GD_tied-G1_full": {
+   "mean": 0.45501822583560225,
+   "min": 0.40292380050876975,
+   "max": 0.49356038322483375
+  },
+  "pcs8_GD_tied-G1_full_ci_lo": {
+   "mean": 0.38628035677626793,
+   "min": 0.33159295978708286,
+   "max": 0.4305937261473499
+  },
+  "pcs8_GD_tied-G1_full_ci_hi": {
+   "mean": 0.520982927515392,
+   "min": 0.4715413459434331,
+   "max": 0.5595168846296166
+  },
+  "pcs8_dataset_associated": {
+   "mean": 18.8,
+   "min": 17.0,
+   "max": 20.0
+  },
+  "pcs8_credible_and_dataset_associated": {
+   "mean": 14.0,
+   "min": 12.0,
+   "max": 15.0
+  },
+  "pcs16_classes_fitted": {
+   "mean": 40.8,
+   "min": 40.0,
+   "max": 41.0
+  },
+  "pcs16_credible multiple groups": {
+   "mean": 21.6,
+   "min": 20.0,
+   "max": 23.0
+  },
+  "pcs16_inconclusive": {
+   "mean": 10.6,
+   "min": 9.0,
+   "max": 13.0
+  },
+  "pcs16_one Gaussian favoured": {
+   "mean": 1.2,
+   "min": 0.0,
+   "max": 2.0
+  },
+  "pcs16_insufficient evidence": {
+   "mean": 7.4,
+   "min": 4.0,
+   "max": 9.0
+  },
+  "pcs16_split_stable": {
+   "mean": 30.0,
+   "min": 25.0,
+   "max": 33.0
+  },
+  "pcs16_both_views_same_component_median": {
+   "mean": 0.9940471698061927,
+   "min": 0.9903160218426862,
+   "max": 0.997093023255814
+  },
+  "pcs16_G2_tied-G1_full": {
+   "mean": 0.41608741075765143,
+   "min": 0.3228807227460177,
+   "max": 0.5653892935531583
+  },
+  "pcs16_G2_tied-G1_full_ci_lo": {
+   "mean": 0.27132687760525565,
+   "min": 0.12439720224561515,
+   "max": 0.46607432008562943
+  },
+  "pcs16_G2_tied-G1_full_ci_hi": {
+   "mean": 0.5428296976809095,
+   "min": 0.47214033735838884,
+   "max": 0.6563552325772449
+  },
+  "pcs16_G3_tied-G1_full": {
+   "mean": 0.5370691853840835,
+   "min": 0.3226627438581159,
+   "max": 0.666967704451076
+  },
+  "pcs16_G3_tied-G1_full_ci_lo": {
+   "mean": 0.2170352183315579,
+   "min": -0.3777873365336454,
+   "max": 0.4981226643653543
+  },
+  "pcs16_G3_tied-G1_full_ci_hi": {
+   "mean": 0.7909069501276441,
+   "min": 0.7597068084732472,
+   "max": 0.821953972375553
+  },
+  "pcs16_G2_full-G1_full": {
+   "mean": -3.4051264022172925,
+   "min": -7.574073408507281,
+   "max": -1.6670644041531277
+  },
+  "pcs16_G2_full-G1_full_ci_lo": {
+   "mean": -5.3106101335668345,
+   "min": -11.747711035744768,
+   "max": -3.025914948959923
+  },
+  "pcs16_G2_full-G1_full_ci_hi": {
+   "mean": -1.7386996119018292,
+   "min": -4.045052072732564,
+   "max": -0.49576407884985924
+  },
+  "pcs16_G3_full-G1_full": {
+   "mean": -4.29385838405356,
+   "min": -7.18442285164739,
+   "max": -3.0509045849110032
+  },
+  "pcs16_G3_full-G1_full_ci_lo": {
+   "mean": -6.056143163606754,
+   "min": -9.627577624791765,
+   "max": -4.411703270634359
+  },
+  "pcs16_G3_full-G1_full_ci_hi": {
+   "mean": -2.682934879621774,
+   "min": -4.898668188538966,
+   "max": -1.692879179059084
+  },
+  "pcs16_GD_tied-G1_full": {
+   "mean": 0.9627094753334321,
+   "min": 0.8417322490999598,
+   "max": 1.1434250197819382
+  },
+  "pcs16_GD_tied-G1_full_ci_lo": {
+   "mean": 0.7883121997833428,
+   "min": 0.5790441342888386,
+   "max": 1.016989568893509
+  },
+  "pcs16_GD_tied-G1_full_ci_hi": {
+   "mean": 1.109316859462819,
+   "min": 1.0034227847352137,
+   "max": 1.2544474081165513
+  },
+  "pcs16_dataset_associated": {
+   "mean": 17.2,
+   "min": 16.0,
+   "max": 18.0
+  },
+  "pcs16_credible_and_dataset_associated": {
+   "mean": 8.6,
+   "min": 7.0,
+   "max": 10.0
+  }
+ },
+ "folds_ci_above_0": {
+  "pcs8_G2_tied-G1_full": 5,
+  "pcs8_G3_tied-G1_full": 5,
+  "pcs8_G2_full-G1_full": 0,
+  "pcs8_G3_full-G1_full": 0,
+  "pcs8_GD_tied-G1_full": 5,
+  "pcs16_G2_tied-G1_full": 5,
+  "pcs16_G3_tied-G1_full": 4,
+  "pcs16_G2_full-G1_full": 0,
+  "pcs16_G3_full-G1_full": 0,
+  "pcs16_GD_tied-G1_full": 5
+ },
+ "folds_ci_below_0": {
+  "pcs8_G2_tied-G1_full": 0,
+  "pcs8_G3_tied-G1_full": 0,
+  "pcs8_G2_full-G1_full": 0,
+  "pcs8_G3_full-G1_full": 4,
+  "pcs8_GD_tied-G1_full": 0,
+  "pcs16_G2_tied-G1_full": 0,
+  "pcs16_G3_tied-G1_full": 0,
+  "pcs16_G2_full-G1_full": 5,
+  "pcs16_G3_full-G1_full": 5,
+  "pcs16_GD_tied-G1_full": 0
+ },
+ "classes_credible_in_k_folds": {
+  "8": {
+   "0": 8,
+   "1": 6,
+   "2": 4,
+   "3": 2,
+   "4": 5,
+   "5": 17
+  },
+  "16": {
+   "0": 11,
+   "1": 7,
+   "2": 2,
+   "3": 5,
+   "4": 3,
+   "5": 14
+  }
+ },
+ "classes_credible_in_all_folds": {
+  "8": [
+   "Asellus aquaticus",
+   "Caenis horaria",
+   "Caenis luctuosa",
+   "Ceratopogonidae",
+   "Chironomidae",
+   "Hydrachnidia",
+   "Kageronia fuscogrisea",
+   "Lepidostoma hirtum",
+   "Leptophlebia",
+   "Micronecta",
+   "Oligochaeta",
+   "Oulimnius tuberculatus",
+   "Oulimnius tuberculatus adult",
+   "Psychomyia pusilla",
+   "Stylaria lacustris",
+   "Tanypodinae",
+   "Tinodes waeneri"
+  ],
+  "16": [
+   "Caenis luctuosa",
+   "Ceratopogonidae",
+   "Chironomidae",
+   "Helobdella stagnalis",
+   "Hydrachnidia",
+   "Leptophlebia",
+   "Micronecta",
+   "Oligochaeta",
+   "Oulimnius tuberculatus",
+   "Oulimnius tuberculatus adult",
+   "Psychomyia pusilla",
+   "Stylaria lacustris",
+   "Tanypodinae",
+   "Tinodes waeneri"
+  ]
+ },
+ "pairs": {
+  "in_all_folds": 703,
+  "spearman_dprime_val_between_folds_min_median_max": [
+   0.7214854945118102,
+   0.7929577707538233,
+   0.86962330383383
+  ],
+  "below_2_in_all_folds": 2,
+  "below_2_in_some_fold": 34,
+  "closest_by_mean": [
+   {
+    "pair": "Cyrnus trimaculatus | Polycentropus flavomaculatus",
+    "mean": 0.6825567927,
+    "min": 0.4418191717,
+    "max": 0.8689373219,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Caenis horaria | Caenis luctuosa",
+    "mean": 1.2101292514,
+    "min": 0.8892772187,
+    "max": 1.6087657518,
+    "folds_below_2": 5
+   },
+   {
+    "pair": "Cloeon | Cloeon dipterum",
+    "mean": 1.5285562416,
+    "min": 1.0880478342,
+    "max": 2.0527973844,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Mystacides | Mystacides azurea",
+    "mean": 1.5395777787,
+    "min": 1.1947654483,
+    "max": 1.968995078,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Cyrnus flavidus | Polycentropus flavomaculatus",
+    "mean": 1.6154643257,
+    "min": 1.2549554405,
+    "max": 2.1197008876,
+    "folds_below_2": 4
+   },
+   {
+    "pair": "Caenis horaria | Mystacides",
+    "mean": 1.7499732041,
+    "min": 1.1451248392,
+    "max": 2.1509458617,
+    "folds_below_2": 3
+   },
+   {
+    "pair": "Caenis luctuosa | Mystacides",
+    "mean": 1.7846655993,
+    "min": 1.0671047542,
+    "max": 2.2649590425,
+    "folds_below_2": 3
+   },
+   {
+    "pair": "Kageronia fuscogrisea | Mystacides",
+    "mean": 1.7999341901,
+    "min": 1.120522028,
+    "max": 2.2569764181,
+    "folds_below_2": 3
+   },
+   {
+    "pair": "Heptagenia dalecarlica | Mystacides",
+    "mean": 1.850054434,
+    "min": 1.5236773547,
+    "max": 2.187072433,
+    "folds_below_2": 2
+   },
+   {
+    "pair": "Cyrnus trimaculatus | Ecnomus tenellus",
+    "mean": 1.8729202864,
+    "min": 1.658131714,
+    "max": 2.0339425024,
+    "folds_below_2": 4
+   }
+  ]
+ },
+ "classes_same_nearest_class_in_all_folds": 12,
+ "classes_with_nearest_class": 42
+}

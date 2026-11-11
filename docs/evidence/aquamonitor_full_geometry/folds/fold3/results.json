@@ -4,7 +4,7 @@
  "cohort_rows": {
   "in_file": 836159,
   "train_val_used": 669063,
-  "test_not_loaded": 167096
+  "test_rows_dropped": 167096
  },
  "encoder": "dinov3_l",
  "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
@@ -95,7 +95,8 @@
    4.421399177087009
   ]
  },
- "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) order",
+ "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) order, only for classes with at least 30 (others NaN)",
+ "within_class_n30_classes": 41,
  "between_classes": {
   "pairs": 820,
   "dprime_val_below_1": 2,
@@ -267,48 +268,124 @@
     },
     "differences": {
      "G2_full-G1_full": {
-      "classes": 41,
-      "mean": -0.14288173501861348,
+      "classes": 37,
+      "mean": -0.08358037909493647,
       "ci95": [
-       -0.47944050688966455,
-       0.15782248855340614
+       -0.3974584007163246,
+       0.19530720447572453
       ],
-      "classes_better": 25,
+      "classes_better": 24,
       "classes_ci_above_0": 16,
-      "classes_ci_below_0": 3
+      "classes_ci_below_0": 3,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Mystacides",
+       "Sialis",
+       "Sisyra",
+       "Turbellaria"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": -0.14288173501861348,
+       "ci95": [
+        -0.47944050688966455,
+        0.15782248855340614
+       ],
+       "classes_better": 25,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 3
+      }
      },
      "G3_full-G1_full": {
-      "classes": 41,
-      "mean": -0.7808911380295561,
+      "classes": 34,
+      "mean": -0.17288609388213683,
       "ci95": [
-       -1.4652856016284403,
-       -0.19503302485088217
+       -0.5162135931338502,
+       0.14422461881406878
       ],
       "classes_better": 23,
       "classes_ci_above_0": 16,
-      "classes_ci_below_0": 4
+      "classes_ci_below_0": 3,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Cloeon",
+       "Cyrnus flavidus",
+       "Limnephilidae",
+       "Mystacides",
+       "Orthotrichia",
+       "Sialis",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": -0.7808911380295561,
+       "ci95": [
+        -1.4652856016284403,
+        -0.19503302485088217
+       ],
+       "classes_better": 23,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 4
+      }
      },
      "G2_tied-G1_full": {
-      "classes": 41,
-      "mean": 0.2991616738375172,
+      "classes": 39,
+      "mean": 0.27460816368552265,
       "ci95": [
-       0.24195933795668506,
-       0.3579172776223869
+       0.21216957872875533,
+       0.33359872403693047
       ],
-      "classes_better": 34,
-      "classes_ci_above_0": 22,
-      "classes_ci_below_0": 1
+      "classes_better": 32,
+      "classes_ci_above_0": 21,
+      "classes_ci_below_0": 1,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Mystacides",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.2991616738375172,
+       "ci95": [
+        0.24195933795668506,
+        0.3579172776223869
+       ],
+       "classes_better": 34,
+       "classes_ci_above_0": 22,
+       "classes_ci_below_0": 1
+      }
      },
      "G3_tied-G1_full": {
-      "classes": 41,
-      "mean": 0.4736678320904722,
+      "classes": 34,
+      "mean": 0.4577423367871736,
       "ci95": [
-       0.3521132335147305,
-       0.5777982611123083
+       0.3307875554125941,
+       0.5633729600060545
       ],
-      "classes_better": 33,
-      "classes_ci_above_0": 29,
-      "classes_ci_below_0": 0
+      "classes_better": 28,
+      "classes_ci_above_0": 27,
+      "classes_ci_below_0": 0,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cloeon",
+       "Limnephilus",
+       "Mystacides",
+       "Pedicia",
+       "Sialis",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.4736678320904722,
+       "ci95": [
+        0.3521132335147305,
+        0.5777982611123083
+       ],
+       "classes_better": 33,
+       "classes_ci_above_0": 29,
+       "classes_ci_below_0": 0
+      }
      },
      "GD_tied-G1_full": {
       "classes": 41,
@@ -319,28 +396,182 @@
       ],
       "classes_better": 37,
       "classes_ci_above_0": 30,
-      "classes_ci_below_0": 1
+      "classes_ci_below_0": 1,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.490177683806509,
+       "ci95": [
+        0.4305937261473499,
+        0.550192089430127
+       ],
+       "classes_better": 37,
+       "classes_ci_above_0": 30,
+       "classes_ci_below_0": 1
+      }
      },
      "G2_diag-G1_diag": {
-      "classes": 41,
-      "mean": 0.9213551746163406,
+      "classes": 39,
+      "mean": 0.8980798223722036,
       "ci95": [
-       0.7868503554697813,
-       1.0498298178504017
+       0.7639973871814283,
+       1.026624849042535
       ],
-      "classes_better": 39,
-      "classes_ci_above_0": 28,
-      "classes_ci_below_0": 2
+      "classes_better": 37,
+      "classes_ci_above_0": 26,
+      "classes_ci_below_0": 2,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Mystacides",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.9213551746163406,
+       "ci95": [
+        0.7868503554697813,
+        1.0498298178504017
+       ],
+       "classes_better": 39,
+       "classes_ci_above_0": 28,
+       "classes_ci_below_0": 2
+      }
+     }
+    },
+    "differences_note": "primary = reliable model and baseline; intervals pointwise",
+    "common_reliable_classes": {
+     "models": [
+      "G1_full",
+      "G2_full",
+      "G3_full",
+      "G2_tied",
+      "G3_tied",
+      "GD_tied"
+     ],
+     "classes": 30,
+     "taxa": [
+      "Asellus aquaticus",
+      "Caenis horaria",
+      "Caenis luctuosa",
+      "Ceratopogonidae",
+      "Chironomidae",
+      "Cloeon dipterum",
+      "Cyrnus trimaculatus",
+      "Ecnomus tenellus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Gyraulus",
+      "Helobdella stagnalis",
+      "Heptagenia dalecarlica",
+      "Hydrachnidia",
+      "Hydroptila",
+      "Kageronia fuscogrisea",
+      "Lepidostoma hirtum",
+      "Leptophlebia",
+      "Micronecta",
+      "Mystacides azurea",
+      "Oligochaeta",
+      "Oulimnius tuberculatus",
+      "Oulimnius tuberculatus adult",
+      "Pisidium",
+      "Polycentropus flavomaculatus",
+      "Psychomyia pusilla",
+      "Spirosperma ferox",
+      "Stylaria lacustris",
+      "Tanypodinae",
+      "Tinodes waeneri"
+     ],
+     "differences": {
+      "G2_full-G1_full": {
+       "classes": 30,
+       "mean": 0.2950808296707092,
+       "ci95": [
+        0.14929038975369285,
+        0.43008369657730533
+       ],
+       "classes_better": 22,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 1
+      },
+      "G3_full-G1_full": {
+       "classes": 30,
+       "mean": 0.3305395744728302,
+       "ci95": [
+        0.12718061534105593,
+        0.5235649953434002
+       ],
+       "classes_better": 22,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 2
+      },
+      "G2_tied-G1_full": {
+       "classes": 30,
+       "mean": 0.33362889950404495,
+       "ci95": [
+        0.2834386757298431,
+        0.38388554557369176
+       ],
+       "classes_better": 29,
+       "classes_ci_above_0": 19,
+       "classes_ci_below_0": 0
+      },
+      "G3_tied-G1_full": {
+       "classes": 30,
+       "mean": 0.5909867316476292,
+       "ci95": [
+        0.5230436287852328,
+        0.6596051375864084
+       ],
+       "classes_better": 28,
+       "classes_ci_above_0": 27,
+       "classes_ci_below_0": 0
+      },
+      "GD_tied-G1_full": {
+       "classes": 30,
+       "mean": 0.5421738382700364,
+       "ci95": [
+        0.4737212125199995,
+        0.6117432925143017
+       ],
+       "classes_better": 29,
+       "classes_ci_above_0": 26,
+       "classes_ci_below_0": 0
+      }
      }
     },
     "verdicts": {
-     "credible multiple groups": 26,
-     "inconclusive": 12,
+     "mixture-supported split (exploratory)": 20,
+     "inconclusive": 18,
      "insufficient evidence": 2,
-     "one Gaussian favoured": 1
+     "single Gaussian predicts better": 1
     },
     "verdict_classes": {
-     "credible multiple groups": [
+     "inconclusive": [
+      "Cloeon",
+      "Cyrnus flavidus",
+      "Cyrnus trimaculatus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Gyraulus",
+      "Helobdella stagnalis",
+      "Heptagenia dalecarlica",
+      "Hydrachnidia",
+      "Hydroptila",
+      "Limnephilidae",
+      "Limnephilus",
+      "Mystacides azurea",
+      "Pedicia",
+      "Pisidium",
+      "Polycentropus flavomaculatus",
+      "Spirosperma ferox",
+      "Turbellaria"
+     ],
+     "insufficient evidence": [
+      "Mystacides",
+      "Sisyra"
+     ],
+     "mixture-supported split (exploratory)": [
       "Asellus aquaticus",
       "Caenis horaria",
       "Caenis luctuosa",
@@ -348,11 +579,7 @@
       "Ceratopogonidae",
       "Chironomidae",
       "Cloeon dipterum",
-      "Cyrnus trimaculatus",
       "Ecnomus tenellus",
-      "Helobdella stagnalis",
-      "Hydrachnidia",
-      "Hydroptila",
       "Kageronia fuscogrisea",
       "Lepidostoma hirtum",
       "Leptophlebia",
@@ -361,37 +588,47 @@
       "Orthotrichia",
       "Oulimnius tuberculatus",
       "Oulimnius tuberculatus adult",
-      "Pisidium",
       "Psychomyia pusilla",
-      "Spirosperma ferox",
       "Stylaria lacustris",
       "Tanypodinae",
       "Tinodes waeneri"
      ],
-     "inconclusive": [
-      "Cloeon",
-      "Cyrnus flavidus",
-      "Ephemera vulgata",
-      "Erpobdella octoculata",
-      "Gyraulus",
-      "Heptagenia dalecarlica",
-      "Limnephilidae",
-      "Limnephilus",
-      "Mystacides azurea",
-      "Pedicia",
-      "Polycentropus flavomaculatus",
-      "Turbellaria"
-     ],
-     "insufficient evidence": [
-      "Mystacides",
-      "Sisyra"
-     ],
-     "one Gaussian favoured": [
+     "single Gaussian predicts better": [
       "Sialis"
      ]
     },
+    "other_mixtures_ci_above_0_classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Ceratopogonidae",
+     "Chironomidae",
+     "Cloeon dipterum",
+     "Cyrnus trimaculatus",
+     "Ecnomus tenellus",
+     "Ephemera vulgata",
+     "Gyraulus",
+     "Helobdella stagnalis",
+     "Hydrachnidia",
+     "Hydroptila",
+     "Kageronia fuscogrisea",
+     "Lepidostoma hirtum",
+     "Leptophlebia",
+     "Micronecta",
+     "Oligochaeta",
+     "Oulimnius tuberculatus",
+     "Oulimnius tuberculatus adult",
+     "Pisidium",
+     "Polycentropus flavomaculatus",
+     "Psychomyia pusilla",
+     "Spirosperma ferox",
+     "Stylaria lacustris",
+     "Tanypodinae",
+     "Tinodes waeneri"
+    ],
     "G2_tied_split_ari_val_median_over_classes": 1.0,
-    "G2_tied_split_stable_classes": 32,
+    "G2_tied_split_stable_classes": 31,
+    "G2_tied_split_resamples_failed_or_under_supported": 758,
     "G2_tied_both_views_same_component_median": 0.9655172413793104,
     "condition_max": {
      "G1_full": 337.121949389225,
@@ -450,48 +687,149 @@
     },
     "differences": {
      "G2_full-G1_full": {
-      "classes": 39,
-      "mean": -7.574073408507281,
+      "classes": 31,
+      "mean": -0.3775379837380346,
       "ci95": [
-       -11.747711035744768,
-       -4.045052072732564
+       -0.9694204881482161,
+       0.16090346391814903
       ],
       "classes_better": 20,
       "classes_ci_above_0": 15,
-      "classes_ci_below_0": 9
+      "classes_ci_below_0": 3,
+      "classes_fitted": 39,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cyrnus trimaculatus",
+       "Limnephilidae",
+       "Mystacides",
+       "Orthotrichia",
+       "Pisidium",
+       "Polycentropus flavomaculatus",
+       "Sialis"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 39,
+       "mean": -7.574073408507281,
+       "ci95": [
+        -11.747711035744768,
+        -4.045052072732564
+       ],
+       "classes_better": 20,
+       "classes_ci_above_0": 15,
+       "classes_ci_below_0": 9
+      }
      },
      "G3_full-G1_full": {
-      "classes": 35,
-      "mean": -7.18442285164739,
+      "classes": 23,
+      "mean": 0.1568429564901025,
       "ci95": [
-       -9.627577624791765,
-       -4.898668188538966
+       -0.5158603612427552,
+       0.7065981318219713
       ],
       "classes_better": 17,
       "classes_ci_above_0": 16,
-      "classes_ci_below_0": 13
+      "classes_ci_below_0": 4,
+      "classes_fitted": 35,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cloeon",
+       "Cloeon dipterum",
+       "Cyrnus flavidus",
+       "Cyrnus trimaculatus",
+       "Gyraulus",
+       "Hydroptila",
+       "Limnephilus",
+       "Pisidium",
+       "Polycentropus flavomaculatus",
+       "Psychomyia pusilla",
+       "Turbellaria"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 35,
+       "mean": -7.18442285164739,
+       "ci95": [
+        -9.627577624791765,
+        -4.898668188538966
+       ],
+       "classes_better": 17,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 13
+      }
      },
      "G2_tied-G1_full": {
-      "classes": 41,
-      "mean": 0.5653892935531583,
+      "classes": 30,
+      "mean": 0.5177309718708918,
       "ci95": [
-       0.46607432008562943,
-       0.6563552325772449
+       0.41991270374336476,
+       0.6163332829732886
       ],
-      "classes_better": 35,
-      "classes_ci_above_0": 26,
-      "classes_ci_below_0": 1
+      "classes_better": 27,
+      "classes_ci_above_0": 21,
+      "classes_ci_below_0": 1,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cloeon",
+       "Cyrnus trimaculatus",
+       "Limnephilidae",
+       "Mystacides",
+       "Orthotrichia",
+       "Pisidium",
+       "Polycentropus flavomaculatus",
+       "Sialis",
+       "Sisyra",
+       "Turbellaria"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.5653892935531583,
+       "ci95": [
+        0.46607432008562943,
+        0.6563552325772449
+       ],
+       "classes_better": 35,
+       "classes_ci_above_0": 26,
+       "classes_ci_below_0": 1
+      }
      },
      "G3_tied-G1_full": {
-      "classes": 41,
-      "mean": 0.6390348684750451,
+      "classes": 27,
+      "mean": 0.9511816209190336,
       "ci95": [
-       0.4345725717300417,
-       0.814165358912077
+       0.826399731846683,
+       1.0741440932730117
       ],
-      "classes_better": 31,
-      "classes_ci_above_0": 24,
-      "classes_ci_below_0": 1
+      "classes_better": 24,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 0,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cloeon",
+       "Cyrnus trimaculatus",
+       "Hydroptila",
+       "Limnephilidae",
+       "Limnephilus",
+       "Mystacides",
+       "Orthotrichia",
+       "Pedicia",
+       "Pisidium",
+       "Polycentropus flavomaculatus",
+       "Psychomyia pusilla",
+       "Sialis",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 0.6390348684750451,
+       "ci95": [
+        0.4345725717300417,
+        0.814165358912077
+       ],
+       "classes_better": 31,
+       "classes_ci_above_0": 24,
+       "classes_ci_below_0": 1
+      }
      },
      "GD_tied-G1_full": {
       "classes": 41,
@@ -502,28 +840,184 @@
       ],
       "classes_better": 37,
       "classes_ci_above_0": 30,
-      "classes_ci_below_0": 0
+      "classes_ci_below_0": 0,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 1.0358130090451692,
+       "ci95": [
+        0.9073918113136423,
+        1.1523940105490251
+       ],
+       "classes_better": 37,
+       "classes_ci_above_0": 30,
+       "classes_ci_below_0": 0
+      }
      },
      "G2_diag-G1_diag": {
-      "classes": 41,
-      "mean": 1.7341327447391373,
+      "classes": 31,
+      "mean": 1.6386548941483015,
       "ci95": [
-       1.5066824997419013,
-       1.9619512379952915
+       1.4408811016354492,
+       1.8341335209363328
       ],
-      "classes_better": 39,
-      "classes_ci_above_0": 31,
-      "classes_ci_below_0": 0
+      "classes_better": 30,
+      "classes_ci_above_0": 25,
+      "classes_ci_below_0": 0,
+      "classes_fitted": 41,
+      "classes_excluded_unreliable": [
+       "Centroptilum luteolum",
+       "Cyrnus trimaculatus",
+       "Limnephilidae",
+       "Mystacides",
+       "Orthotrichia",
+       "Pedicia",
+       "Pisidium",
+       "Polycentropus flavomaculatus",
+       "Sialis",
+       "Sisyra"
+      ],
+      "all_fits_diagnostic": {
+       "classes": 41,
+       "mean": 1.7341327447391373,
+       "ci95": [
+        1.5066824997419013,
+        1.9619512379952915
+       ],
+       "classes_better": 39,
+       "classes_ci_above_0": 31,
+       "classes_ci_below_0": 0
+      }
+     }
+    },
+    "differences_note": "primary = reliable model and baseline; intervals pointwise",
+    "common_reliable_classes": {
+     "models": [
+      "G1_full",
+      "G2_full",
+      "G3_full",
+      "G2_tied",
+      "G3_tied",
+      "GD_tied"
+     ],
+     "classes": 23,
+     "taxa": [
+      "Asellus aquaticus",
+      "Caenis horaria",
+      "Caenis luctuosa",
+      "Ceratopogonidae",
+      "Chironomidae",
+      "Ecnomus tenellus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Helobdella stagnalis",
+      "Heptagenia dalecarlica",
+      "Hydrachnidia",
+      "Kageronia fuscogrisea",
+      "Lepidostoma hirtum",
+      "Leptophlebia",
+      "Micronecta",
+      "Mystacides azurea",
+      "Oligochaeta",
+      "Oulimnius tuberculatus",
+      "Oulimnius tuberculatus adult",
+      "Spirosperma ferox",
+      "Stylaria lacustris",
+      "Tanypodinae",
+      "Tinodes waeneri"
+     ],
+     "differences": {
+      "G2_full-G1_full": {
+       "classes": 23,
+       "mean": 0.8139216243850335,
+       "ci95": [
+        0.5297980904000161,
+        1.0597925392806775
+       ],
+       "classes_better": 20,
+       "classes_ci_above_0": 15,
+       "classes_ci_below_0": 1
+      },
+      "G3_full-G1_full": {
+       "classes": 23,
+       "mean": 0.1568429564901025,
+       "ci95": [
+        -0.5158603612427552,
+        0.7065981318219713
+       ],
+       "classes_better": 17,
+       "classes_ci_above_0": 16,
+       "classes_ci_below_0": 4
+      },
+      "G2_tied-G1_full": {
+       "classes": 23,
+       "mean": 0.639818538155635,
+       "ci95": [
+        0.5513820298080542,
+        0.7223501363491284
+       ],
+       "classes_better": 22,
+       "classes_ci_above_0": 18,
+       "classes_ci_below_0": 0
+      },
+      "G3_tied-G1_full": {
+       "classes": 23,
+       "mean": 1.0803747805374717,
+       "ci95": [
+        0.964324588311631,
+        1.1865327191709754
+       ],
+       "classes_better": 22,
+       "classes_ci_above_0": 18,
+       "classes_ci_below_0": 0
+      },
+      "GD_tied-G1_full": {
+       "classes": 23,
+       "mean": 1.2272217561181216,
+       "ci95": [
+        1.0937525495832205,
+        1.3453987566512295
+       ],
+       "classes_better": 23,
+       "classes_ci_above_0": 21,
+       "classes_ci_below_0": 0
+      }
      }
     },
     "verdicts": {
-     "credible multiple groups": 20,
-     "inconclusive": 11,
-     "insufficient evidence": 9,
-     "one Gaussian favoured": 1
+     "mixture-supported split (exploratory)": 19,
+     "insufficient evidence": 11,
+     "inconclusive": 10,
+     "single Gaussian predicts better": 1
     },
     "verdict_classes": {
-     "credible multiple groups": [
+     "inconclusive": [
+      "Caenis horaria",
+      "Cloeon dipterum",
+      "Ecnomus tenellus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Heptagenia dalecarlica",
+      "Hydroptila",
+      "Limnephilus",
+      "Mystacides azurea",
+      "Spirosperma ferox"
+     ],
+     "insufficient evidence": [
+      "Centroptilum luteolum",
+      "Cloeon",
+      "Cyrnus trimaculatus",
+      "Limnephilidae",
+      "Mystacides",
+      "Orthotrichia",
+      "Pisidium",
+      "Polycentropus flavomaculatus",
+      "Sialis",
+      "Sisyra",
+      "Turbellaria"
+     ],
+     "mixture-supported split (exploratory)": [
       "Asellus aquaticus",
       "Caenis luctuosa",
       "Ceratopogonidae",
@@ -540,41 +1034,38 @@
       "Oulimnius tuberculatus",
       "Oulimnius tuberculatus adult",
       "Psychomyia pusilla",
-      "Spirosperma ferox",
       "Stylaria lacustris",
       "Tanypodinae",
       "Tinodes waeneri"
      ],
-     "inconclusive": [
-      "Caenis horaria",
-      "Cloeon",
-      "Cloeon dipterum",
-      "Ecnomus tenellus",
-      "Ephemera vulgata",
-      "Erpobdella octoculata",
-      "Heptagenia dalecarlica",
-      "Hydroptila",
-      "Limnephilus",
-      "Mystacides azurea",
-      "Turbellaria"
-     ],
-     "insufficient evidence": [
-      "Centroptilum luteolum",
-      "Cyrnus trimaculatus",
-      "Limnephilidae",
-      "Mystacides",
-      "Orthotrichia",
-      "Pisidium",
-      "Polycentropus flavomaculatus",
-      "Sialis",
-      "Sisyra"
-     ],
-     "one Gaussian favoured": [
+     "single Gaussian predicts better": [
       "Pedicia"
      ]
     },
+    "other_mixtures_ci_above_0_classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Ceratopogonidae",
+     "Chironomidae",
+     "Gyraulus",
+     "Helobdella stagnalis",
+     "Hydrachnidia",
+     "Kageronia fuscogrisea",
+     "Lepidostoma hirtum",
+     "Leptophlebia",
+     "Micronecta",
+     "Oligochaeta",
+     "Oulimnius tuberculatus",
+     "Oulimnius tuberculatus adult",
+     "Spirosperma ferox",
+     "Stylaria lacustris",
+     "Tanypodinae",
+     "Tinodes waeneri"
+    ],
     "G2_tied_split_ari_val_median_over_classes": 1.0,
-    "G2_tied_split_stable_classes": 33,
+    "G2_tied_split_stable_classes": 23,
+    "G2_tied_split_resamples_failed_or_under_supported": 2491,
     "G2_tied_both_views_same_component_median": 0.9966887417218543,
     "condition_max": {
      "G1_full": 1222.0522469298976,
@@ -608,5 +1099,5 @@
    "Pedicia"
   ]
  },
- "wall_seconds": 460.7
+ "wall_seconds": 485.9
 }

@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Lepidostoma hirtum",
+  "Oulimnius tuberculatus adult",
+  "Oulimnius tuberculatus"
+ ],
+ "candidate_single": [
+  "Limnephilus",
+  "Erpobdella octoculata"
+ ],
+ "all": [
+  "Lepidostoma hirtum",
+  "Oulimnius tuberculatus adult",
+  "Oulimnius tuberculatus",
+  "Limnephilus",
+  "Erpobdella octoculata"
+ ],
+ "montage_specimens": {
+  "Lepidostoma hirtum": {
+   "component_0": [
+    "LeHi-hii3_14_22",
+    "LeHi-vie1_102_22",
+    "LeHi-vie1_106_22",
+    "LeHi-vie1_11_22"
+   ],
+   "component_1": [
+    "5-G11-LeHi-kuo2-1",
+    "G-C12-LeHi-iso1-2",
+    "H-A7-LeHi-iso3-1",
+    "H-G2-LeHi-kaj1-1"
+   ],
+   "outliers_lowest_G1_density": [
+    "I-D12-LeHi-kuo1-2",
+    "5-G1-LeHi-hau1-1"
+   ]
+  },
+  "Oulimnius tuberculatus adult": {
+   "component_0": [
+    "11-D1-OuTuAd-koy1-3",
+    "11-D10-OuTuAd-koy1-12",
+    "11-D11-OuTuAd-pus3-1",
+    "11-D12-OuTuAd-pus3-2"
+   ],
+   "component_1": [
+    "A-B11-OuTuAd-ala1-1",
+    "B-D2-OuTuAd-hau1-1",
+    "B-H5-OuTuAd-hau3-2",
+    "D-C11-OuTuAd-iso1-3"
+   ],
+   "outliers_lowest_G1_density": [
+    "OuTuAd-pus3_8_21",
+    "A-B11-OuTuAd-ala1-1"
+   ]
+  },
+  "Oulimnius tuberculatus": {
+   "component_0": [
+    "10-E1-OuTuLa-hau3-18",
+    "10-H10-OuTu-iso2-2",
+    "10-H2-OuTu-iso1-23",
+    "10-H9-OuTu-iso2-1"
+   ],
+   "component_1": [
+    "B-A12-OuTu-iso1-3",
+    "B-B1-OuTu-iso1-4",
+    "B-B3-OuTu-iso1-5",
+    "C-E6-OuTuLa-hau3-7"
+   ],
+   "outliers_lowest_G1_density": [
+    "OuTu-sii2_1_21",
+    "OuTu-lop3_4_21"
+   ]
+  },
+  "Limnephilus": {
+   "component_0": [
+    "LiPhilus-iso2_5_21",
+    "LiPhilus-iso3_16_21",
+    "LiPhilus-iso3_20_21",
+    "LiPhilus-iso3_11_21"
+   ],
+   "component_1": [
+    "LiPhilus-val1_1_21",
+    "LiPhilus-kir2_1_21",
+    "LiPhilus-val1_2_21",
+    "12-E9-LiPhilus-lop2-1"
+   ],
+   "outliers_lowest_G1_density": [
+    "12-E9-LiPhilus-lop2-1",
+    "LiPhilus-iso3_4_21"
+   ]
+  },
+  "Erpobdella octoculata": {
+   "component_0": [
+    "C-D7-ErOc-koy1-1",
+    "5-A5-ErOc-koy1-1",
+    "E-B3-ErOc-koy2-2",
+    "5-A7-ErOc-koy2-1"
+   ],
+   "component_1": [
+    "9-A8-ErOc-pus2-7",
+    "ErOc-pus2_1_22",
+    "9-A5-ErOc-pus2-4",
+    "5-A2-ErOc-kak3-1"
+   ],
+   "outliers_lowest_G1_density": [
+    "ErOc-kom3_5_22",
+    "ErOc-val2_7_22"
+   ]
+  }
+ }
+}

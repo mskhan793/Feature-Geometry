@@ -1,139 +1,139 @@
 taxon_group,pcs,split,specimens,component_sizes,auc_log_image_area,verdict,G2_tied_status
-Agapetus_sp,8,train,186,"{""0"": 106, ""1"": 80}",0.2537735849056604,inconclusive,ok
-Agapetus_sp,8,val,48,"{""0"": 24, ""1"": 24}",0.3159722222222222,inconclusive,ok
-Agapetus_sp,16,train,186,"{""0"": 56, ""1"": 130}",0.09464285714285715,inconclusive,ok
+Agapetus_sp,8,train,186,"{""0"": 106, ""1"": 80}",0.2533018867924528,single Gaussian predicts better,ok
+Agapetus_sp,8,val,48,"{""0"": 24, ""1"": 24}",0.3194444444444445,single Gaussian predicts better,ok
+Agapetus_sp,16,train,186,"{""0"": 56, ""1"": 130}",0.09423076923076924,inconclusive,ok
 Agapetus_sp,16,val,48,"{""0"": 15, ""1"": 33}",0.09898989898989899,inconclusive,ok
-Ameletus_inopinatus,8,train,80,"{""0"": 30, ""1"": 50}",0.6446666666666666,inconclusive,ok
+Ameletus_inopinatus,8,train,80,"{""0"": 30, ""1"": 50}",0.6433333333333333,inconclusive,ok
 Ameletus_inopinatus,8,val,18,"{""0"": 5, ""1"": 13}",0.5538461538461539,inconclusive,ok
 Ameletus_inopinatus,16,train,80,"{""0"": 43, ""1"": 37}",0.5820238843494657,inconclusive,ok
 Ameletus_inopinatus,16,val,18,"{""0"": 12, ""1"": 6}",0.33333333333333337,inconclusive,ok
-Amphinemura_borealis,8,train,205,"{""0"": 26, ""1"": 179}",0.22539750752041254,inconclusive,ok
+Amphinemura_borealis,8,train,205,"{""0"": 26, ""1"": 179}",0.22754619681993982,inconclusive,ok
 Amphinemura_borealis,8,val,53,"{""0"": 4, ""1"": 49}",0.07142857142857142,inconclusive,ok
-Amphinemura_borealis,16,train,205,"{""0"": 76, ""1"": 129}",0.2434720522235822,inconclusive,ok
-Amphinemura_borealis,16,val,53,"{""0"": 21, ""1"": 32}",0.1815476190476191,inconclusive,ok
-Baetis_rhodani,8,train,260,"{""0"": 133, ""1"": 127}",0.3006926765733231,inconclusive,ok
+Amphinemura_borealis,16,train,205,"{""0"": 76, ""1"": 129}",0.2438800489596083,single Gaussian predicts better,ok
+Amphinemura_borealis,16,val,53,"{""0"": 21, ""1"": 32}",0.1815476190476191,single Gaussian predicts better,ok
+Baetis_rhodani,8,train,260,"{""0"": 133, ""1"": 127}",0.2999230359362974,inconclusive,ok
 Baetis_rhodani,8,val,64,"{""0"": 38, ""1"": 26}",0.3329959514170041,inconclusive,ok
-Baetis_rhodani,16,train,260,"{""0"": 100, ""1"": 160}",0.7200625,credible multiple groups,ok
-Baetis_rhodani,16,val,64,"{""0"": 19, ""1"": 45}",0.6818713450292397,credible multiple groups,ok
+Baetis_rhodani,16,train,260,"{""0"": 100, ""1"": 160}",0.7210624999999999,inconclusive,ok
+Baetis_rhodani,16,val,64,"{""0"": 19, ""1"": 45}",0.6818713450292397,inconclusive,ok
 Baetis_vernus_group,8,train,115,"{""0"": 11, ""1"": 104}",0.9991258741258741,inconclusive,ok
 Baetis_vernus_group,8,val,26,"{""0"": 2, ""1"": 24}",1.0,inconclusive,ok
-Baetis_vernus_group,16,train,115,"{""0"": 58, ""1"": 57}",0.12431941923774954,inconclusive,ok
+Baetis_vernus_group,16,train,115,"{""0"": 58, ""1"": 57}",0.12522686025408347,inconclusive,ok
 Baetis_vernus_group,16,val,26,"{""0"": 12, ""1"": 14}",0.1130952380952381,inconclusive,ok
-Diura_sp,8,train,66,"{""0"": 47, ""1"": 19}",0.33146696528555425,inconclusive,ok
-Diura_sp,8,val,15,"{""0"": 12, ""1"": 3}",0.05555555555555554,inconclusive,ok
-Diura_sp,16,train,66,"{""0"": 13, ""1"": 53}",0.695210449927431,insufficient evidence,unreliable
+Diura_sp,8,train,66,"{""0"": 47, ""1"": 19}",0.3303471444568869,inconclusive,ok
+Diura_sp,8,val,15,"{""0"": 12, ""1"": 3}",0.08333333333333333,inconclusive,ok
+Diura_sp,16,train,66,"{""0"": 13, ""1"": 53}",0.6748911465892597,insufficient evidence,unreliable
 Diura_sp,16,val,15,"{""0"": 1, ""1"": 14}",0.9285714285714286,insufficient evidence,unreliable
-Elmis_aenea,8,train,409,"{""0"": 300, ""1"": 109}",0.7289602446483181,credible multiple groups,ok
-Elmis_aenea,8,val,106,"{""0"": 74, ""1"": 32}",0.7757601351351351,credible multiple groups,ok
-Elmis_aenea,16,train,409,"{""0"": 300, ""1"": 109}",0.7289602446483181,credible multiple groups,ok
-Elmis_aenea,16,val,106,"{""0"": 74, ""1"": 32}",0.7757601351351351,credible multiple groups,ok
-Ephemerella_aurivillii,8,train,232,"{""0"": 166, ""1"": 66}",0.07694414019715223,inconclusive,ok
-Ephemerella_aurivillii,8,val,55,"{""0"": 40, ""1"": 15}",0.060000000000000005,inconclusive,ok
-Ephemerella_aurivillii,16,train,232,"{""0"": 82, ""1"": 150}",0.8469918699186991,credible multiple groups,ok
-Ephemerella_aurivillii,16,val,55,"{""0"": 22, ""1"": 33}",0.9173553719008265,credible multiple groups,ok
-Ephemerella_mucronata,8,train,193,"{""0"": 113, ""1"": 80}",0.6488938053097345,inconclusive,ok
+Elmis_aenea,8,train,409,"{""0"": 300, ""1"": 109}",0.7289602446483181,mixture-supported split (exploratory),ok
+Elmis_aenea,8,val,106,"{""0"": 74, ""1"": 32}",0.7757601351351351,mixture-supported split (exploratory),ok
+Elmis_aenea,16,train,409,"{""0"": 300, ""1"": 109}",0.7289602446483181,mixture-supported split (exploratory),ok
+Elmis_aenea,16,val,106,"{""0"": 74, ""1"": 32}",0.7757601351351351,mixture-supported split (exploratory),ok
+Ephemerella_aurivillii,8,train,232,"{""0"": 166, ""1"": 66}",0.07876962395034683,inconclusive,ok
+Ephemerella_aurivillii,8,val,55,"{""0"": 40, ""1"": 15}",0.05333333333333334,inconclusive,ok
+Ephemerella_aurivillii,16,train,232,"{""0"": 82, ""1"": 150}",0.8461788617886178,mixture-supported split (exploratory),ok
+Ephemerella_aurivillii,16,val,55,"{""0"": 22, ""1"": 33}",0.9132231404958678,mixture-supported split (exploratory),ok
+Ephemerella_mucronata,8,train,193,"{""0"": 113, ""1"": 80}",0.6490044247787611,inconclusive,ok
 Ephemerella_mucronata,8,val,52,"{""0"": 33, ""1"": 19}",0.5390749601275917,inconclusive,ok
-Ephemerella_mucronata,16,train,193,"{""0"": 99, ""1"": 94}",0.4296153019557275,inconclusive,ok
+Ephemerella_mucronata,16,train,193,"{""0"": 99, ""1"": 94}",0.42983021706425967,inconclusive,ok
 Ephemerella_mucronata,16,val,52,"{""0"": 24, ""1"": 28}",0.6145833333333334,inconclusive,ok
-Heptagenia_sulphurea,8,train,274,"{""0"": 74, ""1"": 200}",0.5321621621621622,inconclusive,ok
+Heptagenia_sulphurea,8,train,274,"{""0"": 74, ""1"": 200}",0.5322297297297296,inconclusive,ok
 Heptagenia_sulphurea,8,val,76,"{""0"": 17, ""1"": 59}",0.43868394815553347,inconclusive,ok
-Heptagenia_sulphurea,16,train,274,"{""0"": 143, ""1"": 131}",0.725831420487909,credible multiple groups,ok
-Heptagenia_sulphurea,16,val,76,"{""0"": 45, ""1"": 31}",0.7698924731182796,credible multiple groups,ok
+Heptagenia_sulphurea,16,train,274,"{""0"": 143, ""1"": 131}",0.72588480222068,inconclusive,ok
+Heptagenia_sulphurea,16,val,76,"{""0"": 45, ""1"": 31}",0.7698924731182796,inconclusive,ok
 Hydraena_sp,8,train,125,"{""0"": 29, ""1"": 96}",0.16522988505747124,inconclusive,ok
 Hydraena_sp,8,val,32,"{""0"": 5, ""1"": 27}",0.0,inconclusive,ok
 Hydraena_sp,16,train,125,"{""0"": 60, ""1"": 65}",0.442051282051282,inconclusive,ok
 Hydraena_sp,16,val,32,"{""0"": 19, ""1"": 13}",0.3805668016194332,inconclusive,ok
-Hydropsyche_pellucidula,8,train,125,"{""0"": 99, ""1"": 26}",0.12043512043512042,inconclusive,ok
-Hydropsyche_pellucidula,8,val,29,"{""0"": 22, ""1"": 7}",0.11688311688311687,inconclusive,ok
-Hydropsyche_pellucidula,16,train,125,"{""0"": 91, ""1"": 34}",0.359082094376212,inconclusive,ok
+Hydropsyche_pellucidula,8,train,125,"{""0"": 99, ""1"": 26}",0.11305361305361304,inconclusive,ok
+Hydropsyche_pellucidula,8,val,29,"{""0"": 22, ""1"": 7}",0.10389610389610389,inconclusive,ok
+Hydropsyche_pellucidula,16,train,125,"{""0"": 91, ""1"": 34}",0.3497091144149968,inconclusive,ok
 Hydropsyche_pellucidula,16,val,29,"{""0"": 21, ""1"": 8}",0.5119047619047619,inconclusive,ok
-Hydropsyche_siltalai,8,train,252,"{""0"": 93, ""1"": 159}",0.7492391965916008,credible multiple groups,ok
-Hydropsyche_siltalai,8,val,64,"{""0"": 22, ""1"": 42}",0.6926406926406926,credible multiple groups,ok
-Hydropsyche_siltalai,16,train,252,"{""0"": 69, ""1"": 183}",0.8020115625247486,inconclusive,ok
-Hydropsyche_siltalai,16,val,64,"{""0"": 16, ""1"": 48}",0.84375,inconclusive,ok
-Isoperla_sp,8,train,157,"{""0"": 100, ""1"": 57}",0.5945614035087718,inconclusive,ok
-Isoperla_sp,8,val,39,"{""0"": 23, ""1"": 16}",0.717391304347826,inconclusive,ok
-Isoperla_sp,16,train,157,"{""0"": 81, ""1"": 76}",0.3023066926575698,inconclusive,ok
+Hydropsyche_siltalai,8,train,252,"{""0"": 93, ""1"": 159}",0.7493068235612362,inconclusive,ok
+Hydropsyche_siltalai,8,val,64,"{""0"": 22, ""1"": 42}",0.6948051948051948,inconclusive,ok
+Hydropsyche_siltalai,16,train,252,"{""0"": 69, ""1"": 183}",0.8021699532747287,inconclusive,ok
+Hydropsyche_siltalai,16,val,64,"{""0"": 16, ""1"": 48}",0.8450520833333333,inconclusive,ok
+Isoperla_sp,8,train,157,"{""0"": 100, ""1"": 57}",0.5947368421052631,single Gaussian predicts better,ok
+Isoperla_sp,8,val,39,"{""0"": 23, ""1"": 16}",0.717391304347826,single Gaussian predicts better,ok
+Isoperla_sp,16,train,157,"{""0"": 81, ""1"": 76}",0.3024691358024691,inconclusive,ok
 Isoperla_sp,16,val,39,"{""0"": 21, ""1"": 18}",0.2936507936507936,inconclusive,ok
-Kageronia_fuscogrisea,8,train,138,"{""0"": 86, ""1"": 52}",0.7732558139534883,inconclusive,ok
-Kageronia_fuscogrisea,8,val,39,"{""0"": 24, ""1"": 15}",0.7722222222222223,inconclusive,ok
-Kageronia_fuscogrisea,16,train,138,"{""0"": 71, ""1"": 67}",0.4723565272230398,inconclusive,ok
-Kageronia_fuscogrisea,16,val,39,"{""0"": 21, ""1"": 18}",0.5105820105820106,inconclusive,ok
-Lepidostoma_hirtum,8,train,170,"{""0"": 115, ""1"": 55}",0.9375494071146245,credible multiple groups,ok
-Lepidostoma_hirtum,8,val,40,"{""0"": 29, ""1"": 11}",0.9905956112852665,credible multiple groups,ok
-Lepidostoma_hirtum,16,train,170,"{""0"": 84, ""1"": 86}",0.2661960132890366,credible multiple groups,ok
-Lepidostoma_hirtum,16,val,40,"{""0"": 17, ""1"": 23}",0.21994884910485935,credible multiple groups,ok
-Leptophlebia_sp,8,train,270,"{""0"": 99, ""1"": 171}",0.059720007088428145,credible multiple groups,ok
-Leptophlebia_sp,8,val,66,"{""0"": 23, ""1"": 43}",0.061678463094034394,credible multiple groups,ok
-Leptophlebia_sp,16,train,270,"{""0"": 168, ""1"": 102}",0.9372082166199813,inconclusive,ok
+Kageronia_fuscogrisea,8,train,138,"{""0"": 86, ""1"": 52}",0.7730322003577818,inconclusive,ok
+Kageronia_fuscogrisea,8,val,39,"{""0"": 24, ""1"": 15}",0.7694444444444444,inconclusive,ok
+Kageronia_fuscogrisea,16,train,138,"{""0"": 71, ""1"": 67}",0.4725667437460584,inconclusive,ok
+Kageronia_fuscogrisea,16,val,39,"{""0"": 21, ""1"": 18}",0.5079365079365079,inconclusive,ok
+Lepidostoma_hirtum,8,train,170,"{""0"": 115, ""1"": 55}",0.9377075098814229,mixture-supported split (exploratory),ok
+Lepidostoma_hirtum,8,val,40,"{""0"": 29, ""1"": 11}",0.987460815047022,mixture-supported split (exploratory),ok
+Lepidostoma_hirtum,16,train,170,"{""0"": 84, ""1"": 86}",0.269656699889258,mixture-supported split (exploratory),ok
+Lepidostoma_hirtum,16,val,40,"{""0"": 17, ""1"": 23}",0.21994884910485932,mixture-supported split (exploratory),ok
+Leptophlebia_sp,8,train,270,"{""0"": 99, ""1"": 171}",0.0600153582609723,inconclusive,ok
+Leptophlebia_sp,8,val,66,"{""0"": 23, ""1"": 43}",0.061678463094034394,inconclusive,ok
+Leptophlebia_sp,16,train,270,"{""0"": 168, ""1"": 102}",0.9370331465919701,inconclusive,ok
 Leptophlebia_sp,16,val,66,"{""0"": 42, ""1"": 24}",0.9533730158730158,inconclusive,ok
 Leuctra_nigra,8,train,15,"{""0"": 2, ""1"": 13}",1.0,insufficient evidence,unreliable
 Leuctra_nigra,8,val,5,"{""0"": 1, ""1"": 4}",1.0,insufficient evidence,unreliable
-Leuctra_sp,8,train,192,"{""0"": 41, ""1"": 151}",0.8900016152479406,inconclusive,ok
+Leuctra_sp,8,train,192,"{""0"": 41, ""1"": 151}",0.8901631400419966,inconclusive,ok
 Leuctra_sp,8,val,46,"{""0"": 9, ""1"": 37}",0.8498498498498499,inconclusive,ok
-Leuctra_sp,16,train,192,"{""0"": 76, ""1"": 116}",0.8129537205081669,inconclusive,ok
+Leuctra_sp,16,train,192,"{""0"": 76, ""1"": 116}",0.8119328493647914,inconclusive,ok
 Leuctra_sp,16,val,46,"{""0"": 17, ""1"": 29}",0.795131845841785,inconclusive,ok
-Limnius_volckmari,8,train,204,"{""0"": 39, ""1"": 165}",0.9373737373737373,inconclusive,ok
+Limnius_volckmari,8,train,204,"{""0"": 39, ""1"": 165}",0.9364413364413364,inconclusive,ok
 Limnius_volckmari,8,val,51,"{""0"": 12, ""1"": 39}",0.967948717948718,inconclusive,ok
-Limnius_volckmari,16,train,204,"{""0"": 39, ""1"": 165}",0.9272727272727272,credible multiple groups,ok
-Limnius_volckmari,16,val,51,"{""0"": 12, ""1"": 39}",0.967948717948718,credible multiple groups,ok
-Micrasema_gelidum,8,train,152,"{""0"": 115, ""1"": 37}",0.6862514688601646,credible multiple groups,ok
-Micrasema_gelidum,8,val,37,"{""0"": 29, ""1"": 8}",0.6206896551724138,credible multiple groups,ok
-Micrasema_gelidum,16,train,152,"{""0"": 115, ""1"": 37}",0.6862514688601646,inconclusive,ok
+Limnius_volckmari,16,train,204,"{""0"": 39, ""1"": 165}",0.9261849261849261,mixture-supported split (exploratory),ok
+Limnius_volckmari,16,val,51,"{""0"": 12, ""1"": 39}",0.967948717948718,mixture-supported split (exploratory),ok
+Micrasema_gelidum,8,train,152,"{""0"": 115, ""1"": 37}",0.6869565217391306,mixture-supported split (exploratory),ok
+Micrasema_gelidum,8,val,37,"{""0"": 29, ""1"": 8}",0.6206896551724138,mixture-supported split (exploratory),ok
+Micrasema_gelidum,16,train,152,"{""0"": 115, ""1"": 37}",0.6869565217391306,inconclusive,ok
 Micrasema_gelidum,16,val,37,"{""0"": 28, ""1"": 9}",0.6587301587301586,inconclusive,ok
-Micrasema_setiferum,8,train,206,"{""0"": 100, ""1"": 106}",0.47698113207547166,credible multiple groups,ok
-Micrasema_setiferum,8,val,51,"{""0"": 36, ""1"": 15}",0.5648148148148148,credible multiple groups,ok
-Micrasema_setiferum,16,train,206,"{""0"": 106, ""1"": 100}",0.5397169811320753,credible multiple groups,ok
-Micrasema_setiferum,16,val,51,"{""0"": 16, ""1"": 35}",0.4464285714285714,credible multiple groups,ok
-Nemoura_sp,8,train,117,"{""0"": 39, ""1"": 78}",0.6808021038790271,inconclusive,ok
+Micrasema_setiferum,8,train,206,"{""0"": 100, ""1"": 106}",0.4918867924528302,mixture-supported split (exploratory),ok
+Micrasema_setiferum,8,val,51,"{""0"": 36, ""1"": 15}",0.5648148148148148,mixture-supported split (exploratory),ok
+Micrasema_setiferum,16,train,206,"{""0"": 106, ""1"": 100}",0.5245283018867926,mixture-supported split (exploratory),ok
+Micrasema_setiferum,16,val,51,"{""0"": 16, ""1"": 35}",0.4464285714285714,mixture-supported split (exploratory),ok
+Nemoura_sp,8,train,117,"{""0"": 39, ""1"": 78}",0.6811308349769889,inconclusive,ok
 Nemoura_sp,8,val,29,"{""0"": 16, ""1"": 13}",0.6298076923076923,inconclusive,ok
-Nemoura_sp,16,train,117,"{""0"": 63, ""1"": 54}",0.5376249265138154,inconclusive,ok
-Nemoura_sp,16,val,29,"{""0"": 19, ""1"": 10}",0.7842105263157896,inconclusive,ok
+Nemoura_sp,16,train,117,"{""0"": 63, ""1"": 54}",0.5373309817754263,single Gaussian predicts better,ok
+Nemoura_sp,16,val,29,"{""0"": 19, ""1"": 10}",0.7789473684210527,single Gaussian predicts better,ok
 Neureclipsis_bimaculata,8,train,307,"{""0"": 92, ""1"": 215}",0.03099089989888777,inconclusive,ok
 Neureclipsis_bimaculata,8,val,74,"{""0"": 19, ""1"": 55}",0.00861244019138756,inconclusive,ok
-Neureclipsis_bimaculata,16,train,307,"{""0"": 92, ""1"": 215}",0.03452982810920122,credible multiple groups,ok
-Neureclipsis_bimaculata,16,val,74,"{""0"": 17, ""1"": 57}",0.005159958720330238,credible multiple groups,ok
-Oulimnius_tuberculatus,8,train,219,"{""0"": 195, ""1"": 24}",0.16367521367521368,credible multiple groups,ok
-Oulimnius_tuberculatus,8,val,50,"{""0"": 45, ""1"": 5}",0.11111111111111115,credible multiple groups,ok
-Oulimnius_tuberculatus,16,train,219,"{""0"": 195, ""1"": 24}",0.16367521367521368,credible multiple groups,ok
-Oulimnius_tuberculatus,16,val,50,"{""0"": 45, ""1"": 5}",0.11111111111111115,credible multiple groups,ok
-Oxyethira_sp,8,train,143,"{""0"": 112, ""1"": 31}",0.4354838709677419,credible multiple groups,ok
-Oxyethira_sp,8,val,35,"{""0"": 24, ""1"": 11}",0.3977272727272727,credible multiple groups,ok
-Oxyethira_sp,16,train,143,"{""0"": 113, ""1"": 30}",0.4176991150442478,credible multiple groups,ok
-Oxyethira_sp,16,val,35,"{""0"": 24, ""1"": 11}",0.3977272727272727,credible multiple groups,ok
+Neureclipsis_bimaculata,16,train,307,"{""0"": 92, ""1"": 215}",0.03452982810920122,inconclusive,ok
+Neureclipsis_bimaculata,16,val,74,"{""0"": 17, ""1"": 57}",0.005159958720330238,inconclusive,ok
+Oulimnius_tuberculatus,8,train,219,"{""0"": 195, ""1"": 24}",0.16260683760683758,mixture-supported split (exploratory),ok
+Oulimnius_tuberculatus,8,val,50,"{""0"": 45, ""1"": 5}",0.11111111111111115,mixture-supported split (exploratory),ok
+Oulimnius_tuberculatus,16,train,219,"{""0"": 195, ""1"": 24}",0.16260683760683758,mixture-supported split (exploratory),ok
+Oulimnius_tuberculatus,16,val,50,"{""0"": 45, ""1"": 5}",0.11111111111111115,mixture-supported split (exploratory),ok
+Oxyethira_sp,8,train,143,"{""0"": 112, ""1"": 31}",0.43807603686635943,mixture-supported split (exploratory),ok
+Oxyethira_sp,8,val,35,"{""0"": 24, ""1"": 11}",0.4015151515151515,mixture-supported split (exploratory),ok
+Oxyethira_sp,16,train,143,"{""0"": 113, ""1"": 30}",0.4194690265486726,mixture-supported split (exploratory),ok
+Oxyethira_sp,16,val,35,"{""0"": 24, ""1"": 11}",0.4015151515151515,mixture-supported split (exploratory),ok
 Plectrocnemia_sp,8,train,39,"{""0"": 27, ""1"": 12}",0.0,inconclusive,ok
 Plectrocnemia_sp,8,val,10,"{""0"": 6, ""1"": 4}",0.04166666666666666,inconclusive,ok
 Plectrocnemia_sp,16,train,39,"{""0"": 27, ""1"": 12}",0.0,insufficient evidence,unreliable
 Plectrocnemia_sp,16,val,10,"{""0"": 6, ""1"": 4}",0.04166666666666666,insufficient evidence,unreliable
-Polycentropus_flavomaculatus,8,train,141,"{""0"": 67, ""1"": 74}",0.09298104074223476,inconclusive,ok
+Polycentropus_flavomaculatus,8,train,141,"{""0"": 67, ""1"": 74}",0.09257765227914483,inconclusive,ok
 Polycentropus_flavomaculatus,8,val,38,"{""0"": 20, ""1"": 18}",0.14444444444444446,inconclusive,ok
-Polycentropus_flavomaculatus,16,train,141,"{""0"": 53, ""1"": 88}",0.020154373927958828,inconclusive,ok
+Polycentropus_flavomaculatus,16,train,141,"{""0"": 53, ""1"": 88}",0.02101200686106346,inconclusive,ok
 Polycentropus_flavomaculatus,16,val,38,"{""0"": 11, ""1"": 27}",0.06397306397306397,inconclusive,ok
-Polycentropus_irroratus,8,train,34,"{""0"": 25, ""1"": 9}",0.7822222222222222,one Gaussian favoured,ok
-Polycentropus_irroratus,8,val,11,"{""0"": 9, ""1"": 2}",1.0,one Gaussian favoured,ok
+Polycentropus_irroratus,8,train,34,"{""0"": 25, ""1"": 9}",0.7822222222222222,single Gaussian predicts better,ok
+Polycentropus_irroratus,8,val,11,"{""0"": 9, ""1"": 2}",1.0,single Gaussian predicts better,ok
 Polycentropus_irroratus,16,train,34,"{""0"": 19, ""1"": 15}",0.47017543859649125,insufficient evidence,unreliable
 Polycentropus_irroratus,16,val,11,"{""0"": 7, ""1"": 4}",0.4642857142857143,insufficient evidence,unreliable
-Protonemura_sp,8,train,65,"{""0"": 29, ""1"": 36}",0.7614942528735633,inconclusive,ok
-Protonemura_sp,8,val,15,"{""0"": 7, ""1"": 8}",0.7142857142857142,inconclusive,ok
+Protonemura_sp,8,train,65,"{""0"": 29, ""1"": 36}",0.7624521072796935,inconclusive,ok
+Protonemura_sp,8,val,15,"{""0"": 7, ""1"": 8}",0.7321428571428571,inconclusive,ok
 Protonemura_sp,16,train,65,"{""0"": 49, ""1"": 16}",0.288265306122449,insufficient evidence,unreliable
 Protonemura_sp,16,val,15,"{""0"": 13, ""1"": 2}",0.0,insufficient evidence,unreliable
-Rhyacophila_nubila,8,train,114,"{""0"": 91, ""1"": 23}",0.3492594362159579,inconclusive,ok
+Rhyacophila_nubila,8,train,114,"{""0"": 91, ""1"": 23}",0.3540372670807453,inconclusive,ok
 Rhyacophila_nubila,8,val,28,"{""0"": 19, ""1"": 9}",0.4970760233918129,inconclusive,ok
-Rhyacophila_nubila,16,train,114,"{""0"": 40, ""1"": 74}",0.3878378378378378,inconclusive,ok
+Rhyacophila_nubila,16,train,114,"{""0"": 40, ""1"": 74}",0.38749999999999996,inconclusive,ok
 Rhyacophila_nubila,16,val,28,"{""0"": 12, ""1"": 16}",0.46354166666666663,inconclusive,ok
 Silo_pallipes,8,train,37,"{""0"": 25, ""1"": 12}",1.0,inconclusive,ok
 Silo_pallipes,8,val,9,"{""0"": 5, ""1"": 4}",1.0,inconclusive,ok
 Silo_pallipes,16,train,37,"{""0"": 18, ""1"": 19}",0.108187134502924,inconclusive,ok
 Silo_pallipes,16,val,9,"{""0"": 6, ""1"": 3}",0.0,inconclusive,ok
-Simuliidae,8,train,563,"{""0"": 391, ""1"": 172}",0.8441830726223755,credible multiple groups,ok
-Simuliidae,8,val,147,"{""0"": 106, ""1"": 41}",0.8607915324436264,credible multiple groups,ok
-Simuliidae,16,train,563,"{""0"": 428, ""1"": 135}",0.7289546555901696,inconclusive,ok
+Simuliidae,8,train,563,"{""0"": 391, ""1"": 172}",0.8444061143163027,inconclusive,ok
+Simuliidae,8,val,147,"{""0"": 106, ""1"": 41}",0.8607915324436264,inconclusive,ok
+Simuliidae,16,train,563,"{""0"": 428, ""1"": 135}",0.7292315680166147,inconclusive,ok
 Simuliidae,16,val,147,"{""0"": 107, ""1"": 40}",0.7766355140186916,inconclusive,ok
-Sphaerium_sp,8,train,96,"{""0"": 41, ""1"": 55}",0.7299334811529933,inconclusive,ok
+Sphaerium_sp,8,train,96,"{""0"": 41, ""1"": 55}",0.7383592017738358,inconclusive,ok
 Sphaerium_sp,8,val,20,"{""0"": 8, ""1"": 12}",0.7083333333333333,inconclusive,ok
-Sphaerium_sp,16,train,96,"{""0"": 33, ""1"": 63}",0.7566137566137566,inconclusive,ok
-Sphaerium_sp,16,val,20,"{""0"": 9, ""1"": 11}",0.6161616161616161,inconclusive,ok
-Taeniopteryx_nebulosa,8,train,211,"{""0"": 124, ""1"": 87}",0.09260289210233594,inconclusive,ok
-Taeniopteryx_nebulosa,8,val,54,"{""0"": 34, ""1"": 20}",0.15147058823529413,inconclusive,ok
-Taeniopteryx_nebulosa,16,train,211,"{""0"": 89, ""1"": 122}",0.8892982132989501,inconclusive,ok
-Taeniopteryx_nebulosa,16,val,54,"{""0"": 19, ""1"": 35}",0.8526315789473685,inconclusive,ok
+Sphaerium_sp,16,train,96,"{""0"": 33, ""1"": 63}",0.7614237614237613,inconclusive,ok
+Sphaerium_sp,16,val,20,"{""0"": 9, ""1"": 11}",0.5858585858585859,inconclusive,ok
+Taeniopteryx_nebulosa,8,train,211,"{""0"": 124, ""1"": 87}",0.0917686318131257,inconclusive,ok
+Taeniopteryx_nebulosa,8,val,54,"{""0"": 34, ""1"": 20}",0.14264705882352943,inconclusive,ok
+Taeniopteryx_nebulosa,16,train,211,"{""0"": 89, ""1"": 122}",0.8895745072757414,single Gaussian predicts better,ok
+Taeniopteryx_nebulosa,16,val,54,"{""0"": 19, ""1"": 35}",0.8586466165413534,single Gaussian predicts better,ok

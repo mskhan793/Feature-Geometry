@@ -228,31 +228,31 @@
   }
  },
  "8_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
-  "credible multiple groups": {
-   "classes": 27,
-   "dataset_ari_at_least_0.5": 15
-  },
   "inconclusive": {
-   "classes": 13,
-   "dataset_ari_at_least_0.5": 4
+   "classes": 15,
+   "dataset_ari_at_least_0.5": 6
   },
   "insufficient evidence": {
-   "classes": 1,
+   "classes": 2,
    "dataset_ari_at_least_0.5": 0
+  },
+  "mixture-supported split (exploratory)": {
+   "classes": 24,
+   "dataset_ari_at_least_0.5": 13
   }
  },
  "16_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
-  "credible multiple groups": {
-   "classes": 23,
-   "dataset_ari_at_least_0.5": 8
-  },
   "inconclusive": {
-   "classes": 9,
-   "dataset_ari_at_least_0.5": 4
+   "classes": 11,
+   "dataset_ari_at_least_0.5": 5
   },
   "insufficient evidence": {
-   "classes": 9,
+   "classes": 10,
    "dataset_ari_at_least_0.5": 5
+  },
+  "mixture-supported split (exploratory)": {
+   "classes": 20,
+   "dataset_ari_at_least_0.5": 7
   }
  },
  "train_classes_by_number_of_datasets": {

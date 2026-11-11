@@ -1,0 +1,579 @@
+{
+ "cohort_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+ "fold": "fold2",
+ "cohort_rows": {
+  "in_file": 186284,
+  "train_val_used": 149024,
+  "test_not_loaded": 37260
+ },
+ "encoder": "dinov3_l",
+ "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+ "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+ "tf32": false,
+ "seed": 20261107,
+ "n_stab": 200,
+ "unit": "specimen = mean of its camera-level means",
+ "classes": 34,
+ "classes_insufficient_support": {
+  "Capnopsis_schilleri": {
+   "train": 13,
+   "val": 4
+  },
+  "Hydropsyche_saxonica": {
+   "train": 10,
+   "val": 5
+  },
+  "Leuctra_nigra": {
+   "train": 17,
+   "val": 4
+  },
+  "Nemoura_cinerea": {
+   "train": 10,
+   "val": 2
+  },
+  "Sialis_sp": {
+   "train": 16,
+   "val": 4
+  }
+ },
+ "specimens": {
+  "train": 6163,
+  "val": 1541
+ },
+ "specimens_one_camera": {
+  "train": 180,
+  "val": 50
+ },
+ "train_specimens_per_class_min_median_max": [
+  36,
+  161.0,
+  564
+ ],
+ "val_specimens_per_class_min_median_max": [
+  8,
+  42.5,
+  146
+ ],
+ "pca_explained_variance": {
+  "8": 0.5390136682232083,
+  "16": 0.6575445248472305
+ },
+ "pca_2_explained_variance": 0.2822043774969265,
+ "within_class_native": {
+  "rms_radius": [
+   5.425096727642678,
+   6.389041358402901,
+   7.938786796859759
+  ],
+  "top1_share": [
+   0.12118983311586737,
+   0.21253826897634998,
+   0.4206590783485174
+  ],
+  "top5_share": [
+   0.4103925967390999,
+   0.4742102457746017,
+   0.65841368694793
+  ],
+  "effective_rank": [
+   14.652724670164721,
+   36.185800311949436,
+   49.52391000873496
+  ],
+  "participation_ratio": [
+   4.966769218825259,
+   14.476339277725277,
+   20.261246810963808
+  ],
+  "effective_rank_n30": [
+   8.392866022503561,
+   16.802947214540776,
+   18.763493812728896
+  ],
+  "participation_ratio_n30": [
+   3.663079070390587,
+   10.701978079196461,
+   13.373022232526086
+  ],
+  "top1_share_n30": [
+   0.16335764980794654,
+   0.23731228459319242,
+   0.5034250455717166
+  ],
+  "camera_reid": [
+   0.07710843373493977,
+   0.13236774105807153,
+   0.47058823529411764
+  ],
+  "frame_rms_within_specimen_median": [
+   3.4337112614073995,
+   4.290520872757186,
+   5.225102904340774
+  ]
+ },
+ "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) order",
+ "between_classes": {
+  "pairs": 561,
+  "dprime_val_below_1": 1,
+  "dprime_val_below_2": 10,
+  "radius_sep_below_1": 159,
+  "radius_sep_pca2d_below_1": 115,
+  "pca2d_above_native": 460,
+  "spearman_radius_native_vs_l2norm": 0.9993486103597051,
+  "spearman_radius_native_vs_pca2d": 0.8847134809925264,
+  "spearman_dprime_val_vs_radius_native": 0.7692821936280174,
+  "closest_pairs": [
+   {
+    "class_a": "Polycentropus_flavomaculatus",
+    "class_b": "Polycentropus_irroratus",
+    "dprime_val": 0.9932284914,
+    "dprime_train": 0.9904268054,
+    "radius_sep": 0.3584874599,
+    "radius_sep_l2norm": 0.3552537028,
+    "radius_sep_pca2d": 0.386562218,
+    "centroid_distance": 2.1786639314,
+    "subspace_overlap_top5": 0.5691855912
+   },
+   {
+    "class_a": "Elmis_aenea",
+    "class_b": "Oulimnius_tuberculatus",
+    "dprime_val": 1.4641488479,
+    "dprime_train": 1.4169231712,
+    "radius_sep": 0.6784912241,
+    "radius_sep_l2norm": 0.6509980772,
+    "radius_sep_pca2d": 1.1209593436,
+    "centroid_distance": 5.0227536202,
+    "subspace_overlap_top5": 0.5732286117
+   },
+   {
+    "class_a": "Lepidostoma_hirtum",
+    "class_b": "Micrasema_setiferum",
+    "dprime_val": 1.4820902404,
+    "dprime_train": 1.5942166699,
+    "radius_sep": 0.5199327464,
+    "radius_sep_l2norm": 0.5251436982,
+    "radius_sep_pca2d": 0.9517818704,
+    "centroid_distance": 3.8790877576,
+    "subspace_overlap_top5": 0.3869953504
+   },
+   {
+    "class_a": "Plectrocnemia_sp",
+    "class_b": "Polycentropus_flavomaculatus",
+    "dprime_val": 1.5916222412,
+    "dprime_train": 1.3142362147,
+    "radius_sep": 0.5112457262,
+    "radius_sep_l2norm": 0.5046500052,
+    "radius_sep_pca2d": 0.618120441,
+    "centroid_distance": 3.2306709881,
+    "subspace_overlap_top5": 0.5687247856
+   },
+   {
+    "class_a": "Micrasema_gelidum",
+    "class_b": "Micrasema_setiferum",
+    "dprime_val": 1.6922139477,
+    "dprime_train": 1.7692498246,
+    "radius_sep": 0.6540235404,
+    "radius_sep_l2norm": 0.6565902538,
+    "radius_sep_pca2d": 1.2759682173,
+    "centroid_distance": 4.8100146369,
+    "subspace_overlap_top5": 0.4885430308
+   },
+   {
+    "class_a": "Plectrocnemia_sp",
+    "class_b": "Polycentropus_irroratus",
+    "dprime_val": 1.8147947955,
+    "dprime_train": 1.7779919338,
+    "radius_sep": 0.7434492357,
+    "radius_sep_l2norm": 0.7402270914,
+    "radius_sep_pca2d": 1.0166059129,
+    "centroid_distance": 4.5521993586,
+    "subspace_overlap_top5": 0.4542173135
+   },
+   {
+    "class_a": "Baetis_rhodani",
+    "class_b": "Baetis_vernus_group",
+    "dprime_val": 1.8501560261,
+    "dprime_train": 1.5132081247,
+    "radius_sep": 0.550930288,
+    "radius_sep_l2norm": 0.5490607132,
+    "radius_sep_pca2d": 0.9178185688,
+    "centroid_distance": 3.6808429368,
+    "subspace_overlap_top5": 0.584651054
+   },
+   {
+    "class_a": "Heptagenia_sulphurea",
+    "class_b": "Kageronia_fuscogrisea",
+    "dprime_val": 1.8610077358,
+    "dprime_train": 1.7833167239,
+    "radius_sep": 0.4446558779,
+    "radius_sep_l2norm": 0.442360229,
+    "radius_sep_pca2d": 0.0904380723,
+    "centroid_distance": 3.1307763766,
+    "subspace_overlap_top5": 0.6080466473
+   },
+   {
+    "class_a": "Ephemerella_mucronata",
+    "class_b": "Isoperla_sp",
+    "dprime_val": 1.8961308404,
+    "dprime_train": 2.4998987341,
+    "radius_sep": 0.661641221,
+    "radius_sep_l2norm": 0.6502739428,
+    "radius_sep_pca2d": 0.9207944308,
+    "centroid_distance": 4.2332165075,
+    "subspace_overlap_top5": 0.4567656233
+   },
+   {
+    "class_a": "Lepidostoma_hirtum",
+    "class_b": "Silo_pallipes",
+    "dprime_val": 1.9709438588,
+    "dprime_train": 2.9847484871,
+    "radius_sep": 0.7387581213,
+    "radius_sep_l2norm": 0.7392890095,
+    "radius_sep_pca2d": 0.7482041515,
+    "centroid_distance": 5.1137834801,
+    "subspace_overlap_top5": 0.3187437237
+   }
+  ]
+ },
+ "modality": {
+  "reg_covar": 0.001,
+  "eligibility": "free parameters <= n_train * d / 2",
+  "by_pcs": {
+   "8": {
+    "pcs": 8,
+    "params": {
+     "G1_full": 44,
+     "G2_full": 89,
+     "G3_full": 134,
+     "G2_tied": 53,
+     "G3_tied": 62,
+     "G1_diag": 16,
+     "G2_diag": 33
+    },
+    "status_counts": {
+     "G1_full": {
+      "ok": 34
+     },
+     "G2_full": {
+      "ok": 32,
+      "unreliable": 2
+     },
+     "G3_full": {
+      "ok": 29,
+      "unreliable": 5
+     },
+     "G2_tied": {
+      "ok": 34
+     },
+     "G3_tied": {
+      "ok": 29,
+      "unreliable": 5
+     },
+     "G1_diag": {
+      "ok": 34
+     },
+     "G2_diag": {
+      "ok": 33,
+      "unreliable": 1
+     }
+    },
+    "differences": {
+     "G2_full-G1_full": {
+      "classes": 34,
+      "mean": -0.20448984222069239,
+      "ci95": [
+       -0.49428233553429446,
+       0.04593598661496836
+      ],
+      "classes_better": 19,
+      "classes_ci_above_0": 10,
+      "classes_ci_below_0": 4
+     },
+     "G3_full-G1_full": {
+      "classes": 34,
+      "mean": -0.6251265386400879,
+      "ci95": [
+       -1.0139327169242767,
+       -0.29625904179540424
+      ],
+      "classes_better": 13,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 9
+     },
+     "G2_tied-G1_full": {
+      "classes": 34,
+      "mean": 0.08233365056575481,
+      "ci95": [
+       0.024055845425655437,
+       0.13609614322033362
+      ],
+      "classes_better": 18,
+      "classes_ci_above_0": 10,
+      "classes_ci_below_0": 3
+     },
+     "G3_tied-G1_full": {
+      "classes": 34,
+      "mean": -0.0067080133467998715,
+      "ci95": [
+       -0.1400099117878606,
+       0.1054475447555077
+      ],
+      "classes_better": 23,
+      "classes_ci_above_0": 8,
+      "classes_ci_below_0": 4
+     },
+     "G2_diag-G1_diag": {
+      "classes": 34,
+      "mean": 0.8197740641689444,
+      "ci95": [
+       0.7142929002997384,
+       0.9175919132821202
+      ],
+      "classes_better": 33,
+      "classes_ci_above_0": 21,
+      "classes_ci_below_0": 0
+     }
+    },
+    "verdicts": {
+     "inconclusive": 23,
+     "credible multiple groups": 11
+    },
+    "verdict_classes": {
+     "credible multiple groups": [
+      "Elmis_aenea",
+      "Limnius_volckmari",
+      "Micrasema_gelidum",
+      "Micrasema_setiferum",
+      "Neureclipsis_bimaculata",
+      "Oulimnius_tuberculatus",
+      "Oxyethira_sp",
+      "Plectrocnemia_sp",
+      "Polycentropus_flavomaculatus",
+      "Simuliidae",
+      "Taeniopteryx_nebulosa"
+     ],
+     "inconclusive": [
+      "Agapetus_sp",
+      "Ameletus_inopinatus",
+      "Amphinemura_borealis",
+      "Baetis_rhodani",
+      "Baetis_vernus_group",
+      "Diura_sp",
+      "Ephemerella_aurivillii",
+      "Ephemerella_mucronata",
+      "Heptagenia_sulphurea",
+      "Hydraena_sp",
+      "Hydropsyche_pellucidula",
+      "Hydropsyche_siltalai",
+      "Isoperla_sp",
+      "Kageronia_fuscogrisea",
+      "Lepidostoma_hirtum",
+      "Leptophlebia_sp",
+      "Leuctra_sp",
+      "Nemoura_sp",
+      "Polycentropus_irroratus",
+      "Protonemura_sp",
+      "Rhyacophila_nubila",
+      "Silo_pallipes",
+      "Sphaerium_sp"
+     ]
+    },
+    "G2_tied_split_ari_val_median_over_classes": 0.6282124309931962,
+    "G2_tied_split_stable_classes": 17,
+    "G2_tied_both_views_same_component_median": 0.8462451550387597,
+    "condition_max": {
+     "G1_full": 110.51436665942065,
+     "G2_full": 1244.6982010596723,
+     "G3_full": 1001.4872534604269,
+     "G2_tied": 83.9414040184584,
+     "G3_tied": 197.05628881614444,
+     "G1_diag": 18.699042302935073,
+     "G2_diag": 25.32101795159073
+    },
+    "classes_not_analysed_too_few_train": []
+   },
+   "16": {
+    "pcs": 16,
+    "params": {
+     "G1_full": 152,
+     "G2_full": 305,
+     "G3_full": 458,
+     "G2_tied": 169,
+     "G3_tied": 186,
+     "G1_diag": 32,
+     "G2_diag": 65
+    },
+    "status_counts": {
+     "G1_full": {
+      "ok": 34
+     },
+     "G2_full": {
+      "ok": 24,
+      "unreliable": 8,
+      "ineligible": 2
+     },
+     "G3_full": {
+      "unreliable": 16,
+      "ok": 15,
+      "ineligible": 3
+     },
+     "G2_tied": {
+      "ok": 30,
+      "unreliable": 4
+     },
+     "G3_tied": {
+      "ok": 21,
+      "unreliable": 13
+     },
+     "G1_diag": {
+      "ok": 34
+     },
+     "G2_diag": {
+      "ok": 30,
+      "unreliable": 4
+     }
+    },
+    "differences": {
+     "G2_full-G1_full": {
+      "classes": 32,
+      "mean": -0.6920626626604013,
+      "ci95": [
+       -1.231410533791195,
+       -0.28627173005430373
+      ],
+      "classes_better": 12,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 12
+     },
+     "G3_full-G1_full": {
+      "classes": 31,
+      "mean": -1.978264019087914,
+      "ci95": [
+       -2.6571179375478584,
+       -1.3912706511805848
+      ],
+      "classes_better": 4,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 18
+     },
+     "G2_tied-G1_full": {
+      "classes": 34,
+      "mean": -0.05445620560212094,
+      "ci95": [
+       -0.18056845288005172,
+       0.05168463988608506
+      ],
+      "classes_better": 18,
+      "classes_ci_above_0": 6,
+      "classes_ci_below_0": 4
+     },
+     "G3_tied-G1_full": {
+      "classes": 34,
+      "mean": -0.34270341708946794,
+      "ci95": [
+       -0.5603004612307105,
+       -0.1507022246748265
+      ],
+      "classes_better": 15,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 7
+     },
+     "G2_diag-G1_diag": {
+      "classes": 34,
+      "mean": 1.4743246323854204,
+      "ci95": [
+       1.314656172708547,
+       1.6376669722146793
+      ],
+      "classes_better": 33,
+      "classes_ci_above_0": 26,
+      "classes_ci_below_0": 0
+     }
+    },
+    "verdicts": {
+     "inconclusive": 23,
+     "credible multiple groups": 6,
+     "insufficient evidence": 4,
+     "one Gaussian favoured": 1
+    },
+    "verdict_classes": {
+     "credible multiple groups": [
+      "Baetis_rhodani",
+      "Elmis_aenea",
+      "Lepidostoma_hirtum",
+      "Micrasema_gelidum",
+      "Micrasema_setiferum",
+      "Oulimnius_tuberculatus"
+     ],
+     "inconclusive": [
+      "Agapetus_sp",
+      "Amphinemura_borealis",
+      "Baetis_vernus_group",
+      "Diura_sp",
+      "Ephemerella_aurivillii",
+      "Ephemerella_mucronata",
+      "Heptagenia_sulphurea",
+      "Hydraena_sp",
+      "Hydropsyche_pellucidula",
+      "Hydropsyche_siltalai",
+      "Isoperla_sp",
+      "Kageronia_fuscogrisea",
+      "Leptophlebia_sp",
+      "Leuctra_sp",
+      "Nemoura_sp",
+      "Neureclipsis_bimaculata",
+      "Oxyethira_sp",
+      "Polycentropus_flavomaculatus",
+      "Protonemura_sp",
+      "Rhyacophila_nubila",
+      "Simuliidae",
+      "Sphaerium_sp",
+      "Taeniopteryx_nebulosa"
+     ],
+     "insufficient evidence": [
+      "Limnius_volckmari",
+      "Plectrocnemia_sp",
+      "Polycentropus_irroratus",
+      "Silo_pallipes"
+     ],
+     "one Gaussian favoured": [
+      "Ameletus_inopinatus"
+     ]
+    },
+    "G2_tied_split_ari_val_median_over_classes": 0.22427743025696506,
+    "G2_tied_split_stable_classes": 16,
+    "G2_tied_both_views_same_component_median": 0.835987659468023,
+    "condition_max": {
+     "G1_full": 480.6702129311033,
+     "G2_full": 3196.1837947325475,
+     "G3_full": 4462.772143417159,
+     "G2_tied": 609.8584829430223,
+     "G3_tied": 688.5614279693805,
+     "G1_diag": 22.426520888149962,
+     "G2_diag": 48.438120256662
+    },
+    "classes_not_analysed_too_few_train": []
+   }
+  }
+ },
+ "selection_train_bic": {
+  "pcs": 16,
+  "candidate_groups": [
+   "Elmis_aenea",
+   "Limnius_volckmari",
+   "Oulimnius_tuberculatus"
+  ],
+  "candidate_single": [
+   "Amphinemura_borealis",
+   "Taeniopteryx_nebulosa"
+  ],
+  "all": [
+   "Elmis_aenea",
+   "Limnius_volckmari",
+   "Oulimnius_tuberculatus",
+   "Amphinemura_borealis",
+   "Taeniopteryx_nebulosa"
+  ]
+ },
+ "wall_seconds": 277.8
+}

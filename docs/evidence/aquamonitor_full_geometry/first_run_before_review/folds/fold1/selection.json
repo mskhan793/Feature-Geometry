@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria"
+ ],
+ "candidate_single": [
+  "Sialis",
+  "Turbellaria"
+ ],
+ "all": [
+  "Chironomidae",
+  "Leptophlebia",
+  "Caenis horaria",
+  "Sialis",
+  "Turbellaria"
+ ],
+ "montage_specimens": {
+  "Chironomidae": {
+   "component_0": [
+    "Ch-kom2_534_22",
+    "Ch-vie1_186_22",
+    "Ch-kom2_205_22",
+    "Ch-kom2_197_22"
+   ],
+   "component_1": [
+    "12-G7-Ch-iso2-8",
+    "12-G3-Ch-iso2-4",
+    "16-D7-Ch-kak2-4",
+    "2-B11-Ch-haa1-2"
+   ],
+   "outliers_lowest_G1_density": [
+    "Ch-kur1_71_21",
+    "17-B3-Ch-kuh2-1"
+   ]
+  },
+  "Leptophlebia": {
+   "component_0": [
+    "14-C6-Le-iso2-13",
+    "15-E11-Le-iso2-30",
+    "17-A11-Le-iso3-7",
+    "Le-iso1_68_22"
+   ],
+   "component_1": [
+    "6-A7-Le-iso1-16",
+    "Le-ala1_18_21",
+    "Le-ala1_2_21",
+    "Le-ala1_9_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "6-A9-Le-iso1-18",
+    "15-E12-Le-iso2-31"
+   ]
+  },
+  "Caenis horaria": {
+   "component_0": [
+    "CaHo-ull1_2_22",
+    "CaHo-ull1_1_22",
+    "CaHo-hii1_3_22",
+    "CaHo-kom1_48_22"
+   ],
+   "component_1": [
+    "CaHo-pus2_111_21",
+    "CaHo-val3_81_21",
+    "CaHo-val3_95_21",
+    "CaHo-val3_43_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "CaHo-val1_60_21",
+    "CaHo-pus2_111_21"
+   ]
+  },
+  "Sialis": {
+   "component_0": [
+    "Sia-iso3_22_22",
+    "Sia-iso1_14_21",
+    "Sia-iso1_1_22",
+    "Sia-iso3_28_22"
+   ],
+   "component_1": [
+    "Sia-iso3_5_22",
+    "Sia-iso3_8_22",
+    "Sia-iso2_1_21",
+    "Sia-iso1_7_21"
+   ],
+   "outliers_lowest_G1_density": [
+    "Sia-iso3_21_22",
+    "Sia-iso3_28_22"
+   ]
+  },
+  "Turbellaria": {
+   "component_0": [
+    "Tu-haa3_1_21",
+    "Tu-pus1_1_22",
+    "Tu-haa1_3_21",
+    "Tu-hii2_8_22"
+   ],
+   "component_1": [
+    "Tu-ull1_23_22",
+    "Tu-kuo1_13_22",
+    "Tu-pus3_1_21",
+    "Tu-hii3_2_22"
+   ],
+   "outliers_lowest_G1_density": [
+    "Tu-sii3_3_21",
+    "Tu-pus3_1_22"
+   ]
+  }
+ }
+}

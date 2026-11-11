@@ -1,0 +1,80 @@
+{
+ "8_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.2528425797671989,
+   "classes_auc_outside_0.2_0.8": 13,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Heptagenia_sulphurea",
+    "Hydropsyche_pellucidula",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 33,
+   "abs_auc_minus_half_median": 0.24687499999999996,
+   "classes_auc_outside_0.2_0.8": 11,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Hydropsyche_pellucidula",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Rhyacophila_nubila",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.2084766655200092,
+   "classes_auc_outside_0.2_0.8": 9,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_vernus_group",
+    "Ephemerella_aurivillii",
+    "Hydropsyche_siltalai",
+    "Leptophlebia_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Simuliidae"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.1729591836734694,
+   "classes_auc_outside_0.2_0.8": 9,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_rhodani",
+    "Ephemerella_aurivillii",
+    "Leptophlebia_sp",
+    "Nemoura_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Simuliidae"
+   ]
+  }
+ }
+}

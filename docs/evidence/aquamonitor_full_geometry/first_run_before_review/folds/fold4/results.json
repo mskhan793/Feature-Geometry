@@ -1,0 +1,613 @@
+{
+ "cohort_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+ "fold": "fold4",
+ "cohort_rows": {
+  "in_file": 836159,
+  "train_val_used": 668872,
+  "test_not_loaded": 167287
+ },
+ "encoder": "dinov3_l",
+ "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+ "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+ "tf32": false,
+ "seed": 20261107,
+ "n_stab": 200,
+ "unit": "specimen = mean of its camera-level means",
+ "classes": 41,
+ "classes_insufficient_support": {
+  "Pisidium": {
+   "train": 64,
+   "val": 4
+  }
+ },
+ "specimens": {
+  "train": 29346,
+  "val": 4386
+ },
+ "specimens_one_camera": {
+  "train": 142,
+  "val": 25
+ },
+ "train_specimens_per_class_min_median_max": [
+  31,
+  143.0,
+  7419
+ ],
+ "val_specimens_per_class_min_median_max": [
+  5,
+  19.0,
+  1096
+ ],
+ "pca_explained_variance": {
+  "8": 0.6191027798210125,
+  "16": 0.7215426756781413
+ },
+ "pca_2_explained_variance": 0.3864131121429463,
+ "within_class_native": {
+  "rms_radius": [
+   4.952771284638361,
+   6.111772318682498,
+   7.776218050739996
+  ],
+  "top1_share": [
+   0.1553620547548347,
+   0.2433783024747573,
+   0.499554047625311
+  ],
+  "top5_share": [
+   0.4322122600040302,
+   0.5522448125990495,
+   0.7764171017773929
+  ],
+  "effective_rank": [
+   8.00575651033099,
+   27.535445748804516,
+   58.56914350382469
+  ],
+  "participation_ratio": [
+   3.606611304764818,
+   10.866824694491068,
+   18.012800008097187
+  ],
+  "effective_rank_n30": [
+   7.495843034128867,
+   14.294903981111721,
+   18.25505336041788
+  ],
+  "participation_ratio_n30": [
+   3.5438089395844923,
+   8.860920235142855,
+   12.799024691537548
+  ],
+  "top1_share_n30": [
+   0.16893229382124608,
+   0.2588208579794468,
+   0.5037987012903503
+  ],
+  "camera_reid": [
+   0.03592814371257485,
+   0.2391304347826087,
+   0.49557522123893805
+  ],
+  "frame_rms_within_specimen_median": [
+   2.841733064182128,
+   3.5616270279849527,
+   4.520762371438494
+  ]
+ },
+ "within_class_note": "[min, median, max] over classes; *_n30 = first 30 train specimens in sha1(seed:individual) order",
+ "between_classes": {
+  "pairs": 820,
+  "dprime_val_below_1": 2,
+  "dprime_val_below_2": 20,
+  "radius_sep_below_1": 149,
+  "radius_sep_pca2d_below_1": 133,
+  "pca2d_above_native": 696,
+  "spearman_radius_native_vs_l2norm": 0.9996825491136415,
+  "spearman_radius_native_vs_pca2d": 0.8867530417751742,
+  "spearman_dprime_val_vs_radius_native": 0.6869287432015813,
+  "closest_pairs": [
+   {
+    "class_a": "Cyrnus trimaculatus",
+    "class_b": "Polycentropus flavomaculatus",
+    "dprime_val": 0.863840224,
+    "dprime_train": 0.9617515424,
+    "radius_sep": 0.2268659503,
+    "radius_sep_l2norm": 0.2224315147,
+    "radius_sep_pca2d": 0.100302524,
+    "centroid_distance": 1.3745208885,
+    "subspace_overlap_top5": 0.6310441612
+   },
+   {
+    "class_a": "Caenis horaria",
+    "class_b": "Caenis luctuosa",
+    "dprime_val": 0.8892772187,
+    "dprime_train": 1.2449928352,
+    "radius_sep": 0.3035783746,
+    "radius_sep_l2norm": 0.3038067579,
+    "radius_sep_pca2d": 0.3614002477,
+    "centroid_distance": 1.8304829664,
+    "subspace_overlap_top5": 0.7292420695
+   },
+   {
+    "class_a": "Caenis luctuosa",
+    "class_b": "Mystacides",
+    "dprime_val": 1.0671047542,
+    "dprime_train": 3.0631616551,
+    "radius_sep": 1.0954795023,
+    "radius_sep_l2norm": 1.0986773362,
+    "radius_sep_pca2d": 1.5920693394,
+    "centroid_distance": 6.7519943947,
+    "subspace_overlap_top5": 0.29554287
+   },
+   {
+    "class_a": "Kageronia fuscogrisea",
+    "class_b": "Mystacides",
+    "dprime_val": 1.120522028,
+    "dprime_train": 2.9528566743,
+    "radius_sep": 0.969923702,
+    "radius_sep_l2norm": 0.9762661559,
+    "radius_sep_pca2d": 1.3791734817,
+    "centroid_distance": 6.464262079,
+    "subspace_overlap_top5": 0.2229847673
+   },
+   {
+    "class_a": "Caenis horaria",
+    "class_b": "Mystacides",
+    "dprime_val": 1.1451248392,
+    "dprime_train": 3.014510681,
+    "radius_sep": 1.12525297,
+    "radius_sep_l2norm": 1.1280646366,
+    "radius_sep_pca2d": 1.6608631817,
+    "centroid_distance": 6.8791331372,
+    "subspace_overlap_top5": 0.2934780893
+   },
+   {
+    "class_a": "Cloeon",
+    "class_b": "Cloeon dipterum",
+    "dprime_val": 1.3105080943,
+    "dprime_train": 1.7962214443,
+    "radius_sep": 0.4459780205,
+    "radius_sep_l2norm": 0.4492942782,
+    "radius_sep_pca2d": 0.5476970865,
+    "centroid_distance": 2.8630441662,
+    "subspace_overlap_top5": 0.463400233
+   },
+   {
+    "class_a": "Cyrnus flavidus",
+    "class_b": "Polycentropus flavomaculatus",
+    "dprime_val": 1.3578535817,
+    "dprime_train": 1.9228042937,
+    "radius_sep": 0.7730121524,
+    "radius_sep_l2norm": 0.7614116914,
+    "radius_sep_pca2d": 1.1497246855,
+    "centroid_distance": 4.7767673887,
+    "subspace_overlap_top5": 0.4285083967
+   },
+   {
+    "class_a": "Cloeon dipterum",
+    "class_b": "Mystacides",
+    "dprime_val": 1.4181637718,
+    "dprime_train": 3.6202182303,
+    "radius_sep": 1.1122211521,
+    "radius_sep_l2norm": 1.1213589204,
+    "radius_sep_pca2d": 1.7349135317,
+    "centroid_distance": 7.1570601211,
+    "subspace_overlap_top5": 0.1937532488
+   },
+   {
+    "class_a": "Cloeon",
+    "class_b": "Mystacides",
+    "dprime_val": 1.4571183128,
+    "dprime_train": 3.3507090019,
+    "radius_sep": 1.0885938638,
+    "radius_sep_l2norm": 1.0883360743,
+    "radius_sep_pca2d": 1.3501043324,
+    "centroid_distance": 6.7816608045,
+    "subspace_overlap_top5": 0.2756937238
+   },
+   {
+    "class_a": "Mystacides",
+    "class_b": "Mystacides azurea",
+    "dprime_val": 1.4854627075,
+    "dprime_train": 1.3494200312,
+    "radius_sep": 0.4563717287,
+    "radius_sep_l2norm": 0.4584626848,
+    "radius_sep_pca2d": 0.573226647,
+    "centroid_distance": 2.8987114916,
+    "subspace_overlap_top5": 0.4104195628
+   }
+  ]
+ },
+ "modality": {
+  "reg_covar": 0.001,
+  "eligibility": "free parameters <= n_train * d / 2",
+  "by_pcs": {
+   "8": {
+    "pcs": 8,
+    "params": {
+     "G1_full": 44,
+     "G2_full": 89,
+     "G3_full": 134,
+     "G2_tied": 53,
+     "G3_tied": 62,
+     "G1_diag": 16,
+     "G2_diag": 33
+    },
+    "status_counts": {
+     "G1_full": {
+      "ok": 41
+     },
+     "G2_full": {
+      "ok": 37,
+      "unreliable": 4
+     },
+     "G3_full": {
+      "ok": 34,
+      "unreliable": 6,
+      "ineligible": 1
+     },
+     "G2_tied": {
+      "ok": 38,
+      "unreliable": 3
+     },
+     "G3_tied": {
+      "ok": 33,
+      "unreliable": 8
+     },
+     "G1_diag": {
+      "ok": 41
+     },
+     "G2_diag": {
+      "ok": 40,
+      "unreliable": 1
+     },
+     "GD_tied": {
+      "ok": 41
+     }
+    },
+    "differences": {
+     "G2_full-G1_full": {
+      "classes": 41,
+      "mean": 0.06414309551338025,
+      "ci95": [
+       -0.16293518691765665,
+       0.286644240113747
+      ],
+      "classes_better": 31,
+      "classes_ci_above_0": 21,
+      "classes_ci_below_0": 2
+     },
+     "G3_full-G1_full": {
+      "classes": 40,
+      "mean": -1.0322638798049635,
+      "ci95": [
+       -1.8520357881531766,
+       -0.3145586229257549
+      ],
+      "classes_better": 24,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 4
+     },
+     "G2_tied-G1_full": {
+      "classes": 41,
+      "mean": 0.20633842352848372,
+      "ci95": [
+       0.12928006922737906,
+       0.27777757763197575
+      ],
+      "classes_better": 33,
+      "classes_ci_above_0": 24,
+      "classes_ci_below_0": 3
+     },
+     "G3_tied-G1_full": {
+      "classes": 41,
+      "mean": 0.3825496696273748,
+      "ci95": [
+       0.2651111642733567,
+       0.4948350161931943
+      ],
+      "classes_better": 34,
+      "classes_ci_above_0": 24,
+      "classes_ci_below_0": 2
+     },
+     "GD_tied-G1_full": {
+      "classes": 41,
+      "mean": 0.46212639447659587,
+      "ci95": [
+       0.3956374280092337,
+       0.5267526985864787
+      ],
+      "classes_better": 39,
+      "classes_ci_above_0": 26,
+      "classes_ci_below_0": 0
+     },
+     "G2_diag-G1_diag": {
+      "classes": 41,
+      "mean": 0.9575532112530873,
+      "ci95": [
+       0.8112889974247515,
+       1.1063360480672095
+      ],
+      "classes_better": 40,
+      "classes_ci_above_0": 25,
+      "classes_ci_below_0": 0
+     }
+    },
+    "verdicts": {
+     "credible multiple groups": 26,
+     "inconclusive": 12,
+     "insufficient evidence": 2,
+     "one Gaussian favoured": 1
+    },
+    "verdict_classes": {
+     "credible multiple groups": [
+      "Asellus aquaticus",
+      "Caenis horaria",
+      "Caenis luctuosa",
+      "Centroptilum luteolum",
+      "Ceratopogonidae",
+      "Chironomidae",
+      "Cloeon",
+      "Cloeon dipterum",
+      "Cyrnus flavidus",
+      "Ecnomus tenellus",
+      "Helobdella stagnalis",
+      "Heptagenia dalecarlica",
+      "Hydrachnidia",
+      "Kageronia fuscogrisea",
+      "Lepidostoma hirtum",
+      "Leptophlebia",
+      "Micronecta",
+      "Oligochaeta",
+      "Oulimnius tuberculatus",
+      "Oulimnius tuberculatus adult",
+      "Polycentropus flavomaculatus",
+      "Psychomyia pusilla",
+      "Spirosperma ferox",
+      "Stylaria lacustris",
+      "Tanypodinae",
+      "Tinodes waeneri"
+     ],
+     "inconclusive": [
+      "Caenis rivulorum",
+      "Cyrnus trimaculatus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Gyraulus",
+      "Hydroptila",
+      "Limnephilidae",
+      "Limnephilus",
+      "Mystacides",
+      "Mystacides azurea",
+      "Orthotrichia",
+      "Turbellaria"
+     ],
+     "insufficient evidence": [
+      "Pedicia",
+      "Sialis"
+     ],
+     "one Gaussian favoured": [
+      "Sisyra"
+     ]
+    },
+    "G2_tied_split_ari_val_median_over_classes": 1.0,
+    "G2_tied_split_stable_classes": 31,
+    "G2_tied_both_views_same_component_median": 0.963855421686747,
+    "condition_max": {
+     "G1_full": 390.5262765208031,
+     "G2_full": 1718.8189340145038,
+     "G3_full": 1658.4640571004263,
+     "G2_tied": 175.56589066880906,
+     "G3_tied": 200.41444427071477,
+     "G1_diag": 81.09124340755865,
+     "G2_diag": 91.29470340361897
+    },
+    "classes_not_analysed_too_few_train": []
+   },
+   "16": {
+    "pcs": 16,
+    "params": {
+     "G1_full": 152,
+     "G2_full": 305,
+     "G3_full": 458,
+     "G2_tied": 169,
+     "G3_tied": 186,
+     "G1_diag": 32,
+     "G2_diag": 65
+    },
+    "status_counts": {
+     "G1_full": {
+      "ok": 41
+     },
+     "G2_full": {
+      "ok": 30,
+      "unreliable": 7,
+      "ineligible": 4
+     },
+     "G3_full": {
+      "ok": 21,
+      "unreliable": 14,
+      "ineligible": 6
+     },
+     "G2_tied": {
+      "ok": 33,
+      "unreliable": 8
+     },
+     "G3_tied": {
+      "ok": 27,
+      "unreliable": 14
+     },
+     "G1_diag": {
+      "ok": 41
+     },
+     "G2_diag": {
+      "ok": 33,
+      "unreliable": 8
+     },
+     "GD_tied": {
+      "ok": 41
+     }
+    },
+    "differences": {
+     "G2_full-G1_full": {
+      "classes": 37,
+      "mean": -2.067170644257724,
+      "ci95": [
+       -3.261977386322875,
+       -0.9684484632351181
+      ],
+      "classes_better": 23,
+      "classes_ci_above_0": 21,
+      "classes_ci_below_0": 7
+     },
+     "G3_full-G1_full": {
+      "classes": 35,
+      "mean": -3.911698255678849,
+      "ci95": [
+       -5.433075509353536,
+       -2.349009248418477
+      ],
+      "classes_better": 19,
+      "classes_ci_above_0": 15,
+      "classes_ci_below_0": 11
+     },
+     "G2_tied-G1_full": {
+      "classes": 41,
+      "mean": 0.392392910229591,
+      "ci95": [
+       0.2659898240636499,
+       0.5182800984167402
+      ],
+      "classes_better": 34,
+      "classes_ci_above_0": 31,
+      "classes_ci_below_0": 3
+     },
+     "G3_tied-G1_full": {
+      "classes": 41,
+      "mean": 0.3226627438581159,
+      "ci95": [
+       -0.3777873365336454,
+       0.787665056491253
+      ],
+      "classes_better": 33,
+      "classes_ci_above_0": 29,
+      "classes_ci_below_0": 3
+     },
+     "GD_tied-G1_full": {
+      "classes": 41,
+      "mean": 1.1434250197819382,
+      "ci95": [
+       1.016989568893509,
+       1.2544474081165513
+      ],
+      "classes_better": 37,
+      "classes_ci_above_0": 33,
+      "classes_ci_below_0": 1
+     },
+     "G2_diag-G1_diag": {
+      "classes": 41,
+      "mean": 1.6435184307144863,
+      "ci95": [
+       1.396890605616348,
+       1.9019475973792481
+      ],
+      "classes_better": 38,
+      "classes_ci_above_0": 28,
+      "classes_ci_below_0": 0
+     }
+    },
+    "verdicts": {
+     "credible multiple groups": 23,
+     "inconclusive": 9,
+     "insufficient evidence": 8,
+     "one Gaussian favoured": 1
+    },
+    "verdict_classes": {
+     "credible multiple groups": [
+      "Asellus aquaticus",
+      "Caenis horaria",
+      "Caenis luctuosa",
+      "Ceratopogonidae",
+      "Chironomidae",
+      "Cloeon dipterum",
+      "Ecnomus tenellus",
+      "Gyraulus",
+      "Helobdella stagnalis",
+      "Hydrachnidia",
+      "Kageronia fuscogrisea",
+      "Lepidostoma hirtum",
+      "Leptophlebia",
+      "Micronecta",
+      "Mystacides azurea",
+      "Oligochaeta",
+      "Oulimnius tuberculatus",
+      "Oulimnius tuberculatus adult",
+      "Psychomyia pusilla",
+      "Spirosperma ferox",
+      "Stylaria lacustris",
+      "Tanypodinae",
+      "Tinodes waeneri"
+     ],
+     "inconclusive": [
+      "Cyrnus flavidus",
+      "Cyrnus trimaculatus",
+      "Ephemera vulgata",
+      "Erpobdella octoculata",
+      "Heptagenia dalecarlica",
+      "Hydroptila",
+      "Limnephilus",
+      "Sialis",
+      "Turbellaria"
+     ],
+     "insufficient evidence": [
+      "Caenis rivulorum",
+      "Centroptilum luteolum",
+      "Cloeon",
+      "Mystacides",
+      "Orthotrichia",
+      "Pedicia",
+      "Polycentropus flavomaculatus",
+      "Sisyra"
+     ],
+     "one Gaussian favoured": [
+      "Limnephilidae"
+     ]
+    },
+    "G2_tied_split_ari_val_median_over_classes": 1.0,
+    "G2_tied_split_stable_classes": 30,
+    "G2_tied_both_views_same_component_median": 0.9931506849315068,
+    "condition_max": {
+     "G1_full": 1523.257558643286,
+     "G2_full": 4483.095562277899,
+     "G3_full": 5575.332275399565,
+     "G2_tied": 1133.022042305792,
+     "G3_tied": 833.6022492866854,
+     "G1_diag": 118.85308259499021,
+     "G2_diag": 1127.068190051571
+    },
+    "classes_not_analysed_too_few_train": []
+   }
+  }
+ },
+ "selection_train_bic": {
+  "pcs": 16,
+  "candidate_groups": [
+   "Chironomidae",
+   "Leptophlebia",
+   "Caenis horaria"
+  ],
+  "candidate_single": [
+   "Limnephilus",
+   "Turbellaria"
+  ],
+  "all": [
+   "Chironomidae",
+   "Leptophlebia",
+   "Caenis horaria",
+   "Limnephilus",
+   "Turbellaria"
+  ]
+ },
+ "wall_seconds": 485.6
+}

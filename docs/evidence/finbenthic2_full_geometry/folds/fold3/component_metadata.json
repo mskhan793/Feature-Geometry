@@ -2,7 +2,7 @@
  "8_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 35,
-   "abs_auc_minus_half_median": 0.27460249247958746,
+   "abs_auc_minus_half_median": 0.27303220035778175,
    "classes_auc_outside_0.2_0.8": 16,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_vernus_group",
@@ -27,7 +27,7 @@
  "8_pcs_val": {
   "log_image_area": {
    "classes_with_two_components": 35,
-   "abs_auc_minus_half_median": 0.3498498498498499,
+   "abs_auc_minus_half_median": 0.3555555555555555,
    "classes_auc_outside_0.2_0.8": 19,
    "classes_auc_outside_0.2_0.8_list": [
     "Amphinemura_borealis",
@@ -55,7 +55,7 @@
  "16_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.22895745011924384,
+   "abs_auc_minus_half_median": 0.2290959063324664,
    "classes_auc_outside_0.2_0.8": 13,
    "classes_auc_outside_0.2_0.8_list": [
     "Agapetus_sp",
@@ -77,7 +77,7 @@
  "16_pcs_val": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.2821308386054651,
+   "abs_auc_minus_half_median": 0.2794992596580967,
    "classes_auc_outside_0.2_0.8": 15,
    "classes_auc_outside_0.2_0.8_list": [
     "Agapetus_sp",

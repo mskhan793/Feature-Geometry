@@ -2,7 +2,7 @@
  "8_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 35,
-   "abs_auc_minus_half_median": 0.2843137254901962,
+   "abs_auc_minus_half_median": 0.2855392156862746,
    "classes_auc_outside_0.2_0.8": 15,
    "classes_auc_outside_0.2_0.8_list": [
     "Agapetus_sp",
@@ -50,7 +50,7 @@
  "16_pcs_train": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.23175705467372135,
+   "abs_auc_minus_half_median": 0.22850095785440616,
    "classes_auc_outside_0.2_0.8": 11,
    "classes_auc_outside_0.2_0.8_list": [
     "Baetis_rhodani",
@@ -70,8 +70,8 @@
  "16_pcs_val": {
   "log_image_area": {
    "classes_with_two_components": 34,
-   "abs_auc_minus_half_median": 0.19738448685817103,
-   "classes_auc_outside_0.2_0.8": 11,
+   "abs_auc_minus_half_median": 0.20143306985412246,
+   "classes_auc_outside_0.2_0.8": 10,
    "classes_auc_outside_0.2_0.8_list": [
     "Diura_sp",
     "Ephemerella_aurivillii",
@@ -81,7 +81,6 @@
     "Oulimnius_tuberculatus",
     "Plectrocnemia_sp",
     "Polycentropus_flavomaculatus",
-    "Silo_pallipes",
     "Simuliidae",
     "Taeniopteryx_nebulosa"
    ]

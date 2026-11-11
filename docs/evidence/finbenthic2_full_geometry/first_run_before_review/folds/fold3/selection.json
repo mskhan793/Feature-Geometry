@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus",
+  "Limnius_volckmari"
+ ],
+ "candidate_single": [
+  "Ephemerella_mucronata",
+  "Hydraena_sp"
+ ],
+ "all": [
+  "Elmis_aenea",
+  "Oulimnius_tuberculatus",
+  "Limnius_volckmari",
+  "Ephemerella_mucronata",
+  "Hydraena_sp"
+ ],
+ "montage_specimens": {
+  "Elmis_aenea": {
+   "component_0": [
+    "Elmis_aen1",
+    "Elmis_aen100",
+    "Elmis_aen101",
+    "Elmis_aen103"
+   ],
+   "component_1": [
+    "Elmis_aen173",
+    "Elmis_aen175",
+    "Elmis_aen176",
+    "Elmis_aen182"
+   ],
+   "outliers_lowest_G1_density": [
+    "Elmis_aen317",
+    "Elmis_aen324"
+   ]
+  },
+  "Oulimnius_tuberculatus": {
+   "component_0": [
+    "Oulimnius_tub1",
+    "Oulimnius_tub10",
+    "Oulimnius_tub101",
+    "Oulimnius_tub102"
+   ],
+   "component_1": [
+    "Oulimnius_tub134",
+    "Oulimnius_tub136",
+    "Oulimnius_tub138",
+    "Oulimnius_tub139"
+   ],
+   "outliers_lowest_G1_density": [
+    "Oulimnius_tub304",
+    "Oulimnius_tub280"
+   ]
+  },
+  "Limnius_volckmari": {
+   "component_0": [
+    "Limnius_vol131",
+    "Limnius_vol301",
+    "Limnius_vol308",
+    "Limnius_vol189"
+   ],
+   "component_1": [
+    "Limnius_vol152",
+    "Limnius_vol136",
+    "Limnius_vol140",
+    "Limnius_vol50"
+   ],
+   "outliers_lowest_G1_density": [
+    "Limnius_vol182",
+    "Limnius_vol271"
+   ]
+  },
+  "Ephemerella_mucronata": {
+   "component_0": [
+    "Ephemerella_muc164",
+    "Ephemerella_muc199",
+    "Ephemerella_muc123",
+    "Ephemerella_muc258"
+   ],
+   "component_1": [
+    "Ephemerella_muc94",
+    "Ephemerella_muc293",
+    "Ephemerella_muc51",
+    "Ephemerella_muc20"
+   ],
+   "outliers_lowest_G1_density": [
+    "Ephemerella_muc35",
+    "Ephemerella_muc133"
+   ]
+  },
+  "Hydraena_sp": {
+   "component_0": [
+    "Hydraena40",
+    "Hydraena26",
+    "Hydraena129",
+    "Hydraena167"
+   ],
+   "component_1": [
+    "Hydraena39",
+    "Hydraena178",
+    "Hydraena7",
+    "Hydraena133"
+   ],
+   "outliers_lowest_G1_density": [
+    "Hydraena168",
+    "Hydraena28"
+   ]
+  }
+ }
+}

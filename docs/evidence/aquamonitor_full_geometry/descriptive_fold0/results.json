@@ -1,11 +1,11 @@
 {
  "status": "exploratory, in-sample: fitted and described on the same specimens; not held-out evidence",
- "pool": "fold0 train + val specimens; fold0 test rows not read",
+ "pool": "fold0 train + val specimens; fold0 test rows dropped before feature lookup, never used",
  "cohort_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
  "cohort_rows": {
   "in_file": 836159,
   "pool": 668818,
-  "not_read": 167341
+  "test_rows_dropped": 167341
  },
  "encoder": "dinov3_l",
  "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
@@ -24,6 +24,7 @@
   "8": 0.6190410014302623,
   "16": 0.7215303922683944
  },
+ "within_class_n30_classes": 42,
  "within_class_native_min_median_max": {
   "rms_radius": [
    5.064440288000085,
@@ -115,9 +116,13 @@
  },
  "mixture_in_sample_by_pcs": {
   "8": {
-   "classes_fitted": 42,
+   "classes_reliable": 40,
+   "classes_unreliable": [
+    "Limnephilus",
+    "Sisyra"
+   ],
    "classes_ineligible": 0,
-   "bic_prefers_G2_tied": 40,
+   "bic_prefers_G2_tied": 38,
    "both_views_same_component_median": 0.9719470210794798,
    "source_ari_at_least_0.5": [
     "Asellus aquaticus",
@@ -144,10 +149,15 @@
    ]
   },
   "16": {
-   "classes_fitted": 42,
+   "classes_reliable": 39,
+   "classes_unreliable": [
+    "Mystacides",
+    "Orthotrichia",
+    "Sisyra"
+   ],
    "classes_ineligible": 0,
-   "bic_prefers_G2_tied": 37,
-   "both_views_same_component_median": 0.9973290224821543,
+   "bic_prefers_G2_tied": 34,
+   "both_views_same_component_median": 0.9968203497615262,
    "source_ari_at_least_0.5": [
     "Asellus aquaticus",
     "Caenis luctuosa",
@@ -163,7 +173,6 @@
     "Lepidostoma hirtum",
     "Limnephilidae",
     "Mystacides azurea",
-    "Orthotrichia",
     "Pisidium",
     "Polycentropus flavomaculatus",
     "Psychomyia pusilla",
@@ -173,5 +182,5 @@
    ]
   }
  },
- "wall_seconds": 322.3
+ "wall_seconds": 268.5
 }

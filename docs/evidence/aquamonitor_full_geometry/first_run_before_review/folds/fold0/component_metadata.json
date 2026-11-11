@@ -1,0 +1,262 @@
+{
+ "8_pcs_train": {
+  "dataset": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.5070786652514813,
+   "classes_ari_at_least_0.5": 20,
+   "classes_ari_at_least_0.5_list": [
+    "Asellus aquaticus",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Erpobdella octoculata",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Sialis",
+    "Spirosperma ferox",
+    "Stylaria lacustris",
+    "Tanypodinae",
+    "Tinodes waeneri"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.4586935118796327,
+   "classes_ari_at_least_0.5": 19,
+   "classes_ari_at_least_0.5_list": [
+    "Asellus aquaticus",
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Erpobdella octoculata",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Sialis",
+    "Tanypodinae",
+    "Tinodes waeneri"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0759507432435917,
+   "classes_ari_at_least_0.5": 2,
+   "classes_ari_at_least_0.5_list": [
+    "Lepidostoma hirtum",
+    "Micronecta"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "dataset": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.4551657591839548,
+   "classes_ari_at_least_0.5": 17,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Erpobdella octoculata",
+    "Hydrachnidia",
+    "Mystacides azurea",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox",
+    "Stylaria lacustris",
+    "Tanypodinae",
+    "Tinodes waeneri"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 37,
+   "ari_median": 0.3956043956043956,
+   "classes_ari_at_least_0.5": 14,
+   "classes_ari_at_least_0.5_list": [
+    "Asellus aquaticus",
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Ecnomus tenellus",
+    "Erpobdella octoculata",
+    "Hydrachnidia",
+    "Orthotrichia",
+    "Pisidium",
+    "Tanypodinae",
+    "Tinodes waeneri"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0417345744985171,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Micronecta"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "dataset": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.46320473483295255,
+   "classes_ari_at_least_0.5": 17,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Heptagenia dalecarlica",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Limnephilidae",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox",
+    "Stylaria lacustris",
+    "Tanypodinae"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.08718181783881489,
+   "classes_ari_at_least_0.5": 14,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Hydrachnidia",
+    "Lepidostoma hirtum",
+    "Orthotrichia",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Tanypodinae"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.0172505013983077,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Micronecta"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "dataset": {
+   "classes_with_field_varying": 39,
+   "ari_median": 0.43829551743220807,
+   "classes_ari_at_least_0.5": 15,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Cyrnus trimaculatus",
+    "Ecnomus tenellus",
+    "Heptagenia dalecarlica",
+    "Hydrachnidia",
+    "Orthotrichia",
+    "Pisidium",
+    "Polycentropus flavomaculatus",
+    "Psychomyia pusilla",
+    "Spirosperma ferox",
+    "Tanypodinae"
+   ]
+  },
+  "year": {
+   "classes_with_field_varying": 37,
+   "ari_median": 0.0567500899415251,
+   "classes_ari_at_least_0.5": 9,
+   "classes_ari_at_least_0.5_list": [
+    "Caenis luctuosa",
+    "Caenis rivulorum",
+    "Centroptilum luteolum",
+    "Ceratopogonidae",
+    "Chironomidae",
+    "Cloeon",
+    "Hydrachnidia",
+    "Orthotrichia",
+    "Tanypodinae"
+   ]
+  },
+  "site": {
+   "classes_with_field_varying": 40,
+   "ari_median": 0.013479327731852168,
+   "classes_ari_at_least_0.5": 1,
+   "classes_ari_at_least_0.5_list": [
+    "Micronecta"
+   ]
+  }
+ },
+ "8_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
+  "credible multiple groups": {
+   "classes": 23,
+   "dataset_ari_at_least_0.5": 12
+  },
+  "inconclusive": {
+   "classes": 17,
+   "dataset_ari_at_least_0.5": 7
+  },
+  "one Gaussian favoured": {
+   "classes": 1,
+   "dataset_ari_at_least_0.5": 1
+  }
+ },
+ "16_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
+  "credible multiple groups": {
+   "classes": 21,
+   "dataset_ari_at_least_0.5": 7
+  },
+  "inconclusive": {
+   "classes": 11,
+   "dataset_ari_at_least_0.5": 6
+  },
+  "insufficient evidence": {
+   "classes": 7,
+   "dataset_ari_at_least_0.5": 4
+  },
+  "one Gaussian favoured": {
+   "classes": 2,
+   "dataset_ari_at_least_0.5": 0
+  }
+ },
+ "train_classes_by_number_of_datasets": {
+  "1": 1,
+  "2": 5,
+  "3": 18,
+  "4": 17
+ }
+}

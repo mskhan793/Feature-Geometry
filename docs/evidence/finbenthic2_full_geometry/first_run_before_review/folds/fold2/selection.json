@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Elmis_aenea",
+  "Limnius_volckmari",
+  "Oulimnius_tuberculatus"
+ ],
+ "candidate_single": [
+  "Amphinemura_borealis",
+  "Taeniopteryx_nebulosa"
+ ],
+ "all": [
+  "Elmis_aenea",
+  "Limnius_volckmari",
+  "Oulimnius_tuberculatus",
+  "Amphinemura_borealis",
+  "Taeniopteryx_nebulosa"
+ ],
+ "montage_specimens": {
+  "Elmis_aenea": {
+   "component_0": [
+    "Elmis_aen1",
+    "Elmis_aen10",
+    "Elmis_aen101",
+    "Elmis_aen102"
+   ],
+   "component_1": [
+    "Elmis_aen173",
+    "Elmis_aen174",
+    "Elmis_aen175",
+    "Elmis_aen177"
+   ],
+   "outliers_lowest_G1_density": [
+    "Elmis_aen317",
+    "Elmis_aen43"
+   ]
+  },
+  "Limnius_volckmari": {
+   "component_0": [
+    "Limnius_vol1",
+    "Limnius_vol10",
+    "Limnius_vol100",
+    "Limnius_vol102"
+   ],
+   "component_1": [
+    "Limnius_vol181",
+    "Limnius_vol183",
+    "Limnius_vol184",
+    "Limnius_vol186"
+   ],
+   "outliers_lowest_G1_density": [
+    "Limnius_vol271",
+    "Limnius_vol183"
+   ]
+  },
+  "Oulimnius_tuberculatus": {
+   "component_0": [
+    "Oulimnius_tub100",
+    "Oulimnius_tub101",
+    "Oulimnius_tub104",
+    "Oulimnius_tub105"
+   ],
+   "component_1": [
+    "Oulimnius_tub135",
+    "Oulimnius_tub137",
+    "Oulimnius_tub138",
+    "Oulimnius_tub139"
+   ],
+   "outliers_lowest_G1_density": [
+    "Oulimnius_tub304",
+    "Oulimnius_tub238"
+   ]
+  },
+  "Amphinemura_borealis": {
+   "component_0": [
+    "Amphinemura_bor257",
+    "Amphinemura_bor169",
+    "Amphinemura_bor296",
+    "Amphinemura_bor188"
+   ],
+   "component_1": [
+    "Amphinemura_bor60",
+    "Amphinemura_bor125",
+    "Amphinemura_bor41",
+    "Amphinemura_bor313"
+   ],
+   "outliers_lowest_G1_density": [
+    "Amphinemura_bor65",
+    "Amphinemura_bor307"
+   ]
+  },
+  "Taeniopteryx_nebulosa": {
+   "component_0": [
+    "Taeniopteryx_neb67",
+    "Taeniopteryx_neb323",
+    "Taeniopteryx_neb295",
+    "Taeniopteryx_neb288"
+   ],
+   "component_1": [
+    "Taeniopteryx_neb229",
+    "Taeniopteryx_neb179",
+    "Taeniopteryx_neb100",
+    "Taeniopteryx_neb158"
+   ],
+   "outliers_lowest_G1_density": [
+    "Taeniopteryx_neb331",
+    "Taeniopteryx_neb286"
+   ]
+  }
+ }
+}

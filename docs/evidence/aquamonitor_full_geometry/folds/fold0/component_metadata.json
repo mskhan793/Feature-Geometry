@@ -222,34 +222,38 @@
   }
  },
  "8_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
-  "credible multiple groups": {
-   "classes": 23,
-   "dataset_ari_at_least_0.5": 12
-  },
   "inconclusive": {
-   "classes": 17,
+   "classes": 15,
    "dataset_ari_at_least_0.5": 7
   },
-  "one Gaussian favoured": {
-   "classes": 1,
+  "insufficient evidence": {
+   "classes": 2,
+   "dataset_ari_at_least_0.5": 0
+  },
+  "mixture-supported split (exploratory)": {
+   "classes": 22,
+   "dataset_ari_at_least_0.5": 12
+  },
+  "single Gaussian predicts better": {
+   "classes": 2,
    "dataset_ari_at_least_0.5": 1
   }
  },
  "16_pcs_train_dataset_ari_at_least_0.5_by_verdict": {
-  "credible multiple groups": {
-   "classes": 21,
+  "inconclusive": {
+   "classes": 12,
    "dataset_ari_at_least_0.5": 7
   },
-  "inconclusive": {
-   "classes": 11,
-   "dataset_ari_at_least_0.5": 6
-  },
   "insufficient evidence": {
-   "classes": 7,
+   "classes": 9,
    "dataset_ari_at_least_0.5": 4
   },
-  "one Gaussian favoured": {
-   "classes": 2,
+  "mixture-supported split (exploratory)": {
+   "classes": 19,
+   "dataset_ari_at_least_0.5": 6
+  },
+  "single Gaussian predicts better": {
+   "classes": 1,
    "dataset_ari_at_least_0.5": 0
   }
  },

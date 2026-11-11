@@ -99,14 +99,23 @@ def summarise(name: str, runs: Path, baseline: Path, field: str, out: Path) -> d
 
     labels = []
     for f in FOLDS:
-        m = pd.read_csv(runs / f / "per_class_modality.csv")[["taxon_group", "pcs", "verdict", "n_train", "n_val"]]
-        labels.append(m.assign(fold=f))
+        m = pd.read_csv(runs / f / "per_class_modality.csv")
+        reliable = (m.G1_full_status == "ok") & (m.G2_tied_status == "ok")
+        ci = m["G2_tied-G1_full_ci95"].map(lambda s: json.loads(s) if isinstance(s, str) else [float("nan")] * 2)
+        labels.append(m[["taxon_group", "pcs", "verdict", "n_train", "n_val"]].assign(
+            fold=f, g2_diff=m["G2_tied-G1_full"].where(reliable), g2_ci_lo=ci.str[0].where(reliable),
+            g2_ci_hi=ci.str[1].where(reliable)))
     labels = pd.concat(labels)
     v = labels.pivot_table(index=["taxon_group", "pcs"], columns="fold", values="verdict", aggfunc="first")
     v = v.reindex(columns=FOLDS).fillna(NOT_ANALYSED)
-    for col in ("n_train", "n_val"):
-        n = labels.pivot_table(index=["taxon_group", "pcs"], columns="fold", values=col, aggfunc="first")
+    for col in ("n_train", "n_val", "g2_diff", "g2_ci_lo", "g2_ci_hi"):  # G2_tied - G1_full: reliable fits only
+        n = labels.pivot_table(index=["taxon_group", "pcs"], columns="fold", values=col, aggfunc="first", dropna=False)
         v = v.join(n.reindex(columns=FOLDS).add_prefix(f"{col}_"))
+    diffs = v[[f"g2_diff_{f}" for f in FOLDS]]
+    v["g2_diff_mean"], v["g2_diff_min"], v["g2_diff_max"] = diffs.mean(1), diffs.min(1), diffs.max(1)
+    v["g2_folds_reliable"] = diffs.notna().sum(1)
+    v["g2_folds_ci_above_0"] = (v[[f"g2_ci_lo_{f}" for f in FOLDS]] > 0).sum(1)
+    v["g2_folds_ci_below_0"] = (v[[f"g2_ci_hi_{f}" for f in FOLDS]] < 0).sum(1)
     v["folds_supported"] = (v[FOLDS] == SUPPORTED).sum(axis=1)
     v["folds_single_gaussian_better"] = (v[FOLDS] == WORSE).sum(axis=1)
     v["folds_analysed"] = (v[FOLDS] != NOT_ANALYSED).sum(axis=1)

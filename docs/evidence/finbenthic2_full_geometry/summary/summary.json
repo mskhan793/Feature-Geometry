@@ -1,302 +1,596 @@
 {
  "dataset": "FIN-Benthic2",
- "note": "five folds share specimens: fold results are correlated repeats",
+ "note": "five folds share specimens: fold results are correlated repeats; averaged interval endpoints are descriptive",
  "across_folds": {
   "classes": {
    "mean": 35.0,
    "min": 34.0,
-   "max": 36.0
+   "max": 36.0,
+   "folds": 5
   },
   "classes_insufficient": {
    "mean": 4.0,
    "min": 3.0,
-   "max": 5.0
+   "max": 5.0,
+   "folds": 5
   },
   "specimens_train": {
    "mean": 6163.2,
    "min": 6160.0,
-   "max": 6165.0
+   "max": 6165.0,
+   "folds": 5
   },
   "specimens_val": {
    "mean": 1541.6,
    "min": 1540.0,
-   "max": 1543.0
+   "max": 1543.0,
+   "folds": 5
   },
   "pairs_dprime_val_below_2_share": {
    "mean": 0.015777947542653426,
    "min": 0.013445378151260505,
-   "max": 0.01904761904761905
+   "max": 0.01904761904761905,
+   "folds": 5
   },
   "pairs_dprime_val_median": {
    "mean": 5.408630386159157,
    "min": 5.203508823576373,
-   "max": 5.490802016940475
+   "max": 5.490802016940475,
+   "folds": 5
   },
   "effective_rank_median": {
    "mean": 35.77455458809673,
    "min": 34.667648163842635,
-   "max": 36.44173015576908
+   "max": 36.44173015576908,
+   "folds": 5
   },
   "effective_rank_n30_median": {
-   "mean": 16.663016876787093,
-   "min": 16.380390147218968,
-   "max": 16.92187667530317
+   "mean": 16.689731155181903,
+   "min": 16.402165326215734,
+   "max": 16.928512672134758,
+   "folds": 5
+  },
+  "effective_rank_n30_classes": {
+   "mean": 34.0,
+   "min": 34.0,
+   "max": 34.0,
+   "folds": 5
   },
   "pcs8_classes_fitted": {
    "mean": 35.0,
    "min": 34.0,
-   "max": 36.0
+   "max": 36.0,
+   "folds": 5
   },
-  "pcs8_credible multiple groups": {
-   "mean": 10.4,
-   "min": 8.0,
-   "max": 13.0
+  "pcs8_mixture-supported split (exploratory)": {
+   "mean": 7.6,
+   "min": 6.0,
+   "max": 9.0,
+   "folds": 5
   },
   "pcs8_inconclusive": {
    "mean": 23.0,
    "min": 20.0,
-   "max": 26.0
+   "max": 25.0,
+   "folds": 5
   },
-  "pcs8_one Gaussian favoured": {
-   "mean": 0.4,
-   "min": 0.0,
-   "max": 1.0
+  "pcs8_single Gaussian predicts better": {
+   "mean": 2.6,
+   "min": 2.0,
+   "max": 3.0,
+   "folds": 5
   },
   "pcs8_insufficient evidence": {
-   "mean": 1.2,
+   "mean": 1.8,
    "min": 0.0,
-   "max": 3.0
+   "max": 4.0,
+   "folds": 5
   },
   "pcs8_split_stable": {
-   "mean": 18.0,
-   "min": 15.0,
-   "max": 21.0
+   "mean": 16.4,
+   "min": 14.0,
+   "max": 21.0,
+   "folds": 5
   },
   "pcs8_both_views_same_component_median": {
    "mean": 0.8280170369487522,
    "min": 0.7916666666666666,
-   "max": 0.8627423629515971
+   "max": 0.8627423629515971,
+   "folds": 5
+  },
+  "pcs8_other_mixture_above_0_classes": {
+   "mean": 11.8,
+   "min": 10.0,
+   "max": 13.0,
+   "folds": 5
+  },
+  "pcs8_common_classes": {
+   "mean": 23.4,
+   "min": 21.0,
+   "max": 26.0,
+   "folds": 5
+  },
+  "pcs8_G2_tied-G1_full_classes_included": {
+   "mean": 33.2,
+   "min": 32.0,
+   "max": 34.0,
+   "folds": 5
+  },
+  "pcs8_G2_tied-G1_full_classes_excluded_unreliable": {
+   "mean": 1.8,
+   "min": 0.0,
+   "max": 4.0,
+   "folds": 5
   },
   "pcs8_G2_tied-G1_full": {
-   "mean": -0.056632255111126,
-   "min": -0.1691696837308657,
-   "max": 0.08233365056575481
+   "mean": 0.05744156603534169,
+   "min": 0.00014872882776779828,
+   "max": 0.1165959284803818,
+   "folds": 5
   },
   "pcs8_G2_tied-G1_full_ci_lo": {
-   "mean": -0.199187836666689,
-   "min": -0.3501334484472129,
-   "max": 0.024055845425655437
+   "mean": -0.019462643458263148,
+   "min": -0.09347457082684135,
+   "max": 0.050105925661389925,
+   "folds": 5
   },
   "pcs8_G2_tied-G1_full_ci_hi": {
-   "mean": 0.06588420220949709,
-   "min": -0.009961878665692654,
-   "max": 0.13609614322033362
+   "mean": 0.1286206348047517,
+   "min": 0.08097705831187799,
+   "max": 0.17724182635887217,
+   "folds": 5
+  },
+  "pcs8_G2_tied-G1_full_allfits": {
+   "mean": -0.056632255111126,
+   "min": -0.1691696837308657,
+   "max": 0.08233365056575481,
+   "folds": 5
+  },
+  "pcs8_common_G2_tied-G1_full": {
+   "mean": 0.1932799706051887,
+   "min": 0.1553648236381769,
+   "max": 0.21886003223303796,
+   "folds": 5
+  },
+  "pcs8_G3_tied-G1_full_classes_included": {
+   "mean": 27.2,
+   "min": 26.0,
+   "max": 29.0,
+   "folds": 5
+  },
+  "pcs8_G3_tied-G1_full_classes_excluded_unreliable": {
+   "mean": 7.2,
+   "min": 5.0,
+   "max": 9.0,
+   "folds": 5
   },
   "pcs8_G3_tied-G1_full": {
-   "mean": -0.3073318362199896,
-   "min": -1.5889508340231762,
-   "max": 0.10160253721048053
+   "mean": 0.16231367609118924,
+   "min": 0.07181550614206542,
+   "max": 0.2419663565468681,
+   "folds": 5
   },
   "pcs8_G3_tied-G1_full_ci_lo": {
-   "mean": -0.9202580222728273,
-   "min": -4.140136051478066,
-   "max": 0.009874922782591772
+   "mean": 0.07222278783679575,
+   "min": -0.03971760845876848,
+   "max": 0.1535300722356676,
+   "folds": 5
   },
   "pcs8_G3_tied-G1_full_ci_hi": {
-   "mean": 0.12866061015234515,
-   "min": 0.10377563083723333,
-   "max": 0.18451106205807438
+   "mean": 0.24342958335701673,
+   "min": 0.17530223763704356,
+   "max": 0.3182115910725006,
+   "folds": 5
+  },
+  "pcs8_G3_tied-G1_full_allfits": {
+   "mean": -0.3073318362199896,
+   "min": -1.5889508340231762,
+   "max": 0.10160253721048053,
+   "folds": 5
+  },
+  "pcs8_common_G3_tied-G1_full": {
+   "mean": 0.26571649136151443,
+   "min": 0.23919722221155282,
+   "max": 0.3158236654296988,
+   "folds": 5
+  },
+  "pcs8_G2_full-G1_full_classes_included": {
+   "mean": 32.2,
+   "min": 31.0,
+   "max": 33.0,
+   "folds": 5
+  },
+  "pcs8_G2_full-G1_full_classes_excluded_unreliable": {
+   "mean": 1.8,
+   "min": 1.0,
+   "max": 3.0,
+   "folds": 5
   },
   "pcs8_G2_full-G1_full": {
-   "mean": -0.16750637854718406,
-   "min": -0.28022609493503886,
-   "max": -0.020500737309360292
+   "mean": -0.13050399957646203,
+   "min": -0.22911467088093906,
+   "max": 0.02546946470772847,
+   "folds": 5
   },
   "pcs8_G2_full-G1_full_ci_lo": {
-   "mean": -0.3995307867421075,
-   "min": -0.6102688060506668,
-   "max": -0.17985914020512025
+   "mean": -0.3685248789795659,
+   "min": -0.5632862115677492,
+   "max": -0.1349468642555306,
+   "folds": 5
   },
   "pcs8_G2_full-G1_full_ci_hi": {
-   "mean": 0.03135321909847975,
-   "min": -0.04591168919268941,
-   "max": 0.12156430697174345
+   "mean": 0.0760631262443388,
+   "min": -0.04383569464143436,
+   "max": 0.17350030571235495,
+   "folds": 5
+  },
+  "pcs8_G2_full-G1_full_allfits": {
+   "mean": -0.16750637854718406,
+   "min": -0.28022609493503886,
+   "max": -0.020500737309360292,
+   "folds": 5
+  },
+  "pcs8_common_G2_full-G1_full": {
+   "mean": 0.23752590980001767,
+   "min": 0.1869709714671359,
+   "max": 0.293200045689167,
+   "folds": 5
+  },
+  "pcs8_G3_full-G1_full_classes_included": {
+   "mean": 26.6,
+   "min": 25.0,
+   "max": 29.0,
+   "folds": 5
+  },
+  "pcs8_G3_full-G1_full_classes_excluded_unreliable": {
+   "mean": 7.4,
+   "min": 5.0,
+   "max": 9.0,
+   "folds": 5
   },
   "pcs8_G3_full-G1_full": {
-   "mean": -0.6254526842841555,
-   "min": -0.8699747531575094,
-   "max": -0.3342378486282723
+   "mean": -0.08716946398499496,
+   "min": -0.29498734316168,
+   "max": 0.08725437720959818,
+   "folds": 5
   },
   "pcs8_G3_full-G1_full_ci_lo": {
-   "mean": -1.0174389040609373,
-   "min": -1.2263087544576066,
-   "max": -0.6319325198398242
+   "mean": -0.2973960728590691,
+   "min": -0.6687928610751432,
+   "max": -0.03695562959757409,
+   "folds": 5
   },
   "pcs8_G3_full-G1_full_ci_hi": {
-   "mean": -0.2967296838787946,
-   "min": -0.5145996621255545,
-   "max": -0.0925002521126531
+   "mean": 0.08649236558350352,
+   "min": -0.02414821630159914,
+   "max": 0.19882049784656722,
+   "folds": 5
   },
-  "pcs8_log_image_area_associated": {
-   "mean": 15.6,
+  "pcs8_G3_full-G1_full_allfits": {
+   "mean": -0.6254526842841555,
+   "min": -0.8699747531575094,
+   "max": -0.3342378486282723,
+   "folds": 5
+  },
+  "pcs8_common_G3_full-G1_full": {
+   "mean": 0.06061697801626006,
+   "min": -0.04324593097122013,
+   "max": 0.1465321438152307,
+   "folds": 5
+  },
+  "pcs8_train_log_image_area_associated": {
+   "mean": 15.2,
    "min": 13.0,
-   "max": 17.0
+   "max": 16.0,
+   "folds": 5
   },
-  "pcs8_credible_and_log_image_area_associated": {
-   "mean": 4.8,
-   "min": 4.0,
-   "max": 6.0
+  "pcs8_train_supported_and_log_image_area_associated": {
+   "mean": 3.4,
+   "min": 2.0,
+   "max": 4.0,
+   "folds": 5
+  },
+  "pcs8_val_log_image_area_associated": {
+   "mean": 14.8,
+   "min": 11.0,
+   "max": 19.0,
+   "folds": 5
+  },
+  "pcs8_val_supported_and_log_image_area_associated": {
+   "mean": 3.4,
+   "min": 2.0,
+   "max": 5.0,
+   "folds": 5
   },
   "pcs16_classes_fitted": {
    "mean": 34.0,
    "min": 34.0,
-   "max": 34.0
+   "max": 34.0,
+   "folds": 5
   },
-  "pcs16_credible multiple groups": {
-   "mean": 7.4,
-   "min": 6.0,
-   "max": 10.0
+  "pcs16_mixture-supported split (exploratory)": {
+   "mean": 6.0,
+   "min": 5.0,
+   "max": 7.0,
+   "folds": 5
   },
   "pcs16_inconclusive": {
-   "mean": 21.0,
-   "min": 18.0,
-   "max": 23.0
+   "mean": 19.8,
+   "min": 16.0,
+   "max": 23.0,
+   "folds": 5
   },
-  "pcs16_one Gaussian favoured": {
-   "mean": 2.2,
-   "min": 0.0,
-   "max": 5.0
+  "pcs16_single Gaussian predicts better": {
+   "mean": 4.4,
+   "min": 2.0,
+   "max": 7.0,
+   "folds": 5
   },
   "pcs16_insufficient evidence": {
-   "mean": 3.4,
-   "min": 1.0,
-   "max": 5.0
+   "mean": 3.8,
+   "min": 2.0,
+   "max": 5.0,
+   "folds": 5
   },
   "pcs16_split_stable": {
-   "mean": 13.2,
-   "min": 12.0,
-   "max": 16.0
+   "mean": 11.4,
+   "min": 9.0,
+   "max": 14.0,
+   "folds": 5
   },
   "pcs16_both_views_same_component_median": {
    "mean": 0.8321067135692687,
    "min": 0.818359375,
-   "max": 0.8396844049017962
+   "max": 0.8396844049017962,
+   "folds": 5
+  },
+  "pcs16_other_mixture_above_0_classes": {
+   "mean": 7.6,
+   "min": 7.0,
+   "max": 8.0,
+   "folds": 5
+  },
+  "pcs16_common_classes": {
+   "mean": 12.6,
+   "min": 10.0,
+   "max": 16.0,
+   "folds": 5
+  },
+  "pcs16_G2_tied-G1_full_classes_included": {
+   "mean": 30.2,
+   "min": 29.0,
+   "max": 32.0,
+   "folds": 5
+  },
+  "pcs16_G2_tied-G1_full_classes_excluded_unreliable": {
+   "mean": 3.8,
+   "min": 2.0,
+   "max": 5.0,
+   "folds": 5
   },
   "pcs16_G2_tied-G1_full": {
-   "mean": -0.07500843212172462,
-   "min": -0.20518992421776158,
-   "max": 0.0012335412916405007
+   "mean": 0.010523767694023339,
+   "min": -0.12172447040356744,
+   "max": 0.07070426802412884,
+   "folds": 5
   },
   "pcs16_G2_tied-G1_full_ci_lo": {
-   "mean": -0.21919920192299505,
-   "min": -0.4504791535722181,
-   "max": -0.08841781665865255
+   "mean": -0.09189591197764693,
+   "min": -0.3116709938598814,
+   "max": -0.013762017146004854,
+   "folds": 5
   },
   "pcs16_G2_tied-G1_full_ci_hi": {
-   "mean": 0.03890335449363166,
-   "min": -0.0277743592660618,
-   "max": 0.08296742264618194
+   "mean": 0.09458841973354344,
+   "min": 0.010557427678343794,
+   "max": 0.14736665099526014,
+   "folds": 5
+  },
+  "pcs16_G2_tied-G1_full_allfits": {
+   "mean": -0.07500843212172462,
+   "min": -0.20518992421776158,
+   "max": 0.0012335412916405007,
+   "folds": 5
+  },
+  "pcs16_common_G2_tied-G1_full": {
+   "mean": 0.25487181623531185,
+   "min": 0.1565443055641053,
+   "max": 0.43670189825214056,
+   "folds": 5
+  },
+  "pcs16_G3_tied-G1_full_classes_included": {
+   "mean": 22.2,
+   "min": 21.0,
+   "max": 23.0,
+   "folds": 5
+  },
+  "pcs16_G3_tied-G1_full_classes_excluded_unreliable": {
+   "mean": 11.8,
+   "min": 11.0,
+   "max": 13.0,
+   "folds": 5
   },
   "pcs16_G3_tied-G1_full": {
-   "mean": -0.2598660833878786,
-   "min": -0.34270341708946794,
-   "max": -0.181447320449626
+   "mean": 0.08604967552255734,
+   "min": 0.030216999951052034,
+   "max": 0.17045620624720206,
+   "folds": 5
   },
   "pcs16_G3_tied-G1_full_ci_lo": {
-   "mean": -0.49276789208294713,
-   "min": -0.5948541782497057,
-   "max": -0.335802918833915
+   "mean": -0.02528638625331788,
+   "min": -0.1836614349302704,
+   "max": 0.09340876166996481,
+   "folds": 5
   },
   "pcs16_G3_tied-G1_full_ci_hi": {
-   "mean": -0.06255890629852404,
-   "min": -0.1507022246748265,
-   "max": 0.024185084899140077
+   "mean": 0.18096200265773055,
+   "min": 0.12483765331130653,
+   "max": 0.24531805592053008,
+   "folds": 5
+  },
+  "pcs16_G3_tied-G1_full_allfits": {
+   "mean": -0.2598660833878786,
+   "min": -0.34270341708946794,
+   "max": -0.181447320449626,
+   "folds": 5
+  },
+  "pcs16_common_G3_tied-G1_full": {
+   "mean": 0.3072857794791407,
+   "min": 0.12714048134666828,
+   "max": 0.5256936558665032,
+   "folds": 5
+  },
+  "pcs16_G2_full-G1_full_classes_included": {
+   "mean": 24.6,
+   "min": 22.0,
+   "max": 26.0,
+   "folds": 5
+  },
+  "pcs16_G2_full-G1_full_classes_excluded_unreliable": {
+   "mean": 7.4,
+   "min": 6.0,
+   "max": 9.0,
+   "folds": 5
   },
   "pcs16_G2_full-G1_full": {
-   "mean": -1.8436608534074186,
-   "min": -4.174988984475898,
-   "max": -0.6920626626604013
+   "mean": -0.25313531618998475,
+   "min": -0.7497854494716663,
+   "max": -0.08436647172545797,
+   "folds": 5
   },
   "pcs16_G2_full-G1_full_ci_lo": {
-   "mean": -2.944759756271778,
-   "min": -6.751960132705053,
-   "max": -1.231410533791195
+   "mean": -0.4466186053494091,
+   "min": -1.0045370768860757,
+   "max": -0.23752071481923429,
+   "folds": 5
   },
   "pcs16_G2_full-G1_full_ci_hi": {
-   "mean": -0.9159825028397479,
-   "min": -1.9828945629693902,
-   "max": -0.2705841059642638
+   "mean": -0.06978056718776948,
+   "min": -0.5078672474594136,
+   "max": 0.0913842478607926,
+   "folds": 5
+  },
+  "pcs16_G2_full-G1_full_allfits": {
+   "mean": -1.8436608534074186,
+   "min": -4.174988984475898,
+   "max": -0.6920626626604013,
+   "folds": 5
+  },
+  "pcs16_common_G2_full-G1_full": {
+   "mean": 0.20641536871603136,
+   "min": -0.08710433818766436,
+   "max": 0.4863741385552416,
+   "folds": 5
+  },
+  "pcs16_G3_full-G1_full_classes_included": {
+   "mean": 13.6,
+   "min": 11.0,
+   "max": 17.0,
+   "folds": 5
+  },
+  "pcs16_G3_full-G1_full_classes_excluded_unreliable": {
+   "mean": 17.4,
+   "min": 14.0,
+   "max": 20.0,
+   "folds": 5
   },
   "pcs16_G3_full-G1_full": {
-   "mean": -1.942279963671816,
-   "min": -2.376502898279173,
-   "max": -1.638753766684934
+   "mean": -0.4767613263499414,
+   "min": -0.8263510432523943,
+   "max": -0.13102610492313183,
+   "folds": 5
   },
   "pcs16_G3_full-G1_full_ci_lo": {
-   "mean": -2.6331625435586004,
-   "min": -3.056273247401931,
-   "max": -2.234623351529221
+   "mean": -0.7616895659535035,
+   "min": -1.1608601264924066,
+   "max": -0.448348821712251,
+   "folds": 5
   },
   "pcs16_G3_full-G1_full_ci_hi": {
-   "mean": -1.3542112651819342,
-   "min": -1.7612053437504878,
-   "max": -1.0191230961969915
+   "mean": -0.2031381607356823,
+   "min": -0.5106907728904616,
+   "max": 0.163735266866539,
+   "folds": 5
   },
-  "pcs16_log_image_area_associated": {
-   "mean": 11.4,
+  "pcs16_G3_full-G1_full_allfits": {
+   "mean": -1.942279963671816,
+   "min": -2.376502898279173,
+   "max": -1.638753766684934,
+   "folds": 5
+  },
+  "pcs16_common_G3_full-G1_full": {
+   "mean": -0.3941480431286302,
+   "min": -0.6171791384161268,
+   "max": 0.09084265281061703,
+   "folds": 5
+  },
+  "pcs16_train_log_image_area_associated": {
+   "mean": 11.6,
    "min": 9.0,
-   "max": 13.0
+   "max": 13.0,
+   "folds": 5
   },
-  "pcs16_credible_and_log_image_area_associated": {
-   "mean": 2.8,
+  "pcs16_train_supported_and_log_image_area_associated": {
+   "mean": 2.4,
    "min": 1.0,
-   "max": 4.0
+   "max": 3.0,
+   "folds": 5
+  },
+  "pcs16_val_log_image_area_associated": {
+   "mean": 11.6,
+   "min": 9.0,
+   "max": 15.0,
+   "folds": 5
+  },
+  "pcs16_val_supported_and_log_image_area_associated": {
+   "mean": 2.4,
+   "min": 1.0,
+   "max": 3.0,
+   "folds": 5
   }
  },
  "folds_ci_above_0": {
-  "pcs8_G2_tied-G1_full": 1,
-  "pcs8_G3_tied-G1_full": 1,
+  "pcs8_G2_tied-G1_full": 2,
+  "pcs8_G3_tied-G1_full": 4,
   "pcs8_G2_full-G1_full": 0,
   "pcs8_G3_full-G1_full": 0,
   "pcs16_G2_tied-G1_full": 0,
-  "pcs16_G3_tied-G1_full": 0,
+  "pcs16_G3_tied-G1_full": 2,
   "pcs16_G2_full-G1_full": 0,
   "pcs16_G3_full-G1_full": 0
  },
  "folds_ci_below_0": {
-  "pcs8_G2_tied-G1_full": 1,
+  "pcs8_G2_tied-G1_full": 0,
   "pcs8_G3_tied-G1_full": 0,
-  "pcs8_G2_full-G1_full": 2,
-  "pcs8_G3_full-G1_full": 5,
-  "pcs16_G2_tied-G1_full": 1,
-  "pcs16_G3_tied-G1_full": 4,
-  "pcs16_G2_full-G1_full": 5,
-  "pcs16_G3_full-G1_full": 5
+  "pcs8_G2_full-G1_full": 1,
+  "pcs8_G3_full-G1_full": 1,
+  "pcs16_G2_tied-G1_full": 0,
+  "pcs16_G3_tied-G1_full": 0,
+  "pcs16_G2_full-G1_full": 2,
+  "pcs16_G3_full-G1_full": 4
  },
- "classes_credible_in_k_folds": {
+ "classes_supported_in_k_folds": {
   "8": {
-   "0": 20,
+   "0": 23,
    "1": 3,
    "2": 3,
    "3": 2,
-   "4": 3,
-   "5": 5
+   "4": 2,
+   "5": 3
   },
   "16": {
-   "0": 22,
-   "1": 3,
-   "3": 5,
-   "4": 1,
+   "0": 25,
+   "1": 1,
+   "2": 1,
+   "3": 4,
    "5": 3
   }
  },
- "classes_credible_in_all_folds": {
+ "classes_supported_in_all_folds": {
   "8": [
    "Elmis_aenea",
    "Micrasema_gelidum",
-   "Micrasema_setiferum",
-   "Oulimnius_tuberculatus",
-   "Simuliidae"
+   "Oulimnius_tuberculatus"
   ],
   "16": [
    "Elmis_aenea",
@@ -304,8 +598,19 @@
    "Oulimnius_tuberculatus"
   ]
  },
+ "classes_analysed_in_k_folds": {
+  "8": {
+   "2": 1,
+   "3": 1,
+   "5": 34
+  },
+  "16": {
+   "5": 34
+  }
+ },
  "pairs": {
-  "in_all_folds": 561,
+  "measured_in_all_folds": 561,
+  "measured_in_some_fold": 630,
   "spearman_dprime_val_between_folds_min_median_max": [
    0.8634960130930405,
    0.9100675857531624,
@@ -319,73 +624,83 @@
     "mean": 0.8177574162,
     "min": 0.5564260601,
     "max": 1.0231646024,
-    "folds_below_2": 5
+    "folds_below_2": 5,
+    "folds_available": 5
    },
    {
     "pair": "Plectrocnemia_sp | Polycentropus_flavomaculatus",
     "mean": 1.3035479141,
     "min": 0.9052330427,
     "max": 1.7217729788,
-    "folds_below_2": 5
+    "folds_below_2": 5,
+    "folds_available": 5
    },
    {
     "pair": "Leuctra_nigra | Leuctra_sp",
     "mean": 1.4115264163,
     "min": 0.8837499387,
     "max": 1.7751130564,
-    "folds_below_2": 3
+    "folds_below_2": 3,
+    "folds_available": 3
    },
    {
     "pair": "Baetis_rhodani | Baetis_vernus_group",
     "mean": 1.4721844071,
     "min": 1.0682560661,
     "max": 1.8501560261,
-    "folds_below_2": 5
+    "folds_below_2": 5,
+    "folds_available": 5
    },
    {
     "pair": "Elmis_aenea | Oulimnius_tuberculatus",
     "mean": 1.4869783924,
     "min": 1.4319578008,
     "max": 1.5800660874,
-    "folds_below_2": 5
+    "folds_below_2": 5,
+    "folds_available": 5
    },
    {
     "pair": "Plectrocnemia_sp | Polycentropus_irroratus",
     "mean": 1.5051918305,
     "min": 1.0665027666,
     "max": 1.8996578008,
-    "folds_below_2": 5
+    "folds_below_2": 5,
+    "folds_available": 5
    },
    {
     "pair": "Lepidostoma_hirtum | Micrasema_setiferum",
     "mean": 1.703811662,
     "min": 1.4662984747,
     "max": 2.0596903253,
-    "folds_below_2": 4
+    "folds_below_2": 4,
+    "folds_available": 5
    },
    {
     "pair": "Heptagenia_sulphurea | Kageronia_fuscogrisea",
     "mean": 1.7690054155,
     "min": 1.3751103507,
     "max": 2.0750665119,
-    "folds_below_2": 4
+    "folds_below_2": 4,
+    "folds_available": 5
    },
    {
     "pair": "Micrasema_gelidum | Micrasema_setiferum",
     "mean": 1.7700534433,
     "min": 1.4824476293,
     "max": 2.12320398,
-    "folds_below_2": 4
+    "folds_below_2": 4,
+    "folds_available": 5
    },
    {
     "pair": "Kageronia_fuscogrisea | Leptophlebia_sp",
     "mean": 1.8899379577,
     "min": 1.3390763151,
     "max": 2.2899868606,
-    "folds_below_2": 2
+    "folds_below_2": 2,
+    "folds_available": 5
    }
   ]
  },
  "classes_same_nearest_class_in_all_folds": 13,
- "classes_with_nearest_class": 36
+ "classes_with_nearest_class_in_all_folds": 34
 }

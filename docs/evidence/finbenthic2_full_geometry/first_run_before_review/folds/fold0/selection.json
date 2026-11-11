@@ -1,0 +1,111 @@
+{
+ "pcs": 16,
+ "candidate_groups": [
+  "Elmis_aenea",
+  "Limnius_volckmari",
+  "Oulimnius_tuberculatus"
+ ],
+ "candidate_single": [
+  "Amphinemura_borealis",
+  "Sphaerium_sp"
+ ],
+ "all": [
+  "Elmis_aenea",
+  "Limnius_volckmari",
+  "Oulimnius_tuberculatus",
+  "Amphinemura_borealis",
+  "Sphaerium_sp"
+ ],
+ "montage_specimens": {
+  "Elmis_aenea": {
+   "component_0": [
+    "Elmis_aen173",
+    "Elmis_aen175",
+    "Elmis_aen176",
+    "Elmis_aen177"
+   ],
+   "component_1": [
+    "Elmis_aen10",
+    "Elmis_aen101",
+    "Elmis_aen102",
+    "Elmis_aen106"
+   ],
+   "outliers_lowest_G1_density": [
+    "Elmis_aen345",
+    "Elmis_aen253"
+   ]
+  },
+  "Limnius_volckmari": {
+   "component_0": [
+    "Limnius_vol1",
+    "Limnius_vol10",
+    "Limnius_vol101",
+    "Limnius_vol102"
+   ],
+   "component_1": [
+    "Limnius_vol181",
+    "Limnius_vol185",
+    "Limnius_vol186",
+    "Limnius_vol190"
+   ],
+   "outliers_lowest_G1_density": [
+    "Limnius_vol192",
+    "Limnius_vol311"
+   ]
+  },
+  "Oulimnius_tuberculatus": {
+   "component_0": [
+    "Oulimnius_tub1",
+    "Oulimnius_tub10",
+    "Oulimnius_tub101",
+    "Oulimnius_tub102"
+   ],
+   "component_1": [
+    "Oulimnius_tub134",
+    "Oulimnius_tub135",
+    "Oulimnius_tub136",
+    "Oulimnius_tub137"
+   ],
+   "outliers_lowest_G1_density": [
+    "Oulimnius_tub32",
+    "Oulimnius_tub295"
+   ]
+  },
+  "Amphinemura_borealis": {
+   "component_0": [
+    "Amphinemura_bor5",
+    "Amphinemura_bor171",
+    "Amphinemura_bor91",
+    "Amphinemura_bor208"
+   ],
+   "component_1": [
+    "Amphinemura_bor109",
+    "Amphinemura_bor60",
+    "Amphinemura_bor14",
+    "Amphinemura_bor38"
+   ],
+   "outliers_lowest_G1_density": [
+    "Amphinemura_bor314",
+    "Amphinemura_bor292"
+   ]
+  },
+  "Sphaerium_sp": {
+   "component_0": [
+    "Sphaerium19",
+    "Sphaerium102",
+    "Sphaerium7",
+    "Sphaerium91"
+   ],
+   "component_1": [
+    "Sphaerium29",
+    "Sphaerium49",
+    "Sphaerium10",
+    "Sphaerium86"
+   ],
+   "outliers_lowest_G1_density": [
+    "Sphaerium112",
+    "Sphaerium5"
+   ]
+  }
+ }
+}

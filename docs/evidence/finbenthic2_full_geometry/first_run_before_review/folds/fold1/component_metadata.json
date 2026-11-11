@@ -1,0 +1,90 @@
+{
+ "8_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.2843137254901962,
+   "classes_auc_outside_0.2_0.8": 15,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Agapetus_sp",
+    "Baetis_vernus_group",
+    "Ephemerella_mucronata",
+    "Heptagenia_sulphurea",
+    "Hydraena_sp",
+    "Isoperla_sp",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "8_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 35,
+   "abs_auc_minus_half_median": 0.25,
+   "classes_auc_outside_0.2_0.8": 15,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Agapetus_sp",
+    "Baetis_vernus_group",
+    "Ephemerella_mucronata",
+    "Heptagenia_sulphurea",
+    "Isoperla_sp",
+    "Lepidostoma_hirtum",
+    "Leuctra_sp",
+    "Micrasema_gelidum",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_train": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.23175705467372135,
+   "classes_auc_outside_0.2_0.8": 11,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Baetis_rhodani",
+    "Ephemerella_aurivillii",
+    "Isoperla_sp",
+    "Leuctra_sp",
+    "Limnius_volckmari",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ },
+ "16_pcs_val": {
+  "log_image_area": {
+   "classes_with_two_components": 34,
+   "abs_auc_minus_half_median": 0.19738448685817103,
+   "classes_auc_outside_0.2_0.8": 11,
+   "classes_auc_outside_0.2_0.8_list": [
+    "Diura_sp",
+    "Ephemerella_aurivillii",
+    "Limnius_volckmari",
+    "Micrasema_gelidum",
+    "Neureclipsis_bimaculata",
+    "Oulimnius_tuberculatus",
+    "Plectrocnemia_sp",
+    "Polycentropus_flavomaculatus",
+    "Silo_pallipes",
+    "Simuliidae",
+    "Taeniopteryx_nebulosa"
+   ]
+  }
+ }
+}
