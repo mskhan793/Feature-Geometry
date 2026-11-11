@@ -1,0 +1,109 @@
+{
+ "dataset": "aquamonitor",
+ "source_sha256": "d6e63bb60df5300a6ccf83090b46a019446d3f91c03c69e479345b8bb13570c1",
+ "rule": {
+  "frames_per_specimen_camera": 10
+ },
+ "eligible": {
+  "images": 2708023,
+  "specimens": 42165,
+  "classes": 42
+ },
+ "specimens_per_fold": {
+  "fold0": {
+   "train": 29346,
+   "val": 4386,
+   "test": 8433
+  },
+  "fold1": {
+   "train": 29346,
+   "val": 4386,
+   "test": 8433
+  },
+  "fold2": {
+   "train": 29346,
+   "val": 4386,
+   "test": 8433
+  },
+  "fold3": {
+   "train": 29346,
+   "val": 4386,
+   "test": 8433
+  },
+  "fold4": {
+   "train": 29346,
+   "val": 4386,
+   "test": 8433
+  }
+ },
+ "checks": "per fold no specimen in two partitions; each specimen in test in exactly one fold",
+ "selected": {
+  "images": 836159,
+  "specimens": 42165,
+  "specimens_one_camera": 203
+ },
+ "selected_images_per_fold": {
+  "fold0": {
+   "train": 581807,
+   "val": 87011,
+   "test": 167341
+  },
+  "fold1": {
+   "train": 581914,
+   "val": 86930,
+   "test": 167315
+  },
+  "fold2": {
+   "train": 582015,
+   "val": 87024,
+   "test": 167120
+  },
+  "fold3": {
+   "train": 581914,
+   "val": 87149,
+   "test": 167096
+  },
+  "fold4": {
+   "train": 581893,
+   "val": 86979,
+   "test": 167287
+  }
+ },
+ "train_specimens_per_class_min_median_max": [
+  31,
+  129.0,
+  7436
+ ],
+ "val_specimens_per_class_min_median_max": [
+  3,
+  19.5,
+  1122
+ ],
+ "available_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 20.0,
+  "median": 27.0,
+  "p75": 37.0,
+  "max": 547.0
+ },
+ "selected_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 10.0,
+  "median": 10.0,
+  "p75": 10.0,
+  "max": 10.0
+ },
+ "specimen_cameras_below_frame_cap": 1713,
+ "reuse": {
+  "sources": [],
+  "reused_images": 0,
+  "new_images": 836159
+ },
+ "overlap_only": {
+  "/home/aijyu/Documents/Research/Feature_geometry_data/expanded_cohort/cohort/cohort.parquet": 196983
+ },
+ "feature_storage_gb_float32_1024": {
+  "selection": 3.42,
+  "new": 3.42
+ }
+}

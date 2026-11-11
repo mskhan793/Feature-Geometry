@@ -1,10 +1,10 @@
 #!/bin/bash
 # FIN-Benthic2 fold-0 geometry replication (task.md 366ee62). Features are extracted on LUMI
-# (scripts/lumi/finbenthic2_extract.sh, at the author's request); everything else runs on the Dell. Stages, in order:
+# (scripts/lumi/extract_dinov3_l.sh, at the author's request); everything else runs on the Dell. Stages, in order:
 #   cohort     frozen-CSV and fold-0 checks + precommitted selection (<= 200 train specimens/taxon, all val,
 #              <= 10 frames/camera) + resource audit
 #   pack       all FIN-Benthic2 images into one verified HDF5 (for the copy to LUMI) + cohort_hdf5.parquet
-#   [LUMI]     copy the HDF5 and cohort_hdf5.parquet to /flash, run finbenthic2_extract.sh, copy the cache back to
+#   [LUMI]     copy the HDF5 and cohort_hdf5.parquet to /flash, run extract_dinov3_l.sh, copy the cache back to
 #              $OUT/features_lumi/dinov3_l
 #   verify     check the copied cache covers cohort_hdf5.parquet exactly
 #   geometry   within-/between-class geometry and one-vs-several Gaussians (8 and 16 PCs); no source field

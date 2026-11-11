@@ -1,0 +1,113 @@
+{
+ "dataset": "finbenthic2",
+ "source_sha256": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257",
+ "rule": {
+  "frames_per_specimen_camera": 10
+ },
+ "eligible": {
+  "images": 460004,
+  "specimens": 9631,
+  "classes": 39
+ },
+ "specimens_per_fold": {
+  "fold0": {
+   "train": 6165,
+   "val": 1542,
+   "test": 1924
+  },
+  "fold1": {
+   "train": 6165,
+   "val": 1540,
+   "test": 1926
+  },
+  "fold2": {
+   "train": 6163,
+   "val": 1541,
+   "test": 1927
+  },
+  "fold3": {
+   "train": 6163,
+   "val": 1542,
+   "test": 1926
+  },
+  "fold4": {
+   "train": 6160,
+   "val": 1543,
+   "test": 1928
+  }
+ },
+ "checks": "per fold no specimen in two partitions; each specimen in test in exactly one fold",
+ "selected": {
+  "images": 186284,
+  "specimens": 9631,
+  "specimens_one_camera": 291
+ },
+ "selected_images_per_fold": {
+  "fold0": {
+   "train": 119094,
+   "val": 29885,
+   "test": 37305
+  },
+  "fold1": {
+   "train": 119151,
+   "val": 29882,
+   "test": 37251
+  },
+  "fold2": {
+   "train": 119218,
+   "val": 29806,
+   "test": 37260
+  },
+  "fold3": {
+   "train": 119123,
+   "val": 29898,
+   "test": 37263
+  },
+  "fold4": {
+   "train": 119156,
+   "val": 29923,
+   "test": 37205
+  }
+ },
+ "train_specimens_per_class_min_median_max": [
+  8,
+  143.0,
+  567
+ ],
+ "val_specimens_per_class_min_median_max": [
+  1,
+  37.0,
+  150
+ ],
+ "available_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 21.0,
+  "median": 25.0,
+  "p75": 28.0,
+  "max": 50.0
+ },
+ "selected_frames_per_specimen_camera": {
+  "min": 1.0,
+  "p25": 10.0,
+  "median": 10.0,
+  "p75": 10.0,
+  "max": 10.0
+ },
+ "specimen_cameras_below_frame_cap": 732,
+ "reuse": {
+  "sources": [
+   "/home/aijyu/Documents/Research/Feature_geometry_data/finbenthic2_fold0/cohort/cohort_hdf5.parquet"
+  ],
+  "reused_images": 128937,
+  "new_images": 57347
+ },
+ "overlap_only": {},
+ "feature_storage_gb_float32_1024": {
+  "selection": 0.76,
+  "new": 0.23
+ },
+ "image_width_height_median": [
+  108.0,
+  96.0
+ ]
+}

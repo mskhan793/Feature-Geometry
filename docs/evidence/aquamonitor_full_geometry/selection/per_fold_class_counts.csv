@@ -1,0 +1,631 @@
+taxon_group,fold,partition,specimens,images
+Asellus aquaticus,fold0,train,2101,41532
+Caenis horaria,fold0,train,2869,57108
+Caenis luctuosa,fold0,train,348,6889
+Caenis rivulorum,fold0,train,36,720
+Centroptilum luteolum,fold0,train,58,1148
+Ceratopogonidae,fold0,train,609,11881
+Chironomidae,fold0,train,7414,147005
+Cloeon,fold0,train,85,1697
+Cloeon dipterum,fold0,train,105,2095
+Cyrnus flavidus,fold0,train,77,1540
+Cyrnus trimaculatus,fold0,train,122,2440
+Ecnomus tenellus,fold0,train,137,2740
+Ephemera vulgata,fold0,train,203,3968
+Erpobdella octoculata,fold0,train,107,2117
+Gyraulus,fold0,train,111,1612
+Helobdella stagnalis,fold0,train,181,3577
+Heptagenia dalecarlica,fold0,train,135,2697
+Hydrachnidia,fold0,train,322,6407
+Hydroptila,fold0,train,70,1353
+Kageronia fuscogrisea,fold0,train,2003,39933
+Lepidostoma hirtum,fold0,train,234,4662
+Leptophlebia,fold0,train,4893,97727
+Limnephilidae,fold0,train,60,1199
+Limnephilus,fold0,train,86,1630
+Micronecta,fold0,train,500,10000
+Mystacides,fold0,train,37,722
+Mystacides azurea,fold0,train,96,1888
+Oligochaeta,fold0,train,2091,41329
+Orthotrichia,fold0,train,42,820
+Oulimnius tuberculatus,fold0,train,1710,34037
+Oulimnius tuberculatus adult,fold0,train,219,4377
+Pedicia,fold0,train,40,777
+Pisidium,fold0,train,61,818
+Polycentropus flavomaculatus,fold0,train,92,1840
+Psychomyia pusilla,fold0,train,124,2480
+Sialis,fold0,train,40,669
+Sisyra,fold0,train,37,740
+Spirosperma ferox,fold0,train,177,3530
+Stylaria lacustris,fold0,train,320,6354
+Tanypodinae,fold0,train,550,10915
+Tinodes waeneri,fold0,train,762,15195
+Turbellaria,fold0,train,82,1639
+Asellus aquaticus,fold0,val,338,6700
+Caenis horaria,fold0,val,417,8261
+Caenis luctuosa,fold0,val,52,1040
+Caenis rivulorum,fold0,val,7,140
+Centroptilum luteolum,fold0,val,10,200
+Ceratopogonidae,fold0,val,109,2131
+Chironomidae,fold0,val,1100,21821
+Cloeon,fold0,val,9,180
+Cloeon dipterum,fold0,val,15,300
+Cyrnus flavidus,fold0,val,14,280
+Cyrnus trimaculatus,fold0,val,20,400
+Ecnomus tenellus,fold0,val,20,400
+Ephemera vulgata,fold0,val,24,479
+Erpobdella octoculata,fold0,val,24,479
+Gyraulus,fold0,val,9,116
+Helobdella stagnalis,fold0,val,29,571
+Heptagenia dalecarlica,fold0,val,21,420
+Hydrachnidia,fold0,val,54,1079
+Hydroptila,fold0,val,16,310
+Kageronia fuscogrisea,fold0,val,304,6048
+Lepidostoma hirtum,fold0,val,31,620
+Leptophlebia,fold0,val,747,14940
+Limnephilidae,fold0,val,7,140
+Limnephilus,fold0,val,18,357
+Micronecta,fold0,val,82,1640
+Mystacides,fold0,val,8,150
+Mystacides azurea,fold0,val,19,370
+Oligochaeta,fold0,val,275,5423
+Orthotrichia,fold0,val,6,114
+Oulimnius tuberculatus,fold0,val,242,4836
+Oulimnius tuberculatus adult,fold0,val,22,440
+Pedicia,fold0,val,8,160
+Pisidium,fold0,val,7,117
+Polycentropus flavomaculatus,fold0,val,13,260
+Psychomyia pusilla,fold0,val,12,240
+Sialis,fold0,val,6,104
+Sisyra,fold0,val,3,60
+Spirosperma ferox,fold0,val,23,460
+Stylaria lacustris,fold0,val,56,1108
+Tanypodinae,fold0,val,87,1683
+Tinodes waeneri,fold0,val,108,2154
+Turbellaria,fold0,val,14,280
+Asellus aquaticus,fold0,test,610,12044
+Caenis horaria,fold0,test,822,16389
+Caenis luctuosa,fold0,test,100,2000
+Caenis rivulorum,fold0,test,10,200
+Centroptilum luteolum,fold0,test,18,360
+Ceratopogonidae,fold0,test,180,3483
+Chironomidae,fold0,test,2129,42238
+Cloeon,fold0,test,23,460
+Cloeon dipterum,fold0,test,30,586
+Cyrnus flavidus,fold0,test,22,415
+Cyrnus trimaculatus,fold0,test,36,720
+Ecnomus tenellus,fold0,test,40,800
+Ephemera vulgata,fold0,test,57,1114
+Erpobdella octoculata,fold0,test,33,647
+Gyraulus,fold0,test,30,442
+Helobdella stagnalis,fold0,test,52,1035
+Heptagenia dalecarlica,fold0,test,39,780
+Hydrachnidia,fold0,test,94,1869
+Hydroptila,fold0,test,21,420
+Kageronia fuscogrisea,fold0,test,577,11516
+Lepidostoma hirtum,fold0,test,66,1293
+Leptophlebia,fold0,test,1410,28166
+Limnephilidae,fold0,test,17,340
+Limnephilus,fold0,test,26,497
+Micronecta,fold0,test,145,2900
+Mystacides,fold0,test,11,220
+Mystacides azurea,fold0,test,28,550
+Oligochaeta,fold0,test,591,11663
+Orthotrichia,fold0,test,12,240
+Oulimnius tuberculatus,fold0,test,487,9723
+Oulimnius tuberculatus adult,fold0,test,61,1220
+Pedicia,fold0,test,13,260
+Pisidium,fold0,test,17,247
+Polycentropus flavomaculatus,fold0,test,26,520
+Psychomyia pusilla,fold0,test,33,660
+Sialis,fold0,test,12,233
+Sisyra,fold0,test,10,200
+Spirosperma ferox,fold0,test,50,999
+Stylaria lacustris,fold0,test,94,1880
+Tanypodinae,fold0,test,159,3174
+Tinodes waeneri,fold0,test,218,4360
+Turbellaria,fold0,test,24,478
+Asellus aquaticus,fold1,train,2142,42345
+Caenis horaria,fold1,train,2850,56749
+Caenis luctuosa,fold1,train,348,6907
+Caenis rivulorum,fold1,train,35,700
+Centroptilum luteolum,fold1,train,53,1057
+Ceratopogonidae,fold1,train,642,12463
+Chironomidae,fold1,train,7416,147139
+Cloeon,fold1,train,75,1498
+Cloeon dipterum,fold1,train,99,1965
+Cyrnus flavidus,fold1,train,85,1675
+Cyrnus trimaculatus,fold1,train,127,2540
+Ecnomus tenellus,fold1,train,139,2780
+Ephemera vulgata,fold1,train,201,3932
+Erpobdella octoculata,fold1,train,110,2164
+Gyraulus,fold1,train,101,1467
+Helobdella stagnalis,fold1,train,194,3829
+Heptagenia dalecarlica,fold1,train,131,2620
+Hydrachnidia,fold1,train,331,6585
+Hydroptila,fold1,train,76,1482
+Kageronia fuscogrisea,fold1,train,2003,39937
+Lepidostoma hirtum,fold1,train,224,4453
+Leptophlebia,fold1,train,4856,96997
+Limnephilidae,fold1,train,61,1220
+Limnephilus,fold1,train,94,1826
+Micronecta,fold1,train,499,9980
+Mystacides,fold1,train,38,742
+Mystacides azurea,fold1,train,94,1848
+Oligochaeta,fold1,train,2072,40839
+Orthotrichia,fold1,train,39,764
+Oulimnius tuberculatus,fold1,train,1694,33766
+Oulimnius tuberculatus adult,fold1,train,206,4118
+Pedicia,fold1,train,44,857
+Pisidium,fold1,train,60,853
+Polycentropus flavomaculatus,fold1,train,91,1820
+Psychomyia pusilla,fold1,train,121,2420
+Sialis,fold1,train,41,703
+Sisyra,fold1,train,36,720
+Spirosperma ferox,fold1,train,182,3630
+Stylaria lacustris,fold1,train,335,6660
+Tanypodinae,fold1,train,548,10851
+Tinodes waeneri,fold1,train,767,15296
+Turbellaria,fold1,train,86,1717
+Asellus aquaticus,fold1,val,297,5868
+Caenis horaria,fold1,val,437,8688
+Caenis luctuosa,fold1,val,52,1040
+Caenis rivulorum,fold1,val,7,140
+Centroptilum luteolum,fold1,val,16,320
+Ceratopogonidae,fold1,val,76,1493
+Chironomidae,fold1,val,1098,21689
+Cloeon,fold1,val,19,380
+Cloeon dipterum,fold1,val,21,420
+Cyrnus flavidus,fold1,val,6,120
+Cyrnus trimaculatus,fold1,val,15,300
+Ecnomus tenellus,fold1,val,18,360
+Ephemera vulgata,fold1,val,27,538
+Erpobdella octoculata,fold1,val,21,419
+Gyraulus,fold1,val,19,265
+Helobdella stagnalis,fold1,val,16,318
+Heptagenia dalecarlica,fold1,val,25,500
+Hydrachnidia,fold1,val,45,900
+Hydroptila,fold1,val,10,200
+Kageronia fuscogrisea,fold1,val,304,6044
+Lepidostoma hirtum,fold1,val,40,792
+Leptophlebia,fold1,val,784,15680
+Limnephilidae,fold1,val,7,140
+Limnephilus,fold1,val,10,170
+Micronecta,fold1,val,83,1660
+Mystacides,fold1,val,7,140
+Mystacides azurea,fold1,val,20,400
+Oligochaeta,fold1,val,294,5848
+Orthotrichia,fold1,val,9,180
+Oulimnius tuberculatus,fold1,val,257,5106
+Oulimnius tuberculatus adult,fold1,val,36,720
+Pedicia,fold1,val,5,100
+Pisidium,fold1,val,8,99
+Polycentropus flavomaculatus,fold1,val,13,260
+Psychomyia pusilla,fold1,val,14,280
+Sialis,fold1,val,6,100
+Sisyra,fold1,val,4,80
+Spirosperma ferox,fold1,val,18,359
+Stylaria lacustris,fold1,val,41,820
+Tanypodinae,fold1,val,88,1734
+Tinodes waeneri,fold1,val,103,2060
+Turbellaria,fold1,val,10,200
+Asellus aquaticus,fold1,test,610,12063
+Caenis horaria,fold1,test,821,16321
+Caenis luctuosa,fold1,test,100,1982
+Caenis rivulorum,fold1,test,11,220
+Centroptilum luteolum,fold1,test,17,331
+Ceratopogonidae,fold1,test,180,3539
+Chironomidae,fold1,test,2129,42236
+Cloeon,fold1,test,23,459
+Cloeon dipterum,fold1,test,30,596
+Cyrnus flavidus,fold1,test,22,440
+Cyrnus trimaculatus,fold1,test,36,720
+Ecnomus tenellus,fold1,test,40,800
+Ephemera vulgata,fold1,test,56,1091
+Erpobdella octoculata,fold1,test,33,660
+Gyraulus,fold1,test,30,438
+Helobdella stagnalis,fold1,test,52,1036
+Heptagenia dalecarlica,fold1,test,39,777
+Hydrachnidia,fold1,test,94,1870
+Hydroptila,fold1,test,21,401
+Kageronia fuscogrisea,fold1,test,577,11516
+Lepidostoma hirtum,fold1,test,67,1330
+Leptophlebia,fold1,test,1410,28156
+Limnephilidae,fold1,test,16,319
+Limnephilus,fold1,test,26,488
+Micronecta,fold1,test,145,2900
+Mystacides,fold1,test,11,210
+Mystacides azurea,fold1,test,29,560
+Oligochaeta,fold1,test,591,11728
+Orthotrichia,fold1,test,12,230
+Oulimnius tuberculatus,fold1,test,488,9724
+Oulimnius tuberculatus adult,fold1,test,60,1199
+Pedicia,fold1,test,12,240
+Pisidium,fold1,test,17,230
+Polycentropus flavomaculatus,fold1,test,27,540
+Psychomyia pusilla,fold1,test,34,680
+Sialis,fold1,test,11,203
+Sisyra,fold1,test,10,200
+Spirosperma ferox,fold1,test,50,1000
+Stylaria lacustris,fold1,test,94,1862
+Tanypodinae,fold1,test,160,3187
+Tinodes waeneri,fold1,test,218,4353
+Turbellaria,fold1,test,24,480
+Asellus aquaticus,fold2,train,2104,41606
+Caenis horaria,fold2,train,2864,57036
+Caenis luctuosa,fold2,train,345,6868
+Caenis rivulorum,fold2,train,39,780
+Centroptilum luteolum,fold2,train,61,1208
+Ceratopogonidae,fold2,train,627,12255
+Chironomidae,fold2,train,7392,146507
+Cloeon,fold2,train,77,1537
+Cloeon dipterum,fold2,train,108,2142
+Cyrnus flavidus,fold2,train,79,1555
+Cyrnus trimaculatus,fold2,train,125,2500
+Ecnomus tenellus,fold2,train,137,2740
+Ephemera vulgata,fold2,train,200,3901
+Erpobdella octoculata,fold2,train,112,2205
+Gyraulus,fold2,train,104,1490
+Helobdella stagnalis,fold2,train,184,3644
+Heptagenia dalecarlica,fold2,train,138,2757
+Hydrachnidia,fold2,train,318,6339
+Hydroptila,fold2,train,78,1513
+Kageronia fuscogrisea,fold2,train,1981,39502
+Lepidostoma hirtum,fold2,train,228,4515
+Leptophlebia,fold2,train,4945,98770
+Limnephilidae,fold2,train,58,1159
+Limnephilus,fold2,train,93,1787
+Micronecta,fold2,train,509,10180
+Mystacides,fold2,train,41,802
+Mystacides azurea,fold2,train,95,1860
+Oligochaeta,fold2,train,2065,40842
+Orthotrichia,fold2,train,41,794
+Oulimnius tuberculatus,fold2,train,1708,34061
+Oulimnius tuberculatus adult,fold2,train,210,4199
+Pedicia,fold2,train,43,837
+Pisidium,fold2,train,63,886
+Polycentropus flavomaculatus,fold2,train,93,1860
+Psychomyia pusilla,fold2,train,114,2280
+Sialis,fold2,train,42,761
+Sisyra,fold2,train,35,700
+Spirosperma ferox,fold2,train,170,3395
+Stylaria lacustris,fold2,train,322,6412
+Tanypodinae,fold2,train,559,11093
+Tinodes waeneri,fold2,train,757,15100
+Turbellaria,fold2,train,82,1637
+Asellus aquaticus,fold2,val,335,6615
+Caenis horaria,fold2,val,423,8426
+Caenis luctuosa,fold2,val,55,1084
+Caenis rivulorum,fold2,val,3,60
+Centroptilum luteolum,fold2,val,8,160
+Ceratopogonidae,fold2,val,92,1783
+Chironomidae,fold2,val,1122,22300
+Cloeon,fold2,val,16,320
+Cloeon dipterum,fold2,val,12,240
+Cyrnus flavidus,fold2,val,11,220
+Cyrnus trimaculatus,fold2,val,18,360
+Ecnomus tenellus,fold2,val,21,420
+Ephemera vulgata,fold2,val,27,538
+Erpobdella octoculata,fold2,val,19,380
+Gyraulus,fold2,val,16,250
+Helobdella stagnalis,fold2,val,26,514
+Heptagenia dalecarlica,fold2,val,18,360
+Hydrachnidia,fold2,val,58,1160
+Hydroptila,fold2,val,7,140
+Kageronia fuscogrisea,fold2,val,326,6496
+Lepidostoma hirtum,fold2,val,37,740
+Leptophlebia,fold2,val,695,13873
+Limnephilidae,fold2,val,9,180
+Limnephilus,fold2,val,11,195
+Micronecta,fold2,val,72,1440
+Mystacides,fold2,val,4,70
+Mystacides azurea,fold2,val,19,370
+Oligochaeta,fold2,val,300,5891
+Orthotrichia,fold2,val,7,140
+Oulimnius tuberculatus,fold2,val,243,4835
+Oulimnius tuberculatus adult,fold2,val,32,640
+Pedicia,fold2,val,6,120
+Pisidium,fold2,val,5,70
+Polycentropus flavomaculatus,fold2,val,12,240
+Psychomyia pusilla,fold2,val,21,420
+Sialis,fold2,val,5,98
+Sisyra,fold2,val,5,100
+Spirosperma ferox,fold2,val,30,599
+Stylaria lacustris,fold2,val,54,1062
+Tanypodinae,fold2,val,78,1560
+Tinodes waeneri,fold2,val,114,2275
+Turbellaria,fold2,val,14,280
+Asellus aquaticus,fold2,test,610,12055
+Caenis horaria,fold2,test,821,16296
+Caenis luctuosa,fold2,test,100,1977
+Caenis rivulorum,fold2,test,11,220
+Centroptilum luteolum,fold2,test,17,340
+Ceratopogonidae,fold2,test,179,3457
+Chironomidae,fold2,test,2129,42257
+Cloeon,fold2,test,24,480
+Cloeon dipterum,fold2,test,30,599
+Cyrnus flavidus,fold2,test,23,460
+Cyrnus trimaculatus,fold2,test,35,700
+Ecnomus tenellus,fold2,test,39,780
+Ephemera vulgata,fold2,test,57,1122
+Erpobdella octoculata,fold2,test,33,658
+Gyraulus,fold2,test,30,430
+Helobdella stagnalis,fold2,test,52,1025
+Heptagenia dalecarlica,fold2,test,39,780
+Hydrachnidia,fold2,test,94,1856
+Hydroptila,fold2,test,22,430
+Kageronia fuscogrisea,fold2,test,577,11499
+Lepidostoma hirtum,fold2,test,66,1320
+Leptophlebia,fold2,test,1410,28190
+Limnephilidae,fold2,test,17,340
+Limnephilus,fold2,test,26,502
+Micronecta,fold2,test,146,2920
+Mystacides,fold2,test,11,220
+Mystacides azurea,fold2,test,29,578
+Oligochaeta,fold2,test,592,11682
+Orthotrichia,fold2,test,12,240
+Oulimnius tuberculatus,fold2,test,488,9700
+Oulimnius tuberculatus adult,fold2,test,60,1198
+Pedicia,fold2,test,12,240
+Pisidium,fold2,test,17,226
+Polycentropus flavomaculatus,fold2,test,26,520
+Psychomyia pusilla,fold2,test,34,680
+Sialis,fold2,test,11,147
+Sisyra,fold2,test,10,200
+Spirosperma ferox,fold2,test,50,995
+Stylaria lacustris,fold2,test,94,1868
+Tanypodinae,fold2,test,159,3119
+Tinodes waeneri,fold2,test,217,4334
+Turbellaria,fold2,test,24,480
+Asellus aquaticus,fold3,train,2158,42664
+Caenis horaria,fold3,train,2852,56732
+Caenis luctuosa,fold3,train,337,6681
+Caenis rivulorum,fold3,train,38,760
+Centroptilum luteolum,fold3,train,63,1248
+Ceratopogonidae,fold3,train,623,12151
+Chironomidae,fold3,train,7436,147500
+Cloeon,fold3,train,84,1678
+Cloeon dipterum,fold3,train,103,2041
+Cyrnus flavidus,fold3,train,85,1675
+Cyrnus trimaculatus,fold3,train,122,2440
+Ecnomus tenellus,fold3,train,141,2820
+Ephemera vulgata,fold3,train,193,3772
+Erpobdella octoculata,fold3,train,113,2246
+Gyraulus,fold3,train,104,1507
+Helobdella stagnalis,fold3,train,188,3726
+Heptagenia dalecarlica,fold3,train,137,2737
+Hydrachnidia,fold3,train,317,6296
+Hydroptila,fold3,train,77,1483
+Kageronia fuscogrisea,fold3,train,2002,39943
+Lepidostoma hirtum,fold3,train,232,4595
+Leptophlebia,fold3,train,4892,97740
+Limnephilidae,fold3,train,53,1059
+Limnephilus,fold3,train,91,1736
+Micronecta,fold3,train,503,10060
+Mystacides,fold3,train,40,772
+Mystacides azurea,fold3,train,97,1908
+Oligochaeta,fold3,train,2047,40416
+Orthotrichia,fold3,train,40,800
+Oulimnius tuberculatus,fold3,train,1704,33953
+Oulimnius tuberculatus adult,fold3,train,214,4277
+Pedicia,fold3,train,35,689
+Pisidium,fold3,train,58,785
+Polycentropus flavomaculatus,fold3,train,87,1740
+Psychomyia pusilla,fold3,train,120,2400
+Sialis,fold3,train,40,675
+Sisyra,fold3,train,35,700
+Spirosperma ferox,fold3,train,174,3471
+Stylaria lacustris,fold3,train,332,6582
+Tanypodinae,fold3,train,549,10882
+Tinodes waeneri,fold3,train,748,14937
+Turbellaria,fold3,train,82,1637
+Asellus aquaticus,fold3,val,281,5551
+Caenis horaria,fold3,val,434,8668
+Caenis luctuosa,fold3,val,63,1250
+Caenis rivulorum,fold3,val,4,80
+Centroptilum luteolum,fold3,val,6,120
+Ceratopogonidae,fold3,val,96,1881
+Chironomidae,fold3,val,1079,21454
+Cloeon,fold3,val,9,180
+Cloeon dipterum,fold3,val,17,340
+Cyrnus flavidus,fold3,val,5,100
+Cyrnus trimaculatus,fold3,val,21,420
+Ecnomus tenellus,fold3,val,17,340
+Ephemera vulgata,fold3,val,34,674
+Erpobdella octoculata,fold3,val,19,377
+Gyraulus,fold3,val,16,233
+Helobdella stagnalis,fold3,val,21,414
+Heptagenia dalecarlica,fold3,val,19,380
+Hydrachnidia,fold3,val,59,1179
+Hydroptila,fold3,val,8,160
+Kageronia fuscogrisea,fold3,val,306,6089
+Lepidostoma hirtum,fold3,val,33,660
+Leptophlebia,fold3,val,748,14936
+Limnephilidae,fold3,val,14,280
+Limnephilus,fold3,val,13,258
+Micronecta,fold3,val,78,1560
+Mystacides,fold3,val,5,100
+Mystacides azurea,fold3,val,17,340
+Oligochaeta,fold3,val,318,6315
+Orthotrichia,fold3,val,8,150
+Oulimnius tuberculatus,fold3,val,247,4930
+Oulimnius tuberculatus adult,fold3,val,28,560
+Pedicia,fold3,val,14,280
+Pisidium,fold3,val,10,146
+Polycentropus flavomaculatus,fold3,val,18,360
+Psychomyia pusilla,fold3,val,15,300
+Sialis,fold3,val,6,105
+Sisyra,fold3,val,5,100
+Spirosperma ferox,fold3,val,26,519
+Stylaria lacustris,fold3,val,44,880
+Tanypodinae,fold3,val,88,1745
+Tinodes waeneri,fold3,val,123,2455
+Turbellaria,fold3,val,14,280
+Asellus aquaticus,fold3,test,610,12061
+Caenis horaria,fold3,test,822,16358
+Caenis luctuosa,fold3,test,100,1998
+Caenis rivulorum,fold3,test,11,220
+Centroptilum luteolum,fold3,test,17,340
+Ceratopogonidae,fold3,test,179,3463
+Chironomidae,fold3,test,2128,42110
+Cloeon,fold3,test,24,479
+Cloeon dipterum,fold3,test,30,600
+Cyrnus flavidus,fold3,test,23,460
+Cyrnus trimaculatus,fold3,test,35,700
+Ecnomus tenellus,fold3,test,39,780
+Ephemera vulgata,fold3,test,57,1115
+Erpobdella octoculata,fold3,test,32,620
+Gyraulus,fold3,test,30,430
+Helobdella stagnalis,fold3,test,53,1043
+Heptagenia dalecarlica,fold3,test,39,780
+Hydrachnidia,fold3,test,94,1880
+Hydroptila,fold3,test,22,440
+Kageronia fuscogrisea,fold3,test,576,11465
+Lepidostoma hirtum,fold3,test,66,1320
+Leptophlebia,fold3,test,1410,28157
+Limnephilidae,fold3,test,17,340
+Limnephilus,fold3,test,26,490
+Micronecta,fold3,test,146,2920
+Mystacides,fold3,test,11,220
+Mystacides azurea,fold3,test,29,560
+Oligochaeta,fold3,test,592,11684
+Orthotrichia,fold3,test,12,224
+Oulimnius tuberculatus,fold3,test,488,9713
+Oulimnius tuberculatus adult,fold3,test,60,1200
+Pedicia,fold3,test,12,228
+Pisidium,fold3,test,17,251
+Polycentropus flavomaculatus,fold3,test,26,520
+Psychomyia pusilla,fold3,test,34,680
+Sialis,fold3,test,12,226
+Sisyra,fold3,test,10,200
+Spirosperma ferox,fold3,test,50,999
+Stylaria lacustris,fold3,test,94,1880
+Tanypodinae,fold3,test,159,3145
+Tinodes waeneri,fold3,test,217,4317
+Turbellaria,fold3,test,24,480
+Asellus aquaticus,fold4,train,2111,41715
+Caenis horaria,fold4,train,2850,56667
+Caenis luctuosa,fold4,train,356,7095
+Caenis rivulorum,fold4,train,36,720
+Centroptilum luteolum,fold4,train,63,1251
+Ceratopogonidae,fold4,train,619,12013
+Chironomidae,fold4,train,7419,147116
+Cloeon,fold4,train,78,1558
+Cloeon dipterum,fold4,train,103,2041
+Cyrnus flavidus,fold4,train,74,1480
+Cyrnus trimaculatus,fold4,train,127,2540
+Ecnomus tenellus,fold4,train,146,2920
+Ephemera vulgata,fold4,train,194,3811
+Erpobdella octoculata,fold4,train,113,2234
+Gyraulus,fold4,train,101,1456
+Helobdella stagnalis,fold4,train,181,3583
+Heptagenia dalecarlica,fold4,train,143,2857
+Hydrachnidia,fold4,train,323,6429
+Hydroptila,fold4,train,77,1511
+Kageronia fuscogrisea,fold4,train,2002,39911
+Lepidostoma hirtum,fold4,train,231,4583
+Leptophlebia,fold4,train,4921,98327
+Limnephilidae,fold4,train,62,1239
+Limnephilus,fold4,train,92,1737
+Micronecta,fold4,train,501,10020
+Mystacides,fold4,train,37,730
+Mystacides azurea,fold4,train,101,1978
+Oligochaeta,fold4,train,2074,40964
+Orthotrichia,fold4,train,39,764
+Oulimnius tuberculatus,fold4,train,1703,33924
+Oulimnius tuberculatus adult,fold4,train,200,3997
+Pedicia,fold4,train,38,748
+Pisidium,fold4,train,64,905
+Polycentropus flavomaculatus,fold4,train,87,1740
+Psychomyia pusilla,fold4,train,108,2160
+Sialis,fold4,train,41,715
+Sisyra,fold4,train,31,620
+Spirosperma ferox,fold4,train,178,3553
+Stylaria lacustris,fold4,train,318,6330
+Tanypodinae,fold4,train,558,11058
+Tinodes waeneri,fold4,train,763,15235
+Turbellaria,fold4,train,83,1658
+Asellus aquaticus,fold4,val,329,6508
+Caenis horaria,fold4,val,436,8697
+Caenis luctuosa,fold4,val,44,862
+Caenis rivulorum,fold4,val,7,140
+Centroptilum luteolum,fold4,val,6,120
+Ceratopogonidae,fold4,val,99,1929
+Chironomidae,fold4,val,1096,21725
+Cloeon,fold4,val,16,320
+Cloeon dipterum,fold4,val,17,340
+Cyrnus flavidus,fold4,val,16,295
+Cyrnus trimaculatus,fold4,val,15,300
+Ecnomus tenellus,fold4,val,12,240
+Ephemera vulgata,fold4,val,33,631
+Erpobdella octoculata,fold4,val,18,351
+Gyraulus,fold4,val,19,284
+Helobdella stagnalis,fold4,val,28,556
+Heptagenia dalecarlica,fold4,val,13,260
+Hydrachnidia,fold4,val,53,1046
+Hydroptila,fold4,val,9,180
+Kageronia fuscogrisea,fold4,val,305,6085
+Lepidostoma hirtum,fold4,val,34,680
+Leptophlebia,fold4,val,719,14342
+Limnephilidae,fold4,val,5,100
+Limnephilus,fold4,val,12,240
+Micronecta,fold4,val,81,1620
+Mystacides,fold4,val,7,140
+Mystacides azurea,fold4,val,14,270
+Oligochaeta,fold4,val,292,5793
+Orthotrichia,fold4,val,9,170
+Oulimnius tuberculatus,fold4,val,248,4936
+Oulimnius tuberculatus adult,fold4,val,41,820
+Pedicia,fold4,val,11,220
+Pisidium,fold4,val,4,49
+Polycentropus flavomaculatus,fold4,val,18,360
+Psychomyia pusilla,fold4,val,27,540
+Sialis,fold4,val,5,94
+Sisyra,fold4,val,9,180
+Spirosperma ferox,fold4,val,22,440
+Stylaria lacustris,fold4,val,58,1160
+Tanypodinae,fold4,val,79,1567
+Tinodes waeneri,fold4,val,107,2129
+Turbellaria,fold4,val,13,260
+Asellus aquaticus,fold4,test,609,12053
+Caenis horaria,fold4,test,822,16394
+Caenis luctuosa,fold4,test,100,1972
+Caenis rivulorum,fold4,test,10,200
+Centroptilum luteolum,fold4,test,17,337
+Ceratopogonidae,fold4,test,180,3553
+Chironomidae,fold4,test,2128,42223
+Cloeon,fold4,test,23,459
+Cloeon dipterum,fold4,test,30,600
+Cyrnus flavidus,fold4,test,23,460
+Cyrnus trimaculatus,fold4,test,36,720
+Ecnomus tenellus,fold4,test,39,780
+Ephemera vulgata,fold4,test,57,1119
+Erpobdella octoculata,fold4,test,33,658
+Gyraulus,fold4,test,30,430
+Helobdella stagnalis,fold4,test,53,1044
+Heptagenia dalecarlica,fold4,test,39,780
+Hydrachnidia,fold4,test,94,1880
+Hydroptila,fold4,test,21,392
+Kageronia fuscogrisea,fold4,test,577,11501
+Lepidostoma hirtum,fold4,test,66,1312
+Leptophlebia,fold4,test,1410,28164
+Limnephilidae,fold4,test,17,340
+Limnephilus,fold4,test,26,507
+Micronecta,fold4,test,145,2900
+Mystacides,fold4,test,12,222
+Mystacides azurea,fold4,test,28,560
+Oligochaeta,fold4,test,591,11658
+Orthotrichia,fold4,test,12,240
+Oulimnius tuberculatus,fold4,test,488,9736
+Oulimnius tuberculatus adult,fold4,test,61,1220
+Pedicia,fold4,test,12,229
+Pisidium,fold4,test,17,228
+Polycentropus flavomaculatus,fold4,test,26,520
+Psychomyia pusilla,fold4,test,34,680
+Sialis,fold4,test,12,197
+Sisyra,fold4,test,10,200
+Spirosperma ferox,fold4,test,50,996
+Stylaria lacustris,fold4,test,94,1852
+Tanypodinae,fold4,test,159,3147
+Tinodes waeneri,fold4,test,218,4345
+Turbellaria,fold4,test,24,479
