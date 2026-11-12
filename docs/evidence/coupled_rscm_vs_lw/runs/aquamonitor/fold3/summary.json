@@ -1,0 +1,243 @@
+{
+ "fold": "fold3",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 836159,
+  "train_val_used": 669063,
+  "test_rows_dropped": 167096
+ },
+ "train_specimens": 29346,
+ "val_specimens": 4386,
+ "eligible_classes": 41,
+ "excluded_classes": {
+  "Caenis rivulorum": {
+   "train": 38,
+   "val": 4
+  }
+ },
+ "min_train": 15,
+ "min_val": 5,
+ "n_boot": 2000,
+ "seed": 20261112,
+ "authors_code_sha256": "a67e443d18613b2671f6997059cf900a3a51853d5584f7251e6a290b780aa326",
+ "adaptation": {
+  "replace": "C).reshape(4)",
+  "with": "C).reshape(K)"
+ },
+ "by_pcs": {
+  "64": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Centroptilum luteolum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.7591941200944894,
+    0.9828181870027625,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.6856027203560509,
+    0.9313932335177838,
+    0.9980336746979825
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "numerical_failures": [],
+   "all": {
+    "classes": 41,
+    "val_specimens": 4382,
+    "macro_mean": 0.09752656693017905,
+    "macro_ci95": [
+     -0.17116247538980436,
+     0.3961984294007387
+    ],
+    "micro_mean": -0.026275530974234806,
+    "micro_ci95": [
+     -0.06184138947122989,
+     0.01248852546607011
+    ],
+    "class_diff_median": -0.010528250976242088,
+    "classes_coupled_better": 16,
+    "classes_ci_above_0": 2,
+    "classes_ci_below_0": 8
+   },
+   "strata": {
+    "15-63": {
+     "classes": 8,
+     "val_specimens": 68,
+     "macro_mean": 1.233905059753272,
+     "macro_ci95": [
+      0.027018815778674463,
+      2.5933961149260143
+     ],
+     "micro_mean": 1.3958841400508533,
+     "micro_ci95": [
+      0.16414001636206393,
+      2.809531010613969
+     ],
+     "class_diff_median": 1.1160202274447857,
+     "classes_coupled_better": 5,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 1
+    },
+    "64-255": {
+     "classes": 19,
+     "val_specimens": 350,
+     "macro_mean": -0.2492797944885773,
+     "macro_ci95": [
+      -0.5328227988476791,
+      0.07039333654159916
+     ],
+     "micro_mean": -0.31896002267714796,
+     "micro_ci95": [
+      -0.5881631863800715,
+      -0.007372025092430416
+     ],
+     "class_diff_median": -0.25707381561711085,
+     "classes_coupled_better": 8,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 3
+    },
+    ">=256": {
+     "classes": 14,
+     "val_specimens": 3964,
+     "macro_mean": -0.08116679561470473,
+     "macro_ci95": [
+      -0.16199284333460073,
+      0.01352120926054139
+     ],
+     "micro_mean": -0.024829336608363554,
+     "micro_ci95": [
+      -0.04723002913959773,
+      0.0007413563399540244
+     ],
+     "class_diff_median": -0.009663181694460215,
+     "classes_coupled_better": 3,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 4
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -30.202792198155333,
+    "coupled": -30.105265631225148,
+    "pooled_scm": -50.109100553567615,
+    "class_scm": -56.81302519349403,
+    "class_identity": -65.21229607934836
+   }
+  },
+  "16": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Centroptilum luteolum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.6913440570847109,
+    0.9790248021792934,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.7138075504689557,
+    0.9511083892240552,
+    0.9985559030677978
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "numerical_failures": [],
+   "all": {
+    "classes": 41,
+    "val_specimens": 4382,
+    "macro_mean": -0.17347860847304528,
+    "macro_ci95": [
+     -0.22088651686924893,
+     -0.12470356405769722
+    ],
+    "micro_mean": -0.02621199131091416,
+    "micro_ci95": [
+     -0.03419563848390549,
+     -0.017238348943835552
+    ],
+    "class_diff_median": -0.1014438386911739,
+    "classes_coupled_better": 8,
+    "classes_ci_above_0": 0,
+    "classes_ci_below_0": 16
+   },
+   "strata": {
+    "15-63": {
+     "classes": 8,
+     "val_specimens": 68,
+     "macro_mean": -0.36127512333813405,
+     "macro_ci95": [
+      -0.5450323488849436,
+      -0.17416405218007133
+     ],
+     "micro_mean": -0.3174504875479458,
+     "micro_ci95": [
+      -0.5108940927516371,
+      -0.11964393053431754
+     ],
+     "class_diff_median": -0.45273382819618246,
+     "classes_coupled_better": 1,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 4
+    },
+    "64-255": {
+     "classes": 19,
+     "val_specimens": 350,
+     "macro_mean": -0.2054147355459583,
+     "macro_ci95": [
+      -0.2616471384390528,
+      -0.13824149626116597
+     ],
+     "micro_mean": -0.19211440701816038,
+     "micro_ci95": [
+      -0.2467691956403274,
+      -0.12818258130492965
+     ],
+     "class_diff_median": -0.17740883552420525,
+     "classes_coupled_better": 3,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 9
+    },
+    ">=256": {
+     "classes": 14,
+     "val_specimens": 3964,
+     "macro_mean": -0.022824427522612486,
+     "macro_ci95": [
+      -0.04299655995982738,
+      -0.00036511054887955246
+     ],
+     "micro_mean": -0.006567676668720837,
+     "micro_ci95": [
+      -0.012824372575092535,
+      0.0014475617506719818
+     ],
+     "class_diff_median": -0.0070618509060372935,
+     "classes_coupled_better": 4,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 3
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -17.455543019206925,
+    "coupled": -17.62902162767997,
+    "pooled_scm": -22.173313066317018,
+    "class_scm": -17.999024582779555,
+    "class_identity": -23.96069817276693
+   }
+  }
+ }
+}

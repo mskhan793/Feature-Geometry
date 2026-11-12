@@ -1,0 +1,251 @@
+{
+ "fold": "fold0",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 186284,
+  "train_val_used": 148979,
+  "test_rows_dropped": 37305
+ },
+ "train_specimens": 6165,
+ "val_specimens": 1542,
+ "eligible_classes": 36,
+ "excluded_classes": {
+  "Capnopsis_schilleri": {
+   "train": 15,
+   "val": 4
+  },
+  "Hydropsyche_saxonica": {
+   "train": 12,
+   "val": 1
+  },
+  "Nemoura_cinerea": {
+   "train": 12,
+   "val": 3
+  }
+ },
+ "min_train": 15,
+ "min_val": 5,
+ "n_boot": 2000,
+ "seed": 20261112,
+ "authors_code_sha256": "a67e443d18613b2671f6997059cf900a3a51853d5584f7251e6a290b780aa326",
+ "adaptation": {
+  "replace": "C).reshape(4)",
+  "with": "C).reshape(K)"
+ },
+ "by_pcs": {
+  "64": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Agapetus_sp",
+     "Ameletus_inopinatus",
+     "Amphinemura_borealis",
+     "Baetis_rhodani"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.4962163839456367,
+    0.984406316651717,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.4568447431319772,
+    0.9011920995201644,
+    1.0
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 1,
+   "classes_alpha_1": 8,
+   "numerical_failures": [],
+   "all": {
+    "classes": 36,
+    "val_specimens": 1534,
+    "macro_mean": 0.7632292057195671,
+    "macro_ci95": [
+     0.3379690502260466,
+     1.337636533583747
+    ],
+    "micro_mean": 0.1084129086375722,
+    "micro_ci95": [
+     -0.009256797270916635,
+     0.23760784414240574
+    ],
+    "class_diff_median": 0.017316991820723493,
+    "classes_coupled_better": 18,
+    "classes_ci_above_0": 5,
+    "classes_ci_below_0": 4
+   },
+   "strata": {
+    "15-63": {
+     "classes": 6,
+     "val_specimens": 56,
+     "macro_mean": 4.7426266448657515,
+     "macro_ci95": [
+      2.2958862651876126,
+      8.105953132512328
+     ],
+     "micro_mean": 3.221827746533988,
+     "micro_ci95": [
+      1.651501956760206,
+      5.252027428989663
+     ],
+     "class_diff_median": 3.735569708877291,
+     "classes_coupled_better": 5,
+     "classes_ci_above_0": 4,
+     "classes_ci_below_0": 1
+    },
+    "64-255": {
+     "classes": 24,
+     "val_specimens": 941,
+     "macro_mean": -0.04027149457263323,
+     "macro_ci95": [
+      -0.17336143725479586,
+      0.09435922446653239
+     ],
+     "micro_mean": -0.041609323386652186,
+     "micro_ci95": [
+      -0.16366400563112266,
+      0.08509804095405496
+     ],
+     "class_diff_median": -0.08393562814623827,
+     "classes_coupled_better": 11,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 2
+    },
+    ">=256": {
+     "classes": 6,
+     "val_specimens": 537,
+     "macro_mean": -0.002165432257815838,
+     "macro_ci95": [
+      -0.15938616203467132,
+      0.1792281755369268
+     ],
+     "micro_mean": 0.04662462076531118,
+     "micro_ci95": [
+      -0.14616542126672788,
+      0.2646135629991236
+     ],
+     "class_diff_median": -0.13051703468050438,
+     "classes_coupled_better": 2,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 1
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -38.14152065734558,
+    "coupled": -37.37829145162602,
+    "pooled_scm": -51.42036254874247,
+    "class_scm": -84.19874555734431,
+    "class_identity": -66.2793259461766
+   }
+  },
+  "16": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Agapetus_sp",
+     "Ameletus_inopinatus",
+     "Amphinemura_borealis",
+     "Baetis_rhodani"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.4123826645864954,
+    0.9874280531970396,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.678259156814002,
+    0.9147863504453217,
+    1.0
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 1,
+   "classes_alpha_1": 9,
+   "numerical_failures": [],
+   "all": {
+    "classes": 36,
+    "val_specimens": 1534,
+    "macro_mean": -0.0055053758709732335,
+    "macro_ci95": [
+     -0.08707876189787402,
+     0.09091300429104016
+    ],
+    "micro_mean": -0.030664830161900355,
+    "micro_ci95": [
+     -0.05193862057390771,
+     -0.007281415039802944
+    ],
+    "class_diff_median": -0.04070574098251595,
+    "classes_coupled_better": 10,
+    "classes_ci_above_0": 2,
+    "classes_ci_below_0": 9
+   },
+   "strata": {
+    "15-63": {
+     "classes": 6,
+     "val_specimens": 56,
+     "macro_mean": 0.21223885888765057,
+     "macro_ci95": [
+      -0.24638665256697465,
+      0.7842031748438585
+     ],
+     "micro_mean": -0.035471163100100886,
+     "micro_ci95": [
+      -0.3261489255066379,
+      0.32604627735221203
+     ],
+     "class_diff_median": -0.2409897139451995,
+     "classes_coupled_better": 2,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 3
+    },
+    "64-255": {
+     "classes": 24,
+     "val_specimens": 941,
+     "macro_mean": -0.054640606985433306,
+     "macro_ci95": [
+      -0.08040942439152773,
+      -0.02587877995238116
+     ],
+     "micro_mean": -0.036322957929008005,
+     "micro_ci95": [
+      -0.061830446344607506,
+      -0.009664505071019649
+     ],
+     "class_diff_median": -0.04378166894831301,
+     "classes_coupled_better": 6,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 4
+    },
+    ">=256": {
+     "classes": 6,
+     "val_specimens": 537,
+     "macro_mean": -0.02670868617175678,
+     "macro_ci95": [
+      -0.05236750852742646,
+      0.0008300490542676338
+     ],
+     "micro_mean": -0.020248716803636796,
+     "micro_ci95": [
+      -0.04767998081168027,
+      0.012830559146042177
+     ],
+     "class_diff_median": -0.009496163008577018,
+     "classes_coupled_better": 2,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 2
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -17.823221323401626,
+    "coupled": -17.8287266992726,
+    "pooled_scm": -21.38667096344214,
+    "class_scm": -17.884818446932158,
+    "class_identity": -23.63032256362023
+   }
+  }
+ }
+}

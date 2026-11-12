@@ -7,8 +7,12 @@ Folds share specimens (correlated repeats): each fold is reported separately and
   per-fold macro mean / min / max and folds with interval above / below 0;
 - parameters.csv: per PCA dimension and stratum, medians of coupled alpha (kept), shrinkage to identity (1 - alpha),
   beta and LW alpha; shares of beta = 0, beta = 1, alpha = 1; conditioning;
+- corners.csv: per PCA dimension and stratum, mean held-out log-likelihood minus LW of the coupled estimator and of
+  the labelled Eq. (4) corners (pooled SCM, class SCM where n > d, class scaled identity) and class-folds where each
+  beats LW (diagnostic only);
 - reproduction.json: the LW reference against the earlier lw_fit_diagnostics.py per-class output (same folds);
-- examples.csv: instructive taxa (largest mean gain and loss over folds, smallest and largest class, most pooling).
+- examples.csv: instructive taxa (largest mean gain and loss over folds, smallest and largest class, most pooling);
+  examples_by_fold.csv: their per-fold rows.
 Writes these per dataset plus summary.md to --out.
 
 Usage: summarise_coupled_rscm.py --dataset NAME RUNS LW_RUNS ... --out DIR
@@ -24,6 +28,7 @@ import pandas as pd
 
 FOLDS = [f"fold{k}" for k in range(5)]
 STRATA = ["15-63", "64-255", ">=256"]
+CORNERS = ["coupled", "pooled_scm", "class_scm", "class_identity"]  # minus LW; corners are labelled diagnostics
 
 
 def read(runs: Path):
@@ -80,6 +85,12 @@ def summarise(runs: Path, lw_runs: Path, out: Path) -> dict:
                            "lw_condition_median": g.lw_condition.median(),
                            "coupled_condition_median": g.coupled_condition.median()}).reset_index()
     params.to_csv(out / "parameters.csv", index=False)
+    corner = per.assign(**{f"{e}_minus_lw": per[f"val_loglik_{e}"] - per.val_loglik_lw for e in CORNERS})
+    corners = corner.groupby(["pcs", "stratum"]).agg(
+        class_folds=("taxon_group", "size"), class_scm_defined=("status_class_scm", lambda v: (v == "ok").sum()),
+        **{f"{e}_minus_lw_mean": (f"{e}_minus_lw", "mean") for e in CORNERS},
+        **{f"{e}_beats_lw": (f"{e}_minus_lw", lambda v: int((v > 0).sum())) for e in CORNERS}).reset_index()
+    corners.to_csv(out / "corners.csv", index=False)
 
     ref = pd.concat([pd.read_csv(lw_runs / f / "perclass.csv").assign(fold=f) for f in FOLDS], ignore_index=True)
     m = per.merge(ref, on=["fold", "pcs", "taxon_group"], suffixes=("", "_ref"), how="outer", indicator=True)
@@ -95,7 +106,10 @@ def summarise(runs: Path, lw_runs: Path, out: Path) -> dict:
     for d in pcs:
         t = per[per.pcs == d]
         mean = t.groupby("taxon_group").agg(diff=("diff_mean", "mean"), n_train=("n_train", "median"),
-                                            beta=("coupled_beta", "median"), folds=("fold", "size"))
+                                            beta=("coupled_beta", "median"), folds=("fold", "size"),
+                                            lw_shrink=("lw_alpha_shrink", "median"),
+                                            coupled_shrink=("coupled_shrink_to_identity", "median"),
+                                            diff_min=("diff_mean", "min"), diff_max=("diff_mean", "max"))
         pick = {"largest_gain": mean["diff"].idxmax(), "largest_loss": mean["diff"].idxmin(),
                 "smallest_class": mean.n_train.idxmin(), "largest_class": mean.n_train.idxmax(),
                 "most_pooling": mean.beta.idxmin()}
@@ -103,7 +117,12 @@ def summarise(runs: Path, lw_runs: Path, out: Path) -> dict:
             ex.append({"pcs": d, "why": why, "taxon_group": c, **mean.loc[c].to_dict()})
     ex = pd.DataFrame(ex)
     ex.to_csv(out / "examples.csv", index=False)
-    return {"folds": folds, "across": across, "strata": strata, "params": params, "repro": repro, "examples": ex}
+    cols = ["taxon_group", "pcs", "fold", "n_train", "n_val", "lw_alpha_shrink", "coupled_shrink_to_identity", "coupled_beta",
+            "val_loglik_lw", "val_loglik_coupled", "diff_mean", "diff_ci95"]
+    per[per.taxon_group.isin(ex.taxon_group)][cols].sort_values(["taxon_group", "pcs", "fold"]).to_csv(
+        out / "examples_by_fold.csv", index=False)
+    return {"folds": folds, "across": across, "strata": strata, "params": params, "corners": corners, "repro": repro,
+            "examples": ex}
 
 
 def main():
@@ -118,6 +137,7 @@ def main():
                   s["folds"].round(4).to_string(index=False), "", "Across folds (mean, min, max):", "",
                   s["across"].round(4).to_string(), "", "By train-size stratum:", "", s["strata"].round(4).to_string(index=False), "",
                   "Parameters:", "", s["params"].round(4).to_string(index=False), "",
+                  "Corners (diagnostic; minus LW):", "", s["corners"].round(4).to_string(index=False), "",
                   "LW reference vs lw_fit_diagnostics:", "", json.dumps(s["repro"], indent=1), "",
                   "Examples:", "", s["examples"].round(4).to_string(index=False), ""]
     (a.out / "summary.md").write_text("\n".join(lines) + "\n")

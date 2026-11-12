@@ -1,0 +1,255 @@
+{
+ "fold": "fold3",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 186284,
+  "train_val_used": 149021,
+  "test_rows_dropped": 37263
+ },
+ "train_specimens": 6163,
+ "val_specimens": 1542,
+ "eligible_classes": 35,
+ "excluded_classes": {
+  "Capnopsis_schilleri": {
+   "train": 13,
+   "val": 3
+  },
+  "Hydropsyche_saxonica": {
+   "train": 11,
+   "val": 2
+  },
+  "Nemoura_cinerea": {
+   "train": 10,
+   "val": 1
+  },
+  "Sialis_sp": {
+   "train": 17,
+   "val": 4
+  }
+ },
+ "min_train": 15,
+ "min_val": 5,
+ "n_boot": 2000,
+ "seed": 20261112,
+ "authors_code_sha256": "a67e443d18613b2671f6997059cf900a3a51853d5584f7251e6a290b780aa326",
+ "adaptation": {
+  "replace": "C).reshape(4)",
+  "with": "C).reshape(K)"
+ },
+ "by_pcs": {
+  "64": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Agapetus_sp",
+     "Ameletus_inopinatus",
+     "Amphinemura_borealis",
+     "Baetis_rhodani"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.718094339021018,
+    0.9845630445643162,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.4569502217521356,
+    0.9068222107476425,
+    1.0
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 1,
+   "classes_alpha_1": 7,
+   "numerical_failures": [],
+   "all": {
+    "classes": 35,
+    "val_specimens": 1532,
+    "macro_mean": 0.4098496145380226,
+    "macro_ci95": [
+     0.15544310553814636,
+     0.6755479245125686
+    ],
+    "micro_mean": -0.05301829265049686,
+    "micro_ci95": [
+     -0.16298078356186588,
+     0.05548711113301307
+    ],
+    "class_diff_median": -0.08086329201683322,
+    "classes_coupled_better": 17,
+    "classes_ci_above_0": 5,
+    "classes_ci_below_0": 7
+   },
+   "strata": {
+    "15-63": {
+     "classes": 4,
+     "val_specimens": 35,
+     "macro_mean": 4.053768573114875,
+     "macro_ci95": [
+      2.1796100450021014,
+      5.937585139047764
+     ],
+     "micro_mean": 3.853448563069601,
+     "micro_ci95": [
+      2.1477139090451693,
+      5.656825371690417
+     ],
+     "class_diff_median": 4.63227950685002,
+     "classes_coupled_better": 4,
+     "classes_ci_above_0": 4,
+     "classes_ci_below_0": 0
+    },
+    "64-255": {
+     "classes": 25,
+     "val_specimens": 964,
+     "macro_mean": -0.010988065051198799,
+     "macro_ci95": [
+      -0.2151178256913201,
+      0.18972293763683934
+     ],
+     "micro_mean": -0.06582732084572854,
+     "micro_ci95": [
+      -0.22363936894852698,
+      0.07756853219292148
+     ],
+     "class_diff_median": 0.042208688769693026,
+     "classes_coupled_better": 13,
+     "classes_ci_above_0": 1,
+     "classes_ci_below_0": 4
+    },
+    ">=256": {
+     "classes": 6,
+     "val_specimens": 533,
+     "macro_mean": -0.26593935955812315,
+     "macro_ci95": [
+      -0.37772854560529323,
+      -0.1539838241494522
+     ],
+     "micro_mean": -0.28637370872929624,
+     "micro_ci95": [
+      -0.38930180878444337,
+      -0.18248723239277426
+     ],
+     "class_diff_median": -0.2157109070170396,
+     "classes_coupled_better": 0,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 3
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -38.598101258778826,
+    "coupled": -38.1882516442408,
+    "pooled_scm": -52.73699363848726,
+    "class_scm": -315.27497365919015,
+    "class_identity": -67.44923887445219
+   }
+  },
+  "16": {
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Agapetus_sp",
+     "Ameletus_inopinatus",
+     "Amphinemura_borealis",
+     "Baetis_rhodani"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "coupled_alpha_keep_min_median_max": [
+    0.7256345766631352,
+    0.9862513230700602,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.6487037307283289,
+    0.9205198966957161,
+    1.0
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 1,
+   "classes_alpha_1": 6,
+   "numerical_failures": [],
+   "all": {
+    "classes": 35,
+    "val_specimens": 1532,
+    "macro_mean": -0.062140479642929056,
+    "macro_ci95": [
+     -0.1087200658144628,
+     -0.012015126697617236
+    ],
+    "micro_mean": -0.03921900037651764,
+    "micro_ci95": [
+     -0.06134092229048325,
+     -0.016810709238037392
+    ],
+    "class_diff_median": -0.04679035004964142,
+    "classes_coupled_better": 10,
+    "classes_ci_above_0": 0,
+    "classes_ci_below_0": 9
+   },
+   "strata": {
+    "15-63": {
+     "classes": 4,
+     "val_specimens": 35,
+     "macro_mean": -0.231518963301977,
+     "macro_ci95": [
+      -0.5124295015232574,
+      0.06652027406274064
+     ],
+     "micro_mean": -0.231015684402956,
+     "micro_ci95": [
+      -0.4902479148498942,
+      0.04445699684299665
+     ],
+     "class_diff_median": -0.2983277750883426,
+     "classes_coupled_better": 1,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 1
+    },
+    "64-255": {
+     "classes": 25,
+     "val_specimens": 964,
+     "macro_mean": -0.04017917915228485,
+     "macro_ci95": [
+      -0.08186756157271116,
+      0.009080215008198802
+     ],
+     "micro_mean": -0.03028933102727759,
+     "micro_ci95": [
+      -0.06067862421100388,
+      0.0011289060584083461
+     ],
+     "class_diff_median": -0.036936825215476816,
+     "classes_coupled_better": 7,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 5
+    },
+    ">=256": {
+     "classes": 6,
+     "val_specimens": 533,
+     "macro_mean": -0.04072690924791461,
+     "macro_ci95": [
+      -0.0624739850661631,
+      -0.016922886611209234
+     ],
+     "micro_mean": -0.04277494280004871,
+     "micro_ci95": [
+      -0.06131530121560156,
+      -0.022182766341371177
+     ],
+     "class_diff_median": -0.04541962685138015,
+     "classes_coupled_better": 2,
+     "classes_ci_above_0": 0,
+     "classes_ci_below_0": 3
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -17.885178328451733,
+    "coupled": -17.94731880809466,
+    "pooled_scm": -21.89883475080501,
+    "class_scm": -18.56214447438589,
+    "class_identity": -23.87575322304727
+   }
+  }
+ }
+}

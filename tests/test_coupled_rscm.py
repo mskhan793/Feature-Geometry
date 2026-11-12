@@ -124,3 +124,6 @@ def test_comparison_runs_end_to_end(tmp_path):
     folds = pd.read_csv(tmp_path / "sum" / "Toy" / "folds.csv")
     assert len(folds) == 10 and folds.groupby("pcs").macro_mean.nunique().eq(1).all()
     assert len(pd.read_csv(tmp_path / "sum" / "Toy" / "examples.csv")) == 10
+    assert (tmp_path / "sum" / "Toy" / "examples_by_fold.csv").exists()
+    corners = pd.read_csv(tmp_path / "sum" / "Toy" / "corners.csv")
+    assert len(corners) == 6 and corners.class_scm_defined.sum() == 40  # every class has n > 8 here
