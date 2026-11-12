@@ -108,5 +108,28 @@
    "parent_v1": null,
    "status": "not in v1"
   }
- ]
+ ],
+ "groupings_finbenthic2": {
+  "table": "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/training_search_evidence/finb2_tables/finb2_taxon.parquet",
+  "table_sha256": "1ff288a34d69db462de40c27be7f832b5861f2c755c2642655ae6e845234d25c",
+  "genus": {
+   "identical": true,
+   "only_authors_table": [],
+   "only_v1": [],
+   "names_differing": [
+    "Plectrocnemia / Plectronemia",
+    "Rhycophila / Rhyacophila"
+   ]
+  },
+  "family": {
+   "identical": true,
+   "only_authors_table": [],
+   "only_v1": [],
+   "names_differing": [
+    "Perlodiae / Perlodidae",
+    "Sphaeridae / Sphaeriidae",
+    "Taenioptegyridae / Taeniopterygidae"
+   ]
+  }
+ }
 }
