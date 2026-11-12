@@ -4,10 +4,11 @@ This process encodes chunks ``task, task + n_tasks, ...`` of the manifest (rows 
 that are already complete. ``--limit-rows`` restricts the run to the first N manifest rows (smoke tests only; use a
 separate cache directory).
 
-Images come from the AquaMonitor HDF5 (``--hdf5``; manifest columns ``img``, ``hdf5_row``) or from an image folder
-(``--image-root``; manifest columns ``img``, ``path`` relative to the root, e.g. FIN-Benthic2).
+Images come from the AquaMonitor HDF5 (``--hdf5``; manifest columns ``img``, ``hdf5_row``), from an image folder
+(``--image-root``; manifest columns ``img``, ``path`` relative to the root, e.g. FIN-Benthic2), or from the CIFAR-100
+pickles (``--cifar-dir``; manifest column ``img`` = the benchmark ``source_id``).
 
-Usage: extract_features.py --manifest M.parquet (--hdf5 H5 | --image-root DIR) --encoder bioclip2|dinov2_l|dinov3_l
+Usage: extract_features.py --manifest M.parquet (--hdf5 H5 | --image-root DIR | --cifar-dir DIR) --encoder bioclip2|dinov2_l|dinov3_l
        --cache-dir DIR [--chunk-size 65536] [--task K --n-tasks N] [--batch-size 128] [--num-workers 6] [--limit-rows N]
 """
 
@@ -35,6 +36,7 @@ def main():
     source = ap.add_mutually_exclusive_group(required=True)
     source.add_argument("--hdf5")
     source.add_argument("--image-root")
+    source.add_argument("--cifar-dir")
     ap.add_argument("--encoder", required=True)
     ap.add_argument("--cache-dir", required=True, type=Path)
     ap.add_argument("--chunk-size", type=int, default=65536)
@@ -46,7 +48,7 @@ def main():
     ap.add_argument("--accelerator", default="auto")
     a = ap.parse_args()
 
-    manifest = pd.read_parquet(a.manifest, columns=["img", "hdf5_row" if a.hdf5 else "path"])
+    manifest = pd.read_parquet(a.manifest, columns=["img"] + (["hdf5_row"] if a.hdf5 else ["path"] if a.image_root else []))
     if a.limit_rows:
         manifest = manifest.iloc[:a.limit_rows]
     chunks = range(a.task, chunk_store.n_chunks(len(manifest), a.chunk_size), a.n_tasks)
@@ -58,7 +60,7 @@ def main():
     trainer = build_trainer([], max_epochs=1, accelerator=a.accelerator, devices=1, deterministic="warn",
                             enable_progress_bar=False, enable_model_summary=False)
     print(json.dumps({"task": a.task, "n_tasks": a.n_tasks, "rows": len(manifest), "chunks": list(chunks), **info}), flush=True)
-    extract_chunks(trainer, encoder, info, manifest, lambda rows: image_dataset(rows, transform, a.hdf5, a.image_root),
+    extract_chunks(trainer, encoder, info, manifest, lambda rows: image_dataset(rows, transform, a.hdf5, a.image_root, a.cifar_dir),
                    a.cache_dir / a.encoder, a.chunk_size, chunks, a.batch_size, a.num_workers,
                    log=lambda s: print(f"[task {a.task}] {s}", flush=True))
     print(json.dumps({"task": a.task, "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated()) if torch.cuda.is_available() else None,

@@ -1,0 +1,60 @@
+{
+ "dataset": "oxford_pets",
+ "version": "images.tar.gz + annotations.tar.gz (2012)",
+ "rows": 7349,
+ "units": 7349,
+ "classes": 37,
+ "val_origin": [
+  "derived"
+ ],
+ "derived_seed": [
+  20261112
+ ],
+ "coarse_labels": 2,
+ "sources": {
+  "annotations": {
+   "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/oxford_pets/extracted/annotations",
+   "sha256": "519f00fe506956630415228cfaf3ff30ad3308f01b360b03821730dcf1f14922"
+  }
+ },
+ "content_table": {
+  "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/oxford_pets/content.tsv",
+  "sha256": "d1bce1dac20de956343d19492089f7dc7f7cd0704f1911b5695b86e46afc1788"
+ },
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/oxford_pets.parquet",
+ "manifest_sha256": "3fa99414f57cb2513ecf3c168b4f86de037e07b0e05ac2869103fba7e4aee7c2",
+ "support": {
+  "split": {
+   "split_column": "split",
+   "classes": 37,
+   "images": {
+    "train": 3311,
+    "val": 369,
+    "test": 3669
+   },
+   "units": {
+    "train": 3311,
+    "val": 369,
+    "test": 3669
+   },
+   "classes_with_units": {
+    "train": 37,
+    "val": 37,
+    "test": 37
+   },
+   "eligible_classes": 37,
+   "excluded_classes": 0,
+   "train_units_per_class_percentiles": {
+    "p0": 84.0,
+    "p10": 87.8,
+    "p50": 90.0,
+    "p90": 90.0,
+    "p100": 90.0
+   },
+   "images_available": 7349,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 0
+  }
+ }
+}

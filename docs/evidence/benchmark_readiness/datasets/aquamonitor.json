@@ -1,0 +1,185 @@
+{
+ "dataset": "aquamonitor",
+ "version": "classif parquet df18b019",
+ "rows": 2708023,
+ "units": 42165,
+ "classes": 42,
+ "val_origin": [
+  "official"
+ ],
+ "derived_seed": [
+  -1
+ ],
+ "coarse_labels": 0,
+ "sources": {
+  "manifest": {
+   "path": "/home/aijyu/Documents/Research/Feature_geometry_data/manifests/aquamonitor_classif_manifest.parquet",
+   "sha256": "d6e63bb60df5300a6ccf83090b46a019446d3f91c03c69e479345b8bb13570c1"
+  }
+ },
+ "content_table": null,
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/aquamonitor.parquet",
+ "manifest_sha256": "d491d144b7c672cd70501d9b6f94db60b2fbc998536eec33c8d1c17f7b0f3e3e",
+ "support": {
+  "fold0": {
+   "split_column": "fold0",
+   "classes": 42,
+   "images": {
+    "train": 1882046,
+    "val": 282923,
+    "test": 543054
+   },
+   "units": {
+    "train": 29346,
+    "val": 4386,
+    "test": 8433
+   },
+   "classes_with_units": {
+    "train": 42,
+    "val": 42,
+    "test": 42
+   },
+   "eligible_classes": 41,
+   "excluded_classes": 1,
+   "train_units_per_class_percentiles": {
+    "p0": 36.0,
+    "p10": 40.2,
+    "p50": 129.5,
+    "p90": 2082.2,
+    "p100": 7414.0
+   },
+   "images_available": 2708023,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 2708008
+  },
+  "fold1": {
+   "split_column": "fold1",
+   "classes": 42,
+   "images": {
+    "train": 1883026,
+    "val": 277789,
+    "test": 547208
+   },
+   "units": {
+    "train": 29346,
+    "val": 4386,
+    "test": 8433
+   },
+   "classes_with_units": {
+    "train": 42,
+    "val": 42,
+    "test": 42
+   },
+   "eligible_classes": 41,
+   "excluded_classes": 1,
+   "train_units_per_class_percentiles": {
+    "p0": 35.0,
+    "p10": 41.300000000000004,
+    "p50": 129.0,
+    "p90": 2065.1,
+    "p100": 7416.0
+   },
+   "images_available": 2708023,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 2708008
+  },
+  "fold2": {
+   "split_column": "fold2",
+   "classes": 42,
+   "images": {
+    "train": 1885562,
+    "val": 282836,
+    "test": 539625
+   },
+   "units": {
+    "train": 29346,
+    "val": 4386,
+    "test": 8433
+   },
+   "classes_with_units": {
+    "train": 42,
+    "val": 42,
+    "test": 42
+   },
+   "eligible_classes": 40,
+   "excluded_classes": 2,
+   "train_units_per_class_percentiles": {
+    "p0": 35.0,
+    "p10": 42.1,
+    "p50": 131.0,
+    "p90": 2056.6,
+    "p100": 7392.0
+   },
+   "images_available": 2708023,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 2708008
+  },
+  "fold3": {
+   "split_column": "fold3",
+   "classes": 42,
+   "images": {
+    "train": 1882953,
+    "val": 285366,
+    "test": 539704
+   },
+   "units": {
+    "train": 29346,
+    "val": 4386,
+    "test": 8433
+   },
+   "classes_with_units": {
+    "train": 42,
+    "val": 42,
+    "test": 42
+   },
+   "eligible_classes": 41,
+   "excluded_classes": 1,
+   "train_units_per_class_percentiles": {
+    "p0": 35.0,
+    "p10": 40.0,
+    "p50": 129.5,
+    "p90": 2042.5,
+    "p100": 7436.0
+   },
+   "images_available": 2708023,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 2708008
+  },
+  "fold4": {
+   "split_column": "fold4",
+   "classes": 42,
+   "images": {
+    "train": 1886474,
+    "val": 283117,
+    "test": 538432
+   },
+   "units": {
+    "train": 29346,
+    "val": 4386,
+    "test": 8433
+   },
+   "classes_with_units": {
+    "train": 42,
+    "val": 42,
+    "test": 42
+   },
+   "eligible_classes": 41,
+   "excluded_classes": 1,
+   "train_units_per_class_percentiles": {
+    "p0": 31.0,
+    "p10": 39.2,
+    "p50": 135.0,
+    "p90": 2066.7999999999997,
+    "p100": 7419.0
+   },
+   "images_available": 2708023,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 2708008
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "dataset": "bioscan5m",
+ "version": "BIOSCAN-5M cropped_256",
+ "rows": 343333,
+ "units": 343333,
+ "classes": 11846,
+ "val_origin": [
+  "official"
+ ],
+ "derived_seed": [
+  -1
+ ],
+ "coarse_labels": 4930,
+ "sources": {
+  "index": {
+   "path": "/home/aijyu/Documents/Lightning_Aqua_Hierarchy_logs/bioscan_data/bioscan_index.parquet",
+   "sha256": "b4d9b4466838e829c4695f0aa605fd69aa3433d2b4b685cc26dcae8638c0af6f"
+  }
+ },
+ "content_table": null,
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/bioscan5m.parquet",
+ "manifest_sha256": "4f0cb0acf61d5f28cf1017959983839083cc17426903916a88235da84ecc2971",
+ "support": {
+  "split": {
+   "split_column": "split",
+   "classes": 11846,
+   "images": {
+    "train": 289203,
+    "val": 14757,
+    "test": 39373
+   },
+   "units": {
+    "train": 289203,
+    "val": 14757,
+    "test": 39373
+   },
+   "classes_with_units": {
+    "train": 11846,
+    "val": 3378,
+    "test": 3483
+   },
+   "eligible_classes": 531,
+   "excluded_classes": 11315,
+   "train_units_per_class_percentiles": {
+    "p0": 1.0,
+    "p10": 1.0,
+    "p50": 3.0,
+    "p90": 30.0,
+    "p100": 5697.0
+   },
+   "images_available": 343333,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 0
+  }
+ }
+}

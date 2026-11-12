@@ -1,0 +1,60 @@
+{
+ "dataset": "food101",
+ "version": "food-101.tar.gz (2014)",
+ "rows": 101000,
+ "units": 100992,
+ "classes": 101,
+ "val_origin": [
+  "derived"
+ ],
+ "derived_seed": [
+  20261112
+ ],
+ "coarse_labels": 0,
+ "sources": {
+  "meta": {
+   "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/food101/extracted/food-101/meta",
+   "sha256": "17711d76dc401a0d02339cbaa0d141967487289cdaeaa79c2c58d9daadb3232c"
+  }
+ },
+ "content_table": {
+  "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/food101/content.tsv",
+  "sha256": "e4c23ae039d74f258302192807c0036c420e537e52c6d0b2b8476dd60959e9ec"
+ },
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/food101.parquet",
+ "manifest_sha256": "49f40a785dab08399f6148975f0253c63ef9640bac4d68a078100106c78cb718",
+ "support": {
+  "split": {
+   "split_column": "split",
+   "classes": 101,
+   "images": {
+    "train": 68174,
+    "val": 7576,
+    "test": 25250
+   },
+   "units": {
+    "train": 68169,
+    "val": 7575,
+    "test": 25250
+   },
+   "classes_with_units": {
+    "train": 101,
+    "val": 101,
+    "test": 101
+   },
+   "eligible_classes": 101,
+   "excluded_classes": 0,
+   "train_units_per_class_percentiles": {
+    "p0": 673.0,
+    "p10": 675.0,
+    "p50": 675.0,
+    "p90": 675.0,
+    "p100": 675.0
+   },
+   "images_available": 101000,
+   "units_in_several_splits": 2,
+   "units_with_several_labels": 2,
+   "images_sharing_a_unit": 16
+  }
+ }
+}

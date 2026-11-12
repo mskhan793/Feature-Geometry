@@ -98,14 +98,17 @@ def bioscan5m(index: Path) -> pd.DataFrame:
 
 
 def df24(train_csv: Path, test_csv: Path, assignment: Path) -> pd.DataFrame:
-    """Official train / pubtest; frozen derived validation (seed 20261110) by observation; images not downloaded."""
+    """Official train / pubtest; frozen derived validation (seed 20261110) by observation; images not downloaded.
+    Label = ``scientificName`` (one-to-one with the official ``class_id``, 1604 classes; the ``species`` column merges
+    25 names with several class ids and is empty for one class), coarse = genus."""
     tr, te = pd.read_csv(train_csv, low_memory=False), pd.read_csv(test_csv, low_memory=False)
     a = pd.read_csv(assignment)[["observationID", "split"]]
     tr = tr.merge(a, on="observationID", how="left", validate="many_to_one")
     assert tr.split.notna().all()
     te["split"] = "test"
     d = pd.concat([tr, te], ignore_index=True)
-    d = d.rename(columns={"image_path": "source_id", "observationID": "unit_id", "species": "label", "genus": "coarse_label"})
+    assert d.groupby("class_id").scientificName.nunique().max() == 1 and d.groupby("scientificName").class_id.nunique().max() == 1
+    d = d.rename(columns={"image_path": "source_id", "observationID": "unit_id", "scientificName": "label", "genus": "coarse_label"})
     d["image_ref"], d["available"] = d.source_id, False
     d["val_origin"], d["derived_seed"] = "derived", 20261110
     return _finish(d, "df24", "DanishFungi2024 train/pubtest", ["split"])

@@ -1,0 +1,60 @@
+{
+ "dataset": "fgvc_aircraft",
+ "version": "fgvc-aircraft-2013b",
+ "rows": 10000,
+ "units": 10000,
+ "classes": 100,
+ "val_origin": [
+  "official"
+ ],
+ "derived_seed": [
+  -1
+ ],
+ "coarse_labels": 70,
+ "sources": {
+  "data": {
+   "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/fgvc_aircraft/extracted/fgvc-aircraft-2013b/data",
+   "sha256": "6208d0bb02c30e91919e904cb0ca9f6a5497c3b29bbdaa7af5cb7c4f60368883"
+  }
+ },
+ "content_table": {
+  "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/fgvc_aircraft/content.tsv",
+  "sha256": "58854e1507c683b9b8c9b7c6b5e58a5245e634a50cd76186d9d4d0a84caf3922"
+ },
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/fgvc_aircraft.parquet",
+ "manifest_sha256": "3be1b3d7020dda69fa90ee08e35d4ad1c49817bc4a2d1a45630709143cab2c1a",
+ "support": {
+  "split": {
+   "split_column": "split",
+   "classes": 100,
+   "images": {
+    "train": 3334,
+    "val": 3333,
+    "test": 3333
+   },
+   "units": {
+    "train": 3334,
+    "val": 3333,
+    "test": 3333
+   },
+   "classes_with_units": {
+    "train": 100,
+    "val": 100,
+    "test": 100
+   },
+   "eligible_classes": 100,
+   "excluded_classes": 0,
+   "train_units_per_class_percentiles": {
+    "p0": 33.0,
+    "p10": 33.0,
+    "p50": 33.0,
+    "p90": 34.0,
+    "p100": 34.0
+   },
+   "images_available": 10000,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 0
+  }
+ }
+}

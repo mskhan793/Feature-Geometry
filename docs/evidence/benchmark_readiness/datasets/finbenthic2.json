@@ -1,0 +1,185 @@
+{
+ "dataset": "finbenthic2",
+ "version": "five-split CSV 1c18f058",
+ "rows": 460004,
+ "units": 9631,
+ "classes": 39,
+ "val_origin": [
+  "official"
+ ],
+ "derived_seed": [
+  -1
+ ],
+ "coarse_labels": 0,
+ "sources": {
+  "csv": {
+   "path": "/home/aijyu/Documents/Lightning_hier_transformer_embedding/01_finbenthic2_processed_5splits_taxon.csv",
+   "sha256": "1c18f058a36ef041bef718197c2debfec0f24607e209e35c0fdaf1f5bc05e257"
+  }
+ },
+ "content_table": null,
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/finbenthic2.parquet",
+ "manifest_sha256": "18470975fc46e1575ebad91c2ba35a896d8c3b0bd135e5ae385f42c93e7e9376",
+ "support": {
+  "fold0": {
+   "split_column": "fold0",
+   "classes": 39,
+   "images": {
+    "train": 293966,
+    "val": 74043,
+    "test": 91995
+   },
+   "units": {
+    "train": 6165,
+    "val": 1542,
+    "test": 1924
+   },
+   "classes_with_units": {
+    "train": 39,
+    "val": 39,
+    "test": 39
+   },
+   "eligible_classes": 36,
+   "excluded_classes": 3,
+   "train_units_per_class_percentiles": {
+    "p0": 12.0,
+    "p10": 15.8,
+    "p50": 145.0,
+    "p90": 265.20000000000005,
+    "p100": 563.0
+   },
+   "images_available": 460004,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 460000
+  },
+  "fold1": {
+   "split_column": "fold1",
+   "classes": 39,
+   "images": {
+    "train": 294140,
+    "val": 73664,
+    "test": 92200
+   },
+   "units": {
+    "train": 6165,
+    "val": 1540,
+    "test": 1926
+   },
+   "classes_with_units": {
+    "train": 39,
+    "val": 39,
+    "test": 39
+   },
+   "eligible_classes": 35,
+   "excluded_classes": 4,
+   "train_units_per_class_percentiles": {
+    "p0": 11.0,
+    "p10": 17.8,
+    "p50": 140.0,
+    "p90": 263.00000000000006,
+    "p100": 567.0
+   },
+   "images_available": 460004,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 460000
+  },
+  "fold2": {
+   "split_column": "fold2",
+   "classes": 39,
+   "images": {
+    "train": 294218,
+    "val": 73317,
+    "test": 92469
+   },
+   "units": {
+    "train": 6163,
+    "val": 1541,
+    "test": 1927
+   },
+   "classes_with_units": {
+    "train": 39,
+    "val": 39,
+    "test": 39
+   },
+   "eligible_classes": 34,
+   "excluded_classes": 5,
+   "train_units_per_class_percentiles": {
+    "p0": 10.0,
+    "p10": 16.8,
+    "p50": 145.0,
+    "p90": 262.6000000000001,
+    "p100": 564.0
+   },
+   "images_available": 460004,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 460000
+  },
+  "fold3": {
+   "split_column": "fold3",
+   "classes": 39,
+   "images": {
+    "train": 294793,
+    "val": 73630,
+    "test": 91581
+   },
+   "units": {
+    "train": 6163,
+    "val": 1542,
+    "test": 1926
+   },
+   "classes_with_units": {
+    "train": 39,
+    "val": 39,
+    "test": 39
+   },
+   "eligible_classes": 35,
+   "excluded_classes": 4,
+   "train_units_per_class_percentiles": {
+    "p0": 10.0,
+    "p10": 16.6,
+    "p50": 143.0,
+    "p90": 270.8,
+    "p100": 563.0
+   },
+   "images_available": 460004,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 460000
+  },
+  "fold4": {
+   "split_column": "fold4",
+   "classes": 39,
+   "images": {
+    "train": 294663,
+    "val": 73582,
+    "test": 91759
+   },
+   "units": {
+    "train": 6160,
+    "val": 1543,
+    "test": 1928
+   },
+   "classes_with_units": {
+    "train": 39,
+    "val": 39,
+    "test": 39
+   },
+   "eligible_classes": 35,
+   "excluded_classes": 4,
+   "train_units_per_class_percentiles": {
+    "p0": 8.0,
+    "p10": 19.0,
+    "p50": 142.0,
+    "p90": 271.6,
+    "p100": 565.0
+   },
+   "images_available": 460004,
+   "units_in_several_splits": 0,
+   "units_with_several_labels": 0,
+   "images_sharing_a_unit": 460000
+  }
+ }
+}
