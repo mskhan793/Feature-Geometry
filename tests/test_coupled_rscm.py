@@ -95,6 +95,25 @@ def test_gaussian_parts_and_residuals():
     assert ra[0] == pytest.approx(abs(0.5 / 1.09 - 0.5)) and rb[0] == pytest.approx(abs(0.24 - 0.3))
 
 
+def test_singular_covariance_is_not_scored(tmp_path):
+    """A covariance singular along one direction must be a failure even when Cholesky succeeds on rounding error."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("crl", "scripts/coupled_rscm_vs_lw.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    rng = np.random.default_rng(4)
+    w = rng.uniform(0.5, 2.0, 6)
+    h = rng.normal(size=(40, 6))
+    x = w * (h - h.mean(1, keepdims=True)) / h.std(1, keepdims=True)  # LayerNorm-like: sum_j x_j / w_j = 0
+    cov = np.cov(x, rowvar=False)
+    assert np.linalg.eigvalsh(cov)[0] < 1e-12
+    assert mod.score(x[:3], x.mean(0), cov)[2] == "failed: numerically singular"
+    assert mod.score(x[:3, :-1], x[:, :-1].mean(0), np.cov(x[:, :-1], rowvar=False))[2] == "ok"  # one coordinate dropped
+    names = ["native", "native_alt"]
+    (n1, d1, a1, _), (n2, d2, a2, _) = mod.spaces_from(names, x, x)
+    assert d1 == d2 == 5 and np.array_equal(a1, x[:, :-1]) and np.array_equal(a2, x[:, 1:])
+
+
 def test_comparison_runs_end_to_end(tmp_path):
     rng = np.random.default_rng(0)
     rows, feats = [], []
@@ -114,11 +133,11 @@ def test_comparison_runs_end_to_end(tmp_path):
     pd.concat([pd.DataFrame(rows), test_rows]).to_parquet(tmp_path / "cohort.parquet", index=False)
     out, lw = tmp_path / "out", tmp_path / "lw"
     args = ["--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches, "--fold", "fold0"]
-    run(["scripts/coupled_rscm_vs_lw.py", *args, "--out", str(out), "--spaces", "pca8", "pca4", "native"])
+    run(["scripts/coupled_rscm_vs_lw.py", *args, "--out", str(out), "--spaces", "pca8", "pca4", "native", "native_alt"])
     run(["scripts/lw_fit_diagnostics.py", *args, "--out", str(lw), "--frames", "2", "--caps", "15", "--pcs", "8", "4"])
     s = json.loads((out / "summary.json").read_text())
     assert s["cohort_rows"]["test_rows_dropped"] == 4 and s["eligible_classes"] == 4
-    assert s["excluded_classes"] == {"E": {"train": 10, "val": 8}} and list(s["spaces"]) == ["pca8", "pca4", "native"]
+    assert s["excluded_classes"] == {"E": {"train": 10, "val": 8}} and list(s["spaces"]) == ["pca8", "pca4", "native", "native_alt"]
     r8, rn = s["spaces"]["pca8"], s["spaces"]["native"]
     for r in (r8, rn):
         assert r["four_class_original_vs_adapted"] == {"run": True, "classes": ["A", "B", "C", "D"],
@@ -126,16 +145,16 @@ def test_comparison_runs_end_to_end(tmp_path):
         assert r["contrasts"]["coupled_vs_lw"]["all"]["classes"] == 4 and not r["contrasts"]["coupled_vs_lw"]["numerical_failures"]
         assert np.isfinite(r["residual_alpha_max"]) and r["pooled"]["rank"] == r["dim"]
     assert r8["contrasts"]["coupled_vs_lw"]["15-63"]["classes"] == 2 and r8["classes_n_le_p"] == 0
-    assert rn["dim"] == p and rn["classes_n_le_p"] == 1 and rn["contrasts"]["coupled_vs_lw"]["n<=p"]["classes"] == 1
+    assert rn["dim"] == p - 1 and rn["classes_n_le_p"] == 1 and rn["contrasts"]["coupled_vs_lw"]["n<=p"]["classes"] == 1
     per = pd.read_csv(out / "perclass.csv")
-    assert len(per) == 3 * 4
+    assert len(per) == 4 * 4 and s["full_coordinate_within_class_covariance"]["rank"] == p  # fixture: no LayerNorm
     for m in ("lw", "coupled", "lw_unbiased", "coupled_no_pooling", "pooling_lw_shrink"):
         assert (per[f"status_{m}"] == "ok").all()
     assert per.set_index(["space", "taxon_group"]).loc[("native", "D"), "status_class_scm"] == "not defined (n <= d)"
     parts = per.coupled_vs_lw_maha_part + per.coupled_vs_lw_logdet_part
     assert np.allclose(parts, per.coupled_vs_lw_mean)
     spec = pd.read_csv(out / "perspecimen.csv")
-    assert len(spec) == 3 * 4 * 8 and spec[["loglik_lw", "loglik_coupled"]].notna().all().all()  # paired support
+    assert len(spec) == 4 * 4 * 8 and spec[["loglik_lw", "loglik_coupled"]].notna().all().all()  # paired support
     assert not set(spec.individual) & {r["individual"] for r in rows if r["fold0"] == "train"}
     assert np.allclose(spec.d_coupled_vs_lw, spec.loglik_coupled - spec.loglik_lw)
     # the 2 x 2 decomposition and the normalisation arm add up exactly
@@ -153,18 +172,34 @@ def test_comparison_runs_end_to_end(tmp_path):
     assert repro["matched"] == repro["class_folds_here"] == repro["class_folds_reference"] == 40
     assert repro["max_abs_diff_val_loglik_lw"] == 0 and repro["max_abs_diff_alpha_lw"] == 0 and repro["n_train_equal"]
     folds = pd.read_csv(toy / "folds.csv")
-    assert len(folds) == 5 * 3 * 6 and folds.groupby(["space", "contrast"]).macro_mean.nunique().eq(1).all()
+    assert len(folds) == 5 * 4 * 6 and folds.groupby(["space", "contrast"]).macro_mean.nunique().eq(1).all()
     groups = pd.read_csv(toy / "groups.csv")
-    assert len(groups) == 3 * 6 * 5 and groups[(groups.space == "native") & (groups.group == "n<=p")].class_folds.eq(5).all()
+    assert len(groups) == 4 * 6 * 5 and groups[(groups.space == "native") & (groups.group == "n<=p")].class_folds.eq(5).all()
     corners = pd.read_csv(toy / "corners.csv")
-    assert len(corners) == 9 and corners.class_scm_defined.sum() == 20 + 20 + 15
-    assert len(pd.read_csv(toy / "examples.csv")) == 15 and (toy / "examples_by_fold.csv").exists()
+    assert len(corners) == 12 and corners.class_scm_defined.sum() == 20 + 20 + 15 + 15
+    assert len(pd.read_csv(toy / "examples.csv")) == 20 and (toy / "examples_by_fold.csv").exists()
     assert set(json.loads((toy / "resources.json").read_text())["fold0"]) >= {"total_seconds", "native_seconds"}
     # regression check against a first-version (pcs / diff_mean) layout of the same PCA results
     v1 = tmp_path / "v1" / "toy" / "fold0"
     v1.mkdir(parents=True)
-    first = per[per.space != "native"].assign(pcs=lambda t: t.dim)
+    first = per[per.space.str.startswith("pca")].assign(pcs=lambda t: t.dim)
     first.rename(columns={"coupled_vs_lw_mean": "diff_mean", "coupled_vs_lw_ci95": "diff_ci95"}).to_csv(v1 / "perclass.csv", index=False)
     (tmp_path / "v2" / "toy").mkdir(parents=True)
     shutil.copytree(out, tmp_path / "v2" / "toy" / "fold0")
     run(["scripts/check_coupled_regression.py", "--old", str(tmp_path / "v1"), "--new", str(tmp_path / "v2")])
+
+
+def test_audit_feature_null_space(tmp_path):
+    from safetensors.numpy import save_file
+    rng = np.random.default_rng(5)
+    w, b = rng.uniform(0.5, 2.0, 8).astype(np.float32), rng.normal(size=8).astype(np.float32)
+    h = rng.normal(size=(300, 8))
+    x = (w * (h - h.mean(1, keepdims=True)) / h.std(1, keepdims=True) + b).astype(np.float32)
+    (tmp_path / "cache").mkdir()
+    np.save(tmp_path / "cache" / "chunk_00000.npy", x)
+    save_file({"norm.weight": w, "norm.bias": b}, str(tmp_path / "m.safetensors"))
+    run(["scripts/audit_feature_null_space.py", "--cache", str(tmp_path / "cache"), "--weights", str(tmp_path / "m.safetensors"),
+         "--out", str(tmp_path / "a.json")])
+    a = json.loads((tmp_path / "a.json").read_text())
+    assert a["numerical_rank_1e-12"] == 7 and a["abs_cos_smallest_eigvec_vs_inv_w"] > 0.999999
+    assert a["constraint_rel_abs_max"] < 1e-5

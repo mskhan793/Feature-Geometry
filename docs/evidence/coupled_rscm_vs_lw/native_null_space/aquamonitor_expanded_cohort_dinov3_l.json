@@ -1,0 +1,19 @@
+{
+ "rows": 192492,
+ "dim": 1024,
+ "weights": "/home/aijyu/.cache/huggingface/hub/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors",
+ "key": "norm.weight/bias",
+ "constraint_rel_abs_max": 9.198533498736069e-07,
+ "constraint_rel_abs_median": 1.6404707045821158e-07,
+ "eigenvalues_smallest_4": [
+  -2.4166027672991042e-18,
+  7.90338640906788e-06,
+  3.554929788145154e-05,
+  0.0004339711264223969
+ ],
+ "eigenvalue_largest": 16.601814016031913,
+ "smallest_over_second_smallest": -3.0576801414219563e-13,
+ "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999999997,
+ "variance_along_inv_w": 3.4303880516990128e-18,
+ "numerical_rank_1e-12": 1023
+}

@@ -6,8 +6,14 @@ Same protocol as section 8 D3 of lw_fit_diagnostics.py: specimen embedding = mea
 selected train frames; test rows dropped before the feature lookup and never used; class mean = train sample mean;
 eligible classes = >= 15 train and >= 5 val specimens (every estimator uses exactly these classes and specimens; the
 coupled estimator's pooled matrix is over the eligible classes). Spaces (``--spaces``): ``pcaN`` = first N components
-of a PCA fitted on the fold's train specimens; ``native`` = the original frozen coordinates (no PCA, no rotation, no
-whitening; the authors' coordinatewise kurtosis plug-in is not exactly rotation-invariant).
+of a PCA fitted on the fold's train specimens; ``native`` = the original frozen coordinates without the last one,
+``native_alt`` = without the first one (no PCA, no rotation, no whitening; the authors' coordinatewise kurtosis plug-in
+is not exactly rotation-invariant). One coordinate is dropped because the encoder's final LayerNorm makes every
+feature vector satisfy sum_j (x_j - b_j)/w_j = 0, so all covariances of the 1024 coordinates are singular along one
+direction (audit: scripts/audit_feature_null_space.py; here the rank of the full-coordinate within-class covariance is
+recorded per fold). Any one coordinate is an exact linear function of the others, so dropping it loses no
+information; the Jacobian of that change of variables is the same for every estimator and cancels in paired
+differences. ``native`` vs ``native_alt`` shows the sensitivity to which coordinate is dropped.
 
 Per class and space:
 - (A) per-class Ledoit-Wolf full covariance (``lw``; biased class covariance, reference) and (B) the coupled RSCM with
@@ -25,7 +31,9 @@ Measurement: held-out Gaussian log-likelihood of each val specimen under N(mu_c,
 -maha/2 and -log|Sigma|/2; paired differences per specimen for every contrast; class-macro (primary) and
 specimen-micro (secondary) means with a stratified bootstrap over val specimens (the same draws for every contrast;
 conditional on the train fits); strata 15-63, 64-255, >= 256 train specimens and n_c <= d vs n_c > d. Numerical
-failures are reported as failures (no jitter, no pseudo-inverse). Numerical audit: finite inputs, constant
+failures are reported as failures (no jitter, no pseudo-inverse): a covariance whose smallest eigenvalue is
+<= d * float64 eps * its largest (numpy.linalg.matrix_rank's default tolerance) is "numerically singular" and not
+scored, even if a Cholesky factorisation would succeed on rounding error. Numerical audit: finite inputs, constant
 coordinates, symmetry / minimum eigenvalue / condition number, pooled-matrix rank, the authors' sphericity clip and
 kurtosis floor, separate alpha and beta convergence residuals. A 4-class check runs the unmodified authors' code and
 the adapted one on the first four eligible classes of every space and requires identical output.
@@ -77,10 +85,14 @@ def numerics(cov: np.ndarray) -> dict:
 
 
 def score(z: np.ndarray, mu: np.ndarray, cov: np.ndarray | None) -> tuple[np.ndarray, np.ndarray, str]:
-    """-maha/2 and -log|cov|/2 per row (NaN with a status if the covariance is undefined or not positive definite)."""
+    """-maha/2 and -log|cov|/2 per row (NaN with a status if the covariance is undefined, numerically singular or not
+    positive definite)."""
     nan = np.full(len(z), np.nan)
     if cov is None:
         return nan, nan, "not defined (n <= d)"
+    eig = np.linalg.eigvalsh((cov + cov.T) / 2)
+    if eig[0] <= eig[-1] * cov.shape[0] * np.finfo(np.float64).eps:
+        return nan, nan, "failed: numerically singular"
     try:
         maha, logdet = gaussian_parts(z, mu, cov)
     except np.linalg.LinAlgError:
@@ -121,13 +133,14 @@ def spaces_from(names: list[str], x_tr: np.ndarray, x_va: np.ndarray):
     """(name, dim, train, val) per space; PCA fitted once on the train specimens for all ``pcaN``."""
     dims = [int(s.removeprefix("pca")) for s in names if s.startswith("pca")]
     pca = PCA(n_components=max(dims), svd_solver="full").fit(x_tr) if dims else None
-    zt, zv = (pca.transform(x_tr), pca.transform(x_va)) if pca else (None, None)
+    pt, pv = (pca.transform(x_tr), pca.transform(x_va)) if pca else (None, None)
     for s in names:
-        if s == "native":
-            yield s, x_tr.shape[1], np.asarray(x_tr, np.float64), np.asarray(x_va, np.float64)
+        if s in ("native", "native_alt"):
+            keep = slice(None, -1) if s == "native" else slice(1, None)
+            yield s, x_tr.shape[1] - 1, np.asarray(x_tr[:, keep], np.float64), np.asarray(x_va[:, keep], np.float64)
         else:
             d = int(s.removeprefix("pca"))
-            yield s, d, zt[:, :d], zv[:, :d]
+            yield s, d, pt[:, :d], pv[:, :d]
 
 
 def run_space(name, d, z_tr, z_va, y_tr, y_va, sk_va, eligible):
@@ -213,7 +226,7 @@ def main():
     ap.add_argument("--caches", required=True, nargs="+")
     ap.add_argument("--fold", required=True)
     ap.add_argument("--out", required=True, type=Path)
-    ap.add_argument("--spaces", nargs="+", default=["pca64", "pca16", "native"])
+    ap.add_argument("--spaces", nargs="+", default=["pca64", "pca16", "native", "native_alt"])
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     t_start = time.perf_counter()
@@ -235,6 +248,10 @@ def main():
     eligible = sorted(c for c in n_tr.index if n_tr[c] >= MIN_TRAIN and n_va.get(c, 0) >= MIN_VAL)
     excluded = {c: {"train": int(n_tr.get(c, 0)), "val": int(n_va.get(c, 0))}
                 for c in sorted(set(n_tr.index) | set(n_va.index)) if c not in eligible}
+    resid = np.asarray(x_tr, np.float64) - np.stack([x_tr[y_tr == c].mean(0) for c in y_tr])
+    eig = np.linalg.eigvalsh(resid.T @ resid / len(resid))
+    full = {"dim": int(x_tr.shape[1]), "rank": int((eig > eig[-1] * len(eig) * np.finfo(np.float64).eps).sum()),
+            "smallest_eigenvalues": eig[:3].tolist(), "largest_eigenvalue": float(eig[-1])}
     pers, specs, results = [], [], {}
     for name, d, z_tr, z_va in spaces_from(a.spaces, x_tr, x_va):
         t0 = time.perf_counter()
@@ -250,7 +267,7 @@ def main():
                "train_specimens": int(len(sk_tr)), "val_specimens": int(len(sk_va)), "eligible_classes": len(eligible),
                "excluded_classes": excluded, "min_train": MIN_TRAIN, "min_val": MIN_VAL, "n_boot": N_BOOT, "seed": SEED,
                "authors_code_sha256": SOURCE_SHA256, "adaptations": [{"replace": f, "with": r} for f, r in PATCHES],
-               "contrasts": CONTRASTS, "total_seconds": time.perf_counter() - t_start,
+               "contrasts": CONTRASTS, "full_coordinate_within_class_covariance": full, "total_seconds": time.perf_counter() - t_start,
                "max_rss_gb": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2 ** 20, "spaces": results}
     (a.out / "summary.json").write_text(json.dumps(summary, indent=1, default=str))
     print(json.dumps({k: v for k, v in summary.items() if k != "spaces"}, indent=1, default=str))
