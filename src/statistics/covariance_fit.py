@@ -36,10 +36,15 @@ def lw_class_covariance(z: np.ndarray) -> tuple[np.ndarray, float]:
     return shrunk(np.cov(z, rowvar=False, bias=True), alpha), alpha
 
 
-def gaussian_loglik(x: np.ndarray, mean: np.ndarray, cov: np.ndarray) -> np.ndarray:
-    """Log density of each row of x under N(mean, cov) (Cholesky; raises if cov is not positive definite)."""
+def gaussian_parts(x: np.ndarray, mean: np.ndarray, cov: np.ndarray) -> tuple[np.ndarray, float]:
+    """Squared Mahalanobis distance of each row of x and log|cov| (Cholesky; raises if cov is not positive definite)."""
     c, low = cho_factor(cov, lower=True)
     r = x - mean
     maha = np.einsum("ij,ij->i", r, cho_solve((c, low), r.T).T)
-    logdet = 2 * np.log(np.diag(c)).sum()
+    return maha, float(2 * np.log(np.diag(c)).sum())
+
+
+def gaussian_loglik(x: np.ndarray, mean: np.ndarray, cov: np.ndarray) -> np.ndarray:
+    """Log density of each row of x under N(mean, cov) = -(maha + log|cov| + p log 2 pi) / 2."""
+    maha, logdet = gaussian_parts(x, mean, cov)
     return -0.5 * (maha + logdet + cov.shape[0] * np.log(2 * np.pi))

@@ -15,9 +15,16 @@ scale eta_k = tr(S_k)/p; elliptical kurtosis kappa_k = mean marginal excess kurt
 the paper, Sect. IV-B); <Sigma_i, Sigma_j>_F (i != j) = p^2 eta_i eta_j <SSCM_i, SSCM_j>_F. The tuning assumes
 elliptical classes with finite fourth moments.
 
-Our adaptation (one line, applied in memory when the source is loaded; the file is never edited): the grid evaluation
-in ``rscmpool``, ``msefunction(...).reshape(4)``, hard-codes K = 4 classes and becomes ``.reshape(K)``. Everything else
-runs as published. ``original_module`` loads the unmodified source (usable only with K = 4) so the two can be compared.
+Our adaptations (applied in memory when the source is loaded; the file is never edited; each asserted to match once):
+1. essential: the grid evaluation in ``rscmpool``, ``msefunction(...).reshape(4)``, hard-codes K = 4 classes and becomes
+   ``.reshape(K)``;
+2. output only (methods review 2026-11-12): after the alternating search, ``rscmpool`` also stores its MSE-polynomial
+   coefficients and iteration count in ``params`` (keys ``_rscmpool_C``, ``_rscmpool_iterations``), so convergence can
+   be audited: the authors' stopping rule adds the alpha and beta changes before the norm (they can cancel) and its
+   iteration-limit warning is unreachable. ``convergence_residuals`` applies the authors' updates (7)/(8) once more to
+   the returned (alpha, beta); nothing in the estimate changes.
+Everything else runs as published. ``original_module`` loads the unmodified source (usable only with K = 4) so the two
+can be compared.
 """
 
 from __future__ import annotations
@@ -33,7 +40,10 @@ import pandas as pd
 
 SOURCE = Path(__file__).resolve().parents[2] / "third_party" / "coupled_rscm" / "multiclass_rscm.py"
 SOURCE_SHA256 = "a67e443d18613b2671f6997059cf900a3a51853d5584f7251e6a290b780aa326"
-PATCH = ("C).reshape(4)", "C).reshape(K)")
+PATCHES = [("C).reshape(4)", "C).reshape(K)"),
+           ("        print('rscmpool: slow convergence.')\n",
+            "        print('rscmpool: slow convergence.')\n"
+            "    params['_rscmpool_C'] = C\n    params['_rscmpool_iterations'] = iteration + 1\n")]
 
 
 def _load(patched: bool) -> ModuleType:
@@ -42,9 +52,10 @@ def _load(patched: bool) -> ModuleType:
         raise RuntimeError(f"{SOURCE} differs from the pinned authors' file")
     text = raw.decode()
     if patched:
-        if text.count(PATCH[0]) != 1:
-            raise RuntimeError("the patched line is not found exactly once")
-        text = text.replace(*PATCH)
+        for find, replace in PATCHES:
+            if text.count(find) != 1:
+                raise RuntimeError(f"patched text not found exactly once: {find!r}")
+            text = text.replace(find, replace)
     module = ModuleType("multiclass_rscm_k" if patched else "multiclass_rscm")
     module.__file__ = str(SOURCE)
     exec(compile(text, str(SOURCE), "exec"), module.__dict__)
@@ -73,6 +84,17 @@ class CoupledFit:
     scm: list[np.ndarray]    # authors' unbiased S_k
     pooled: np.ndarray       # authors' S_pool
     sigmas: list[np.ndarray]
+    residual_alpha: np.ndarray  # |update (7) at the returned beta - alpha| (NaN for the unmodified module)
+    residual_beta: np.ndarray   # |update (8) at the returned alpha - beta|
+    iterations: int | None
+
+
+def convergence_residuals(c: dict, alpha: np.ndarray, beta: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """One more application of the authors' clipped updates (7) and (8) (``opt_al``, ``opt_be`` in ``rscmpool``)."""
+    with np.errstate(divide="ignore", invalid="ignore"):
+        a = np.clip(-0.5 * (beta * c["11"] + c["10"]) / (beta ** 2 * c["22"] + beta * c["21"] + c["20"]), 0, 1)
+        b = np.clip(-0.5 * (alpha ** 2 * c["21"] + alpha * c["11"] + c["01"]) / (alpha ** 2 * c["22"] + c["02"]), 0, 1)
+    return np.abs(a - alpha), np.abs(b - beta)
 
 
 def coupled_covariance(s_k: np.ndarray, s_pool: np.ndarray, alpha: float, beta: float) -> np.ndarray:
@@ -91,6 +113,9 @@ def fit_coupled(x: np.ndarray, y: np.ndarray, classes: list, module: ModuleType 
     data["class"] = [code[c] for c in np.asarray(y)[keep]]
     params = m.estimate_parameters(data)
     out = m.rscmpool(params, averaging=False, compute_inverse=False)
+    nan = np.full(len(classes), np.nan)
+    res = convergence_residuals(params["_rscmpool_C"], out["alpha"], out["beta"]) if "_rscmpool_C" in params else (nan, nan)
     return CoupledFit(classes=list(classes), n=params["n"], alpha=out["alpha"], beta=out["beta"], eta=params["eta"],
                       gamma=params["gamma"], kappa=params["kappa"], scm=[np.asarray(s) for s in params["SCM"]],
-                      pooled=np.asarray(params["Sp"]), sigmas=[np.asarray(s) for s in out["Sigmas"]])
+                      pooled=np.asarray(params["Sp"]), sigmas=[np.asarray(s) for s in out["Sigmas"]],
+                      residual_alpha=res[0], residual_beta=res[1], iterations=params.get("_rscmpool_iterations"))

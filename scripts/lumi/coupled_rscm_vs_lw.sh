@@ -1,5 +1,6 @@
 #!/bin/bash
-# Per-class Ledoit-Wolf vs coupled RSCM (task.md 61ceb61), one array task per dataset and fold on LUMI CPU nodes:
+# Per-class Ledoit-Wolf vs coupled RSCM (task.md 61ceb61; spaces pca64, pca16, native and the mechanism decomposition
+# approved 2026-11-12), one array task per dataset and fold on LUMI CPU nodes:
 # SLURM_ARRAY_TASK_ID 0-4 = FIN-Benthic2 fold0-4, 5-9 = AquaMonitor fold0-4. Existing full-specimen DINOv3-L caches
 # (geometry_inputs.sh); no GPU, no test rows.
 #
@@ -11,7 +12,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=64G
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 #SBATCH --output=%x_%A_%a.out
 #SBATCH --error=%x_%A_%a.err
 set -eo pipefail  # no -u: the module scripts read unset variables

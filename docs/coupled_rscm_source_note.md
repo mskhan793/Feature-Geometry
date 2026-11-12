@@ -63,9 +63,14 @@ T_k(β_k) = β_k S_k + (1 − β_k) S,   Σ̂_k = α_k T_k(β_k) + (1 − α_k) 
    on 4-class fixtures and, in every LUMI run, on the first four eligible classes of each real fold and PCA dimension,
    the unmodified and adapted code give identical α, β and Σ̂ (max abs difference required to be exactly 0, else the
    run fails). The original raises `ValueError` for K ≠ 4 (test).
-2. **Input format:** our PCA-projected train specimen embeddings (float64) for the eligible classes, coded 0..K−1 in
+2. **Convergence audit, output only** (added 2026-11-12 after the methods review): after the alternating search,
+   `rscmpool` also stores its MSE-polynomial coefficients and iteration count in `params` (`_rscmpool_C`,
+   `_rscmpool_iterations`; in-memory, asserted to occur once). `convergence_residuals` applies the authors' clipped
+   updates (7)/(8) once more to the returned (α, β) and reports |Δα| and |Δβ| separately. Nothing in the estimate
+   changes (the 4-class equality with the unmodified code still holds, test).
+3. **Input format:** our PCA-projected train specimen embeddings (float64) for the eligible classes, coded 0..K−1 in
    sorted class order, passed as the DataFrame the code expects. No change to parameters or assumptions.
-3. **Class means for the likelihood:** the train sample mean of each class (as for the LW reference); the authors' code
+4. **Class means for the likelihood:** the train sample mean of each class (as for the LW reference); the authors' code
    estimates covariances only.
 
 ## Reference estimator (unchanged convention, section 8 D3)

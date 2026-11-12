@@ -9,9 +9,9 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.methods.coupled_rscm import (SOURCE, SOURCE_SHA256, adapted_module, coupled_covariance, fit_coupled,
-                                      original_module)
-from src.statistics.covariance_fit import lw_alpha, lw_class_covariance, shrunk
+from src.methods.coupled_rscm import (SOURCE, SOURCE_SHA256, adapted_module, convergence_residuals, coupled_covariance,
+                                      fit_coupled, original_module)
+from src.statistics.covariance_fit import gaussian_loglik, gaussian_parts, lw_alpha, lw_class_covariance, shrunk
 from tests.test_class_geometry_pilot import run, write_cache
 
 
@@ -38,6 +38,9 @@ def test_adapted_code_equals_original_for_four_classes_and_original_fails_otherw
     a, b = fit_coupled(x, y, classes, original_module()), fit_coupled(x, y, classes, adapted_module())
     assert np.array_equal(a.alpha, b.alpha) and np.array_equal(a.beta, b.beta)
     assert all(np.array_equal(s, t) for s, t in zip(a.sigmas, b.sigmas))
+    # the output-only patch: coefficients exposed by the adapted code, residuals of the returned fixed point
+    assert np.isnan(a.residual_alpha).all() and a.iterations is None and b.iterations >= 1
+    assert (b.residual_alpha < 1e-6).all() and (b.residual_beta < 1e-6).all()
     x5, y5 = classes_data([10, 20, 30, 45, 12], 6)
     with pytest.raises(ValueError):  # the hard-coded reshape(4) is why the adaptation is needed
         fit_coupled(x5, y5, sorted(set(y5)), original_module())
@@ -77,53 +80,91 @@ def test_special_cases_and_conventions():
     assert np.allclose(coupled_covariance(np.cov(z, rowvar=False, bias=True), s_p, 1 - a_lw, 1), cov)
 
 
+def test_gaussian_parts_and_residuals():
+    rng = np.random.default_rng(2)
+    a = rng.normal(size=(5, 5))
+    cov, mean, x = a @ a.T + np.eye(5), rng.normal(size=5), rng.normal(size=(6, 5))
+    maha, logdet = gaussian_parts(x, mean, cov)
+    assert np.allclose(maha, np.einsum("ij,jk,ik->i", x - mean, np.linalg.inv(cov), x - mean))
+    assert logdet == pytest.approx(np.linalg.slogdet(cov)[1])
+    assert np.allclose(gaussian_loglik(x, mean, cov), -0.5 * (maha + logdet + 5 * np.log(2 * np.pi)))
+    c = {"22": np.array([1.0]), "21": np.array([0.0]), "20": np.array([1.0]), "02": np.array([1.0]), "11": np.array([0.0]),
+         "10": np.array([-1.0]), "01": np.array([-0.6])}
+    ra, rb = convergence_residuals(c, np.array([0.5]), np.array([0.3]))
+    # (7): alpha = -(1/2)(0.3*0 - 1)/(0.09 + 0 + 1) = 0.5/1.09; (8): beta = -(1/2)(0 + 0 - 0.6)/(0.25 + 1) = 0.24
+    assert ra[0] == pytest.approx(abs(0.5 / 1.09 - 0.5)) and rb[0] == pytest.approx(abs(0.24 - 0.3))
+
+
 def test_comparison_runs_end_to_end(tmp_path):
     rng = np.random.default_rng(0)
     rows, feats = [], []
-    sizes = {"A": 40, "B": 80, "C": 300, "D": 22, "E": 10}  # train specimens; E below the minimum
+    p = 30
+    sizes = {"A": 40, "B": 80, "C": 300, "D": 22, "E": 10}  # train specimens; E below the minimum; D <= p natively
     for c, n in sizes.items():
-        centre = rng.normal(0, 3, 12)
+        centre = rng.normal(0, 3, p)
         for s in range(n + 8):
             split = "train" if s < n else "val"
-            base = centre + rng.normal(0, 1, 12) * (1 + (c == "C"))
+            base = centre + rng.normal(0, 1, p) * (1 + (c == "C"))
             for cam in (1, 2):
                 rows.append({"img": f"{c}{s}_{cam}", "individual": f"{c}{s:03d}", "taxon_group": c, "fold0": split,
                              "camera": cam, "hdf5_row": len(rows)})
-                feats.append(base + rng.normal(0, 0.1, 12))
+                feats.append(base + rng.normal(0, 0.1, p))
     caches = [write_cache(tmp_path, "c1", rows, feats)]
     test_rows = pd.DataFrame(rows[:4]).assign(img=lambda d: "test_" + d.img, individual="T1", fold0="test")
     pd.concat([pd.DataFrame(rows), test_rows]).to_parquet(tmp_path / "cohort.parquet", index=False)
     out, lw = tmp_path / "out", tmp_path / "lw"
     args = ["--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches, "--fold", "fold0"]
-    run(["scripts/coupled_rscm_vs_lw.py", *args, "--out", str(out), "--pcs", "8", "4"])
+    run(["scripts/coupled_rscm_vs_lw.py", *args, "--out", str(out), "--spaces", "pca8", "pca4", "native"])
     run(["scripts/lw_fit_diagnostics.py", *args, "--out", str(lw), "--frames", "2", "--caps", "15", "--pcs", "8", "4"])
     s = json.loads((out / "summary.json").read_text())
     assert s["cohort_rows"]["test_rows_dropped"] == 4 and s["eligible_classes"] == 4
-    assert s["excluded_classes"] == {"E": {"train": 10, "val": 8}}
-    r8 = s["by_pcs"]["8"]
-    assert r8["four_class_original_vs_adapted"] == {"run": True, "classes": ["A", "B", "C", "D"],
-                                                     "max_abs_diff_alpha_beta_sigmas": 0.0}
-    assert r8["all"]["classes"] == 4 and not r8["numerical_failures"]
-    assert set(r8["strata"]) == {"15-63", "64-255", ">=256"} and r8["strata"]["15-63"]["classes"] == 2
+    assert s["excluded_classes"] == {"E": {"train": 10, "val": 8}} and list(s["spaces"]) == ["pca8", "pca4", "native"]
+    r8, rn = s["spaces"]["pca8"], s["spaces"]["native"]
+    for r in (r8, rn):
+        assert r["four_class_original_vs_adapted"] == {"run": True, "classes": ["A", "B", "C", "D"],
+                                                       "max_abs_diff_alpha_beta_sigmas": 0.0}
+        assert r["contrasts"]["coupled_vs_lw"]["all"]["classes"] == 4 and not r["contrasts"]["coupled_vs_lw"]["numerical_failures"]
+        assert np.isfinite(r["residual_alpha_max"]) and r["pooled"]["rank"] == r["dim"]
+    assert r8["contrasts"]["coupled_vs_lw"]["15-63"]["classes"] == 2 and r8["classes_n_le_p"] == 0
+    assert rn["dim"] == p and rn["classes_n_le_p"] == 1 and rn["contrasts"]["coupled_vs_lw"]["n<=p"]["classes"] == 1
     per = pd.read_csv(out / "perclass.csv")
-    assert len(per) == 8 and (per.status_coupled == "ok").all() and (per.status_lw == "ok").all()
-    assert (per[per.pcs == 8].set_index("taxon_group").status_class_scm.loc[["A", "B", "C", "D"]] == "ok").all()
+    assert len(per) == 3 * 4
+    for m in ("lw", "coupled", "lw_unbiased", "coupled_no_pooling", "pooling_lw_shrink"):
+        assert (per[f"status_{m}"] == "ok").all()
+    assert per.set_index(["space", "taxon_group"]).loc[("native", "D"), "status_class_scm"] == "not defined (n <= d)"
+    parts = per.coupled_vs_lw_maha_part + per.coupled_vs_lw_logdet_part
+    assert np.allclose(parts, per.coupled_vs_lw_mean)
     spec = pd.read_csv(out / "perspecimen.csv")
-    assert len(spec) == 2 * 4 * 8 and spec[["loglik_lw", "loglik_coupled"]].notna().all().all()  # paired support
+    assert len(spec) == 3 * 4 * 8 and spec[["loglik_lw", "loglik_coupled"]].notna().all().all()  # paired support
     assert not set(spec.individual) & {r["individual"] for r in rows if r["fold0"] == "train"}
-    assert np.allclose(spec.diff_coupled_minus_lw, spec.loglik_coupled - spec.loglik_lw)
-    # the LW reference reproduces lw_fit_diagnostics.py exactly; summariser over five identical folds
+    assert np.allclose(spec.d_coupled_vs_lw, spec.loglik_coupled - spec.loglik_lw)
+    # the 2 x 2 decomposition and the normalisation arm add up exactly
+    both = spec.d_pooling_at_lw_shrink + spec.d_shrink_at_coupled_pooling
+    assert np.allclose(both, spec.d_shrink_at_no_pooling + spec.d_pooling_at_coupled_shrink)
+    assert np.allclose(spec.d_normalisation + both, spec.d_coupled_vs_lw)
+    # the LW reference reproduces lw_fit_diagnostics.py exactly in the PCA spaces; summariser over five identical folds
     runs, lws = tmp_path / "runs", tmp_path / "lws"
     for k in range(5):
         shutil.copytree(out, runs / f"fold{k}")
         shutil.copytree(lw, lws / f"fold{k}")
     run(["scripts/summarise_coupled_rscm.py", "--dataset", "Toy", str(runs), str(lws), "--out", str(tmp_path / "sum")])
-    repro = json.loads((tmp_path / "sum" / "Toy" / "reproduction.json").read_text())
+    toy = tmp_path / "sum" / "Toy"
+    repro = json.loads((toy / "reproduction.json").read_text())
     assert repro["matched"] == repro["class_folds_here"] == repro["class_folds_reference"] == 40
     assert repro["max_abs_diff_val_loglik_lw"] == 0 and repro["max_abs_diff_alpha_lw"] == 0 and repro["n_train_equal"]
-    folds = pd.read_csv(tmp_path / "sum" / "Toy" / "folds.csv")
-    assert len(folds) == 10 and folds.groupby("pcs").macro_mean.nunique().eq(1).all()
-    assert len(pd.read_csv(tmp_path / "sum" / "Toy" / "examples.csv")) == 10
-    assert (tmp_path / "sum" / "Toy" / "examples_by_fold.csv").exists()
-    corners = pd.read_csv(tmp_path / "sum" / "Toy" / "corners.csv")
-    assert len(corners) == 6 and corners.class_scm_defined.sum() == 40  # every class has n > 8 here
+    folds = pd.read_csv(toy / "folds.csv")
+    assert len(folds) == 5 * 3 * 6 and folds.groupby(["space", "contrast"]).macro_mean.nunique().eq(1).all()
+    groups = pd.read_csv(toy / "groups.csv")
+    assert len(groups) == 3 * 6 * 5 and groups[(groups.space == "native") & (groups.group == "n<=p")].class_folds.eq(5).all()
+    corners = pd.read_csv(toy / "corners.csv")
+    assert len(corners) == 9 and corners.class_scm_defined.sum() == 20 + 20 + 15
+    assert len(pd.read_csv(toy / "examples.csv")) == 15 and (toy / "examples_by_fold.csv").exists()
+    assert set(json.loads((toy / "resources.json").read_text())["fold0"]) >= {"total_seconds", "native_seconds"}
+    # regression check against a first-version (pcs / diff_mean) layout of the same PCA results
+    v1 = tmp_path / "v1" / "toy" / "fold0"
+    v1.mkdir(parents=True)
+    first = per[per.space != "native"].assign(pcs=lambda t: t.dim)
+    first.rename(columns={"coupled_vs_lw_mean": "diff_mean", "coupled_vs_lw_ci95": "diff_ci95"}).to_csv(v1 / "perclass.csv", index=False)
+    (tmp_path / "v2" / "toy").mkdir(parents=True)
+    shutil.copytree(out, tmp_path / "v2" / "toy" / "fold0")
+    run(["scripts/check_coupled_regression.py", "--old", str(tmp_path / "v1"), "--new", str(tmp_path / "v2")])
