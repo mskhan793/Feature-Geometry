@@ -72,3 +72,70 @@ def test_file_builders_and_content_units(tmp_path):
     a = bm.fgvc_aircraft(data, pd.Series({f"fgvc-aircraft-2013b/data/images/{i}.jpg": f"a{i}" for i in "1234"}))
     assert a.split.tolist() == ["train", "train", "val", "test"] and (a.val_origin == "official").all()
     assert set(a.label) == {"707-320"} and set(a.coarse_label) == {"Boeing 707"}
+
+
+def test_pack_archive_hdf5_tar_and_zip(tmp_path):
+    import hashlib
+    import tarfile
+    import zipfile
+
+    import h5py
+
+    from tests.test_class_geometry_pilot import run
+    src = tmp_path / "src" / "ds" / "images"
+    src.mkdir(parents=True)
+    for n in "abc":
+        (src / f"{n}.jpg").write_bytes(n.encode() * 10)
+    with tarfile.open(tmp_path / "t.tar.gz", "w:gz") as t:
+        t.add(tmp_path / "src" / "ds", arcname="ds")
+    refs = ["ds/images/c.jpg", "ds/images/a.jpg"]
+    m = pd.DataFrame({"source_id": ["c", "a"], "image_ref": refs, "unit_id": ["u1", "u2"], "label": ["x", "y"], "split": ["train", "val"]})
+    m.to_parquet(tmp_path / "m.parquet", index=False)
+    (tmp_path / "c.tsv").write_text("".join(f"{r}\t{hashlib.sha1((r[-5] * 10).encode()).hexdigest()}\n" for r in refs))
+    run(["scripts/benchmark/pack_archive_hdf5.py", "--manifest", str(tmp_path / "m.parquet"), "--archives", str(tmp_path / "t.tar.gz"),
+         "--content", str(tmp_path / "c.tsv"), "--out", str(tmp_path / "o.h5"), "--out-manifest", str(tmp_path / "x.parquet")])
+    with h5py.File(tmp_path / "o.h5") as h:
+        assert [v.decode() for v in h["metadata/img"][:]] == ["c", "a"] and h["images"][0].tobytes() == b"c" * 10
+    assert pd.read_parquet(tmp_path / "x.parquet").hdf5_row.tolist() == [0, 1]
+    (tmp_path / "zips").mkdir()
+    with zipfile.ZipFile(tmp_path / "zips" / "p.zip", "w") as z:
+        z.writestr("img/q.jpg", b"qq")
+    pd.DataFrame({"source_id": ["q"], "image_ref": ["p.zip:img/q.jpg"], "unit_id": ["q"], "label": ["x"],
+                  "split": ["train"]}).to_parquet(tmp_path / "z.parquet", index=False)
+    run(["scripts/benchmark/pack_archive_hdf5.py", "--manifest", str(tmp_path / "z.parquet"), "--archives", str(tmp_path / "zips"),
+         "--out", str(tmp_path / "z.h5"), "--out-manifest", str(tmp_path / "zx.parquet")])
+    with h5py.File(tmp_path / "z.h5") as h:
+        assert h["images"][0].tobytes() == b"qq"
+
+
+def test_siglip2_encoder_wiring(monkeypatch):
+    """The siglip2 branch: pinned revision, the checkpoint's own processor, pooled vision output (tiny random model)."""
+    import transformers
+    from PIL import Image
+
+    from src.encoders import frozen_encoders as fe
+    calls = {}
+    cfg = transformers.SiglipVisionConfig(hidden_size=32, intermediate_size=64, num_hidden_layers=2, num_attention_heads=2,
+                                          image_size=32, patch_size=16)
+    proc = transformers.SiglipImageProcessor(size={"height": 32, "width": 32})
+
+    def model(repo, revision):
+        calls["model"] = (repo, revision)
+        return transformers.SiglipVisionModel(cfg)
+
+    def processor(repo, revision):
+        calls["processor"] = (repo, revision)
+        return proc
+    monkeypatch.setattr(transformers.SiglipVisionModel, "from_pretrained", staticmethod(model))
+    monkeypatch.setattr(transformers.AutoImageProcessor, "from_pretrained", staticmethod(processor))
+    enc, transform, info = fe.load_encoder("siglip2")
+    x = transform(Image.new("RGB", (50, 40), (255, 0, 0)))
+    assert x.shape == (3, 32, 32) and torch_allclose(x[0], 1.0) and torch_allclose(x[1], -1.0)  # rescale + mean/std 0.5
+    out = enc(x[None])
+    assert out.shape == (1, 32) and calls["model"] == calls["processor"] == ("google/siglip2-so400m-patch16-256", fe.REVISIONS["siglip2"])
+    assert "e8708ab7" in info["library"] and not enc.training
+
+
+def torch_allclose(t, v):
+    import torch
+    return bool(torch.allclose(t, torch.full_like(t, v), atol=1e-6))

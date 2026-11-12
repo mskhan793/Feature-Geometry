@@ -1,0 +1,2 @@
+JobID|State|Elapsed|AllocTRES
+23642060|COMPLETED|00:20:25|billing=112,cpu=112,energy=99188,gres/gpu:mi250=8,mem=240G,node=1

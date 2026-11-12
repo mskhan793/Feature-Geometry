@@ -1,0 +1,49 @@
+{
+ "throughput_images_per_s_per_node": 682.6,
+ "images_per_dataset": {
+  "finbenthic2": 186284,
+  "aquamonitor": 836159,
+  "bioscan5m": 343333,
+  "df24": 295938,
+  "fgvc_aircraft": 10000,
+  "food101": 101000,
+  "cifar100": 60000,
+  "oxford_pets": 7349
+ },
+ "totals_per_encoder": {
+  "bioclip2": {
+   "images_to_encode": 1840063,
+   "est_node_hours": 0.748,
+   "est_gpu_hours": 2.995,
+   "storage_gb_float32": 5.653
+  },
+  "dinov2_l": {
+   "images_to_encode": 1840063,
+   "est_node_hours": 0.748,
+   "est_gpu_hours": 2.995,
+   "storage_gb_float32": 7.537
+  },
+  "dinov3_l": {
+   "images_to_encode": 817620,
+   "est_node_hours": 0.332,
+   "est_gpu_hours": 1.331,
+   "storage_gb_float32": 7.537
+  },
+  "siglip2": {
+   "images_to_encode": 1840063,
+   "est_node_hours": 1.049,
+   "est_gpu_hours": 4.194,
+   "storage_gb_float32": 8.478
+  }
+ },
+ "total_gpu_hours": 11.515,
+ "total_storage_gb": 29.205,
+ "status_counts": {
+  "ready": 16,
+  "missing checkpoint": 7,
+  "missing images": 3,
+  "cached in v1 (same checkpoint/transform; equivalence check pending)": 3,
+  "cached (Feature-Geometry, verified)": 2,
+  "missing images + checkpoint": 1
+ }
+}

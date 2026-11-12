@@ -1,0 +1,33 @@
+encoder,dataset,status,images,images_to_encode,est_node_hours,est_gpu_hours,storage_gb_float32
+dinov3_l,finbenthic2,"cached (Feature-Geometry, verified)",186284,0,0.0,0.0,0.763
+dinov3_l,aquamonitor,"cached (Feature-Geometry, verified)",836159,0,0.0,0.0,3.425
+dinov3_l,bioscan5m,cached in v1 (same checkpoint/transform; equivalence check pending),343333,343333,0.14,0.559,1.406
+dinov3_l,df24,missing images,295938,295938,0.12,0.482,1.212
+dinov3_l,fgvc_aircraft,ready,10000,10000,0.004,0.016,0.041
+dinov3_l,food101,ready,101000,101000,0.041,0.164,0.414
+dinov3_l,cifar100,ready,60000,60000,0.024,0.098,0.246
+dinov3_l,oxford_pets,ready,7349,7349,0.003,0.012,0.03
+dinov2_l,finbenthic2,ready,186284,186284,0.076,0.303,0.763
+dinov2_l,aquamonitor,ready,836159,836159,0.34,1.361,3.425
+dinov2_l,bioscan5m,cached in v1 (same checkpoint/transform; equivalence check pending),343333,343333,0.14,0.559,1.406
+dinov2_l,df24,missing images,295938,295938,0.12,0.482,1.212
+dinov2_l,fgvc_aircraft,ready,10000,10000,0.004,0.016,0.041
+dinov2_l,food101,ready,101000,101000,0.041,0.164,0.414
+dinov2_l,cifar100,ready,60000,60000,0.024,0.098,0.246
+dinov2_l,oxford_pets,ready,7349,7349,0.003,0.012,0.03
+bioclip2,finbenthic2,ready,186284,186284,0.076,0.303,0.572
+bioclip2,aquamonitor,ready,836159,836159,0.34,1.361,2.569
+bioclip2,bioscan5m,cached in v1 (same checkpoint/transform; equivalence check pending),343333,343333,0.14,0.559,1.055
+bioclip2,df24,missing images,295938,295938,0.12,0.482,0.909
+bioclip2,fgvc_aircraft,ready,10000,10000,0.004,0.016,0.031
+bioclip2,food101,ready,101000,101000,0.041,0.164,0.31
+bioclip2,cifar100,ready,60000,60000,0.024,0.098,0.184
+bioclip2,oxford_pets,ready,7349,7349,0.003,0.012,0.023
+siglip2,finbenthic2,missing checkpoint,186284,186284,0.106,0.425,0.858
+siglip2,aquamonitor,missing checkpoint,836159,836159,0.476,1.906,3.853
+siglip2,bioscan5m,missing checkpoint,343333,343333,0.196,0.782,1.582
+siglip2,df24,missing images + checkpoint,295938,295938,0.169,0.674,1.364
+siglip2,fgvc_aircraft,missing checkpoint,10000,10000,0.006,0.023,0.046
+siglip2,food101,missing checkpoint,101000,101000,0.058,0.23,0.465
+siglip2,cifar100,missing checkpoint,60000,60000,0.034,0.137,0.276
+siglip2,oxford_pets,missing checkpoint,7349,7349,0.004,0.017,0.034

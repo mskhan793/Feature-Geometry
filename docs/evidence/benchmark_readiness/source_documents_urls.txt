@@ -1,0 +1,9 @@
+fgvc_aircraft/paper_arxiv_1306.5151.pdf <- https://arxiv.org/pdf/1306.5151
+fgvc_aircraft/official_page.html <- https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
+food101/paper_bossard_eccv14.pdf <- https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/static/bossard_eccv14_food-101.pdf
+food101/official_page.html <- https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/
+cifar100/tech_report_krizhevsky2009.pdf <- https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
+cifar100/official_page.html <- https://www.cs.toronto.edu/~kriz/cifar.html
+oxford_pets/paper_parkhi12a.pdf <- https://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf
+oxford_pets/official_page.html <- https://www.robots.ox.ac.uk/~vgg/data/pets/
+siglip2/paper_arxiv_2502.14786.pdf <- https://arxiv.org/pdf/2502.14786

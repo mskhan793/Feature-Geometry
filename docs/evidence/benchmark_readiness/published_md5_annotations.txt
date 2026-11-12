@@ -1,0 +1,1 @@
+e3799900175f63abbc48a5bc5b16427e  data/fgvc-aircraft-2013b-annotations.tar.gz
