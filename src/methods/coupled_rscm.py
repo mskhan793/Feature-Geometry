@@ -11,9 +11,9 @@ quantity scikit-learn's / our Ledoit-Wolf alpha denotes). (alpha_k, beta_k) mini
 Frobenius MSE E||Sigmahat_k - Sigma_k||_F^2 (Theorem 1): grid {0, 0.05, ..., 1}^2, then alternating closed-form
 updates (7)/(8) clipped to [0, 1] (Sect. V-A). Plug-in parameters (Sect. IV; code ``estimate_parameters``), per class:
 scale eta_k = tr(S_k)/p; elliptical kurtosis kappa_k = mean marginal excess kurtosis / 3 (biased moments), floored at
--2/(p + 2); sphericity gamma_k from the spatial sign covariance around the spatial median, clipped to [1, p] (the
-paper states gamma_k in [1, p]; the clip of the estimate is in the code only); <Sigma_i, Sigma_j>_F (i != j) = p^2 eta_i eta_j <SSCM_i, SSCM_j>_F. The tuning
-assumes elliptical classes with finite fourth moments.
+-2/(p + 2); sphericity gamma_k from the spatial sign covariance around the spatial median, clipped to [1, p] (as in
+the paper, Sect. IV-B); <Sigma_i, Sigma_j>_F (i != j) = p^2 eta_i eta_j <SSCM_i, SSCM_j>_F. The tuning assumes
+elliptical classes with finite fourth moments.
 
 Our adaptation (one line, applied in memory when the source is loaded; the file is never edited): the grid evaluation
 in ``rscmpool``, ``msefunction(...).reshape(4)``, hard-codes K = 4 classes and becomes ``.reshape(K)``. Everything else

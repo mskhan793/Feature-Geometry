@@ -9,14 +9,17 @@ Previous response (PCA vs FDA GBC, Ledoit–Wolf diagnostics §8, shrinkage lite
 
 ## Verdict
 
-**The coupled estimator does not improve held-out density over per-class Ledoit–Wolf (LW) overall.** It helps one
-group clearly: **rare taxa (15–63 train specimens) at 64 PCs**, where these classes have fewer specimens than
-dimensions — mean gain +2.97 (FIN-Benthic2, 20 of 25 class-folds better) and +1.10 (AquaMonitor, 28 of 39), interval
-above 0 in 4 of 5 folds in both datasets. It is slightly but consistently **worse at 16 PCs in every stratum** and
-**worse for classes with ≥ 64 train specimens at 64 PCs**. Per specimen (micro) it is never better: the interval is
-below 0 in 15 of the 20 fold × dimension runs and above 0 in none. Per-class LW therefore stays the better general
-class model; an expansion is justified at most as a narrowly predeclared question about classes with n_c ≤ d (see
-"Decisions").
+*(Revised after the Astra high methods review, §7; first version in commit e3d6e1e.)*
+
+**No universal winner.** The coupled estimator (CRSCM) **loses at 16 PCs** in both datasets (class-macro interval
+below 0 in 3 FIN-Benthic2 and all 5 AquaMonitor folds). **At 64 PCs it improves the rare-class averages** (taxa with
+15–63 train specimens: mean +2.97 FIN-Benthic2, 20 of 25 class-folds better; +1.10 AquaMonitor, 28 of 39; interval
+above 0 in 4 of 5 folds in both) **and FIN-Benthic2's primary class-macro outcome** (positive in all 5 folds, interval
+above 0 in 3); AquaMonitor's 64-PC macro is mixed (interval above 0 in 1 fold). Classes with ≥ 64 train specimens lose
+slightly on average. **Per specimen (micro) there is no clear gain:** no micro interval lies above 0 (two positive
+point estimates), and 15 of the 20 fold × dimension intervals lie below 0. Keeping per-class LW as the main class
+model is a reasonable operational choice, not an established general superiority. Both estimators were designed for
+dimension comparable to or above the class size; a bounded native-1024 comparison is proposed in §7 (not run).
 
 ## 1. Sources and fidelity (gate passed)
 
@@ -28,8 +31,10 @@ class model; an expansion is justified at most as a narrowly predeclared questio
   `rscmpool(averaging=False)`, i.e. class-specific (α_k, β_k) from the authors' plug-in estimates (elliptical
   kurtosis, spatial-sign sphericity, SSCM inner products) and their grid + alternating search.
 - **Paper vs code**, checked line by line: estimator, unbiased SCM, π_k = n_k/N pooling, all nine MSE-polynomial
-  coefficients (Appendix A) and the plug-in formulas agree. The code clips γ̂_k to [1, p] (the paper only states the
-  range); its slow-convergence warning can never fire; it imports `scipy.stats.stats.kurtosis` (works in SciPy 1.18.0,
+  coefficients (Appendix A) and the plug-in formulas agree, including the clip of γ̂_k to [1, p] (paper Sect. IV-B;
+  the first version of this note wrongly said only the code clips). Its slow-convergence warning can never fire, and
+  its stopping rule adds the α and β changes before the norm, so they can cancel (convergence not audited here); it
+  imports `scipy.stats.stats.kurtosis` (works in SciPy 1.18.0,
   deprecated).
 - **One essential adaptation:** `rscmpool` evaluates its grid with `.reshape(4)`, so the original works only for
   exactly 4 classes (it raises `ValueError` otherwise — test). We replace it with `.reshape(K)` in memory at load time
@@ -88,15 +93,21 @@ whose stratum interval is above / below 0):
 | 64–255 | 119 (26 taxa); −0.0559 / −0.0415; 32 better; 0 / 4 | 119; −0.0410 / −0.0572; 55 better; 0 / 0 | 95 (19 taxa); −0.1888 / −0.1635; 13 better; 0 / 5 | 95; −0.2660 / −0.1856; 36 better; 0 / 2 |
 | ≥ 256 | 31 (7 taxa); −0.0381 / −0.0336; 9 better; 0 / 4 | 31; −0.1959 / −0.1823; 3 better; 0 / 4 | 70 (14 taxa); −0.0291 / −0.0042; 20 better; 0 / 5 | 70; −0.1018 / −0.0220; 15 better; 0 / 2 |
 
-- **Rare taxa help only at 64 PCs**, where 15–63 train specimens are fewer than the 64 dimensions and the class's own
-  covariance is singular; borrowing the pooled covariance supplies the missing directions. At 16 PCs (n > d for every
-  eligible class) the same taxa lose slightly.
-- **Well-estimated classes are harmed slightly**, most clearly ≥ 256 at 64 PCs in FIN-Benthic2 (3 of 31 better, 4
-  folds below 0) and every stratum at 16 PCs in AquaMonitor (5 folds below 0).
+- **Rare taxa gain only at 64 PCs**, where 15–63 train specimens give a class covariance of rank ≤ n − 1 < 64
+  (singular). Borrowing the pooled covariance *can* supply missing directions, but this comparison does not separate
+  that from the different identity shrinkage, target scale or plug-in estimation. At 16 PCs the same taxa lose
+  slightly; there, most rare classes have n − 1 ≥ 16, but classes with 15 or 16 train specimens are still singular
+  (corrected: the first version said n > d for every eligible class).
+- **Larger classes lose slightly**, most clearly ≥ 256 at 64 PCs in FIN-Benthic2 (3 of 31 better, 4 folds below 0)
+  and every stratum at 16 PCs in AquaMonitor (5 folds below 0). A large n does not by itself show that a covariance is
+  well estimated.
 
-**Parameters** (medians by stratum; `parameters.csv`): the coupled estimator always pools a little and shrinks toward
-the identity **less than LW**: β = 0 (pooled only) in **no** class-fold; β = 1 in at most 3.4 %; α = 1 (no identity
-shrinkage) in 12–45 %. Shrinkage toward identity coupled vs LW, 64 PCs: FIN-Benthic2 0.1012 vs 0.2333 (15–63),
+**Parameters** (medians by stratum; `parameters.csv`): in the stratum medians the coupled estimator pools a little
+and shrinks toward the identity less than LW — not in every class (β = 0, pooled only, in **no** class-fold; β = 1,
+no pooling, in up to 3.4 % of a stratum; α = 1, no identity shrinkage, in 12–45 %; some classes shrink more than
+under LW, e.g. *Sialis* sp. at 16 PCs 0.4883 vs 0.4383). The two identity targets have different scales (tr T_k/p vs
+the biased class trace/p), so the coefficients alone do not show under-regularisation. Shrinkage toward identity
+coupled vs LW, 64 PCs: FIN-Benthic2 0.1012 vs 0.2333 (15–63),
 0.0050 vs 0.0392 (≥ 256); AquaMonitor 0.0582 vs 0.1536 (15–63), 0.0020 vs 0.0081 (≥ 256). β median 0.72–0.85 for
 15–63 and 0.93–0.99 for ≥ 256. All covariances symmetric and positive definite; median condition numbers similar
 (e.g. 64 PCs, ≥ 256: 259 vs 301 FIN-Benthic2, 418 vs 406 AquaMonitor, LW vs coupled).
@@ -117,14 +128,15 @@ consistent with its specification.
 | *Lepidostoma hirtum* (FIN-Benthic2) | 170 | 5 | 0.049 | 0.004 | 0.935 | −2.065, −0.873; −1.360 |
 | Chironomidae (AquaMonitor) | 7,416 | 5 | 0.001 | 0.000 | 0.998 | −0.005, +0.009; +0.001 |
 
-Medians over folds for shrinkage and β. The two mid-sized losers lose consistently in all five folds while the
-coupled estimator removes almost all identity shrinkage — consistent with section 8's finding that the
-squared-error-optimal intensity is too small for held-out likelihood, though this run does not separate the
-identity-shrinkage effect from the pooling effect.
+Medians over folds for shrinkage and β. The two mid-sized losers lose in all five folds while the coupled estimator
+uses almost no identity shrinkage; this is compatible with section 8's finding that the squared-error-optimal
+intensity is too small for held-out likelihood, but the run does not separate the identity-shrinkage, target-scale
+and pooling effects.
 
 ## 5. Limits and negative findings
 
-- **Overall negative result:** no general improvement; micro never better.
+- **No general improvement:** no universal winner; no micro interval above 0. This compares two complete estimators
+  (different SCM normalisation, identity target and tuning), not the isolated contribution of pooling.
 - The rare-taxon gain rests on few taxa (7 FIN-Benthic2, 9 AquaMonitor; some eligible in only 2–4 folds) and on the
   64-PC setting; it is not seen at 16 PCs.
 - Intervals reflect val-specimen sampling only (train fits fixed); folds overlap; pointwise, no multiplicity control.
@@ -136,11 +148,56 @@ identity-shrinkage effect from the pooling effect.
 
 ## 6. Decisions for the author
 
-1. Keep per-class LW as the main class model (my recommendation from this run), or not.
-2. Whether a separately approved, **predeclared** follow-up is wanted on the one positive signal: classes with
-   n_c ≤ d (e.g. coupled only for those, LW otherwise). This rule comes from these validation results, so it would
-   need confirmation on data not used to find it; otherwise document as a limitation.
-3. Whether to separate the two mechanisms (pooling vs identity shrinkage) — only if the central question needs it.
+1. Keep per-class LW as the main class model (a reasonable operational choice from this run, not a general
+   superiority result), or not.
+2. Whether to run the bounded **native-1024** comparison of §7 (separate approval; CPU only).
+3. Whether to separate the mechanisms (pooling vs identity shrinkage vs target scale) — only if the central question
+   needs it. A validation-derived hybrid rule ("coupled only where n_c ≤ d") is **not** recommended (the reviewer
+   advises against it as well).
+
+## 7. Methods review (Astra high) and the dimension question
+
+**Asked** (author's request): validity of fidelity, conventions, paired design, bootstrap, strata and wording; and
+whether native 1024-d frozen features are the more appropriate setting, since both estimators were proposed for
+dimension comparable to or above the class size (Ledoit & Wolf 2004: p/n bounded, p may exceed n; Raninen & Ollila
+2021 simulations: p = 200, n_k = 25–100) while we fitted in 16/64 train-PCA dimensions. Fresh read-only session,
+gpt-6-astra high; handover `docs/evidence/coupled_rscm_vs_lw/astra_review/context_summary.md`; answer saved there
+(`consult_stdout.txt`) and in `~/agent_consults/2026-11-12_162950_codex_gpt-6-astra_high.md`. Reviewed checkout e3d6e1e,
+all file hashes matched.
+
+**Verdict: needs changes** — implementation substantially faithful; several interpretations corrected. Each point was
+checked against the code, saved outputs and the paper before acting:
+
+| # | Finding | Checked | Action |
+|---|---|---|---|
+| 1 | Headline understated the primary (macro) outcome; "micro never better" wrong (two positive micro point estimates) | confirmed (`folds.csv`) | verdict rewritten |
+| 2 | "n > d for every eligible class at 16 PCs" false (15–16 train specimens: rank ≤ n − 1 < 16); pooling mechanism untested | confirmed | §3 corrected |
+| 3 | The paper itself clips γ̂_k to [1, p] (Sect. IV-B, [·]₁ᵖ) | confirmed on the rendered page | source note, wrapper docstring, §1 corrected |
+| 4 | "Always pools" / "shrinks less than LW" hold for medians only; targets differ in scale | confirmed (`parameters.csv`, `examples.csv`) | §3, §4 qualified |
+| 5 | reshape adaptation, equivalence check, pooling weights, Appendix A coefficients, conventions correct; 1/(n − 1) vs 1/n intentional | — | none |
+| 6 | Pairing, strata, stratified bootstrap appropriate for the conditional question; intervals exclude training uncertainty | — | already in §5 |
+
+**Dimension question — reviewer's answer:** native 1024-d would be **more informative** about the original frozen
+representation and low-sample covariance estimation, but is not needed for the approved PCA study to be valid (LW
+also covers fixed dimension, §3.1 Assumption 1; neither estimator requires p > n). What changes at p = 1024:
+most class SCMs are singular; the Gaussian likelihood is weighted by the inverse covariance, so small estimated
+eigenvalues and tail directions can dominate, while both tunings target Frobenius error; pooled train PCA keeps
+high-total-variance directions (including between-class variation) and drops directions that may matter for
+within-class density, especially of rare classes; more dimensions do not make the plug-ins reliable at n = 15
+(sphericity result needs γ/p → 0; the paper reports bias for compound-symmetry spectra). **Either direction of change
+is plausible.**
+
+**Proposed bounded native run (not started; needs approval):** same caches, eligible classes, means, five folds and
+both datasets; native coordinates through an explicit native-input path (not `--pcs 1024`, which still rotates, and
+the authors' coordinatewise kurtosis is not exactly rotation-invariant); no whitening, no validation tuning;
+CRSCM − LW compared within the dimension only (no cross-dimension comparison of gains); macro primary, micro
+secondary, existing strata plus n_c/p and n_c ≤ p; per-fold/class differences with conditional intervals, parameters,
+plug-in estimates and clip frequencies, minimum eigenvalues, conditioning, failures kept in the accounting (no jitter
+or pseudo-inverse), runtime and memory; log-determinant and Mahalanobis parts reported separately; float64 Cholesky
+scoring with finite/symmetry/pooled-rank checks; separate α and β convergence residuals monitored without changing
+the estimator; one predetermined fold timed first, continuation decided on resources and numerics only. Cost: CPU
+only; one class covariance at p = 1024 is cheap, and the authors' pairwise inner products need K(K − 1)/2
+products of 1024 × 1024 matrices per fold (K = eligible classes) — an estimate would come from the timed fold.
 
 Not done (per task): no replacement of LW in earlier tables, no GBC/Bhattacharyya recomputation, no FDA change, no
 classifiers, no tuning on validation, no LINPOOL/ELL, no taxonomy pooling, no test sets.

@@ -1,0 +1,55 @@
+## Verdict
+
+**needs changes** — the implementation is substantially faithful, but several interpretations need correction. A bounded native-1024 comparison is justified as a separate study.
+
+## Findings
+
+1. **The headline understates the primary outcome.** [response.md:12](/home/aijyu/Documents/Feature-Geometry/response.md:12) declares an overall negative result, although class-macro is primary: at 64 PCs, FIN-Benthic2 improves in every fold, with intervals above zero in three; AquaMonitor is mixed. “Micro never better” should say **“no micro interval excludes zero in favour of CRSCM”**: positive point estimates exist. Retaining LW is a reasonable operational recommendation, not an established general superiority result. See [summary.md:5](/home/aijyu/Documents/Feature-Geometry/docs/evidence/coupled_rscm_vs_lw/summary/summary.md:5) and [summary.md:87](/home/aijyu/Documents/Feature-Geometry/docs/evidence/coupled_rscm_vs_lw/summary/summary.md:87).
+
+2. **The singularity explanation contains a factual error and an untested mechanism.** [response.md:91](/home/aijyu/Documents/Feature-Geometry/response.md:91) says every eligible class has \(n>d\) at 16 PCs. FIN-Benthic2 includes classes with 15 and 16 training specimens; their centred SCMs are singular because rank is at most \(n-1\). See [examples_by_fold.csv:12](/home/aijyu/Documents/Feature-Geometry/docs/evidence/coupled_rscm_vs_lw/summary/FIN-Benthic2/examples_by_fold.csv:12). Pooling *can* supply missing directions, but this comparison does not isolate that mechanism from identity shrinkage, scale changes, or plug-in estimation. Likewise, larger \(n\) alone does not establish “well-estimated” covariance.
+
+3. **The paper already specifies sphericity clipping.** The statements at [source note:55](/home/aijyu/Documents/Feature-Geometry/docs/coupled_rscm_source_note.md:55), [wrapper:14](/home/aijyu/Documents/Feature-Geometry/src/methods/coupled_rscm.py:14), and [response.md:31](/home/aijyu/Documents/Feature-Geometry/response.md:31) are incorrect. Section IV-B explicitly writes the estimate with clipping brackets \([\cdot]_1^p\); the notation is defined in Section I. The code agrees with the paper here. [Published paper](https://aaltodoc.aalto.fi/server/api/core/bitstreams/c7dc632e-74df-44b3-a363-ac0dcbfbbdbf/content).
+
+4. **Parameter descriptions need qualification.** “Always pools” and “shrinks … less than LW” at [response.md:97](/home/aijyu/Documents/Feature-Geometry/response.md:97) are not universal: some \(\beta=1\), and some coupled identity coefficients exceed LW’s. The stated pattern holds for the reported stratum medians. Moreover, the identity targets have different scales, so comparing coefficients alone does not establish insufficient regularization.
+
+5. **The central mathematical implementation checks out.** The guarded `reshape(4)→reshape(K)` replacement changes only the class-axis shape; the four-class equivalence check is appropriate, supplemented by a five-class equation check. Covariance construction, pooling weights, Appendix A coefficients, and parameter conventions agree with the inspected sources. CRSCM’s \(1/(n-1)\) versus LW’s \(1/n\) is intentional, not a bug. It does mean this is a comparison of complete estimators, not a controlled estimate of pooling’s contribution. See [wrapper:39](/home/aijyu/Documents/Feature-Geometry/src/methods/coupled_rscm.py:39), [authors’ code:286](/home/aijyu/Documents/Feature-Geometry/third_party/coupled_rscm/multiclass_rscm.py:286), and [LW implementation:32](/home/aijyu/Documents/Feature-Geometry/src/statistics/covariance_fit.py:32).
+
+6. **Pairing, strata and bootstrap are appropriate for the stated conditional question.** Both methods share train means, projection and validation specimens. Resampling paired differences within each class, then equal-weighting classes or weighting by validation counts, implements the stated macro/micro estimands. The intervals condition on fitted models, included classes and class counts; they do not measure training uncertainty or generalization to new taxa. Overlapping folds and small validation classes limit interpretation. The existing limitations acknowledge most of this. See [comparison:109](/home/aijyu/Documents/Feature-Geometry/scripts/coupled_rscm_vs_lw.py:109), [comparison:147](/home/aijyu/Documents/Feature-Geometry/scripts/coupled_rscm_vs_lw.py:147), and [aggregation:82](/home/aijyu/Documents/Feature-Geometry/scripts/coupled_rscm_vs_lw.py:82).
+
+## Recommended fix
+
+**Correct the report without discarding the PCA results.** Suggested verdict: “CRSCM loses at 16 PCs; at 64 PCs it improves rare-class averages and FIN-Benthic2’s primary macro outcome, while micro outcomes show no clear gain. Results do not establish a universal winner.”
+
+**Native-dimension assessment — recommendation:** yes, 1024 dimensions would be more informative about the original frozen representation and low-sample covariance estimation. It is not required to make the approved PCA experiment valid. LW explicitly includes fixed-dimensional asymptotics; neither estimator requires \(p>n\). See Ledoit–Wolf §3.1, Assumption 1, [local text:393](/home/aijyu/Documents/Research/methods/ledoit_wolf2004/paper.txt:393).
+
+What changes:
+
+- Most class SCMs become singular. LW’s positive identity term can restore definiteness; CRSCM can obtain support through pooling and/or identity shrinkage. A pooled matrix is not automatically full rank, and CRSCM permits zero identity shrinkage.
+- Gaussian likelihood weights residual errors by inverse covariance. Small estimated eigenvalues, accumulated tail-direction errors and class-mean estimation error can dominate. Frobenius-MSE tuning emphasizes a different loss.
+- Pooled train PCA retains high *total* variance, including between-class variation. It discards directions that may matter for within-class density, particularly for rare classes. It also changes both identity targets and estimated shrinkage parameters.
+- Larger dimension does not guarantee reliable plug-ins at \(n=15\). CRSCM §IV-B gives a sphericity condition, \(\gamma/p\to0\), for an asymptotic result with known location; §VI-A reports bias for compound-symmetry spectra. Estimated spatial medians, correlated coordinates and non-elliptical classes add uncertainty. Increasing \(p\) does not supply independent specimens.
+
+Consequently, **either direction of reversal is plausible**: pooling may estimate useful missing directions, or import inappropriate tail covariance and worsen conditioning.
+
+A minimal predeclared follow-up:
+
+1. Use unchanged caches, eligible classes, means, five folds and both datasets; native coordinates, no PCA/whitening or validation tuning. Keep macro primary, micro secondary and the existing count strata; additionally report \(n_c/p\) and \(n_c\le p\).
+2. Compare CRSCM−LW **within the same dimension**. Do not interpret absolute likelihoods—or gain magnitudes across dimensions—as equivalent quantities. Do not implement a validation-derived hybrid rule.
+3. Report per-fold/class differences, conditional paired intervals, counts, parameters, plug-in estimates and clipping frequencies, minimum eigenvalues, conditioning, failures, runtime and memory. Separate log-determinant and Mahalanobis contributions.
+4. Use float64 and Cholesky scoring; check finite inputs, parameters and scores, symmetry, constant coordinates and pooled rank. Preserve failed classes in accounting; label any successful-fit-only aggregate. No silent jitter or pseudoinverse density.
+5. Audit convergence: the authors’ stopping expression permits cancellation between parameter changes, and its iteration-limit warning is unreachable ([authors’ code:471](/home/aijyu/Documents/Feature-Geometry/third_party/coupled_rscm/multiclass_rscm.py:471)). Monitor separate parameter residuals without silently changing the estimator.
+6. Time a predetermined fold before completing the bounded run; continuation should depend on resources/numerics, not favourable results.
+
+Use an explicit native-input path. Merely passing `--pcs 1024` still rotates the data; the coordinatewise kurtosis plug-in is not exactly rotation-invariant in finite samples ([authors’ code:233](/home/aijyu/Documents/Feature-Geometry/third_party/coupled_rscm/multiclass_rscm.py:233)).
+
+## Verification
+
+Reviewed checkout `e3d6e1e7ffc271e042c557a3ad66bb3594bb0958`; **all supplied SHA256 hashes matched**. Read the named files, relevant dependencies/tests, paper sections and saved evidence; checked the implementation diff from `8cf3738`.
+
+Eight focused non-writing tests passed; the file-writing integration test was excluded. No files changed, remote commands run, or agents consulted. Raw-feature reruns, bootstrap regeneration and native-space behaviour remain unverified. Project `AGENTS.md`/`CLAUDE.md`/`CLAUDE.local.md` were absent; shared rules and `task.md` were read.
+
+## Open questions
+
+None.
+codex session id (for --resume): 01a1d02a-38fe-7f91-b59a-9c2b9813f253
+saved: /home/aijyu/agent_consults/2026-11-12_162950_codex_gpt-6-astra_high.md

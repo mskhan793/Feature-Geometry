@@ -38,8 +38,8 @@ T_k(β_k) = β_k S_k + (1 − β_k) S,   Σ̂_k = α_k T_k(β_k) + (1 − α_k) 
   Search (Sect. V-A, code): grid {0, 0.05, …, 1}², then alternating closed-form updates (7)/(8) clipped to [0, 1]
   until the relative change < 1e-8 (at most 1000 iterations).
 - **Plug-in parameters** (Sect. IV, Lemma 1, code `estimate_parameters`): η_k = tr(S_k)/p; κ_k = max(mean_j k̂_j / 3,
-  −2/(p + 2)) with k̂_j = m4/m2² − 3 (biased moments; `scipy.stats.kurtosis` default); γ_k = (p n_k/(n_k − 1))(‖S̃_k‖²_F −
-  1/n_k) with S̃_k the spatial sign covariance around the spatial median; ⟨Σ_i, Σ_j⟩_F = p² η_i η_j ⟨S̃_i, S̃_j⟩_F (i ≠ j),
+  −2/(p + 2)) with k̂_j = m4/m2² − 3 (biased moments; `scipy.stats.kurtosis` default; coordinatewise, so not
+  exactly rotation-invariant); γ_k = [(p n_k/(n_k − 1))(‖S̃_k‖²_F − 1/n_k)]₁ᵖ (clipped to [1, p]) with S̃_k the spatial sign covariance around the spatial median; ⟨Σ_i, Σ_j⟩_F = p² η_i η_j ⟨S̃_i, S̃_j⟩_F (i ≠ j),
   ‖Σ_k‖²_F = p γ_k η_k²; E‖S_k‖²_F and E[tr(S_k)²] from Lemma 1 with τ1 = 1/(n_k − 1) + κ_k/n_k, τ2 = κ_k/n_k.
 - **Assumptions:** classes are independent samples from (unspecified) elliptical distributions with finite fourth
   moments; the optimality is for Frobenius MSE, not Gaussian likelihood.
@@ -52,8 +52,8 @@ T_k(β_k) = β_k S_k + (1 − β_k) S,   Σ̂_k = α_k T_k(β_k) + (1 − α_k) 
 | SCM, pooled SCM | unbiased, π_k = n_k/N | `scov` (n − 1), `Sp = Σ n_k SCM_k / N` | equal |
 | MSE coefficients C_ij (Appendix A) | C̃22 … C̃00 | `C["22"]` … `C["00"]` | equal (each term checked) |
 | κ̂_k, η̂_k, γ̂_k, inner products | Sect. IV | `estimate_kappa`, `estimate_eta`, `estimate_gamma`, `trCiCj` | equal |
-| γ̂_k range | γ_k ∈ [1, p] stated as a property | estimate clipped to [1, p] | code adds the clip |
-| Optimisation | grid 0.05 + alternating (7)/(8) | same | equal; the code's slow-convergence warning is unreachable (`iteration == iterMAX` never true) |
+| γ̂_k clip | estimate clipped, γ̂_k = [·]₁ᵖ (Sect. IV-B; clamp notation defined in Sect. I) | `np.clip(gam, 1, p)` | equal (corrected 2026-11-12 after the methods review: an earlier version of this note wrongly said the paper only states the range) |
+| Optimisation | grid 0.05 + alternating (7)/(8) | same | equal; the code's slow-convergence warning is unreachable (`iteration == iterMAX` never true), and its stopping rule ‖Δα + Δβ‖/‖α₀ + β₀‖ adds the two changes before the norm, so they can cancel; convergence is not reported |
 | Number of classes | any K | grid evaluation `msefunction(...).reshape(4)` | **code works only for K = 4** |
 
 ## Our adaptations (distinct from the original code and from the paper)
