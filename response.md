@@ -64,7 +64,7 @@ Previous response (class-balanced / taxonomic pooling): commit 0a9d7ba.
   - generic archive → HDF5 packer (byte-verified);
   - encoder-agnostic extraction job (`extract_encoder.sh`; `extract_dinov3_l.sh` now delegates to it, same steps);
   - readiness matrix.
-  - Tests: 105 pass.
+  - Tests: 104 pass.
 
 ## 3. Stage B smoke test (DINOv2-L × CIFAR-100; LUMI 23687426, dev-g 1 GCD, 1:18)
 
