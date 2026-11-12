@@ -44,7 +44,7 @@ from src.features.specimen_means import specimen_camera_means, specimen_means
 from src.methods.bhattacharyya import bhattacharyya_terms, class_covariance
 from src.methods.fda import fit_fda
 from src.statistics.class_geometry import direction, direction_separation
-from src.statistics.covariance_fit import gaussian_loglik, lw_alpha, shrunk
+from src.statistics.covariance_fit import gaussian_loglik, lw_alpha, lw_class_covariance, shrunk
 
 ALPHAS = [0.0, 1e-4, 3e-4, 1e-3, 3e-3, 1e-2, 3e-2, 0.1, 0.3, 1.0]
 CURVE_N = [15, 30, 64, 128, 256]
@@ -169,8 +169,8 @@ def main():
         for c in gbc_classes:
             zt, zv = z_tr[y_ref == c], z_va[y_va == c]
             mu = zt.mean(0)
-            a_c = lw_alpha(zt - mu)
-            covs = {"lw": shrunk(np.cov(zt, rowvar=False, bias=True), a_c), "diagonal": class_covariance(zt, "diagonal"),
+            lw_cov, a_c = lw_class_covariance(zt)
+            covs = {"lw": lw_cov, "diagonal": class_covariance(zt, "diagonal"),
                     "spherical": class_covariance(zt, "spherical")}
             if len(zt) > d:
                 covs["sample"] = class_covariance(zt, "full")
@@ -187,9 +187,9 @@ def main():
                     pick = np.random.default_rng([seed, n]).choice(len(zt), size=n, replace=False)
                     zs = zt[pick]
                     m = zs.mean(0)
-                    al = lw_alpha(zs - m)
+                    cov_s, al = lw_class_covariance(zs)
                     pcurve.append({"pcs": d, "taxon_group": c, "n": n, "seed": seed, "alpha_lw": al,
-                                   "val_loglik_lw": float(gaussian_loglik(zv, m, shrunk(np.cov(zs, rowvar=False, bias=True), al)).mean()),
+                                   "val_loglik_lw": float(gaussian_loglik(zv, m, cov_s).mean()),
                                    "val_loglik_spherical": float(gaussian_loglik(zv, m, class_covariance(zs, "spherical")).mean())})
         rows = []
         for c1, c2 in itertools.combinations(gbc_classes, 2):

@@ -29,6 +29,13 @@ def shrunk(cov: np.ndarray, alpha: float) -> np.ndarray:
     return (1 - alpha) * cov + alpha * np.trace(cov) / p * np.eye(p)
 
 
+def lw_class_covariance(z: np.ndarray) -> tuple[np.ndarray, float]:
+    """Per-class Ledoit-Wolf covariance (section 8 D3 convention): the biased class covariance shrunk toward its
+    average variance with the intensity of the class residuals. Returns (covariance, alpha)."""
+    alpha = lw_alpha(z - z.mean(0))
+    return shrunk(np.cov(z, rowvar=False, bias=True), alpha), alpha
+
+
 def gaussian_loglik(x: np.ndarray, mean: np.ndarray, cov: np.ndarray) -> np.ndarray:
     """Log density of each row of x under N(mean, cov) (Cholesky; raises if cov is not positive definite)."""
     c, low = cho_factor(cov, lower=True)
