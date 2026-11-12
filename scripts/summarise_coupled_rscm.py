@@ -27,66 +27,24 @@ from pathlib import Path
 
 import pandas as pd
 
-FOLDS = [f"fold{k}" for k in range(5)]
-GROUPS = ["all", "15-63", "64-255", ">=256", "n<=p", "n>p"]
+from src.statistics.fold_summary import FOLDS, STRATA_MASKS, across_folds, fold_table, group_table, read_runs
+
 CORNERS = ["coupled", "pooled_scm", "class_scm", "class_identity"]  # minus LW; corners are labelled diagnostics
 PRIMARY = "coupled_vs_lw"
 
 
-def read(runs: Path):
-    per, summ = [], {}
-    for f in FOLDS:
-        per.append(pd.read_csv(runs / f / "perclass.csv").assign(fold=f))
-        summ[f] = json.loads((runs / f / "summary.json").read_text())
-    return pd.concat(per, ignore_index=True), summ
-
-
 def summarise(runs: Path, lw_runs: Path, out: Path) -> dict:
     out.mkdir(parents=True, exist_ok=True)
-    per, summ = read(runs)
+    per, summ = read_runs(runs)
     spaces = list(summ[FOLDS[0]]["spaces"])
     contrasts = list(summ[FOLDS[0]]["contrasts"])
-    folds = []
-    for f in FOLDS:
-        for s in spaces:
-            r = summ[f]["spaces"][s]
-            for c in contrasts:
-                a = r["contrasts"][c]["all"]
-                folds.append({"fold": f, "space": s, "contrast": c, "classes": a["classes"], "macro_mean": a["macro_mean"],
-                              "macro_ci_low": a["macro_ci95"][0], "macro_ci_high": a["macro_ci95"][1],
-                              "macro_maha_part": a["macro_maha_part"], "macro_logdet_part": a["macro_logdet_part"],
-                              "micro_mean": a["micro_mean"], "micro_ci_low": a["micro_ci95"][0], "micro_ci_high": a["micro_ci95"][1],
-                              "classes_better": a["classes_better"], "classes_ci_above_0": a["classes_ci_above_0"],
-                              "classes_ci_below_0": a["classes_ci_below_0"],
-                              "numerical_failures": len(r["contrasts"][c]["numerical_failures"]),
-                              "four_class_check_max_diff": r["four_class_original_vs_adapted"].get("max_abs_diff_alpha_beta_sigmas"),
-                              "residual_alpha_max": r["residual_alpha_max"], "residual_beta_max": r["residual_beta_max"],
-                              "pooled_rank": r["pooled"]["rank"], "fit_seconds": r["fit_seconds"]})
-    folds = pd.DataFrame(folds)
+    folds = fold_table(summ, spaces, contrasts, lambda r: {
+        "four_class_check_max_diff": r["four_class_original_vs_adapted"].get("max_abs_diff_alpha_beta_sigmas"),
+        "residual_alpha_max": r["residual_alpha_max"], "residual_beta_max": r["residual_beta_max"],
+        "pooled_rank": r["pooled"]["rank"], "fit_seconds": r["fit_seconds"]})
     folds.to_csv(out / "folds.csv", index=False)
-    across = folds.groupby(["space", "contrast"], sort=False)[["macro_mean", "micro_mean"]].agg(["mean", "min", "max"])
-    ci = folds.assign(macro_above=folds.macro_ci_low > 0, macro_below=folds.macro_ci_high < 0,
-                      micro_above=folds.micro_ci_low > 0, micro_below=folds.micro_ci_high < 0)
-    ci = ci.groupby(["space", "contrast"], sort=False)[["macro_above", "macro_below", "micro_above", "micro_below"]].sum()
-
-    groups = []
-    for s in spaces:
-        for c in contrasts:
-            for g in GROUPS[1:]:
-                t = per[per.space == s]
-                t = t[t.stratum == g] if g[0].isdigit() or g.startswith(">") else t[t.n_le_p == (g == "n<=p")]
-                t = t.dropna(subset=[f"{c}_mean"])
-                fm = [x for x in (summ[f]["spaces"][s]["contrasts"][c][g] for f in FOLDS) if x["classes"]]
-                groups.append({"space": s, "contrast": c, "group": g, "class_folds": len(t), "taxa": t.taxon_group.nunique(),
-                               "class_diff_mean": t[f"{c}_mean"].mean(), "class_diff_median": t[f"{c}_mean"].median(),
-                               "maha_part_mean": t[f"{c}_maha_part"].mean(), "logdet_part_mean": t[f"{c}_logdet_part"].mean(),
-                               "class_folds_better": int((t[f"{c}_mean"] > 0).sum()),
-                               "fold_macro_mean": pd.Series([x["macro_mean"] for x in fm], dtype=float).mean(),
-                               "fold_macro_min": min((x["macro_mean"] for x in fm), default=float("nan")),
-                               "fold_macro_max": max((x["macro_mean"] for x in fm), default=float("nan")),
-                               "folds_ci_above_0": sum(x["macro_ci95"][0] > 0 for x in fm),
-                               "folds_ci_below_0": sum(x["macro_ci95"][1] < 0 for x in fm)})
-    groups = pd.DataFrame(groups)
+    across, ci = across_folds(folds)
+    groups = group_table(per, summ, spaces, contrasts, STRATA_MASKS)
     groups.to_csv(out / "groups.csv", index=False)
 
     g = per.groupby(["space", "stratum"], sort=False)

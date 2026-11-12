@@ -27,12 +27,6 @@ from src.statistics.heldout_density import MIN_TRAIN, MIN_VAL
 FOLDS = [f"fold{k}" for k in range(5)]
 
 
-def load_taxonomy(a, labels):
-    if a.dataset == "finbenthic2":
-        return tx.finbenthic2(a.fin_table, labels)
-    return tx.aquamonitor(a.aqua_mapping, a.aqua_table, labels)
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", required=True, choices=["finbenthic2", "aquamonitor"])
@@ -48,7 +42,7 @@ def main():
     spec = sel.drop_duplicates("individual")
     assert spec.groupby("individual").taxon_group.nunique().max() == 1
     labels = sorted(spec.taxon_group.unique())
-    tax = load_taxonomy(a, labels)
+    tax = tx.load(a.dataset, labels, a.fin_table, a.aqua_mapping, a.aqua_table)
     classes = tax.copy()
     classes["specimens"] = spec.taxon_group.value_counts()
     if "table_specimens" in classes:

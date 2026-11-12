@@ -62,3 +62,12 @@ def finbenthic2(table_csv: Path, labels: list[str]) -> pd.DataFrame:
     out = pd.DataFrame(rows)
     out["rank"] = out.apply(_rank, axis=1)
     return out.set_index("taxon_group")
+
+
+def load(dataset: str, labels: list[str], fin_table: Path | None = None, aqua_mapping: Path | None = None,
+         aqua_table: Path | None = None) -> pd.DataFrame:
+    if dataset == "finbenthic2":
+        return finbenthic2(fin_table, labels)
+    if dataset == "aquamonitor":
+        return aquamonitor(aqua_mapping, aqua_table, labels)
+    raise ValueError(dataset)
