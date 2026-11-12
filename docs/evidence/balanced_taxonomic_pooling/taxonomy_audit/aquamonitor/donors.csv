@@ -1,0 +1,613 @@
+fold,dim,taxon_group,rank,n_train,level,donor_classes,donor_df,donors,genus_mates,family_mates
+fold0,16,Asellus aquaticus,species,2101,global,41,27204,,,
+fold0,16,Caenis horaria,species,2869,genus,2,382,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold0,16,Caenis luctuosa,species,348,genus,2,2903,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold0,16,Caenis rivulorum,species,36,genus,2,3215,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold0,16,Centroptilum luteolum,species,58,family,2,188,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold0,16,Ceratopogonidae,family,609,global,41,28696,,,
+fold0,16,Chironomidae,family,7414,global,41,21891,,,Tanypodinae
+fold0,16,Cloeon,genus,85,family,2,161,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold0,16,Cloeon dipterum,species,105,genus,1,84,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold0,16,Cyrnus flavidus,species,77,genus,1,121,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold0,16,Cyrnus trimaculatus,species,122,genus,1,76,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold0,16,Ecnomus tenellus,species,137,global,41,29168,,,
+fold0,16,Ephemera vulgata,species,203,global,41,29102,,,
+fold0,16,Erpobdella octoculata,species,107,global,41,29198,,,
+fold0,16,Gyraulus,genus,111,global,41,29194,,,
+fold0,16,Helobdella stagnalis,species,181,global,41,29124,,,
+fold0,16,Heptagenia dalecarlica,species,135,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold0,16,Hydrachnidia,family,322,global,41,28983,,,
+fold0,16,Hydroptila,genus,70,family,1,41,Orthotrichia,,Orthotrichia
+fold0,16,Kageronia fuscogrisea,species,2003,family,1,134,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold0,16,Lepidostoma hirtum,species,234,global,41,29071,,,
+fold0,16,Leptophlebia,genus,4893,global,41,24412,,,
+fold0,16,Limnephilidae,family,60,global,41,29245,,,Limnephilus
+fold0,16,Limnephilus,genus,86,family,1,59,Limnephilidae,,Limnephilidae
+fold0,16,Micronecta,genus,500,global,41,28805,,,
+fold0,16,Mystacides,genus,37,family,1,95,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold0,16,Mystacides azurea,species,96,genus,1,36,Mystacides,Mystacides,Mystacides
+fold0,16,Oligochaeta,,2091,global,41,27214,,,
+fold0,16,Orthotrichia,genus,42,family,1,69,Hydroptila,,Hydroptila
+fold0,16,Oulimnius tuberculatus,species,1710,genus,1,218,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold0,16,Oulimnius tuberculatus adult,species,219,genus,1,1709,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold0,16,Pedicia,genus,40,global,41,29265,,,
+fold0,16,Pisidium,genus,61,global,41,29244,,,
+fold0,16,Polycentropus flavomaculatus,species,92,family,2,197,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold0,16,Psychomyia pusilla,species,124,family,1,761,Tinodes waeneri,,Tinodes waeneri
+fold0,16,Sialis,genus,40,global,41,29265,,,
+fold0,16,Spirosperma ferox,species,177,family,1,319,Stylaria lacustris,,Stylaria lacustris
+fold0,16,Stylaria lacustris,species,320,family,1,176,Spirosperma ferox,,Spirosperma ferox
+fold0,16,Tanypodinae,genus,550,family,1,7413,Chironomidae,,Chironomidae
+fold0,16,Tinodes waeneri,species,762,family,1,123,Psychomyia pusilla,,Psychomyia pusilla
+fold0,16,Turbellaria,,82,global,41,29223,,,
+fold0,64,Asellus aquaticus,species,2101,global,41,27204,,,
+fold0,64,Caenis horaria,species,2869,genus,2,382,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold0,64,Caenis luctuosa,species,348,genus,2,2903,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold0,64,Caenis rivulorum,species,36,genus,2,3215,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold0,64,Centroptilum luteolum,species,58,family,2,188,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold0,64,Ceratopogonidae,family,609,global,41,28696,,,
+fold0,64,Chironomidae,family,7414,global,41,21891,,,Tanypodinae
+fold0,64,Cloeon,genus,85,family,2,161,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold0,64,Cloeon dipterum,species,105,genus,1,84,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold0,64,Cyrnus flavidus,species,77,genus,1,121,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold0,64,Cyrnus trimaculatus,species,122,genus,1,76,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold0,64,Ecnomus tenellus,species,137,global,41,29168,,,
+fold0,64,Ephemera vulgata,species,203,global,41,29102,,,
+fold0,64,Erpobdella octoculata,species,107,global,41,29198,,,
+fold0,64,Gyraulus,genus,111,global,41,29194,,,
+fold0,64,Helobdella stagnalis,species,181,global,41,29124,,,
+fold0,64,Heptagenia dalecarlica,species,135,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold0,64,Hydrachnidia,family,322,global,41,28983,,,
+fold0,64,Hydroptila,genus,70,global,41,29235,,,Orthotrichia
+fold0,64,Kageronia fuscogrisea,species,2003,family,1,134,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold0,64,Lepidostoma hirtum,species,234,global,41,29071,,,
+fold0,64,Leptophlebia,genus,4893,global,41,24412,,,
+fold0,64,Limnephilidae,family,60,global,41,29245,,,Limnephilus
+fold0,64,Limnephilus,genus,86,global,41,29219,,,Limnephilidae
+fold0,64,Micronecta,genus,500,global,41,28805,,,
+fold0,64,Mystacides,genus,37,family,1,95,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold0,64,Mystacides azurea,species,96,global,41,29209,,Mystacides,Mystacides
+fold0,64,Oligochaeta,,2091,global,41,27214,,,
+fold0,64,Orthotrichia,genus,42,family,1,69,Hydroptila,,Hydroptila
+fold0,64,Oulimnius tuberculatus,species,1710,genus,1,218,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold0,64,Oulimnius tuberculatus adult,species,219,genus,1,1709,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold0,64,Pedicia,genus,40,global,41,29265,,,
+fold0,64,Pisidium,genus,61,global,41,29244,,,
+fold0,64,Polycentropus flavomaculatus,species,92,family,2,197,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold0,64,Psychomyia pusilla,species,124,family,1,761,Tinodes waeneri,,Tinodes waeneri
+fold0,64,Sialis,genus,40,global,41,29265,,,
+fold0,64,Spirosperma ferox,species,177,family,1,319,Stylaria lacustris,,Stylaria lacustris
+fold0,64,Stylaria lacustris,species,320,family,1,176,Spirosperma ferox,,Spirosperma ferox
+fold0,64,Tanypodinae,genus,550,family,1,7413,Chironomidae,,Chironomidae
+fold0,64,Tinodes waeneri,species,762,family,1,123,Psychomyia pusilla,,Psychomyia pusilla
+fold0,64,Turbellaria,,82,global,41,29223,,,
+fold0,1023,Asellus aquaticus,species,2101,global,41,27204,,,
+fold0,1023,Caenis horaria,species,2869,global,41,26436,,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold0,1023,Caenis luctuosa,species,348,genus,2,2903,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold0,1023,Caenis rivulorum,species,36,genus,2,3215,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold0,1023,Centroptilum luteolum,species,58,global,41,29247,,,Cloeon;Cloeon dipterum
+fold0,1023,Ceratopogonidae,family,609,global,41,28696,,,
+fold0,1023,Chironomidae,family,7414,global,41,21891,,,Tanypodinae
+fold0,1023,Cloeon,genus,85,global,41,29220,,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold0,1023,Cloeon dipterum,species,105,global,41,29200,,Cloeon,Centroptilum luteolum;Cloeon
+fold0,1023,Cyrnus flavidus,species,77,global,41,29228,,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold0,1023,Cyrnus trimaculatus,species,122,global,41,29183,,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold0,1023,Ecnomus tenellus,species,137,global,41,29168,,,
+fold0,1023,Ephemera vulgata,species,203,global,41,29102,,,
+fold0,1023,Erpobdella octoculata,species,107,global,41,29198,,,
+fold0,1023,Gyraulus,genus,111,global,41,29194,,,
+fold0,1023,Helobdella stagnalis,species,181,global,41,29124,,,
+fold0,1023,Heptagenia dalecarlica,species,135,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold0,1023,Hydrachnidia,family,322,global,41,28983,,,
+fold0,1023,Hydroptila,genus,70,global,41,29235,,,Orthotrichia
+fold0,1023,Kageronia fuscogrisea,species,2003,global,41,27302,,,Heptagenia dalecarlica
+fold0,1023,Lepidostoma hirtum,species,234,global,41,29071,,,
+fold0,1023,Leptophlebia,genus,4893,global,41,24412,,,
+fold0,1023,Limnephilidae,family,60,global,41,29245,,,Limnephilus
+fold0,1023,Limnephilus,genus,86,global,41,29219,,,Limnephilidae
+fold0,1023,Micronecta,genus,500,global,41,28805,,,
+fold0,1023,Mystacides,genus,37,global,41,29268,,Mystacides azurea,Mystacides azurea
+fold0,1023,Mystacides azurea,species,96,global,41,29209,,Mystacides,Mystacides
+fold0,1023,Oligochaeta,,2091,global,41,27214,,,
+fold0,1023,Orthotrichia,genus,42,global,41,29263,,,Hydroptila
+fold0,1023,Oulimnius tuberculatus,species,1710,global,41,27595,,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold0,1023,Oulimnius tuberculatus adult,species,219,genus,1,1709,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold0,1023,Pedicia,genus,40,global,41,29265,,,
+fold0,1023,Pisidium,genus,61,global,41,29244,,,
+fold0,1023,Polycentropus flavomaculatus,species,92,global,41,29213,,,Cyrnus flavidus;Cyrnus trimaculatus
+fold0,1023,Psychomyia pusilla,species,124,global,41,29181,,,Tinodes waeneri
+fold0,1023,Sialis,genus,40,global,41,29265,,,
+fold0,1023,Spirosperma ferox,species,177,global,41,29128,,,Stylaria lacustris
+fold0,1023,Stylaria lacustris,species,320,global,41,28985,,,Spirosperma ferox
+fold0,1023,Tanypodinae,genus,550,family,1,7413,Chironomidae,,Chironomidae
+fold0,1023,Tinodes waeneri,species,762,global,41,28543,,,Psychomyia pusilla
+fold0,1023,Turbellaria,,82,global,41,29223,,,
+fold1,16,Asellus aquaticus,species,2142,global,41,27163,,,
+fold1,16,Caenis horaria,species,2850,genus,2,381,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold1,16,Caenis luctuosa,species,348,genus,2,2883,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold1,16,Caenis rivulorum,species,35,genus,2,3196,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold1,16,Centroptilum luteolum,species,53,family,2,172,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold1,16,Ceratopogonidae,family,642,global,41,28663,,,
+fold1,16,Chironomidae,family,7416,global,41,21889,,,Tanypodinae
+fold1,16,Cloeon,genus,75,family,2,150,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold1,16,Cloeon dipterum,species,99,genus,1,74,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold1,16,Cyrnus flavidus,species,85,genus,1,126,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold1,16,Cyrnus trimaculatus,species,127,genus,1,84,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold1,16,Ecnomus tenellus,species,139,global,41,29166,,,
+fold1,16,Ephemera vulgata,species,201,global,41,29104,,,
+fold1,16,Erpobdella octoculata,species,110,global,41,29195,,,
+fold1,16,Gyraulus,genus,101,global,41,29204,,,
+fold1,16,Helobdella stagnalis,species,194,global,41,29111,,,
+fold1,16,Heptagenia dalecarlica,species,131,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold1,16,Hydrachnidia,family,331,global,41,28974,,,
+fold1,16,Hydroptila,genus,76,family,1,38,Orthotrichia,,Orthotrichia
+fold1,16,Kageronia fuscogrisea,species,2003,family,1,130,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold1,16,Lepidostoma hirtum,species,224,global,41,29081,,,
+fold1,16,Leptophlebia,genus,4856,global,41,24449,,,
+fold1,16,Limnephilidae,family,61,global,41,29244,,,Limnephilus
+fold1,16,Limnephilus,genus,94,family,1,60,Limnephilidae,,Limnephilidae
+fold1,16,Micronecta,genus,499,global,41,28806,,,
+fold1,16,Mystacides,genus,38,family,1,93,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold1,16,Mystacides azurea,species,94,genus,1,37,Mystacides,Mystacides,Mystacides
+fold1,16,Oligochaeta,,2072,global,41,27233,,,
+fold1,16,Orthotrichia,genus,39,family,1,75,Hydroptila,,Hydroptila
+fold1,16,Oulimnius tuberculatus,species,1694,genus,1,205,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold1,16,Oulimnius tuberculatus adult,species,206,genus,1,1693,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold1,16,Pedicia,genus,44,global,41,29261,,,
+fold1,16,Pisidium,genus,60,global,41,29245,,,
+fold1,16,Polycentropus flavomaculatus,species,91,family,2,210,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold1,16,Psychomyia pusilla,species,121,family,1,766,Tinodes waeneri,,Tinodes waeneri
+fold1,16,Sialis,genus,41,global,41,29264,,,
+fold1,16,Spirosperma ferox,species,182,family,1,334,Stylaria lacustris,,Stylaria lacustris
+fold1,16,Stylaria lacustris,species,335,family,1,181,Spirosperma ferox,,Spirosperma ferox
+fold1,16,Tanypodinae,genus,548,family,1,7415,Chironomidae,,Chironomidae
+fold1,16,Tinodes waeneri,species,767,family,1,120,Psychomyia pusilla,,Psychomyia pusilla
+fold1,16,Turbellaria,,86,global,41,29219,,,
+fold1,64,Asellus aquaticus,species,2142,global,41,27163,,,
+fold1,64,Caenis horaria,species,2850,genus,2,381,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold1,64,Caenis luctuosa,species,348,genus,2,2883,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold1,64,Caenis rivulorum,species,35,genus,2,3196,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold1,64,Centroptilum luteolum,species,53,family,2,172,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold1,64,Ceratopogonidae,family,642,global,41,28663,,,
+fold1,64,Chironomidae,family,7416,global,41,21889,,,Tanypodinae
+fold1,64,Cloeon,genus,75,family,2,150,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold1,64,Cloeon dipterum,species,99,genus,1,74,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold1,64,Cyrnus flavidus,species,85,genus,1,126,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold1,64,Cyrnus trimaculatus,species,127,genus,1,84,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold1,64,Ecnomus tenellus,species,139,global,41,29166,,,
+fold1,64,Ephemera vulgata,species,201,global,41,29104,,,
+fold1,64,Erpobdella octoculata,species,110,global,41,29195,,,
+fold1,64,Gyraulus,genus,101,global,41,29204,,,
+fold1,64,Helobdella stagnalis,species,194,global,41,29111,,,
+fold1,64,Heptagenia dalecarlica,species,131,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold1,64,Hydrachnidia,family,331,global,41,28974,,,
+fold1,64,Hydroptila,genus,76,global,41,29229,,,Orthotrichia
+fold1,64,Kageronia fuscogrisea,species,2003,family,1,130,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold1,64,Lepidostoma hirtum,species,224,global,41,29081,,,
+fold1,64,Leptophlebia,genus,4856,global,41,24449,,,
+fold1,64,Limnephilidae,family,61,global,41,29244,,,Limnephilus
+fold1,64,Limnephilus,genus,94,global,41,29211,,,Limnephilidae
+fold1,64,Micronecta,genus,499,global,41,28806,,,
+fold1,64,Mystacides,genus,38,family,1,93,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold1,64,Mystacides azurea,species,94,global,41,29211,,Mystacides,Mystacides
+fold1,64,Oligochaeta,,2072,global,41,27233,,,
+fold1,64,Orthotrichia,genus,39,family,1,75,Hydroptila,,Hydroptila
+fold1,64,Oulimnius tuberculatus,species,1694,genus,1,205,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold1,64,Oulimnius tuberculatus adult,species,206,genus,1,1693,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold1,64,Pedicia,genus,44,global,41,29261,,,
+fold1,64,Pisidium,genus,60,global,41,29245,,,
+fold1,64,Polycentropus flavomaculatus,species,91,family,2,210,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold1,64,Psychomyia pusilla,species,121,family,1,766,Tinodes waeneri,,Tinodes waeneri
+fold1,64,Sialis,genus,41,global,41,29264,,,
+fold1,64,Spirosperma ferox,species,182,family,1,334,Stylaria lacustris,,Stylaria lacustris
+fold1,64,Stylaria lacustris,species,335,family,1,181,Spirosperma ferox,,Spirosperma ferox
+fold1,64,Tanypodinae,genus,548,family,1,7415,Chironomidae,,Chironomidae
+fold1,64,Tinodes waeneri,species,767,family,1,120,Psychomyia pusilla,,Psychomyia pusilla
+fold1,64,Turbellaria,,86,global,41,29219,,,
+fold1,1023,Asellus aquaticus,species,2142,global,41,27163,,,
+fold1,1023,Caenis horaria,species,2850,global,41,26455,,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold1,1023,Caenis luctuosa,species,348,genus,2,2883,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold1,1023,Caenis rivulorum,species,35,genus,2,3196,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold1,1023,Centroptilum luteolum,species,53,global,41,29252,,,Cloeon;Cloeon dipterum
+fold1,1023,Ceratopogonidae,family,642,global,41,28663,,,
+fold1,1023,Chironomidae,family,7416,global,41,21889,,,Tanypodinae
+fold1,1023,Cloeon,genus,75,global,41,29230,,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold1,1023,Cloeon dipterum,species,99,global,41,29206,,Cloeon,Centroptilum luteolum;Cloeon
+fold1,1023,Cyrnus flavidus,species,85,global,41,29220,,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold1,1023,Cyrnus trimaculatus,species,127,global,41,29178,,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold1,1023,Ecnomus tenellus,species,139,global,41,29166,,,
+fold1,1023,Ephemera vulgata,species,201,global,41,29104,,,
+fold1,1023,Erpobdella octoculata,species,110,global,41,29195,,,
+fold1,1023,Gyraulus,genus,101,global,41,29204,,,
+fold1,1023,Helobdella stagnalis,species,194,global,41,29111,,,
+fold1,1023,Heptagenia dalecarlica,species,131,family,1,2002,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold1,1023,Hydrachnidia,family,331,global,41,28974,,,
+fold1,1023,Hydroptila,genus,76,global,41,29229,,,Orthotrichia
+fold1,1023,Kageronia fuscogrisea,species,2003,global,41,27302,,,Heptagenia dalecarlica
+fold1,1023,Lepidostoma hirtum,species,224,global,41,29081,,,
+fold1,1023,Leptophlebia,genus,4856,global,41,24449,,,
+fold1,1023,Limnephilidae,family,61,global,41,29244,,,Limnephilus
+fold1,1023,Limnephilus,genus,94,global,41,29211,,,Limnephilidae
+fold1,1023,Micronecta,genus,499,global,41,28806,,,
+fold1,1023,Mystacides,genus,38,global,41,29267,,Mystacides azurea,Mystacides azurea
+fold1,1023,Mystacides azurea,species,94,global,41,29211,,Mystacides,Mystacides
+fold1,1023,Oligochaeta,,2072,global,41,27233,,,
+fold1,1023,Orthotrichia,genus,39,global,41,29266,,,Hydroptila
+fold1,1023,Oulimnius tuberculatus,species,1694,global,41,27611,,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold1,1023,Oulimnius tuberculatus adult,species,206,genus,1,1693,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold1,1023,Pedicia,genus,44,global,41,29261,,,
+fold1,1023,Pisidium,genus,60,global,41,29245,,,
+fold1,1023,Polycentropus flavomaculatus,species,91,global,41,29214,,,Cyrnus flavidus;Cyrnus trimaculatus
+fold1,1023,Psychomyia pusilla,species,121,global,41,29184,,,Tinodes waeneri
+fold1,1023,Sialis,genus,41,global,41,29264,,,
+fold1,1023,Spirosperma ferox,species,182,global,41,29123,,,Stylaria lacustris
+fold1,1023,Stylaria lacustris,species,335,global,41,28970,,,Spirosperma ferox
+fold1,1023,Tanypodinae,genus,548,family,1,7415,Chironomidae,,Chironomidae
+fold1,1023,Tinodes waeneri,species,767,global,41,28538,,,Psychomyia pusilla
+fold1,1023,Turbellaria,,86,global,41,29219,,,
+fold2,16,Asellus aquaticus,species,2104,global,41,27201,,,
+fold2,16,Caenis horaria,species,2864,genus,2,382,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold2,16,Caenis luctuosa,species,345,genus,2,2901,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold2,16,Centroptilum luteolum,species,61,family,2,183,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold2,16,Ceratopogonidae,family,627,global,41,28678,,,
+fold2,16,Chironomidae,family,7392,global,41,21913,,,Tanypodinae
+fold2,16,Cloeon,genus,77,family,2,167,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold2,16,Cloeon dipterum,species,108,genus,1,76,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold2,16,Cyrnus flavidus,species,79,genus,1,124,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold2,16,Cyrnus trimaculatus,species,125,genus,1,78,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold2,16,Ecnomus tenellus,species,137,global,41,29168,,,
+fold2,16,Ephemera vulgata,species,200,global,41,29105,,,
+fold2,16,Erpobdella octoculata,species,112,global,41,29193,,,
+fold2,16,Gyraulus,genus,104,global,41,29201,,,
+fold2,16,Helobdella stagnalis,species,184,global,41,29121,,,
+fold2,16,Heptagenia dalecarlica,species,138,family,1,1980,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold2,16,Hydrachnidia,family,318,global,41,28987,,,
+fold2,16,Hydroptila,genus,78,family,1,40,Orthotrichia,,Orthotrichia
+fold2,16,Kageronia fuscogrisea,species,1981,family,1,137,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold2,16,Lepidostoma hirtum,species,228,global,41,29077,,,
+fold2,16,Leptophlebia,genus,4945,global,41,24360,,,
+fold2,16,Limnephilidae,family,58,global,41,29247,,,Limnephilus
+fold2,16,Limnephilus,genus,93,family,1,57,Limnephilidae,,Limnephilidae
+fold2,16,Micronecta,genus,509,global,41,28796,,,
+fold2,16,Mystacides azurea,species,95,genus,1,40,Mystacides,Mystacides,Mystacides
+fold2,16,Oligochaeta,,2065,global,41,27240,,,
+fold2,16,Orthotrichia,genus,41,family,1,77,Hydroptila,,Hydroptila
+fold2,16,Oulimnius tuberculatus,species,1708,genus,1,209,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold2,16,Oulimnius tuberculatus adult,species,210,genus,1,1707,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold2,16,Pedicia,genus,43,global,41,29262,,,
+fold2,16,Pisidium,genus,63,global,41,29242,,,
+fold2,16,Polycentropus flavomaculatus,species,93,family,2,202,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold2,16,Psychomyia pusilla,species,114,family,1,756,Tinodes waeneri,,Tinodes waeneri
+fold2,16,Sialis,genus,42,global,41,29263,,,
+fold2,16,Sisyra,genus,35,global,41,29270,,,
+fold2,16,Spirosperma ferox,species,170,family,1,321,Stylaria lacustris,,Stylaria lacustris
+fold2,16,Stylaria lacustris,species,322,family,1,169,Spirosperma ferox,,Spirosperma ferox
+fold2,16,Tanypodinae,genus,559,family,1,7391,Chironomidae,,Chironomidae
+fold2,16,Tinodes waeneri,species,757,family,1,113,Psychomyia pusilla,,Psychomyia pusilla
+fold2,16,Turbellaria,,82,global,41,29223,,,
+fold2,64,Asellus aquaticus,species,2104,global,41,27201,,,
+fold2,64,Caenis horaria,species,2864,genus,2,382,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold2,64,Caenis luctuosa,species,345,genus,2,2901,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold2,64,Centroptilum luteolum,species,61,family,2,183,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold2,64,Ceratopogonidae,family,627,global,41,28678,,,
+fold2,64,Chironomidae,family,7392,global,41,21913,,,Tanypodinae
+fold2,64,Cloeon,genus,77,family,2,167,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold2,64,Cloeon dipterum,species,108,genus,1,76,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold2,64,Cyrnus flavidus,species,79,genus,1,124,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold2,64,Cyrnus trimaculatus,species,125,genus,1,78,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold2,64,Ecnomus tenellus,species,137,global,41,29168,,,
+fold2,64,Ephemera vulgata,species,200,global,41,29105,,,
+fold2,64,Erpobdella octoculata,species,112,global,41,29193,,,
+fold2,64,Gyraulus,genus,104,global,41,29201,,,
+fold2,64,Helobdella stagnalis,species,184,global,41,29121,,,
+fold2,64,Heptagenia dalecarlica,species,138,family,1,1980,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold2,64,Hydrachnidia,family,318,global,41,28987,,,
+fold2,64,Hydroptila,genus,78,global,41,29227,,,Orthotrichia
+fold2,64,Kageronia fuscogrisea,species,1981,family,1,137,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold2,64,Lepidostoma hirtum,species,228,global,41,29077,,,
+fold2,64,Leptophlebia,genus,4945,global,41,24360,,,
+fold2,64,Limnephilidae,family,58,global,41,29247,,,Limnephilus
+fold2,64,Limnephilus,genus,93,global,41,29212,,,Limnephilidae
+fold2,64,Micronecta,genus,509,global,41,28796,,,
+fold2,64,Mystacides azurea,species,95,global,41,29210,,Mystacides,Mystacides
+fold2,64,Oligochaeta,,2065,global,41,27240,,,
+fold2,64,Orthotrichia,genus,41,family,1,77,Hydroptila,,Hydroptila
+fold2,64,Oulimnius tuberculatus,species,1708,genus,1,209,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold2,64,Oulimnius tuberculatus adult,species,210,genus,1,1707,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold2,64,Pedicia,genus,43,global,41,29262,,,
+fold2,64,Pisidium,genus,63,global,41,29242,,,
+fold2,64,Polycentropus flavomaculatus,species,93,family,2,202,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold2,64,Psychomyia pusilla,species,114,family,1,756,Tinodes waeneri,,Tinodes waeneri
+fold2,64,Sialis,genus,42,global,41,29263,,,
+fold2,64,Sisyra,genus,35,global,41,29270,,,
+fold2,64,Spirosperma ferox,species,170,family,1,321,Stylaria lacustris,,Stylaria lacustris
+fold2,64,Stylaria lacustris,species,322,family,1,169,Spirosperma ferox,,Spirosperma ferox
+fold2,64,Tanypodinae,genus,559,family,1,7391,Chironomidae,,Chironomidae
+fold2,64,Tinodes waeneri,species,757,family,1,113,Psychomyia pusilla,,Psychomyia pusilla
+fold2,64,Turbellaria,,82,global,41,29223,,,
+fold2,1023,Asellus aquaticus,species,2104,global,41,27201,,,
+fold2,1023,Caenis horaria,species,2864,global,41,26441,,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold2,1023,Caenis luctuosa,species,345,genus,2,2901,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold2,1023,Centroptilum luteolum,species,61,global,41,29244,,,Cloeon;Cloeon dipterum
+fold2,1023,Ceratopogonidae,family,627,global,41,28678,,,
+fold2,1023,Chironomidae,family,7392,global,41,21913,,,Tanypodinae
+fold2,1023,Cloeon,genus,77,global,41,29228,,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold2,1023,Cloeon dipterum,species,108,global,41,29197,,Cloeon,Centroptilum luteolum;Cloeon
+fold2,1023,Cyrnus flavidus,species,79,global,41,29226,,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold2,1023,Cyrnus trimaculatus,species,125,global,41,29180,,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold2,1023,Ecnomus tenellus,species,137,global,41,29168,,,
+fold2,1023,Ephemera vulgata,species,200,global,41,29105,,,
+fold2,1023,Erpobdella octoculata,species,112,global,41,29193,,,
+fold2,1023,Gyraulus,genus,104,global,41,29201,,,
+fold2,1023,Helobdella stagnalis,species,184,global,41,29121,,,
+fold2,1023,Heptagenia dalecarlica,species,138,family,1,1980,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold2,1023,Hydrachnidia,family,318,global,41,28987,,,
+fold2,1023,Hydroptila,genus,78,global,41,29227,,,Orthotrichia
+fold2,1023,Kageronia fuscogrisea,species,1981,global,41,27324,,,Heptagenia dalecarlica
+fold2,1023,Lepidostoma hirtum,species,228,global,41,29077,,,
+fold2,1023,Leptophlebia,genus,4945,global,41,24360,,,
+fold2,1023,Limnephilidae,family,58,global,41,29247,,,Limnephilus
+fold2,1023,Limnephilus,genus,93,global,41,29212,,,Limnephilidae
+fold2,1023,Micronecta,genus,509,global,41,28796,,,
+fold2,1023,Mystacides azurea,species,95,global,41,29210,,Mystacides,Mystacides
+fold2,1023,Oligochaeta,,2065,global,41,27240,,,
+fold2,1023,Orthotrichia,genus,41,global,41,29264,,,Hydroptila
+fold2,1023,Oulimnius tuberculatus,species,1708,global,41,27597,,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold2,1023,Oulimnius tuberculatus adult,species,210,genus,1,1707,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold2,1023,Pedicia,genus,43,global,41,29262,,,
+fold2,1023,Pisidium,genus,63,global,41,29242,,,
+fold2,1023,Polycentropus flavomaculatus,species,93,global,41,29212,,,Cyrnus flavidus;Cyrnus trimaculatus
+fold2,1023,Psychomyia pusilla,species,114,global,41,29191,,,Tinodes waeneri
+fold2,1023,Sialis,genus,42,global,41,29263,,,
+fold2,1023,Sisyra,genus,35,global,41,29270,,,
+fold2,1023,Spirosperma ferox,species,170,global,41,29135,,,Stylaria lacustris
+fold2,1023,Stylaria lacustris,species,322,global,41,28983,,,Spirosperma ferox
+fold2,1023,Tanypodinae,genus,559,family,1,7391,Chironomidae,,Chironomidae
+fold2,1023,Tinodes waeneri,species,757,global,41,28548,,,Psychomyia pusilla
+fold2,1023,Turbellaria,,82,global,41,29223,,,
+fold3,16,Asellus aquaticus,species,2158,global,41,27147,,,
+fold3,16,Caenis horaria,species,2852,genus,2,373,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold3,16,Caenis luctuosa,species,337,genus,2,2888,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold3,16,Centroptilum luteolum,species,63,family,2,185,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold3,16,Ceratopogonidae,family,623,global,41,28682,,,
+fold3,16,Chironomidae,family,7436,global,41,21869,,,Tanypodinae
+fold3,16,Cloeon,genus,84,family,2,164,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold3,16,Cloeon dipterum,species,103,genus,1,83,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold3,16,Cyrnus flavidus,species,85,genus,1,121,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold3,16,Cyrnus trimaculatus,species,122,genus,1,84,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold3,16,Ecnomus tenellus,species,141,global,41,29164,,,
+fold3,16,Ephemera vulgata,species,193,global,41,29112,,,
+fold3,16,Erpobdella octoculata,species,113,global,41,29192,,,
+fold3,16,Gyraulus,genus,104,global,41,29201,,,
+fold3,16,Helobdella stagnalis,species,188,global,41,29117,,,
+fold3,16,Heptagenia dalecarlica,species,137,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold3,16,Hydrachnidia,family,317,global,41,28988,,,
+fold3,16,Hydroptila,genus,77,family,1,39,Orthotrichia,,Orthotrichia
+fold3,16,Kageronia fuscogrisea,species,2002,family,1,136,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold3,16,Lepidostoma hirtum,species,232,global,41,29073,,,
+fold3,16,Leptophlebia,genus,4892,global,41,24413,,,
+fold3,16,Limnephilidae,family,53,global,41,29252,,,Limnephilus
+fold3,16,Limnephilus,genus,91,family,1,52,Limnephilidae,,Limnephilidae
+fold3,16,Micronecta,genus,503,global,41,28802,,,
+fold3,16,Mystacides,genus,40,family,1,96,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold3,16,Mystacides azurea,species,97,genus,1,39,Mystacides,Mystacides,Mystacides
+fold3,16,Oligochaeta,,2047,global,41,27258,,,
+fold3,16,Orthotrichia,genus,40,family,1,76,Hydroptila,,Hydroptila
+fold3,16,Oulimnius tuberculatus,species,1704,genus,1,213,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold3,16,Oulimnius tuberculatus adult,species,214,genus,1,1703,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold3,16,Pedicia,genus,35,global,41,29270,,,
+fold3,16,Pisidium,genus,58,global,41,29247,,,
+fold3,16,Polycentropus flavomaculatus,species,87,family,2,205,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold3,16,Psychomyia pusilla,species,120,family,1,747,Tinodes waeneri,,Tinodes waeneri
+fold3,16,Sialis,genus,40,global,41,29265,,,
+fold3,16,Sisyra,genus,35,global,41,29270,,,
+fold3,16,Spirosperma ferox,species,174,family,1,331,Stylaria lacustris,,Stylaria lacustris
+fold3,16,Stylaria lacustris,species,332,family,1,173,Spirosperma ferox,,Spirosperma ferox
+fold3,16,Tanypodinae,genus,549,family,1,7435,Chironomidae,,Chironomidae
+fold3,16,Tinodes waeneri,species,748,family,1,119,Psychomyia pusilla,,Psychomyia pusilla
+fold3,16,Turbellaria,,82,global,41,29223,,,
+fold3,64,Asellus aquaticus,species,2158,global,41,27147,,,
+fold3,64,Caenis horaria,species,2852,genus,2,373,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold3,64,Caenis luctuosa,species,337,genus,2,2888,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold3,64,Centroptilum luteolum,species,63,family,2,185,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold3,64,Ceratopogonidae,family,623,global,41,28682,,,
+fold3,64,Chironomidae,family,7436,global,41,21869,,,Tanypodinae
+fold3,64,Cloeon,genus,84,family,2,164,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold3,64,Cloeon dipterum,species,103,genus,1,83,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold3,64,Cyrnus flavidus,species,85,genus,1,121,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold3,64,Cyrnus trimaculatus,species,122,genus,1,84,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold3,64,Ecnomus tenellus,species,141,global,41,29164,,,
+fold3,64,Ephemera vulgata,species,193,global,41,29112,,,
+fold3,64,Erpobdella octoculata,species,113,global,41,29192,,,
+fold3,64,Gyraulus,genus,104,global,41,29201,,,
+fold3,64,Helobdella stagnalis,species,188,global,41,29117,,,
+fold3,64,Heptagenia dalecarlica,species,137,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold3,64,Hydrachnidia,family,317,global,41,28988,,,
+fold3,64,Hydroptila,genus,77,global,41,29228,,,Orthotrichia
+fold3,64,Kageronia fuscogrisea,species,2002,family,1,136,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold3,64,Lepidostoma hirtum,species,232,global,41,29073,,,
+fold3,64,Leptophlebia,genus,4892,global,41,24413,,,
+fold3,64,Limnephilidae,family,53,global,41,29252,,,Limnephilus
+fold3,64,Limnephilus,genus,91,global,41,29214,,,Limnephilidae
+fold3,64,Micronecta,genus,503,global,41,28802,,,
+fold3,64,Mystacides,genus,40,family,1,96,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold3,64,Mystacides azurea,species,97,global,41,29208,,Mystacides,Mystacides
+fold3,64,Oligochaeta,,2047,global,41,27258,,,
+fold3,64,Orthotrichia,genus,40,family,1,76,Hydroptila,,Hydroptila
+fold3,64,Oulimnius tuberculatus,species,1704,genus,1,213,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold3,64,Oulimnius tuberculatus adult,species,214,genus,1,1703,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold3,64,Pedicia,genus,35,global,41,29270,,,
+fold3,64,Pisidium,genus,58,global,41,29247,,,
+fold3,64,Polycentropus flavomaculatus,species,87,family,2,205,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold3,64,Psychomyia pusilla,species,120,family,1,747,Tinodes waeneri,,Tinodes waeneri
+fold3,64,Sialis,genus,40,global,41,29265,,,
+fold3,64,Sisyra,genus,35,global,41,29270,,,
+fold3,64,Spirosperma ferox,species,174,family,1,331,Stylaria lacustris,,Stylaria lacustris
+fold3,64,Stylaria lacustris,species,332,family,1,173,Spirosperma ferox,,Spirosperma ferox
+fold3,64,Tanypodinae,genus,549,family,1,7435,Chironomidae,,Chironomidae
+fold3,64,Tinodes waeneri,species,748,family,1,119,Psychomyia pusilla,,Psychomyia pusilla
+fold3,64,Turbellaria,,82,global,41,29223,,,
+fold3,1023,Asellus aquaticus,species,2158,global,41,27147,,,
+fold3,1023,Caenis horaria,species,2852,global,41,26453,,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold3,1023,Caenis luctuosa,species,337,genus,2,2888,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold3,1023,Centroptilum luteolum,species,63,global,41,29242,,,Cloeon;Cloeon dipterum
+fold3,1023,Ceratopogonidae,family,623,global,41,28682,,,
+fold3,1023,Chironomidae,family,7436,global,41,21869,,,Tanypodinae
+fold3,1023,Cloeon,genus,84,global,41,29221,,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold3,1023,Cloeon dipterum,species,103,global,41,29202,,Cloeon,Centroptilum luteolum;Cloeon
+fold3,1023,Cyrnus flavidus,species,85,global,41,29220,,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold3,1023,Cyrnus trimaculatus,species,122,global,41,29183,,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold3,1023,Ecnomus tenellus,species,141,global,41,29164,,,
+fold3,1023,Ephemera vulgata,species,193,global,41,29112,,,
+fold3,1023,Erpobdella octoculata,species,113,global,41,29192,,,
+fold3,1023,Gyraulus,genus,104,global,41,29201,,,
+fold3,1023,Helobdella stagnalis,species,188,global,41,29117,,,
+fold3,1023,Heptagenia dalecarlica,species,137,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold3,1023,Hydrachnidia,family,317,global,41,28988,,,
+fold3,1023,Hydroptila,genus,77,global,41,29228,,,Orthotrichia
+fold3,1023,Kageronia fuscogrisea,species,2002,global,41,27303,,,Heptagenia dalecarlica
+fold3,1023,Lepidostoma hirtum,species,232,global,41,29073,,,
+fold3,1023,Leptophlebia,genus,4892,global,41,24413,,,
+fold3,1023,Limnephilidae,family,53,global,41,29252,,,Limnephilus
+fold3,1023,Limnephilus,genus,91,global,41,29214,,,Limnephilidae
+fold3,1023,Micronecta,genus,503,global,41,28802,,,
+fold3,1023,Mystacides,genus,40,global,41,29265,,Mystacides azurea,Mystacides azurea
+fold3,1023,Mystacides azurea,species,97,global,41,29208,,Mystacides,Mystacides
+fold3,1023,Oligochaeta,,2047,global,41,27258,,,
+fold3,1023,Orthotrichia,genus,40,global,41,29265,,,Hydroptila
+fold3,1023,Oulimnius tuberculatus,species,1704,global,41,27601,,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold3,1023,Oulimnius tuberculatus adult,species,214,genus,1,1703,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold3,1023,Pedicia,genus,35,global,41,29270,,,
+fold3,1023,Pisidium,genus,58,global,41,29247,,,
+fold3,1023,Polycentropus flavomaculatus,species,87,global,41,29218,,,Cyrnus flavidus;Cyrnus trimaculatus
+fold3,1023,Psychomyia pusilla,species,120,global,41,29185,,,Tinodes waeneri
+fold3,1023,Sialis,genus,40,global,41,29265,,,
+fold3,1023,Sisyra,genus,35,global,41,29270,,,
+fold3,1023,Spirosperma ferox,species,174,global,41,29131,,,Stylaria lacustris
+fold3,1023,Stylaria lacustris,species,332,global,41,28973,,,Spirosperma ferox
+fold3,1023,Tanypodinae,genus,549,family,1,7435,Chironomidae,,Chironomidae
+fold3,1023,Tinodes waeneri,species,748,global,41,28557,,,Psychomyia pusilla
+fold3,1023,Turbellaria,,82,global,41,29223,,,
+fold4,16,Asellus aquaticus,species,2111,global,41,27194,,,
+fold4,16,Caenis horaria,species,2850,genus,2,390,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold4,16,Caenis luctuosa,species,356,genus,2,2884,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold4,16,Caenis rivulorum,species,36,genus,2,3204,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold4,16,Centroptilum luteolum,species,63,family,2,179,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold4,16,Ceratopogonidae,family,619,global,41,28686,,,
+fold4,16,Chironomidae,family,7419,global,41,21886,,,Tanypodinae
+fold4,16,Cloeon,genus,78,family,2,164,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold4,16,Cloeon dipterum,species,103,genus,1,77,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold4,16,Cyrnus flavidus,species,74,genus,1,126,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold4,16,Cyrnus trimaculatus,species,127,genus,1,73,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold4,16,Ecnomus tenellus,species,146,global,41,29159,,,
+fold4,16,Ephemera vulgata,species,194,global,41,29111,,,
+fold4,16,Erpobdella octoculata,species,113,global,41,29192,,,
+fold4,16,Gyraulus,genus,101,global,41,29204,,,
+fold4,16,Helobdella stagnalis,species,181,global,41,29124,,,
+fold4,16,Heptagenia dalecarlica,species,143,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold4,16,Hydrachnidia,family,323,global,41,28982,,,
+fold4,16,Hydroptila,genus,77,family,1,38,Orthotrichia,,Orthotrichia
+fold4,16,Kageronia fuscogrisea,species,2002,family,1,142,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold4,16,Lepidostoma hirtum,species,231,global,41,29074,,,
+fold4,16,Leptophlebia,genus,4921,global,41,24384,,,
+fold4,16,Limnephilidae,family,62,global,41,29243,,,Limnephilus
+fold4,16,Limnephilus,genus,92,family,1,61,Limnephilidae,,Limnephilidae
+fold4,16,Micronecta,genus,501,global,41,28804,,,
+fold4,16,Mystacides,genus,37,family,1,100,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold4,16,Mystacides azurea,species,101,genus,1,36,Mystacides,Mystacides,Mystacides
+fold4,16,Oligochaeta,,2074,global,41,27231,,,
+fold4,16,Orthotrichia,genus,39,family,1,76,Hydroptila,,Hydroptila
+fold4,16,Oulimnius tuberculatus,species,1703,genus,1,199,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold4,16,Oulimnius tuberculatus adult,species,200,genus,1,1702,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold4,16,Pedicia,genus,38,global,41,29267,,,
+fold4,16,Polycentropus flavomaculatus,species,87,family,2,199,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold4,16,Psychomyia pusilla,species,108,family,1,762,Tinodes waeneri,,Tinodes waeneri
+fold4,16,Sialis,genus,41,global,41,29264,,,
+fold4,16,Sisyra,genus,31,global,41,29274,,,
+fold4,16,Spirosperma ferox,species,178,family,1,317,Stylaria lacustris,,Stylaria lacustris
+fold4,16,Stylaria lacustris,species,318,family,1,177,Spirosperma ferox,,Spirosperma ferox
+fold4,16,Tanypodinae,genus,558,family,1,7418,Chironomidae,,Chironomidae
+fold4,16,Tinodes waeneri,species,763,family,1,107,Psychomyia pusilla,,Psychomyia pusilla
+fold4,16,Turbellaria,,83,global,41,29222,,,
+fold4,64,Asellus aquaticus,species,2111,global,41,27194,,,
+fold4,64,Caenis horaria,species,2850,genus,2,390,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold4,64,Caenis luctuosa,species,356,genus,2,2884,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold4,64,Caenis rivulorum,species,36,genus,2,3204,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold4,64,Centroptilum luteolum,species,63,family,2,179,Cloeon;Cloeon dipterum,,Cloeon;Cloeon dipterum
+fold4,64,Ceratopogonidae,family,619,global,41,28686,,,
+fold4,64,Chironomidae,family,7419,global,41,21886,,,Tanypodinae
+fold4,64,Cloeon,genus,78,family,2,164,Centroptilum luteolum;Cloeon dipterum,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold4,64,Cloeon dipterum,species,103,genus,1,77,Cloeon,Cloeon,Centroptilum luteolum;Cloeon
+fold4,64,Cyrnus flavidus,species,74,genus,1,126,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold4,64,Cyrnus trimaculatus,species,127,genus,1,73,Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold4,64,Ecnomus tenellus,species,146,global,41,29159,,,
+fold4,64,Ephemera vulgata,species,194,global,41,29111,,,
+fold4,64,Erpobdella octoculata,species,113,global,41,29192,,,
+fold4,64,Gyraulus,genus,101,global,41,29204,,,
+fold4,64,Helobdella stagnalis,species,181,global,41,29124,,,
+fold4,64,Heptagenia dalecarlica,species,143,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold4,64,Hydrachnidia,family,323,global,41,28982,,,
+fold4,64,Hydroptila,genus,77,global,41,29228,,,Orthotrichia
+fold4,64,Kageronia fuscogrisea,species,2002,family,1,142,Heptagenia dalecarlica,,Heptagenia dalecarlica
+fold4,64,Lepidostoma hirtum,species,231,global,41,29074,,,
+fold4,64,Leptophlebia,genus,4921,global,41,24384,,,
+fold4,64,Limnephilidae,family,62,global,41,29243,,,Limnephilus
+fold4,64,Limnephilus,genus,92,global,41,29213,,,Limnephilidae
+fold4,64,Micronecta,genus,501,global,41,28804,,,
+fold4,64,Mystacides,genus,37,family,1,100,Mystacides azurea,Mystacides azurea,Mystacides azurea
+fold4,64,Mystacides azurea,species,101,global,41,29204,,Mystacides,Mystacides
+fold4,64,Oligochaeta,,2074,global,41,27231,,,
+fold4,64,Orthotrichia,genus,39,family,1,76,Hydroptila,,Hydroptila
+fold4,64,Oulimnius tuberculatus,species,1703,genus,1,199,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold4,64,Oulimnius tuberculatus adult,species,200,genus,1,1702,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold4,64,Pedicia,genus,38,global,41,29267,,,
+fold4,64,Polycentropus flavomaculatus,species,87,family,2,199,Cyrnus flavidus;Cyrnus trimaculatus,,Cyrnus flavidus;Cyrnus trimaculatus
+fold4,64,Psychomyia pusilla,species,108,family,1,762,Tinodes waeneri,,Tinodes waeneri
+fold4,64,Sialis,genus,41,global,41,29264,,,
+fold4,64,Sisyra,genus,31,global,41,29274,,,
+fold4,64,Spirosperma ferox,species,178,family,1,317,Stylaria lacustris,,Stylaria lacustris
+fold4,64,Stylaria lacustris,species,318,family,1,177,Spirosperma ferox,,Spirosperma ferox
+fold4,64,Tanypodinae,genus,558,family,1,7418,Chironomidae,,Chironomidae
+fold4,64,Tinodes waeneri,species,763,family,1,107,Psychomyia pusilla,,Psychomyia pusilla
+fold4,64,Turbellaria,,83,global,41,29222,,,
+fold4,1023,Asellus aquaticus,species,2111,global,41,27194,,,
+fold4,1023,Caenis horaria,species,2850,global,41,26455,,Caenis luctuosa;Caenis rivulorum,Caenis luctuosa;Caenis rivulorum
+fold4,1023,Caenis luctuosa,species,356,genus,2,2884,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum,Caenis horaria;Caenis rivulorum
+fold4,1023,Caenis rivulorum,species,36,genus,2,3204,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa,Caenis horaria;Caenis luctuosa
+fold4,1023,Centroptilum luteolum,species,63,global,41,29242,,,Cloeon;Cloeon dipterum
+fold4,1023,Ceratopogonidae,family,619,global,41,28686,,,
+fold4,1023,Chironomidae,family,7419,global,41,21886,,,Tanypodinae
+fold4,1023,Cloeon,genus,78,global,41,29227,,Cloeon dipterum,Centroptilum luteolum;Cloeon dipterum
+fold4,1023,Cloeon dipterum,species,103,global,41,29202,,Cloeon,Centroptilum luteolum;Cloeon
+fold4,1023,Cyrnus flavidus,species,74,global,41,29231,,Cyrnus trimaculatus,Cyrnus trimaculatus;Polycentropus flavomaculatus
+fold4,1023,Cyrnus trimaculatus,species,127,global,41,29178,,Cyrnus flavidus,Cyrnus flavidus;Polycentropus flavomaculatus
+fold4,1023,Ecnomus tenellus,species,146,global,41,29159,,,
+fold4,1023,Ephemera vulgata,species,194,global,41,29111,,,
+fold4,1023,Erpobdella octoculata,species,113,global,41,29192,,,
+fold4,1023,Gyraulus,genus,101,global,41,29204,,,
+fold4,1023,Helobdella stagnalis,species,181,global,41,29124,,,
+fold4,1023,Heptagenia dalecarlica,species,143,family,1,2001,Kageronia fuscogrisea,,Kageronia fuscogrisea
+fold4,1023,Hydrachnidia,family,323,global,41,28982,,,
+fold4,1023,Hydroptila,genus,77,global,41,29228,,,Orthotrichia
+fold4,1023,Kageronia fuscogrisea,species,2002,global,41,27303,,,Heptagenia dalecarlica
+fold4,1023,Lepidostoma hirtum,species,231,global,41,29074,,,
+fold4,1023,Leptophlebia,genus,4921,global,41,24384,,,
+fold4,1023,Limnephilidae,family,62,global,41,29243,,,Limnephilus
+fold4,1023,Limnephilus,genus,92,global,41,29213,,,Limnephilidae
+fold4,1023,Micronecta,genus,501,global,41,28804,,,
+fold4,1023,Mystacides,genus,37,global,41,29268,,Mystacides azurea,Mystacides azurea
+fold4,1023,Mystacides azurea,species,101,global,41,29204,,Mystacides,Mystacides
+fold4,1023,Oligochaeta,,2074,global,41,27231,,,
+fold4,1023,Orthotrichia,genus,39,global,41,29266,,,Hydroptila
+fold4,1023,Oulimnius tuberculatus,species,1703,global,41,27602,,Oulimnius tuberculatus adult,Oulimnius tuberculatus adult
+fold4,1023,Oulimnius tuberculatus adult,species,200,genus,1,1702,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus
+fold4,1023,Pedicia,genus,38,global,41,29267,,,
+fold4,1023,Polycentropus flavomaculatus,species,87,global,41,29218,,,Cyrnus flavidus;Cyrnus trimaculatus
+fold4,1023,Psychomyia pusilla,species,108,global,41,29197,,,Tinodes waeneri
+fold4,1023,Sialis,genus,41,global,41,29264,,,
+fold4,1023,Sisyra,genus,31,global,41,29274,,,
+fold4,1023,Spirosperma ferox,species,178,global,41,29127,,,Stylaria lacustris
+fold4,1023,Stylaria lacustris,species,318,global,41,28987,,,Spirosperma ferox
+fold4,1023,Tanypodinae,genus,558,family,1,7418,Chironomidae,,Chironomidae
+fold4,1023,Tinodes waeneri,species,763,global,41,28542,,,Psychomyia pusilla
+fold4,1023,Turbellaria,,83,global,41,29222,,,

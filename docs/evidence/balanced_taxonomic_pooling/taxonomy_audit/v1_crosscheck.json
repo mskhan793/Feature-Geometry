@@ -1,0 +1,112 @@
+{
+ "v1_file_sha256": "4ced70a55a7fe4523b72a7452e067143cb11690a9c1e89f26d829605c9a29c0b",
+ "counts": {
+  "aquamonitor|agree": 99,
+  "finbenthic2|agree": 92,
+  "finbenthic2|differ": 5,
+  "finbenthic2|not in v1": 6
+ },
+ "differ": [
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Diura_sp",
+   "link": "genus->family",
+   "child": "Diura",
+   "parent_authors_table": "Perlodiae",
+   "parent_v1": "Perlodidae",
+   "status": "differ"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Isoperla_sp",
+   "link": "genus->family",
+   "child": "Isoperla",
+   "parent_authors_table": "Perlodiae",
+   "parent_v1": "Perlodidae",
+   "status": "differ"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Rhyacophila_nubila",
+   "link": "species->genus",
+   "child": "Rhyacophila nubila",
+   "parent_authors_table": "Rhycophila",
+   "parent_v1": "Rhyacophila",
+   "status": "differ"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Sphaerium_sp",
+   "link": "genus->family",
+   "child": "Sphaerium",
+   "parent_authors_table": "Sphaeridae",
+   "parent_v1": "Sphaeriidae",
+   "status": "differ"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Taeniopteryx_nebulosa",
+   "link": "genus->family",
+   "child": "Taeniopteryx",
+   "parent_authors_table": "Taenioptegyridae",
+   "parent_v1": "Taeniopterygidae",
+   "status": "differ"
+  }
+ ],
+ "not_in_v1": [
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Baetis_vernus_group",
+   "link": "species->genus",
+   "child": "Baetis vernus",
+   "parent_authors_table": "Baetis",
+   "parent_v1": null,
+   "status": "not in v1"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Diura_sp",
+   "link": "family->order",
+   "child": "Perlodiae",
+   "parent_authors_table": "Plecoptera",
+   "parent_v1": null,
+   "status": "not in v1"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Isoperla_sp",
+   "link": "family->order",
+   "child": "Perlodiae",
+   "parent_authors_table": "Plecoptera",
+   "parent_v1": null,
+   "status": "not in v1"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Rhyacophila_nubila",
+   "link": "genus->family",
+   "child": "Rhycophila",
+   "parent_authors_table": "Rhyacophilidae",
+   "parent_v1": null,
+   "status": "not in v1"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Sphaerium_sp",
+   "link": "family->order",
+   "child": "Sphaeridae",
+   "parent_authors_table": "Veneroida",
+   "parent_v1": null,
+   "status": "not in v1"
+  },
+  {
+   "dataset": "finbenthic2",
+   "taxon_group": "Taeniopteryx_nebulosa",
+   "link": "family->order",
+   "child": "Taenioptegyridae",
+   "parent_authors_table": "Plecoptera",
+   "parent_v1": null,
+   "status": "not in v1"
+  }
+ ]
+}

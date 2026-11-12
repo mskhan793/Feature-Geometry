@@ -53,18 +53,15 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.decomposition import PCA
 
-from src.features.feature_lookup import features_by_name
-from src.features.specimen_means import specimen_camera_means, specimen_means
 from src.methods.coupled_rscm import (PATCHES, SOURCE_SHA256, adapted_module, coupled_covariance, fit_coupled,
                                       original_module)
-from src.statistics.class_macro import ci95
-from src.statistics.covariance_fit import gaussian_parts, lw_class_covariance
+from src.statistics.covariance_fit import lw_class_covariance
+from src.statistics.heldout_density import (MIN_TRAIN, MIN_VAL, N_BOOT, class_groups, contrast_columns,
+                                            full_coordinate_rank, load_fold, loglik, numerics, score, spaces_from,
+                                            stratum, summarise_contrasts)
 
-MIN_TRAIN, MIN_VAL = 15, 5  # as lw_fit_diagnostics.py (section 8 D3)
-STRATA = [(15, 64, "15-63"), (64, 256, "64-255"), (256, np.inf, ">=256")]
-N_BOOT, SEED = 2000, 20261112
+SEED = 20261112
 ESTIMATORS = ["lw", "coupled", "lw_unbiased", "coupled_no_pooling", "pooling_lw_shrink", "pooled_scm", "class_scm",
               "class_identity"]
 CONTRASTS = {"coupled_vs_lw": ("coupled", "lw"), "normalisation": ("lw_unbiased", "lw"),
@@ -72,32 +69,6 @@ CONTRASTS = {"coupled_vs_lw": ("coupled", "lw"), "normalisation": ("lw_unbiased"
              "pooling_at_coupled_shrink": ("coupled", "coupled_no_pooling"),
              "shrink_at_no_pooling": ("coupled_no_pooling", "lw_unbiased"),
              "shrink_at_coupled_pooling": ("coupled", "pooling_lw_shrink")}
-
-
-def stratum(n: int) -> str:
-    return next(name for lo, hi, name in STRATA if lo <= n < hi)
-
-
-def numerics(cov: np.ndarray) -> dict:
-    eig = np.linalg.eigvalsh((cov + cov.T) / 2)
-    return {"asymmetry": float(np.abs(cov - cov.T).max()), "min_eig": float(eig[0]),
-            "condition": float(eig[-1] / eig[0]) if eig[0] > 0 else float("inf")}
-
-
-def score(z: np.ndarray, mu: np.ndarray, cov: np.ndarray | None) -> tuple[np.ndarray, np.ndarray, str]:
-    """-maha/2 and -log|cov|/2 per row (NaN with a status if the covariance is undefined, numerically singular or not
-    positive definite)."""
-    nan = np.full(len(z), np.nan)
-    if cov is None:
-        return nan, nan, "not defined (n <= d)"
-    eig = np.linalg.eigvalsh((cov + cov.T) / 2)
-    if eig[0] <= eig[-1] * cov.shape[0] * np.finfo(np.float64).eps:
-        return nan, nan, "failed: numerically singular"
-    try:
-        maha, logdet = gaussian_parts(z, mu, cov)
-    except np.linalg.LinAlgError:
-        return nan, nan, "failed: not positive definite"
-    return -0.5 * maha, np.full(len(z), -0.5 * logdet), "ok"
 
 
 def four_class_check(z: np.ndarray, y: np.ndarray, classes: list) -> dict:
@@ -111,36 +82,6 @@ def four_class_check(z: np.ndarray, y: np.ndarray, classes: list) -> dict:
     if diff != 0:
         raise AssertionError(f"adapted authors' code differs from the original on 4 real classes: {diff}")
     return {"run": True, "classes": four, "max_abs_diff_alpha_beta_sigmas": diff}
-
-
-def summarise(per: pd.DataFrame, boots: np.ndarray, classes: list, key: str) -> dict:
-    """Macro / micro of contrast ``key`` over ``classes`` (rows of ``per`` and columns of ``boots`` in that order)."""
-    if not classes:
-        return {"classes": 0}
-    t = per.set_index("taxon_group").loc[classes]
-    cols = [list(per.taxon_group).index(c) for c in classes]
-    w = t.n_val.to_numpy() / t.n_val.sum()
-    return {"classes": len(classes), "val_specimens": int(t.n_val.sum()),
-            "macro_mean": float(t[f"{key}_mean"].mean()), "macro_ci95": ci95(boots[:, cols].mean(1)),
-            "micro_mean": float((t[f"{key}_mean"] * w).sum()), "micro_ci95": ci95(boots[:, cols] @ w),
-            "macro_maha_part": float(t[f"{key}_maha_part"].mean()), "macro_logdet_part": float(t[f"{key}_logdet_part"].mean()),
-            "class_diff_median": float(t[f"{key}_mean"].median()), "classes_better": int((t[f"{key}_mean"] > 0).sum()),
-            "classes_ci_above_0": int(sum(v[0] > 0 for v in t[f"{key}_ci95"])),
-            "classes_ci_below_0": int(sum(v[1] < 0 for v in t[f"{key}_ci95"]))}
-
-
-def spaces_from(names: list[str], x_tr: np.ndarray, x_va: np.ndarray):
-    """(name, dim, train, val) per space; PCA fitted once on the train specimens for all ``pcaN``."""
-    dims = [int(s.removeprefix("pca")) for s in names if s.startswith("pca")]
-    pca = PCA(n_components=max(dims), svd_solver="full").fit(x_tr) if dims else None
-    pt, pv = (pca.transform(x_tr), pca.transform(x_va)) if pca else (None, None)
-    for s in names:
-        if s in ("native", "native_alt"):
-            keep = slice(None, -1) if s == "native" else slice(1, None)
-            yield s, x_tr.shape[1] - 1, np.asarray(x_tr[:, keep], np.float64), np.asarray(x_va[:, keep], np.float64)
-        else:
-            d = int(s.removeprefix("pca"))
-            yield s, d, pt[:, :d], pv[:, :d]
 
 
 def run_space(name, d, z_tr, z_va, y_tr, y_va, sk_va, eligible):
@@ -167,7 +108,7 @@ def run_space(name, d, z_tr, z_va, y_tr, y_va, sk_va, eligible):
                 "class_scm": s_k if len(zt) > d else None,
                 "class_identity": coupled_covariance(s_k, fit.pooled, 0.0, 1.0)}
         parts = {m: score(zv, mu, cov) for m, cov in covs.items()}
-        ll = {m: p[0] + p[1] - 0.5 * d * np.log(2 * np.pi) for m, p in parts.items()}
+        ll = {m: loglik(p, d) for m, p in parts.items()}
         draws = rng.integers(0, len(zv), size=(N_BOOT, len(zv)))
         nl, nc = numerics(lw_cov), numerics(fit.sigmas[k])
         row = {"space": name, "dim": d, "taxon_group": c, "n_train": len(zt), "n_val": len(zv), "stratum": stratum(len(zt)),
@@ -184,26 +125,12 @@ def run_space(name, d, z_tr, z_va, y_tr, y_va, sk_va, eligible):
         frame = {"space": name, "individual": sk_va.individual.to_numpy()[y_va == c], "taxon_group": c,
                  **{f"loglik_{m}": ll[m] for m in ESTIMATORS}}
         for key, (a, b) in CONTRASTS.items():
-            ok = parts[a][2] == parts[b][2] == "ok"
-            diff = ll[a] - ll[b]
-            boots[key][:, k] = diff[draws].mean(1) if ok else np.nan
-            row |= {f"{key}_mean": float(diff.mean()) if ok else np.nan,
-                    f"{key}_median": float(np.median(diff)) if ok else np.nan,
-                    f"{key}_ci95": ci95(boots[key][:, k]) if ok else [np.nan, np.nan],
-                    f"{key}_maha_part": float((parts[a][0] - parts[b][0]).mean()) if ok else np.nan,
-                    f"{key}_logdet_part": float((parts[a][1] - parts[b][1]).mean()) if ok else np.nan}
-            frame[f"d_{key}"] = diff
+            cols, boots[key][:, k], frame[f"d_{key}"] = contrast_columns(key, parts[a], parts[b], d, draws)
+            row |= cols
         rows.append(row)
         spec.append(pd.DataFrame(frame))
     per = pd.DataFrame(rows)
-    groups = {"all": lambda r: True, **{s: (lambda r, s=s: r.stratum == s) for _, _, s in STRATA},
-              "n<=p": lambda r: r.n_le_p, "n>p": lambda r: not r.n_le_p}
-    contrasts = {}
-    for key, (a, b) in CONTRASTS.items():
-        good = [r.taxon_group for r in per.itertuples() if getattr(r, f"status_{a}") == getattr(r, f"status_{b}") == "ok"]
-        sub = per.set_index("taxon_group")
-        contrasts[key] = {g: summarise(per, boots[key], [c for c in good if f(sub.loc[c])], key) for g, f in groups.items()}
-        contrasts[key]["numerical_failures"] = per.loc[~per.taxon_group.isin(good), ["taxon_group", f"status_{a}", f"status_{b}"]].to_dict("records")
+    contrasts = summarise_contrasts(per, boots, CONTRASTS, class_groups())
     pooled = numerics(fit.pooled)
     result = {"dim": d, "four_class_original_vs_adapted": check, "fit_seconds": fit_seconds,
               "pooled": {**pooled, "rank": int(np.linalg.matrix_rank(fit.pooled))},
@@ -230,42 +157,22 @@ def main():
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     t_start = time.perf_counter()
-    S = a.fold
-    cohort = pd.read_parquet(a.cohort)
-    rows_in = len(cohort)
-    cohort = cohort[cohort[S].isin(["train", "val"])].reset_index(drop=True)  # test rows dropped before lookup
-    x, meta = features_by_name([tuple(Path(p) for p in s.split("=", 1)) for s in a.caches], cohort.img.tolist())
-    sets = {}
-    for split in ("train", "val"):
-        rows = cohort[S] == split
-        keys, cm, _ = specimen_camera_means(x[rows.values], cohort[rows].reset_index(drop=True), S)
-        sets[split] = specimen_means(keys, cm, S)
-    (sk_tr, x_tr), (sk_va, x_va) = sets["train"], sets["val"]
-    assert sk_tr.individual.is_unique and sk_va.individual.is_unique
-    assert not set(sk_tr.individual) & set(sk_va.individual), "train and val share specimens"
-    y_tr, y_va = sk_tr.taxon_group.to_numpy(), sk_va.taxon_group.to_numpy()
-    n_tr, n_va = pd.Series(y_tr).value_counts(), pd.Series(y_va).value_counts()
-    eligible = sorted(c for c in n_tr.index if n_tr[c] >= MIN_TRAIN and n_va.get(c, 0) >= MIN_VAL)
-    excluded = {c: {"train": int(n_tr.get(c, 0)), "val": int(n_va.get(c, 0))}
-                for c in sorted(set(n_tr.index) | set(n_va.index)) if c not in eligible}
-    resid = np.asarray(x_tr, np.float64) - np.stack([x_tr[y_tr == c].mean(0) for c in y_tr])
-    eig = np.linalg.eigvalsh(resid.T @ resid / len(resid))
-    full = {"dim": int(x_tr.shape[1]), "rank": int((eig > eig[-1] * len(eig) * np.finfo(np.float64).eps).sum()),
-            "smallest_eigenvalues": eig[:3].tolist(), "largest_eigenvalue": float(eig[-1])}
+    f = load_fold(a.cohort, a.caches, a.fold)
+    y_tr, y_va = f.y_tr, f.y_va
+    full = full_coordinate_rank(f.x_tr, y_tr)
     pers, specs, results = [], [], {}
-    for name, d, z_tr, z_va in spaces_from(a.spaces, x_tr, x_va):
+    for name, d, z_tr, z_va in spaces_from(a.spaces, f.x_tr, f.x_va):
         t0 = time.perf_counter()
-        per, spec, res = run_space(name, d, z_tr, z_va, y_tr, y_va, sk_va, eligible)
+        per, spec, res = run_space(name, d, z_tr, z_va, y_tr, y_va, f.sk_va, f.eligible)
         results[name] = {**res, "space_seconds": time.perf_counter() - t0}
         pers.append(per)
         specs.append(spec)
         print(f"{name}: {results[name]['space_seconds']:.1f} s", flush=True)
     pd.concat(pers, ignore_index=True).to_csv(a.out / "perclass.csv", index=False)
     pd.concat(specs, ignore_index=True).to_csv(a.out / "perspecimen.csv", index=False)
-    summary = {"fold": S, "encoder": meta["encoder"],
-               "cohort_rows": {"in_file": rows_in, "train_val_used": len(cohort), "test_rows_dropped": rows_in - len(cohort)},
-               "train_specimens": int(len(sk_tr)), "val_specimens": int(len(sk_va)), "eligible_classes": len(eligible),
-               "excluded_classes": excluded, "min_train": MIN_TRAIN, "min_val": MIN_VAL, "n_boot": N_BOOT, "seed": SEED,
+    summary = {"fold": f.fold, "encoder": f.encoder, "cohort_rows": f.rows,
+               "train_specimens": int(len(f.sk_tr)), "val_specimens": int(len(f.sk_va)), "eligible_classes": len(f.eligible),
+               "excluded_classes": f.excluded, "min_train": MIN_TRAIN, "min_val": MIN_VAL, "n_boot": N_BOOT, "seed": SEED,
                "authors_code_sha256": SOURCE_SHA256, "adaptations": [{"replace": f, "with": r} for f, r in PATCHES],
                "contrasts": CONTRASTS, "full_coordinate_within_class_covariance": full, "total_seconds": time.perf_counter() - t_start,
                "max_rss_gb": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2 ** 20, "spaces": results}

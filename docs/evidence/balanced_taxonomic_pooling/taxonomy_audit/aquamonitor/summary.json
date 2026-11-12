@@ -1,0 +1,168 @@
+{
+ "dataset": "aquamonitor",
+ "classes": 42,
+ "rank_counts": {
+  "species": 23,
+  "genus": 13,
+  "family": 4,
+  "null": 2
+ },
+ "classes_without_ancestry": [
+  "Oligochaeta",
+  "Turbellaria"
+ ],
+ "classes_sharing_a_scientific_name": {
+  "Oulimnius tuberculatus": [
+   "Oulimnius tuberculatus",
+   "Oulimnius tuberculatus adult"
+  ]
+ },
+ "specimen_counts_equal_release_table": null,
+ "folds": {
+  "fold0": {
+   "eligible": 41,
+   "candidates": 42,
+   "candidates_not_eligible": [
+    "Sisyra"
+   ]
+  },
+  "fold1": {
+   "eligible": 41,
+   "candidates": 42,
+   "candidates_not_eligible": [
+    "Sisyra"
+   ]
+  },
+  "fold2": {
+   "eligible": 40,
+   "candidates": 42,
+   "candidates_not_eligible": [
+    "Caenis rivulorum",
+    "Mystacides"
+   ]
+  },
+  "fold3": {
+   "eligible": 41,
+   "candidates": 42,
+   "candidates_not_eligible": [
+    "Caenis rivulorum"
+   ]
+  },
+  "fold4": {
+   "eligible": 41,
+   "candidates": 42,
+   "candidates_not_eligible": [
+    "Pisidium"
+   ]
+  }
+ },
+ "level_counts_by_dim": {
+  "16": {
+   "fold0": {
+    "family": 14,
+    "genus": 9,
+    "global": 18
+   },
+   "fold1": {
+    "family": 14,
+    "genus": 9,
+    "global": 18
+   },
+   "fold2": {
+    "family": 13,
+    "genus": 8,
+    "global": 19
+   },
+   "fold3": {
+    "family": 14,
+    "genus": 8,
+    "global": 19
+   },
+   "fold4": {
+    "family": 14,
+    "genus": 9,
+    "global": 18
+   }
+  },
+  "64": {
+   "fold0": {
+    "family": 12,
+    "genus": 8,
+    "global": 21
+   },
+   "fold1": {
+    "family": 12,
+    "genus": 8,
+    "global": 21
+   },
+   "fold2": {
+    "family": 11,
+    "genus": 7,
+    "global": 22
+   },
+   "fold3": {
+    "family": 12,
+    "genus": 7,
+    "global": 22
+   },
+   "fold4": {
+    "family": 12,
+    "genus": 8,
+    "global": 21
+   }
+  },
+  "1023": {
+   "fold0": {
+    "family": 2,
+    "genus": 3,
+    "global": 36
+   },
+   "fold1": {
+    "family": 2,
+    "genus": 3,
+    "global": 36
+   },
+   "fold2": {
+    "family": 2,
+    "genus": 2,
+    "global": 36
+   },
+   "fold3": {
+    "family": 2,
+    "genus": 2,
+    "global": 37
+   },
+   "fold4": {
+    "family": 2,
+    "genus": 3,
+    "global": 36
+   }
+  }
+ },
+ "targets_without_any_genus_or_family_mate": [
+  "Asellus aquaticus",
+  "Ceratopogonidae",
+  "Ecnomus tenellus",
+  "Ephemera vulgata",
+  "Erpobdella octoculata",
+  "Gyraulus",
+  "Helobdella stagnalis",
+  "Hydrachnidia",
+  "Lepidostoma hirtum",
+  "Leptophlebia",
+  "Micronecta",
+  "Oligochaeta",
+  "Pedicia",
+  "Pisidium",
+  "Sialis",
+  "Sisyra",
+  "Turbellaria"
+ ],
+ "min_train": 15,
+ "min_val": 5,
+ "dims": [
+  16,
+  64,
+  1023
+ ]
+}

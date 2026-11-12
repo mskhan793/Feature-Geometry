@@ -1,0 +1,40 @@
+taxon_group,source_name,species,genus,family,order,table_specimens,note,rank,specimens,specimens_match_table
+Agapetus_sp,Agapetus sp.,,Agapetus,Glossosomatidae,Trichoptera,290,,genus,290,True
+Ameletus_inopinatus,Ameletus inopinatus,Ameletus inopinatus,Ameletus,Ameletidae,Ephemeroptera,127,,species,127,True
+Amphinemura_borealis,Amphinemura borealis,Amphinemura borealis,Amphinemura,Nemouridae,Plecoptera,322,,species,322,True
+Baetis_rhodani,Baetis rhodani,Baetis rhodani,Baetis,Baetidae,Ephemeroptera,404,,species,404,True
+Baetis_vernus_group,Baetis vernus group,Baetis vernus,Baetis,Baetidae,Ephemeroptera,176,,species,176,True
+Capnopsis_schilleri,Capnopsis schilleri,Capnopsis schilleri,Capnopsis,Capniidae,Plecoptera,21,,species,21,True
+Diura_sp,Diura sp.,,Diura,Perlodiae,Plecoptera,98,,genus,98,True
+Elmis_aenea,Elmis aenea,Elmis aenea,Elmis,Elmidae,Coleoptera,648,,species,648,True
+Ephemerella_aurivillii,Ephemerella aurivillii,Ephemerella aurivillii,Ephemerella,Ephemerellidae,Ephemeroptera,356,,species,356,True
+Ephemerella_mucronata,Ephemerella mucronata,Ephemerella mucronata,Ephemerella,Ephemerellidae,Ephemeroptera,304,,species,304,True
+Heptagenia_sulphurea,Heptagenia sulphurea,Heptagenia sulphurea,Heptagenia,Heptageniidae,Ephemeroptera,438,,species,438,True
+Hydraena_sp,Hydraena sp.,,Hydraena,Hydraenidae,Coleoptera,198,,genus,198,True
+Hydropsyche_pellucidula,Hydropsyche pellucidula,Hydropsyche pellucidula,Hydropsyche,Hydropsychidae,Trichoptera,192,,species,192,True
+Hydropsyche_saxonica,Hydropsyche saxonica,Hydropsyche saxonica,Hydropsyche,Hydropsychidae,Trichoptera,17,,species,17,True
+Hydropsyche_siltalai,Hydropsyche siltalai,Hydropsyche siltalai,Hydropsyche,Hydropsychidae,Trichoptera,395,,species,395,True
+Isoperla_sp,Isoperla sp.,,Isoperla,Perlodiae,Plecoptera,243,,genus,243,True
+Kageronia_fuscogrisea,Kageronia fuscogrisea,Kageronia fuscogrisea,Kageronia,Heptageniidae,Ephemeroptera,222,,species,222,True
+Lepidostoma_hirtum,Lepidostoma hirtum,Lepidostoma hirtum,Lepidostoma,Lepidostomatidae,Trichoptera,267,,species,267,True
+Leptophlebia_sp,Leptophlebia sp.,,Leptophlebia,Leptophlebiidae,Ephemeroptera,412,,genus,412,True
+Leuctra_nigra,Leuctra nigra,Leuctra nigra,Leuctra,Leuctridae,Plecoptera,27,,species,27,True
+Leuctra_sp,Leuctra sp.,,Leuctra,Leuctridae,Plecoptera,298,,genus,298,True
+Limnius_volckmari,Limnius volckmari,Limnius volckmari,Limnius,Elmidae,Coleoptera,314,,species,314,True
+Micrasema_gelidum,Micrasema gelidum,Micrasema gelidum,Micrasema,Brachycentridae,Trichoptera,233,,species,233,True
+Micrasema_setiferum,Micrasema setiferum,Micrasema setiferum,Micrasema,Brachycentridae,Trichoptera,323,,species,323,True
+Nemoura_cinerea,Nemoura cinerea,Nemoura cinerea,Nemoura,Nemouridae,Plecoptera,16,,species,16,True
+Nemoura_sp,Nemoura sp.,,Nemoura,Nemouridae,Plecoptera,187,,genus,187,True
+Neureclipsis_bimaculata,Neureclipsis bimaculata,Neureclipsis bimaculata,Neureclipsis,Polycentropodidae,Trichoptera,477,,species,477,True
+Oulimnius_tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius,Elmidae,Coleoptera,335,,species,335,True
+Oxyethira_sp,Oxyethira sp.,,Oxyethira,Hydroptilidae,Trichoptera,218,,genus,218,True
+Plectrocnemia_sp,Plectrocnemia sp.,,Plectrocnemia,Polycentropodidae,Trichoptera,63,,genus,63,True
+Polycentropus_flavomaculatus,Polycentropus flavomaculatus,Polycentropus flavomaculatus,Polycentropus,Polycentropodidae,Trichoptera,224,,species,224,True
+Polycentropus_irroratus,Polycentropus irroratus,Polycentropus irroratus,Polycentropus,Polycentropodidae,Trichoptera,59,,species,59,True
+Protonemura_sp,Protonemura sp.,,Protonemura,Nemouridae,Plecoptera,100,,genus,100,True
+Rhyacophila_nubila,Rhyacophila nubila,Rhyacophila nubila,Rhycophila,Rhyacophilidae,Trichoptera,177,,species,177,True
+Sialis_sp,Sialis sp.,,Sialis,Sialidae,Megaloptera,26,,genus,26,True
+Silo_pallipes,Silo pallipes,Silo pallipes,Silo,Goeridae,Trichoptera,56,,species,56,True
+Simuliidae,Simuliidae,,,Simuliidae,Diptera,887,,family,887,True
+Sphaerium_sp,Sphaerium sp.,,Sphaerium,Sphaeridae,Veneroida,150,,genus,150,True
+Taeniopteryx_nebulosa,Taeniopteryx nebulosa,Taeniopteryx nebulosa,Taeniopteryx,Taenioptegyridae,Plecoptera,331,,species,331,True

@@ -1,0 +1,43 @@
+taxon_group,source_name,species,genus,family,order,note,rank,specimens
+Asellus aquaticus,Asellus aquaticus,Asellus aquaticus,Asellus,Asellidae,Isopoda,,species,3049
+Caenis horaria,Caenis horaria,Caenis horaria,Caenis,Caenidae,Ephemeroptera,,species,4108
+Caenis luctuosa,Caenis luctuosa,Caenis luctuosa,Caenis,Caenidae,Ephemeroptera,,species,500
+Caenis rivulorum,Caenis rivulorum,Caenis rivulorum,Caenis,Caenidae,Ephemeroptera,,species,53
+Centroptilum luteolum,Centroptilum luteolum,Centroptilum luteolum,Centroptilum,Baetidae,Ephemeroptera,,species,86
+Ceratopogonidae,Ceratopogonidae,,,Ceratopogonidae,Diptera,,family,898
+Chironomidae,Chironomidae,,,Chironomidae,Diptera,,family,10643
+Cloeon,Cloeon,,Cloeon,Baetidae,Ephemeroptera,,genus,117
+Cloeon dipterum,Cloeon dipterum,Cloeon dipterum,Cloeon,Baetidae,Ephemeroptera,,species,150
+Cyrnus flavidus,Cyrnus flavidus,Cyrnus flavidus,Cyrnus,Polycentropodidae,Trichoptera,,species,113
+Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus trimaculatus,Cyrnus,Polycentropodidae,Trichoptera,,species,178
+Ecnomus tenellus,Ecnomus tenellus,Ecnomus tenellus,Ecnomus,Ecnomidae,Trichoptera,,species,197
+Ephemera vulgata,Ephemera vulgata,Ephemera vulgata,Ephemera,Ephemeridae,Ephemeroptera,,species,284
+Erpobdella octoculata,Erpobdella octoculata,Erpobdella octoculata,Erpobdella,Erpobdellidae,Arhynchobdellida,,species,164
+Gyraulus,Gyraulus,,Gyraulus,Planorbidae,Gastropoda_order,,genus,150
+Helobdella stagnalis,Helobdella stagnalis,Helobdella stagnalis,Helobdella,Glossiphoniidae,Rhynchobdellida,,species,262
+Heptagenia dalecarlica,Heptagenia dalecarlica,Heptagenia dalecarlica,Heptagenia,Heptageniidae,Ephemeroptera,,species,195
+Hydrachnidia,Hydrachnidia,,,Hydrachnidia,Trombidiformes,,family,470
+Hydroptila,Hydroptila,,Hydroptila,Hydroptilidae,Trichoptera,,genus,107
+Kageronia fuscogrisea,Kageronia fuscogrisea,Kageronia fuscogrisea,Kageronia,Heptageniidae,Ephemeroptera,,species,2884
+Lepidostoma hirtum,Lepidostoma hirtum,Lepidostoma hirtum,Lepidostoma,Lepidostomatidae,Trichoptera,,species,331
+Leptophlebia,Leptophlebia,,Leptophlebia,Leptophlebiidae,Ephemeroptera,,genus,7050
+Limnephilidae,Limnephilidae,,,Limnephilidae,Trichoptera,,family,84
+Limnephilus,Limnephilus,,Limnephilus,Limnephilidae,Trichoptera,,genus,130
+Micronecta,Micronecta,,Micronecta,Micronectidae,Hemiptera,,genus,727
+Mystacides,Mystacides,,Mystacides,Leptoceridae,Trichoptera,,genus,56
+Mystacides azurea,Mystacides azurea,Mystacides azurea,Mystacides,Leptoceridae,Trichoptera,,species,143
+Oligochaeta,Oligochaeta,,,,,taxon not in taxon_table,,2957
+Orthotrichia,Orthotrichia,,Orthotrichia,Hydroptilidae,Trichoptera,,genus,60
+Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius,Elmidae,Coleoptera,,species,2439
+Oulimnius tuberculatus adult,Oulimnius tuberculatus,Oulimnius tuberculatus,Oulimnius,Elmidae,Coleoptera,,species,302
+Pedicia,Pedicia,,Pedicia,Pediciidae,Diptera,,genus,61
+Pisidium,Pisidium,,Pisidium,Sphaeriidae,Sphaeriida,,genus,85
+Polycentropus flavomaculatus,Polycentropus flavomaculatus,Polycentropus flavomaculatus,Polycentropus,Polycentropodidae,Trichoptera,,species,131
+Psychomyia pusilla,Psychomyia pusilla,Psychomyia pusilla,Psychomyia,Psychomyiidae,Trichoptera,,species,169
+Sialis,Sialis,,Sialis,Sialidae,Megaloptera,,genus,58
+Sisyra,Sisyra,,Sisyra,Sisyridae,Neuroptera,,genus,50
+Spirosperma ferox,Spirosperma ferox,Spirosperma ferox,Spirosperma,Naididae,Tubificida,,species,250
+Stylaria lacustris,Stylaria lacustris,Stylaria lacustris,Stylaria,Naididae,Tubificida,,species,470
+Tanypodinae,Tanypodinae,,Tanypodinae,Chironomidae,Diptera,,genus,796
+Tinodes waeneri,Tinodes waeneri,Tinodes waeneri,Tinodes,Psychomyiidae,Trichoptera,,species,1088
+Turbellaria,Turbellaria,,,,,taxon not in taxon_table,,120

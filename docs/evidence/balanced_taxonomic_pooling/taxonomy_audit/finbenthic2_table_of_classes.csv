@@ -1,0 +1,40 @@
+taxa_number,taxa,species_number,species,genus_number,genus,family_number,family,order_number,order,specimens,images,source_pdf_sha256
+8,Elmis aenea,6.0,Elmis aenea,7.0,Elmis,5,Elmidae,1,Coleoptera,648,32398,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+22,Limnius volckmari,16.0,Limnius volckmari,17.0,Limnius,5,Elmidae,1,Coleoptera,314,15621,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+28,Oulimnius tuberculatus,21.0,Oulimnius tuberculatus,21.0,Oulimnius,5,Elmidae,1,Coleoptera,335,16674,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+12,Hydraena sp.,,,10.0,Hydraena,10,Hydraenidae,1,Coleoptera,198,9900,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+37,Simuliidae,,,,,21,Simuliidae,2,Diptera,887,44240,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+2,Ameletus inopinatus,1.0,Ameletus inopinatus,2.0,Ameletus,1,Ameletidae,3,Ephemeroptera,127,6346,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+4,Baetis rhodani,3.0,Baetis rhodani,4.0,Baetis,2,Baetidae,3,Ephemeroptera,404,19829,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+5,Baetis vernus group,4.0,Baetis vernus,4.0,Baetis,2,Baetidae,3,Ephemeroptera,176,8588,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+9,Ephemerella aurivillii,7.0,Ephemerella aurivillii,8.0,Ephemerella,6,Ephemerellidae,3,Ephemeroptera,356,16458,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+10,Ephemerella mucronata,8.0,Ephemerella mucronata,8.0,Ephemerella,6,Ephemerellidae,3,Ephemeroptera,304,15175,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+11,Heptagenia sulphurea,9.0,Heptagenia sulphurea,9.0,Heptagenia,9,Heptageniidae,3,Ephemeroptera,438,21502,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+17,Kageronia fuscogrisea,13.0,Kageronia fuscogrisea,13.0,Kageronia,9,Heptageniidae,3,Ephemeroptera,222,10826,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+19,Leptophlebia sp.,,,15.0,Leptophlebia,14,Leptophlebiidae,3,Ephemeroptera,412,20366,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+35,Sialis sp.,,,27.0,Sialis,20,Sialidae,4,Megaloptera,26,1162,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+6,Capnopsis schilleri,5.0,Capnopsis schilleri,5.0,Capnopsis,4,Capniidae,5,Plecoptera,21,1050,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+20,Leuctra nigra,15.0,Leuctra nigra,16.0,Leuctra,15,Leuctridae,5,Plecoptera,27,1350,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+21,Leuctra sp.,,,16.0,Leuctra,15,Leuctridae,5,Plecoptera,298,14899,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+3,Amphinemura borealis,2.0,Amphinemura borealis,3.0,Amphinemura,16,Nemouridae,5,Plecoptera,322,16100,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+25,Nemoura cinerea,19.0,Nemoura cinerea,19.0,Nemoura,16,Nemouridae,5,Plecoptera,16,800,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+26,Nemoura sp.,,,19.0,Nemoura,16,Nemouridae,5,Plecoptera,187,9314,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+33,Protonemura sp.,,,25.0,Protonemura,16,Nemouridae,5,Plecoptera,100,4908,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+7,Diura sp.,,,6.0,Diura,17,Perlodiae,5,Plecoptera,98,4427,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+16,Isoperla sp.,,,12.0,Isoperla,17,Perlodiae,5,Plecoptera,243,12148,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+39,Taeniopteryx nebulosa,26.0,Taeniopteryx nebulosa,30.0,Taeniopteryx,23,Taenioptegyridae,5,Plecoptera,331,16325,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+23,Micrasema gelidum,17.0,Micrasema gelidum,18.0,Micrasema,3,Brachycentridae,6,Trichoptera,233,11528,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+24,Micrasema setiferum,18.0,Micrasema setiferum,18.0,Micrasema,3,Brachycentridae,6,Trichoptera,323,13819,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+1,Agapetus sp.,,,1.0,Agapetus,7,Glossosomatidae,6,Trichoptera,290,14387,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+36,Silo pallipes,25.0,Silo pallipes,28.0,Silo,8,Goeridae,6,Trichoptera,56,2658,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+13,Hydropsyche pellucidula,10.0,Hydropsyche pellucidula,11.0,Hydropsyche,11,Hydropsychidae,6,Trichoptera,192,6513,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+14,Hydropsyche saxonica,11.0,Hydropsyche saxonica,11.0,Hydropsyche,11,Hydropsychidae,6,Trichoptera,17,490,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+15,Hydropsyche siltalai,12.0,Hydropsyche siltalai,11.0,Hydropsyche,11,Hydropsychidae,6,Trichoptera,395,19456,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+29,Oxyethira sp.,,,22.0,Oxyethira,12,Hydroptilidae,6,Trichoptera,218,10381,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+18,Lepidostoma hirtum,14.0,Lepidostoma hirtum,14.0,Lepidostoma,13,Lepidostomatidae,6,Trichoptera,267,10982,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+27,Neureclipsis bimaculata,20.0,Neureclipsis bimaculata,20.0,Neureclipsis,18,Polycentropodidae,6,Trichoptera,477,23721,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+30,Plectrocnemia sp.,,,23.0,Plectrocnemia,18,Polycentropodidae,6,Trichoptera,63,3015,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+31,Polycentropus flavomaculatus,22.0,Polycentropus flavomaculatus,24.0,Polycentropus,18,Polycentropodidae,6,Trichoptera,224,11005,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+32,Polycentropus irroratus,23.0,Polycentropus irroratus,24.0,Polycentropus,18,Polycentropodidae,6,Trichoptera,59,2917,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+36,Rhyacophila nubila,25.0,Rhyacophila nubila,28.0,Rhycophila,8,Rhyacophilidae,6,Trichoptera,177,6993,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2
+38,Sphaerium sp.,,,29.0,Sphaerium,22,Sphaeridae,7,Veneroida,150,1733,cd58c251f2ad5954caca692bb3800fb058923e41e91fabec4c47a557ec380de2

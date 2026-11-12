@@ -1,0 +1,144 @@
+{
+ "dataset": "finbenthic2",
+ "classes": 39,
+ "rank_counts": {
+  "species": 26,
+  "genus": 12,
+  "family": 1
+ },
+ "classes_without_ancestry": [],
+ "classes_sharing_a_scientific_name": {},
+ "specimen_counts_equal_release_table": true,
+ "folds": {
+  "fold0": {
+   "eligible": 36,
+   "candidates": 37,
+   "candidates_not_eligible": [
+    "Capnopsis_schilleri"
+   ]
+  },
+  "fold1": {
+   "eligible": 35,
+   "candidates": 36,
+   "candidates_not_eligible": [
+    "Sialis_sp"
+   ]
+  },
+  "fold2": {
+   "eligible": 34,
+   "candidates": 36,
+   "candidates_not_eligible": [
+    "Leuctra_nigra",
+    "Sialis_sp"
+   ]
+  },
+  "fold3": {
+   "eligible": 35,
+   "candidates": 36,
+   "candidates_not_eligible": [
+    "Sialis_sp"
+   ]
+  },
+  "fold4": {
+   "eligible": 35,
+   "candidates": 36,
+   "candidates_not_eligible": [
+    "Leuctra_nigra"
+   ]
+  }
+ },
+ "level_counts_by_dim": {
+  "16": {
+   "fold0": {
+    "family": 12,
+    "genus": 11,
+    "global": 13
+   },
+   "fold1": {
+    "family": 13,
+    "genus": 11,
+    "global": 11
+   },
+   "fold2": {
+    "family": 13,
+    "genus": 10,
+    "global": 11
+   },
+   "fold3": {
+    "family": 12,
+    "genus": 11,
+    "global": 12
+   },
+   "fold4": {
+    "family": 13,
+    "genus": 10,
+    "global": 12
+   }
+  },
+  "64": {
+   "fold0": {
+    "family": 12,
+    "genus": 10,
+    "global": 14
+   },
+   "fold1": {
+    "family": 13,
+    "genus": 10,
+    "global": 12
+   },
+   "fold2": {
+    "family": 12,
+    "genus": 9,
+    "global": 13
+   },
+   "fold3": {
+    "family": 13,
+    "genus": 10,
+    "global": 12
+   },
+   "fold4": {
+    "family": 12,
+    "genus": 9,
+    "global": 14
+   }
+  },
+  "1023": {
+   "fold0": {
+    "global": 36
+   },
+   "fold1": {
+    "global": 35
+   },
+   "fold2": {
+    "global": 34
+   },
+   "fold3": {
+    "global": 35
+   },
+   "fold4": {
+    "global": 35
+   }
+  }
+ },
+ "targets_without_any_genus_or_family_mate": [
+  "Agapetus_sp",
+  "Ameletus_inopinatus",
+  "Hydraena_sp",
+  "Lepidostoma_hirtum",
+  "Leptophlebia_sp",
+  "Oxyethira_sp",
+  "Rhyacophila_nubila",
+  "Sialis_sp",
+  "Silo_pallipes",
+  "Simuliidae",
+  "Sphaerium_sp",
+  "Taeniopteryx_nebulosa"
+ ],
+ "min_train": 15,
+ "min_val": 5,
+ "dims": [
+  16,
+  64,
+  1023
+ ]
+}

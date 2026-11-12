@@ -1,0 +1,203 @@
+dataset,taxon_group,link,child,parent_authors_table,parent_v1,status
+finbenthic2,Agapetus_sp,genus->family,Agapetus,Glossosomatidae,Glossosomatidae,agree
+finbenthic2,Agapetus_sp,family->order,Glossosomatidae,Trichoptera,Trichoptera,agree
+finbenthic2,Ameletus_inopinatus,species->genus,Ameletus inopinatus,Ameletus,Ameletus,agree
+finbenthic2,Ameletus_inopinatus,genus->family,Ameletus,Ameletidae,Ameletidae,agree
+finbenthic2,Ameletus_inopinatus,family->order,Ameletidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Amphinemura_borealis,species->genus,Amphinemura borealis,Amphinemura,Amphinemura,agree
+finbenthic2,Amphinemura_borealis,genus->family,Amphinemura,Nemouridae,Nemouridae,agree
+finbenthic2,Amphinemura_borealis,family->order,Nemouridae,Plecoptera,Plecoptera,agree
+finbenthic2,Baetis_rhodani,species->genus,Baetis rhodani,Baetis,Baetis,agree
+finbenthic2,Baetis_rhodani,genus->family,Baetis,Baetidae,Baetidae,agree
+finbenthic2,Baetis_rhodani,family->order,Baetidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Baetis_vernus_group,species->genus,Baetis vernus,Baetis,,not in v1
+finbenthic2,Baetis_vernus_group,genus->family,Baetis,Baetidae,Baetidae,agree
+finbenthic2,Baetis_vernus_group,family->order,Baetidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Capnopsis_schilleri,species->genus,Capnopsis schilleri,Capnopsis,Capnopsis,agree
+finbenthic2,Capnopsis_schilleri,genus->family,Capnopsis,Capniidae,Capniidae,agree
+finbenthic2,Capnopsis_schilleri,family->order,Capniidae,Plecoptera,Plecoptera,agree
+finbenthic2,Diura_sp,genus->family,Diura,Perlodiae,Perlodidae,differ
+finbenthic2,Diura_sp,family->order,Perlodiae,Plecoptera,,not in v1
+finbenthic2,Elmis_aenea,species->genus,Elmis aenea,Elmis,Elmis,agree
+finbenthic2,Elmis_aenea,genus->family,Elmis,Elmidae,Elmidae,agree
+finbenthic2,Elmis_aenea,family->order,Elmidae,Coleoptera,Coleoptera,agree
+finbenthic2,Ephemerella_aurivillii,species->genus,Ephemerella aurivillii,Ephemerella,Ephemerella,agree
+finbenthic2,Ephemerella_aurivillii,genus->family,Ephemerella,Ephemerellidae,Ephemerellidae,agree
+finbenthic2,Ephemerella_aurivillii,family->order,Ephemerellidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Ephemerella_mucronata,species->genus,Ephemerella mucronata,Ephemerella,Ephemerella,agree
+finbenthic2,Ephemerella_mucronata,genus->family,Ephemerella,Ephemerellidae,Ephemerellidae,agree
+finbenthic2,Ephemerella_mucronata,family->order,Ephemerellidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Heptagenia_sulphurea,species->genus,Heptagenia sulphurea,Heptagenia,Heptagenia,agree
+finbenthic2,Heptagenia_sulphurea,genus->family,Heptagenia,Heptageniidae,Heptageniidae,agree
+finbenthic2,Heptagenia_sulphurea,family->order,Heptageniidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Hydraena_sp,genus->family,Hydraena,Hydraenidae,Hydraenidae,agree
+finbenthic2,Hydraena_sp,family->order,Hydraenidae,Coleoptera,Coleoptera,agree
+finbenthic2,Hydropsyche_pellucidula,species->genus,Hydropsyche pellucidula,Hydropsyche,Hydropsyche,agree
+finbenthic2,Hydropsyche_pellucidula,genus->family,Hydropsyche,Hydropsychidae,Hydropsychidae,agree
+finbenthic2,Hydropsyche_pellucidula,family->order,Hydropsychidae,Trichoptera,Trichoptera,agree
+finbenthic2,Hydropsyche_saxonica,species->genus,Hydropsyche saxonica,Hydropsyche,Hydropsyche,agree
+finbenthic2,Hydropsyche_saxonica,genus->family,Hydropsyche,Hydropsychidae,Hydropsychidae,agree
+finbenthic2,Hydropsyche_saxonica,family->order,Hydropsychidae,Trichoptera,Trichoptera,agree
+finbenthic2,Hydropsyche_siltalai,species->genus,Hydropsyche siltalai,Hydropsyche,Hydropsyche,agree
+finbenthic2,Hydropsyche_siltalai,genus->family,Hydropsyche,Hydropsychidae,Hydropsychidae,agree
+finbenthic2,Hydropsyche_siltalai,family->order,Hydropsychidae,Trichoptera,Trichoptera,agree
+finbenthic2,Isoperla_sp,genus->family,Isoperla,Perlodiae,Perlodidae,differ
+finbenthic2,Isoperla_sp,family->order,Perlodiae,Plecoptera,,not in v1
+finbenthic2,Kageronia_fuscogrisea,species->genus,Kageronia fuscogrisea,Kageronia,Kageronia,agree
+finbenthic2,Kageronia_fuscogrisea,genus->family,Kageronia,Heptageniidae,Heptageniidae,agree
+finbenthic2,Kageronia_fuscogrisea,family->order,Heptageniidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Lepidostoma_hirtum,species->genus,Lepidostoma hirtum,Lepidostoma,Lepidostoma,agree
+finbenthic2,Lepidostoma_hirtum,genus->family,Lepidostoma,Lepidostomatidae,Lepidostomatidae,agree
+finbenthic2,Lepidostoma_hirtum,family->order,Lepidostomatidae,Trichoptera,Trichoptera,agree
+finbenthic2,Leptophlebia_sp,genus->family,Leptophlebia,Leptophlebiidae,Leptophlebiidae,agree
+finbenthic2,Leptophlebia_sp,family->order,Leptophlebiidae,Ephemeroptera,Ephemeroptera,agree
+finbenthic2,Leuctra_nigra,species->genus,Leuctra nigra,Leuctra,Leuctra,agree
+finbenthic2,Leuctra_nigra,genus->family,Leuctra,Leuctridae,Leuctridae,agree
+finbenthic2,Leuctra_nigra,family->order,Leuctridae,Plecoptera,Plecoptera,agree
+finbenthic2,Leuctra_sp,genus->family,Leuctra,Leuctridae,Leuctridae,agree
+finbenthic2,Leuctra_sp,family->order,Leuctridae,Plecoptera,Plecoptera,agree
+finbenthic2,Limnius_volckmari,species->genus,Limnius volckmari,Limnius,Limnius,agree
+finbenthic2,Limnius_volckmari,genus->family,Limnius,Elmidae,Elmidae,agree
+finbenthic2,Limnius_volckmari,family->order,Elmidae,Coleoptera,Coleoptera,agree
+finbenthic2,Micrasema_gelidum,species->genus,Micrasema gelidum,Micrasema,Micrasema,agree
+finbenthic2,Micrasema_gelidum,genus->family,Micrasema,Brachycentridae,Brachycentridae,agree
+finbenthic2,Micrasema_gelidum,family->order,Brachycentridae,Trichoptera,Trichoptera,agree
+finbenthic2,Micrasema_setiferum,species->genus,Micrasema setiferum,Micrasema,Micrasema,agree
+finbenthic2,Micrasema_setiferum,genus->family,Micrasema,Brachycentridae,Brachycentridae,agree
+finbenthic2,Micrasema_setiferum,family->order,Brachycentridae,Trichoptera,Trichoptera,agree
+finbenthic2,Nemoura_cinerea,species->genus,Nemoura cinerea,Nemoura,Nemoura,agree
+finbenthic2,Nemoura_cinerea,genus->family,Nemoura,Nemouridae,Nemouridae,agree
+finbenthic2,Nemoura_cinerea,family->order,Nemouridae,Plecoptera,Plecoptera,agree
+finbenthic2,Nemoura_sp,genus->family,Nemoura,Nemouridae,Nemouridae,agree
+finbenthic2,Nemoura_sp,family->order,Nemouridae,Plecoptera,Plecoptera,agree
+finbenthic2,Neureclipsis_bimaculata,species->genus,Neureclipsis bimaculata,Neureclipsis,Neureclipsis,agree
+finbenthic2,Neureclipsis_bimaculata,genus->family,Neureclipsis,Polycentropodidae,Polycentropodidae,agree
+finbenthic2,Neureclipsis_bimaculata,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+finbenthic2,Oulimnius_tuberculatus,species->genus,Oulimnius tuberculatus,Oulimnius,Oulimnius,agree
+finbenthic2,Oulimnius_tuberculatus,genus->family,Oulimnius,Elmidae,Elmidae,agree
+finbenthic2,Oulimnius_tuberculatus,family->order,Elmidae,Coleoptera,Coleoptera,agree
+finbenthic2,Oxyethira_sp,genus->family,Oxyethira,Hydroptilidae,Hydroptilidae,agree
+finbenthic2,Oxyethira_sp,family->order,Hydroptilidae,Trichoptera,Trichoptera,agree
+finbenthic2,Plectrocnemia_sp,genus->family,Plectrocnemia,Polycentropodidae,Polycentropodidae,agree
+finbenthic2,Plectrocnemia_sp,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+finbenthic2,Polycentropus_flavomaculatus,species->genus,Polycentropus flavomaculatus,Polycentropus,Polycentropus,agree
+finbenthic2,Polycentropus_flavomaculatus,genus->family,Polycentropus,Polycentropodidae,Polycentropodidae,agree
+finbenthic2,Polycentropus_flavomaculatus,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+finbenthic2,Polycentropus_irroratus,species->genus,Polycentropus irroratus,Polycentropus,Polycentropus,agree
+finbenthic2,Polycentropus_irroratus,genus->family,Polycentropus,Polycentropodidae,Polycentropodidae,agree
+finbenthic2,Polycentropus_irroratus,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+finbenthic2,Protonemura_sp,genus->family,Protonemura,Nemouridae,Nemouridae,agree
+finbenthic2,Protonemura_sp,family->order,Nemouridae,Plecoptera,Plecoptera,agree
+finbenthic2,Rhyacophila_nubila,species->genus,Rhyacophila nubila,Rhycophila,Rhyacophila,differ
+finbenthic2,Rhyacophila_nubila,genus->family,Rhycophila,Rhyacophilidae,,not in v1
+finbenthic2,Rhyacophila_nubila,family->order,Rhyacophilidae,Trichoptera,Trichoptera,agree
+finbenthic2,Sialis_sp,genus->family,Sialis,Sialidae,Sialidae,agree
+finbenthic2,Sialis_sp,family->order,Sialidae,Megaloptera,Megaloptera,agree
+finbenthic2,Silo_pallipes,species->genus,Silo pallipes,Silo,Silo,agree
+finbenthic2,Silo_pallipes,genus->family,Silo,Goeridae,Goeridae,agree
+finbenthic2,Silo_pallipes,family->order,Goeridae,Trichoptera,Trichoptera,agree
+finbenthic2,Simuliidae,family->order,Simuliidae,Diptera,Diptera,agree
+finbenthic2,Sphaerium_sp,genus->family,Sphaerium,Sphaeridae,Sphaeriidae,differ
+finbenthic2,Sphaerium_sp,family->order,Sphaeridae,Veneroida,,not in v1
+finbenthic2,Taeniopteryx_nebulosa,species->genus,Taeniopteryx nebulosa,Taeniopteryx,Taeniopteryx,agree
+finbenthic2,Taeniopteryx_nebulosa,genus->family,Taeniopteryx,Taenioptegyridae,Taeniopterygidae,differ
+finbenthic2,Taeniopteryx_nebulosa,family->order,Taenioptegyridae,Plecoptera,,not in v1
+aquamonitor,Asellus aquaticus,species->genus,Asellus aquaticus,Asellus,Asellus,agree
+aquamonitor,Asellus aquaticus,genus->family,Asellus,Asellidae,Asellidae,agree
+aquamonitor,Asellus aquaticus,family->order,Asellidae,Isopoda,Isopoda,agree
+aquamonitor,Caenis horaria,species->genus,Caenis horaria,Caenis,Caenis,agree
+aquamonitor,Caenis horaria,genus->family,Caenis,Caenidae,Caenidae,agree
+aquamonitor,Caenis horaria,family->order,Caenidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Caenis luctuosa,species->genus,Caenis luctuosa,Caenis,Caenis,agree
+aquamonitor,Caenis luctuosa,genus->family,Caenis,Caenidae,Caenidae,agree
+aquamonitor,Caenis luctuosa,family->order,Caenidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Caenis rivulorum,species->genus,Caenis rivulorum,Caenis,Caenis,agree
+aquamonitor,Caenis rivulorum,genus->family,Caenis,Caenidae,Caenidae,agree
+aquamonitor,Caenis rivulorum,family->order,Caenidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Centroptilum luteolum,species->genus,Centroptilum luteolum,Centroptilum,Centroptilum,agree
+aquamonitor,Centroptilum luteolum,genus->family,Centroptilum,Baetidae,Baetidae,agree
+aquamonitor,Centroptilum luteolum,family->order,Baetidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Ceratopogonidae,family->order,Ceratopogonidae,Diptera,Diptera,agree
+aquamonitor,Chironomidae,family->order,Chironomidae,Diptera,Diptera,agree
+aquamonitor,Cloeon,genus->family,Cloeon,Baetidae,Baetidae,agree
+aquamonitor,Cloeon,family->order,Baetidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Cloeon dipterum,species->genus,Cloeon dipterum,Cloeon,Cloeon,agree
+aquamonitor,Cloeon dipterum,genus->family,Cloeon,Baetidae,Baetidae,agree
+aquamonitor,Cloeon dipterum,family->order,Baetidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Cyrnus flavidus,species->genus,Cyrnus flavidus,Cyrnus,Cyrnus,agree
+aquamonitor,Cyrnus flavidus,genus->family,Cyrnus,Polycentropodidae,Polycentropodidae,agree
+aquamonitor,Cyrnus flavidus,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+aquamonitor,Cyrnus trimaculatus,species->genus,Cyrnus trimaculatus,Cyrnus,Cyrnus,agree
+aquamonitor,Cyrnus trimaculatus,genus->family,Cyrnus,Polycentropodidae,Polycentropodidae,agree
+aquamonitor,Cyrnus trimaculatus,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+aquamonitor,Ecnomus tenellus,species->genus,Ecnomus tenellus,Ecnomus,Ecnomus,agree
+aquamonitor,Ecnomus tenellus,genus->family,Ecnomus,Ecnomidae,Ecnomidae,agree
+aquamonitor,Ecnomus tenellus,family->order,Ecnomidae,Trichoptera,Trichoptera,agree
+aquamonitor,Ephemera vulgata,species->genus,Ephemera vulgata,Ephemera,Ephemera,agree
+aquamonitor,Ephemera vulgata,genus->family,Ephemera,Ephemeridae,Ephemeridae,agree
+aquamonitor,Ephemera vulgata,family->order,Ephemeridae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Erpobdella octoculata,species->genus,Erpobdella octoculata,Erpobdella,Erpobdella,agree
+aquamonitor,Erpobdella octoculata,genus->family,Erpobdella,Erpobdellidae,Erpobdellidae,agree
+aquamonitor,Erpobdella octoculata,family->order,Erpobdellidae,Arhynchobdellida,Arhynchobdellida,agree
+aquamonitor,Gyraulus,genus->family,Gyraulus,Planorbidae,Planorbidae,agree
+aquamonitor,Gyraulus,family->order,Planorbidae,Gastropoda_order,Gastropoda_order,agree
+aquamonitor,Helobdella stagnalis,species->genus,Helobdella stagnalis,Helobdella,Helobdella,agree
+aquamonitor,Helobdella stagnalis,genus->family,Helobdella,Glossiphoniidae,Glossiphoniidae,agree
+aquamonitor,Helobdella stagnalis,family->order,Glossiphoniidae,Rhynchobdellida,Rhynchobdellida,agree
+aquamonitor,Heptagenia dalecarlica,species->genus,Heptagenia dalecarlica,Heptagenia,Heptagenia,agree
+aquamonitor,Heptagenia dalecarlica,genus->family,Heptagenia,Heptageniidae,Heptageniidae,agree
+aquamonitor,Heptagenia dalecarlica,family->order,Heptageniidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Hydrachnidia,family->order,Hydrachnidia,Trombidiformes,Trombidiformes,agree
+aquamonitor,Hydroptila,genus->family,Hydroptila,Hydroptilidae,Hydroptilidae,agree
+aquamonitor,Hydroptila,family->order,Hydroptilidae,Trichoptera,Trichoptera,agree
+aquamonitor,Kageronia fuscogrisea,species->genus,Kageronia fuscogrisea,Kageronia,Kageronia,agree
+aquamonitor,Kageronia fuscogrisea,genus->family,Kageronia,Heptageniidae,Heptageniidae,agree
+aquamonitor,Kageronia fuscogrisea,family->order,Heptageniidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Lepidostoma hirtum,species->genus,Lepidostoma hirtum,Lepidostoma,Lepidostoma,agree
+aquamonitor,Lepidostoma hirtum,genus->family,Lepidostoma,Lepidostomatidae,Lepidostomatidae,agree
+aquamonitor,Lepidostoma hirtum,family->order,Lepidostomatidae,Trichoptera,Trichoptera,agree
+aquamonitor,Leptophlebia,genus->family,Leptophlebia,Leptophlebiidae,Leptophlebiidae,agree
+aquamonitor,Leptophlebia,family->order,Leptophlebiidae,Ephemeroptera,Ephemeroptera,agree
+aquamonitor,Limnephilidae,family->order,Limnephilidae,Trichoptera,Trichoptera,agree
+aquamonitor,Limnephilus,genus->family,Limnephilus,Limnephilidae,Limnephilidae,agree
+aquamonitor,Limnephilus,family->order,Limnephilidae,Trichoptera,Trichoptera,agree
+aquamonitor,Micronecta,genus->family,Micronecta,Micronectidae,Micronectidae,agree
+aquamonitor,Micronecta,family->order,Micronectidae,Hemiptera,Hemiptera,agree
+aquamonitor,Mystacides,genus->family,Mystacides,Leptoceridae,Leptoceridae,agree
+aquamonitor,Mystacides,family->order,Leptoceridae,Trichoptera,Trichoptera,agree
+aquamonitor,Mystacides azurea,species->genus,Mystacides azurea,Mystacides,Mystacides,agree
+aquamonitor,Mystacides azurea,genus->family,Mystacides,Leptoceridae,Leptoceridae,agree
+aquamonitor,Mystacides azurea,family->order,Leptoceridae,Trichoptera,Trichoptera,agree
+aquamonitor,Orthotrichia,genus->family,Orthotrichia,Hydroptilidae,Hydroptilidae,agree
+aquamonitor,Orthotrichia,family->order,Hydroptilidae,Trichoptera,Trichoptera,agree
+aquamonitor,Oulimnius tuberculatus,species->genus,Oulimnius tuberculatus,Oulimnius,Oulimnius,agree
+aquamonitor,Oulimnius tuberculatus,genus->family,Oulimnius,Elmidae,Elmidae,agree
+aquamonitor,Oulimnius tuberculatus,family->order,Elmidae,Coleoptera,Coleoptera,agree
+aquamonitor,Oulimnius tuberculatus adult,species->genus,Oulimnius tuberculatus,Oulimnius,Oulimnius,agree
+aquamonitor,Oulimnius tuberculatus adult,genus->family,Oulimnius,Elmidae,Elmidae,agree
+aquamonitor,Oulimnius tuberculatus adult,family->order,Elmidae,Coleoptera,Coleoptera,agree
+aquamonitor,Pedicia,genus->family,Pedicia,Pediciidae,Pediciidae,agree
+aquamonitor,Pedicia,family->order,Pediciidae,Diptera,Diptera,agree
+aquamonitor,Pisidium,genus->family,Pisidium,Sphaeriidae,Sphaeriidae,agree
+aquamonitor,Pisidium,family->order,Sphaeriidae,Sphaeriida,Sphaeriida,agree
+aquamonitor,Polycentropus flavomaculatus,species->genus,Polycentropus flavomaculatus,Polycentropus,Polycentropus,agree
+aquamonitor,Polycentropus flavomaculatus,genus->family,Polycentropus,Polycentropodidae,Polycentropodidae,agree
+aquamonitor,Polycentropus flavomaculatus,family->order,Polycentropodidae,Trichoptera,Trichoptera,agree
+aquamonitor,Psychomyia pusilla,species->genus,Psychomyia pusilla,Psychomyia,Psychomyia,agree
+aquamonitor,Psychomyia pusilla,genus->family,Psychomyia,Psychomyiidae,Psychomyiidae,agree
+aquamonitor,Psychomyia pusilla,family->order,Psychomyiidae,Trichoptera,Trichoptera,agree
+aquamonitor,Sialis,genus->family,Sialis,Sialidae,Sialidae,agree
+aquamonitor,Sialis,family->order,Sialidae,Megaloptera,Megaloptera,agree
+aquamonitor,Sisyra,genus->family,Sisyra,Sisyridae,Sisyridae,agree
+aquamonitor,Sisyra,family->order,Sisyridae,Neuroptera,Neuroptera,agree
+aquamonitor,Spirosperma ferox,species->genus,Spirosperma ferox,Spirosperma,Spirosperma,agree
+aquamonitor,Spirosperma ferox,genus->family,Spirosperma,Naididae,Naididae,agree
+aquamonitor,Spirosperma ferox,family->order,Naididae,Tubificida,Tubificida,agree
+aquamonitor,Stylaria lacustris,species->genus,Stylaria lacustris,Stylaria,Stylaria,agree
+aquamonitor,Stylaria lacustris,genus->family,Stylaria,Naididae,Naididae,agree
+aquamonitor,Stylaria lacustris,family->order,Naididae,Tubificida,Tubificida,agree
+aquamonitor,Tanypodinae,genus->family,Tanypodinae,Chironomidae,Chironomidae,agree
+aquamonitor,Tanypodinae,family->order,Chironomidae,Diptera,Diptera,agree
+aquamonitor,Tinodes waeneri,species->genus,Tinodes waeneri,Tinodes,Tinodes,agree
+aquamonitor,Tinodes waeneri,genus->family,Tinodes,Psychomyiidae,Psychomyiidae,agree
+aquamonitor,Tinodes waeneri,family->order,Psychomyiidae,Trichoptera,Trichoptera,agree
