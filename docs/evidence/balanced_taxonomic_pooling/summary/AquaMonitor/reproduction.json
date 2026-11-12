@@ -1,0 +1,10 @@
+{
+ "rows_here": 816,
+ "rows_reference": 816,
+ "matched": 816,
+ "max_abs_diff_val_loglik_lw": 0.0,
+ "max_abs_diff_val_loglik_coupled": 0.0,
+ "max_abs_diff_val_loglik_pool_spec": 0.0,
+ "max_abs_diff_coupled_vs_lw_mean": 0.0,
+ "coupled_vs_lw_ci95_equal": true
+}

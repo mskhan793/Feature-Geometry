@@ -1,0 +1,169 @@
+space,taxon_group,rank,folds,levels,donor_sets,n_train_median
+pca64,Asellus aquaticus,species,5,global,,2111.0
+pca64,Caenis horaria,species,5,genus,Caenis luctuosa;Caenis rivulorum,2852.0
+pca64,Caenis luctuosa,species,5,genus,Caenis horaria;Caenis rivulorum,348.0
+pca64,Caenis rivulorum,species,3,genus,Caenis horaria;Caenis luctuosa,36.0
+pca64,Centroptilum luteolum,species,5,family,Cloeon;Cloeon dipterum,61.0
+pca64,Ceratopogonidae,family,5,global,,623.0
+pca64,Chironomidae,family,5,global,,7416.0
+pca64,Cloeon,genus,5,family,Centroptilum luteolum;Cloeon dipterum,78.0
+pca64,Cloeon dipterum,species,5,genus,Cloeon,103.0
+pca64,Cyrnus flavidus,species,5,genus,Cyrnus trimaculatus,79.0
+pca64,Cyrnus trimaculatus,species,5,genus,Cyrnus flavidus,125.0
+pca64,Ecnomus tenellus,species,5,global,,139.0
+pca64,Ephemera vulgata,species,5,global,,200.0
+pca64,Erpobdella octoculata,species,5,global,,112.0
+pca64,Gyraulus,genus,5,global,,104.0
+pca64,Helobdella stagnalis,species,5,global,,184.0
+pca64,Heptagenia dalecarlica,species,5,family,Kageronia fuscogrisea,137.0
+pca64,Hydrachnidia,family,5,global,,322.0
+pca64,Hydroptila,genus,5,global,,77.0
+pca64,Kageronia fuscogrisea,species,5,family,Heptagenia dalecarlica,2002.0
+pca64,Lepidostoma hirtum,species,5,global,,231.0
+pca64,Leptophlebia,genus,5,global,,4893.0
+pca64,Limnephilidae,family,5,global,,60.0
+pca64,Limnephilus,genus,5,global,,92.0
+pca64,Micronecta,genus,5,global,,501.0
+pca64,Mystacides,genus,4,family,Mystacides azurea,37.5
+pca64,Mystacides azurea,species,5,global,,96.0
+pca64,Oligochaeta,,5,global,,2072.0
+pca64,Orthotrichia,genus,5,family,Hydroptila,40.0
+pca64,Oulimnius tuberculatus,species,5,genus,Oulimnius tuberculatus adult,1704.0
+pca64,Oulimnius tuberculatus adult,species,5,genus,Oulimnius tuberculatus,210.0
+pca64,Pedicia,genus,5,global,,40.0
+pca64,Pisidium,genus,4,global,,60.5
+pca64,Polycentropus flavomaculatus,species,5,family,Cyrnus flavidus;Cyrnus trimaculatus,91.0
+pca64,Psychomyia pusilla,species,5,family,Tinodes waeneri,120.0
+pca64,Sialis,genus,5,global,,41.0
+pca64,Spirosperma ferox,species,5,family,Stylaria lacustris,177.0
+pca64,Stylaria lacustris,species,5,family,Spirosperma ferox,322.0
+pca64,Tanypodinae,genus,5,family,Chironomidae,550.0
+pca64,Tinodes waeneri,species,5,family,Psychomyia pusilla,762.0
+pca64,Turbellaria,,5,global,,82.0
+pca16,Asellus aquaticus,species,5,global,,2111.0
+pca16,Caenis horaria,species,5,genus,Caenis luctuosa;Caenis rivulorum,2852.0
+pca16,Caenis luctuosa,species,5,genus,Caenis horaria;Caenis rivulorum,348.0
+pca16,Caenis rivulorum,species,3,genus,Caenis horaria;Caenis luctuosa,36.0
+pca16,Centroptilum luteolum,species,5,family,Cloeon;Cloeon dipterum,61.0
+pca16,Ceratopogonidae,family,5,global,,623.0
+pca16,Chironomidae,family,5,global,,7416.0
+pca16,Cloeon,genus,5,family,Centroptilum luteolum;Cloeon dipterum,78.0
+pca16,Cloeon dipterum,species,5,genus,Cloeon,103.0
+pca16,Cyrnus flavidus,species,5,genus,Cyrnus trimaculatus,79.0
+pca16,Cyrnus trimaculatus,species,5,genus,Cyrnus flavidus,125.0
+pca16,Ecnomus tenellus,species,5,global,,139.0
+pca16,Ephemera vulgata,species,5,global,,200.0
+pca16,Erpobdella octoculata,species,5,global,,112.0
+pca16,Gyraulus,genus,5,global,,104.0
+pca16,Helobdella stagnalis,species,5,global,,184.0
+pca16,Heptagenia dalecarlica,species,5,family,Kageronia fuscogrisea,137.0
+pca16,Hydrachnidia,family,5,global,,322.0
+pca16,Hydroptila,genus,5,family,Orthotrichia,77.0
+pca16,Kageronia fuscogrisea,species,5,family,Heptagenia dalecarlica,2002.0
+pca16,Lepidostoma hirtum,species,5,global,,231.0
+pca16,Leptophlebia,genus,5,global,,4893.0
+pca16,Limnephilidae,family,5,global,,60.0
+pca16,Limnephilus,genus,5,family,Limnephilidae,92.0
+pca16,Micronecta,genus,5,global,,501.0
+pca16,Mystacides,genus,4,family,Mystacides azurea,37.5
+pca16,Mystacides azurea,species,5,genus,Mystacides,96.0
+pca16,Oligochaeta,,5,global,,2072.0
+pca16,Orthotrichia,genus,5,family,Hydroptila,40.0
+pca16,Oulimnius tuberculatus,species,5,genus,Oulimnius tuberculatus adult,1704.0
+pca16,Oulimnius tuberculatus adult,species,5,genus,Oulimnius tuberculatus,210.0
+pca16,Pedicia,genus,5,global,,40.0
+pca16,Pisidium,genus,4,global,,60.5
+pca16,Polycentropus flavomaculatus,species,5,family,Cyrnus flavidus;Cyrnus trimaculatus,91.0
+pca16,Psychomyia pusilla,species,5,family,Tinodes waeneri,120.0
+pca16,Sialis,genus,5,global,,41.0
+pca16,Spirosperma ferox,species,5,family,Stylaria lacustris,177.0
+pca16,Stylaria lacustris,species,5,family,Spirosperma ferox,322.0
+pca16,Tanypodinae,genus,5,family,Chironomidae,550.0
+pca16,Tinodes waeneri,species,5,family,Psychomyia pusilla,762.0
+pca16,Turbellaria,,5,global,,82.0
+native,Asellus aquaticus,species,5,global,,2111.0
+native,Caenis horaria,species,5,global,,2852.0
+native,Caenis luctuosa,species,5,genus,Caenis horaria;Caenis rivulorum,348.0
+native,Caenis rivulorum,species,3,genus,Caenis horaria;Caenis luctuosa,36.0
+native,Centroptilum luteolum,species,5,global,,61.0
+native,Ceratopogonidae,family,5,global,,623.0
+native,Chironomidae,family,5,global,,7416.0
+native,Cloeon,genus,5,global,,78.0
+native,Cloeon dipterum,species,5,global,,103.0
+native,Cyrnus flavidus,species,5,global,,79.0
+native,Cyrnus trimaculatus,species,5,global,,125.0
+native,Ecnomus tenellus,species,5,global,,139.0
+native,Ephemera vulgata,species,5,global,,200.0
+native,Erpobdella octoculata,species,5,global,,112.0
+native,Gyraulus,genus,5,global,,104.0
+native,Helobdella stagnalis,species,5,global,,184.0
+native,Heptagenia dalecarlica,species,5,family,Kageronia fuscogrisea,137.0
+native,Hydrachnidia,family,5,global,,322.0
+native,Hydroptila,genus,5,global,,77.0
+native,Kageronia fuscogrisea,species,5,global,,2002.0
+native,Lepidostoma hirtum,species,5,global,,231.0
+native,Leptophlebia,genus,5,global,,4893.0
+native,Limnephilidae,family,5,global,,60.0
+native,Limnephilus,genus,5,global,,92.0
+native,Micronecta,genus,5,global,,501.0
+native,Mystacides,genus,4,global,,37.5
+native,Mystacides azurea,species,5,global,,96.0
+native,Oligochaeta,,5,global,,2072.0
+native,Orthotrichia,genus,5,global,,40.0
+native,Oulimnius tuberculatus,species,5,global,,1704.0
+native,Oulimnius tuberculatus adult,species,5,genus,Oulimnius tuberculatus,210.0
+native,Pedicia,genus,5,global,,40.0
+native,Pisidium,genus,4,global,,60.5
+native,Polycentropus flavomaculatus,species,5,global,,91.0
+native,Psychomyia pusilla,species,5,global,,120.0
+native,Sialis,genus,5,global,,41.0
+native,Spirosperma ferox,species,5,global,,177.0
+native,Stylaria lacustris,species,5,global,,322.0
+native,Tanypodinae,genus,5,family,Chironomidae,550.0
+native,Tinodes waeneri,species,5,global,,762.0
+native,Turbellaria,,5,global,,82.0
+native_alt,Asellus aquaticus,species,5,global,,2111.0
+native_alt,Caenis horaria,species,5,global,,2852.0
+native_alt,Caenis luctuosa,species,5,genus,Caenis horaria;Caenis rivulorum,348.0
+native_alt,Caenis rivulorum,species,3,genus,Caenis horaria;Caenis luctuosa,36.0
+native_alt,Centroptilum luteolum,species,5,global,,61.0
+native_alt,Ceratopogonidae,family,5,global,,623.0
+native_alt,Chironomidae,family,5,global,,7416.0
+native_alt,Cloeon,genus,5,global,,78.0
+native_alt,Cloeon dipterum,species,5,global,,103.0
+native_alt,Cyrnus flavidus,species,5,global,,79.0
+native_alt,Cyrnus trimaculatus,species,5,global,,125.0
+native_alt,Ecnomus tenellus,species,5,global,,139.0
+native_alt,Ephemera vulgata,species,5,global,,200.0
+native_alt,Erpobdella octoculata,species,5,global,,112.0
+native_alt,Gyraulus,genus,5,global,,104.0
+native_alt,Helobdella stagnalis,species,5,global,,184.0
+native_alt,Heptagenia dalecarlica,species,5,family,Kageronia fuscogrisea,137.0
+native_alt,Hydrachnidia,family,5,global,,322.0
+native_alt,Hydroptila,genus,5,global,,77.0
+native_alt,Kageronia fuscogrisea,species,5,global,,2002.0
+native_alt,Lepidostoma hirtum,species,5,global,,231.0
+native_alt,Leptophlebia,genus,5,global,,4893.0
+native_alt,Limnephilidae,family,5,global,,60.0
+native_alt,Limnephilus,genus,5,global,,92.0
+native_alt,Micronecta,genus,5,global,,501.0
+native_alt,Mystacides,genus,4,global,,37.5
+native_alt,Mystacides azurea,species,5,global,,96.0
+native_alt,Oligochaeta,,5,global,,2072.0
+native_alt,Orthotrichia,genus,5,global,,40.0
+native_alt,Oulimnius tuberculatus,species,5,global,,1704.0
+native_alt,Oulimnius tuberculatus adult,species,5,genus,Oulimnius tuberculatus,210.0
+native_alt,Pedicia,genus,5,global,,40.0
+native_alt,Pisidium,genus,4,global,,60.5
+native_alt,Polycentropus flavomaculatus,species,5,global,,91.0
+native_alt,Psychomyia pusilla,species,5,global,,120.0
+native_alt,Sialis,genus,5,global,,41.0
+native_alt,Spirosperma ferox,species,5,global,,177.0
+native_alt,Stylaria lacustris,species,5,global,,322.0
+native_alt,Tanypodinae,genus,5,family,Chironomidae,550.0
+native_alt,Tinodes waeneri,species,5,global,,762.0
+native_alt,Turbellaria,,5,global,,82.0
+pca64,Sisyra,genus,3,global,,35.0
+pca16,Sisyra,genus,3,global,,35.0
+native,Sisyra,genus,3,global,,35.0
+native_alt,Sisyra,genus,3,global,,35.0
