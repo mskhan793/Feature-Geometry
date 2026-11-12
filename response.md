@@ -227,3 +227,84 @@ specimens, classes × folds):
 (2) whether to replace α_LW by a held-out-chosen α (fitted on val, so it would need its own validation split or
 cross-validation within train to stay fair); (3) whether per-class LW full covariance should become the main class
 model for the Bhattacharyya analysis (with the spherical paper form kept as the baseline). None of these is applied.
+
+## 9. Addendum (2026-11-12): multi-class shrinkage literature — what it offers for the decisions in section 8
+
+**Request:** the author supplied a folder of shrinkage literature and asked what in it is relevant, what we could try
+and how it answers our questions. Reading only: no code written, nothing run, no jobs.
+
+**Sources** (`~/Documents/Research/methods/Shrinkage/`, checksums in its `README.md`):
+- E. Raninen, *Contributions to Theory and Estimation of High-Dimensional Covariance Matrices*, Aalto University
+  doctoral thesis 67/2022, and its papers:
+- **[CRSCM]** Raninen & Ollila, *Coupled Regularized Sample Covariance Matrix Estimator for Multiple Classes*, IEEE TSP
+  69:5681–5692, 2021 (doi 10.1109/TSP.2021.3118546);
+- **[LINPOOL]** Raninen, Tyler & Ollila, *Linear Pooling of Sample Covariance Matrices*, IEEE TSP 70:659–672, 2022
+  (doi 10.1109/TSP.2021.3139207);
+- **[ELL]** Ollila & Raninen, *Optimal Shrinkage Covariance Matrix Estimation Under Random Sampling From Elliptical
+  Distributions*, IEEE TSP 67:2707–2719, 2019;
+- also an earlier conference version of class-specific pooling (2018), a robust sign-covariance estimator (BASIC, IEEE
+  SPL 2022) and a complex-valued variance paper (not applicable to our real-valued features).
+- **Official code** (MIT licence, downloaded at pinned commits, not run): `github.com/EliasRaninen/CoupledRSCM` @
+  `bb09e12` (`Python/multiclass_rscm.py`: `estimate_parameters`, `rscmpool`, `rscmpools`, `linpool`) and
+  `github.com/EliasRaninen/LinearPoolingOfSampleCovarianceMatrices` @ `2fe59db` (MATLAB).
+- The textbook first asked about (Pourahmadi, *High-Dimensional Covariance Estimation*, Wiley 2013) is not available
+  on the Dell; nothing here relies on it.
+
+### 9.1 What the papers propose (in our notation)
+
+S_k = sample covariance of class k (unbiased, n_k − 1), S = Σ_k π_k S_k with π_k = n_k / n (pooled; the same N_c/N
+weighting as our S_W), I_A = (tr A / p) I (scaled identity with the same average variance).
+
+- **[CRSCM] coupled estimator, Eq. (4):** Σ̂_k(α, β) = α Σ̂_k(β) + (1 − α) I_{Σ̂_k(β)}, with
+  Σ̂_k(β) = β S_k + (1 − β) S. Each class gets its **own** (α_k, β_k):
+  - β_k = 1, α_k < 1: the class's own covariance shrunk toward its average variance — the form of our per-class LW
+    (their case C1);
+  - β_k = 0: every class uses the pooled covariance, shrunk toward identity — our pooled S_W* as used by FDA and d′
+    (their case C3; LDA-like);
+  - α_k = 1: classes shrunk only toward the pooled covariance (C2; the RDA form of Friedman 1989).
+  - (α_k, β_k) minimise the Frobenius mean squared error E‖Σ̂_k − Σ_k‖²_F; the MSE is a biconvex polynomial in (α, β)
+    whose coefficients are estimated assuming each class follows an (unspecified) elliptical distribution with finite
+    fourth moments (sphericity and elliptical kurtosis estimated per class).
+  - Proposition 1: with α = 1 the optimal β is always < 1, i.e. some pooling always lowers the MSE of a class's sample
+    covariance. Proposition 2: with equal covariances and equal class sizes the optimal β is 0 (full pooling).
+  - Their evaluation: simulations and regularized discriminant analysis on three real data sets — classification
+    comparable to cross-validation, much faster.
+- **[LINPOOL] linear pooling, Eq. (3)–(5):** Σ̂_k = Σ_j a_kj S_j with a_kj ≥ 0, the K × K weight matrix chosen per class
+  to minimise the same Frobenius MSE (a convex quadratic program per class). Each class can borrow from **specific**
+  other classes instead of from one fixed pooled matrix.
+- **[ELL] single-class shrinkage:** the same form as LW (sample covariance toward scaled identity) but with the
+  intensity derived under elliptical (heavy-tailed) sampling; the abstract reports that it often improves clearly over
+  Ledoit–Wolf when sample sizes are low.
+
+### 9.2 How this bears on our questions
+
+| Our question (section 8) | What the literature gives | What it does not settle |
+|---|---|---|
+| (3) Per-class LW full covariance or pooled covariance as the class model? | Both are edges of one estimator ([CRSCM] β = 1 vs β = 0); classes choose their own position. Our D3 shows α_c ≈ 0.33–0.39 at n = 15 — exactly where borrowing from the pooled covariance should help; large classes would keep β ≈ 1. | Whether any β < 1 actually improves **held-out** fit over per-class LW in our data (untested). |
+| (2) Is LW's α the right intensity? | Alternatives with a principled tuning rule: [ELL] for small classes, [CRSCM] (α, β) jointly, cross-validated (α, β) as their own comparison. | All of them minimise the same Frobenius error as LW. For the pooled S_W we found this criterion under-shrinks for held-out likelihood (α = 0.01 beat α_LW in all 10 runs), so their analytic values must also be judged on held-out likelihood, not accepted on the papers' word. |
+| (1) Pooled target: typical specimen (N_c/N) or typical class (balanced)? | [CRSCM] uses the N_c/N pooled matrix, but only as a target that each class mixes with its own covariance, so a dominant class no longer defines everyone's covariance. [LINPOOL] removes the fixed weighting altogether (weights learned per class). | For FDA (one shared S_W) the choice remains; these estimators replace the shared S_W only where per-class covariances are used. |
+| Bhattacharyya vs d′ (sections 2–5) | With per-class covariances from [CRSCM], β moves D_B between two known cases: at β = 0 all classes share one covariance, the log-determinant term vanishes and D_B = ⅛ × pooled Mahalanobis distance² (of which d′ is the one-direction version); at β = 1 it is the per-class full-covariance D_B of section 8 D3. | How much of the pair ranking depends on β (untested). |
+| Taxonomic transfer (earlier work) | [LINPOOL] weights a_kj show which classes a class borrows covariance from; one could check whether they concentrate on taxonomic or visual neighbours. | Exploratory only; not part of the current questions. |
+
+### 9.3 What we could try (proposal; not started)
+
+- **Estimators**, per class, in the same train-fitted PCA spaces as section 8 D3 (16 and 64 dimensions): per-class LW
+  (current best, reference), pooled LW (β = 0), [CRSCM] (α_k, β_k) with the authors' tuning, [ELL] intensity in place of
+  LW, [LINPOOL], and one (α, β) chosen by cross-validation **within train** (their own comparison; keeps val unused for
+  tuning).
+- **Criterion** (predeclared, as in section 8): held-out val log-likelihood per class and per specimen, by train-size
+  bin (n < 64, 64–255, ≥ 256), five folds of both datasets, fold mean [min, max]; no test rows.
+- **Checks before any real run:** call the authors' `multiclass_rscm.py` functions directly where possible; where we
+  write our own wrapper, show equality with the official functions on dummy data and on one fold (as for GBC).
+- **Then, only if a coupled estimator wins:** recompute the per-class full-covariance Bhattacharyya pairs with it and
+  compare with d′ and with the per-class LW version.
+- **Cost:** CPU only on existing embeddings, same order as the LW diagnostics (LUMI array 23659692 used 18.7
+  CPU-hours); an exact estimate would come with the plan.
+
+**Possible outcomes and their meaning:** (a) per-class LW stays best everywhere → keep it as the main class model
+(decision 3 = yes); (b) [CRSCM] wins mainly for small classes → per-class covariance with class-specific pooling as the
+main model; (c) analytic tuning loses to cross-validated tuning → the squared-error criterion is unsuited to our use
+and held-out tuning (decision 2) is needed.
+
+**Decisions for the author:** (4) whether to run this comparison now, before or together with decisions 1–3; (5)
+whether the [LINPOOL] taxonomy check is in scope or stays a note.
