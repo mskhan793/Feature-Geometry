@@ -1,0 +1,67 @@
+{
+ "encoder": "siglip2",
+ "repo": "google/siglip2-so400m-patch16-256",
+ "revision": "e8708ab72d125807e45b36fb7d4e0aacbb59f379",
+ "pinned_revision_requested": null,
+ "gated": false,
+ "license": "apache-2.0",
+ "license_name": null,
+ "params_total": 1135670962,
+ "weight_files_bytes": {
+  "model.safetensors": 4542792928
+ },
+ "library": "transformers SiglipModel",
+ "feature": "get_image_features = attention-pooled (MAP head) vision output, not L2-normalised",
+ "preprocessing_used": "official processor: resize to 256 x 256 bilinear, rescale, mean/std 0.5, no crop",
+ "feature_l2_normalised": false,
+ "layernorm_rank_deficit_expected": false,
+ "note": "pooled output leaves an MLP residual after the head LayerNorm: no exact deficit expected; to measure. Checkpoint choice: official 256 variant preferred over 384 by the task's checkpoint policy; alternative google/siglip2-so400m-patch16-384 (dd658faa) recorded in docs/encoder_feasibility_audit.md",
+ "configs": {
+  "config.json": {
+   "initializer_factor": 1.0,
+   "model_type": "siglip",
+   "text_config": {
+    "hidden_size": 1152,
+    "intermediate_size": 4304,
+    "model_type": "siglip_text_model",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 27,
+    "projection_size": 1152,
+    "vocab_size": 256000
+   },
+   "transformers_version": "4.49.0.dev0",
+   "vision_config": {
+    "hidden_size": 1152,
+    "image_size": 256,
+    "intermediate_size": 4304,
+    "model_type": "siglip_vision_model",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 27
+   }
+  },
+  "preprocessor_config.json": {
+   "do_convert_rgb": null,
+   "do_normalize": true,
+   "do_rescale": true,
+   "do_resize": true,
+   "image_mean": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "image_processor_type": "SiglipImageProcessor",
+   "image_std": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "processor_class": "SiglipProcessor",
+   "resample": 2,
+   "rescale_factor": 0.00392156862745098,
+   "size": {
+    "height": 256,
+    "width": 256
+   }
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "dataset": "cifar100",
+ "version": "cifar-100-python (md5 eb9058c3)",
+ "rows": 60000,
+ "units": 59974,
+ "classes": 100,
+ "val_origin": [
+  "derived"
+ ],
+ "derived_seed": [
+  20261112
+ ],
+ "coarse_labels": 20,
+ "sources": {
+  "folder": {
+   "path": "/home/aijyu/Documents/data/cifar-100-python",
+   "sha256": "f9117bd20b4450ea370bd96dee9308762aa21dff07817b947d5f7590fe0280eb"
+  }
+ },
+ "content_table": null,
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/cifar100.parquet",
+ "manifest_sha256": "59b9429f470fdd672ce6a735ab25aa3dbc835214a91dd3190d10ad660d515f8c",
+ "support": {
+  "split": {
+   "split_column": "split",
+   "classes": 100,
+   "images": {
+    "train": 44998,
+    "val": 5002,
+    "test": 10000
+   },
+   "units": {
+    "train": 44986,
+    "val": 5000,
+    "test": 9998
+   },
+   "classes_with_units": {
+    "train": 100,
+    "val": 100,
+    "test": 100
+   },
+   "eligible_classes": 100,
+   "excluded_classes": 0,
+   "train_units_per_class_percentiles": {
+    "p0": 445.0,
+    "p10": 450.0,
+    "p50": 450.0,
+    "p90": 450.0,
+    "p100": 450.0
+   },
+   "images_available": 60000,
+   "units_in_several_splits": 10,
+   "units_with_several_labels": 17,
+   "images_sharing_a_unit": 52
+  }
+ }
+}

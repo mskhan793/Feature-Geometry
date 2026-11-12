@@ -1,0 +1,56 @@
+{
+ "encoder": "bioclip2",
+ "repo": "imageomics/bioclip-2",
+ "revision": "2957b322090f9cb17ae72c71981c7218a28d81e0",
+ "pinned_revision_requested": "2957b322090f9cb17ae72c71981c7218a28d81e0",
+ "gated": false,
+ "license": [
+  "mit"
+ ],
+ "license_name": null,
+ "params_total": null,
+ "weight_files_bytes": {
+  "open_clip_model.safetensors": 1710517724,
+  "open_clip_pytorch_model.bin": 1710639510
+ },
+ "library": "open_clip (hf-hub:imageomics/bioclip-2)",
+ "feature": "model.visual(x) = proj(ln_post(CLS)), not L2-normalised",
+ "preprocessing_used": "open_clip eval transform of the checkpoint (224, bicubic, OpenAI CLIP mean/std)",
+ "feature_l2_normalised": false,
+ "layernorm_rank_deficit_expected": false,
+ "note": "linear projection after ln_post maps the 1023-dim LayerNorm hyperplane into 768 dims: no exact deficit expected; to measure",
+ "configs": {
+  "open_clip_config.json": {
+   "model_cfg": {
+    "embed_dim": 768,
+    "vision_cfg": {
+     "image_size": 224,
+     "layers": 24,
+     "width": 1024,
+     "patch_size": 14
+    },
+    "text_cfg": {
+     "context_length": 77,
+     "vocab_size": 49408,
+     "width": 768,
+     "heads": 12,
+     "layers": 12
+    }
+   },
+   "preprocess_cfg": {
+    "mean": [
+     0.48145466,
+     0.4578275,
+     0.40821073
+    ],
+    "std": [
+     0.26862954,
+     0.26130258,
+     0.27577711
+    ],
+    "interpolation": "bicubic",
+    "resize_mode": "shortest"
+   }
+  }
+ }
+}
