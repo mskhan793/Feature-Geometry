@@ -1,0 +1,112 @@
+{
+ "aquamonitor/fold0": {
+  "rows_old": 82,
+  "rows_matched": 82,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "aquamonitor/fold1": {
+  "rows_old": 82,
+  "rows_matched": 82,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "aquamonitor/fold2": {
+  "rows_old": 80,
+  "rows_matched": 80,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "aquamonitor/fold3": {
+  "rows_old": 82,
+  "rows_matched": 82,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "aquamonitor/fold4": {
+  "rows_old": 82,
+  "rows_matched": 82,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "finbenthic2/fold0": {
+  "rows_old": 72,
+  "rows_matched": 72,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "finbenthic2/fold1": {
+  "rows_old": 70,
+  "rows_matched": 70,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "finbenthic2/fold2": {
+  "rows_old": 68,
+  "rows_matched": 68,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "finbenthic2/fold3": {
+  "rows_old": 70,
+  "rows_matched": 70,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ },
+ "finbenthic2/fold4": {
+  "rows_old": 70,
+  "rows_matched": 70,
+  "val_loglik_lw": 0.0,
+  "val_loglik_coupled": 0.0,
+  "lw_alpha_shrink": 0.0,
+  "coupled_alpha_keep": 0.0,
+  "coupled_beta": 0.0,
+  "coupled_vs_lw_mean": 0.0,
+  "coupled_vs_lw_ci95": 0.0
+ }
+}

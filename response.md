@@ -9,7 +9,10 @@ Previous response (PCA vs FDA GBC, Ledoit–Wolf diagnostics §8, shrinkage lite
 
 ## Verdict
 
-*(Revised after the Astra high methods review, §7; first version in commit e3d6e1e.)*
+*(Revised after the Astra high methods review, §7; first version in commit e3d6e1e. The approved follow-up —
+native space and mechanism decomposition — is in **§8**; its main points: in native coordinates the coupled estimator
+is clearly worse than per-class LW on average, pooling itself helps strongly there, and the coupled estimator's small
+identity shrinkage is what hurts; the native features span only 1023 dimensions.)*
 
 **No universal winner.** The coupled estimator (CRSCM) **loses at 16 PCs** in both datasets (class-macro interval
 below 0 in 3 FIN-Benthic2 and all 5 AquaMonitor folds). **At 64 PCs it improves the rare-class averages** (taxa with
@@ -201,3 +204,148 @@ products of 1024 × 1024 matrices per fold (K = eligible classes) — an estimat
 
 Not done (per task): no replacement of LW in earlier tables, no GBC/Bhattacharyya recomputation, no FDA change, no
 classifiers, no tuning on validation, no LINPOOL/ELL, no taxonomy pooling, no test sets.
+
+## 8. Approved follow-up (author, 2026-11-12): native space and mechanism decomposition
+
+**Author's decisions (chat, after §7):** (1) keep per-class LW as the main class model; (2) run the native-dimension
+comparison; (3) separate the mechanisms. Items 2 and 3 ran as below; item 1 is recorded and re-examined in §8.5. No
+test rows, no validation tuning, same caches, classes, means and five folds.
+
+### 8.1 What ran
+
+- **Code** `41cbfdf` (`scripts/coupled_rscm_vs_lw.py`, `src/methods/coupled_rscm.py`, `scripts/summarise_coupled_rscm.py`,
+  `scripts/check_coupled_regression.py`, `scripts/audit_feature_null_space.py`; 94 tests pass).
+- **Spaces:** pca64, pca16 (as before), `native` = original coordinates without the last one, `native_alt` = without
+  the first one (sensitivity); see §8.2 for why one coordinate is dropped.
+- **Mechanism decomposition** (labelled diagnostics, all on the unbiased S_k with target (tr T/p) I, parameters from
+  train only): `lw_unbiased` (no pooling, LW identity shrinkage), `coupled_no_pooling` (β = 1, coupled α_k),
+  `pooling_lw_shrink` (coupled β_k, α = 1 − α_LW), coupled itself (β_k, α_k). Contrasts: *normalisation* =
+  lw_unbiased − lw; *pooling at LW shrinkage* = pooling_lw_shrink − lw_unbiased; *coupled identity shrinkage at coupled
+  pooling* = coupled − pooling_lw_shrink (and the two cells through coupled_no_pooling). Per specimen, coupled − LW =
+  normalisation + pooling at LW shrinkage + coupled shrinkage at coupled pooling exactly (test). Each difference is
+  also split into its −Mahalanobis/2 and −log|Σ|/2 parts.
+- **LUMI** (project 462001534, `small`, 16 cores / 64 GB / 1 h limit per task): timed fold `23683103` (AquaMonitor
+  fold0, checked first: 3:19, 5,823,688 K max RSS) then `23683215` (the other 9; 1:00–4:33 each); 13.77 allocated
+  CPU-hours in total (`docs/evidence/coupled_rscm_vs_lw/extension/sacct.txt`). Superseded: `23679633` (code
+  `ea57ebd`, native space with all 1024 coordinates; see §8.2), outputs kept on LUMI under `coupled_rscm_vs_lw_v2`.
+- **Evidence:** `docs/evidence/coupled_rscm_vs_lw/extension/` (`summary/<Dataset>/{folds,groups,parameters,corners,
+  examples,examples_by_fold}.csv`, `reproduction.json`, `resources.json`; per-fold `summary.json` + `perclass.csv`;
+  `regression_vs_first_run.json`; `sacct.txt`; logs) and `docs/evidence/coupled_rscm_vs_lw/native_null_space/`.
+
+### 8.2 The native features span 1023 dimensions (found by the numerical audit)
+
+The first native run (`23679633`) reported a pooled covariance of rank 1023 with smallest eigenvalue −2.9e−18, and 6
+of 41 AquaMonitor classes where the coupled estimator kept α = 1 had singular covariances that a Cholesky factorisation
+still "accepted" on rounding error, giving meaningless log-likelihoods (e.g. *Heptagenia dalecarlica* −3,103). Cause,
+verified on 192,492 local DINOv3-L vectors (`native_null_space/aquamonitor_expanded_cohort_dinov3_l.json`): the
+cached feature is the final-LayerNorm CLS token, so every vector satisfies Σ_j (x_j − b_j)/w_j = 0 (relative
+violation ≤ 9.2e−7, float32 rounding); the covariance's smallest eigenvector is the 1/w direction (|cos| =
+0.9999999999999997) with variance 3.4e−18, and the numerical rank is 1023. Every per-run audit confirms it (full
+1024-coordinate within-class covariance rank 1023 in every fold of both datasets).
+
+**Fixes:** (a) one coordinate is dropped — it is an exact linear function of the others, so no information is lost,
+the remaining coordinates are the original ones (no rotation), and the change-of-variables Jacobian is the same for
+every estimator, cancelling in paired differences; (b) every covariance is checked by its eigenvalues before scoring:
+smallest ≤ d · float64 eps · largest (numpy's matrix-rank tolerance) → "failed: numerically singular", not scored.
+
+**Consequences for earlier results:** the PCA-space results are unaffected (the zero-variance direction never enters
+the top PCs; all first-run covariances well conditioned). Section 8 of the previous response (commit ea56c64), the
+native-1024 pooled S_W: its statement that α_LW fits worse than the *unshrunk sample covariance* is **invalid** (that
+matrix is singular); and every α comparison there contains an extra −½ log(α ratio) term per specimen from the null
+direction, which favours the *smaller* α — so "α = 0.01 beats α_LW" holds despite this bias, but its size is
+understated by that term. Not recomputed (would need approval).
+
+### 8.3 Checks
+
+- PCA spaces reproduce the first run **exactly** (all 10 dataset-folds: every LW and coupled log-likelihood, α, β,
+  paired mean and bootstrap interval, maximum difference 0.0; `regression_vs_first_run.json`); the LW reference again
+  matches `lw_fit` exactly (350 and 408 rows).
+- Unmodified vs adapted authors' code on four real classes: maximum difference 0.0 in every fold and space.
+- Convergence (separate residuals of updates (7)/(8) at the returned values): max |Δα| 7.19e−6 (FIN-Benthic2) and
+  8.81e−7 (AquaMonitor), |Δβ| 0.0. Sphericity clip never active (any space); kurtosis floor active for 0–80 % of class-folds per
+  native stratum (`parameters.csv`). Pooled matrix full rank in every space (1023 in native).
+- **Numerical failures (kept in the accounting, not scored):** coupled — FIN-Benthic2 *Elmis aenea* (409–420 train
+  specimens, α = 1, β ≈ 0.97) is numerically singular in `native` in all 5 folds but just passes in `native_alt`;
+  no other coupled failure. The decomposition cell `coupled_no_pooling` (β = 1 with α ≈ 1) is singular in 44 / 45
+  (FIN-Benthic2) and 37 (AquaMonitor) native class-folds and in 3 / 5 at 64 PCs, so the two contrasts that pass through
+  it are **not interpretable in native space** and are not used below.
+
+### 8.4 Decision 2 — native space: coupled − LW
+
+| | FIN-Benthic2 `native` | FIN-Benthic2 `native_alt` | AquaMonitor `native` | AquaMonitor `native_alt` |
+|---|---|---|---|---|
+| Class-macro, fold mean [min, max] | −396.5990 [−455.5755, −368.4657] | −563.6251 [−612.6978, −527.3368] | −86.4971 [−102.4324, −66.7277] | −86.3988 [−102.1528, −66.3244] |
+| Specimen-micro | −554.5579 [−635.1728, −509.4551] | −945.6443 [−1009.3588, −876.1451] | −96.8671 [−101.5108, −88.2938] | −96.9085 [−101.6465, −88.3059] |
+| Folds with macro / micro interval below 0 | 5 / 5 | 5 / 5 | 5 / 5 | 5 / 5 |
+
+- **On average the coupled estimator is much worse than per-class LW in native space**, in every fold of both
+  datasets. AquaMonitor is insensitive to the dropped coordinate; FIN-Benthic2 is not (−397 vs −564), entirely
+  because of *Elmis aenea* sitting at the singularity boundary (§8.3).
+- **But the mean hides a split** (`groups.csv`, `native`): rare classes (15–63 train) gain clearly (FIN-Benthic2 mean
+  +356.930, 22 of 25 class-folds better, interval > 0 in 5 folds; AquaMonitor +292.703, 37 of 39, 5 folds); in
+  64–255 the *median* class gains (+123.561 / +113.396; 76 of 119 and 64 of 95 better) while the *mean* is strongly
+  negative (−518.877 / −135.944) — a minority of classes lose by hundreds; ≥ 256 loses (−561.245 / −230.431; 13 of 26
+  and 8 of 70 better).
+- Every eligible FIN-Benthic2 class and 169 of 204 AquaMonitor class-folds have n_c ≤ d in native space.
+
+### 8.5 Decision 3 — which mechanism (class-macro, fold mean [min, max]; folds with interval above / below 0)
+
+| Space | Normalisation (1/(n−1) vs 1/n) | Pooling at LW shrinkage | Coupled identity shrinkage at coupled pooling | Coupled − LW (sum) |
+|---|---|---|---|---|
+| FIN-Benthic2 pca16 | +0.0028 [−0.0051, +0.0130]; 0 / 1 | −0.1165 [−0.1736, −0.0632]; 0 / 5 | +0.0575 [+0.0382, +0.0804]; 5 / 0 | −0.0562 |
+| FIN-Benthic2 pca64 | +0.0527 [+0.0304, +0.0792]; 5 / 0 | +0.5289 [+0.2345, +0.7849]; 4 / 0 | −0.2247 [−0.3287, −0.0748]; 0 / 3 | +0.3569 |
+| FIN-Benthic2 native | +3.2013 [+2.7706, +3.6229]; 5 / 0 | **+262.0106 [+251.4484, +266.1253]; 5 / 0** | **−658.3947 [−722.5344, −630.8229]; 0 / 5** | −396.5990 |
+| AquaMonitor pca16 | −0.0011 [−0.0045, +0.0061]; 0 / 2 | −0.2035 [−0.2257, −0.1663]; 0 / 5 | +0.0567 [+0.0425, +0.0715]; 5 / 0 | −0.1480 |
+| AquaMonitor pca64 | +0.0291 [+0.0167, +0.0496]; 5 / 0 | +0.0292 [−0.2406, +0.3228]; 0 / 0 | −0.0080 [−0.0659, +0.0678]; 0 / 0 | +0.0503 |
+| AquaMonitor native | +2.4599 [+2.0726, +2.9435]; 5 / 0 | **+185.4033 [+180.0760, +198.0809]; 5 / 0** | **−274.3602 [−286.9291, −262.6716]; 0 / 5** | −86.4971 |
+
+(The three components add up to coupled − LW only where all cells are scored; FIN-Benthic2 native also excludes the
+*Elmis aenea* failures.)
+
+- **Pooling helps in high dimension and hurts in low dimension.** In native space, adding the coupled estimator's
+  pooling to LW's identity shrinkage improves **every** class-fold (FIN-Benthic2 175 of 175; AquaMonitor all 169 with
+  n_c ≤ d and all 35 with n_c > d), most for rare classes (+313.344 / +274.082 for 15–63) and least for AquaMonitor's
+  large classes (+70.072 for ≥ 256); the gain comes from the Mahalanobis part (+382.985 / +325.200 for n_c ≤ d) while
+  the log-determinant part is negative. At 64 PCs it helps in FIN-Benthic2 and is neutral in AquaMonitor; at 16 PCs it
+  hurts in every fold of both datasets.
+- **The coupled estimator's identity shrinkage is too small for held-out likelihood in high dimension.** Given its
+  pooling, replacing LW's identity shrinkage by the coupled one (median 1 − α 0.0027–0.0335 vs LW 0.0112–0.1005 in the
+  native 64–255 and ≥ 256 strata of the two datasets) costs −658.3947 / −274.3602 in native space, mostly in classes with
+  ≥ 64 train specimens (a small positive mean remains for 15–63); at 16 PCs it helps slightly (5 of 5 folds above 0).
+  This matches §8 of the previous response: the squared-error-optimal shrinkage is smaller than what held-out
+  likelihood needs.
+- **Normalisation** (unbiased vs biased covariance) is a small, consistent gain at 64 PCs and in native space (5 of 5
+  folds above 0) and negligible at 16 PCs.
+- So the native loss of the coupled estimator is driven by its identity shrinkage, not by pooling; pooling itself is
+  strongly beneficial there.
+
+### 8.6 Decision 1 re-examined — is per-class LW the right main class model?
+
+- **PCA 16/64:** yes, it remains a reasonable main model (coupled not better overall; pooling hurts at 16 PCs).
+- **Native space: no.** Pooling the class covariances beats per-class LW broadly: pooling at LW shrinkage wins in every
+  native class-fold (§8.5), and even the unshrunk pooled SCM corner beats per-class LW in 114 of 119 (64–255), 27 of 31
+  (≥ 256) and 25 of 25 (15–63) FIN-Benthic2 class-folds, and in 71 of 95, 22 of 70 and 32 of 39 AquaMonitor class-folds
+  (`corners.csv`). With n_c ≤ d for almost every class, a class's own covariance is too poorly determined there.
+- Caution: `pooling_lw_shrink` is a diagnostic cell whose two parameters come from different methods; it was singled
+  out after seeing these validation results, so it is a hypothesis for a predeclared test, not a selected estimator.
+
+### 8.7 Limits
+
+- Intervals condition on the train fits and folds overlap; no multiplicity control. Strata are small (7 / 9 rare taxa).
+- Native results depend on the near-singular structure of the features (median condition numbers of LW up to
+  21,686.8714 and of coupled up to 83,368.5808 per stratum); the coupled FIN-Benthic2 result depends on one class at
+  the singularity boundary.
+- Raw log-likelihood differences are not comparable across spaces (dimension 16, 64, 1023), only within a space.
+- The decomposition fixes (α_k, β_k) that were tuned jointly; mixed cells are not estimators anyone proposed.
+
+### 8.8 Decisions for the author
+
+1. In native space, should the class model become a pooled / partially pooled covariance (e.g. pooled + LW-type
+   identity shrinkage), tested in a **predeclared** comparison with parameters chosen within train only? Or keep
+   class-geometry work in PCA spaces, where per-class LW stays?
+2. Whether to recompute the §8 (previous response) native pooled-S_W α comparison in the 1023-coordinate space (cheap,
+   CPU) to remove the null-direction bias and the invalid sample-covariance row.
+3. The LayerNorm constraint applies to every final-norm encoder output we cache (DINOv2/v3, likely others): any future
+   native-space covariance work should drop or project out the constrained direction by design.
+
+Not done: no change to earlier tables, GBC/Bhattacharyya, FDA or classifiers; no test sets; no new estimators selected.

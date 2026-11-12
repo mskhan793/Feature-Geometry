@@ -1,0 +1,3421 @@
+{
+ "fold": "fold1",
+ "encoder": "dinov3_l",
+ "cohort_rows": {
+  "in_file": 836159,
+  "train_val_used": 668844,
+  "test_rows_dropped": 167315
+ },
+ "train_specimens": 29346,
+ "val_specimens": 4386,
+ "eligible_classes": 41,
+ "excluded_classes": {
+  "Sisyra": {
+   "train": 36,
+   "val": 4
+  }
+ },
+ "min_train": 15,
+ "min_val": 5,
+ "n_boot": 2000,
+ "seed": 20261112,
+ "authors_code_sha256": "a67e443d18613b2671f6997059cf900a3a51853d5584f7251e6a290b780aa326",
+ "adaptations": [
+  {
+   "replace": "C).reshape(4)",
+   "with": "C).reshape(K)"
+  },
+  {
+   "replace": "        print('rscmpool: slow convergence.')\n",
+   "with": "        print('rscmpool: slow convergence.')\n    params['_rscmpool_C'] = C\n    params['_rscmpool_iterations'] = iteration + 1\n"
+  }
+ ],
+ "contrasts": {
+  "coupled_vs_lw": [
+   "coupled",
+   "lw"
+  ],
+  "normalisation": [
+   "lw_unbiased",
+   "lw"
+  ],
+  "pooling_at_lw_shrink": [
+   "pooling_lw_shrink",
+   "lw_unbiased"
+  ],
+  "pooling_at_coupled_shrink": [
+   "coupled",
+   "coupled_no_pooling"
+  ],
+  "shrink_at_no_pooling": [
+   "coupled_no_pooling",
+   "lw_unbiased"
+  ],
+  "shrink_at_coupled_pooling": [
+   "coupled",
+   "pooling_lw_shrink"
+  ]
+ },
+ "full_coordinate_within_class_covariance": {
+  "dim": 1024,
+  "rank": 1023,
+  "smallest_eigenvalues": [
+   -2.116182404531263e-18,
+   2.1190326922646944e-06,
+   9.154654774999137e-06
+  ],
+  "largest_eigenvalue": 5.637954492358698
+ },
+ "total_seconds": 230.63422718201764,
+ "max_rss_gb": 10.303180694580078,
+ "spaces": {
+  "pca64": {
+   "dim": 64,
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Caenis rivulorum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "fit_seconds": 0.4195807090145536,
+   "pooled": {
+    "asymmetry": 0.0,
+    "min_eig": 0.06700289403000433,
+    "condition": 84.25151380992062,
+    "rank": 64
+   },
+   "iterations": 43,
+   "residual_alpha_max": 6.11924336868519e-07,
+   "residual_beta_max": 0.0,
+   "coupled_alpha_keep_min_median_max": [
+    0.7870149952410402,
+    0.9844291505608582,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.6997040295654805,
+    0.9264978154664585,
+    0.9980207459600234
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "classes_gamma_clipped": 0,
+   "classes_kappa_floored": 4,
+   "classes_n_le_p": 8,
+   "classes_with_constant_coords": 0,
+   "status_counts": {
+    "lw": {
+     "ok": 41
+    },
+    "coupled": {
+     "ok": 41
+    },
+    "lw_unbiased": {
+     "ok": 41
+    },
+    "coupled_no_pooling": {
+     "ok": 40,
+     "failed: numerically singular": 1
+    },
+    "pooling_lw_shrink": {
+     "ok": 41
+    },
+    "pooled_scm": {
+     "ok": 41
+    },
+    "class_scm": {
+     "ok": 33,
+     "not defined (n <= d)": 8
+    },
+    "class_identity": {
+     "ok": 41
+    }
+   },
+   "contrasts": {
+    "coupled_vs_lw": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.022180176716038908,
+      "macro_ci95": [
+       -0.2952176593563443,
+       0.26244703470468395
+      ],
+      "micro_mean": -0.06474913097970669,
+      "micro_ci95": [
+       -0.09851764999690159,
+       -0.026303948707611463
+      ],
+      "macro_maha_part": 1.4675492966209263,
+      "macro_logdet_part": -1.4897294733369653,
+      "class_diff_median": -0.17685678584645304,
+      "classes_better": 15,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 13
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 1.2734420126510082,
+      "macro_ci95": [
+       0.15342967196268295,
+       2.4651757503729517
+      ],
+      "micro_mean": 1.303834038818611,
+      "micro_ci95": [
+       0.25535766500039564,
+       2.395080500290331
+      ],
+      "macro_maha_part": 4.380500841046319,
+      "macro_logdet_part": -3.107058828395312,
+      "class_diff_median": 0.955822652149231,
+      "classes_better": 6,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.5150464674208428,
+      "macro_ci95": [
+       -0.8195836850953453,
+       -0.1357796428759057
+      ],
+      "micro_mean": -0.6326290001877541,
+      "micro_ci95": [
+       -0.9345547733271761,
+       -0.2590433032731806
+      ],
+      "macro_maha_part": 1.0181058830949188,
+      "macro_logdet_part": -1.5331523505157618,
+      "class_diff_median": -0.4718504634522394,
+      "classes_better": 6,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.09364574754068918,
+      "macro_ci95": [
+       -0.18198946843764022,
+       0.027650704213043095
+      ],
+      "micro_mean": -0.03586732063881496,
+      "micro_ci95": [
+       -0.05491749414835233,
+       -0.014457621976547215
+      ],
+      "macro_maha_part": 0.41296447530599717,
+      "macro_logdet_part": -0.5066102228466863,
+      "class_diff_median": -0.03220567267093246,
+      "classes_better": 3,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 5
+     },
+     "n<=p": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 1.2734420126510082,
+      "macro_ci95": [
+       0.15342967196268295,
+       2.4651757503729517
+      ],
+      "micro_mean": 1.303834038818611,
+      "micro_ci95": [
+       0.25535766500039564,
+       2.395080500290331
+      ],
+      "macro_maha_part": 4.380500841046319,
+      "macro_logdet_part": -3.107058828395312,
+      "class_diff_median": 0.955822652149231,
+      "classes_better": 6,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 1
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": -0.3362704044413836,
+      "macro_ci95": [
+       -0.5150145452259342,
+       -0.1142545188490528
+      ],
+      "micro_mean": -0.0853555488710411,
+      "micro_ci95": [
+       -0.11519347457319118,
+       -0.04967398361901124
+      ],
+      "macro_maha_part": 0.7613792252450733,
+      "macro_logdet_part": -1.097649629686457,
+      "class_diff_median": -0.18527793216864552,
+      "classes_better": 9,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 12
+     },
+     "numerical_failures": []
+    },
+    "normalisation": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.030499095659446775,
+      "macro_ci95": [
+       0.012552491091564793,
+       0.04947761227972335
+      ],
+      "micro_mean": 0.0033500492758498476,
+      "micro_ci95": [
+       0.0014296471288181697,
+       0.0055523923507816535
+      ],
+      "macro_maha_part": 0.31770718130813275,
+      "macro_logdet_part": -0.28720808564868605,
+      "class_diff_median": 0.00324028137996619,
+      "classes_better": 28,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 3
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.10278097581422276,
+      "macro_ci95": [
+       0.02605338052600611,
+       0.18110669544617908
+      ],
+      "micro_mean": 0.10965982517747906,
+      "micro_ci95": [
+       0.02787015100208897,
+       0.19941594271511892
+      ],
+      "macro_maha_part": 0.8295730414623395,
+      "macro_logdet_part": -0.7267920656481168,
+      "class_diff_median": 0.06088699537291932,
+      "classes_better": 6,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 0.02215563177839437,
+      "macro_ci95": [
+       0.0011400117811390653,
+       0.04571391951369372
+      ],
+      "micro_mean": 0.02007718185596885,
+      "micro_ci95": [
+       0.0024099189748858145,
+       0.040901879203935565
+      ],
+      "macro_maha_part": 0.30504756501680125,
+      "macro_logdet_part": -0.28289193323840695,
+      "class_diff_median": 0.02179111820567333,
+      "classes_better": 14,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 2
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.0005184365524316269,
+      "macro_ci95": [
+       -0.0016006587143821201,
+       0.0029500171015665625
+      ],
+      "micro_mean": 9.20424818896299e-05,
+      "micro_ci95": [
+       -0.0003420515410088234,
+       0.000566338942662751
+      ],
+      "macro_maha_part": 0.042393311901107435,
+      "macro_logdet_part": -0.041874875348675795,
+      "class_diff_median": 7.56521990565313e-05,
+      "classes_better": 8,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 1
+     },
+     "n<=p": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.10278097581422276,
+      "macro_ci95": [
+       0.02605338052600611,
+       0.18110669544617908
+      ],
+      "micro_mean": 0.10965982517747906,
+      "micro_ci95": [
+       0.02787015100208897,
+       0.19941594271511892
+      ],
+      "macro_maha_part": 0.8295730414623395,
+      "macro_logdet_part": -0.7267920656481168,
+      "class_diff_median": 0.06088699537291932,
+      "classes_better": 6,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": 0.012976215621925326,
+      "macro_ci95": [
+       0.0008062512914041493,
+       0.026471639321112052
+      ],
+      "micro_mean": 0.001749369305128074,
+      "micro_ci95": [
+       0.00025310604427904003,
+       0.0035813514286252906
+      ],
+      "macro_maha_part": 0.19361848793741598,
+      "macro_logdet_part": -0.1806422723154907,
+      "class_diff_median": 0.0011195906939034945,
+      "classes_better": 22,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 3
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_lw_shrink": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.013194219062416872,
+      "macro_ci95": [
+       -0.35367229231809116,
+       0.4032419603810495
+      ],
+      "micro_mean": -0.05465741352025179,
+      "micro_ci95": [
+       -0.10462896666503482,
+       0.001495551869186743
+      ],
+      "macro_maha_part": 5.091387477267645,
+      "macro_logdet_part": -5.078193258205229,
+      "class_diff_median": -0.09261256115955574,
+      "classes_better": 12,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 11
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.8750830820779552,
+      "macro_ci95": [
+       -0.4568723965621552,
+       2.318990225139608
+      ],
+      "micro_mean": 1.266441951895832,
+      "micro_ci95": [
+       -0.21623293137539681,
+       2.949633087258469
+      ],
+      "macro_maha_part": 10.267683196259394,
+      "macro_logdet_part": -9.39260011418144,
+      "class_diff_median": -0.2794845148527748,
+      "classes_better": 3,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.2070637208276763,
+      "macro_ci95": [
+       -0.7233697489690057,
+       0.4073826125930943
+      ],
+      "micro_mean": -0.258131826221334,
+      "micro_ci95": [
+       -0.6963498033352166,
+       0.31889233113629906
+      ],
+      "macro_maha_part": 5.513067362754692,
+      "macro_logdet_part": -5.720131083582367,
+      "class_diff_median": -0.09261256115955574,
+      "classes_better": 6,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 5
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.18039221280990717,
+      "macro_ci95": [
+       -0.3048634531595077,
+       -0.03625763733461342
+      ],
+      "micro_mean": -0.05794804726742482,
+      "micro_ci95": [
+       -0.0866326733639307,
+       -0.028210832191965837
+      ],
+      "macro_maha_part": 1.5612243646827992,
+      "macro_logdet_part": -1.7416165774927066,
+      "class_diff_median": -0.03849701822640591,
+      "classes_better": 3,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 5
+     },
+     "n<=p": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.8750830820779552,
+      "macro_ci95": [
+       -0.4568723965621552,
+       2.318990225139608
+      ],
+      "micro_mean": 1.266441951895832,
+      "micro_ci95": [
+       -0.21623293137539681,
+       2.949633087258469
+      ],
+      "macro_maha_part": 10.267683196259394,
+      "macro_logdet_part": -9.39260011418144,
+      "class_diff_median": -0.2794845148527748,
+      "classes_better": 3,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 1
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": -0.1957485356080167,
+      "macro_ci95": [
+       -0.496745969015112,
+       0.16201721831780763
+      ],
+      "micro_mean": -0.0745488795272116,
+      "micro_ci95": [
+       -0.12133128934647185,
+       -0.02289796499357957
+      ],
+      "macro_maha_part": 3.836527909027222,
+      "macro_logdet_part": -4.032276444635238,
+      "class_diff_median": -0.0609038790712247,
+      "classes_better": 9,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 10
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_coupled_shrink": {
+     "all": {
+      "classes": 40,
+      "val_specimens": 4366,
+      "macro_mean": 9.42948931330244,
+      "macro_ci95": [
+       7.504518664062268,
+       11.378151789142906
+      ],
+      "micro_mean": 0.9390222806376742,
+      "micro_ci95": [
+       0.7753824535236294,
+       1.1162281064622117
+      ],
+      "macro_maha_part": 17.519746123361585,
+      "macro_logdet_part": -8.090256810059143,
+      "class_diff_median": 0.6457133563780995,
+      "classes_better": 29,
+      "classes_ci_above_0": 13,
+      "classes_ci_below_0": 5
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": 30.352734842902915,
+      "macro_ci95": [
+       20.596804648719694,
+       40.20388642534436
+      ],
+      "micro_mean": 29.755316282162102,
+      "micro_ci95": [
+       20.073092741826702,
+       39.52836406907999
+      ],
+      "macro_maha_part": 48.33082095948725,
+      "macro_logdet_part": -17.97808611658432,
+      "class_diff_median": 11.786151475611074,
+      "classes_better": 6,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 8.63195356170171,
+      "macro_ci95": [
+       6.726273902016481,
+       10.930577779701812
+      ],
+      "micro_mean": 7.298815515331266,
+      "micro_ci95": [
+       5.826316318841191,
+       9.01929301124527
+      ],
+      "macro_maha_part": 17.54535691225499,
+      "macro_logdet_part": -8.91340335055328,
+      "class_diff_median": 1.8766335934470129,
+      "classes_better": 15,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 3
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.05023649710319129,
+      "macro_ci95": [
+       -0.10536183298295736,
+       0.22488334688772574
+      ],
+      "micro_mean": 0.007270731232520756,
+      "micro_ci95": [
+       -0.028356199175592678,
+       0.045717291158213554
+      ],
+      "macro_maha_part": 2.0794512060862766,
+      "macro_logdet_part": -2.0292147089830856,
+      "class_diff_median": 0.009127805247923101,
+      "classes_better": 8,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 2
+     },
+     "n<=p": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": 30.352734842902915,
+      "macro_ci95": [
+       20.596804648719694,
+       40.20388642534436
+      ],
+      "micro_mean": 29.755316282162102,
+      "micro_ci95": [
+       20.073092741826702,
+       39.52836406907999
+      ],
+      "macro_maha_part": 48.33082095948725,
+      "macro_logdet_part": -17.97808611658432,
+      "class_diff_median": 11.786151475611074,
+      "classes_better": 6,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": 4.991225110053853,
+      "macro_ci95": [
+       3.894448902015615,
+       6.316652753692376
+      ],
+      "micro_mean": 0.6119436598188887,
+      "micro_ci95": [
+       0.48692928842305166,
+       0.7556625555814536
+      ],
+      "macro_maha_part": 10.984063582365232,
+      "macro_logdet_part": -5.992838472311379,
+      "class_diff_median": 0.27911051176444196,
+      "classes_better": 23,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 5
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      }
+     ]
+    },
+    "shrink_at_no_pooling": {
+     "all": {
+      "classes": 40,
+      "val_specimens": 4366,
+      "macro_mean": -9.541503983570825,
+      "macro_ci95": [
+       -11.454109808680117,
+       -7.673706825084971
+      ],
+      "micro_mean": -1.0158757836549204,
+      "micro_ci95": [
+       -1.1834860075895623,
+       -0.8568624108826132
+      ],
+      "macro_maha_part": -16.417879201676524,
+      "macro_logdet_part": 6.876375218105696,
+      "class_diff_median": -0.4134528208964914,
+      "classes_better": 6,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 16
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": -29.34637032128095,
+      "macro_ci95": [
+       -38.76450957995899,
+       -19.953075125876218
+      ],
+      "micro_mean": -28.9289991884228,
+      "micro_ci95": [
+       -38.36477312965688,
+       -19.67519009593783
+      ],
+      "macro_maha_part": -44.711024882880125,
+      "macro_logdet_part": 15.364654561599172,
+      "class_diff_median": -10.147293696785269,
+      "classes_better": 3,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 4
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -9.169155660900948,
+      "macro_ci95": [
+       -11.427813484973965,
+       -7.327874332885359
+      ],
+      "micro_mean": -7.9515216973749885,
+      "micro_ci95": [
+       -9.589267876846597,
+       -6.556829547936656
+      ],
+      "macro_maha_part": -16.832298594176873,
+      "macro_logdet_part": 7.663142933275926,
+      "class_diff_median": -2.137331834156746,
+      "classes_better": 2,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 10
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.14440068119631208,
+      "macro_ci95": [
+       -0.24236701108332126,
+       -0.05457803604447269
+      ],
+      "micro_mean": -0.043230094353225355,
+      "micro_ci95": [
+       -0.06948075927586687,
+       -0.02020886266029927
+      ],
+      "macro_maha_part": -1.7088800426813873,
+      "macro_logdet_part": 1.564479361485075,
+      "class_diff_median": -0.06539762539077945,
+      "classes_better": 1,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 2
+     },
+     "n<=p": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": -29.34637032128095,
+      "macro_ci95": [
+       -38.76450957995899,
+       -19.953075125876218
+      ],
+      "micro_mean": -28.9289991884228,
+      "micro_ci95": [
+       -38.36477312965688,
+       -19.67519009593783
+      ],
+      "macro_maha_part": -44.711024882880125,
+      "macro_logdet_part": 15.364654561599172,
+      "class_diff_median": -10.147293696785269,
+      "classes_better": 3,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 4
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": -5.340471730117161,
+      "macro_ci95": [
+       -6.634739563774436,
+       -4.2748260897513575
+      ],
+      "micro_mean": -0.6990485779950578,
+      "micro_ci95": [
+       -0.835832856521449,
+       -0.5802948273593601
+      ],
+      "macro_maha_part": -10.416302845057574,
+      "macro_logdet_part": 5.075831114940414,
+      "class_diff_median": -0.4065502793996778,
+      "classes_better": 3,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 12
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      }
+     ]
+    },
+    "shrink_at_coupled_pooling": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.06587349143790258,
+      "macro_ci95": [
+       -0.31007054385012167,
+       0.17982411859050468
+      ],
+      "micro_mean": -0.013441766735304748,
+      "micro_ci95": [
+       -0.05028922562561001,
+       0.02121654924480889
+      ],
+      "macro_maha_part": -3.9415453619548533,
+      "macro_logdet_part": 3.8756718705169493,
+      "class_diff_median": 0.015194166271184568,
+      "classes_better": 25,
+      "classes_ci_above_0": 8,
+      "classes_ci_below_0": 2
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.2955779547588302,
+      "macro_ci95": [
+       -0.626888325787559,
+       1.1497288372179215
+      ],
+      "micro_mean": -0.07226773825470029,
+      "micro_ci95": [
+       -1.2768775412480795,
+       1.0289381642333715
+      ],
+      "macro_maha_part": -6.716755396675413,
+      "macro_logdet_part": 7.012333351434244,
+      "class_diff_median": 0.41330985176456186,
+      "classes_better": 6,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.3301383783715609,
+      "macro_ci95": [
+       -0.7272707248937608,
+       0.04155447261912716
+      ],
+      "micro_mean": -0.39457435582238903,
+      "micro_ci95": [
+       -0.7519110650960033,
+       -0.06988564400776666
+      ],
+      "macro_maha_part": -4.800009044676574,
+      "macro_logdet_part": 4.469870666305012,
+      "class_diff_median": -0.04019050701338998,
+      "classes_better": 9,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 2
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.08622802871678636,
+      "macro_ci95": [
+       0.026715601254957675,
+       0.14263494880904604
+      ],
+      "micro_mean": 0.02198868414672022,
+      "micro_ci95": [
+       0.005144448853142192,
+       0.036931535596797335
+      ],
+      "macro_maha_part": -1.1906532012779096,
+      "macro_logdet_part": 1.276881229994696,
+      "class_diff_median": 0.008036717191894405,
+      "classes_better": 10,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.2955779547588302,
+      "macro_ci95": [
+       -0.626888325787559,
+       1.1497288372179215
+      ],
+      "micro_mean": -0.07226773825470029,
+      "micro_ci95": [
+       -1.2768775412480795,
+       1.0289381642333715
+      ],
+      "macro_maha_part": -6.716755396675413,
+      "macro_logdet_part": 7.012333351434244,
+      "class_diff_median": 0.41330985176456186,
+      "classes_better": 6,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 33,
+      "val_specimens": 4317,
+      "macro_mean": -0.15349808445529234,
+      "macro_ci95": [
+       -0.37891792043764705,
+       0.06183331929620808
+      ],
+      "micro_mean": -0.012556038648957586,
+      "micro_ci95": [
+       -0.04370025129838702,
+       0.018774245117530113
+      ],
+      "macro_maha_part": -3.268767171719565,
+      "macro_logdet_part": 3.1152690872642723,
+      "class_diff_median": 0.005791520109391506,
+      "classes_better": 19,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 2
+     },
+     "numerical_failures": []
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -29.60903314827785,
+    "coupled": -29.631213324993883,
+    "lw_unbiased": -29.578534052618394,
+    "coupled_no_pooling": -38.99916786576758,
+    "pooling_lw_shrink": -29.56533983355598,
+    "pooled_scm": -50.01005174054118,
+    "class_scm": -58.48811140120362,
+    "class_identity": -64.95222650429608
+   },
+   "space_seconds": 1.128916805027984
+  },
+  "pca16": {
+   "dim": 16,
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Caenis rivulorum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "fit_seconds": 0.2495001379866153,
+   "pooled": {
+    "asymmetry": 0.0,
+    "min_eig": 0.34173075228532845,
+    "condition": 16.422911862960902,
+    "rank": 16
+   },
+   "iterations": 37,
+   "residual_alpha_max": 7.276901838881855e-07,
+   "residual_beta_max": 0.0,
+   "coupled_alpha_keep_min_median_max": [
+    0.7818745375438172,
+    0.9779145265729013,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.7297711861393329,
+    0.9539880291929665,
+    0.998534125756638
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "classes_gamma_clipped": 0,
+   "classes_kappa_floored": 4,
+   "classes_n_le_p": 0,
+   "classes_with_constant_coords": 0,
+   "status_counts": {
+    "lw": {
+     "ok": 41
+    },
+    "coupled": {
+     "ok": 41
+    },
+    "lw_unbiased": {
+     "ok": 41
+    },
+    "coupled_no_pooling": {
+     "ok": 41
+    },
+    "pooling_lw_shrink": {
+     "ok": 41
+    },
+    "pooled_scm": {
+     "ok": 41
+    },
+    "class_scm": {
+     "ok": 41
+    },
+    "class_identity": {
+     "ok": 41
+    }
+   },
+   "contrasts": {
+    "coupled_vs_lw": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.12391684948336296,
+      "macro_ci95": [
+       -0.1808239141107339,
+       -0.06301290862116908
+      ],
+      "micro_mean": -0.0248569620391422,
+      "micro_ci95": [
+       -0.03165479503962008,
+       -0.01700544942285236
+      ],
+      "macro_maha_part": 0.47766075555351106,
+      "macro_logdet_part": -0.6015776050368741,
+      "class_diff_median": -0.05788785515805003,
+      "classes_better": 12,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 16
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": -0.2150846945406078,
+      "macro_ci95": [
+       -0.4367469459154315,
+       0.036018592738718526
+      ],
+      "micro_mean": -0.20760674737921359,
+      "micro_ci95": [
+       -0.3899873221385651,
+       -0.0039449141513392995
+      ],
+      "macro_maha_part": 0.9284758664163539,
+      "macro_logdet_part": -1.1435605609569621,
+      "class_diff_median": -0.09967031683848121,
+      "classes_better": 3,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 3
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.15382540900279854,
+      "macro_ci95": [
+       -0.2290394677851566,
+       -0.06585832240048874
+      ],
+      "micro_mean": -0.16042972993744503,
+      "micro_ci95": [
+       -0.22383914829467771,
+       -0.08667660829810662
+      ],
+      "macro_maha_part": 0.5297938043915755,
+      "macro_logdet_part": -0.683619213394374,
+      "class_diff_median": -0.17161019476876607,
+      "classes_better": 4,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 8
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.0312307501028461,
+      "macro_ci95": [
+       -0.05027875495524413,
+       -0.005735849693442414
+      ],
+      "micro_mean": -0.009597101732323041,
+      "micro_ci95": [
+       -0.013849185087698956,
+       -0.004539777915263093
+      ],
+      "macro_maha_part": 0.14930012592308478,
+      "macro_logdet_part": -0.18053087602593085,
+      "class_diff_median": -0.00210902806160822,
+      "classes_better": 5,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 5
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.12391684948336296,
+      "macro_ci95": [
+       -0.1808239141107339,
+       -0.06301290862116908
+      ],
+      "micro_mean": -0.0248569620391422,
+      "micro_ci95": [
+       -0.03165479503962008,
+       -0.01700544942285236
+      ],
+      "macro_maha_part": 0.47766075555351106,
+      "macro_logdet_part": -0.6015776050368741,
+      "class_diff_median": -0.05788785515805003,
+      "classes_better": 12,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 16
+     },
+     "numerical_failures": []
+    },
+    "normalisation": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.0001515609154752631,
+      "macro_ci95": [
+       -0.0045965415219630075,
+       0.0050842647196806005
+      ],
+      "micro_mean": -0.00018975606339537816,
+      "micro_ci95": [
+       -0.0006481393458805555,
+       0.0003564219220685738
+      ],
+      "macro_maha_part": 0.07165046049669722,
+      "macro_logdet_part": -0.0718020214121726,
+      "class_diff_median": -0.0007327154089964707,
+      "classes_better": 13,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 7
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.006757769702463827,
+      "macro_ci95": [
+       -0.01265083948754457,
+       0.02992989655608225
+      ],
+      "micro_mean": 0.007519263744077985,
+      "micro_ci95": [
+       -0.011272318662834372,
+       0.028665438476293107
+      ],
+      "macro_maha_part": 0.18845578611449365,
+      "macro_logdet_part": -0.1816980164120302,
+      "class_diff_median": -0.006648914557254614,
+      "classes_better": 3,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.0029862164308763154,
+      "macro_ci95": [
+       -0.007672896504458363,
+       0.0028752980565065834
+      ],
+      "micro_mean": -0.0027894125862397254,
+      "micro_ci95": [
+       -0.006881428201276318,
+       0.0027761276593897127
+      ],
+      "macro_maha_part": 0.0677367668787257,
+      "macro_logdet_part": -0.07072298330960207,
+      "class_diff_median": -0.0019100269071512755,
+      "classes_better": 5,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 4
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.00025271735482474306,
+      "macro_ci95": [
+       -0.0008199258533859859,
+       0.0004179849224233369
+      ],
+      "micro_mean": -8.124614985849824e-05,
+      "micro_ci95": [
+       -0.00019239529738549057,
+       4.4863925857881194e-05
+      ],
+      "macro_maha_part": 0.01021600148234634,
+      "macro_logdet_part": -0.01046871883717109,
+      "class_diff_median": -0.00010649567727139469,
+      "classes_better": 5,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 3
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.0001515609154752631,
+      "macro_ci95": [
+       -0.0045965415219630075,
+       0.0050842647196806005
+      ],
+      "micro_mean": -0.00018975606339537816,
+      "micro_ci95": [
+       -0.0006481393458805555,
+       0.0003564219220685738
+      ],
+      "macro_maha_part": 0.07165046049669722,
+      "macro_logdet_part": -0.0718020214121726,
+      "class_diff_median": -0.0007327154089964707,
+      "classes_better": 13,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_lw_shrink": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.1662550631190748,
+      "macro_ci95": [
+       -0.2312935748908047,
+       -0.09540437877334797
+      ],
+      "micro_mean": -0.03487015529119236,
+      "micro_ci95": [
+       -0.0426827222144885,
+       -0.025825729066455912
+      ],
+      "macro_maha_part": 0.6536521836709714,
+      "macro_logdet_part": -0.8199072467900462,
+      "class_diff_median": -0.1579390110042235,
+      "classes_better": 8,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 18
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": -0.2431850205117414,
+      "macro_ci95": [
+       -0.5125628929200865,
+       0.06053036637962223
+      ],
+      "micro_mean": -0.18806831687578082,
+      "micro_ci95": [
+       -0.4281922277786959,
+       0.08924959432170342
+      ],
+      "macro_maha_part": 1.2726790607730276,
+      "macro_logdet_part": -1.5158640812847688,
+      "class_diff_median": -0.15206859891220326,
+      "classes_better": 3,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 3
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.21392351445331184,
+      "macro_ci95": [
+       -0.2905935645118709,
+       -0.12235406661865589
+      ],
+      "micro_mean": -0.2136622595795447,
+      "micro_ci95": [
+       -0.2798760776930257,
+       -0.13520265381520707
+      ],
+      "macro_maha_part": 0.7085138047988322,
+      "macro_logdet_part": -0.9224373192521439,
+      "class_diff_median": -0.21782411672504398,
+      "classes_better": 2,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 9
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.05760218922680066,
+      "macro_ci95": [
+       -0.07693476659907703,
+       -0.03490603914588914
+      ],
+      "micro_mean": -0.016187292487901527,
+      "micro_ci95": [
+       -0.021477034119231665,
+       -0.010589372204988833
+      ],
+      "macro_maha_part": 0.22546748236769987,
+      "macro_logdet_part": -0.2830696715945005,
+      "class_diff_median": -0.006969935632256586,
+      "classes_better": 3,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 6
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.1662550631190748,
+      "macro_ci95": [
+       -0.2312935748908047,
+       -0.09540437877334797
+      ],
+      "micro_mean": -0.03487015529119236,
+      "micro_ci95": [
+       -0.0426827222144885,
+       -0.025825729066455912
+      ],
+      "macro_maha_part": 0.6536521836709714,
+      "macro_logdet_part": -0.8199072467900462,
+      "class_diff_median": -0.1579390110042235,
+      "classes_better": 8,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 18
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_coupled_shrink": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.03056068381533482,
+      "macro_ci95": [
+       -0.0967576277152908,
+       0.18384590968064923
+      ],
+      "micro_mean": -0.0100713616176559,
+      "micro_ci95": [
+       -0.02255837436029637,
+       0.004861680142979622
+      ],
+      "macro_maha_part": 1.0566837366885324,
+      "macro_logdet_part": -1.0261230528731977,
+      "class_diff_median": -0.07490591273168459,
+      "classes_better": 13,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 13
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.4619450585646255,
+      "macro_ci95": [
+       -0.1274841165360324,
+       1.1940551906939996
+      ],
+      "micro_mean": 0.7259123540496156,
+      "micro_ci95": [
+       0.13069201082625748,
+       1.4637884305506739
+      ],
+      "macro_maha_part": 2.5570179566053417,
+      "macro_logdet_part": -2.095072898040716,
+      "class_diff_median": -0.07413006784289619,
+      "classes_better": 3,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.09243103855287678,
+      "macro_ci95": [
+       -0.2014985444422124,
+       0.03446857433066767
+      ],
+      "micro_mean": -0.11212139383546053,
+      "micro_ci95": [
+       -0.2019607043190911,
+       -0.007916436692665773
+      ],
+      "macro_maha_part": 1.0134541793012464,
+      "macro_logdet_part": -1.1058852178541234,
+      "class_diff_median": -0.18575002325677964,
+      "classes_better": 5,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 7
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -0.04902733568454409,
+      "macro_ci95": [
+       -0.06962669221578638,
+       -0.025727836836158435
+      ],
+      "micro_mean": -0.012926888261858628,
+      "micro_ci95": [
+       -0.018949617994132324,
+       -0.006757454314470106
+      ],
+      "macro_maha_part": 0.25801858176167214,
+      "macro_logdet_part": -0.3070459174462163,
+      "class_diff_median": -0.0025945406898031766,
+      "classes_better": 5,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 5
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.03056068381533482,
+      "macro_ci95": [
+       -0.0967576277152908,
+       0.18384590968064923
+      ],
+      "micro_mean": -0.0100713616176559,
+      "micro_ci95": [
+       -0.02255837436029637,
+       0.004861680142979622
+      ],
+      "macro_maha_part": 1.0566837366885324,
+      "macro_logdet_part": -1.0261230528731977,
+      "class_diff_median": -0.07490591273168459,
+      "classes_better": 13,
+      "classes_ci_above_0": 2,
+      "classes_ci_below_0": 13
+     },
+     "numerical_failures": []
+    },
+    "shrink_at_no_pooling": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.1543259723832225,
+      "macro_ci95": [
+       -0.2777243608864732,
+       -0.05417442554836332
+      ],
+      "micro_mean": -0.014595844358090923,
+      "micro_ci95": [
+       -0.025487276270659276,
+       -0.005156839787978536
+      ],
+      "macro_maha_part": -0.6506734416317186,
+      "macro_logdet_part": 0.4963474692484961,
+      "class_diff_median": -0.00010878137760152444,
+      "classes_better": 20,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 3
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": -0.6837875228076972,
+      "macro_ci95": [
+       -1.3046313616653922,
+       -0.18953127272135675
+      ],
+      "micro_mean": -0.9410383651729074,
+      "micro_ci95": [
+       -1.6056943386116596,
+       -0.3876443424367736
+      ],
+      "macro_maha_part": -1.816997876303481,
+      "macro_logdet_part": 1.1332103534957843,
+      "class_diff_median": -0.2698124476526794,
+      "classes_better": 1,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -0.05840815401904544,
+      "macro_ci95": [
+       -0.1262018115514944,
+       0.004558872236960055
+      ],
+      "micro_mean": -0.04551892351574477,
+      "micro_ci95": [
+       -0.09776393878831746,
+       0.004894850703154249
+      ],
+      "macro_maha_part": -0.5513971417883966,
+      "macro_logdet_part": 0.49298898776935135,
+      "class_diff_median": -0.013388572055327211,
+      "classes_better": 8,
+      "classes_ci_above_0": 3,
+      "classes_ci_below_0": 2
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.018049302936522734,
+      "macro_ci95": [
+       0.009563601601979816,
+       0.027177800564529488
+      ],
+      "micro_mean": 0.003411032679394083,
+      "micro_ci95": [
+       0.0008592064226985174,
+       0.005911718963197961
+      ],
+      "macro_maha_part": -0.11893445732093376,
+      "macro_logdet_part": 0.13698376025745646,
+      "class_diff_median": 0.0024682432939408822,
+      "classes_better": 11,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -0.1543259723832225,
+      "macro_ci95": [
+       -0.2777243608864732,
+       -0.05417442554836332
+      ],
+      "micro_mean": -0.014595844358090923,
+      "micro_ci95": [
+       -0.025487276270659276,
+       -0.005156839787978536
+      ],
+      "macro_maha_part": -0.6506734416317186,
+      "macro_logdet_part": 0.4963474692484961,
+      "class_diff_median": -0.00010878137760152444,
+      "classes_better": 20,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 3
+     },
+     "numerical_failures": []
+    },
+    "shrink_at_coupled_pooling": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.04248977455118712,
+      "macro_ci95": [
+       0.009428261604493065,
+       0.07192974632678424
+      ],
+      "micro_mean": 0.010202949315445537,
+      "micro_ci95": [
+       0.006575284169822011,
+       0.01378263799350204
+      ],
+      "macro_maha_part": -0.24764188861415756,
+      "macro_logdet_part": 0.2901316631653447,
+      "class_diff_median": 0.028590102561890592,
+      "classes_better": 30,
+      "classes_ci_above_0": 13,
+      "classes_ci_below_0": 4
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 0.021342556268669752,
+      "macro_ci95": [
+       -0.1435254403209611,
+       0.16356577264456074
+      ],
+      "micro_mean": -0.027057694247510748,
+      "micro_ci95": [
+       -0.21059490953740378,
+       0.13292680214345293
+      ],
+      "macro_maha_part": -0.532658980471167,
+      "macro_logdet_part": 0.554001536739837,
+      "class_diff_median": 0.0005908670963028807,
+      "classes_better": 4,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 0.06308432188138965,
+      "macro_ci95": [
+       0.03857927301456075,
+       0.08769268862859884
+      ],
+      "micro_mean": 0.056021942228339415,
+      "micro_ci95": [
+       0.03073372104907154,
+       0.08032283074379787
+      ],
+      "macro_maha_part": -0.24645676728598226,
+      "macro_logdet_part": 0.30954108916737194,
+      "class_diff_median": 0.05078291670104314,
+      "classes_better": 14,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 4
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.026624156478779304,
+      "macro_ci95": [
+       0.02051800794655155,
+       0.03309258328750764
+      ],
+      "micro_mean": 0.006671436905436985,
+      "micro_ci95": [
+       0.004797687937333355,
+       0.008521076208873511
+      ],
+      "macro_maha_part": -0.08638335792696143,
+      "macro_logdet_part": 0.11300751440574068,
+      "class_diff_median": 0.009161117735275812,
+      "classes_better": 12,
+      "classes_ci_above_0": 6,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 0
+     },
+     "n>p": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 0.04248977455118712,
+      "macro_ci95": [
+       0.009428261604493065,
+       0.07192974632678424
+      ],
+      "micro_mean": 0.010202949315445537,
+      "micro_ci95": [
+       0.006575284169822011,
+       0.01378263799350204
+      ],
+      "macro_maha_part": -0.24764188861415756,
+      "macro_logdet_part": 0.2901316631653447,
+      "class_diff_median": 0.028590102561890592,
+      "classes_better": 30,
+      "classes_ci_above_0": 13,
+      "classes_ci_below_0": 4
+     },
+     "numerical_failures": []
+    }
+   },
+   "mean_val_loglik": {
+    "lw": -17.33759345452772,
+    "coupled": -17.46151030401109,
+    "lw_unbiased": -17.337745015443197,
+    "coupled_no_pooling": -17.49207098782642,
+    "pooling_lw_shrink": -17.504000078562278,
+    "pooled_scm": -22.14800035061293,
+    "class_scm": -18.46823792536953,
+    "class_identity": -23.92210730618739
+   },
+   "space_seconds": 0.8333693940076046
+  },
+  "native": {
+   "dim": 1023,
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Caenis rivulorum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "fit_seconds": 22.13978526502615,
+   "pooled": {
+    "asymmetry": 0.0,
+    "min_eig": 8.6838286396518e-11,
+    "condition": 64924739695.14978,
+    "rank": 1023
+   },
+   "iterations": 36,
+   "residual_alpha_max": 5.185507013782953e-07,
+   "residual_beta_max": 0.0,
+   "coupled_alpha_keep_min_median_max": [
+    0.7930311130040139,
+    0.9871644901869211,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.6416164075229843,
+    0.8796615394368325,
+    0.9975203315648951
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "classes_gamma_clipped": 0,
+   "classes_kappa_floored": 16,
+   "classes_n_le_p": 34,
+   "classes_with_constant_coords": 0,
+   "status_counts": {
+    "lw": {
+     "ok": 41
+    },
+    "coupled": {
+     "ok": 41
+    },
+    "lw_unbiased": {
+     "ok": 41
+    },
+    "coupled_no_pooling": {
+     "ok": 33,
+     "failed: numerically singular": 8
+    },
+    "pooling_lw_shrink": {
+     "ok": 41
+    },
+    "pooled_scm": {
+     "ok": 41
+    },
+    "class_scm": {
+     "not defined (n <= d)": 34,
+     "ok": 7
+    },
+    "class_identity": {
+     "ok": 41
+    }
+   },
+   "contrasts": {
+    "coupled_vs_lw": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -97.5587507485804,
+      "macro_ci95": [
+       -124.24723725136835,
+       -70.88635073839903
+      ],
+      "micro_mean": -99.97092548550528,
+      "micro_ci95": [
+       -108.24666057265314,
+       -92.27510541072051
+      ],
+      "macro_maha_part": -381.15540004712426,
+      "macro_logdet_part": 283.59664929854387,
+      "class_diff_median": 7.700545906963939,
+      "classes_better": 23,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 15
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 297.4979003318581,
+      "macro_ci95": [
+       257.8389407078932,
+       338.23810419594815
+      ],
+      "micro_mean": 287.1664590683474,
+      "micro_ci95": [
+       249.51107291575323,
+       325.404850988818
+      ],
+      "macro_maha_part": -61.70621315825235,
+      "macro_logdet_part": 359.20411349011044,
+      "class_diff_median": 309.1090188873248,
+      "classes_better": 8,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -157.9049153498957,
+      "macro_ci95": [
+       -211.96001376818776,
+       -105.73635823070606
+      ],
+      "micro_mean": -263.6415634273409,
+      "micro_ci95": [
+       -333.01607798235193,
+       -196.50097610247622
+      ],
+      "macro_maha_part": -497.7163393213561,
+      "macro_logdet_part": 339.8114239714604,
+      "class_diff_median": 138.37879225564564,
+      "classes_better": 13,
+      "classes_ci_above_0": 11,
+      "classes_ci_below_0": 4
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -241.4070422641888,
+      "macro_ci95": [
+       -264.2056155851056,
+       -221.6904173071684
+      ],
+      "micro_mean": -91.52683395047706,
+      "micro_ci95": [
+       -98.14389963222733,
+       -85.48653963392076
+      ],
+      "macro_maha_part": -405.50794639716503,
+      "macro_logdet_part": 164.10090413297624,
+      "class_diff_median": -40.58642332610481,
+      "classes_better": 2,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 11
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": -106.92035225003664,
+      "macro_ci95": [
+       -139.17075079776734,
+       -74.70862067988506
+      ],
+      "micro_mean": -357.42395855524154,
+      "micro_ci95": [
+       -396.4129552671812,
+       -320.8888019927384
+      ],
+      "macro_maha_part": -433.7737303249828,
+      "macro_logdet_part": 326.85337807494625,
+      "class_diff_median": 138.2836023704893,
+      "classes_better": 23,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 8
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -52.08811488436426,
+      "macro_ci95": [
+       -55.64904963268143,
+       -48.739362851171705
+      ],
+      "micro_mean": -32.39970303476204,
+      "micro_ci95": [
+       -34.48362345560816,
+       -30.435814471333863
+      ],
+      "macro_maha_part": -125.58065298323989,
+      "macro_logdet_part": 73.49253809887561,
+      "class_diff_median": -19.73451682141851,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": []
+    },
+    "normalisation": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 2.519400652638554,
+      "macro_ci95": [
+       2.175645680411797,
+       2.8771323981957266
+      ],
+      "micro_mean": 0.3860596337400261,
+      "micro_ci95": [
+       0.34892780471279755,
+       0.4260433340361677
+      ],
+      "macro_maha_part": 7.110242396679441,
+      "macro_logdet_part": -4.590841744040883,
+      "class_diff_median": 1.4125528168786787,
+      "classes_better": 41,
+      "classes_ci_above_0": 37,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 6.02706504111414,
+      "macro_ci95": [
+       4.615030729659902,
+       7.462766976815557
+      ],
+      "micro_mean": 6.285015773169188,
+      "micro_ci95": [
+       4.800397400261285,
+       7.823598045844289
+      ],
+      "macro_maha_part": 17.644381965458244,
+      "macro_logdet_part": -11.617316924344095,
+      "class_diff_median": 5.455916641956534,
+      "classes_better": 8,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 2.627931873832253,
+      "macro_ci95": [
+       2.190200542995118,
+       3.0886376060762855
+      ],
+      "micro_mean": 2.44582048458512,
+      "micro_ci95": [
+       2.0924638660396457,
+       2.826179871995155
+      ],
+      "macro_maha_part": 7.149782619190054,
+      "macro_logdet_part": -4.5218507453578,
+      "class_diff_median": 2.8099467762384243,
+      "classes_better": 19,
+      "classes_ci_above_0": 18,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.36772863046105647,
+      "macro_ci95": [
+       0.31189076271129534,
+       0.4302162368047296
+      ],
+      "micro_mean": 0.10295113824484071,
+      "micro_ci95": [
+       0.09187786635394535,
+       0.11382473318877136
+      ],
+      "macro_maha_part": 1.0370723411128606,
+      "macro_logdet_part": -0.6693437106518039,
+      "class_diff_median": 0.21775707481591053,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": 3.028359459250863,
+      "macro_ci95": [
+       2.6137687012315283,
+       3.4605172682849603
+      ],
+      "micro_mean": 1.7350784969304296,
+      "micro_ci95": [
+       1.553865950017333,
+       1.9256593740777856
+      ],
+      "macro_maha_part": 8.523284253413083,
+      "macro_logdet_part": -5.494924794162216,
+      "class_diff_median": 2.1501905230570855,
+      "classes_better": 34,
+      "classes_ci_above_0": 30,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 0.04731502052162444,
+      "macro_ci95": [
+       0.041628155274907895,
+       0.05327090823859265
+      ],
+      "micro_mean": 0.0319956221103927,
+      "micro_ci95": [
+       0.02846612475059057,
+       0.03551499772076689
+      ],
+      "macro_maha_part": 0.24689623540174543,
+      "macro_logdet_part": -0.19958121488012434,
+      "class_diff_median": 0.04750132941740891,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_lw_shrink": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 186.85098329280268,
+      "macro_ci95": [
+       173.36857384297062,
+       200.71027683750467
+      ],
+      "micro_mean": 41.449107698284244,
+      "micro_ci95": [
+       39.21108201646645,
+       43.85577058780765
+      ],
+      "macro_maha_part": 275.5579396755327,
+      "macro_logdet_part": -88.70695638273003,
+      "class_diff_median": 180.42840151997422,
+      "classes_better": 41,
+      "classes_ci_above_0": 41,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 282.06326743458993,
+      "macro_ci95": [
+       244.38952680198312,
+       320.6572882406969
+      ],
+      "micro_mean": 305.8958212879594,
+      "micro_ci95": [
+       260.02986763900685,
+       353.83768519206365
+      ],
+      "macro_maha_part": 410.81719626488325,
+      "macro_logdet_part": -128.75392883029326,
+      "class_diff_median": 282.37040830343864,
+      "classes_better": 8,
+      "classes_ci_above_0": 8,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 235.69883898461188,
+      "macro_ci95": [
+       212.5150701290742,
+       261.4539304641311
+      ],
+      "micro_mean": 228.48830649201616,
+      "micro_ci95": [
+       207.1882657695836,
+       254.29850107561003
+      ],
+      "macro_maha_part": 339.85778504853664,
+      "macro_logdet_part": -104.15894606392476,
+      "class_diff_median": 236.45152127986228,
+      "classes_better": 19,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 66.15044534432597,
+      "macro_ci95": [
+       59.86936589352085,
+       72.87083258116503
+      ],
+      "micro_mean": 20.19397520232949,
+      "micro_ci95": [
+       18.750867657213252,
+       21.696266707236422
+      ],
+      "macro_maha_part": 111.00286004682701,
+      "macro_logdet_part": -44.85241470250104,
+      "class_diff_median": 47.78483832020849,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": 223.30081510385926,
+      "macro_ci95": [
+       207.10490358671706,
+       240.04919579743367
+      ],
+      "micro_mean": 174.64518959703648,
+      "micro_ci95": [
+       163.9519242421156,
+       185.91401961862968
+      ],
+      "macro_maha_part": 327.4850376462857,
+      "macro_logdet_part": -104.18422254242648,
+      "class_diff_median": 213.1681109397817,
+      "classes_better": 34,
+      "classes_ci_above_0": 34,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 9.808943067670608,
+      "macro_ci95": [
+       8.719784247735598,
+       11.032738582494028
+      ],
+      "micro_mean": 6.490412622005576,
+      "micro_ci95": [
+       5.8510723531763205,
+       7.19681556882929
+      ],
+      "macro_maha_part": 23.340606674732093,
+      "macro_logdet_part": -13.53166360706148,
+      "class_diff_median": 6.71172682672448,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_coupled_shrink": {
+     "all": {
+      "classes": 33,
+      "val_specimens": 4092,
+      "macro_mean": 2861.1369117378945,
+      "macro_ci95": [
+       2283.3834673165497,
+       3583.3651449401955
+      ],
+      "micro_mean": 306.0925671994784,
+      "micro_ci95": [
+       269.5145381421801,
+       348.1314026558126
+      ],
+      "macro_maha_part": 3062.1843627123026,
+      "macro_logdet_part": -201.04745097440818,
+      "class_diff_median": 508.94521154492827,
+      "classes_better": 33,
+      "classes_ci_above_0": 33,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": 9566.622091174708,
+      "macro_ci95": [
+       6887.568298326002,
+       12962.161416401676
+      ],
+      "micro_mean": 9517.50983815005,
+      "micro_ci95": [
+       6845.415608939037,
+       12912.263916252135
+      ],
+      "macro_maha_part": 9998.004355302062,
+      "macro_logdet_part": -431.3822641273546,
+      "class_diff_median": 1280.8797902065717,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 14,
+      "val_specimens": 248,
+      "macro_mean": 1634.2261706677787,
+      "macro_ci95": [
+       1409.465805915523,
+       1867.9838019959648
+      ],
+      "micro_mean": 1689.1635014025887,
+      "micro_ci95": [
+       1448.5284254792682,
+       1941.0103748033612
+      ],
+      "macro_maha_part": 1830.256251109111,
+      "macro_logdet_part": -196.03008044133193,
+      "class_diff_median": 586.1753429826992,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 12,
+      "val_specimens": 3795,
+      "macro_mean": 380.99975498155504,
+      "macro_ci95": [
+       355.09597402470365,
+       407.4739867596386
+      ],
+      "micro_mean": 96.77477063585536,
+      "micro_ci95": [
+       91.8889181294665,
+       101.798801419921
+      ],
+      "macro_maha_part": 453.53883057200005,
+      "macro_logdet_part": -72.53907559044497,
+      "class_diff_median": 80.68723092018426,
+      "classes_better": 12,
+      "classes_ci_above_0": 12,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 26,
+      "val_specimens": 621,
+      "macro_mean": 3622.4816395804237,
+      "macro_ci95": [
+       2889.518556571647,
+       4539.637538966578
+      ],
+      "micro_mean": 1902.8498355067034,
+      "micro_ci95": [
+       1659.7488176765196,
+       2179.792702044425
+      ],
+      "macro_maha_part": 3872.58065120326,
+      "macro_logdet_part": -250.09901162283697,
+      "class_diff_median": 586.1753429826992,
+      "classes_better": 26,
+      "classes_ci_above_0": 26,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 33.28506546564426,
+      "macro_ci95": [
+       30.879837565576707,
+       35.87614999475701
+      ],
+      "micro_mean": 20.415164831634254,
+      "micro_ci95": [
+       19.075068869804507,
+       21.859497723774744
+      ],
+      "macro_maha_part": 52.14100546017382,
+      "macro_logdet_part": -18.855939994529567,
+      "class_diff_median": 12.069920100463612,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Ceratopogonidae",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Ecnomus tenellus",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Heptagenia dalecarlica",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Lepidostoma hirtum",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Polycentropus flavomaculatus",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Psychomyia pusilla",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Tanypodinae",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      }
+     ]
+    },
+    "shrink_at_no_pooling": {
+     "all": {
+      "classes": 33,
+      "val_specimens": 4092,
+      "macro_mean": -2759.124678128139,
+      "macro_ci95": [
+       -3477.817376278634,
+       -2176.2723807971893
+      ],
+      "micro_mean": -332.4447578334212,
+      "micro_ci95": [
+       -375.4647820359409,
+       -295.0863095992085
+      ],
+      "macro_maha_part": -3150.7526391253864,
+      "macro_logdet_part": 391.62796099724716,
+      "class_diff_median": -264.20129473848834,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 31
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": -9273.251105410478,
+      "macro_ci95": [
+       -12686.845323554391,
+       -6574.395107896842
+      ],
+      "micro_mean": -9235.74295442423,
+      "micro_ci95": [
+       -12655.986371434958,
+       -6544.393338835791
+      ],
+      "macro_maha_part": -10023.935942979111,
+      "macro_logdet_part": 750.6848375686352,
+      "class_diff_median": -887.6398848682978,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 6
+     },
+     "64-255": {
+      "classes": 14,
+      "val_specimens": 248,
+      "macro_mean": -1484.2165084016058,
+      "macro_ci95": [
+       -1728.2459191606802,
+       -1248.3238812777824
+      ],
+      "micro_mean": -1558.530671202269,
+      "micro_ci95": [
+       -1818.2067623659898,
+       -1305.9328744039383
+      ],
+      "macro_maha_part": -1870.3053077867894,
+      "macro_logdet_part": 386.0887993851838,
+      "class_diff_median": -412.58931542866014,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 13
+     },
+     ">=256": {
+      "classes": 12,
+      "val_specimens": 3795,
+      "macro_mean": -446.61046022773127,
+      "macro_ci95": [
+       -478.32873460726336,
+       -416.28597185529077
+      ],
+      "micro_mean": -137.36414699062178,
+      "micro_ci95": [
+       -144.08213634365302,
+       -130.92761300459784
+      ],
+      "macro_maha_part": -635.2509317724094,
+      "macro_logdet_part": 188.6404715446781,
+      "class_diff_median": -160.1515503968423,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 12
+     },
+     "n<=p": {
+      "classes": 26,
+      "val_specimens": 621,
+      "macro_mean": -3478.968111947496,
+      "macro_ci95": [
+       -4392.553729532704,
+       -2738.5839922470273
+      ],
+      "micro_mean": -1895.2213943409868,
+      "micro_ci95": [
+       -2178.5647107548057,
+       -1650.4399840714125
+      ],
+      "macro_maha_part": -3951.1175849379256,
+      "macro_logdet_part": 472.1494729904292,
+      "class_diff_median": -412.58931542866014,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 24
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -85.42049537053013,
+      "macro_ci95": [
+       -90.88114285404008,
+       -80.06766197328317
+      ],
+      "micro_mean": -52.84686348850669,
+      "micro_ci95": [
+       -56.06139681055228,
+       -49.76529848432198
+      ],
+      "macro_maha_part": -177.96855467881545,
+      "macro_logdet_part": 92.54805930828532,
+      "class_diff_median": -31.851938251299533,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Ceratopogonidae",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Ecnomus tenellus",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Heptagenia dalecarlica",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Lepidostoma hirtum",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Polycentropus flavomaculatus",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Psychomyia pusilla",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Tanypodinae",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      }
+     ]
+    },
+    "shrink_at_coupled_pooling": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -286.9291346940216,
+      "macro_ci95": [
+       -318.56172235202536,
+       -256.5244814465044
+      ],
+      "micro_mean": -141.80609281752956,
+      "micro_ci95": [
+       -150.95485358488713,
+       -133.01752402806017
+      ],
+      "macro_maha_part": -663.8235821193365,
+      "macro_logdet_part": 376.89444742531475,
+      "class_diff_median": -67.0545432288713,
+      "classes_better": 13,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 24
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 9.407567856153989,
+      "macro_ci95": [
+       -44.213032398421994,
+       61.281664360590156
+      ],
+      "micro_mean": -25.01437799278115,
+      "micro_ci95": [
+       -92.7109521355058,
+       39.033099054475805
+      ],
+      "macro_maha_part": -490.16779138859386,
+      "macro_logdet_part": 499.5753592447478,
+      "class_diff_median": 49.04223290156541,
+      "classes_better": 5,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -396.2316862083398,
+      "macro_ci95": [
+       -458.133113217845,
+       -336.3336399174366
+      ],
+      "micro_mean": -494.5756904039421,
+      "micro_ci95": [
+       -571.4744134174637,
+       -419.4743399439534
+      ],
+      "macro_maha_part": -844.7239069890829,
+      "macro_logdet_part": 448.49222078074297,
+      "class_diff_median": -30.464511998933663,
+      "classes_better": 8,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 9
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -307.92521623897574,
+      "macro_ci95": [
+       -333.75302829812586,
+       -285.1656068442816
+      ],
+      "micro_mean": -111.82376029105139,
+      "micro_ci95": [
+       -119.14313795448751,
+       -105.0696242740527
+      ],
+      "macro_maha_part": -517.5478787851049,
+      "macro_logdet_part": 209.62266254612908,
+      "class_diff_median": -95.9619476773784,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 14
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": -333.24952681314676,
+      "macro_ci95": [
+       -371.29494830243164,
+       -296.63310301141803
+      ],
+      "micro_mean": -533.8042266492084,
+      "micro_ci95": [
+       -577.290319991573,
+       -493.3508547340729
+      ],
+      "macro_maha_part": -769.7820522246816,
+      "macro_logdet_part": 436.53252541153483,
+      "class_diff_median": -70.91221627501413,
+      "classes_better": 13,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 17
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -61.94437297255649,
+      "macro_ci95": [
+       -66.21720263355567,
+       -57.77980780215127
+      ],
+      "micro_mean": -38.92211127887801,
+      "micro_ci95": [
+       -41.445156246020716,
+       -36.4955890951412
+      ],
+      "macro_maha_part": -149.1681558933737,
+      "macro_logdet_part": 87.22378292081723,
+      "class_diff_median": -26.493744977560404,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": []
+    }
+   },
+   "mean_val_loglik": {
+    "lw": 1053.4965875381267,
+    "coupled": 955.9378367895463,
+    "lw_unbiased": 1056.0159881907653,
+    "coupled_no_pooling": -1693.0556099858193,
+    "pooling_lw_shrink": 1242.8669714835678,
+    "pooled_scm": 1158.7532976278992,
+    "class_scm": 1288.7889716179868,
+    "class_identity": 225.81324923257299
+   },
+   "space_seconds": 46.13725163700292
+  },
+  "native_alt": {
+   "dim": 1023,
+   "four_class_original_vs_adapted": {
+    "run": true,
+    "classes": [
+     "Asellus aquaticus",
+     "Caenis horaria",
+     "Caenis luctuosa",
+     "Caenis rivulorum"
+    ],
+    "max_abs_diff_alpha_beta_sigmas": 0.0
+   },
+   "fit_seconds": 9.769703636993654,
+   "pooled": {
+    "asymmetry": 0.0,
+    "min_eig": 1.0986532698957988e-10,
+    "condition": 51335480785.6454,
+    "rank": 1023
+   },
+   "iterations": 36,
+   "residual_alpha_max": 5.252619555973226e-07,
+   "residual_beta_max": 0.0,
+   "coupled_alpha_keep_min_median_max": [
+    0.7929508531716136,
+    0.9872565516890133,
+    1.0
+   ],
+   "coupled_beta_min_median_max": [
+    0.641363206131195,
+    0.8798330706658296,
+    0.9975193370789989
+   ],
+   "classes_beta_0": 0,
+   "classes_beta_1": 0,
+   "classes_alpha_1": 8,
+   "classes_gamma_clipped": 0,
+   "classes_kappa_floored": 16,
+   "classes_n_le_p": 34,
+   "classes_with_constant_coords": 0,
+   "status_counts": {
+    "lw": {
+     "ok": 41
+    },
+    "coupled": {
+     "ok": 41
+    },
+    "lw_unbiased": {
+     "ok": 41
+    },
+    "coupled_no_pooling": {
+     "ok": 33,
+     "failed: numerically singular": 8
+    },
+    "pooling_lw_shrink": {
+     "ok": 41
+    },
+    "pooled_scm": {
+     "ok": 41
+    },
+    "class_scm": {
+     "not defined (n <= d)": 34,
+     "ok": 7
+    },
+    "class_identity": {
+     "ok": 41
+    }
+   },
+   "contrasts": {
+    "coupled_vs_lw": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -97.49086781383114,
+      "macro_ci95": [
+       -124.14321887924011,
+       -70.80994038967033
+      ],
+      "micro_mean": -100.04525128940055,
+      "micro_ci95": [
+       -108.3191011434498,
+       -92.34518349858496
+      ],
+      "macro_maha_part": -381.159919198148,
+      "macro_logdet_part": 283.6690513843168,
+      "class_diff_median": 8.010846799319367,
+      "classes_better": 23,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 15
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 297.1767610571817,
+      "macro_ci95": [
+       257.5483946646033,
+       337.9262419521379
+      ],
+      "micro_mean": 286.94488173137177,
+      "micro_ci95": [
+       249.1050714749697,
+       325.1415426182315
+      ],
+      "macro_maha_part": -62.63971893368924,
+      "macro_logdet_part": 359.81647999087096,
+      "class_diff_median": 309.6723362613824,
+      "classes_better": 8,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -157.31940168741167,
+      "macro_ci95": [
+       -211.37634719791401,
+       -105.17393751480624
+      ],
+      "micro_mean": -263.07630344993964,
+      "micro_ci95": [
+       -332.4392709237901,
+       -195.8832806681959
+      ],
+      "macro_maha_part": -496.898312069065,
+      "macro_logdet_part": 339.57891038165326,
+      "class_diff_median": 138.3949285528806,
+      "classes_better": 13,
+      "classes_ci_above_0": 11,
+      "classes_ci_below_0": 4
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -241.8193597688364,
+      "macro_ci95": [
+       -264.6542670453616,
+       -222.10047317900393
+      ],
+      "micro_mean": -91.6565778801753,
+      "micro_ci95": [
+       -98.29383671015123,
+       -85.64718023330512
+      ],
+      "macro_maha_part": -406.0979290244513,
+      "macro_logdet_part": 164.27856925561488,
+      "class_diff_median": -40.81707090315622,
+      "classes_better": 2,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 11
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": -106.80087564367419,
+      "macro_ci95": [
+       -139.08633635619614,
+       -74.63928492301254
+      ],
+      "micro_mean": -357.37355125708547,
+      "micro_ci95": [
+       -396.3965570016553,
+       -320.8782989648514
+      ],
+      "macro_maha_part": -433.71502271548025,
+      "macro_logdet_part": 326.91414707180604,
+      "class_diff_median": 139.08580457323933,
+      "classes_better": 23,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 8
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -52.27082978316496,
+      "macro_ci95": [
+       -55.865741741571334,
+       -48.92502108799198
+      ],
+      "micro_mean": -32.50676633677569,
+      "micro_ci95": [
+       -34.59086611919468,
+       -30.547020789168183
+      ],
+      "macro_maha_part": -125.89227354253377,
+      "macro_logdet_part": 73.62144375936883,
+      "class_diff_median": -19.752734051990622,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": []
+    },
+    "normalisation": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 2.5177449149549345,
+      "macro_ci95": [
+       2.1741928278334615,
+       2.8762524003429424
+      ],
+      "micro_mean": 0.3858611925535962,
+      "micro_ci95": [
+       0.34870741823607976,
+       0.4257680280462724
+      ],
+      "macro_maha_part": 7.108586658995638,
+      "macro_logdet_part": -4.590841744040706,
+      "class_diff_median": 1.4153944313357898,
+      "classes_better": 41,
+      "classes_ci_above_0": 36,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 6.021034707845624,
+      "macro_ci95": [
+       4.610447703567291,
+       7.459996787482085
+      ],
+      "micro_mean": 6.279099240130057,
+      "micro_ci95": [
+       4.79697976003816,
+       7.817416857862615
+      ],
+      "macro_maha_part": 17.63835163218955,
+      "macro_logdet_part": -11.617316924343925,
+      "class_diff_median": 5.443214140982063,
+      "classes_better": 8,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 2.6269938642450636,
+      "macro_ci95": [
+       2.1894581805643663,
+       3.087368069123147
+      ],
+      "micro_mean": 2.4447228129473157,
+      "micro_ci95": [
+       2.0914202325449325,
+       2.8252480654473344
+      ],
+      "macro_maha_part": 7.148844609602741,
+      "macro_logdet_part": -4.52185074535768,
+      "class_diff_median": 2.807251976563281,
+      "classes_better": 19,
+      "classes_ci_above_0": 17,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 0.36759860212365053,
+      "macro_ci95": [
+       0.3117236640939012,
+       0.4300912640110596
+      ],
+      "micro_mean": 0.10292789293414135,
+      "micro_ci95": [
+       0.09183615203423484,
+       0.113812038242224
+      ],
+      "macro_maha_part": 1.0369423127751958,
+      "macro_logdet_part": -0.6693437106515441,
+      "class_diff_median": 0.21855387344359223,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": 3.0263631936999884,
+      "macro_ci95": [
+       2.612013973761923,
+       3.45930165827457
+      ],
+      "micro_mean": 1.7341360993094912,
+      "micro_ci95": [
+       1.5533625676921117,
+       1.924109900920411
+      ],
+      "macro_maha_part": 8.521287987862012,
+      "macro_logdet_part": -5.494924794162029,
+      "class_diff_median": 2.149830265535497,
+      "classes_better": 34,
+      "classes_ci_above_0": 29,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 0.04731327533610236,
+      "macro_ci95": [
+       0.041623301841794365,
+       0.05325887409423836
+      ],
+      "micro_mean": 0.0319924400169726,
+      "micro_ci95": [
+       0.028458770782042103,
+       0.035511500836582895
+      ],
+      "macro_maha_part": 0.24689449021610158,
+      "macro_logdet_part": -0.19958121487999442,
+      "class_diff_median": 0.047506698328458115,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_lw_shrink": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": 186.81455180163704,
+      "macro_ci95": [
+       173.28214788549286,
+       200.6685880423284
+      ],
+      "micro_mean": 41.44141004937915,
+      "micro_ci95": [
+       39.21182047349202,
+       43.85217208683165
+      ],
+      "macro_maha_part": 275.51393197884045,
+      "macro_logdet_part": -88.69938017720332,
+      "class_diff_median": 180.2617753018034,
+      "classes_better": 41,
+      "classes_ci_above_0": 41,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 281.99080967618914,
+      "macro_ci95": [
+       244.3545842074737,
+       320.61126854627753
+      ],
+      "micro_mean": 305.8193812905381,
+      "micro_ci95": [
+       259.90336396036554,
+       353.67573939973227
+      ],
+      "macro_maha_part": 410.6858792199123,
+      "macro_logdet_part": -128.6950695437231,
+      "class_diff_median": 282.5593607937584,
+      "classes_better": 8,
+      "classes_ci_above_0": 8,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": 235.65405225869557,
+      "macro_ci95": [
+       212.47260155625847,
+       261.40920805204547
+      ],
+      "micro_mean": 228.45620742004837,
+      "micro_ci95": [
+       207.11098766830892,
+       254.20761663561947
+      ],
+      "macro_maha_part": 339.8190560616252,
+      "macro_logdet_part": -104.16500380292962,
+      "class_diff_median": 236.55632261322182,
+      "classes_better": 19,
+      "classes_ci_above_0": 19,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": 66.14593953874213,
+      "macro_ci95": [
+       59.858465135927254,
+       72.87325104577886
+      ],
+      "micro_mean": 20.189612729506727,
+      "micro_ci95": [
+       18.74298690917358,
+       21.69168377587956
+      ],
+      "macro_maha_part": 111.0015794430199,
+      "macro_logdet_part": -44.85563990427779,
+      "class_diff_median": 47.79607352869258,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": 223.25773165844345,
+      "macro_ci95": [
+       207.07503762324183,
+       239.95545471142037
+      ],
+      "micro_mean": 174.6208910648323,
+      "micro_ci95": [
+       163.9701409564738,
+       185.8574891566589
+      ],
+      "macro_maha_part": 327.4314275391645,
+      "macro_logdet_part": -104.17369588072094,
+      "class_diff_median": 213.30127296892624,
+      "classes_better": 34,
+      "classes_ci_above_0": 34,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 9.804821068577295,
+      "macro_ci95": [
+       8.713057082946671,
+       11.034357263002477
+      ],
+      "micro_mean": 6.487072047340019,
+      "micro_ci95": [
+       5.84835400220713,
+       7.191613417315302
+      ],
+      "macro_maha_part": 23.343239257266486,
+      "macro_logdet_part": -13.53841818868919,
+      "class_diff_median": 6.719305302005867,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": []
+    },
+    "pooling_at_coupled_shrink": {
+     "all": {
+      "classes": 33,
+      "val_specimens": 4092,
+      "macro_mean": 2964.9473372879656,
+      "macro_ci95": [
+       2349.6832587657564,
+       3738.2267367796585
+      ],
+      "micro_mean": 311.0179881576975,
+      "micro_ci95": [
+       272.40557455771506,
+       355.5578926608286
+      ],
+      "macro_maha_part": 3166.6868384814697,
+      "macro_logdet_part": -201.7395011935045,
+      "class_diff_median": 510.7780448464537,
+      "classes_better": 33,
+      "classes_ci_above_0": 33,
+      "classes_ci_below_0": 0
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": 10100.74326441335,
+      "macro_ci95": [
+       7245.212095274322,
+       13736.250854412183
+      ],
+      "micro_mean": 10051.925389772361,
+      "micro_ci95": [
+       7203.271591675656,
+       13686.673196446165
+      ],
+      "macro_maha_part": 10535.997666320092,
+      "macro_logdet_part": -435.2544019067464,
+      "class_diff_median": 1271.9642447468473,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "64-255": {
+      "classes": 14,
+      "val_specimens": 248,
+      "macro_mean": 1609.629858885088,
+      "macro_ci95": [
+       1388.2825872744193,
+       1839.1369920212476
+      ],
+      "micro_mean": 1661.7571227807368,
+      "micro_ci95": [
+       1427.5642486805805,
+       1908.915149144399
+      ],
+      "macro_maha_part": 1805.1861246413785,
+      "macro_logdet_part": -195.55626575629017,
+      "class_diff_median": 585.3340550883499,
+      "classes_better": 14,
+      "classes_ci_above_0": 14,
+      "classes_ci_below_0": 0
+     },
+     ">=256": {
+      "classes": 12,
+      "val_specimens": 3795,
+      "macro_mean": 383.60343793484964,
+      "macro_ci95": [
+       357.3356713489245,
+       410.5341325278274
+      ],
+      "micro_mean": 96.97641554488268,
+      "micro_ci95": [
+       92.06940204824944,
+       102.05833069345302
+      ],
+      "macro_maha_part": 456.3396883890464,
+      "macro_logdet_part": -72.73625045419674,
+      "class_diff_median": 81.10758408494223,
+      "classes_better": 12,
+      "classes_ci_above_0": 12,
+      "classes_ci_below_0": 0
+     },
+     "n<=p": {
+      "classes": 26,
+      "val_specimens": 621,
+      "macro_mean": 3754.2158790508106,
+      "macro_ci95": [
+       2973.6589471536727,
+       4735.571522640314
+      ],
+      "micro_mean": 1935.003764439682,
+      "micro_ci95": [
+       1682.1040870751153,
+       2227.605198780316
+      ],
+      "macro_maha_part": 4005.1875118662497,
+      "macro_logdet_part": -250.97163281543925,
+      "class_diff_median": 585.3340550883499,
+      "classes_better": 26,
+      "classes_ci_above_0": 26,
+      "classes_ci_below_0": 0
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": 33.37846788311369,
+      "macro_ci95": [
+       30.989607646146887,
+       35.961369052556854
+      ],
+      "micro_mean": 20.469106834991525,
+      "micro_ci95": [
+       19.135627317473507,
+       21.91590950283731
+      ],
+      "macro_maha_part": 52.25576590943196,
+      "macro_logdet_part": -18.877298026318254,
+      "class_diff_median": 12.090702056979884,
+      "classes_better": 7,
+      "classes_ci_above_0": 7,
+      "classes_ci_below_0": 0
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Ceratopogonidae",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Ecnomus tenellus",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Heptagenia dalecarlica",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Lepidostoma hirtum",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Polycentropus flavomaculatus",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Psychomyia pusilla",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      },
+      {
+       "taxon_group": "Tanypodinae",
+       "status_coupled": "ok",
+       "status_coupled_no_pooling": "failed: numerically singular"
+      }
+     ]
+    },
+    "shrink_at_no_pooling": {
+     "all": {
+      "classes": 33,
+      "val_specimens": 4092,
+      "macro_mean": -2862.7015442219276,
+      "macro_ci95": [
+       -3637.31522803299,
+       -2244.672394543854
+      ],
+      "micro_mean": -337.3560400077169,
+      "micro_ci95": [
+       -382.8498555382891,
+       -298.0005594892737
+      ],
+      "macro_maha_part": -3255.129042255432,
+      "macro_logdet_part": 392.42749803350495,
+      "class_diff_median": -264.1064955656316,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 31
+     },
+     "15-63": {
+      "classes": 7,
+      "val_specimens": 49,
+      "macro_mean": -9807.791402968358,
+      "macro_ci95": [
+       -13465.9115654662,
+       -6933.974620717381
+      ],
+      "micro_mean": -9770.579443424307,
+      "micro_ci95": [
+       -13430.798429493208,
+       -6905.882384102749
+      ],
+      "macro_maha_part": -10563.019538451672,
+      "macro_logdet_part": 755.228135483317,
+      "class_diff_median": -879.4884873664207,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 6
+     },
+     "64-255": {
+      "classes": 14,
+      "val_specimens": 248,
+      "macro_mean": -1458.7765257947995,
+      "macro_ci95": [
+       -1698.8791484100143,
+       -1227.027639163836
+      ],
+      "micro_mean": -1530.1650807515487,
+      "micro_ci95": [
+       -1784.3241248910458,
+       -1283.4793935900047
+      ],
+      "macro_maha_part": -1844.1269049674827,
+      "macro_logdet_part": 385.350379172683,
+      "class_diff_median": -414.450107888121,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 13
+     },
+     ">=256": {
+      "classes": 12,
+      "val_specimens": 3795,
+      "macro_mean": -449.31164811815944,
+      "macro_ci95": [
+       -481.42527881234116,
+       -418.65070456946705
+      ],
+      "micro_mean": -137.6077952456923,
+      "micro_ci95": [
+       -144.30277937921605,
+       -131.13917369920327
+      ],
+      "macro_maha_part": -638.3620796435665,
+      "macro_logdet_part": 189.0504315254068,
+      "class_diff_median": -160.37404009350985,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 12
+     },
+     "n<=p": {
+      "classes": 26,
+      "val_specimens": 621,
+      "macro_mean": -3610.356718566627,
+      "macro_ci95": [
+       -4594.936204808993,
+       -2825.2961311965173
+      ],
+      "micro_mean": -1926.683758732809,
+      "micro_ci95": [
+       -2225.3030139832053,
+       -1671.201939966396
+      ],
+      "macro_maha_part": -4083.4805329551527,
+      "macro_logdet_part": 473.1238143885267,
+      "class_diff_median": -414.450107888121,
+      "classes_better": 1,
+      "classes_ci_above_0": 1,
+      "classes_ci_below_0": 24
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -85.69661094161474,
+      "macro_ci95": [
+       -91.16214446446718,
+       -80.3553747545674
+      ],
+      "micro_mean": -53.00786561178418,
+      "micro_ci95": [
+       -56.192204725066745,
+       -49.92589638996191
+      ],
+      "macro_maha_part": -178.39493394218184,
+      "macro_logdet_part": 92.69832300056707,
+      "class_diff_median": -31.890942807298966,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": [
+      {
+       "taxon_group": "Centroptilum luteolum",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Ceratopogonidae",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Ecnomus tenellus",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Heptagenia dalecarlica",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Lepidostoma hirtum",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Polycentropus flavomaculatus",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Psychomyia pusilla",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      },
+      {
+       "taxon_group": "Tanypodinae",
+       "status_coupled_no_pooling": "failed: numerically singular",
+       "status_lw_unbiased": "ok"
+      }
+     ]
+    },
+    "shrink_at_coupled_pooling": {
+     "all": {
+      "classes": 41,
+      "val_specimens": 4382,
+      "macro_mean": -286.8231645304231,
+      "macro_ci95": [
+       -318.4499904011732,
+       -256.4594048048447
+      ],
+      "micro_mean": -141.8725225313333,
+      "micro_ci95": [
+       -151.01888521173512,
+       -133.06995837224724
+      ],
+      "macro_maha_part": -663.782437835984,
+      "macro_logdet_part": 376.9592733055608,
+      "class_diff_median": -66.88679519359411,
+      "classes_better": 13,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 24
+     },
+     "15-63": {
+      "classes": 8,
+      "val_specimens": 65,
+      "macro_mean": 9.164916673146958,
+      "macro_ci95": [
+       -44.706844454526646,
+       61.17960141640087
+      ],
+      "micro_mean": -25.153598799296418,
+      "micro_ci95": [
+       -92.85321411208862,
+       38.91992916055826
+      ],
+      "macro_maha_part": -490.96394978579093,
+      "macro_logdet_part": 500.12886645893803,
+      "class_diff_median": 48.98375611139531,
+      "classes_better": 5,
+      "classes_ci_above_0": 4,
+      "classes_ci_below_0": 1
+     },
+     "64-255": {
+      "classes": 19,
+      "val_specimens": 358,
+      "macro_mean": -395.60044781035236,
+      "macro_ci95": [
+       -457.4017921684344,
+       -335.88130036479566
+      ],
+      "micro_mean": -493.97723368293543,
+      "micro_ci95": [
+       -570.7979160254256,
+       -418.79792923573416
+      ],
+      "macro_maha_part": -843.8662127402928,
+      "macro_logdet_part": 448.2657649299405,
+      "class_diff_median": -30.32441668709824,
+      "classes_better": 8,
+      "classes_ci_above_0": 5,
+      "classes_ci_below_0": 9
+     },
+     ">=256": {
+      "classes": 14,
+      "val_specimens": 3959,
+      "macro_mean": -308.3328979097022,
+      "macro_ci95": [
+       -334.215337679501,
+       -285.6132559863547
+      ],
+      "micro_mean": -111.94911850261617,
+      "micro_ci95": [
+       -119.27181443050324,
+       -105.15206588924745
+      ],
+      "macro_maha_part": -518.1364507802464,
+      "macro_logdet_part": 209.80355287054422,
+      "class_diff_median": -96.01402261975534,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 14
+     },
+     "n<=p": {
+      "classes": 34,
+      "val_specimens": 911,
+      "macro_mean": -333.0849704958177,
+      "macro_ci95": [
+       -371.1370256277844,
+       -296.4940647033448
+      ],
+      "micro_mean": -533.7285784212273,
+      "micro_ci95": [
+       -577.2114012385961,
+       -493.27281570122915
+      ],
+      "macro_maha_part": -769.6677382425069,
+      "macro_logdet_part": 436.58276774668906,
+      "class_diff_median": -70.8204113308959,
+      "classes_better": 13,
+      "classes_ci_above_0": 9,
+      "classes_ci_below_0": 17
+     },
+     "n>p": {
+      "classes": 7,
+      "val_specimens": 3471,
+      "macro_mean": -62.12296412707836,
+      "macro_ci95": [
+       -66.38948915577073,
+       -57.955432000142835
+      ],
+      "micro_mean": -39.02583082413269,
+      "micro_ci95": [
+       -41.52134671229566,
+       -36.58872330804219
+      ],
+      "macro_maha_part": -149.48240729001637,
+      "macro_logdet_part": 87.359443162938,
+      "class_diff_median": -26.519546052324948,
+      "classes_better": 0,
+      "classes_ci_above_0": 0,
+      "classes_ci_below_0": 7
+     },
+     "numerical_failures": []
+    }
+   },
+   "mean_val_loglik": {
+    "lw": 1053.631874548789,
+    "coupled": 956.141006734958,
+    "lw_unbiased": 1056.149619463744,
+    "coupled_no_pooling": -1796.4966465220893,
+    "pooling_lw_shrink": 1242.9641712653813,
+    "pooled_scm": 1158.7801779752333,
+    "class_scm": 1288.8158462927227,
+    "class_identity": 225.80236866395836
+   },
+   "space_seconds": 33.04513892199611
+  }
+ }
+}

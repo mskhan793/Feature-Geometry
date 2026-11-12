@@ -1,0 +1,15 @@
+{
+ "spaces": [
+  "pca16",
+  "pca64"
+ ],
+ "class_folds_here": 408,
+ "class_folds_reference": 408,
+ "matched": 408,
+ "only_here": 0,
+ "only_reference": 0,
+ "max_abs_diff_val_loglik_lw": 0.0,
+ "max_abs_diff_alpha_lw": 0.0,
+ "n_train_equal": true,
+ "n_val_equal": true
+}

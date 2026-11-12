@@ -1,0 +1,42 @@
+{
+ "fold0": {
+  "total_seconds": 193.33795921399724,
+  "max_rss_gb": 10.303462982177734,
+  "pca64_seconds": 0.9851947569986805,
+  "pca16_seconds": 0.7086453679949045,
+  "native_seconds": 29.86541520798346,
+  "native_alt_seconds": 31.101535398047417
+ },
+ "fold1": {
+  "total_seconds": 230.63422718201764,
+  "max_rss_gb": 10.303180694580078,
+  "pca64_seconds": 1.128916805027984,
+  "pca16_seconds": 0.8333693940076046,
+  "native_seconds": 46.13725163700292,
+  "native_alt_seconds": 33.04513892199611
+ },
+ "fold2": {
+  "total_seconds": 266.58816630998626,
+  "max_rss_gb": 10.248764038085938,
+  "pca64_seconds": 0.9983420459902845,
+  "pca16_seconds": 0.6953081879764795,
+  "native_seconds": 38.94371197902365,
+  "native_alt_seconds": 33.67794550204417
+ },
+ "fold3": {
+  "total_seconds": 244.44205765996594,
+  "max_rss_gb": 10.277397155761719,
+  "pca64_seconds": 1.2218100530444644,
+  "pca16_seconds": 0.8171117780148052,
+  "native_seconds": 40.56445566401817,
+  "native_alt_seconds": 37.50511684600497
+ },
+ "fold4": {
+  "total_seconds": 260.2276494259713,
+  "max_rss_gb": 10.242382049560547,
+  "pca64_seconds": 1.1338597189751454,
+  "pca16_seconds": 0.8056278320145793,
+  "native_seconds": 44.597844985022675,
+  "native_alt_seconds": 45.48613869497785
+ }
+}
