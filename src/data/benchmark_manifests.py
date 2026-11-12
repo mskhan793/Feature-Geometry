@@ -97,10 +97,11 @@ def bioscan5m(index: Path) -> pd.DataFrame:
     return _finish(d, "bioscan5m", "BIOSCAN-5M cropped_256", ["split"])
 
 
-def df24(train_csv: Path, test_csv: Path, assignment: Path) -> pd.DataFrame:
+def df24(train_csv: Path, test_csv: Path, assignment: Path, content: pd.Series | None = None) -> pd.DataFrame:
     """Official train / pubtest; frozen derived validation (seed 20261110) by observation; images not downloaded.
     Label = ``scientificName`` (one-to-one with the official ``class_id``, 1604 classes; the ``species`` column merges
-    25 names with several class ids and is empty for one class), coarse = genus."""
+    25 names with several class ids and is empty for one class), coarse = genus. With ``content`` (the 300-px archive's
+    member table) every image is mapped to its archive member; the unit stays the observation."""
     tr, te = pd.read_csv(train_csv, low_memory=False), pd.read_csv(test_csv, low_memory=False)
     a = pd.read_csv(assignment)[["observationID", "split"]]
     tr = tr.merge(a, on="observationID", how="left", validate="many_to_one")
@@ -109,7 +110,14 @@ def df24(train_csv: Path, test_csv: Path, assignment: Path) -> pd.DataFrame:
     d = pd.concat([tr, te], ignore_index=True)
     assert d.groupby("class_id").scientificName.nunique().max() == 1 and d.groupby("scientificName").class_id.nunique().max() == 1
     d = d.rename(columns={"image_path": "source_id", "observationID": "unit_id", "scientificName": "label", "genus": "coarse_label"})
-    d["image_ref"], d["available"] = d.source_id, False
+    if content is None:
+        d["image_ref"], d["available"] = d.source_id, False
+    else:  # 300-px archive (DF20-300px.tar.gz): same names, lower-case extension; matched one-to-one, case-insensitive
+        member = pd.Series(content.index, index=content.index.str.rsplit("/", n=1).str[-1].str.lower())
+        assert member.index.is_unique
+        d["image_ref"] = d.source_id.str.lower().map(member)
+        d["available"] = d.image_ref.notna()
+        assert d.available.all(), f"{(~d.available).sum()} DF24 images missing from the archive"
     d["val_origin"], d["derived_seed"] = "derived", 20261110
     return _finish(d, "df24", "DanishFungi2024 train/pubtest", ["split"])
 

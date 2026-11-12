@@ -5,8 +5,10 @@ by member (.zip; ``image_ref`` = "<zip name>:<member>"). Every stored image is c
 with --content, against the sha1 recorded by scripts/lumi/hash_archive_members.py; a missing image is an error.
 Also writes the extraction manifest (img = source_id, hdf5_row, split, label, unit_id) for extract_features.py --hdf5.
 
+``--splits`` keeps only the manifest rows of those splits (e.g. train val: official test images are never packed).
+
 Usage: pack_archive_hdf5.py --manifest DATASET.parquet --archives A.tar.gz|DIR_WITH_ZIPS ... [--content content.tsv]
-                            --out FILE.h5 --out-manifest extract.parquet
+                            [--splits train val] --out FILE.h5 --out-manifest extract.parquet
 """
 
 from __future__ import annotations
@@ -46,10 +48,13 @@ def main():
     ap.add_argument("--manifest", required=True, type=Path)
     ap.add_argument("--archives", required=True, nargs="+", type=Path)
     ap.add_argument("--content", type=Path)
+    ap.add_argument("--splits", nargs="*")
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--out-manifest", required=True, type=Path)
     a = ap.parse_args()
     m = pd.read_parquet(a.manifest)
+    if a.splits:
+        m = m[m.split.isin(a.splits)].reset_index(drop=True)
     assert m.source_id.is_unique and m.image_ref.is_unique
     row = {ref: i for i, ref in enumerate(m.image_ref)}
     sha = pd.read_csv(a.content, sep="\t", header=None, names=["ref", "sha1"]).set_index("ref").sha1 if a.content else None
@@ -74,7 +79,8 @@ def main():
     out = m.rename(columns={"source_id": "img"}).assign(hdf5_row=np.arange(len(m)))
     split_cols = [c for c in out.columns if c == "split" or c.startswith("fold")]
     out[["img", "hdf5_row", "unit_id", "label", *split_cols]].to_parquet(a.out_manifest, index=False)
-    report = {"manifest": str(a.manifest), "manifest_sha256": file_sha256(a.manifest), "images": len(m),
+    report = {"manifest": str(a.manifest), "manifest_sha256": file_sha256(a.manifest), "splits": a.splits, "images": len(m),
+              "images_per_split": m.split.value_counts().to_dict(),
               "archives": {str(p): (file_sha256(p) if p.is_file() else "zip folder") for p in a.archives},
               "content_checked": a.content is not None, "hdf5_sha256": file_sha256(a.out), "hdf5_bytes": a.out.stat().st_size,
               "extraction_manifest": str(a.out_manifest)}

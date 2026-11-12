@@ -25,9 +25,12 @@
    "sha256": "688564d2f4526060d50c6730cb4086fd732410910a5c5ac2f03e638185490817"
   }
  },
- "content_table": null,
+ "content_table": {
+  "path": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/sources/df24/content.tsv",
+  "sha256": "94a50c826e7d3ca8464478b14f037bd18c4c23abe140607ac646bde66dc57db6"
+ },
  "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/df24.parquet",
- "manifest_sha256": "1f6eb9d1ac0eea6c3d23e5d2ccf8fac9e0b560cddfb396cd3eeecd17bcdeb6d1",
+ "manifest_sha256": "60bd131d57c10a8c99670e0995e90484dda798fdcba0a4ad026905757e2da67f",
  "support": {
   "split": {
    "split_column": "split",
@@ -56,7 +59,7 @@
     "p90": 217.70000000000005,
     "p100": 906.0
    },
-   "images_available": 0,
+   "images_available": 295938,
    "units_in_several_splits": 0,
    "units_with_several_labels": 0,
    "images_sharing_a_unit": 191615

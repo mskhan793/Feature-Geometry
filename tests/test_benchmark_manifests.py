@@ -97,6 +97,9 @@ def test_pack_archive_hdf5_tar_and_zip(tmp_path):
     with h5py.File(tmp_path / "o.h5") as h:
         assert [v.decode() for v in h["metadata/img"][:]] == ["c", "a"] and h["images"][0].tobytes() == b"c" * 10
     assert pd.read_parquet(tmp_path / "x.parquet").hdf5_row.tolist() == [0, 1]
+    run(["scripts/benchmark/pack_archive_hdf5.py", "--manifest", str(tmp_path / "m.parquet"), "--archives", str(tmp_path / "t.tar.gz"),
+         "--splits", "val", "--out", str(tmp_path / "v.h5"), "--out-manifest", str(tmp_path / "v.parquet")])
+    assert pd.read_parquet(tmp_path / "v.parquet").img.tolist() == ["a"]  # only the requested split is packed
     (tmp_path / "zips").mkdir()
     with zipfile.ZipFile(tmp_path / "zips" / "p.zip", "w") as z:
         z.writestr("img/q.jpg", b"qq")
