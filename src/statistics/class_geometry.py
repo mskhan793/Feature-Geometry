@@ -7,7 +7,7 @@
 - ``direction_separation``: separation along the centroid-difference direction ``u`` (d'): difference of the mean
   projections over the root mean of their variances. ``u`` comes from one set (train) and may be applied to another
   (val) so the separation is not measured on the data that chose the direction.
-- ``subspace_overlap``: ``||U_a^T U_b||_F^2 / k`` for the top-``k`` principal directions (0 = orthogonal, 1 = same).
+- ``axes_overlap``: ``||U_a^T U_b||_F^2 / k`` for the top-``k`` principal directions (0 = orthogonal, 1 = same).
 """
 
 from __future__ import annotations
@@ -51,6 +51,6 @@ def direction_separation(xa: np.ndarray, xb: np.ndarray, u: np.ndarray) -> float
     return float(abs(pa.mean() - pb.mean()) / np.sqrt((pa.var(ddof=1) + pb.var(ddof=1)) / 2))
 
 
-def subspace_overlap(xa: np.ndarray, xb: np.ndarray, k: int) -> float:
-    ua, ub = principal_axes(xa)[1][:, :k], principal_axes(xb)[1][:, :k]
-    return float(((ua.T @ ub) ** 2).sum() / k)
+def axes_overlap(ua: np.ndarray, ub: np.ndarray) -> float:
+    """Subspace overlap of two sets of top-k principal axes (columns of ``principal_axes``), computed once per class."""
+    return float(((ua.T @ ub) ** 2).sum() / ua.shape[1])

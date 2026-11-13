@@ -23,10 +23,15 @@ leave_target_out = pool_bal_loo - pool_bal (diagnostic); each pool vs lw; couple
 Groups: all, train-size strata, n_c <= d / > d, taxonomic level used (genus / family / any) vs global fallback.
 Numerical failures (covariance numerically singular / not PD) are reported, never jittered.
 
+``--no-taxonomy`` (task.md a82e89e, author instruction 2026-11-13: taxonomy not considered for now): only the arms
+that need no taxonomy (lw, coupled, pool_spec, pool_bal, pool_bal_loo) and their contrasts; pool_tax and pool_near
+(whose donor count is set by the taxonomic donors) are not run. The remaining arms are computed exactly as above.
+
 Writes perclass.csv, perspecimen.csv and summary.json to --out.
 
 Usage: balanced_taxonomic_pooling.py --dataset finbenthic2 --cohort selection.parquet --caches MANIFEST=CACHE ...
-       --fold foldK --out DIR (--fin-table T | --aqua-mapping M --aqua-table T) [--spaces pca64 pca16 native native_alt]
+       --fold foldK --out DIR (--fin-table T | --aqua-mapping M --aqua-table T | --no-taxonomy)
+       [--spaces pca64 pca16 native native_alt]
 """
 
 from __future__ import annotations
@@ -55,14 +60,21 @@ CONTRASTS = {"coupled_vs_lw": ("coupled", "lw"), "balancing": ("pool_bal", "pool
              "leave_target_out": ("pool_bal_loo", "pool_bal"), "pool_spec_vs_lw": ("pool_spec", "lw"),
              "pool_bal_vs_lw": ("pool_bal", "lw"), "pool_tax_vs_lw": ("pool_tax", "lw")}
 NOT_DEFINED = "not defined (no taxonomic level)"
+TAXONOMY_ARMS = ("pool_tax", "pool_near")
+TAXONOMY_CONTRASTS = ("taxonomy", "taxonomy_vs_nearest", "pool_tax_vs_lw")
 
 
-def groups() -> dict:
+def groups(taxonomy) -> dict:
+    if taxonomy is None:
+        return class_groups()
     return {**class_groups(), "taxonomy_used": lambda r: r.level != "global", "fallback": lambda r: r.level == "global",
             "genus": lambda r: r.level == "genus", "family": lambda r: r.level == "family"}
 
 
 def run_space(name, d, z_tr, z_va, f, taxonomy):
+    """One space; ``taxonomy`` None = the no-taxonomy arms only."""
+    arms = ARMS if taxonomy is not None else [m for m in ARMS if m not in TAXONOMY_ARMS]
+    contrasts = CONTRASTS if taxonomy is not None else {k: v for k, v in CONTRASTS.items() if k not in TAXONOMY_CONTRASTS}
     assert np.isfinite(z_tr).all() and np.isfinite(z_va).all(), f"non-finite inputs in {name}"
     y_tr, y_va, eligible = f.y_tr, f.y_va, f.eligible
     candidates = sorted(c for c in f.n_tr.index if f.n_tr[c] >= MIN_TRAIN)
@@ -76,19 +88,20 @@ def run_space(name, d, z_tr, z_va, f, taxonomy):
     p_spec, p_bal = fit.pooled, pool(scm, n, eligible, "balanced")
     assert np.allclose(p_spec, pool(scm, n, eligible, "specimen"))
     rng = np.random.default_rng([SEED, d])
-    boots = {c: np.empty((N_BOOT, len(eligible))) for c in CONTRASTS}
+    boots = {c: np.empty((N_BOOT, len(eligible))) for c in contrasts}
     rows, spec = [], []
     for k, c in enumerate(eligible):
         zt, zv = z_tr[y_tr == c], z_va[y_va == c]
         mu = zt.mean(0)
         lw_cov, a_lw = lw_class_covariance(zt)
         be = float(fit.beta[k])
-        level, tax_donors = taxonomy_donors(c, taxonomy, candidates, n, d)
         loo = [o for o in candidates if o != c]
-        near = nearest_donors(c, means, candidates, len(tax_donors), n, d) if level != "global" else []
-        pools = {"pool_spec": p_spec, "pool_bal": p_bal, "pool_bal_loo": pool(scm, n, loo, "balanced"),
-                 "pool_tax": pool(scm, n, tax_donors, "balanced"),
-                 "pool_near": pool(scm, n, near, "balanced") if near else None}
+        pools = {"pool_spec": p_spec, "pool_bal": p_bal, "pool_bal_loo": pool(scm, n, loo, "balanced")}
+        if taxonomy is not None:
+            level, tax_donors = taxonomy_donors(c, taxonomy, candidates, n, d)
+            near = nearest_donors(c, means, candidates, len(tax_donors), n, d) if level != "global" else []
+            pools |= {"pool_tax": pool(scm, n, tax_donors, "balanced"),
+                      "pool_near": pool(scm, n, near, "balanced") if near else None}
         covs = {"lw": lw_cov, "coupled": fit.sigmas[k],
                 **{m: coupled_covariance(scm[c], p, 1 - a_lw, be) if p is not None else None for m, p in pools.items()}}
         parts = {m: score(zv, mu, cov) if cov is not None else (np.full(len(zv), np.nan),) * 2 + (NOT_DEFINED,)
@@ -96,17 +109,19 @@ def run_space(name, d, z_tr, z_va, f, taxonomy):
         ll = {m: loglik(p, d) for m, p in parts.items()}
         draws = rng.integers(0, len(zv), size=(N_BOOT, len(zv)))
         row = {"space": name, "dim": d, "taxon_group": c, "n_train": len(zt), "n_val": len(zv), "stratum": stratum(len(zt)),
-               "n_le_p": len(zt) <= d, "rank": taxonomy.loc[c, "rank"] if c in taxonomy.index else None,
-               "level": level, "donor_classes": len(tax_donors), "donor_df": donor_df(n, tax_donors),
-               "donors": ";".join(tax_donors) if level != "global" else "", "near_donors": ";".join(near),
-               "near_tax_jaccard": len(set(near) & set(tax_donors)) / len(set(near) | set(tax_donors)) if near else np.nan,
-               "coupled_beta": be, "coupled_alpha_keep": float(fit.alpha[k]), "lw_alpha_shrink": a_lw,
+               "n_le_p": len(zt) <= d}
+        if taxonomy is not None:
+            row |= {"rank": taxonomy.loc[c, "rank"] if c in taxonomy.index else None,
+                    "level": level, "donor_classes": len(tax_donors), "donor_df": donor_df(n, tax_donors),
+                    "donors": ";".join(tax_donors) if level != "global" else "", "near_donors": ";".join(near),
+                    "near_tax_jaccard": len(set(near) & set(tax_donors)) / len(set(near) | set(tax_donors)) if near else np.nan}
+        row |= {"coupled_beta": be, "coupled_alpha_keep": float(fit.alpha[k]), "lw_alpha_shrink": a_lw,
                **{f"identity_scale_{m}": float(np.trace(be * scm[c] + (1 - be) * p) / d) for m, p in pools.items() if p is not None},
                **{f"condition_{m}": numerics(cov)["condition"] for m, cov in covs.items() if cov is not None},
-               **{f"status_{m}": parts[m][2] for m in ARMS}, **{f"val_loglik_{m}": float(ll[m].mean()) for m in ARMS}}
+               **{f"status_{m}": parts[m][2] for m in arms}, **{f"val_loglik_{m}": float(ll[m].mean()) for m in arms}}
         frame = {"space": name, "individual": f.sk_va.individual.to_numpy()[y_va == c], "taxon_group": c,
-                 **{f"loglik_{m}": ll[m] for m in ARMS}}
-        for key, (a, b) in CONTRASTS.items():
+                 **{f"loglik_{m}": ll[m] for m in arms}}
+        for key, (a, b) in contrasts.items():
             cols, boots[key][:, k], frame[f"d_{key}"] = contrast_columns(key, parts[a], parts[b], d, draws)
             row |= cols
         rows.append(row)
@@ -114,17 +129,17 @@ def run_space(name, d, z_tr, z_va, f, taxonomy):
     per = pd.DataFrame(rows)
     result = {"dim": d, "seconds": time.perf_counter() - t0, "candidates": len(candidates),
               "candidates_not_eligible": sorted(set(candidates) - set(eligible)),
-              "level_counts": per.level.value_counts().to_dict(),
+              "level_counts": per.level.value_counts().to_dict() if taxonomy is not None else "taxonomy not used",
               "pool_numerics": {"spec": numerics(p_spec), "bal": numerics(p_bal)},
-              "status_counts": {m: per[f"status_{m}"].value_counts().to_dict() for m in ARMS},
-              "contrasts": summarise_contrasts(per, boots, CONTRASTS, groups()),
-              "mean_val_loglik": {m: float(per[f"val_loglik_{m}"].mean()) for m in ARMS}}
+              "status_counts": {m: per[f"status_{m}"].value_counts().to_dict() for m in arms},
+              "contrasts": summarise_contrasts(per, boots, contrasts, groups(taxonomy)),
+              "mean_val_loglik": {m: float(per[f"val_loglik_{m}"].mean()) for m in arms}}
     return per, pd.concat(spec, ignore_index=True), result
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dataset", required=True, choices=["finbenthic2", "aquamonitor"])
+    ap.add_argument("--dataset", required=True)
     ap.add_argument("--cohort", required=True, type=Path)
     ap.add_argument("--caches", required=True, nargs="+")
     ap.add_argument("--fold", required=True)
@@ -132,12 +147,14 @@ def main():
     ap.add_argument("--fin-table", type=Path)
     ap.add_argument("--aqua-mapping", type=Path)
     ap.add_argument("--aqua-table", type=Path)
+    ap.add_argument("--no-taxonomy", action="store_true")
     ap.add_argument("--spaces", nargs="+", default=["pca64", "pca16", "native", "native_alt"])
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     t_start = time.perf_counter()
     f = load_fold(a.cohort, a.caches, a.fold)
-    taxonomy = tx.load(a.dataset, sorted(set(f.y_tr) | set(f.y_va)), a.fin_table, a.aqua_mapping, a.aqua_table)
+    taxonomy = None if a.no_taxonomy else tx.load(a.dataset, sorted(set(f.y_tr) | set(f.y_va)), a.fin_table,
+                                                  a.aqua_mapping, a.aqua_table)
     pers, specs, results = [], [], {}
     for name, d, z_tr, z_va in spaces_from(a.spaces, f.x_tr, f.x_va):
         per, spec, res = run_space(name, d, z_tr, z_va, f, taxonomy)
@@ -150,7 +167,8 @@ def main():
     summary = {"dataset": a.dataset, "fold": f.fold, "encoder": f.encoder, "cohort_rows": f.rows,
                "train_specimens": int(len(f.sk_tr)), "val_specimens": int(len(f.sk_va)), "eligible_classes": len(f.eligible),
                "excluded_classes": f.excluded, "min_train": MIN_TRAIN, "min_val": MIN_VAL, "n_boot": N_BOOT, "seed": SEED,
-               "taxonomy_rank_counts": taxonomy["rank"].value_counts(dropna=False).to_dict(), "contrasts": CONTRASTS,
+               "taxonomy_rank_counts": "taxonomy not used" if taxonomy is None else taxonomy["rank"].value_counts(dropna=False).to_dict(),
+               "contrasts": CONTRASTS if taxonomy is not None else {k: v for k, v in CONTRASTS.items() if k not in TAXONOMY_CONTRASTS},
                "full_coordinate_within_class_covariance": full_coordinate_rank(f.x_tr, f.y_tr),
                "total_seconds": time.perf_counter() - t_start,
                "max_rss_gb": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2 ** 20, "spaces": results}

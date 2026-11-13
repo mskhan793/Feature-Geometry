@@ -111,8 +111,8 @@ def fit_class(c, ci_, zt, zv, groups_t, views, d, seed, n_stab):
         st = split_stability(zt, zv, 2, "tied", REG, seed, n_stab, d + 1)
         row.update({f"G2_tied_split_{key}": v for key, v in st.items()})
         row["G2_tied_split_stable"] = is_stable(st, STABLE_ARI)
-        la, lb = fits["G2_tied"].predict(views[0]), fits["G2_tied"].predict(views[1])
-        row["G2_tied_both_views_same_component_train"] = float(np.mean(la == lb))
+        row["G2_tied_both_views_same_component_train"] = (  # NaN: no specimen with two camera views
+            float(np.mean(fits["G2_tied"].predict(views[0]) == fits["G2_tied"].predict(views[1]))) if len(views[0]) else np.nan)
         reliable_g1 = row.get("G1_full_status") == "ok"
         row["verdict"] = split_verdict(reliable_g1 and row.get("G2_tied_status") == "ok",
                                        row.get("G2_tied-G1_full_ci95"), row["G2_tied_split_stable"])

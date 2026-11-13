@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from src.statistics.class_geometry import (direction, direction_separation, eigen_summary, radius_separation,
-                                           subspace_overlap)
+from src.statistics.class_geometry import (axes_overlap, direction, direction_separation, eigen_summary,
+                                           principal_axes, radius_separation)
 from src.statistics.class_modality import (INCONCLUSIVE, INSUFFICIENT, SUPPORTED, WORSE, SourceGaussians, eligible,
                                            free_parameters, split_stability, split_verdict, within_budget)
 
@@ -31,9 +31,9 @@ def test_separations():
 def test_subspace_overlap_bounds():
     rng = np.random.default_rng(2)
     base = rng.normal(size=(400, 6)) * np.array([5, 4, 3, 1, 1, 1])
-    assert subspace_overlap(base, base, 3) > 0.999
-    other = base[:, ::-1]
-    assert subspace_overlap(base, other, 3) < 0.05
+    top = principal_axes(base)[1][:, :3]
+    assert axes_overlap(top, top) > 0.999
+    assert axes_overlap(top, principal_axes(base[:, ::-1])[1][:, :3]) < 0.05
 
 
 def test_parameter_counts_and_eligibility():

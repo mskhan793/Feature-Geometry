@@ -173,6 +173,9 @@ def main():
             fig, axes = plt.subplots(1, 4, figsize=(18, 4.2))
             for ax, k in zip(axes, KINDS):
                 w = pairs[pairs[f"{k}_train_valid"]]
+                if w.empty:  # e.g. full covariance with < 2 d train specimens in every class
+                    ax.set_title(f"{k} covariance, {d} PCs: no valid pairs")
+                    continue
                 ax.scatter(w.dprime_val, w[f"{k}_train_bc"], s=6, c=w[f"{k}_train_cov_term"] / w[f"{k}_train_distance"],
                            cmap="viridis", vmin=0, vmax=1)
                 ax.set(yscale="log", xlabel="d' (val, train direction, same space)", ylabel=f"BC ({k}, train)",

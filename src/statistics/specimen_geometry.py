@@ -12,8 +12,8 @@ import numpy as np
 import pandas as pd
 
 from src.data.expanded_cohort import stable_order
-from src.statistics.class_geometry import (direction, direction_separation, eigen_summary, radius_separation,
-                                           subspace_overlap)
+from src.statistics.class_geometry import (axes_overlap, direction, direction_separation, eigen_summary,
+                                           principal_axes, radius_separation)
 
 
 def reidentification(a: np.ndarray, b: np.ndarray, chunk: int = 1024) -> float:
@@ -28,8 +28,11 @@ def reidentification(a: np.ndarray, b: np.ndarray, chunk: int = 1024) -> float:
 
 
 def paired_views(cam_keys: pd.DataFrame, ids) -> tuple[np.ndarray, np.ndarray]:
-    """Rows of camera 1 and camera 2 views for the given specimens that have both, in the same specimen order."""
+    """Rows of camera 1 and camera 2 views for the given specimens that have both, in the same specimen order (empty if
+    the cohort records a single camera)."""
     cams = sorted(cam_keys.camera.unique())
+    if len(cams) < 2:
+        return np.array([], int), np.array([], int)
     k = cam_keys[cam_keys.individual.isin(ids)]
     both = k.groupby("individual").camera.nunique() == len(cams)
     keep = sorted(both.index[both])
@@ -49,7 +52,8 @@ def within_class(classes, sp, x, cam, xc, frame_rms, seed, n_fixed: int = 30) ->
         summary = eigen_summary(x[first]) if len(k) >= n_fixed else dict.fromkeys(eigen_summary(x[first]), np.nan)
         fixed = {f"{key}_n{n_fixed}": v for key, v in summary.items() if key != "n"}
         rows.append({"taxon_group": c, **eigen_summary(x[k.index]), **fixed,
-                     "camera_reid": reidentification(xc[r1], xc[r2]), "camera_reid_chance": 1 / len(r1),
+                     "camera_reid": reidentification(xc[r1], xc[r2]) if len(r1) else np.nan,
+                     "camera_reid_chance": 1 / len(r1) if len(r1) else np.nan,
                      "paired_specimens": len(r1), "frame_rms_within_specimen_median": float(np.median(
                          frame_rms[cam.index[cam.taxon_group == c]]))})
     return pd.DataFrame(rows)
@@ -62,6 +66,7 @@ def between_classes(classes, sp_tr, x_tr, z2_tr, sp_va=None, x_va=None, k_sub: i
     xn_tr = x_tr / np.linalg.norm(x_tr, axis=1, keepdims=True)
     tr = {c: sp_tr.index[sp_tr.taxon_group == c] for c in classes}
     va = None if sp_va is None else {c: sp_va.index[sp_va.taxon_group == c] for c in classes}
+    axes = {c: principal_axes(x_tr[tr[c]])[1][:, :k_sub] for c in classes}  # once per class, not once per pair
     rows = []
     for a, b in itertools.combinations(classes, 2):
         u = direction(x_tr[tr[a]], x_tr[tr[b]])
@@ -73,5 +78,5 @@ def between_classes(classes, sp_tr, x_tr, z2_tr, sp_va=None, x_va=None, k_sub: i
                      "radius_sep_l2norm": radius_separation(xn_tr[tr[a]], xn_tr[tr[b]]),
                      "radius_sep_pca2d": radius_separation(z2_tr[tr[a]], z2_tr[tr[b]]),
                      "centroid_distance": float(np.linalg.norm(x_tr[tr[a]].mean(0) - x_tr[tr[b]].mean(0))),
-                     "subspace_overlap_top5": subspace_overlap(x_tr[tr[a]], x_tr[tr[b]], k_sub)})
+                     "subspace_overlap_top5": axes_overlap(axes[a], axes[b])})
     return pd.DataFrame(rows)

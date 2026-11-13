@@ -6,7 +6,8 @@ balanced_taxonomic_pooling.py).
   >= MIN_VAL val specimens (section 8 D3 of the Ledoit-Wolf diagnostics).
 - Spaces: ``pcaN`` = first N components of a PCA fitted on the fold's train specimens; ``native`` / ``native_alt`` =
   the original coordinates without the last / first one (the encoder's final LayerNorm makes the full coordinates
-  rank-deficient by one; scripts/audit_feature_null_space.py).
+  rank-deficient by one; scripts/audit_feature_null_space.py); ``native_all`` = all original coordinates, for
+  encoders without that constraint (BioCLIP 2, SigLIP 2: full-rank features, task.md a82e89e).
 - Scoring: -Mahalanobis/2 and -log|Sigma|/2 per val specimen; a covariance whose smallest eigenvalue is
   <= d * float64 eps * its largest (numpy's matrix-rank tolerance) is "numerically singular" and not scored.
 - Paired contrasts: per class mean / median / stratified-bootstrap 95 % interval of the per-specimen difference and
@@ -109,7 +110,9 @@ def spaces_from(names: list[str], x_tr: np.ndarray, x_va: np.ndarray):
     pca = PCA(n_components=max(dims), svd_solver="full").fit(x_tr) if dims else None
     pt, pv = (pca.transform(x_tr), pca.transform(x_va)) if pca else (None, None)
     for s in names:
-        if s in ("native", "native_alt"):
+        if s == "native_all":
+            yield s, x_tr.shape[1], np.asarray(x_tr, np.float64), np.asarray(x_va, np.float64)
+        elif s in ("native", "native_alt"):
             keep = slice(None, -1) if s == "native" else slice(1, None)
             yield s, x_tr.shape[1] - 1, np.asarray(x_tr[:, keep], np.float64), np.asarray(x_va[:, keep], np.float64)
         else:
