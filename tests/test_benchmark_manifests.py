@@ -142,3 +142,34 @@ def test_siglip2_encoder_wiring(monkeypatch):
 def torch_allclose(t, v):
     import torch
     return bool(torch.allclose(t, torch.full_like(t, v), atol=1e-6))
+
+
+def test_compare_v1_bioscan_cache(tmp_path):
+    import hashlib
+    import json
+
+    from src.features import chunk_store
+    from tests.test_class_geometry_pilot import run
+    ids = [f"P{i}" for i in range(10)]
+    pd.DataFrame({"processid": ids + ["Q"], "split": ["train"] * 10 + ["val"]}).to_parquet(tmp_path / "idx.parquet", index=False)
+    rng = np.random.default_rng(0)
+    x = rng.normal(size=(10, 6)).astype(np.float32)
+    folder = tmp_path / "v1" / "frozen_fp32" / "train"
+    folder.mkdir(parents=True)
+    sha = hashlib.sha1("\n".join(ids).encode()).hexdigest()
+    for k, (s, e) in enumerate([(0, 6), (6, 10)]):
+        np.save(folder / f"rows_{k:03d}.npy", x[s:e])
+        (folder / f"meta_{k:03d}.json").write_text(json.dumps({"start": s, "end": e, "n_split": 10, "img_sha1": sha,
+                                                               "model": "m", "transform": "t", "feature_dim": 6}))
+    sample = ["P7", "P2", "P9"]
+    pd.DataFrame({"img": sample}).to_parquet(tmp_path / "s.parquet", index=False)
+    for name, noise in (("same", 0.0), ("off", 1e-3)):
+        ident = {"start": 0, "end": 3, "names_sha1": chunk_store.names_sha1(sample), "encoder": "e", "model_id": "m", "transform": "t"}
+        feats = x[[7, 2, 9]] * (1 + noise)
+        chunk_store.write_chunk(tmp_path / name, 0, feats.astype(np.float32), ident, {"feature": "f", "tf32": False})
+        run(["scripts/benchmark/compare_v1_bioscan_cache.py", "--v1-index", str(tmp_path / "idx.parquet"), "--v1-cache",
+             str(tmp_path / "v1"), "--sample", str(tmp_path / "s.parquet"), "--new", f"{tmp_path / 's.parquet'}={tmp_path / name}",
+             "--out", str(tmp_path / f"{name}.json")])
+    assert json.loads((tmp_path / "same.json").read_text())["equivalent"] is True
+    off = json.loads((tmp_path / "off.json").read_text())
+    assert off["equivalent"] is False and off["max_rel_l2"] == pytest.approx(1e-3, rel=1e-3)
