@@ -8,7 +8,8 @@ GPU-hours: one standard-g node = 8 GCDs = 4 MI250X GPUs, billed 4 GPU-h per node
 GPU job's whole run (encode / 0.9 + OVERHEAD_MIN of startup); verification and the CPU 256-row check run in a separate
 CPU job (check_extraction.sh). Time limit: 1.5 x the estimated encode / 0.9 + 20 min, rounded up to 15 min.
 
-Usage: c2_plan.py --rates extraction_summary.csv --local-root FEATURE_GEOMETRY_DATA --out-dir DIR
+Usage: c2_plan.py --rates extraction_summary.csv [...] --local-root FEATURE_GEOMETRY_DATA --out-dir DIR
+       [--encoders E ...]   (I-JEPA, task.md 3b897b0: --encoders ijepa_h14 with its pilot summary)
 """
 
 from __future__ import annotations
@@ -20,8 +21,8 @@ from pathlib import Path
 
 import pandas as pd
 
-ENCODERS = ("dinov3_l", "dinov2_l", "bioclip2", "siglip2")
-DIMS = {"dinov3_l": 1024, "dinov2_l": 1024, "bioclip2": 768, "siglip2": 1152}
+ENCODERS = ("dinov3_l", "dinov2_l", "bioclip2", "siglip2", "ijepa_h14")
+DIMS = {"dinov3_l": 1024, "dinov2_l": 1024, "bioclip2": 768, "siglip2": 1152, "ijepa_h14": 1280}
 F = "/flash/project_462001534/feature_geometry"
 # dataset: (local extraction manifest relative to --local-root, LUMI manifest, source flag, LUMI source)
 DATASETS = {
@@ -62,31 +63,36 @@ NOT_NEW = {
                                 V1 + "bioclip2"),
 }
 for e in ENCODERS:
-    NOT_NEW[(e, "fgvc_aircraft")] = ("c1", "C1 throughput pilot = full train+val (6,667 images), verified",
-                                     f"--chunk {DATASETS['fgvc_aircraft'][1]}="
-                                     f"{S}/feature_geometry/benchmark_c1/aircraft/{e}/features_gpu/{e}")
+    pilot = (f"{S}/feature_geometry/ijepa_pilot/aircraft" if e == "ijepa_h14"  # task.md 3b897b0 extraction pilot
+             else f"{S}/feature_geometry/benchmark_c1/aircraft/{e}")
+    NOT_NEW[(e, "fgvc_aircraft")] = ("c1", ("I-JEPA extraction pilot" if e == "ijepa_h14" else "C1 throughput pilot")
+                                     + " = full train+val (6,667 images), verified",
+                                     f"--chunk {DATASETS['fgvc_aircraft'][1]}={pilot}/features_gpu/{e}")
 H = f"{S}/aqua_v1/scratch_muhamkha/hf_cache/hub"
 NORM_WEIGHTS = {  # final LayerNorm of the DINO encoders (checked by combination_record.py --weights)
     "dinov3_l": f"--weights {H}/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/"
                 "ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors --key-prefix norm",
     "dinov2_l": f"--weights {H}/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/"
-                "model.safetensors --key-prefix layernorm"}
+                "model.safetensors --key-prefix layernorm",
+    "ijepa_h14": f"--weights {S}/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e_target_encoder.safetensors "
+                 "--key-prefix norm"}
 OVERHEAD_MIN = 2  # GPU-job startup (C1 Aircraft jobs: 1.3-1.8 min from start to end of encoding of 6,667 images)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--rates", required=True, type=Path)
+    ap.add_argument("--rates", required=True, nargs="+", type=Path)
+    ap.add_argument("--encoders", nargs="+", default=list(ENCODERS[:4]), choices=ENCODERS)  # default: the C2 four
     ap.add_argument("--local-root", required=True, type=Path)
     ap.add_argument("--out-dir", required=True, type=Path)
     a = ap.parse_args()
-    r = pd.read_csv(a.rates)
+    r = pd.concat([pd.read_csv(f) for f in a.rates])
     rate = r[r.run.str.startswith("aircraft_")].set_index("encoder").images_per_s_node_8gcd
     rows = []
     for d, (local, manifest, flag, source) in DATASETS.items():
         m = pd.read_parquet(a.local_root / local, columns=["img"])
         assert m.img.is_unique, d
-        for e in ENCODERS:
+        for e in a.encoders:
             out = f"{S}/feature_geometry/benchmark_c2/{d}/{e}"
             status, why, sources = NOT_NEW.get((e, d), ("new", "", f"--chunk {manifest}={out}/features_gpu/{e}"))
             encode_s = len(m) / rate[e]

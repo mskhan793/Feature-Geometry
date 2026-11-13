@@ -1,0 +1,2 @@
+start 2026-11-13T20:02:26+02:00 job 23711236 node nid005219 code 28f81c2ce3e7030ee95a3c340fc91d58b1af9e98 encoder ijepa_h14 manifest /flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet out /scratch/project_462001534/feature_geometry/ijepa_pilot/bioscan512_a
+end 2026-11-13T20:03:43+02:00

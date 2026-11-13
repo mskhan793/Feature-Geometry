@@ -1,0 +1,35 @@
+[
+ {
+  "run": "aircraft_ijepa_h14",
+  "encoder": "ijepa_h14",
+  "model_id": "https://dl.fbaipublicfiles.com/ijepa/IN1K-vit.h.14-300e.pth.tar (target_encoder)",
+  "library": "facebookresearch/ijepa@52c1ae9 (vendored, unmodified); target_encoder safetensors sha256 03fdafbd89f4e20184a83e5ce71a605fe0ff2ce69aee9eb4b6dabc8c8f5cd899",
+  "chunks": 1,
+  "rows": 6667,
+  "dim": 1280,
+  "dtype": "float32",
+  "all_finite": true,
+  "norm_min": 15.335502624511719,
+  "norm_max": 26.05323600769043,
+  "encode_seconds": 110.1,
+  "images_per_s_per_gcd": 60.6,
+  "images_per_s_node_8gcd": 484.4,
+  "verify_pass": true,
+  "verify_problems": 0,
+  "verify": {
+   "cache_dir": "/scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft/features_gpu/ijepa_h14",
+   "encoder": "ijepa_h14",
+   "manifest_rows": 6667,
+   "rows_covered": 6667,
+   "chunks_ok": 1,
+   "dims": [
+    1280
+   ],
+   "problems": []
+  },
+  "cpu_vs_gpu256_max_abs": 0.0014362335205078125,
+  "cpu_vs_gpu256_max_rel_norm": 5.594828326138668e-05,
+  "peak_gpu_memory_gb": 3.98,
+  "peak_host_rss_gb": 5.63
+ }
+]

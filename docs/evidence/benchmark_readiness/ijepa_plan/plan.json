@@ -1,0 +1,12 @@
+{
+ "combinations": 8,
+ "by_status": {
+  "new": 7,
+  "c1": 1
+ },
+ "new_jobs": 7,
+ "new_images": 1722106,
+ "new_float32_gb": 8.82,
+ "est_gpu_h_new": 5.3,
+ "est_encode_node_h": 0.99
+}

@@ -1,0 +1,20 @@
+{
+ "rows": 512,
+ "dim": 1280,
+ "eigenvalues_smallest_4": [
+  -1.2945170040592e-15,
+  -7.631070950883757e-16,
+  -6.867036931036408e-16,
+  -5.722635292453108e-16
+ ],
+ "eigenvalue_largest": 25.518045245721396,
+ "smallest_over_second_smallest": 1.6963765798944401,
+ "numerical_rank_1e-12": 511,
+ "rank_measurable": false,
+ "weights": "/scratch/project_462001534/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e_target_encoder.safetensors",
+ "key": "norm.weight/bias",
+ "constraint_rel_abs_max": 7.720403531312146e-07,
+ "constraint_rel_abs_median": 5.965196501298873e-07,
+ "abs_cos_smallest_eigvec_vs_inv_w": 0.038135513437268134,
+ "variance_along_inv_w": 1.4121607675030512e-16
+}

@@ -1,0 +1,37 @@
+{
+ "checkpoint": "/scratch/project_462001534/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e.pth.tar",
+ "checkpoint_bytes": 10358004345,
+ "checkpoint_sha256": "0382013c481743e9ccea89f970bc6c6aa126aa19a62127500d6e672a641aae22",
+ "checkpoint_s3_etag_recomputed": "b0e94c3423adcbda5a2108a6c1544263-1235",
+ "server_etag": "b0e94c3423adcbda5a2108a6c1544263-1235",
+ "top_level_keys": [
+  "batch_size",
+  "encoder",
+  "epoch",
+  "loss",
+  "lr",
+  "opt",
+  "predictor",
+  "scaler",
+  "target_encoder",
+  "world_size"
+ ],
+ "epoch": 299,
+ "parts_tensor_counts": {
+  "encoder": 389,
+  "predictor": 152,
+  "opt": 2,
+  "scaler": 5,
+  "target_encoder": 389
+ },
+ "target_encoder_tensors": 389,
+ "target_encoder_parameters": 630762240,
+ "dtypes": [
+  "torch.float32"
+ ],
+ "strict_load": "ok",
+ "max_abs_diff_target_vs_context_encoder": 0.009632915258407593,
+ "out": "/scratch/project_462001534/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e_target_encoder.safetensors",
+ "out_sha256": "03fdafbd89f4e20184a83e5ce71a605fe0ff2ce69aee9eb4b6dabc8c8f5cd899",
+ "torch": "2.10.0+rocm7.0"
+}

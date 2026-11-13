@@ -1,0 +1,4 @@
+start 2026-11-13T20:06:10+02:00 job 23711235 code 28f81c2ce3e7030ee95a3c340fc91d58b1af9e98 encoder ijepa_h14 manifest /flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet out /scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft/features_gpu/ijepa_h14", "encoder": "ijepa_h14", "manifest_rows": 6667, "rows_covered": 6667, "chunks_ok": 1, "dims": [1280], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft/features_gpu/ijepa_h14", "prefix": "/scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft/features_cpu256/ijepa_h14", "rows": 256, "tf32": [false, false], "max_abs_diff": 0.0014362335205078125, "mean_abs_diff": 3.543638777669944e-06, "max_rel_norm_diff": 5.594828326138668e-05, "bitwise_equal": false}
+end 2026-11-13T20:11:50+02:00

@@ -1,0 +1,2 @@
+start 2026-11-13T20:02:26+02:00 job 23711234 node nid005195 code 28f81c2ce3e7030ee95a3c340fc91d58b1af9e98 encoder ijepa_h14 manifest /flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet out /scratch/project_462001534/feature_geometry/ijepa_pilot/aircraft
+end 2026-11-13T20:05:14+02:00
