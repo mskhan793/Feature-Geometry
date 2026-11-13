@@ -60,7 +60,7 @@ def main():
             else pd.DataFrame(index=pd.Index(cohort.individual.unique(), name="individual")))
     if meta.isna().any().any():
         raise RuntimeError("a specimen has more than one value of a metadata field")
-    comp = pd.read_csv(a.components).join(meta.astype(str), on="individual")
+    comp = pd.read_csv(a.components, dtype={"individual": str}).join(meta.astype(str), on="individual")  # ids may look numeric (DF24)
     comp = comp.join(cohort.groupby(["individual", "camera"])[a.numeric].mean().groupby("individual").mean(),
                      on="individual")
     mod = pd.read_csv(a.modality)

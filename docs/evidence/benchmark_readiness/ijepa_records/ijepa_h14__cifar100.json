@@ -1,0 +1,68 @@
+{
+ "encoder": "ijepa_h14",
+ "dataset": "cifar100",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/cifar100_trainval.parquet",
+ "manifest_sha256": "4c7450243a3c5d3f361a7ab11e1907482902731efac9265eaba435d0652608fc",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/cifar100.parquet",
+ "standard_sha256": "59b9429f470fdd672ce6a735ab25aa3dbc835214a91dd3190d10ad660d515f8c",
+ "rows": 50000,
+ "dim": 1280,
+ "units": 49986,
+ "units_expected": 49986,
+ "rows_per_split": {
+  "train": 44998,
+  "val": 5002
+ },
+ "norm_min": 17.028089521976362,
+ "norm_median": 24.234504878402255,
+ "norm_max": 33.54806403407131,
+ "features_sha256": "2aa299211182d89c71331228c27e78d3dd73122d48d4c684548ab4bdd57a8600",
+ "cache_settings": {
+  "encoder": "ijepa_h14",
+  "model_id": "https://dl.fbaipublicfiles.com/ijepa/IN1K-vit.h.14-300e.pth.tar (target_encoder)",
+  "feature": "mean of final-layer (LayerNorm) patch tokens of the target encoder",
+  "transform": "Compose(\n    Resize(size=256, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))\n)",
+  "library": "facebookresearch/ijepa@52c1ae9 (vendored, unmodified); target_encoder safetensors sha256 03fdafbd89f4e20184a83e5ce71a605fe0ff2ce69aee9eb4b6dabc8c8f5cd899",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/cifar100_trainval.parquet",
+   "manifest_sha256": "4c7450243a3c5d3f361a7ab11e1907482902731efac9265eaba435d0652608fc",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/cifar100/ijepa_h14/features_gpu/ijepa_h14",
+   "chunks": 7
+  }
+ ],
+ "rank": {
+  "rows": 50000,
+  "dim": 1280,
+  "eigenvalues_smallest_4": [
+   -2.2877481885915043e-16,
+   3.420790202046787e-05,
+   3.8006611024985825e-05,
+   3.953628257128447e-05
+  ],
+  "eigenvalue_largest": 35.766109800315704,
+  "smallest_over_second_smallest": -6.687776956396388e-12,
+  "numerical_rank_1e-12": 1279,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e_target_encoder.safetensors",
+  "key": "norm.weight/bias",
+  "constraint_rel_abs_max": 8.001898245333822e-07,
+  "constraint_rel_abs_median": 4.897723086364964e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999999963,
+  "variance_along_inv_w": 1.064316084614713e-16
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

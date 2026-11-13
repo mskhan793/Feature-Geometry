@@ -200,3 +200,28 @@ def test_reidentification_chunked_matches_dense():
     b = a + rng.normal(scale=0.8, size=a.shape)
     dense = float(np.mean(((a[:, None, :] - b[None, :, :]) ** 2).sum(-1).argmin(1) == np.arange(len(a))))
     assert 0 < dense < 1 and reidentification(a, b, chunk=7) == dense
+
+
+def test_single_camera_numeric_unit_ids(tmp_path):
+    """Single-protocol cohort (src.data.benchmark_cohort schema): one camera, units with numeric-looking ids (DF24
+    observation ids): geometry runs with camera metrics NaN, and component_metadata joins the ids as text."""
+    rng = np.random.default_rng(1)
+    rows, feats = [], []
+    for c, centre in (("A", 0.0), ("B", 4.0)):
+        for s in range(40):
+            base = rng.normal(centre, 1.0, 24)
+            for f in range(2):
+                rows.append({"img": f"{c}{s}_{f}", "taxon_group": c, "individual": str(1000 + 100 * (c == "B") + s),
+                             "camera": "single", "imaging_run": "single", "official": "train" if s < 32 else "val"})
+                feats.append(base + rng.normal(0, 0.1, 24))
+    caches = [write_cache(tmp_path, "c", rows, feats)]
+    pd.DataFrame(rows).to_parquet(tmp_path / "cohort.parquet", index=False)
+    out = tmp_path / "out"
+    run(["scripts/class_geometry_pilot.py", "--cohort", str(tmp_path / "cohort.parquet"), "--caches", *caches, "--out",
+         str(out), "--pcs", "4", "--n-stab", "10", "--jobs", "2", "--source-column", "none", "--fold", "official"])
+    geo = pd.read_csv(out / "per_class_geometry.csv")
+    assert geo.camera_reid.isna().all() and (geo.paired_specimens == 0).all()
+    run(["scripts/component_metadata.py", "--cohort", str(tmp_path / "cohort.parquet"), "--components",
+         str(out / "specimen_components.csv"), "--modality", str(out / "per_class_modality.csv"), "--geometry",
+         str(out / "per_class_geometry.csv"), "--out", str(out), "--fold", "official", "--fields"])
+    assert len(pd.read_csv(out / "per_class_summary.csv")) == 2

@@ -1,0 +1,101 @@
+taxon_group,train,val,eligible
+707-320,34,33,True
+727-200,33,34,True
+737-200,33,33,True
+737-300,34,33,True
+737-400,33,34,True
+737-500,33,33,True
+737-600,34,33,True
+737-700,33,34,True
+737-800,33,33,True
+737-900,34,33,True
+747-100,33,34,True
+747-200,33,33,True
+747-300,34,33,True
+747-400,33,34,True
+757-200,33,33,True
+757-300,34,33,True
+767-200,33,34,True
+767-300,33,33,True
+767-400,34,33,True
+777-200,33,34,True
+777-300,33,33,True
+A300B4,34,33,True
+A310,33,34,True
+A318,33,33,True
+A319,34,33,True
+A320,33,34,True
+A321,33,33,True
+A330-200,34,33,True
+A330-300,33,34,True
+A340-200,33,33,True
+A340-300,34,33,True
+A340-500,33,34,True
+A340-600,33,33,True
+A380,34,33,True
+ATR-42,33,34,True
+ATR-72,33,33,True
+An-12,34,33,True
+BAE 146-200,33,34,True
+BAE 146-300,33,33,True
+BAE-125,34,33,True
+Beechcraft 1900,33,34,True
+Boeing 717,33,33,True
+C-130,34,33,True
+C-47,33,34,True
+CRJ-200,33,33,True
+CRJ-700,34,33,True
+CRJ-900,33,34,True
+Cessna 172,33,33,True
+Cessna 208,34,33,True
+Cessna 525,33,34,True
+Cessna 560,33,33,True
+Challenger 600,34,33,True
+DC-10,33,34,True
+DC-3,33,33,True
+DC-6,34,33,True
+DC-8,33,34,True
+DC-9-30,33,33,True
+DH-82,34,33,True
+DHC-1,33,34,True
+DHC-6,33,33,True
+DHC-8-100,34,33,True
+DHC-8-300,33,34,True
+DR-400,33,33,True
+Dornier 328,34,33,True
+E-170,33,34,True
+E-190,33,33,True
+E-195,34,33,True
+EMB-120,33,34,True
+ERJ 135,33,33,True
+ERJ 145,34,33,True
+Embraer Legacy 600,33,34,True
+Eurofighter Typhoon,33,33,True
+F-16A/B,34,33,True
+F/A-18,33,34,True
+Falcon 2000,33,33,True
+Falcon 900,34,33,True
+Fokker 100,33,34,True
+Fokker 50,33,33,True
+Fokker 70,34,33,True
+Global Express,33,34,True
+Gulfstream IV,33,33,True
+Gulfstream V,34,33,True
+Hawk T1,33,34,True
+Il-76,33,33,True
+L-1011,34,33,True
+MD-11,33,34,True
+MD-80,33,33,True
+MD-87,34,33,True
+MD-90,33,34,True
+Metroliner,33,33,True
+Model B200,34,33,True
+PA-28,33,34,True
+SR-20,33,33,True
+Saab 2000,34,33,True
+Saab 340,33,34,True
+Spitfire,33,33,True
+Tornado,34,33,True
+Tu-134,33,34,True
+Tu-154,33,33,True
+Yak-42,34,33,True

@@ -1,0 +1,64 @@
+{
+ "encoder": "ijepa_h14",
+ "dataset": "aquamonitor",
+ "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+ "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/aquamonitor.parquet",
+ "standard_sha256": "d491d144b7c672cd70501d9b6f94db60b2fbc998536eec33c8d1c17f7b0f3e3e",
+ "rows": 836159,
+ "dim": 1280,
+ "units": 42165,
+ "units_expected": 42165,
+ "rows_per_split": null,
+ "norm_min": 16.081511683870065,
+ "norm_median": 20.648089016891987,
+ "norm_max": 26.385284923595428,
+ "features_sha256": "27d573c682017440c22e3116dd2e02488503f3b9981b11897463d859ee0aecec",
+ "cache_settings": {
+  "encoder": "ijepa_h14",
+  "model_id": "https://dl.fbaipublicfiles.com/ijepa/IN1K-vit.h.14-300e.pth.tar (target_encoder)",
+  "feature": "mean of final-layer (LayerNorm) patch tokens of the target encoder",
+  "transform": "Compose(\n    Resize(size=256, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))\n)",
+  "library": "facebookresearch/ijepa@52c1ae9 (vendored, unmodified); target_encoder safetensors sha256 03fdafbd89f4e20184a83e5ce71a605fe0ff2ce69aee9eb4b6dabc8c8f5cd899",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+   "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/aquamonitor/ijepa_h14/features_gpu/ijepa_h14",
+   "chunks": 103
+  }
+ ],
+ "rank": {
+  "rows": 836159,
+  "dim": 1280,
+  "eigenvalues_smallest_4": [
+   6.489742466374228e-17,
+   4.420858957269249e-06,
+   4.88083517146064e-06,
+   5.236693739242714e-06
+  ],
+  "eigenvalue_largest": 19.75641479199936,
+  "smallest_over_second_smallest": 1.4679822471384435e-11,
+  "numerical_rank_1e-12": 1279,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/feature_geometry/weights/ijepa/IN1K-vit.h.14-300e_target_encoder.safetensors",
+  "key": "norm.weight/bias",
+  "constraint_rel_abs_max": 9.514468998088269e-07,
+  "constraint_rel_abs_median": 6.859236323103154e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999999973,
+  "variance_along_inv_w": 1.0306088894067062e-16
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

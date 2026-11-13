@@ -1,0 +1,43 @@
+taxon_group,train,val,eligible
+Asellus aquaticus,2158,281,True
+Caenis horaria,2852,434,True
+Caenis luctuosa,337,63,True
+Caenis rivulorum,38,4,False
+Centroptilum luteolum,63,6,True
+Ceratopogonidae,623,96,True
+Chironomidae,7436,1079,True
+Cloeon,84,9,True
+Cloeon dipterum,103,17,True
+Cyrnus flavidus,85,5,True
+Cyrnus trimaculatus,122,21,True
+Ecnomus tenellus,141,17,True
+Ephemera vulgata,193,34,True
+Erpobdella octoculata,113,19,True
+Gyraulus,104,16,True
+Helobdella stagnalis,188,21,True
+Heptagenia dalecarlica,137,19,True
+Hydrachnidia,317,59,True
+Hydroptila,77,8,True
+Kageronia fuscogrisea,2002,306,True
+Lepidostoma hirtum,232,33,True
+Leptophlebia,4892,748,True
+Limnephilidae,53,14,True
+Limnephilus,91,13,True
+Micronecta,503,78,True
+Mystacides,40,5,True
+Mystacides azurea,97,17,True
+Oligochaeta,2047,318,True
+Orthotrichia,40,8,True
+Oulimnius tuberculatus,1704,247,True
+Oulimnius tuberculatus adult,214,28,True
+Pedicia,35,14,True
+Pisidium,58,10,True
+Polycentropus flavomaculatus,87,18,True
+Psychomyia pusilla,120,15,True
+Sialis,40,6,True
+Sisyra,35,5,True
+Spirosperma ferox,174,26,True
+Stylaria lacustris,332,44,True
+Tanypodinae,549,88,True
+Tinodes waeneri,748,123,True
+Turbellaria,82,14,True

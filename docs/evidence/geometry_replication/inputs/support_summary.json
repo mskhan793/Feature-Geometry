@@ -1,0 +1,320 @@
+{
+ "rule": {
+  "min_train": 15,
+  "min_val": 5
+ },
+ "datasets": {
+  "finbenthic2": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/full_specimen/finbenthic2/selection.parquet",
+   "cohort_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+   "images": 186284,
+   "units": 9631,
+   "partitions": {
+    "fold0": {
+     "classes_train_or_val": 39,
+     "classes_eligible": 36,
+     "eligible_pairs": 630,
+     "train_units": 6165,
+     "val_units": 1542,
+     "train_units_eligible": 6126,
+     "val_units_eligible": 1534,
+     "eligible_train_units_min_median_max": [
+      15,
+      150.0,
+      563
+     ]
+    },
+    "fold1": {
+     "classes_train_or_val": 39,
+     "classes_eligible": 35,
+     "eligible_pairs": 595,
+     "train_units": 6165,
+     "val_units": 1540,
+     "train_units_eligible": 6110,
+     "val_units_eligible": 1530,
+     "eligible_train_units_min_median_max": [
+      18,
+      159.0,
+      567
+     ]
+    },
+    "fold2": {
+     "classes_train_or_val": 39,
+     "classes_eligible": 34,
+     "eligible_pairs": 561,
+     "train_units": 6163,
+     "val_units": 1541,
+     "train_units_eligible": 6097,
+     "val_units_eligible": 1522,
+     "eligible_train_units_min_median_max": [
+      36,
+      161.0,
+      564
+     ]
+    },
+    "fold3": {
+     "classes_train_or_val": 39,
+     "classes_eligible": 35,
+     "eligible_pairs": 595,
+     "train_units": 6163,
+     "val_units": 1542,
+     "train_units_eligible": 6112,
+     "val_units_eligible": 1532,
+     "eligible_train_units_min_median_max": [
+      15,
+      157.0,
+      563
+     ]
+    },
+    "fold4": {
+     "classes_train_or_val": 39,
+     "classes_eligible": 35,
+     "eligible_pairs": 595,
+     "train_units": 6160,
+     "val_units": 1543,
+     "train_units_eligible": 6108,
+     "val_units_eligible": 1530,
+     "eligible_train_units_min_median_max": [
+      15,
+      153.0,
+      565
+     ]
+    }
+   }
+  },
+  "aquamonitor": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/full_specimen/aquamonitor/selection.parquet",
+   "cohort_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+   "images": 836159,
+   "units": 42165,
+   "partitions": {
+    "fold0": {
+     "classes_train_or_val": 42,
+     "classes_eligible": 41,
+     "eligible_pairs": 820,
+     "train_units": 29346,
+     "val_units": 4386,
+     "train_units_eligible": 29309,
+     "val_units_eligible": 4383,
+     "eligible_train_units_min_median_max": [
+      36,
+      135.0,
+      7414
+     ]
+    },
+    "fold1": {
+     "classes_train_or_val": 42,
+     "classes_eligible": 41,
+     "eligible_pairs": 820,
+     "train_units": 29346,
+     "val_units": 4386,
+     "train_units_eligible": 29310,
+     "val_units_eligible": 4382,
+     "eligible_train_units_min_median_max": [
+      35,
+      131.0,
+      7416
+     ]
+    },
+    "fold2": {
+     "classes_train_or_val": 42,
+     "classes_eligible": 40,
+     "eligible_pairs": 780,
+     "train_units": 29346,
+     "val_units": 4386,
+     "train_units_eligible": 29266,
+     "val_units_eligible": 4379,
+     "eligible_train_units_min_median_max": [
+      35,
+      137.5,
+      7392
+     ]
+    },
+    "fold3": {
+     "classes_train_or_val": 42,
+     "classes_eligible": 41,
+     "eligible_pairs": 820,
+     "train_units": 29346,
+     "val_units": 4386,
+     "train_units_eligible": 29308,
+     "val_units_eligible": 4382,
+     "eligible_train_units_min_median_max": [
+      35,
+      137.0,
+      7436
+     ]
+    },
+    "fold4": {
+     "classes_train_or_val": 42,
+     "classes_eligible": 41,
+     "eligible_pairs": 820,
+     "train_units": 29346,
+     "val_units": 4386,
+     "train_units_eligible": 29282,
+     "val_units_eligible": 4382,
+     "eligible_train_units_min_median_max": [
+      31,
+      143.0,
+      7419
+     ]
+    }
+   }
+  },
+  "bioscan5m": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/bioscan5m.parquet",
+   "cohort_sha256": "509899f81a71b79dcd77f319027d38d2e759c9e1fecd841b2087fc35e2b4af81",
+   "images": 303960,
+   "units": 303960,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/bioscan5m_trainval.parquet",
+   "source_sha256": "f5681c423ef44b21af9b716360e0cee7c11b4b5eff9908f787725cafad3a4e6b",
+   "conflicting_label_units": 0,
+   "conflicting_label_images": 0,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 11846,
+     "classes_eligible": 531,
+     "eligible_pairs": 140715,
+     "train_units": 289203,
+     "val_units": 14757,
+     "train_units_eligible": 208244,
+     "val_units_eligible": 10991,
+     "eligible_train_units_min_median_max": [
+      41,
+      194.0,
+      5697
+     ]
+    }
+   }
+  },
+  "df24": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/df24.parquet",
+   "cohort_sha256": "593e39d40b913d15be5429bfa8209d699490773467cb2d73ab0cf1009659721f",
+   "images": 266273,
+   "units": 159026,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/df24_trainval.parquet",
+   "source_sha256": "e00c165b30584353e7780b5288ea369f43c7f627b8c2ff7852bd277dafd326d4",
+   "conflicting_label_units": 0,
+   "conflicting_label_images": 0,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 1604,
+     "classes_eligible": 889,
+     "eligible_pairs": 394716,
+     "train_units": 143155,
+     "val_units": 15871,
+     "train_units_eligible": 126202,
+     "val_units_eligible": 14018,
+     "eligible_train_units_min_median_max": [
+      41,
+      98.0,
+      906
+     ]
+    }
+   }
+  },
+  "food101": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/food101.parquet",
+   "cohort_sha256": "ebcb3e73a64f7264a92fdbfc0dbb40cf9bfca042265164f0de0fe4e59fa64c65",
+   "images": 75750,
+   "units": 75746,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/food101_trainval.parquet",
+   "source_sha256": "526630ef6af0ccc298f6225a5b0805a796ea225f908d844edbb2670b9085713d",
+   "conflicting_label_units": 2,
+   "conflicting_label_images": 4,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 101,
+     "classes_eligible": 101,
+     "eligible_pairs": 5050,
+     "train_units": 68171,
+     "val_units": 7575,
+     "train_units_eligible": 68171,
+     "val_units_eligible": 7575,
+     "eligible_train_units_min_median_max": [
+      673,
+      675.0,
+      675
+     ]
+    }
+   }
+  },
+  "oxford_pets": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/oxford_pets.parquet",
+   "cohort_sha256": "2b3baeb6a535ffd625b057d826051d57413a0659186c499418455e1782a036c1",
+   "images": 3680,
+   "units": 3680,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/oxford_pets_trainval.parquet",
+   "source_sha256": "147b18d469a4a8f248fe2fad29240adb9c4f2b14720d26a662b7b125daefbdc5",
+   "conflicting_label_units": 0,
+   "conflicting_label_images": 0,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 37,
+     "classes_eligible": 37,
+     "eligible_pairs": 666,
+     "train_units": 3311,
+     "val_units": 369,
+     "train_units_eligible": 3311,
+     "val_units_eligible": 369,
+     "eligible_train_units_min_median_max": [
+      84,
+      90.0,
+      90
+     ]
+    }
+   }
+  },
+  "cifar100": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/cifar100.parquet",
+   "cohort_sha256": "cc2a696c368ac12e2c817e383883a4691472ba180b69803c8fbd655b7a01304f",
+   "images": 50000,
+   "units": 49995,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/cifar100_trainval.parquet",
+   "source_sha256": "4c7450243a3c5d3f361a7ab11e1907482902731efac9265eaba435d0652608fc",
+   "conflicting_label_units": 9,
+   "conflicting_label_images": 18,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 100,
+     "classes_eligible": 100,
+     "eligible_pairs": 4950,
+     "train_units": 44993,
+     "val_units": 5002,
+     "train_units_eligible": 44993,
+     "val_units_eligible": 5002,
+     "eligible_train_units_min_median_max": [
+      445,
+      450.0,
+      450
+     ]
+    }
+   }
+  },
+  "fgvc_aircraft": {
+   "cohort": "/home/aijyu/Documents/Research/Feature_geometry_data/replication/cohorts/fgvc_aircraft.parquet",
+   "cohort_sha256": "fcd5cd0dee27f299d44094bc54222b5fce081af18266f46ee2c82f23e2dd8333",
+   "images": 6667,
+   "units": 6667,
+   "source": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/extract/fgvc_aircraft_trainval.parquet",
+   "source_sha256": "9af38fef740a6820580206bc69cb50e1df992af8e173645aab096fc07c2a9d90",
+   "conflicting_label_units": 0,
+   "conflicting_label_images": 0,
+   "partitions": {
+    "official": {
+     "classes_train_or_val": 100,
+     "classes_eligible": 100,
+     "eligible_pairs": 4950,
+     "train_units": 3334,
+     "val_units": 3333,
+     "train_units_eligible": 3334,
+     "val_units_eligible": 3333,
+     "eligible_train_units_min_median_max": [
+      33,
+      33.0,
+      34
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1605 @@
+taxon_group,train,val,eligible
+Abortiporus biennis (Bull.) Singer,119,13,True
+Acarospora fuscata (Nyl.) Arnold,129,14,True
+Achroomyces disciformis (Fr.) Donk,37,4,False
+Acrospermum compressum Tode,24,3,False
+Agaricus arvensis Schaeff.,191,21,True
+Agaricus augustus Fr.,163,18,True
+Agaricus bernardii (Quél.) Sacc.,44,5,True
+Agaricus bisporus (J.E.Lange) Pilat,13,2,False
+Agaricus bitorquis (Quél.) Sacc.,133,15,True
+Agaricus bohusii Bon,10,1,False
+Agaricus brunneolus (J.E.Lange) Pilát,29,3,False
+Agaricus campestris L.,235,26,True
+Agaricus crocodilinus Murrill,17,2,False
+Agaricus cupreobrunneus (Jul.Schäff. & Steer) Pilát,27,3,False
+Agaricus dulcidulus Schulzer,64,7,True
+Agaricus essettei Bon,52,6,True
+Agaricus impudicus (Rea) Pilát,175,19,True
+Agaricus langei (F.H.Møller & Jul.Schäff.) Maire,38,4,False
+Agaricus lanipes (F.H.Møller & Jul.Schäff.) Singer,13,1,False
+Agaricus litoralis (Wakef. & A.Pearson) Pilát,32,4,False
+Agaricus moelleri Wasser,23,3,False
+Agaricus subfloccosus (J.E.Lange) Pilát,15,2,False
+Agaricus subperonatus (J.E.Lange) Singer,21,2,False
+Agaricus sylvaticus Schaeff.,79,9,True
+"Agaricus sylvicola (Vittad.) Peck, 1872",77,8,True
+Agaricus xanthodermus Genev.,203,22,True
+Agrocybe arvalis (Fr.) Singer,14,2,False
+Agrocybe dura (Bolton) Singer,49,6,True
+Agrocybe elatella (P.Karst.) Vesterh.,18,2,False
+Agrocybe pediades (Fr.) Fayod,122,14,True
+Agrocybe praecox (Pers.) Fayod,179,20,True
+Agrocybe rivulosa Nauta,20,2,False
+Aleuria aurantia (Pers.) Fuckel,209,23,True
+"Aleurodiscus amorphus (Pers.) J.Schröt., 1888",34,4,False
+Amanita ceciliae (Berk. & Broome) Bas,77,9,True
+"Amanita citrina Pers., 1797",96,11,True
+Amanita crocea (Quél.) Singer,58,6,True
+Amanita excelsa Gonn. & Rabenh.,236,26,True
+Amanita franchetii (Boud.) Fayod,24,3,False
+Amanita fulva (Schaeff.) Fr.,298,33,True
+Amanita gemmata (Fr.) Bertill.,97,11,True
+Amanita lividopallescens (Secr. ex Boud.) Kühner & Romagn.,16,2,False
+"Amanita muscaria (L.) Lam., 1783",561,62,True
+Amanita pantherina (DC.) Krombh.,167,19,True
+Amanita phalloides (Vaill. ex Fr.) Link,175,20,True
+Amanita porphyria Alb. & Schwein.,98,11,True
+Amanita rubescens (Pers.) Gray,314,35,True
+Amanita strobiliformis Gonn. & Rabenh.,77,8,True
+Amanita submembranacea (Bon) Gröger,59,6,True
+Amanita vaginata (Bull.) Vittad.,50,6,True
+Amanita virosa (Fr.) Bertill.,126,14,True
+Amphinema byssoides (Pers.) J.Erikss.,19,2,False
+"Ampulloclitocybe clavipes (Pers.) Redhead, Lutzoni, Moncalvo & Vilgalys",108,12,True
+"Amyloporia sinuosa (Fr.) Rajchenb., Gorjón & Pildain, 2011",21,2,False
+Amyloporia xantha (Fr.) Bondartsev & Singer,108,12,True
+Amylostereum chailletii (Pers.) Boidin,42,5,True
+Amylostereum laevigatum (Fr.) Boidin,37,4,False
+Antrodiella serpula (P.Karst.) Spirin & Niemelä,67,8,True
+"Aporhytisma urticae (Fr.) Höhn., 1917",41,4,False
+Arcyria cinerea Fr.,13,1,False
+Arcyria denudata Fr.,28,3,False
+Armillaria lutea Gillet,429,48,True
+Armillaria mellea (Vahl) P.Kumm.,149,17,True
+Armillaria ostoyae (Romagn.) Herink,251,28,True
+Arrhenia acerosa (Fr.) Kühner,13,1,False
+"Arrhenia chlorocyanea (Pat.) Redhead, Lutzoni, Moncalvo & Vilgalys",30,3,False
+"Arrhenia gerardiana (Peck) Elborne, 2008",31,3,False
+Arrhenia lobata (Pers.) Kühner & Lamoure ex Redhead,19,2,False
+"Arrhenia obscurata (D.A.Reid) Redhead, Lutzoni, Moncalvo & Vilgalys",13,2,False
+"Arrhenia peltigerina (Peck) Redhead, Lutzoni, Moncalvo & Vilgalys",54,6,True
+Arrhenia retiruga (Bull.) Redhead,130,14,True
+Arrhenia spathulata (Fr.) Redhead,58,6,True
+Arthonia radiata (Pers.) Ach.,39,4,False
+"Ascocoryne albida (Berk.) Seifert, 2014",18,2,False
+Ascocoryne cylichnium (Tul.) Korf,191,21,True
+Ascocoryne sarcoides (Jacq.) J.W.Groves & D.E.Wilson,333,37,True
+Ascodichaena rugosa Butin,71,8,True
+Ascotremella faginea (Peck) Seaver,81,9,True
+Aspropaxillus giganteus (Sowerby) Kühner & Maire,97,11,True
+Asterophora lycoperdoides (Bull.) Ditmar,31,3,False
+Asterophora parasitica (Bull. ex Pers.) Singer,72,8,True
+Athelia epiphylla Pers.,64,7,True
+"Atheniella adonis (Bull.) Redhead, Moncalvo, Vilgalys, Desjardin & B.A.Perry, 2012",81,9,True
+"Atheniella flavoalba (Fr.) Redhead, Moncalvo, Vilgalys, Desjardin & B.A.Perry, 2012",111,12,True
+Aurantiporus croceus (Pers.) Murrill,30,3,False
+Aurantiporus fissilis (Berk. & M.A.Curtis) H.Jahn,22,2,False
+Aureoboletus gentilis (Quél.) Pouzar,41,4,False
+"Aureoboletus projectellus (Murrill) Halling, 2015",31,3,False
+Auricularia auricula-judae (Fr.) J.Schröt.,745,83,True
+Auricularia mesenterica (Dicks.) Pers.,53,6,True
+Auriscalpium vulgare Gray,143,16,True
+"Badhamia utricularis (Bull.) Berk., 1852",43,5,True
+Baeomyces rufus (Huds.) Rebent.,27,3,False
+Baeospora myosura (Fr.) Singer,148,16,True
+"Basidioradulum radula (Fr.) Nobles, 1967",321,36,True
+Bertia moriformis (Tode) De Not.,27,3,False
+Bispora antennata (Pers.) E.W.Mason,134,15,True
+Bisporella pallescens (Pers.) S.E.Carp. & Korf,27,3,False
+Bisporella subpallida (Rehm) Dennis,10,1,False
+Bjerkandera adusta (Willd.) P.Karst.,620,69,True
+Bjerkandera fumosa (Pers.) P.Karst.,162,18,True
+Blumeria graminis (DC.) Speer,13,2,False
+Bolbitius coprophilus (Peck) Hongo,21,2,False
+"Bolbitius titubans (Bull.) Fr., 1838",256,28,True
+Boletus aereus Secr.,40,4,False
+Boletus edulis Bull.,424,47,True
+Boletus pinophilus Pilát & Dermek,26,3,False
+Boletus reticulatus Schaeff.,149,17,True
+Botryobasidium aureum Parmasto,117,13,True
+Botryobasidium subcoronatum (Höhn. & Litsch.) Donk,29,3,False
+Botryobasidium vagum (Berk. & M.A.Curtis) D.P.Rogers,19,2,False
+Bovista nigrescens Pers.,49,5,True
+Bovista plumbea Pers.,65,7,True
+Brefeldia maxima (Fr.) Rostaf.,18,2,False
+Brevicellicium olivascens (Bres.) K.H.Larss. & Hjortstam,28,3,False
+"Brunneoporus kuzyanus (Pilát) Audet, 2017",14,2,False
+Buchwaldoboletus lignicola (Kallenb.) Pilát,19,2,False
+"Buglossoporus quercinus (Schrad.) Kotl. & Pouzar, 1966",90,10,True
+Bulbillomyces farinosus (Bres.) Jülich,29,3,False
+Bulgaria inquinans (Pers.) Fr.,163,18,True
+"Butyriboletus appendiculatus (Schaeff.) D.Arora & J.L.Frank, 2014",138,15,True
+"Butyriboletus fechtneri (Velen.) D.Arora & J.L.Frank, 2014",20,2,False
+"Butyriboletus fuscoroseus (Smotl.) Vizzini & Gelardi, 2014",12,1,False
+Byssocorticium atrovirens (Fr.) Bondartsev & Singer,36,4,False
+Byssomerulius corium (Pers.) Parmasto,489,54,True
+"Byssonectria terrestris (Alb. & Schwein.) Pfister, 1994",43,5,True
+Calloria neglecta (Lib.) B.Hein,121,13,True
+"Caloboletus calopus (Pers.) Vizzini, 2014",154,17,True
+"Caloboletus radicans (Pers.) Vizzini, 2014",192,21,True
+Calocera cornea (Batsch) Fr.,291,32,True
+Calocera furcata (Fr.) Fr.,59,7,True
+Calocera viscosa (Pers.) Fr.,335,37,True
+"Calocybe carnea (Bull.) Donk, 1962",71,8,True
+Calocybe gambosa (Fr.) Singer,180,20,True
+"Calogaya decipiens (Arnold) Arup, Frödén & Søchting",33,4,False
+Caloscypha fulgens (Pers.) Boud.,9,1,False
+Calycina citrina (Hedw.) Gray,202,22,True
+Calyptella campanula (Nees) W.B.Cooke,13,2,False
+Calyptella capula (Holmsk.) Quél.,28,3,False
+Camarophyllopsis schulzeri (Bres.) Herink,46,5,True
+Camarops polysperma (Mont.) J.H.Mill.,49,6,True
+Candelariella aurella (Hoffm.) Zahlbr.,32,4,False
+Candelariella vitellina (Ehrh.) Müll.Arg.,149,16,True
+Cantharellus amethysteus (Quél.) Sacc.,51,6,True
+Cantharellus cibarius Fr.,255,28,True
+Cantharellus pallens Pilát,121,13,True
+"Capitotricha bicolor (Bull.) Baral, 1985",35,4,False
+Cartilosoma ramentaceum (Berk. & Broome) Teixeira,48,5,True
+Ceraceomyces serpens (Tode) Ginns,34,4,False
+"Ceratiomyxa fruticulosa (O.F.Müll.) T.Macbr., 1899",127,14,True
+"Cerioporus squamosus (Huds.) Quél., 1886",365,40,True
+"Cerioporus varius (Pers.) Zmitr. & Kovalenko, 2016",327,36,True
+Ceriporia excelsa S.Lundell ex Parmasto,39,4,False
+Ceriporia purpurea (Fr.) Komarova,28,3,False
+Ceriporia reticulata (Hoffm.) Domanski,24,3,False
+Ceriporiopsis gilvescens (Bres.) Domanski,22,2,False
+Ceriporiopsis resinascens (Romell) Domanski,31,3,False
+Cerrena unicolor (Bull.) Murrill,27,3,False
+Cetraria aculeata (Schreb.) Fr.,52,6,True
+Cetraria islandica (L.) Ach.,59,7,True
+Cetraria muricata (Ach.) Eckfeldt,31,3,False
+Chaenotheca ferruginea (Turner ex Sm.) Mig.,13,2,False
+Chaetosphaerella phaeostroma (Durieu & Mont.) E.Müll. & C.Booth,25,3,False
+Chalciporus piperatus (Bull.) Bataille,180,20,True
+Cheilymenia fimicola (De Not. & Bagl.) Dennis,12,1,False
+Cheilymenia granulata (Bull.) J.Moravec,74,8,True
+Chlorociboria aeruginascens (Nyl.) Kanouse,131,14,True
+Chlorophyllum brunneum (Farl. & Burt) Vellinga,48,5,True
+Chlorophyllum olivieri (Barla) Vellinga,235,26,True
+Chlorophyllum rhacodes (Vittad.) Vellinga,111,12,True
+Chondrostereum purpureum (Pers.) Pouzar,416,46,True
+Chromocyphella muscicola (Fr.) Donk,36,4,False
+Chroogomphus rutilus (Schaeff.) O.K.Mill.,67,8,True
+"Chrysomphalina grossula (Pers.) Norvell, Redhead & Ammirati",98,11,True
+Ciboria amentacea (Balb.) Fuckel,47,5,True
+Ciboria rufofusca (O.Weberb.) Sacc.,41,4,False
+Cinereomyces lindbladii (Berk.) Jülich,59,7,True
+"Circinaria caesiocinerea (Nyl. ex Malbr.) A.Nordin, Savic & Tibell",21,2,False
+"Circinaria contorta (L.) A.Nordin, Savic & Tibell",69,8,True
+Cladomeris umbellata (Pers.) Quél.,66,7,True
+Cladonia chlorophaea (Flörke ex Sommerf.) Spreng.,229,25,True
+Cladonia ciliata Stirt.,62,7,True
+Cladonia coniocraea (Flörke) Spreng.,81,9,True
+Cladonia digitata (L.) Hoffm.,43,5,True
+Cladonia diversa Asperges,101,11,True
+Cladonia fimbriata (L.) Fr.,113,12,True
+Cladonia floerkeana (Fr.) Flörke,123,14,True
+Cladonia foliacea (Huds.) Willd.,65,7,True
+"Cladonia furcata (Huds.) Schrad., 1794",107,12,True
+Cladonia glauca Flörke,67,8,True
+Cladonia gracilis (L.) Willd.,64,7,True
+Cladonia humilis (With.) J.R.Laundon,67,7,True
+Cladonia macilenta Hoffm.,35,4,False
+Cladonia merochlorophaea Asahina,20,2,False
+Cladonia ochrochlora Flörke,46,5,True
+Cladonia polydactyla (Flörke) Spreng.,25,3,False
+Cladonia portentosa (Dufour) Coem.,150,17,True
+Cladonia pyxidata (L.) Hoffm.,17,2,False
+Cladonia ramulosa (With.) J.R.Laundon,84,9,True
+Cladonia rangiferina (L.) Weber ex F.H.Wigg.,19,2,False
+Cladonia rangiformis Hoffm.,93,10,True
+Cladonia scabriuscula (Delise) Leight.,127,14,True
+Cladonia subulata (L.) Weber ex F.H.Wigg.,38,4,False
+Cladonia uncialis (L.) Weber ex F.H.Wigg.,84,9,True
+Clathrus archeri (Berk.) Dring,22,2,False
+Clavaria argillacea Fr.,91,10,True
+Clavaria falcata Pers.,74,8,True
+Clavaria fragilis Holmsk.,17,2,False
+Clavaria tenuipes Berk. & Broome,14,2,False
+Clavaria zollingeri Lév.,16,2,False
+Clavariadelphus pistillaris (L.) Donk,105,12,True
+Claviceps purpurea (Fr.) Tul.,23,3,False
+Clavulina cinerea (Bull.) J.Schröt.,44,5,True
+Clavulina coralloides (L.) J.Schröt.,297,33,True
+Clavulina rugosa (Bull.) J.Schröt.,290,32,True
+Clavulinopsis corniculata (Schaeff.) Corner,159,18,True
+Clavulinopsis helvola (Pers.) Corner,110,12,True
+Clavulinopsis laeticolor (Berk. & M.A.Curtis) R.H.Petersen,35,4,False
+Clavulinopsis luteoalba (Rea) Corner,74,8,True
+Clavulinopsis umbrinella (Sacc.) Corner,21,2,False
+"Clitocella popinalis (Fr.) Kluting, T.J.Baroni & Bergemann, 2014",31,3,False
+Clitocybe agrestis Harmaja,32,4,False
+Clitocybe diatreta (Fr.) P.Kumm.,23,2,False
+Clitocybe fragrans Sowerby,245,27,True
+Clitocybe metachroa (Fr.) P.Kumm.,137,15,True
+Clitocybe nebularis (Batsch) Quél.,437,48,True
+Clitocybe nitrophila Bon,16,2,False
+Clitocybe odora (Bull.) P.Kumm.,72,8,True
+Clitocybe phyllophila (Pers.) P.Kumm.,110,12,True
+Clitocybe rivulosa (Pers.) P.Kumm.,99,11,True
+"Clitocybe trulliformis (Fr.) P.Karst., 1879",17,2,False
+Clitocybe vibecina (Fr.) Quél.,59,7,True
+Clitopilus hobsonii (Berk. & Broome) P.D.Orton,81,9,True
+Clitopilus prunulus (Scop.) Fr.,316,35,True
+Coleosporium tussilaginis (Pers.) Lév.,33,4,False
+Collybia cirrhata (Schumach.) P.Kumm.,47,5,True
+Collybia cookei (Bres.) J.D.Arnold,66,7,True
+Colpoma quercinum (Pers.) Wallr.,33,4,False
+Coltricia confluens P.-J.Keizer,20,2,False
+Coltricia perennis (L.) Murrill,94,10,True
+Comatricha nigra (Pers.) J.Schröt.,27,3,False
+Coniophora arida (Fr.) P.Karst.,22,2,False
+Coniophora puteana (Schumach.) P.Karst.,169,19,True
+Conocybe albipes Hauskn.,82,9,True
+Conocybe subpubescens P.D.Orton,38,4,False
+"Coprinellus angulatus (Peck) Redhead, Vilgalys & Moncalvo",14,2,False
+Coprinellus disseminatus (Pers.) J.E.Lange,308,34,True
+"Coprinellus domesticus (Bolton) Vilgalys, Hopple & Jacq.Johnson",55,6,True
+"Coprinellus flocculosus (DC.) Vilgalys, Hopple & Jacq.Johnson",16,2,False
+"Coprinellus micaceus (Bull.) Vilgalys, Hopple & Jacq.Johnson",563,62,True
+"Coprinellus radians (Desm.) Vilgalys, Hopple & Jacq.Johnson",16,2,False
+"Coprinellus xanthothrix (Romagn.) Vilgalys, Hopple & Jacq.Johnson",32,4,False
+"Coprinopsis atramentaria (Bull.) Redhead, Vilgalys & Moncalvo",230,26,True
+"Coprinopsis candidata (Uljé) Gminder & T.Böhning, 2016",15,2,False
+"Coprinopsis canoceps (Kauffman) Örstadius & E.Larss., 2015",11,1,False
+"Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo",11,1,False
+"Coprinopsis ephemeroides (DC.) G.Moreno, 2010",24,3,False
+"Coprinopsis insignis (Peck) Redhead, Vilgalys & Moncalvo",14,2,False
+"Coprinopsis kubickae (Pilát & Svrcek) Redhead, Vilgalys & Moncalvo",13,1,False
+"Coprinopsis lagopus (Fr.) Redhead, Vilgalys & Moncalvo, 2001",205,23,True
+"Coprinopsis macrocephala (Berk.) Redhead, Vilgalys & Moncalvo",13,1,False
+"Coprinopsis nivea (Pers.) Redhead, Vilgalys & Moncalvo",87,10,True
+"Coprinopsis picacea (Bull.) Redhead, Vilgalys & Moncalvo",412,46,True
+"Coprinopsis romagnesiana (Singer) Redhead, Vilgalys & Moncalvo",45,5,True
+"Coprinopsis stercorea (Fr.) Redhead, Vilgalys & Moncalvo",22,2,False
+"Coprinopsis urticicola (Berk. & Broome) Redhead, Vilgalys & Moncalvo",14,2,False
+Coprinus comatus (O.F.Müll.) Gray,473,53,True
+Cordyceps militaris (L.) Link,248,28,True
+"Corticium roseum Pers., 1794",33,4,False
+Cortinarius acetosus (Velen.) Melot,16,2,False
+Cortinarius acutus (Pers.) Fr.,25,3,False
+Cortinarius alboviolaceus (Pers.) Fr.,135,15,True
+Cortinarius alcalinophilus Rob.Henry,37,4,False
+Cortinarius anomalus (Pers.) Fr.,120,13,True
+Cortinarius anserinus (Velen.) Rob.Henry,155,17,True
+Cortinarius aprinus Melot,28,3,False
+Cortinarius armillatus (Alb. & Schwein.) Fr.,34,4,False
+Cortinarius balteatocumatilis Rob.Henry ex P.D.Orton,41,4,False
+Cortinarius barbatus (Batsch) Melot,59,6,True
+Cortinarius bergeronii (Melot) Melot,28,3,False
+Cortinarius biformis Fr.,25,3,False
+Cortinarius bolaris (Pers.) Fr.,121,13,True
+Cortinarius caerulescens (Schaeff.) Fr.,64,7,True
+Cortinarius camphoratus (Fr.) Fr.,17,2,False
+Cortinarius caninus (Fr.) Fr.,27,3,False
+Cortinarius caperatus (Pers.) Fr.,41,4,False
+Cortinarius cinnabarinus Fr.,51,6,True
+Cortinarius cinnamomeus (L.) Fr.,88,10,True
+Cortinarius citrinus (J.E.Lange) Rob.Henry,57,6,True
+Cortinarius cliduchus Secr. ex Fr.,36,4,False
+Cortinarius collinitus (Pers.) Fr.,51,6,True
+Cortinarius croceocaeruleus (Pers.) Fr.,42,5,True
+Cortinarius croceus (Schaeff.) Gray,82,9,True
+"Cortinarius decipiens (Pers.) Fr., 1838",23,2,False
+Cortinarius delibutus Fr.,52,6,True
+"Cortinarius elatior Fr., 1838",175,19,True
+Cortinarius elegantissimus Rob.Henry,49,6,True
+"Cortinarius emollitoides Bidaud, Moënne-Locc. & Reumaux",35,4,False
+Cortinarius emollitus Fr.,19,2,False
+Cortinarius flexipes (Pers.) Fr.,165,18,True
+Cortinarius foetens (M.M.Moser) M.M.Moser,49,6,True
+Cortinarius hemitrichus (Pers.) Fr.,67,7,True
+Cortinarius hinnuleus Fr.,57,6,True
+Cortinarius humolens Brandrud,18,2,False
+"Cortinarius infractus (Pers.) Fr., 1838",98,11,True
+Cortinarius largus Fr.,132,15,True
+Cortinarius lepidopus Cooke,14,2,False
+Cortinarius limonius (Fr.) Fr.,29,3,False
+"Cortinarius luhmannii Münzmay, Saar & B.Oertel, 2004",19,2,False
+Cortinarius malicorius Fr.,177,20,True
+Cortinarius mucosus (Bull.) Cooke,21,2,False
+Cortinarius multiformis (Fr.) Fr.,19,2,False
+Cortinarius obtusus (Fr.) Fr.,85,9,True
+Cortinarius olearioides Rob.Henry,28,3,False
+Cortinarius olivaceofuscus Kühner,31,3,False
+Cortinarius phoeniceus (Vent.) Maire,18,2,False
+Cortinarius puniceus P.D.Orton,27,3,False
+Cortinarius purpurascens (Fr.) Fr.,20,2,False
+"Cortinarius quercoconicus Liimat., Kytov. & Niskanen, 2017",15,2,False
+"Cortinarius rhizophorus Bidaud & Consiglio, 2012",17,2,False
+Cortinarius rubellus Cooke,83,9,True
+Cortinarius sanguineus (Wulfen) Fr.,41,5,True
+Cortinarius saniosus (Fr.) Fr.,20,2,False
+Cortinarius saturninus (Fr.) Fr.,21,2,False
+Cortinarius semisanguineus (Fr.) Gillet,169,19,True
+Cortinarius sphagnophilus Peck,33,4,False
+Cortinarius stillatitius Fr.,20,2,False
+Cortinarius subpurpurascens (Batsch) Fr.,18,2,False
+Cortinarius subtortus (Pers.) Fr.,37,4,False
+Cortinarius talus Fr.,26,3,False
+Cortinarius torvus (Fr.) Fr.,175,19,True
+Cortinarius traganus (Fr.) Fr.,22,2,False
+Cortinarius triumphans Fr.,42,5,True
+Cortinarius trivialis J.E.Lange,82,9,True
+Cortinarius turgidus Fr.,32,4,False
+Cortinarius uliginosus Berk.,23,2,False
+Cortinarius umbrinolens P.D.Orton,26,3,False
+Cortinarius vernus H.Lindstr. & Melot,23,2,False
+Cortinarius violaceus (L.) Gray,42,5,True
+"Cortinarius vulpinus (Velen.) Rob.Henry, 1947",41,5,True
+Cortinarius xantho-ochraceus P.D.Orton,20,2,False
+"Cosmospora arxii (W.Gams) Gräfenhan & Schroers, 2011",25,3,False
+"Craterellus cinereus (Pers.) Pers., 1825",50,6,True
+Craterellus cornucopioides (L.) Pers.,144,16,True
+Craterellus melanoxeros (Desm.) Pérez-De-Greg.,17,2,False
+Craterellus tubaeformis (Fr.) Quél.,273,30,True
+Craterellus undulatus (Pers.) Redeuilh,127,14,True
+Craterium minutum (Leers) Fr.,19,2,False
+Crepidotus autochthonus J.E.Lange,20,2,False
+Crepidotus calolepis (Fr.) P.Karst.,20,2,False
+Crepidotus caspari Velen.,29,3,False
+Crepidotus cesatii (Rabenh.) Sacc.,157,17,True
+Crepidotus epibryus (Fr.) Quél.,23,2,False
+Crepidotus luteolus (Lambotte) Sacc.,43,5,True
+Crepidotus mollis (Schaeff.) Staude,221,24,True
+Crepidotus variabilis (Pers.) P.Kumm.,68,8,True
+Crinipellis scabella (Alb. & Schwein.) Murrill,84,9,True
+Crucibulum crucibuliforme (Scop.) V.S.White,165,18,True
+Cudonia circinans (Pers.) Fr.,16,2,False
+Cudoniella acicularis (Bull.) J.Schröt.,33,4,False
+Cumminsiella mirabilissima (Peck) Nannf.,22,2,False
+"Cuphophyllus colemannianus (A.Bloxam) Bon, 1985",36,4,False
+"Cuphophyllus flavipes (Britzelm.) Bon, 1985",105,12,True
+"Cuphophyllus fornicatus (Fr.) Lodge, Padamsee & Vizzini, 2013",32,4,False
+Cuphophyllus fuscescens (Bres.) Bon,13,1,False
+"Cuphophyllus ochraceopallidus (P.D.Orton) Bon, 1985",47,5,True
+"Cuphophyllus pratensis (Fr.) Bon, 1985",329,37,True
+Cuphophyllus russocoriaceus (Berk. & Jos.K.Mill.) Bon,85,10,True
+"Cuphophyllus virgineus (Wulfen) Kovalenko, 1989",531,59,True
+"Cyanoboletus pulverulentus (Opat.) Gelardi, Vizzini & Simonini, 2014",86,10,True
+"Cyathicula cyathoidea (Bull.) Thüm., 1874",29,3,False
+Cyathus olla (Batsch) Pers.,29,3,False
+Cyathus striatus (Huds.) Willd.,125,14,True
+"Cyclocybe erebia (Fr.) Vizzini & Matheny, 2014",53,6,True
+Cylindrobasidium evolvens (Fr.) Jülich,415,46,True
+Cystoderma amianthinum (Scop.) Fayod,326,36,True
+Cystoderma carcharias (Pers.) Fayod,49,6,True
+Cystoderma jasonis (Cooke & Massee) Harmaja,41,4,False
+Cystodermella cinnabarina (Alb. & Schwein.) Harmaja,30,3,False
+Cystodermella granulosa (Batsch) Harmaja,18,2,False
+Cystolepiota bucknallii (Berk. & Broome) Singer & Clémençon,20,2,False
+Cystolepiota seminuda (Lasch) Bon,69,8,True
+Dacrymyces capitatus Schwein.,12,1,False
+Dacrymyces lacrymalis (Pers.) Sommerf.,131,14,True
+Dacrymyces stillatus Nees,378,42,True
+Dacryobolus karstenii (Bres.) Oberw. ex Parmasto,32,4,False
+Daedalea quercina (L.) Pers.,385,43,True
+Daedaleopsis confragosa (Bolton) J.Schröt.,485,54,True
+Daldinia concentrica (Bolton) Ces. & De Not.,68,8,True
+"Datronia mollis (Sommerf.) Donk, 1966",281,31,True
+"Deconica crobula (Fr.) Romagn., 1937",26,3,False
+"Deconica horizontalis (Bull.) Noordel., 2009",140,16,True
+"Deconica inquilina (Fr.) Romagn., 1937",23,2,False
+"Deconica merdaria (Fr.) Noordel., 2009",14,2,False
+"Deconica montana (Pers.) P.D.Orton, 1960",111,12,True
+Delicatula integrella (Pers.) Fayod,49,5,True
+Dendrothele acerina (Pers.) P.A.Lemke,50,6,True
+Dermoloma cuneifolium (Fr.) Singer,113,12,True
+"Dialonectria episphaeria (Tode) Cooke, 1884",25,3,False
+Diatrype bullata (Hoffm.) Fr.,80,9,True
+Diatrype decorticata (Pers.) Rappaz,77,9,True
+Diatrype disciformis (Hoffm.) Fr.,118,13,True
+"Diatrype quercina (Pers.) Fr., 1849",57,6,True
+Diatrype undulata (Berk. & Broome) Berk. & Broome,16,2,False
+Diatrypella favacea (Fr.) Ces. & De Not.,10,1,False
+Diatrypella verruciformis (Ehrh.) Nitschke,19,2,False
+Dichomitus campestris (Quél.) Domanski & Orlicz,25,3,False
+Dictydiaethalium plumbeum (Schumach.) Rostaf. ex Lister,41,5,True
+Didymium squamulosum Fuckel,19,2,False
+Disciotis venosa (Pers.) Arnould,67,7,True
+Dissingia leucomelaena (Pers.) K.Hansen & X.H.Wang,35,4,False
+Dumontinia tuberosa (Bull.) L.M.Kohn,79,9,True
+Durella connivens (Fr.) Rehm,8,0,False
+"Echinoderma asperum (Pers.) Bon, 1991",162,18,True
+"Echinoderma echinaceum (J.E.Lange) Bon, 1991",13,1,False
+"Echinoderma jacobi (Vellinga & Knudsen) Gminder, 2003",17,2,False
+Echinosphaeria canescens (Pers.) A.N.Mill. & Huhndorf,17,2,False
+Elaphomyces granulatus Fr.,13,1,False
+Elaphomyces muricatus Fr.,36,4,False
+Enchylium tenax (Sw.) Gray,15,2,False
+Encoelia furfuracea (Roth) P.Karst.,112,12,True
+Entoloma araneosum (Quél.) M.M.Moser,15,2,False
+Entoloma asprellum (Fr.) Fayod,22,2,False
+Entoloma atrocoeruleum Noordel.,21,2,False
+Entoloma bloxamii (Berk. & Broome) Sacc.,9,1,False
+Entoloma cetratum (Fr.) M.M.Moser,61,7,True
+Entoloma chalybaeum (Pers.) Zerova,55,6,True
+"Entoloma clypeatum (L.) P.Kumm., 1871",109,12,True
+"Entoloma conferendum (Britzelm.) Noordel., 1980",73,8,True
+Entoloma euchroum (Pers.) Donk,15,2,False
+Entoloma exile (Fr.) Hesler,43,5,True
+Entoloma formosum (Fr.) Noordel.,18,2,False
+Entoloma griseocyaneum (Fr.) P.Kumm.,57,6,True
+Entoloma hebes (Romagn.) Trimbach,44,5,True
+Entoloma incanum (Fr.) Hesler,50,6,True
+Entoloma incarnatofuscescens (Britzelm.) Noordel.,22,2,False
+Entoloma lanuginosipes Noordel.,16,2,False
+Entoloma lividoalbum (Kühner & Romagn.) M.M.Moser,53,6,True
+"Entoloma mougeotii (Fr.) Hesler, 1967",17,2,False
+Entoloma neglectum (Lasch) Arnolds,30,3,False
+"Entoloma nitidum Quél., 1883",24,3,False
+Entoloma papillatum (Bres.) Dennis,22,2,False
+Entoloma pleopodium (Bull.) Noordel.,37,4,False
+Entoloma prunuloides (Fr.) Quél.,73,8,True
+Entoloma rhodocylix (Lasch) M.M.Moser,34,4,False
+Entoloma rhodopolium (Fr.) P.Kumm.,81,9,True
+"Entoloma sepium (Noulet & Dass.) Richon & Roze, 1880",15,2,False
+Entoloma sericatum (Britzelm.) Sacc.,50,6,True
+"Entoloma sericellum (Fr.) P.Kumm., 1871",50,6,True
+"Entoloma sericeum Quél., 1872",61,7,True
+Entoloma serrulatum (Fr.) Hesler,126,14,True
+Entoloma sinuatum (Bull.) P.Kumm.,32,4,False
+Entoloma sordidulum (Kühner & Romagn.) P.D.Orton,34,4,False
+"Entoloma turbidum (Fr.) Quél., 1872",30,3,False
+Entoloma undatum (Fr.) M.M.Moser,47,5,True
+Entoloma vernum S.Lundell,19,2,False
+Entyloma ficariae A.A.Fisch.Waldh.,15,2,False
+Epichloe typhina (Pers.) Tul. & C.Tul.,22,2,False
+Eriopezia caesia (Pers.) Rehm,24,3,False
+Erysiphe alphitoides (Griffon & Maubl.) U.Braun & S.Takam.,96,11,True
+Erysiphe heraclei DC.,11,1,False
+"Erythricium aurantiacum (Lasch) D.Hawksw. & A.Henrici, 2015",113,12,True
+Eutypa flavovirens (Pers.) Tul. & C.Tul.,13,1,False
+Eutypa lata (Pers.) Tul. & C.Tul.,11,1,False
+Eutypa maura (Fr.) Sacc.,16,2,False
+Eutypa spinosa (Pers.) Tul. & C.Tul.,162,18,True
+Eutypella sorbi (Alb. & Schwein.) Sacc.,23,2,False
+Evernia prunastri (L.) Ach.,324,36,True
+Exidia glandulosa (Bull.) Fr.,331,37,True
+"Exidia nigricans (With.) P.Roberts, 2009",454,50,True
+Exidia pithya Fr.,85,9,True
+Exidia recisa (Ditmar) Fr.,113,13,True
+Exidia saccharina Fr.,41,5,True
+Exidia thuretiana (Lév.) Fr.,268,30,True
+Exidiopsis effusa Bref.,90,10,True
+Exidiopsis grisea (Pers.) Bourdot & Maire,45,5,True
+Exobasidium juelianum Nannf.,23,3,False
+Exobasidium vaccinii (Fuckel) Woronin,40,4,False
+Fistulina hepatica (Schaeff.) With.,270,30,True
+Flagelloscypha minutissima (Burt) Donk,10,1,False
+Flammula alnicola (Fr.) P.Kumm.,36,4,False
+Flammulaster carpophilus (Fr.) Earle,21,2,False
+Flammulaster granulosus (J.E.Lange) Watling,13,2,False
+"Flammulaster limulatus (Fr.) Watling, 1967",10,1,False
+Flammulaster muricatus (Fr.) Watling,16,2,False
+Flammulaster subincarnatus (Joss. & Kühner) Watling,23,3,False
+Flammulina elastica (Lasch) Redhead & R.H.Petersen,101,11,True
+"Flammulina velutipes (Curtis) Singer, 1951",267,30,True
+Flavoparmelia caperata (L.) Hale,26,3,False
+"Fomes fomentarius (L.) Fr., 1849",634,70,True
+"Fomitiporia hippophaeicola (H.Jahn) Fiasson & Niemelä, 1984",46,5,True
+Fomitiporia punctata (Fr.) Murrill,67,7,True
+Fomitopsis pinicola (Sw.) P.Karst.,819,91,True
+"Frantisekia mentschulensis (Pilát ex Pilát) Spirin, 2007",20,2,False
+"Fuligo septica (L.) F.H.Wigg., 1780",197,22,True
+"Fuscoporia contigua (Pers.) G.Cunn., 1948",16,2,False
+"Fuscoporia ferrea (Pers.) G.Cunn., 1948",323,36,True
+"Fuscoporia ferruginosa (Schrad.) Murrill, 1907",54,6,True
+Galerina ampullaceocystis P.D.Orton,5,0,False
+Galerina atkinsoniana A.H.Sm.,23,3,False
+Galerina calyptrata P.D.Orton,22,2,False
+Galerina clavata (Velen.) Kühner,50,6,True
+"Galerina graminea (Velen.) Kühner, 1935",39,4,False
+Galerina hybrida Kühner,31,3,False
+Galerina hypnorum (Schrank) Kühner,45,5,True
+Galerina jaapii A.H.Sm. & Singer,25,3,False
+Galerina marginata (Batsch) Kühner,258,29,True
+Galerina mniophila (Lasch) Kühner,38,4,False
+Galerina paludosa (Fr.) Kühner,89,10,True
+Galerina pumila (Pers.) M.Lange,52,6,True
+Galerina sideroides (Bull.) Kühner,62,7,True
+Galerina uncialis (Britzelm.) Kühner,23,3,False
+Galerina vittiformis (Fr.) Earle,43,5,True
+Gamundia striatula (Kühner) Raithelh.,43,5,True
+Ganoderma adspersum (Schulzer) Donk,117,13,True
+Ganoderma applanatum (Pers.) Pat.,502,56,True
+Ganoderma lucidum (Curtis) P.Karst.,133,15,True
+Ganoderma pfeifferi Bres.,307,34,True
+Ganoderma resinaceum Boud.,53,6,True
+Geastrum coronatum Pers.,11,1,False
+Geastrum fimbriatum Fr.,68,8,True
+Geastrum melanocephalum (Czern.) V.J.Stanek,10,1,False
+Geastrum michelianum Berk. & Broome,265,30,True
+Geastrum pectinatum Pers.,47,5,True
+Geastrum rufescens Pers.,18,2,False
+Geastrum schmidelii Vittad.,41,4,False
+Geastrum striatum DC.,27,3,False
+"Geoglossum cookeanum Nannf., 1942",58,6,True
+"Geoglossum elongatum Starbäck ex Nannf., 1942",94,10,True
+Geoglossum fallax E.J.Durand,90,10,True
+Geoglossum starbaeckii Nannf.,5,0,False
+Geoglossum umbratile Sacc.,31,4,False
+Geopora sumneriana (Cooke) M.Torre,60,7,True
+"Gliophorus irrigatus (Pers.) A.M.Ainsw. & P.M.Kirk, 2013",131,15,True
+"Gliophorus laetus (Pers.) Herink, 1958",209,23,True
+Gliophorus perplexus (A.H.Sm. & Hesler) Kovalenko,18,2,False
+"Gliophorus psittacinus (Schaeff.) Herink, 1958",373,41,True
+Gloeocystidiellum porosum (Berk. & M.A.Curtis) Donk,18,2,False
+Gloeophyllum sepiarium (Wulfen) P.Karst.,323,36,True
+"Gloeoporus dichrous (Fr.) Bres., 1913",38,4,False
+Gloeoporus pannocinctus (Romell) J.Erikss.,32,4,False
+Gloiothele lactescens (Berk.) Hjortstam,32,4,False
+"Gloioxanthomyces vitellinus (Fr.) Lodge, Vizzini, Ercole & Boertm., 2013",34,4,False
+"Glutinoglossum glutinosum (Pers.) Hustad, A.N.Mill., Dentinger & P.F.Cannon, 2013",110,12,True
+Glyphium elatum (Grev.) H.Zogg,66,7,True
+Godronia ribis (Fr.) Seaver,21,2,False
+Gomphidius glutinosus (Schaeff.) Fr.,140,16,True
+Gomphidius maculatus (Scop.) Fr.,17,2,False
+Gomphidius roseus (Fr.) Fr.,67,7,True
+Gomphus clavatus (Pers.) Gray,10,1,False
+Granulobasidium vellereum (Ellis & Cragin) Jülich,15,2,False
+Graphis scripta (L.) Ach.,49,5,True
+Grifola frondosa (Dicks.) Gray,103,12,True
+Gymnopilus penetrans (Fr.) Murrill,421,47,True
+Gymnopilus picreus (Pers.) P.Karst.,22,2,False
+Gymnopilus spectabilis (Fr.) Singer,280,31,True
+"Gymnopus acervatus (Fr.) Murrill, 1916",21,2,False
+"Gymnopus androsaceus (L.) Della Maggiora & Trassin., 2014",65,7,True
+Gymnopus aquosus (Bull.) Antonín & Noordel.,122,14,True
+"Gymnopus confluens (Pers.) Antonín, Halling & Noordel.",217,24,True
+Gymnopus dryophilus (Bull.) Murrill,222,25,True
+"Gymnopus erythropus (Pers.) Antonín, Halling & Noordel.",23,2,False
+"Gymnopus fagiphilus (Velen.) Antonín, Halling & Noordel.",31,3,False
+"Gymnopus foetidus (Sowerby) P.M.Kirk, 2014",21,2,False
+"Gymnopus fuscopurpureus (Pers.) Antonín, Halling & Noordel.",15,2,False
+Gymnopus fusipes (Bull.) Gray,95,11,True
+Gymnopus ocior (Pers.) Antonín & Noordel.,57,6,True
+Gymnopus perforans (Hoffm.) Antonín & Noordel.,126,14,True
+"Gymnopus peronatus (Bolton) Antonín, Halling & Noordel.",134,15,True
+Gymnosporangium clavariiforme Dietel,83,9,True
+Gymnosporangium cornutum Arthur ex F.Kern,21,2,False
+Gymnosporangium sabinae (Dicks.) G.Winter,55,6,True
+Gyrodon lividus (Bull.) Fr.,46,5,True
+Gyromitra ancilis (Pers.) Kreisel,126,14,True
+Gyromitra esculenta (Pers.) Fr.,95,10,True
+Gyromitra gigas (Krombh.) Cooke,38,4,False
+Gyromitra infula (Schaeff.) Quél.,32,4,False
+Gyroporus castaneus (Bull.) Quél.,36,4,False
+Gyroporus cyanescens (Bull.) Quél.,40,4,False
+Haematomma ochroleucum (Neck.) J.R.Laundon,35,4,False
+Hapalopilus rutilans (Per.) P.Karst.,126,14,True
+Hebeloma crustuliniforme (Bull.) Quél.,27,3,False
+Hebeloma laterinum (Batsch) Vesterh.,25,3,False
+Hebeloma mesophaeum (Pers.) Quél.,100,11,True
+Hebeloma radicosum (Bull.) Ricken,71,8,True
+Hebeloma sacchariolens Quél.,34,4,False
+Hebeloma sinapizans (Fr.) Sacc.,56,6,True
+Hebeloma theobrominum Quadr.,34,4,False
+Hebeloma velutipes Bruchet,38,4,False
+Helminthosphaeria clavariarum (Desm.) Fuckel,38,4,False
+Helvella acetabulum (L.) Quél.,88,10,True
+Helvella crispa (Scop.) Fr.,364,40,True
+Helvella elastica Bull.,102,11,True
+Helvella fibrosa (Wallr.) Korf,15,2,False
+Helvella lacunosa Afzel.,190,21,True
+Helvella macropus (Pers.) P.Karst.,36,4,False
+Helvella solitaria (P.Karst.) P.Karst.,23,2,False
+"Hemileccinum impolitum (Fr.) Šutara, 2008",24,3,False
+Hemimycena crispula (Quél.) Singer,11,1,False
+Hemimycena cucullata (Pers.) Singer,27,3,False
+Hemimycena delectabilis (Peck) Singer,16,2,False
+Hemimycena lactea (Pers.) Singer,63,7,True
+"Hemipholiota populnea (Pers.) Bon, 1986",68,8,True
+Hemitrichia clavata (Pers.) Rostaf.,22,2,False
+Henningsomyces candidus (Pers.) Kuntze,17,2,False
+Hericium cirrhatum (Pers.) Nikol.,80,9,True
+Hericium coralloides (Scop.) Pers.,202,22,True
+Hericium erinaceus (Bull.) Pers.,53,6,True
+Heterobasidion annosum (Fr.) Bref.,251,28,True
+"Heteroradulum deglubens (Berk. & Broome) Spirin & Malysheva, 2017",19,2,False
+Heterosphaeria patella Fr.,25,3,False
+Hohenbuehelia auriscalpium (Maire) Singer,16,2,False
+Hohenbuehelia cyphelliformis (Berk.) O.K.Mill.,13,1,False
+Hohenbuehelia fluxilis (Fr.) P.D.Orton,14,2,False
+Holwaya mucida (Schulzer) Korf & Abawi,24,3,False
+"Homophron cernuum (Vahl) Örstadius & E.Larss., 2015",14,2,False
+"Homophron spadiceum (P.Kumm.) Örstadius & E.Larss., 2015",13,1,False
+"Hortiboletus bubalinus (Oolbekk. & Duin) L.Albert & Dima, 2015",139,15,True
+"Hortiboletus engelii (Hlaváček) Biketova & Wasser, 2015",57,6,True
+"Hortiboletus rubellus (Krombh.) Simonini, Vizzini & Gelardi, 2015",138,15,True
+Humaria hemisphaerica (F.H.Wigg.) Fuckel,61,7,True
+Hydnellum aurantiacum (Batsch) P.Karst.,32,4,False
+Hydnellum caeruleum (Hornem.) P.Karst.,21,2,False
+Hydnellum concrescens (Pers.) Banker,68,8,True
+Hydnellum cumulatum K.A.Harrison,12,1,False
+Hydnellum ferrugineum (Fr.) P.Karst.,16,2,False
+Hydnellum lepidum,13,2,False
+Hydnum ellipsosporum Ostrow & Beenken,35,4,False
+Hydnum repandum L.,185,20,True
+Hydnum rufescens Pers.,71,8,True
+Hydnum umbilicatum Peck,31,4,False
+Hydropisphaera peziza (Tode) Dumort.,38,4,False
+Hydropus subalpinus (Höhn.) Singer,98,11,True
+"Hygrocybe acutoconica (Clem.) Singer, 1951",207,23,True
+Hygrocybe calciphila Arnolds,24,3,False
+Hygrocybe cantharellus (Schwein.) Murrill,181,20,True
+Hygrocybe ceracea (Wulfen) P.Kumm.,429,48,True
+Hygrocybe chlorophana (Fr.) Wünsche,232,26,True
+Hygrocybe citrinovirens (J.E.Lange) Jul.Schäff.,16,2,False
+Hygrocybe coccinea (Schaeff.) P.Kumm.,302,34,True
+Hygrocybe coccineocrenata (P.D.Orton) M.M.Moser,65,7,True
+Hygrocybe conica (Schaeff.) P.Kumm.,351,39,True
+Hygrocybe conicoides (P.D.Orton) P.D.Orton & Watling,22,2,False
+"Hygrocybe glutinipes (J.E.Lange) R.Haller Aar., 1956",84,9,True
+Hygrocybe helobia (Arnolds) Bon,69,8,True
+Hygrocybe insipida (J.E.Lange ex S.Lundell) M.M.Moser,131,15,True
+Hygrocybe intermedia (Pass.) Fayod,15,2,False
+Hygrocybe konradii R.Haller Aar.,29,3,False
+Hygrocybe miniata (Fr.) P.Kumm.,472,52,True
+Hygrocybe mucronella (Fr.) P.Karst.,30,3,False
+Hygrocybe phaeococcinea (Arnolds) Bon,61,7,True
+Hygrocybe punicea (Fr.) P.Kumm.,218,24,True
+Hygrocybe quieta (Kühner) Singer,36,4,False
+Hygrocybe reidii Kühner,139,15,True
+Hygrocybe spadicea (Scop.) P.Karst.,34,4,False
+Hygrocybe splendidissima (P.D.Orton) M.M.Moser,45,5,True
+Hygrocybe substrangulata (Peck) M.M.Moser,17,2,False
+Hygrophoropsis aurantiaca (Wulfen) Maire,320,36,True
+Hygrophoropsis pallida (Peck) Kreisel,44,5,True
+"Hygrophoropsis rufa (D.A.Reid) Knudsen, 2008",29,3,False
+Hygrophorus agathosmus (Fr.) Fr.,73,8,True
+Hygrophorus chrysodon (Batsch) Fr.,49,6,True
+Hygrophorus discoxanthus Rea,81,9,True
+Hygrophorus eburneus (Bull.) Fr.,134,15,True
+Hygrophorus hypothejus (Fr.) Fr.,63,7,True
+Hygrophorus mesotephrus Berk.,19,2,False
+Hygrophorus olivaceoalbus (Fr.) Fr.,95,10,True
+Hygrophorus penarius Fr.,54,6,True
+Hygrophorus persoonii Arnolds,13,2,False
+Hygrophorus pustulatus (Pers.) Fr.,164,18,True
+Hygrophorus unicolor Gröger,52,6,True
+Hymenochaete rubiginosa (Dicks.) Lév.,262,29,True
+"Hymenochaetopsis tabacina (Sowerby) S.H.He & Jiao Yang, 2016",179,20,True
+"Hymenopellis radicata (Relhan) R.H.Petersen, 2010",316,35,True
+Hymenoscyphus calyculus (Sowerby) W.Phillips,19,2,False
+"Hymenoscyphus conscriptus (P.Karst.) Korf ex Kobayasi, Hirats.f., Aoshima, Korf, Soneda, Tubaki & Sugiy.",11,1,False
+Hymenoscyphus fagineus (Pers.) Dennis,37,4,False
+"Hymenoscyphus fraxineus (T.Kowalski) Baral, Queloz & Hosoya, 2014",27,3,False
+Hymenoscyphus fructigenus (Bull.) Gray,39,4,False
+Hymenoscyphus scutula (Pers.) W.Phillips,11,1,False
+Hymenoscyphus serotinus (Pers.) W.Phillips,31,4,False
+Hyphoderma setigerum (Fr.) Donk,54,6,True
+Hyphodontia alutaria (Burt) J.Erikss.,25,3,False
+Hyphodontia arguta (Fr.) J.Erikss.,20,2,False
+Hyphodontia pallidula (Bres.) J.Erikss.,17,2,False
+Hypholoma capnoides (Fr.) P.Kumm.,195,22,True
+Hypholoma elongatum (Pers.) Ricken,41,4,False
+"Hypholoma fasciculare (Huds.) P.Kumm., 1871",786,87,True
+Hypholoma lateritium (Schaeff.) P.Kumm.,139,16,True
+Hypholoma marginatum J.Schröt.,171,19,True
+Hypholoma subericaeum (Fr.) Kühner,13,2,False
+Hypholoma udum (Pers.) Kühner,37,4,False
+Hypocenomyce scalaris (Ach. ex Lilj.) M.Choisy,23,3,False
+Hypocreopsis lichenoides (Tode) Seaver,70,8,True
+Hypogymnia physodes (L.) Nyl.,275,30,True
+Hypogymnia tubulosa (Schaer.) Hav.,126,14,True
+Hypomyces aurantius (Pers.) Fuckel,45,5,True
+Hypomyces chrysospermus Tul. & C.Tul.,21,2,False
+Hypomyces microspermus Rogerson & Samuels,31,3,False
+Hypomyces papulasporae Rogerson & Samuels,17,2,False
+Hypotrachyna afrorevoluta (Krog & Swinscow) Krog & Swinscow,17,2,False
+Hypotrachyna revoluta (Flörke) Hale,25,3,False
+Hypoxylon fragiforme (Pers.) J.Kickx f.,338,38,True
+Hypoxylon fuscum (Pers.) Fr.,130,14,True
+Hypoxylon howeanum Peck,38,4,False
+Hypoxylon macrocarpum Pouzar,67,7,True
+Hypoxylon petriniae M.Stadler & J.Fourn.,186,21,True
+"Hypoxylon rubiginosum (Pers.) Fr., 1849",28,3,False
+Hysterium acuminatum Fr.,22,2,False
+Hysterium pulicare Corda,16,2,False
+Illosporiopsis christiansenii (B.L.Brady & D.Hawksw.) D.Hawksw.,57,6,True
+"Imleria badia (Fr.) Vizzini, 2014",406,45,True
+Infundibulicybe costata (Kühner & Romagn.) Harmaja,38,4,False
+Infundibulicybe geotropa (Bull.) Harmaja,162,18,True
+Infundibulicybe gibba (Pers.) Harmaja,139,15,True
+Infundibulicybe squamulosa (Pers.) Harmaja,45,5,True
+"Inocutis rheades (Pers.) Fiasson & Niemelä, 1984",41,5,True
+Inocybe appendiculata Kühner,9,0,False
+Inocybe asterospora Quél.,49,5,True
+"Inocybe cincinnata (Fr.) Quél., 1872",19,2,False
+"Inocybe corydalina Quél., 1875",26,3,False
+Inocybe curvipes P.Karst.,29,3,False
+Inocybe flocculosa (Berk.) Sacc.,49,6,True
+"Inocybe fuscidula Velen., 1920",58,6,True
+"Inocybe geophylla (Bull.) P.Kumm., 1871",164,18,True
+Inocybe griseolilacina J.E.Lange,13,2,False
+"Inocybe lacera (Fr.) P.Kumm., 1871",24,3,False
+"Inocybe lanuginosa (Bull.) P.Kumm., 1871",41,5,True
+Inocybe lilacina (Peck) Kauffman,150,17,True
+Inocybe mixtilis (Britzelm.) Sacc.,65,7,True
+Inocybe napipes J.E.Lange,83,9,True
+Inocybe petiginosa (Fr.) Gillet,82,9,True
+Inocybe sindonia (Fr.) P.Karst.,91,10,True
+"Inocybe stellatospora (Peck) Massee, 1904",36,4,False
+Inocybe whitei (Berk. & Broome) Sacc.,62,7,True
+Inonotus cuticularis (Bull.) P.Karst.,76,8,True
+Inonotus hispidus (Bull.) P.Karst.,36,4,False
+Inonotus obliquus (Ach. ex Pers.) Pilát,110,12,True
+Ischnoderma benzoinum (Wahlenb.) P.Karst.,214,24,True
+Ischnoderma resinosum (Schrad.) P.Karst.,266,30,True
+"Jackrogersella cohaerens (Pers.) L.Wendt, Kuhnert & M.Stadler, 2017",229,25,True
+"Jackrogersella multiformis (Fr.) L.Wendt, Kuhnert & M.Stadler, 2017",339,38,True
+Junghuhnia nitida (Pers.) Ryvarden,31,3,False
+Kretzschmaria deusta (Hoffm.) P.M.D.Martin,199,22,True
+Kuehneromyces mutabilis (Schaeff.) Singer & A.H.Sm.,389,43,True
+Laccaria amethystina (Huds.) Cooke,451,50,True
+Laccaria bicolor (Maire) P.D.Orton,81,9,True
+Laccaria laccata (Scop.) Fr.,392,44,True
+Laccaria proxima (Boud.) Pat.,213,24,True
+Laccaria tortilis (Bolton) Cooke,46,5,True
+Lachnella alboviolascens (Alb. & Schwein.) Fr.,60,7,True
+Lachnella villosa (Pers.) Gillet,13,1,False
+Lachnellula occidentalis (G.G.Hahn & Ayers) Dharne,14,2,False
+Lachnellula subtilissima (Cooke) Dennis,26,3,False
+Lachnum impudicum Baral,34,4,False
+Lachnum virgineum (Batsch) P.Karst.,47,5,True
+Lacrymaria lacrymabunda (Bull.) Pat.,273,30,True
+Lacrymaria pyrotricha (Holmsk.) Konrad & Maubl.,35,4,False
+Lactarius acerrimus Britzelm.,42,5,True
+Lactarius acris (Bolton) Gray,48,5,True
+Lactarius albocarneus Britzelm.,18,2,False
+Lactarius aspideus (Fr.) Fr.,25,3,False
+Lactarius aurantiacus (Pers.) Gray,100,11,True
+Lactarius azonites (Bull.) Fr.,15,2,False
+Lactarius blennius (Fr.) Fr.,236,26,True
+Lactarius camphoratus (Bull.) Fr.,89,10,True
+Lactarius chrysorrheus Fr.,40,4,False
+Lactarius circellatus Fr.,81,9,True
+Lactarius controversus (Pers.) Fr.,63,7,True
+Lactarius deliciosus Fr.,130,14,True
+Lactarius deterrimus Gröger,186,21,True
+Lactarius evosmus Kühner & Romagn.,29,3,False
+Lactarius fluens Boud.,101,11,True
+Lactarius fulvissimus Romagn.,73,8,True
+Lactarius glyciosmus (Fr.) Fr.,69,8,True
+Lactarius helvus (Fr.) Fr.,129,14,True
+Lactarius hepaticus Plowr.,62,7,True
+Lactarius lignyotus Fr.,22,2,False
+Lactarius lilacinus (Lasch) Fr.,31,3,False
+Lactarius necator (Bull.) Pers.,175,20,True
+Lactarius obscuratus (Lasch) Fr.,19,2,False
+Lactarius pallidus (Pers.) Fr.,127,14,True
+Lactarius porninsis Rolland,15,2,False
+Lactarius pterosporus Romagn.,45,5,True
+Lactarius pubescens (Fr.) Fr.,151,17,True
+Lactarius pyrogalus (Bull.) Fr.,131,14,True
+Lactarius quieticolor Romagn.,41,4,False
+Lactarius quietus (Fr.) Fr.,204,23,True
+Lactarius romagnesii Bon,89,10,True
+Lactarius rubrocinctus Fr.,43,5,True
+Lactarius rufus (Scop.) Fr.,154,17,True
+Lactarius ruginosus Romagn.,41,5,True
+Lactarius scoticus Berk. & Broome,27,3,False
+Lactarius serifluus (DC.) Fr.,37,4,False
+Lactarius subdulcis (Pers.) Gray,151,17,True
+Lactarius tabidus Fr.,137,15,True
+Lactarius torminosus (Schaeff.) Gray,97,11,True
+Lactarius trivialis (Fr.) Fr.,31,4,False
+Lactarius vietus (Fr.) Fr.,81,9,True
+"Lactifluus bertillonii (Neuhoff ex Z.Schaef.) Verbeken, 2011",18,2,False
+Lactifluus piperatus (L.) Roussel,59,7,True
+Lactifluus vellereus (Fr.) Kuntze,78,9,True
+Lactifluus volemus (Fr.) Kuntze,57,6,True
+Laetiporus sulphureus (Bull.) Murrill,348,39,True
+Laetisaria fuciformis (McAlpine) Burds.,11,1,False
+Langermannia gigantea (Batsch) Rostk.,168,19,True
+Lasiobelonium variegatum (Fuckel) Raitv.,13,1,False
+Lasiosphaeria ovina (Pers.) Ces. & De Not.,24,3,False
+Lasiosphaeris hirsuta (Fr.) A.N.Mill. & Huhndorf,9,1,False
+Laxitextum bicolor (Pers.) Lentz,73,8,True
+Lecanora campestris (Schaer.) Hue,69,8,True
+Lecanora carpinea (L.) Vain.,97,11,True
+Lecanora chlarotera Nyl.,270,30,True
+Lecanora polytropa (Ehrh.) Rabenh.,59,6,True
+Lecanora rupicola (L.) Zahlbr.,143,16,True
+Lecanora sulphurea (Hoffm.) Ach.,35,4,False
+"Leccinellum crocipodium (Letell.) Della Maggiora & Trassin., 2014",25,3,False
+"Leccinellum pseudoscabrum (Kallenb.) Mikšík, 2017",46,5,True
+Leccinum albostipitatum den Bakker & Noordel.,57,6,True
+Leccinum aurantiacum Gray,92,10,True
+"Leccinum cyaneobasileucum Lannoy & Estadès, 1991",80,9,True
+Leccinum duriusculum (Schulzer ex Kalchbr.) Singer,49,5,True
+"Leccinum melaneum (Smotl.) Pilát & Dermek, 1974",12,1,False
+"Leccinum niveum (Opat.) Rauschert, 1987",80,9,True
+Leccinum scabrum (Bull.) Gray,319,36,True
+Leccinum schistophilum Bon,15,2,False
+Leccinum variicolor Watling,110,12,True
+Leccinum versipelle (Fr. & Hök) Snell,114,13,True
+Leccinum vulpinum Watling,32,4,False
+Lecidea fuscoatra (L.) Ach.,32,4,False
+Lecidella elaeochroma (Ach.) M.Choisy,204,23,True
+Lecidella euphorea (Flörke) Hertel,23,3,False
+Lecidella scabra (Taylor) Hertel & Leuckert,36,4,False
+Lemalis aurea (Lév.) Sacc.,10,1,False
+Lentinellus cochleatus (Pers.) P.Karst.,103,11,True
+Lentinellus ursinus (Fr.) Kühner,103,11,True
+"Lentinus brumalis (Pers.) Zmitr., 2010",342,38,True
+"Lentinus substrictus (Bolton) Zmitr. & Kovalenko, 2016",161,18,True
+Lentinus tigrinus (Bull.) Fr.,18,2,False
+Leocarpus fragilis (Dicks.) Rostaf.,31,3,False
+Leotia lubrica (Scop.) Pers.,212,24,True
+Lepiota boudieri Guég.,42,5,True
+Lepiota brunneoincarnata Chodat & C.Martín,14,2,False
+Lepiota castanea Quél.,97,11,True
+Lepiota clypeolaria (Bull.) Quél.,50,6,True
+Lepiota cristata (Bolton) P.Kumm.,252,28,True
+"Lepiota erminea (Fr.) P.Kumm., 1871",81,9,True
+Lepiota felina (Pers.) P.Karst.,49,5,True
+"Lepiota grangei (Eyre) Kühner, 1934",41,5,True
+Lepiota lilacea Bres.,20,2,False
+Lepiota magnispora Murrill,95,10,True
+Lepiota pseudolilacea Huijsman,13,2,False
+Lepiota subincarnata J.E.Lange,41,5,True
+Lepista irina (Fr.) H.E.Bigelow,43,5,True
+Lepista nuda (Bull.) Cooke,352,39,True
+Lepista panaeolus (Fr.) P.Karst.,81,9,True
+Lepista saeva (Fr.) P.D.Orton,198,22,True
+Lepista sordida (Schumach.) Singer,151,17,True
+Lepraria incana (L.) Ach.,30,3,False
+Leptosphaeria acuta (Moug. & Nestl.) P.Karst.,48,5,True
+Leptosporomyces fuscostratus (Burt) Hjortstam,23,3,False
+Leratiomyces ceres (Cooke & Massee) Spooner & Bridge,12,1,False
+Leratiomyces percevalii (Berk. & Broome) Bridge & Spooner,18,2,False
+"Leratiomyces squamosus (Pers.) Bridge & Spooner, 2008",81,9,True
+Leucoagaricus leucothites (Vittad.) M.M.Moser ex Bon,113,12,True
+Leucoagaricus nympharum (Kalchbr.) Bon,172,19,True
+Leucocoprinus brebissonii (Godey) Locq.,15,2,False
+"Leucocybe candicans (Pers.) Vizzini, P.Alvarado, G.Moreno & Consiglio, 2015",45,5,True
+"Leucocybe connata (Schumach.) Vizzini, P.Alvarado, G.Moreno & Consiglio, 2015",85,9,True
+Leucogyrophana mollusca (Fr.) Pouzar,12,1,False
+"Lichenomphalia umbellifera (L.) Redhead, Lutzoni, Moncalvo & Vilgalys",123,14,True
+Limacella guttata (Pers.) Konrad & Maubl.,34,4,False
+Lindtneria panphyliensis Bernicchia & M.J.Larsen,7,0,False
+Lobaria pulmonaria (L.) Hoffm.,69,8,True
+Lophodermium pinastri (Schrad.) Chevall.,49,5,True
+"Loreleia marchantiae (Singer & Clémençon) Redhead, Moncalvo, Vilgalys & Lutzoni",20,2,False
+Loweomyces wynneae (Berk. & Broome) Jülich,31,4,False
+Lycogala epidendrum (J.C.Buxb. ex L.) Fr.,319,36,True
+Lycogala flavofuscum (Ehrenb.) Rostaf.,17,2,False
+Lycoperdon echinatum Pers.,110,12,True
+Lycoperdon excipuliforme (Scop.) Pers.,198,22,True
+Lycoperdon lividum Pers.,85,9,True
+Lycoperdon mammiforme Pers.,14,2,False
+Lycoperdon molle Pers.,19,2,False
+Lycoperdon nigrescens Wahlenb.,246,27,True
+Lycoperdon perlatum Pers.,510,57,True
+Lycoperdon pratense Pers.,133,15,True
+Lycoperdon utriforme Bull.,149,17,True
+Lyomyces crustosus (Pers.) P.Karst.,49,5,True
+Lyomyces sambuci (Pers.) P.Karst.,197,22,True
+Lyophyllum decastes (Fr.) Singer,65,7,True
+Lyophyllum fumosum (Pers.) P.D.Orton,101,11,True
+Lyophyllum paelochroum Clémençon,25,3,False
+Macrocystidia cucumis (Pers.) Joss.,87,10,True
+Macrolepiota excoriata (Schaeff.) M.M.Moser,74,8,True
+Macrolepiota fuliginosa (Barla) Bon,31,4,False
+Macrolepiota mastoidea (Fr.) Singer,85,10,True
+"Macrolepiota procera (Scop.) Singer, 1948",211,23,True
+Macrotyphula contorta (Holmsk.) Rauschert,25,3,False
+Macrotyphula fistulosa (Holmsk.) R.H.Petersen,186,21,True
+Macrotyphula juncea (Alb. & Schwein.) Berthier,77,8,True
+Marasmiellus ramealis (Bull.) Singer,120,13,True
+Marasmiellus vaillantii (Pers.) Singer,36,4,False
+Marasmius bulliardii Quél.,46,5,True
+Marasmius cohaerens (Alb. & Schwein.) Cooke & Quél.,18,2,False
+Marasmius curreyi Berk. & Broome,18,2,False
+Marasmius epiphylloides (Rea) Sacc. & Trotter,33,4,False
+Marasmius limosus Boud. & Quél.,23,3,False
+Marasmius oreades (Bolton) Fr.,243,27,True
+Marasmius rotula (Scop.) Fr.,205,23,True
+Marasmius torquescens Quél.,52,6,True
+Marasmius wynnei Berk. & Broome,70,8,True
+Megacollybia platyphylla (Pers.) Kotl. & Pouzar,202,22,True
+Melampsora populnea (Pers.) P.Karst.,27,3,False
+Melanamphora spinifera (Wallr.) Lafl.,75,8,True
+"Melanelixia fuliginosa (Fr. ex Duby) O.Blanco, A.Crespo, Divakar, Essl., D.Hawksw. & Lumbsch",48,5,True
+Melanelixia glabratula (Lamy) Sandler & Arup,67,8,True
+"Melanelixia subaurifera (Nyl.) O.Blanco, A.Crespo, Divakar, Essl., D.Hawksw. & Lumbsch",129,14,True
+Melanogaster ambiguus (Vittad.) Tul. & C.Tul.,10,1,False
+"Melanohalea exasperatula (Nyl.) O.Blanco, A.Crespo, Divakar, Essl., D.Hawksw. & Lumbsch",63,7,True
+"Melanoleuca cognata (Fr.) Konrad & Maubl., 1927",92,10,True
+Melanoleuca friesii (Bres.) Bon,62,7,True
+Melanoleuca grammopodia (Bull.) Murrill,55,6,True
+Melanoleuca polioleuca (Fr.) G.Moreno,41,4,False
+Melanoleuca verrucipes (Fr.) Singer,21,2,False
+Melanomma pulvis-pyrius (Pers.) Fuckel,29,3,False
+Melanophyllum haematospermum (Bull.) Kreisel,46,5,True
+Melastiza cornubiensis (Berk. & Broome) J.Moravec,29,3,False
+"Mensularia nodulosa (Fr.) T.Wagner & M.Fisch., 2001",154,17,True
+Mensularia radiata (Sowerby) Lázaro Ibiza,247,27,True
+"Meottomyces dissimulans (Berk. & Broome) Vizzini, 2008",16,2,False
+Meripilus giganteus (Pers.) P.Karst.,473,52,True
+"Merismodes fasciculata (Schwein.) Earle, 1909",20,2,False
+Meruliopsis taxicola (Pers.) Bondartsev,112,12,True
+"Merulius tremellosus Schrad., 1794",360,40,True
+Metatrichia floriformis (Schwein.) Nann.-Bremek.,32,4,False
+Metatrichia vesparium (Batsch) Nann.-Bremek.,19,2,False
+Micarea lignaria (Ach.) Hedl.,65,7,True
+Microbotryum stellariae (Sowerby) G.Deml & Oberw.,37,4,False
+"Microglossum griseoviride V.Kučera, Lizoň & Tomšovský, 2014",23,2,False
+Microglossum olivaceum (Pers.) Gillet,28,3,False
+Mitrula paludosa Fr.,73,8,True
+Mniaecia jungermanniae Boud.,38,4,False
+"Mollisia cinerea (Batsch) P.Karst., 1871",59,6,True
+Monilinia fructigena Honey,29,3,False
+Morchella conica Krombh.,16,2,False
+Morchella esculenta (L.) Pers.,50,6,True
+Morchella semilibera DC.,49,5,True
+Morchella vulgaris (Pers.) Boud.,24,3,False
+"Mucidula mucida (Schrad.) Pat., 1887",364,40,True
+Mucilago crustacea P.Micheli ex F.H.Wigg.,22,2,False
+Mucronella flava Corner,27,3,False
+Mutinus caninus (Huds.) Fr.,191,21,True
+Mycena abramsii (Murrill) Murrill,77,8,True
+Mycena acicula (Schaeff.) P.Kumm.,97,11,True
+Mycena aetites (Fr.) Quél.,107,12,True
+Mycena amicta (Fr.) Quél.,41,5,True
+Mycena arcangeliana Bres.,81,9,True
+Mycena aurantiomarginata (Fr.) Quél.,20,2,False
+Mycena belliae (Johnst.) P.D.Orton,31,3,False
+Mycena capillaripes Peck,23,3,False
+Mycena capillaris P.Karst.,56,6,True
+Mycena chlorantha (Fr.) P.Kumm.,46,5,True
+Mycena cinerella (P.Karst.) P.Karst.,63,7,True
+Mycena citrinomarginata Gillet,33,4,False
+Mycena clavicularis (Fr.) Gillet,16,2,False
+Mycena clavularis (Batsch) Sacc.,30,3,False
+Mycena crocata (Schrad.) P.Kumm.,263,29,True
+Mycena diosma Krieglst. & Schwöbel,53,6,True
+Mycena epipterygia (Scop.) Gray,231,26,True
+Mycena erubescens Höhn.,23,3,False
+Mycena filopes (Bull.) P.Kumm.,77,9,True
+Mycena flavescens Velen.,41,4,False
+Mycena galericulata (Scop.) Gray,505,56,True
+"Mycena galopus (Pers.) P.Kumm., 1871",161,18,True
+Mycena haematopus (Pers.) P.Kumm.,280,31,True
+Mycena inclinata (Fr.) Quél.,143,16,True
+Mycena juniperina Aronsen,24,3,False
+Mycena leptocephala (Pers.) Gillet,151,17,True
+"Mycena luteovariegata (Gillet) Harder & Laessøe, 2013",15,2,False
+Mycena megaspora Kauffman,17,2,False
+Mycena meliigena (Berk. & Cooke) Sacc.,52,6,True
+Mycena metata (Secr. ex Fr.) Quél.,99,11,True
+"Mycena olida Bres., 1887",20,2,False
+Mycena olivaceomarginata (Massee) Massee,81,9,True
+Mycena pelianthina (Fr.) Quél.,143,16,True
+Mycena polygramma (Bull.) Gray,137,15,True
+Mycena pseudocorticola Kühner,130,14,True
+Mycena pterigena (Fr.) P.Kumm.,36,4,False
+Mycena pura (Pers.) Sacc.,226,25,True
+Mycena purpureofusca (Peck) Sacc.,36,4,False
+Mycena renati Quél.,32,4,False
+Mycena rosea (Schumach.) Gramberg,295,33,True
+Mycena rosella (Fr.) P.Kumm.,13,2,False
+Mycena rubromarginata (Fr.) P.Kumm.,61,7,True
+Mycena sanguinolenta (Alb. & Schwein.) P.Kumm.,144,16,True
+Mycena silvae-nigrae Maas Geest. & Schwöbel,20,2,False
+Mycena stipata Maas Geest. & Schwöbel,51,6,True
+Mycena stylobates (Pers.) P.Kumm.,43,5,True
+Mycena tenerrima (Berk.) Sacc.,94,10,True
+Mycena tintinnabulum (Batsch) Quél.,176,20,True
+Mycena vitilis (Fr.) Quél.,143,16,True
+Mycena vulgaris (Pers.) P.Kumm.,30,3,False
+Mycenella salicina (Velen.) Singer,10,1,False
+Mycenella trachyspora (Rea) Bon,9,0,False
+Mycetinis alliaceus (Jacq.) Earle,348,39,True
+Mycetinis querceus (Britzelm.) Antonín & Noordel.,29,3,False
+Mycetinis scorodonius (Fr.) A.W.Wilson,62,7,True
+Mycoacia fuscoatra (Fr.) Donk,16,2,False
+Mycoacia uda (Fr.) Donk,94,10,True
+Mycoaciella bispora (Stalpers) J.Erikss. & Ryvarden,13,2,False
+"Myochromella boudieri (Kühner & Romagn.) V.Hofst., Clémençon, Moncalvo & Redhead, 2015",31,3,False
+Myriolecis albescens (Hoffm.) Śliwa et al.,106,12,True
+Myriolecis dispersa (Pers.) Śliwa et al.,56,6,True
+"Myxarium nucleatum Wallr., 1833",247,27,True
+Naematelia encephala (Willd.) Fr.,71,8,True
+Naucoria bohemica Velen.,18,2,False
+Naucoria escharioides (Fr.) P.Kumm.,49,5,True
+Naucoria salicis P.D.Orton,23,3,False
+Naucoria scolecina (Fr.) Quél.,58,6,True
+Nectria cinnabarina (Tode) Fr.,252,28,True
+"Nemania serpens (Pers.) Gray, 1821",53,6,True
+"Neoantrodia serialis (Fr.) Audet, 2017",149,17,True
+"Neoboletus luridiformis (Rostk.) Gelardi, Simonini & Vizzini, 2014",395,44,True
+"Neoboletus xanthopus (Klofac & A.Urb.) Klofac & A.Urb., 2014",14,2,False
+Neodasyscypha cerina (Pers.) Spooner,26,3,False
+"Neofavolus suavissimus (Fr.) J.S.Seelan, Justo & Hibbett, 2016",16,2,False
+Neohygrocybe ingrata (J.P.Jensen & F.H.Møller) Herink,30,3,False
+Neohygrocybe nitrata (Pers.) Herink,108,12,True
+Neohygrocybe ovina (Bull.) Herink,36,4,False
+Neolentinus lepideus (Fr.) Redhead & Ginns,40,4,False
+"Neonectria coccinea (Pers.) Rossman & Samuels, 1999",32,4,False
+Neottiella rutilans (Fr.) Dennis,23,3,False
+Nodulisporium cecidiogenes Jørg.Koch,25,3,False
+Ochrolechia frigida (Sw.) Lynge,28,3,False
+Ochrolechia parella (L.) A.Massal.,48,5,True
+Ochropsora ariae (Fuckel) Ramsb.,22,2,False
+Odoria alborubescens (Bourdot & Galzin) V.Papp & Dima,26,3,False
+Oligoporus ptychogaster (F.Ludw.) Falck & O.Falck,195,22,True
+Ombrophila pura (Pers.) Quél.,104,12,True
+Omphalina pyxidata (Bull.) Quél.,84,9,True
+Onygena corvina Alb. & Schwein.,13,2,False
+Orbilia xanthostigma (Fr.) Fr.,65,7,True
+Osmoporus odoratus (Wulfen) Singer,102,11,True
+Ossicaulis lignatilis (Pers.) Redhead & Ginns,18,2,False
+Otidea alutacea (Pers.) Massee,41,5,True
+Otidea bufonia (Pers.) Boud.,48,5,True
+Otidea onotica (Pers.) Fuckel,182,20,True
+Otidea phlebophora (Berk. & Broome) Sacc.,18,2,False
+Panaeolus acuminatus (Schaeff.) Quél.,94,10,True
+Panaeolus cinctulus (Bolton) Sacc.,20,2,False
+Panaeolus fimicola (Pers.) Gillet,39,4,False
+Panaeolus foenisecii (Pers.) J.Schröt.,183,20,True
+Panaeolus olivaceus F.H.Møller,23,3,False
+"Panaeolus papilionaceus (Bull.) Quél., 1872",177,20,True
+Panaeolus reticulatus Overh.,5,0,False
+"Panaeolus semiovatus (Sowerby) S.Lundell & Nannf., 1938",77,9,True
+Panaeolus subfirmus P.Karst.,23,3,False
+Panellus mitis (Pers.) Singer,125,14,True
+Panellus stipticus (Bull.) P.Karst.,330,37,True
+Panus conchatus (Bull.) Fr.,65,7,True
+"Paralepista flaccida (Sowerby) Vizzini, 2012",333,37,True
+"Paralepista gilva (Pers.) Raithelh., 1996",40,4,False
+"Parasola auricoma (Pat.) Redhead, Vilgalys & Hopple",39,4,False
+"Parasola conopilea (Fr.) Örstadius & E.Larss., 2008",193,21,True
+"Parasola kuehneri (Uljé & Bas) Redhead, Vilgalys & Hopple",41,4,False
+"Parasola lactea (A.H.Sm.) Redhead, Vilgalys & Hopple",60,7,True
+"Parasola misera (P.Karst.) Redhead, Vilgalys & Hopple",32,4,False
+"Parasola plicatilis (Curtis) Redhead, Vilgalys & Hopple",38,4,False
+"Parasola schroeteri (P.Karst.) Redhead, Vilgalys & Hopple",47,5,True
+Parmelia ernstiae Feuerer & A.Thell,23,3,False
+Parmelia saxatilis (L.) Ach.,101,11,True
+Parmelia submontana Nádv. ex Hale,46,5,True
+Parmelia sulcata Taylor,498,55,True
+Parmeliopsis ambigua (Wulfen) Nyl.,17,2,False
+Parmotrema perlatum (Huds.) M.Choisy,40,4,False
+Patellaria atrata Cooke,20,2,False
+Paxillus ammoniavirescens Contu & Dessì,48,5,True
+Paxillus filamentosus Fr.,111,12,True
+Paxillus involutus (Batsch) Fr.,312,35,True
+Paxillus obscurisporus C.Hahn,80,9,True
+Peltigera canina (L.) Willd.,43,5,True
+Peltigera didactyla (With.) J.R.Laundon,50,6,True
+Peltigera hymenina (Ach.) Delise ex Duby,88,10,True
+Peltigera membranacea (Ach.) Nyl.,57,6,True
+Peltigera neckeri Hepp,16,2,False
+Peltigera rufescens (Weiss) Humb.,9,1,False
+Peniophora cinerea (Pers.) Cooke,33,4,False
+Peniophora incarnata (Pers.) P.Karst.,352,39,True
+Peniophora limitata (Chaillet ex Fr.) Cooke,97,11,True
+Peniophora lycii (Pers.) Höhn. & Litsch.,74,8,True
+Peniophora pini (Schleich.) Boidin,16,2,False
+Peniophora polygonia (Pers.) Bourdot & Galzin,67,8,True
+Peniophora quercina (Pers.) Cooke,284,32,True
+Peniophora rufomarginata (Pers.) Bourdot & Galzin,32,4,False
+Peniophorella pubera (Fr.) P.Karst.,41,4,False
+Perenniporia fraxinea (Bull.) Ryvarden,40,4,False
+"Peronospora crustosa (Fr.) Fr., 1849",37,4,False
+Pertusaria hymenea (Ach.) Schaer.,21,2,False
+Pertusaria pertusa (L.) Tuck.,77,9,True
+Peziza arvernensis Boud.,20,2,False
+Peziza badia Pers.,22,2,False
+Peziza fimeti (Fuckel) Seaver,17,2,False
+Peziza michelii (Boud.) Dennis,18,2,False
+Peziza varia (Hedw.) Fr.,117,13,True
+Peziza vesiculosa Bolton,42,5,True
+"Phaeoclavulina abietina (Pers.) Giachini, 2011",41,4,False
+"Phaeoclavulina eumorpha (P.Karst.) Giachini, 2011",126,14,True
+Phaeolepiota aurea (Matt.) Maire,117,13,True
+Phaeolus schweinitzii (Fr.) Pat.,356,40,True
+Phaeomarasmius erinaceus (Pers.) Scherff. ex Romagn.,32,4,False
+Phaeonematoloma myosotis (Fr.) Bon,16,2,False
+Phaeophyscia orbicularis (Neck.) Moberg,155,17,True
+"Phaeotremella foliacea (Pers.) Wedin, J.C.Zamora & Millanes, 2016",47,5,True
+Phallus hadriani Vent.,31,3,False
+"Phallus impudicus L., 1753",356,40,True
+Phanerochaete sordida (P.Karst.) J.Erikss. & Ryvarden,34,4,False
+Phanerochaete velutina (DC.) Parmasto,59,6,True
+"Phellinopsis conchata (Pers.) Y.C.Dai, 2010",120,13,True
+Phellinus igniarius (L.) Quél.,121,14,True
+Phellinus laevigatus (Fr.) Bourdot & Galzin,18,2,False
+Phellinus pomaceus (Pers.) Maire,342,38,True
+Phellinus populicola Niemelä,112,12,True
+Phellinus tremulae (Bondartsev) Bondartsev & P.N.Borisov,39,4,False
+Phellodon confluens (Pers.) Pouzar,30,3,False
+Phellodon connatus (Schultz) P.Karst.,57,6,True
+Phellodon niger (Fr.) P.Karst.,50,6,True
+Phellodon tomentosus (L.) Banker,27,3,False
+Phlebia radiata Fr.,413,46,True
+Phlebia rufa (Pers.) M.P.Christ.,45,5,True
+Phlebia subochracea (Alb. & Schwein.) J.Erikss. & Ryvarden,78,9,True
+Phlebiopsis gigantea (Fr.) Jülich,69,8,True
+Phleogena faginea (Fr.) Link,56,6,True
+"Phloeomana clavata (Peck) Redhead, 2016",19,2,False
+"Phloeomana hiemalis (Osbeck) Redhead, 2016",43,5,True
+"Phloeomana speirea (Fr.) Redhead, 2013",181,20,True
+Phlyctis argena (Ach.) Flot.,176,20,True
+Pholiota adiposa (Batsch) P.Kumm.,162,18,True
+Pholiota astragalina (Fr.) Singer,24,3,False
+Pholiota conissans (Fr.) M.M.Moser,45,5,True
+Pholiota flammans (Batsch) P.Kumm.,87,10,True
+Pholiota gummosa (Lasch) Singer,180,20,True
+"Pholiota highlandensis (Peck) Quadr. & Lunghini, 1990",33,4,False
+Pholiota jahnii Tjall.-Beuk. & Bas,58,6,True
+Pholiota lenta (Pers.) Singer,85,10,True
+Pholiota scamba (Fr.) M.M.Moser,15,2,False
+Pholiota squarrosa (Bull.) P.Kumm.,337,37,True
+Pholiota tuberculosa (Schaeff.) P.Kumm.,29,3,False
+Pholiotina aporos (Kits van Wav.) Clémençon,87,10,True
+Pholiotina arrhenii (Fr.) Singer,59,6,True
+Pholiotina teneroides (J.E.Lange) Singer,13,2,False
+Pholiotina velata (Velen.) Hauskn.,18,2,False
+Phragmidium mucronatum (Pers.) Schltdl.,16,2,False
+Phragmidium rubi-idaei (DC.) P.Karst.,23,2,False
+Phragmidium tuberculatum J.B.Müll.,20,2,False
+Phragmidium violaceum (Schultz) G.Winter,54,6,True
+Phylloporia ribis (Schumach.) Ryvarden,14,2,False
+Phylloporus pelletieri (Lév.) Quél.,24,3,False
+Phyllotopsis nidulans (Pers.) Singer,61,7,True
+Physarum album (Bull.) Chevall.,24,3,False
+Physcia adscendens (Th.Fr.) H.Olivier,224,25,True
+Physcia aipolia (Ehrh.) Hampe,16,2,False
+Physcia caesia (Hoffm.) Hampe ex Fürnr.,131,14,True
+Physcia dubia (Hoffm.) Lettau,29,3,False
+Physcia stellaris (L.) Nyl.,9,1,False
+Physcia tenella (Scop.) DC.,321,36,True
+Physconia distorta (With.) J.R.Laundon,13,1,False
+Physconia enteroxantha (Nyl.) Poelt,26,3,False
+Physconia grisea (Lam.) Poelt,22,2,False
+Physconia perisidiosa (Erichsen) Moberg,53,6,True
+Physisporinus sanguinolentus (Alb. & Schwein.) Pilát,95,11,True
+Physisporinus vitreus (Pers.) P.Karst.,110,12,True
+"Picipes badius (Pers.) Zmitr. & Kovalenko, 2016",129,14,True
+"Picipes melanopus (Pers.) Zmitr. & Kovalenko, 2016",19,2,False
+"Picipes tubaeformis (P.Karst.) Zmitr. & Kovalenko, 2016",55,6,True
+"Piptoporus betulinus (Bull.) P.Karst., 1881",418,46,True
+Pithya cupressina Fuckel,24,3,False
+Pithya vulgaris Fuckel,154,17,True
+Platismatia glauca (L.) W.L.Culb. & C.F.Culb.,107,12,True
+Pleurocybella porrigens (Pers.) Singer,55,6,True
+Pleurosticta acetabulum (Neck.) Elix & Lumbsch,64,7,True
+Pleurotus dryinus (Pers.) P.Kumm.,106,12,True
+Pleurotus ostreatus (Jacq.) P.Kumm.,498,55,True
+Pleurotus pulmonarius (Fr.) Quél.,180,20,True
+Plicatura crispa (Pers.) Rea,632,70,True
+Pluteus atromarginatus (Konrad) Kühner,27,3,False
+Pluteus cervinus (Schaeff.) P.Kumm.,527,58,True
+Pluteus cinereofuscus J.E.Lange,22,2,False
+Pluteus ephebeus (Fr.) Gillet,26,3,False
+Pluteus hispidulus (Fr.) Gillet,15,2,False
+Pluteus leoninus (Schaeff.) P.Kumm.,29,3,False
+Pluteus nanus (Pers.) P.Kumm.,42,5,True
+Pluteus petasatus (Fr.) Gillet,25,3,False
+"Pluteus phlebophorus (Ditmar) P.Kumm., 1871",104,12,True
+Pluteus plautus (Weinm.) Gillet,36,4,False
+Pluteus podospileus Sacc. & Cub.,39,4,False
+Pluteus pouzarianus Singer,32,4,False
+Pluteus primus Bonnard,26,3,False
+Pluteus romellii (Britzelm.) Lapl.,111,12,True
+Pluteus salicinus (Pers.) P.Kumm.,143,16,True
+Pluteus semibulbosus (Lasch) Gillet,26,3,False
+Pluteus thomsonii (Berk. & Broome) Dennis,37,4,False
+Pluteus umbrosus (Pers.) P.Kumm.,59,6,True
+Podosphaera aphanis (Wallr.) U.Braun & S.Takam.,11,1,False
+"Polycauliona candelaria (L.) Frödén, Arup & Søchting",31,3,False
+"Polycauliona polycarpa (Hoffm.) Frödén, Arup & Søchting",84,9,True
+Polydesmia pruinosa (Gerd. ex Berk. & Broome) Boud.,35,4,False
+Polyporus tuberaster (Jacq.) Fr.,196,22,True
+Polysporina simplex (Davies) Vezda,61,7,True
+Porodaedalea pini (Brot.) Murrill,23,2,False
+Poronia punctata (L.) Fr.,13,1,False
+Porphyrellus porphyrosporus (Fr. & Hök) E.-J.Gilbert,65,7,True
+"Porpolomopsis calyptriformis (Berk.) Bresinsky, 2008",15,2,False
+"Postia alni Niemelä & Vampola, 2001",100,11,True
+Postia caesia (Schrad.) P.Karst.,229,25,True
+Postia lactea (Fr.) P.Karst.,104,12,True
+"Postia wakefieldiae (Kotl. & Pouzar) Pegler & E.M.Saunders, 1994",9,1,False
+Propolis farinosa (Pers.) Fr.,67,7,True
+"Protocrea pallida (Ellis & Everh.) Jaklitsch, K.Põldmaa & Samuels, 2008",13,1,False
+Protomyces macrosporus Unger,59,7,True
+Protoparmeliopsis muralis (Rabenh.) M.Choisy,179,20,True
+"Protostropharia semiglobata (Batsch) Redhead, Moncalvo & Vilgalys, 2013",182,20,True
+Protounguicularia transiens (Höhn.) Hutinen,12,1,False
+Psathyrella ammophila (Durieu & Lév.) P.D.Orton,20,2,False
+Psathyrella bipellis (Quél.) A.H.Sm.,63,7,True
+Psathyrella candolleana (Fr.) Maire,351,39,True
+Psathyrella corrugis (Pers.) Konrad & Maubl.,31,3,False
+Psathyrella cotonea (Quél.) Konrad & Maubl.,36,4,False
+Psathyrella fusca (Schumach.) M.M.Moser,15,2,False
+Psathyrella microrhiza (Lasch) Konrad & Maubl.,27,3,False
+Psathyrella multipedata (Peck) A.H.Sm.,78,9,True
+"Psathyrella obtusata (Pers.) A.H.Sm., 1941",14,2,False
+Psathyrella piluliformis (Bull.) P.D.Orton,245,27,True
+Psathyrella pseudogracilis (Romagn.) M.M.Moser,34,4,False
+Psathyrella pygmaea (Bull.) Singer,14,2,False
+Psathyrella spadiceogrisea (Schaeff.) Maire,121,14,True
+Psathyrella typhae (Kalchbr.) A.Pearson & Dennis,41,5,True
+Pseudevernia furfuracea (L.) Zopf,124,14,True
+Pseudoboletus parasiticus (Bull.),76,8,True
+Pseudoclitocybe cyathiformis (Bull.) Singer,266,30,True
+Pseudoclitocybe expallens (Pers.) M.M.Moser,22,2,False
+"Pseudoclitopilus rhodoleucus (Sacc.) Vizzini & Contu, 2012",15,2,False
+Pseudohydnum gelatinosum (Scop.) P.Karst.,208,23,True
+Pseudoinonotus dryadeus (Pers.) T.Wagner & M.Fisch.,135,15,True
+Pseudoplectania nigrella (Pers.) Fuckel,64,7,True
+Psilocybe fimetaria (P.D.Orton) Watling,13,1,False
+Psilocybe semilanceata (Fr.) P.Kumm.,52,6,True
+Pterula multifida E.P.Fr. ex Fr.,19,2,False
+Puccinia aegopodii P.Syd. & Syd.,40,4,False
+"Puccinia allii (DC.) F.Rudolphi, 1829",20,2,False
+"Puccinia caricina DC., 1815",9,0,False
+Puccinia circaeae Pers.,12,1,False
+Puccinia coronata Corda,35,4,False
+Puccinia festucae Plowr.,38,4,False
+"Puccinia hieracii (Röhl.) H.Mart., 1817",10,1,False
+Puccinia lapsanae Fuckel,13,2,False
+Puccinia malvacearum Bertero ex Mont.,70,8,True
+Puccinia phragmitis (Schumach.) Körn.,27,3,False
+Puccinia poarum E.Nielsen,49,6,True
+Puccinia pulverulenta Grev.,19,2,False
+Puccinia punctiformis (F.Strauss) Röhl.,84,9,True
+Puccinia recondita Dietel & Holw.,14,2,False
+Puccinia sessilis J.Schröt.,23,2,False
+"Puccinia urticata F.Kern, 1917",59,7,True
+Puccinia violae (Schumach.) DC.,21,2,False
+Pucciniastrum areolatum (Fr.) G.H.Otth,41,4,False
+Pulvinula convexella (P.Karst.) Pfister,11,1,False
+Punctelia jeckeri (Roum.) Kalb,9,1,False
+Punctelia subrudecta (Nyl.) Krog,47,5,True
+Pycnoporellus fulgens (Fr.) Donk,152,17,True
+Pycnoporus cinnabarinus (Jacq.) P.Karst.,86,10,True
+Quaternaria quaternata (Pers.) J.Schröt.,21,2,False
+Radulomyces confluens (Fr.) M.P.Christ.,172,19,True
+Ramalina farinacea (L.) Ach.,197,22,True
+Ramalina fastigiata (Pers.) Ach.,301,33,True
+Ramalina fraxinea (L.) Ach.,37,4,False
+Ramalina siliquosa (Huds.) A.L.Sm.,18,2,False
+Ramaria botrytis (Pers.) Ricken,70,8,True
+Ramaria fagetorum Maas Geest. ex Schild,35,4,False
+Ramaria fumigata (Peck) Corner,16,2,False
+Ramaria krieglsteineri Schild,14,2,False
+Ramaria pallida Maire,40,4,False
+Ramaria sanguinea (Pers.) Quél.,47,5,True
+Ramaria stricta (Pers.) Quél.,381,42,True
+Ramariopsis kunzei (Fr.) Corner,23,3,False
+Resinicium bicolor (Alb. & Schwein.) Parmasto,126,14,True
+Resinomycena saccharifera (Berk. & Broome) Redhead,13,1,False
+Resupinatus applicatus (Batsch) Gray,55,6,True
+"Resupinatus poriaeformis (Pers.) Thorn, Moncalvo & Redhead",14,2,False
+Resupinatus trichotis (Pers.) Singer,82,9,True
+Reticularia lycoperdon Bull.,239,27,True
+Rhizina undulata Fr.,30,3,False
+Rhizocarpon geographicum (L.) DC.,39,4,False
+Rhizocarpon lecanorinum Anders,41,4,False
+"Rhizomarasmius setosus (Sowerby) Antonín & A.Urb., 2015",54,6,True
+Rhizopogon obtextus (Spreng.) R.Rauschert,46,5,True
+"Rhodocollybia butyracea (Bull.) Lennox, 1979",15,2,False
+"Rhodocollybia maculata (Alb. & Schwein.) Singer, 1939",173,19,True
+"Rhodocybe caelata (Fr.) Maire, 1926",30,3,False
+"Rhodocybe gemina (Paulet) Kuyper & Noordel., 1987",78,9,True
+Rhopographus filicinus (Fr.) Nitschke ex Fuckel,49,6,True
+Rhytisma acerinum (Pers.) Fr.,134,15,True
+Rickenella fibula (Bull.) Raithelh.,259,29,True
+Rickenella swartzii (Fr.) Kuyper,121,14,True
+Rigidoporus obducens (Pers.) Pouzar,13,2,False
+Rigidoporus populinus (Schumach.) Pouzar,98,11,True
+Rimbachia arachnoidea (Peck) Redhead,22,2,False
+Ripartites tricholoma (Alb. & Schwein.) P.Karst.,40,4,False
+Roridomyces roridus (Scop.) Rexer,16,2,False
+Rosellinia corticium (Schwein.) Sacc.,12,1,False
+"Roseodiscus formosus Wiesch., Helleman, Baral & T.Richt., 2011",31,4,False
+"Rubroboletus legaliae (Pilát & Dermek) Della Maggiora & Trassin., 2015",27,3,False
+"Rubroboletus satanas (Lenz) Kuan Zhao & Zhu L.Yang, 2014",71,8,True
+Russula acrifolia Romagn.,28,3,False
+Russula adusta (Pers.) Fr.,40,4,False
+Russula aeruginea Fr.,80,9,True
+Russula amoenolens Romagn.,68,8,True
+Russula atrorubens Quél.,30,3,False
+Russula aurea Pers.,27,3,False
+Russula betularum Hora,62,7,True
+Russula brunneoviolacea Crawshay,23,2,False
+Russula caerulea (Pers.) Fr.,33,4,False
+Russula cessans A.Pearson,102,11,True
+Russula chloroides (Krombh.) Bres.,108,12,True
+Russula claroflava Grove,104,12,True
+Russula cuprea (Krombh.) J.E.Lange,16,2,False
+Russula curtipes F.H.Møller & Jul.Schäff.,17,2,False
+Russula cyanoxantha (Schaeff.) Fr.,201,22,True
+Russula decolorans (Fr.) Fr.,52,6,True
+Russula delica Fr.,51,6,True
+Russula densifolia Secr. ex Gillet,81,9,True
+Russula depallens Fr.,147,16,True
+Russula emetica (Schaeff.) Pers.,75,8,True
+"Russula faginea Romagn., 1967",41,5,True
+Russula farinipes Romell,24,3,False
+Russula faustiana Sarnari,13,1,False
+Russula fellea (Fr.) Fr.,81,9,True
+Russula foetens (Pers.) Fr.,96,11,True
+"Russula fragilis Fr., 1838",85,9,True
+Russula grata Britzelm.,97,11,True
+Russula graveolens Romell,61,7,True
+Russula grisea (Batsch) Fr.,41,5,True
+Russula heterophylla (Fr.) Fr.,72,8,True
+Russula illota Romagn.,40,4,False
+Russula insignis Quél.,12,1,False
+"Russula integra (L.) Fr., 1838",37,4,False
+Russula ionochlora Romagn.,63,7,True
+Russula laccata Huijsman,34,4,False
+Russula laeta Jul.Schäff.,13,1,False
+Russula lepida Fr.,144,16,True
+Russula luteotacta Rea,23,2,False
+Russula maculata Quél. & Roze,13,2,False
+Russula mairei Singer,90,10,True
+Russula melliolens Quél.,17,2,False
+Russula nauseosa (Pers.) Fr.,66,7,True
+Russula nigricans (Bull.) Fr.,252,28,True
+Russula nitida (Pers.) Fr.,62,7,True
+Russula ochroleuca (Pers.) Fr.,306,34,True
+Russula odorata Romagn.,52,6,True
+Russula olivacea (Schaeff.) Fr.,125,14,True
+Russula paludosa Britzelm.,134,15,True
+Russula parazurea Jul.Schäff.,67,8,True
+Russula pelargonia Niolle,22,2,False
+Russula praetervisa Sarnari,125,14,True
+Russula pseudointegra Arnould & Goris,41,4,False
+Russula puellaris Fr.,67,8,True
+Russula queletii Fr.,127,14,True
+Russula risigallina (Batsch) Sacc.,99,11,True
+Russula romellii Maire,61,7,True
+Russula roseoaurantia Sarnari,20,2,False
+Russula sanguinea (Bull.) Fr.,41,5,True
+Russula sardonia Fr.,63,7,True
+Russula seperina Dupain,14,2,False
+Russula silvestris (Singer) Reumaux,34,4,False
+Russula solaris Ferd. & Winge,134,15,True
+Russula sororia Fr.,24,3,False
+Russula subrubens (J.E.Lange) Bon,33,4,False
+Russula undulata Velen.,131,14,True
+Russula velenovskyi Melzer & Zvára,91,10,True
+Russula velutipes Velen.,75,8,True
+Russula versicolor Jul.Schäff.,54,6,True
+Russula vesca Fr.,184,20,True
+Russula veternosa Fr.,46,5,True
+Russula violeipes Quél.,102,11,True
+Russula virescens (Schaeff.) Fr.,87,10,True
+Russula viscida Kudrna,27,3,False
+Russula xerampelina (Schaeff.) Fr.,131,14,True
+Rutstroemia calopus P.Karst.,6,0,False
+Rutstroemia echinophila (Bull.) Höhn.,19,2,False
+Rutstroemia firma (Pers.) P.Karst.,65,7,True
+"Ruzenia spermoides (Hoffm.) O.Hilber, 2002",17,2,False
+"Sabuloglossum arenarium (Rostr.) Hustad, A.N.Mill., Dentinger & P.F.Cannon, 2013",112,12,True
+"Sagaranella tylicolor (Fr.) V.Hofst., Clémençon, Moncalvo & Redhead, 2015",30,3,False
+Sarcodon imbricatus (L.) P.Karst.,24,3,False
+Sarcodon squamosus (Schaeff.) Quél.,41,4,False
+Sarcomyxa serotina (Pers.) P.Karst.,230,26,True
+Sarcoscypha austriaca (O.Beck ex Sacc.) Boud.,265,30,True
+"Sarcoscypha coccinea (Jacq.) Sacc., 1889",29,3,False
+Sarcosphaera coronaria (Jacq. ex Cooke) Boud.,11,1,False
+Sawadaea bicornis (Wallr.) Miyabe,23,3,False
+Schizophyllum amplum (Lév.) Nakasone,39,4,False
+Schizophyllum commune Fr.,469,52,True
+Scleroderma areolatum Ehrenb.,117,13,True
+Scleroderma bovista Fr.,67,8,True
+Scleroderma citrinum Pers.,308,34,True
+Scleroderma verrucosum (Bull.) Pers.,135,15,True
+Scopuloides rimosa (Cooke) Jülich,46,5,True
+"Scutellinia hirta (Schumach.) Cooke, 1876",8,0,False
+Scutellinia scutellata (L.) Lambotte,126,14,True
+Scytinostroma hemidichophyticum Pouzar,119,13,True
+Seifertia azaleae (Peck) Partr. & Morgan-Jones,16,2,False
+Serpula himantioides (Fr.) P.Karst.,156,17,True
+"Sidera vulgaris (Fr.) Miettinen, 2011",22,2,False
+"Simocybe centunculus (Fr.) P.Karst., 1879",13,1,False
+Simocybe haustellaris (Fr.) Watling,15,2,False
+Simocybe sumptuosa (P.D.Orton) Singer,15,2,False
+Singerocybe phaeophthalma (Pers.) Harmaja,29,3,False
+Sistotrema brinkmannii (Bres.) J.Erikss.,49,5,True
+Skeletocutis amorpha (Fr.) Kotl. & Pouzar,142,16,True
+Skeletocutis carneogrisea A.David,82,9,True
+Skeletocutis nemoralis A.Korhonen & Miettinen,220,24,True
+Sparassis crispa (Wulfen) Fr.,200,22,True
+Spathularia flavida Pers.,79,9,True
+Sphaeridium candidum Sacc. & Roum.,9,1,False
+Sphaerobolus stellatus Tode,46,5,True
+"Sphagnurus paluster (Peck) Redhead & V.Hofst., 2014",64,7,True
+Spinellus fusiger (Link) Tiegh.,45,5,True
+Steccherinum fimbriatum (Pers.) J.Erikss.,121,13,True
+Steccherinum ochraceum (Pers.) Gray,186,21,True
+Steccherinum oreophilum Lindsey & Gilb.,9,1,False
+Stemonitis axifera (Bull.) T.Macbr.,21,2,False
+Stemonitis fusca Roth,23,2,False
+Stemonitopsis typhina (F.H.Wigg.) Nann.-Bremek.,14,2,False
+Stereocaulon condensatum Hoffm.,16,2,False
+Stereocaulon saxatile H.Magn.,26,3,False
+Stereocaulon vesuvianum Pers.,11,1,False
+Stereum gausapatum (Fr.) Fr.,59,6,True
+Stereum hirsutum (Willd.) Gray,591,66,True
+Stereum rugosum (Pers.) Fr.,270,30,True
+Stereum sanguinolentum (Alb. & Schwein.) Fr.,127,14,True
+Stereum subtomentosum Pouzar,271,30,True
+Strobilomyces strobilaceus (Scop.) Berk.,140,16,True
+Strobilurus esculentus (Wulfen) Singer,180,20,True
+Strobilurus stephanocystis (Kühner & Romagn. ex Hora) Singer,16,2,False
+Strobilurus tenacellus (Pers.) Singer,42,5,True
+Stropharia aeruginosa (Curtis) Quél.,77,8,True
+"Stropharia coronilla (Bull.) W.Saunders & W.G.Sm., 1870",119,13,True
+Stropharia cyanea (Bolton) Tuom.,228,25,True
+Stropharia hornemannii (Fr.) S.Lundell & Nannf.,50,6,True
+Stropharia inuncta (Fr.) Quél.,24,3,False
+Stropharia pseudocyanea (Desm.) Morgan,31,4,False
+Stropharia rugosoannulata Farl. ex Murrill,42,5,True
+Subulicystidium longisporum (Pat.) Parmasto,22,2,False
+"Suillellus luridus (Schaeff.) Murrill, 1909",284,32,True
+"Suillellus queletii (Schulzer) Vizzini, Simonini & Gelardi, 2014",45,5,True
+Suillus bovinus (L.) Kuntze,127,14,True
+Suillus cavipes (Opat.) A.H.Sm. & Thiers,128,14,True
+Suillus collinitus (Fr.) Kuntze,45,5,True
+Suillus flavidus (Fr.) Singer,29,3,False
+Suillus granulatus (L.) Snell,168,19,True
+Suillus grevillei (Klotzsch) Singer,129,14,True
+Suillus luteus (L.) Gray,193,21,True
+Suillus variegatus (Sw.) Kuntze,101,11,True
+Suillus viscidus (L.) Fr.,72,8,True
+Symphytocarpus amaurochaetoides Nann.-Bremek.,7,0,False
+Syzygites megalocarpus Ehrenb.,12,1,False
+Taphrina alni (Berk. & Broome) Gjaerum,71,8,True
+Taphrina betulina Rostr.,64,7,True
+Taphrina pruni Tul.,32,4,False
+Tapinella atrotomentosa (Batsch),215,24,True
+Tapinella panuoides (Batsch) E.-J.Gilbert,75,8,True
+Tarzetta cupularis (L.) Svrcek,49,5,True
+Tephrocybe rancida (Fr.) Donk,23,3,False
+Tephromela atra (Huds.) Hafellner,97,11,True
+Thelephora anthocephala (Bull.) Fr.,20,2,False
+Thelephora caryophyllea (Schaeff.) Pers.,17,2,False
+Thelephora palmata (Scop.) Fr.,66,7,True
+Thelephora penicillata (Pers.) Fr.,57,6,True
+Thelephora terrestris Ehrh.,217,24,True
+Thuemenidium atropurpureum (Batsch) Kuntze,27,3,False
+"Tolypocladium ophioglossoides (J.F.Gmel.) Quandt, Kepler & Spatafora, 2014",92,10,True
+"Trametes betulina (L.) Pilát, 1939",208,23,True
+Trametes gibbosa (Pers.) Fr.,409,45,True
+Trametes hirsuta (Wulfen) Pilát,410,46,True
+Trametes ochracea (Pers.) Gilb. & Ryvarden,221,25,True
+Trametes suaveolens (L.) Fr.,16,2,False
+Trametes versicolor (L.) Lloyd,906,101,True
+Tranzschelia anemones (Pers.) Nannf.,41,4,False
+Trapelia placodioides Coppins & P.James,22,2,False
+Trechispora hymenocystis (Berk. & Broome) K.H.Larss.,14,2,False
+Trechispora stevensonii (Berk. & Broome) K.H.Larss.,12,1,False
+Tremella mesenterica Retz.,690,77,True
+Tremiscus helvelloides (DC.) Donk,15,2,False
+Trichaptum abietinum (Dicks.) Ryvarden,197,22,True
+Trichaptum fuscoviolaceum (Ehrenb.) Ryvarden,113,12,True
+Trichia crateriformis G.W.Martin,10,1,False
+Trichia scabra Rostaf.,28,3,False
+Trichia varia (Pers.) Pers.,41,4,False
+Trichoderma aureoviride Rifai,63,7,True
+"Trichoderma citrinum (Pers.) Jaklitsch, W.Gams & Voglmayr, 2014",41,5,True
+"Trichoderma europaeum Jaklitsch & Voglmayr, 2014",86,10,True
+"Trichoderma pulvinatum (Fuckel) Jaklitsch & Voglmayr, 2014",58,6,True
+"Trichoderma strictipile Bissett, 1992",34,4,False
+"Trichoglossum hirsutum (Pers.) Boud., 1907",59,6,True
+Tricholoma aestuans (Fr.) Gillet,23,2,False
+Tricholoma albobrunneum (Pers.) P.Kumm.,18,2,False
+Tricholoma album (Schaeff.) P.Kumm.,47,5,True
+Tricholoma argyraceum (Bull.) Gillet,90,10,True
+Tricholoma arvernense Bon,18,2,False
+Tricholoma aurantium (Schaeff.) Ricken,31,3,False
+Tricholoma basirubens (Bon) A.Riva & Bon,20,2,False
+Tricholoma cingulatum (Almfelt) Jacobashch,58,6,True
+Tricholoma columbetta (Fr.) P.Kumm.,47,5,True
+"Tricholoma equestre (L.) P.Kumm., 1871",63,7,True
+Tricholoma focale (Fr.) Ricken,27,3,False
+Tricholoma frondosae Kalamees & Shchukin,30,3,False
+Tricholoma fulvum (DC.) Sacc.,143,16,True
+Tricholoma imbricatum (Fr.) P.Kumm.,33,4,False
+Tricholoma inocybeoides A.Pearson,90,10,True
+Tricholoma lascivum (Fr.) Gillet,85,10,True
+Tricholoma orirubens Quél.,57,6,True
+Tricholoma pessundatum (Fr.) Quél.,21,2,False
+Tricholoma populinum J.E.Lange,35,4,False
+Tricholoma portentosum (Fr.) Quél.,41,5,True
+Tricholoma psammopus (Kalchbr.) Quél.,17,2,False
+"Tricholoma saponaceum (Fr.) P.Kumm., 1871",52,6,True
+Tricholoma scalpturatum (Fr.) Quél.,364,40,True
+Tricholoma sciodes (Pers.) C.Martín,113,13,True
+Tricholoma sejunctum (Sowerby) Quél.,44,5,True
+Tricholoma squarrulosum Bres.,47,5,True
+Tricholoma stans (Fr.) Sacc.,19,2,False
+Tricholoma stiparophyllum Fr. & N.Lund,67,7,True
+"Tricholoma sulphureum (Bull.) P.Kumm., 1871",221,25,True
+Tricholoma terreum (Schaeff.) Quél.,237,26,True
+Tricholoma ustale (Fr.) P.Kumm.,136,15,True
+Tricholoma vaccinum (Schaeff.) P.Kumm.,39,4,False
+Tricholomopsis decora (Fr.) Singer,14,2,False
+Tricholomopsis rutilans (Schaeff.) Singer,299,33,True
+Trichopeziza subsulphurea (Svrcek) Baral,21,2,False
+Triphragmium ulmariae (DC.) Link,17,2,False
+Trochila ilicina (Nees ex Fr.) Courtec.,25,3,False
+Tubaria conspersa (Pers.) Fayod,106,12,True
+Tubaria dispersa (L.) Singer,91,10,True
+Tubaria furfuracea (Pers.) Gillet,426,47,True
+Tuber aestivum Vittad.,13,1,False
+Tuber borchii Vittad.,4,0,False
+Tubifera ferruginosa (Batsch) J.F.Gmel.,222,25,True
+Tuckermannopsis chlorophylla (Willd.) Hale,31,3,False
+Tulasnella violea (Quél.) Bourdot & Galzin,38,4,False
+Tulostoma brumale Pers.,108,12,True
+Tulostoma fimbriatum Fr.,21,2,False
+Tylopilus felleus (Bull.) P.Karst.,177,20,True
+Typhula erythropus (Pers.) Fr.,28,3,False
+Typhula gyrans (Batsch) Fr.,30,3,False
+Typhula spathulata (Peck) Berthier,16,2,False
+Tyromyces chioneus (Fr.) P.Karst.,34,4,False
+Umbilicaria polyphylla (L.) Baumg.,17,2,False
+Urocystis anemones (Pers.) J.Schröt.,25,3,False
+Urocystis eranthidis (Pass.) Ainsw. & Sampson,72,8,True
+Uromyces dactylidis G.H.Otth,49,5,True
+Uromyces ficariae (Schumach.) Lév.,59,7,True
+Uromyces rumicis (Schumach.) G.Winter,22,2,False
+Usnea hirta (L.) Weber ex F.H.Wigg.,40,4,False
+Usnea subfloridana Stirt.,16,2,False
+"Variospora flavescens (Huds.) Arup, Frödén & Søchting",28,3,False
+Verpa bohemica (Krombh.) J.Schröt.,18,2,False
+Verpa conica (O.F.Müll.) Sw.,27,3,False
+Verrucaria nigrescens Pers.,52,6,True
+"Vesiculomyces citrinus (Pers.) E.Hagstr., 1977",22,2,False
+Volvariella bombycina (Schaeff.) Singer,95,11,True
+"Volvariella hypopithys (Fr.) M.M.Moser, 1953",26,3,False
+Volvariella murinella (Quél.) Courtec.,20,2,False
+Volvariella surrecta (Knapp) Singer,31,4,False
+"Volvopluteus gloiocephalus (DC.) Vizzini, Contu & Justo, 2011",194,22,True
+Vouauxiella lichenicola (Linds.) Petr. & Syd.,17,2,False
+Vuilleminia comedens (Nees) Maire,170,19,True
+"Vuilleminia coryli Boidin, Lanq. & Gilles",84,9,True
+Vuilleminia cystidiata Parmasto,40,4,False
+Vulpicida pinastri (Scop.) J.-E.Mattsson,22,2,False
+Xanthoparmelia conspersa (Ehrh. ex Ach.) Hale,41,4,False
+"Xanthoparmelia loxodes (Nyl.) O.Blanco, A.Crespo, Elix, D.Hawksw. & Lumbsch",32,4,False
+Xanthoparmelia stenophylla (Ach.) Ahti & D.Hawksw.,15,2,False
+"Xanthoparmelia verruculifera (Nyl.) O.Blanco, A.Crespo, Elix, D.Hawksw. & Lumbsch",39,4,False
+Xanthoria calcicola Oxner,67,7,True
+Xanthoria parietina (L.) Th.Fr.,535,60,True
+Xanthoriicola physciae (Kalchbr.) D.Hawksw.,31,3,False
+Xenasmatella vaga (Fr.) Stalpers,30,3,False
+"Xerocomellus chrysenteron (Bull.) Šutara, 2008",356,40,True
+"Xerocomellus cisalpinus (Simonini, H.Ladurner & Peintner) Klofac, 2011",114,13,True
+"Xerocomellus porosporus (Imler ex Watling) Šutara, 2008",119,13,True
+"Xerocomellus pruinatus (Fr. & Hök) Šutara, 2008",298,33,True
+"Xerocomellus ripariellus (Redeuilh) Šutara, 2008",9,0,False
+Xerocomus ferrugineus (Schaeff.) Bon,210,23,True
+Xerocomus subtomentosus (L.) Fr.,81,9,True
+Xylaria carpophila (Pers.) Fr.,96,11,True
+Xylaria hypoxylon (L.) Grev.,527,58,True
+Xylaria longipes Nitschke,164,18,True
+Xylaria oxyacanthae Lév.,30,3,False
+Xylaria polymorpha (Pers.) Grev.,162,18,True
+Xylodon brevisetus (P.Karst.) Hjortstam & Ryvarden,22,2,False
+"Xylodon flaviporus (Berk. & M.A.Curtis ex Cooke) Riebesehl & Langer, 2017",34,4,False
+Xylodon nespori (Bres.) Hjortstam & Ryvarden,40,4,False
+Xylodon paradoxus (Schrad.) Chevall.,283,31,True
+"Xylodon raduloides Riebesehl & Langer, 2017",199,22,True
