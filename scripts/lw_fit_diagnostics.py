@@ -89,10 +89,10 @@ def heldout(x_tr, y_tr, x_va, y_va, alphas):
 
 
 def bc_spherical_ranking(z_tr, y_tr, classes):
+    g = {c: (z_tr[y_tr == c].mean(0), class_covariance(z_tr[y_tr == c], "spherical")) for c in classes}  # once per class
     d = {}
     for a, b in itertools.combinations(classes, 2):
-        p, q = z_tr[y_tr == a], z_tr[y_tr == b]
-        mt, ct = bhattacharyya_terms(p.mean(0), q.mean(0), class_covariance(p, "spherical"), class_covariance(q, "spherical"))
+        mt, ct = bhattacharyya_terms(g[a][0], g[b][0], g[a][1], g[b][1])
         d[(a, b)] = mt + ct
     return pd.Series(d)
 
@@ -192,10 +192,11 @@ def main():
                                    "val_loglik_lw": float(gaussian_loglik(zv, m, cov_s).mean()),
                                    "val_loglik_spherical": float(gaussian_loglik(zv, m, class_covariance(zs, "spherical")).mean())})
         rows = []
+        sph = {c: class_covariance(z_tr[y_ref == c], "spherical") for c in gbc_classes}  # once per class
         for c1, c2 in itertools.combinations(gbc_classes, 2):
             mt, ct = bhattacharyya_terms(fits[c1][0], fits[c2][0], fits[c1][1], fits[c2][1])
             p, q = z_tr[y_ref == c1], z_tr[y_ref == c2]
-            ms, cs = bhattacharyya_terms(p.mean(0), q.mean(0), class_covariance(p, "spherical"), class_covariance(q, "spherical"))
+            ms, cs = bhattacharyya_terms(fits[c1][0], fits[c2][0], sph[c1], sph[c2])
             u = direction(p, q)
             rows.append({"class_a": c1, "class_b": c2, "lw_full_mean_term": mt, "lw_full_cov_term": ct,
                          "lw_full_distance": mt + ct, "spherical_distance": ms + cs,
