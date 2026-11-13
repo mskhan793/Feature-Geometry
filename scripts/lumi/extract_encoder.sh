@@ -27,7 +27,8 @@ mkdir -p "$OUT"
 for f in "$CODE/scripts/extract_features.py" "$SOURCE" "$MANIFEST"; do  # fail fast if anything is not visible
     singularity exec "$SIF" test -r "$f" || { echo "not readable in the container: $f" >&2; exit 1; }
 done
-ENV="export PYTHONPATH=$CODE HF_HOME=$HF_HOME HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1; cd $CODE"
+PKGS=/scratch/project_462001534/feature_geometry/pkgs  # open_clip_torch 3.3.0 (+ ftfy, regex): not in the container; copy of aqua_v1/pkgs
+ENV="export PYTHONPATH=$CODE:$PKGS HF_HOME=$HF_HOME HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1; cd $CODE"
 X="python scripts/extract_features.py --manifest $MANIFEST $SOURCE_FLAG $SOURCE --encoder $ENCODER --chunk-size 8192"
 echo "start $(date -Is) job $SLURM_JOB_ID node $SLURM_NODELIST code $(cat "$CODE/CODE_COMMIT") encoder $ENCODER manifest $MANIFEST out $OUT"
 srun --kill-on-bad-exit=1 bash -c "export ROCR_VISIBLE_DEVICES=\$SLURM_LOCALID; singularity exec $SIF bash -c \
