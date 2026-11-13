@@ -1,7 +1,7 @@
 #!/bin/bash
 # Frozen image features of one encoder for one manifest on one LUMI node. Eight tasks, one GCD each, encode chunks
-# task, task+8, ... (resumable: finished chunks are skipped). Then, on the batch node: cache verification and a CPU
-# re-extraction of the first 256 images compared with the GPU cache.
+# task, task+8, ... (resumable: finished chunks are skipped). The cache verification and the CPU re-extraction of the
+# first 256 images run afterwards in a CPU job (check_extraction.sh), so the GPU node is released when encoding ends.
 #
 # Usage: sbatch [--partition P --time T] extract_encoder.sh CODE_DIR ENCODER MANIFEST SOURCE_FLAG SOURCE OUT_DIR
 #   ENCODER: bioclip2 | dinov2_l | dinov3_l | siglip2 (src/encoders/frozen_encoders.py)
@@ -34,11 +34,4 @@ echo "start $(date -Is) job $SLURM_JOB_ID node $SLURM_NODELIST code $(cat "$CODE
 srun --kill-on-bad-exit=1 bash -c "export ROCR_VISIBLE_DEVICES=\$SLURM_LOCALID; singularity exec $SIF bash -c \
     '$ENV; $X --cache-dir $OUT/features_gpu --task \$SLURM_PROCID --n-tasks \$SLURM_NTASKS --batch-size 64 \
     --num-workers 6 --accelerator gpu' >> $OUT/extract_task\$SLURM_PROCID.log 2>&1"
-echo "extract done $(date -Is)"
-singularity exec "$SIF" bash -c "$ENV; python scripts/verify_feature_cache.py --manifest $MANIFEST \
-    --cache-dir $OUT/features_gpu/$ENCODER --encoder $ENCODER --chunk-size 8192 --out $OUT/verify.json"
-singularity exec "$SIF" bash -c "$ENV; $X --cache-dir $OUT/features_cpu256 --limit-rows 256 --batch-size 32 \
-    --num-workers 4 --accelerator cpu > $OUT/cpucheck.log 2>&1; python scripts/compare_cache_prefix.py \
-    --manifest $MANIFEST --full $OUT/features_gpu/$ENCODER --prefix $OUT/features_cpu256/$ENCODER --rows 256 \
-    --out $OUT/gpu_vs_cpu256.json"
 echo "end $(date -Is)"

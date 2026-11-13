@@ -1,7 +1,8 @@
 #!/bin/bash
 # C1 measured pilots (task.md d57a630), submitted from a LUMI login node. Not run automatically.
 #  - throughput pilot: each encoder on FGVC-Aircraft train+val (6,667 images, packed HDF5), one standard-g node
-#    (8 GCDs) per encoder; extract_encoder.sh also verifies the cache and compares 256 rows CPU vs GPU;
+#    (8 GCDs) per encoder; at the C1 commits (6245a80, f74bcb3) extract_encoder.sh also verified the cache and
+#    compared 256 rows CPU vs GPU on the batch node (since C2: check_extraction.sh, a separate CPU job);
 #  - biological sample: each encoder on the fixed 512-image BIOSCAN-5M train sample, twice (repeat reproducibility),
 #    on one GCD; the dinov3_l / dinov2_l / bioclip2 caches are then compared with the v1 caches
 #    (compare_v1_bioscan_cache.py, CPU follow-up job).

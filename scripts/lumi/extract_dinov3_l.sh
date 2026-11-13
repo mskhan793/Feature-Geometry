@@ -1,7 +1,8 @@
 #!/bin/bash
 # Frozen DINOv3-L features for one manifest of HDF5 images on one LUMI node (FIN-Benthic2 fold-0 cohort, task.md
 # 366ee62; full-specimen selections of FIN-Benthic2 and AquaMonitor, task.md 92a605a): the encoder-agnostic
-# extract_encoder.sh with ENCODER=dinov3_l and --hdf5 (same steps as before it was generalised).
+# extract_encoder.sh with ENCODER=dinov3_l and --hdf5. Since C2 (task.md d57a630) the cache verification and the
+# CPU-vs-GPU check are not part of the GPU job: run check_extraction.sh afterwards.
 #
 # Usage: sbatch [--partition P --time T] extract_dinov3_l.sh CODE_DIR MANIFEST HDF5 OUT_DIR
 #SBATCH --job-name=fg_extract

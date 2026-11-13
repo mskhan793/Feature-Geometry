@@ -1,0 +1,13 @@
+{
+ "combinations": 32,
+ "by_status": {
+  "new": 24,
+  "reuse": 4,
+  "c1": 4
+ },
+ "new_jobs": 24,
+ "new_images": 5258061,
+ "new_float32_gb": 20.97,
+ "est_gpu_h_new": 11.2,
+ "est_encode_node_h": 1.8
+}
