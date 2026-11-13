@@ -1,0 +1,5 @@
+start 2026-11-13T09:03:58+02:00 job 23696163 node nid005271 code f74bcb3 encoder bioclip2 manifest /flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2
+extract done 2026-11-13T09:05:35+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2/features_gpu/bioclip2", "encoder": "bioclip2", "manifest_rows": 6667, "rows_covered": 6667, "chunks_ok": 1, "dims": [768], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2/features_gpu/bioclip2", "prefix": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2/features_cpu256/bioclip2", "rows": 256, "tf32": [false, false], "max_abs_diff": 0.00041353702545166016, "mean_abs_diff": 7.921611291641003e-06, "max_rel_norm_diff": 3.156618049615645e-06, "bitwise_equal": false}
+end 2026-11-13T09:09:06+02:00

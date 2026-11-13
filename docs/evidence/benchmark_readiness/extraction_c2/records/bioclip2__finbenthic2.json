@@ -1,0 +1,58 @@
+{
+ "encoder": "bioclip2",
+ "dataset": "finbenthic2",
+ "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+ "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/finbenthic2.parquet",
+ "standard_sha256": "18470975fc46e1575ebad91c2ba35a896d8c3b0bd135e5ae385f42c93e7e9376",
+ "rows": 186284,
+ "dim": 768,
+ "units": 9631,
+ "units_expected": 9631,
+ "rows_per_split": null,
+ "norm_min": 30.418308684761868,
+ "norm_median": 44.25926760215545,
+ "norm_max": 55.04950284302862,
+ "features_sha256": "fcddb278aef9295b845b5cde8ec178d6f83e9266669665be05ea20ca770e7ec5",
+ "cache_settings": {
+  "encoder": "bioclip2",
+  "model_id": "hf-hub:imageomics/bioclip-2",
+  "feature": "open_clip model.visual(x), not normalised",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+   "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/finbenthic2/bioclip2/features_gpu/bioclip2",
+   "chunks": 23
+  }
+ ],
+ "rank": {
+  "rows": 186284,
+  "dim": 768,
+  "eigenvalues_smallest_4": [
+   4.544590120960826e-05,
+   9.157436647133299e-05,
+   0.00015320102754847264,
+   0.00015954520342044708
+  ],
+  "eigenvalue_largest": 82.5302106730225,
+  "smallest_over_second_smallest": 0.4962731707659143,
+  "numerical_rank_1e-12": 768,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

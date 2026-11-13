@@ -1,0 +1,64 @@
+{
+ "encoder": "dinov3_l",
+ "dataset": "aquamonitor",
+ "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+ "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/aquamonitor.parquet",
+ "standard_sha256": "d491d144b7c672cd70501d9b6f94db60b2fbc998536eec33c8d1c17f7b0f3e3e",
+ "rows": 836159,
+ "dim": 1024,
+ "units": 42165,
+ "units_expected": 42165,
+ "rows_per_split": null,
+ "norm_min": 11.875817061301433,
+ "norm_median": 15.63346730955969,
+ "norm_max": 17.3870030632077,
+ "features_sha256": "5297b441cf8dc75ef122284687a0343818eeead2f5cf9e3f0544c9d669b913e7",
+ "cache_settings": {
+  "encoder": "dinov3_l",
+  "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "feature": "pooler_output (final-norm CLS token)",
+  "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+  "library": "transformers 5.10.1",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+   "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+   "cache": "/scratch/project_462001534/feature_geometry/full_specimen/aquamonitor/extract/features_gpu/dinov3_l",
+   "chunks": 103
+  }
+ ],
+ "rank": {
+  "rows": 836159,
+  "dim": 1024,
+  "eigenvalues_smallest_4": [
+   -2.7465566131810104e-18,
+   7.122226600512191e-06,
+   3.216567066475433e-05,
+   0.0003841427024094308
+  ],
+  "eigenvalue_largest": 19.560088979481172,
+  "smallest_over_second_smallest": -3.856317367076601e-13,
+  "numerical_rank_1e-12": 1023,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors",
+  "key": "norm.weight/bias",
+  "constraint_rel_abs_max": 9.088687899716634e-07,
+  "constraint_rel_abs_median": 1.6213498848073585e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 1.0000000000000002,
+  "variance_along_inv_w": 3.3047771339498066e-18
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

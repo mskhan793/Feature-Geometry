@@ -1,0 +1,5 @@
+start 2026-11-13T08:55:54+02:00 job 23696068 node nid005760 code 6245a80 encoder siglip2 manifest /flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/siglip2
+extract done 2026-11-13T08:56:47+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/siglip2/features_gpu/siglip2", "encoder": "siglip2", "manifest_rows": 512, "rows_covered": 512, "chunks_ok": 1, "dims": [1152], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/siglip2/features_gpu/siglip2", "prefix": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/siglip2/features_cpu256/siglip2", "rows": 256, "tf32": [false, false], "max_abs_diff": 5.08427619934082e-05, "mean_abs_diff": 2.6050122943704282e-06, "max_rel_norm_diff": 3.589830157579854e-06, "bitwise_equal": false}
+end 2026-11-13T08:59:28+02:00

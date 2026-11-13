@@ -1,0 +1,63 @@
+{
+ "encoder": "bioclip2",
+ "dataset": "bioscan5m",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_trainval.parquet",
+ "manifest_sha256": "f5681c423ef44b21af9b716360e0cee7c11b4b5eff9908f787725cafad3a4e6b",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/bioscan5m.parquet",
+ "standard_sha256": "4f0cb0acf61d5f28cf1017959983839083cc17426903916a88235da84ecc2971",
+ "rows": 303960,
+ "dim": 768,
+ "units": 303960,
+ "units_expected": 303960,
+ "rows_per_split": {
+  "train": 289203,
+  "val": 14757
+ },
+ "norm_min": 31.49556942326985,
+ "norm_median": 43.57126400034939,
+ "norm_max": 70.47139789513467,
+ "features_sha256": "cc712f4ffef32b0bb14579166f28fb49f4c91e7426ef689b159055f94c626d0d",
+ "cache_settings": {
+  "model": "hf-hub:imageomics/bioclip-2",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0",
+  "feature_dim": 768
+ },
+ "sources": [
+  {
+   "v1_cache": "/scratch/project_462001534/aqua_v1/bioscan/cache_bioclip2",
+   "v1_index": "/scratch/project_462001534/aqua_v1/bioscan/bioscan_index.parquet",
+   "v1_index_sha256": "b4d9b4466838e829c4695f0aa605fd69aa3433d2b4b685cc26dcae8638c0af6f",
+   "splits_read": [
+    "train",
+    "val"
+   ]
+  }
+ ],
+ "rank": {
+  "rows": 303960,
+  "dim": 768,
+  "eigenvalues_smallest_4": [
+   9.53443353907064e-05,
+   0.00017904781384398477,
+   0.00029890181441973046,
+   0.00030941401362857157
+  ],
+  "eigenvalue_largest": 56.58907984613216,
+  "smallest_over_second_smallest": 0.5325076768252849,
+  "numerical_rank_1e-12": 768,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

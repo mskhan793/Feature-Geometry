@@ -1,0 +1,5 @@
+start 2026-11-13T08:55:52+02:00 job 23696058 node nid005271 code 6245a80 encoder dinov3_l manifest /flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/dinov3_l
+extract done 2026-11-13T08:57:15+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/dinov3_l/features_gpu/dinov3_l", "encoder": "dinov3_l", "manifest_rows": 6667, "rows_covered": 6667, "chunks_ok": 1, "dims": [1024], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/dinov3_l/features_gpu/dinov3_l", "prefix": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/dinov3_l/features_cpu256/dinov3_l", "rows": 256, "tf32": [false, false], "max_abs_diff": 1.627206802368164e-05, "mean_abs_diff": 1.57374244455708e-06, "max_rel_norm_diff": 5.652543677570065e-07, "bitwise_equal": false}
+end 2026-11-13T09:00:57+02:00

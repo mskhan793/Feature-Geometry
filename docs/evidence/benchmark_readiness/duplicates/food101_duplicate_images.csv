@@ -1,0 +1,17 @@
+dataset,source_id,unit_id,label,split,group_size,splits,labels,crosses_trainval_test,crosses_train_val,conflicting_labels
+food101,pho/4787,337a465fcd430d6736a1c7c37bbc994ca05e48f6,pho,train,2,train,pho,False,False,False
+food101,pho/51112,337a465fcd430d6736a1c7c37bbc994ca05e48f6,pho,train,2,train,pho,False,False,False
+food101,hamburger/3578279,5e3f5613c859d4db2aeae203e0c97b5c9493f73e,hamburger,train,2,train,hamburger,False,False,False
+food101,hamburger/3783650,5e3f5613c859d4db2aeae203e0c97b5c9493f73e,hamburger,train,2,train,hamburger,False,False,False
+food101,omelette/2619753,6603c8bf2170f06531b67564f921ef554ac49175,omelette,train,2,train,omelette|pancakes,False,False,True
+food101,pancakes/2619752,6603c8bf2170f06531b67564f921ef554ac49175,pancakes,train,2,train,omelette|pancakes,False,False,True
+food101,prime_rib/76271,6950942f9f133ddfee5ce6a3ad9ddca793e839c1,prime_rib,train,2,train,prime_rib|steak,False,False,True
+food101,steak/97656,6950942f9f133ddfee5ce6a3ad9ddca793e839c1,steak,train,2,train,prime_rib|steak,False,False,True
+food101,churros/2617186,91182e686197cbe1733af6d7103d5d581d82926d,churros,test,2,"test,train",churros,True,False,False
+food101,churros/2547960,91182e686197cbe1733af6d7103d5d581d82926d,churros,train,2,"test,train",churros,True,False,False
+food101,dumplings/167000,b27938c70068f17bbeee77e2e39d7605461ee7aa,dumplings,val,2,val,dumplings,False,False,False
+food101,dumplings/180290,b27938c70068f17bbeee77e2e39d7605461ee7aa,dumplings,val,2,val,dumplings,False,False,False
+food101,paella/2199939,c7bdec5611975333c078a70b7f15484f9ab24fec,paella,test,2,"test,train",paella,True,False,False
+food101,paella/2199941,c7bdec5611975333c078a70b7f15484f9ab24fec,paella,train,2,"test,train",paella,True,False,False
+food101,pho/51122,cd289eb7f5ff2050484255ba7a1f7d7575dde272,pho,train,2,train,pho,False,False,False
+food101,pho/651427,cd289eb7f5ff2050484255ba7a1f7d7575dde272,pho,train,2,train,pho,False,False,False

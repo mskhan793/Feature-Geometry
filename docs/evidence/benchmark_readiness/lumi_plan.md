@@ -14,7 +14,7 @@ GPU-hours = node-hours × 4. Project 462001534. Paths: `F=/flash/project_4620015
 | C0b | Pack the BIOSCAN-5M closed-set images (from the cropped_256 zips) | same script, `--archives /scratch/project_462001534/aqua_v1/bioscan/zips` | 343,333 images; zips 2,224,548,648 + 1,467,020,347 bytes (`bioscan_zips_listing.txt`) |
 | C0c | SigLIP 2 weights into the shared hf_cache at revision e8708ab7 | `huggingface-cli download google/siglip2-so400m-patch16-256 --revision e8708ab72d125807e45b36fb7d4e0aacbb59f379` (HF_HOME = the aqua_v1 hf_cache) | 4,542,792,928 bytes (`encoders/siglip2.json`) |
 | C0d | BIOSCAN v1-cache equivalence: re-encode 512 closed-set images per encoder with this repo's extractor, compare with the v1 caches (`compare_caches_by_name.py`) | 3 short jobs (1 GCD each) | < 1 GPU-h |
-| C0e | **DF24 images: needs a decision first.** Resolution (300 px, 6.42 GB, vs full size, about 110 GB) and the licence conflict (metadata "Public Domain" vs README CC BY-NC-ND 4.0) | download job after approval | 6.42 GB or ~110 GB (v1 dataset audit) |
+| C0e | **DF24 images: needs a decision first.** Resolution (300 px, 6.42 GB, vs full size, about 110 GB) and the licence (correction, task d57a630: the "Public Domain" vs CC BY-NC-ND 4.0 conflict belongs to NAFlora-1M; DF24's README says BSD, non-commercial research only) | download job after approval | 6.42 GB or ~110 GB (v1 dataset audit) |
 
 ## C1 — existing checkpoints (DINOv2-L, BioCLIP 2; DINOv3-L where not cached)
 

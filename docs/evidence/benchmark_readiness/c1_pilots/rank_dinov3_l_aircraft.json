@@ -1,0 +1,20 @@
+{
+ "rows": 6667,
+ "dim": 1024,
+ "eigenvalues_smallest_4": [
+  1.4664859168893557e-17,
+  2.0847650729372143e-05,
+  5.4418835407732615e-05,
+  0.0006932996696384693
+ ],
+ "eigenvalue_largest": 27.095080186540326,
+ "smallest_over_second_smallest": 7.034298185086301e-13,
+ "numerical_rank_1e-12": 1023,
+ "rank_measurable": true,
+ "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors",
+ "key": "norm.weight/bias",
+ "constraint_rel_abs_max": 7.019440049164941e-07,
+ "constraint_rel_abs_median": 1.7407950084779993e-07,
+ "abs_cos_smallest_eigvec_vs_inv_w": 1.0000000000000004,
+ "variance_along_inv_w": 3.679060173502328e-18
+}

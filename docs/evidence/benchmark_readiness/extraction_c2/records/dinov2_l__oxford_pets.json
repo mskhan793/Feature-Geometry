@@ -1,0 +1,68 @@
+{
+ "encoder": "dinov2_l",
+ "dataset": "oxford_pets",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/oxford_pets_trainval.parquet",
+ "manifest_sha256": "147b18d469a4a8f248fe2fad29240adb9c4f2b14720d26a662b7b125daefbdc5",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/oxford_pets.parquet",
+ "standard_sha256": "3fa99414f57cb2513ecf3c168b4f86de037e07b0e05ac2869103fba7e4aee7c2",
+ "rows": 3680,
+ "dim": 1024,
+ "units": 3680,
+ "units_expected": 3680,
+ "rows_per_split": {
+  "train": 3311,
+  "val": 369
+ },
+ "norm_min": 43.070889583849976,
+ "norm_median": 46.628807301387354,
+ "norm_max": 48.246330053979975,
+ "features_sha256": "2a8cad205b39db2b9ef99e839deb20d41bf12fe134665c81f1280cbe12d4cc73",
+ "cache_settings": {
+  "encoder": "dinov2_l",
+  "model_id": "facebook/dinov2-large",
+  "feature": "pooler_output (final-norm CLS token)",
+  "transform": "Compose(\n    Resize(size=256, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))\n)",
+  "library": "transformers 5.10.1 @ 47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/oxford_pets_trainval.parquet",
+   "manifest_sha256": "147b18d469a4a8f248fe2fad29240adb9c4f2b14720d26a662b7b125daefbdc5",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/oxford_pets/dinov2_l/features_gpu/dinov2_l",
+   "chunks": 1
+  }
+ ],
+ "rank": {
+  "rows": 3680,
+  "dim": 1024,
+  "eigenvalues_smallest_4": [
+   8.745177489723641e-14,
+   0.0027536937266025717,
+   0.011947663276137476,
+   0.02089779925000386
+  ],
+  "eigenvalue_largest": 127.28697161871521,
+  "smallest_over_second_smallest": 3.1757988934060546e-11,
+  "numerical_rank_1e-12": 1023,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/model.safetensors",
+  "key": "layernorm.weight/bias",
+  "constraint_rel_abs_max": 1.0422618327870168e-06,
+  "constraint_rel_abs_median": 2.1587550562055915e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999999079,
+  "variance_along_inv_w": 1.2151028331897694e-13
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

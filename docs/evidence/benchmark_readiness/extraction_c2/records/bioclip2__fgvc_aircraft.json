@@ -1,0 +1,62 @@
+{
+ "encoder": "bioclip2",
+ "dataset": "fgvc_aircraft",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet",
+ "manifest_sha256": "9af38fef740a6820580206bc69cb50e1df992af8e173645aab096fc07c2a9d90",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/fgvc_aircraft.parquet",
+ "standard_sha256": "3be1b3d7020dda69fa90ee08e35d4ad1c49817bc4a2d1a45630709143cab2c1a",
+ "rows": 6667,
+ "dim": 768,
+ "units": 6667,
+ "units_expected": 6667,
+ "rows_per_split": {
+  "train": 3334,
+  "val": 3333
+ },
+ "norm_min": 33.43614183680479,
+ "norm_median": 39.66819265987786,
+ "norm_max": 50.48035010117659,
+ "features_sha256": "acee1fffc985440625a5cb07e1385acc72e933cd0a2bfdd5b4f03e5bab5b946b",
+ "cache_settings": {
+  "encoder": "bioclip2",
+  "model_id": "hf-hub:imageomics/bioclip-2",
+  "feature": "open_clip model.visual(x), not normalised",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet",
+   "manifest_sha256": "9af38fef740a6820580206bc69cb50e1df992af8e173645aab096fc07c2a9d90",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2/features_gpu/bioclip2",
+   "chunks": 1
+  }
+ ],
+ "rank": {
+  "rows": 6667,
+  "dim": 768,
+  "eigenvalues_smallest_4": [
+   3.7499320761246457e-05,
+   8.106497194998825e-05,
+   0.0001289852727770046,
+   0.0001446566907259204
+  ],
+  "eigenvalue_largest": 35.98869608926247,
+  "smallest_over_second_smallest": 0.4625835284860281,
+  "numerical_rank_1e-12": 768,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

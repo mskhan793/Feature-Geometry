@@ -1,0 +1,18 @@
+{
+ "dataset": "food101",
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/food101.parquet",
+ "images": 101000,
+ "groups": 8,
+ "images_in_groups": 16,
+ "groups_crossing_trainval_test": 2,
+ "groups_crossing_train_val": 0,
+ "groups_conflicting_labels": 2,
+ "R1_test_images_flagged": 2,
+ "R1_official_test_images": 25250,
+ "R2_trainval_images_flagged": 4,
+ "R2_test_images_in_conflicting_groups": 0,
+ "candidate_rules_not_applied": {
+  "R1": "report test metrics also on official test minus test images whose content occurs in train/val",
+  "R2": "leave conflicting-label groups out of training statistics (all members); official test unchanged"
+ }
+}

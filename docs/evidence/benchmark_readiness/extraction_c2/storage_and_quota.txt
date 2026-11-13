@@ -1,0 +1,7 @@
+20993612376	/scratch/project_462001534/feature_geometry/benchmark_c2
+134764345	/scratch/project_462001534/feature_geometry/benchmark_c1
+17972400070	/scratch/project_462001534/feature_geometry/benchmark_sources
+14943683535	/flash/project_462001534/feature_geometry/benchmark
+20967569244 features_gpu total
+project_462001534   |           3058/5000  (61.2%) core/hours|     39625/40000  (99.1%) gpu/hours|      5157/100000   (5.2%) TB/hours
+project_462001824   |        52702/500000  (10.5%) core/hours|        993/5000  (19.9%) gpu/hours|          0/22000   (0.0%) TB/hours

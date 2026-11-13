@@ -1,0 +1,88 @@
+{
+ "per_group": {
+  "C0 download": {
+   "hours": 0.14,
+   "gpu_h": 0.0,
+   "core_h": 1.09,
+   "billed_cpu_core_h": 1.09,
+   "energy_kwh": 0.0,
+   "jobs": 1,
+   "states": {
+    "COMPLETED": "1"
+   }
+  },
+  "C0 packing": {
+   "hours": 0.22,
+   "gpu_h": 0.0,
+   "core_h": 1.74,
+   "billed_cpu_core_h": 1.74,
+   "energy_kwh": 0.0,
+   "jobs": 5,
+   "states": {
+    "COMPLETED": "5"
+   }
+  },
+  "C1 checks": {
+   "hours": 0.02,
+   "gpu_h": 0.0,
+   "core_h": 0.29,
+   "billed_cpu_core_h": 0.29,
+   "energy_kwh": 0.0,
+   "jobs": 1,
+   "states": {
+    "COMPLETED": "1"
+   }
+  },
+  "C1 pilots": {
+   "hours": 0.88,
+   "gpu_h": 3.53,
+   "core_h": 0.0,
+   "billed_cpu_core_h": 0.0,
+   "energy_kwh": 0.11,
+   "jobs": 15,
+   "states": {
+    "COMPLETED": "12",
+    "FAILED": "3"
+   }
+  },
+  "C2 CPU checks": {
+   "hours": 1.17,
+   "gpu_h": 0.0,
+   "core_h": 37.45,
+   "billed_cpu_core_h": 37.45,
+   "energy_kwh": 0.0,
+   "jobs": 24,
+   "states": {
+    "COMPLETED": "24"
+   }
+  },
+  "C2 GPU extraction": {
+   "hours": 2.12,
+   "gpu_h": 8.5,
+   "core_h": 0.0,
+   "billed_cpu_core_h": 0.0,
+   "energy_kwh": 0.11,
+   "jobs": 24,
+   "states": {
+    "COMPLETED": "24"
+   }
+  },
+  "C3 records": {
+   "hours": 0.14,
+   "gpu_h": 0.0,
+   "core_h": 2.21,
+   "billed_cpu_core_h": 2.21,
+   "energy_kwh": 0.0,
+   "jobs": 32,
+   "states": {
+    "COMPLETED": "32"
+   }
+  }
+ },
+ "total": {
+  "gpu_h": 12.03,
+  "core_h": 42.78,
+  "billed_cpu_core_h": 42.78,
+  "energy_kwh": 0.22
+ }
+}

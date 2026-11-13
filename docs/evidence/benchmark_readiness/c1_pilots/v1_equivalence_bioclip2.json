@@ -1,0 +1,32 @@
+{
+ "rows": 512,
+ "split": "train",
+ "v1_cache": "/scratch/project_462001534/aqua_v1/bioscan/cache_bioclip2",
+ "v1_settings": {
+  "model": "hf-hub:imageomics/bioclip-2",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0",
+  "feature_dim": 768
+ },
+ "new_settings": {
+  "model_id": "hf-hub:imageomics/bioclip-2",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0"
+ },
+ "same_settings": {
+  "model_id": true,
+  "transform": true,
+  "dim": true
+ },
+ "max_rel_l2": 3.2905365697391766e-05,
+ "median_rel_l2": 4.797975398310823e-06,
+ "min_cosine": 0.9999999994660151,
+ "bitwise_equal_rows": 0,
+ "criterion": {
+  "rel_l2_max": 0.0001,
+  "cosine_min": 0.999999
+ },
+ "equivalent": true
+}

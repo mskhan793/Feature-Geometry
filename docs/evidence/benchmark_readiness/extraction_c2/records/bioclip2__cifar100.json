@@ -1,0 +1,62 @@
+{
+ "encoder": "bioclip2",
+ "dataset": "cifar100",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/cifar100_trainval.parquet",
+ "manifest_sha256": "4c7450243a3c5d3f361a7ab11e1907482902731efac9265eaba435d0652608fc",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/cifar100.parquet",
+ "standard_sha256": "59b9429f470fdd672ce6a735ab25aa3dbc835214a91dd3190d10ad660d515f8c",
+ "rows": 50000,
+ "dim": 768,
+ "units": 49986,
+ "units_expected": 49986,
+ "rows_per_split": {
+  "train": 44998,
+  "val": 5002
+ },
+ "norm_min": 30.419112780184296,
+ "norm_median": 37.418394182951225,
+ "norm_max": 57.3943995111954,
+ "features_sha256": "a3f5dea159a047a87e48cc3a537253382282cefaaf1feb18123098fff75e4218",
+ "cache_settings": {
+  "encoder": "bioclip2",
+  "model_id": "hf-hub:imageomics/bioclip-2",
+  "feature": "open_clip model.visual(x), not normalised",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "library": "open_clip 3.3.0",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/cifar100_trainval.parquet",
+   "manifest_sha256": "4c7450243a3c5d3f361a7ab11e1907482902731efac9265eaba435d0652608fc",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/cifar100/bioclip2/features_gpu/bioclip2",
+   "chunks": 7
+  }
+ ],
+ "rank": {
+  "rows": 50000,
+  "dim": 768,
+  "eigenvalues_smallest_4": [
+   0.00012286035171471275,
+   0.00024870520677929063,
+   0.00042188296005120173,
+   0.0004548301364111254
+  ],
+  "eigenvalue_largest": 27.653868696457796,
+  "smallest_over_second_smallest": 0.4939999178374386,
+  "numerical_rank_1e-12": 768,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

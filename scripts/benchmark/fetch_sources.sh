@@ -15,5 +15,7 @@ get cifar100 official_page.html https://www.cs.toronto.edu/~kriz/cifar.html
 get oxford_pets paper_parkhi12a.pdf https://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf
 get oxford_pets official_page.html https://www.robots.ox.ac.uk/~vgg/data/pets/
 get siglip2 paper_arxiv_2502.14786.pdf https://arxiv.org/pdf/2502.14786
+# DF24 licence: the dataset authors' README at the commit read on 2026-11-13 (copy in evidence/benchmark_readiness/df24_licence)
+get df24 README_at_c5c19b41.md https://raw.githubusercontent.com/BohemianVRA/DanishFungiDataset/c5c19b41275286d1ea8ba888224a2b68eb2132f7/README.md
 (cd "$OUT" && find . -type f ! -name sha256.txt ! -name sources.txt | sort | xargs sha256sum > sha256.txt)
 cat "$OUT/sha256.txt"

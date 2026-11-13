@@ -1,7 +1,10 @@
-# Benchmark standard — eight datasets × four frozen encoders (task.md 8538df5)
+# Benchmark standard — eight datasets × four frozen encoders (task.md 8538df5, extraction d57a630)
 
-Status: Stage A done; one Stage B smoke test done; Stage C (bulk extraction, experiments, test evaluation) **not
-authorised**. Evidence: `docs/evidence/benchmark_readiness/`.
+Status:
+- Stage A done (task 8538df5).
+- Train+val frozen features extracted and checked for all 32 combinations (task d57a630, §6).
+- Experiments, classifiers and test evaluation are **not authorised**.
+- Evidence: `docs/evidence/benchmark_readiness/` (extraction: `extraction_c2/`).
 
 ## 1. Datasets, splits and independent units
 
@@ -30,9 +33,15 @@ All manifests share one schema (`src/data/benchmark_manifests.py`): `dataset`, `
   - Aircraft and Pet: none.
   - These are publisher-split properties: **reported, not corrected**. Near-duplicates beyond exact bytes are not
     detected.
+  - The flagged images and two candidate evaluation rules (R1: also report test without test images whose content
+    occurs in train/val; R2: leave conflicting-label groups out of training statistics) are in
+    `evidence/benchmark_readiness/duplicates/`. They are **not applied** until the author decides.
+- **Licences of the image data as used here:** DF24, per the dataset authors' README (commit c5c19b41, copy in
+  `evidence/benchmark_readiness/df24_licence/`): BSD, with data, metadata and models for non-commercial research
+  only. The "Public Domain vs CC BY-NC-ND" conflict noted in the earlier dataset audit concerns NAFlora-1M, not DF24.
 - **Test sets are locked.** Analysis code drops test rows before any feature lookup
   (`src/statistics/heldout_density.load_fold`). Features of test images may be cached, but are read only after an
-  explicit final-evaluation authorisation.
+  explicit final-evaluation authorisation. Task d57a630 encoded train+val only (§6).
 - **CIFAR-100 images are 32 × 32.** Each encoder upscales them with its own published transform only; no other
   resizing.
 
@@ -45,18 +54,18 @@ downloaded). Registry: `src/encoders/frozen_encoders.py`.
 |---|---|---|---|---|---|
 | DINOv3-L | `facebook/dinov3-vitl16-pretrain-lvd1689m` @ ea8dc286 | DINOv3 licence, gated (weights on LUMI and the Dell) | `pooler_output` = final-LayerNorm CLS | Resize (256, 256), ImageNet mean/std (v1 convention; the official processor's default is 224 — the existing caches are kept as they are) | 1024 |
 | DINOv2-L | `facebook/dinov2-large` @ 47b73eef | Apache-2.0 | `pooler_output` = final-LayerNorm CLS | Resize 256 bicubic, CenterCrop 224, ImageNet mean/std | 1024 |
-| BioCLIP 2 | `imageomics/bioclip-2` @ 2957b322 (open_clip hf-hub; LUMI `refs/main`) | MIT | `model.visual(x)` = proj(ln_post(CLS)) | checkpoint's open_clip eval transform (224, bicubic, OpenAI CLIP mean/std) | 768 |
+| BioCLIP 2 | `imageomics/bioclip-2` @ 2957b322 (open_clip_torch 3.3.0 hf-hub, from the add-on folder `feature_geometry/pkgs` on LUMI, not in the container; LUMI `refs/main`) | MIT | `model.visual(x)` = proj(ln_post(CLS)) | checkpoint's open_clip eval transform (224, bicubic, OpenAI CLIP mean/std) | 768 |
 | SigLIP 2 | `google/siglip2-so400m-patch16-256` @ e8708ab7 (official 256 variant, preferred over 384 by the checkpoint policy) | Apache-2.0 | `SiglipVisionModel` `pooler_output` (attention-pooled, = `get_image_features`) | checkpoint's `SiglipImageProcessor` (256 × 256 bilinear, mean/std 0.5) | 1152 |
 
 - **L2-normalisation:** a unit-normalised variant, if used later, is a separately named arm; caches always store the
   raw outputs.
 - **Final-LayerNorm rank constraint:** every output vector x of a final-LayerNorm satisfies Σ_j (x_j − b_j)/w_j = 0,
   so native covariances have rank ≤ d − 1.
-  - Measured for DINOv3-L (rank 1023; `coupled_rscm_vs_lw/native_null_space/`).
-  - Confirmed for DINOv2-L on CIFAR-100 (relative violation ≤ 9.3e−7; Stage B). Its rank could not be measured
-    there, because 512 samples < 1024 dimensions.
-  - BioCLIP 2 and SigLIP 2 are not expected to have an exact deficit (a projection or an MLP follows their last
-    norm). This must be measured.
+  - Measured on the train+val caches of all 8 datasets (task d57a630, `extraction_c2/records/`):
+    - DINOv3-L and DINOv2-L have numerical rank 1023 everywhere. The smallest-eigenvalue direction is the 1/w
+      direction of the final LayerNorm (|cos| = 1.0 to six decimals).
+    - BioCLIP 2 (768) and SigLIP 2 (1152) have full numerical rank everywhere (a projection or an attention-pooling
+      MLP follows their last norm).
   - Native-space work drops one coordinate (or projects out 1/w) per model, after this audit; nothing is ever
     inverted singular.
 
@@ -122,3 +131,29 @@ downloaded). Registry: `src/encoders/frozen_encoders.py`.
   - test rows are dropped before feature lookup;
   - cross-split exact duplicates inherited from publishers are reported.
 - **Existing DINOv3-L aquatic caches are reused,** never re-extracted without a demonstrated mismatch.
+
+## 6. Extraction protocol (verified in task d57a630)
+
+- **What is encoded:**
+  - single-split datasets: the train and val rows of the standardised manifest (official train / val, or the
+    derived val), never test;
+  - FIN-Benthic2 / AquaMonitor: the stored frame selection, i.e. every specimen. Each specimen is test in one fold
+    and train/val in the other four, so the train+val union over the folds is the whole selection. Test rows are
+    dropped per fold before feature lookup.
+- **Inputs:** byte-verified HDF5 packs on `/flash` (images in manifest order, `img` + `hdf5_row` checked on read);
+  CIFAR-100 from the publisher's pickles.
+- **GPU job** (`scripts/lumi/extract_encoder.sh`):
+  - one standard-g node, 8 tasks with one GCD each;
+  - 8,192-row chunks with names and sha256 in the chunk JSON; resumable; float32 raw outputs;
+  - no TF32, no mixed precision.
+- **CPU follow-up** (`scripts/lumi/check_extraction.sh`, after success only):
+  - full cache verification against the manifest;
+  - CPU re-extraction of the first 256 rows, compared with the GPU cache.
+- **Record** (`scripts/benchmark/combination_record.py`, one per combination): identity against the standardised
+  manifest, units, finiteness, checksum in manifest order, numerical rank and the LayerNorm constraint.
+- **Reuse rule:** an earlier cache is reused only if a predeclared fresh-vs-cached comparison passes (relative L2
+  ≤ 1e−4 and cosine ≥ 0.999999 on a fixed 512-image sample, same checkpoint, transform and dimension).
+  - Passed: DINOv3-L and BioCLIP 2 BIOSCAN-5M (v1).
+  - Failed, so re-extracted: DINOv2-L BIOSCAN-5M (v1), max relative L2 4.9e−4.
+  - The v1 BIOSCAN caches also hold test and open-world folders; only `train` and `val` are opened.
+  - The DINOv3-L FIN-Benthic2 / AquaMonitor caches are the verified full-specimen caches of task 92a605a.

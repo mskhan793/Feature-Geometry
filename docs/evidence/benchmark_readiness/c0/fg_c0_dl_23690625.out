@@ -1,0 +1,10 @@
+start 2026-11-13T00:36:23+02:00 job 23690625 node nid002454 code b36a09e
+/scratch/project_462001534/feature_geometry/benchmark_sources/df24/DanishFungi2024.zip: OK
+gzip ok
+DF20-300px.tar.gz	6422709063	b7b572179c3e99dfdfaed4b75872cb6cc59ad8d7dccab331906687ca6bce3b5a
+DF20-300px.tar.gz: 295938 images hashed, 0 files extracted
+config.json /pfs/lustrep3/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--google--siglip2-so400m-patch16-256/snapshots/e8708ab72d125807e45b36fb7d4e0aacbb59f379/config.json
+preprocessor_config.json /pfs/lustrep3/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--google--siglip2-so400m-patch16-256/snapshots/e8708ab72d125807e45b36fb7d4e0aacbb59f379/preprocessor_config.json
+model.safetensors /pfs/lustrep3/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--google--siglip2-so400m-patch16-256/snapshots/e8708ab72d125807e45b36fb7d4e0aacbb59f379/model.safetensors
+siglip2 model.safetensors sha256 matches the Hugging Face LFS record
+end 2026-11-13T00:44:34+02:00

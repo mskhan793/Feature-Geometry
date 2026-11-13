@@ -1,0 +1,18 @@
+{
+ "dataset": "cifar100",
+ "manifest": "/home/aijyu/Documents/Research/Feature_geometry_data/benchmark/manifests/cifar100.parquet",
+ "images": 60000,
+ "groups": 26,
+ "images_in_groups": 52,
+ "groups_crossing_trainval_test": 10,
+ "groups_crossing_train_val": 0,
+ "groups_conflicting_labels": 17,
+ "R1_test_images_flagged": 10,
+ "R1_official_test_images": 10000,
+ "R2_trainval_images_flagged": 24,
+ "R2_test_images_in_conflicting_groups": 10,
+ "candidate_rules_not_applied": {
+  "R1": "report test metrics also on official test minus test images whose content occurs in train/val",
+  "R2": "leave conflicting-label groups out of training statistics (all members); official test unchanged"
+ }
+}

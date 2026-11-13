@@ -1,0 +1,23 @@
+{
+ "names": "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet",
+ "rows": 512,
+ "a": [
+  "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet=/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/siglip2/features_gpu/siglip2"
+ ],
+ "b": [
+  "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet=/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/siglip2/features_gpu/siglip2"
+ ],
+ "settings": {
+  "encoder": "siglip2",
+  "model_id": "google/siglip2-so400m-patch16-256",
+  "feature": "SiglipVisionModel pooler_output (attention-pooled; = get_image_features), not normalised",
+  "transform": "ProcessorTransform(SiglipImageProcessor {\n  \"do_convert_rgb\": null,\n  \"do_normalize\": true,\n  \"do_rescale\": true,\n  \"do_resize\": true,\n  \"image_mean\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"image_processor_type\": \"SiglipImageProcessor\",\n  \"image_std\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"resample\": 2,\n  \"rescale_factor\": 0.00392156862745098,\n  \"size\": {\n    \"height\": 256,\n    \"width\": 256\n  }\n}\n)",
+  "tf32": false
+ },
+ "max_abs_diff": 0.0,
+ "mean_abs_diff": 0.0,
+ "max_rel_norm_diff": 0.0,
+ "p99_rel_norm_diff": 0.0,
+ "min_cosine": 0.9999999999999998,
+ "bitwise_equal_rows": 512
+}

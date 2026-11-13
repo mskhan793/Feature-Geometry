@@ -1,0 +1,64 @@
+{
+ "encoder": "dinov2_l",
+ "dataset": "finbenthic2",
+ "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+ "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/finbenthic2.parquet",
+ "standard_sha256": "18470975fc46e1575ebad91c2ba35a896d8c3b0bd135e5ae385f42c93e7e9376",
+ "rows": 186284,
+ "dim": 1024,
+ "units": 9631,
+ "units_expected": 9631,
+ "rows_per_split": null,
+ "norm_min": 34.45887636537822,
+ "norm_median": 46.525864412302504,
+ "norm_max": 49.17457170940432,
+ "features_sha256": "8dce308f8fac937d984b1af598f37f7106cf7a107761706e5dd589dcaef2d4a2",
+ "cache_settings": {
+  "encoder": "dinov2_l",
+  "model_id": "facebook/dinov2-large",
+  "feature": "pooler_output (final-norm CLS token)",
+  "transform": "Compose(\n    Resize(size=256, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))\n)",
+  "library": "transformers 5.10.1 @ 47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+   "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/finbenthic2/dinov2_l/features_gpu/dinov2_l",
+   "chunks": 23
+  }
+ ],
+ "rank": {
+  "rows": 186284,
+  "dim": 1024,
+  "eigenvalues_smallest_4": [
+   1.1141639194284563e-13,
+   0.004878974010341651,
+   0.021276968346318134,
+   0.03648020427744142
+  ],
+  "eigenvalue_largest": 152.64096051643665,
+  "smallest_over_second_smallest": 2.2836028990251516e-11,
+  "numerical_rank_1e-12": 1023,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/model.safetensors",
+  "key": "layernorm.weight/bias",
+  "constraint_rel_abs_max": 1.1427163919578824e-06,
+  "constraint_rel_abs_median": 2.037477723181078e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999999989,
+  "variance_along_inv_w": 1.113085072576207e-13
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

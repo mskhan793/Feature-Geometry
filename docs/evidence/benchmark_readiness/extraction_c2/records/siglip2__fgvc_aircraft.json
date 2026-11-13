@@ -1,0 +1,62 @@
+{
+ "encoder": "siglip2",
+ "dataset": "fgvc_aircraft",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet",
+ "manifest_sha256": "9af38fef740a6820580206bc69cb50e1df992af8e173645aab096fc07c2a9d90",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/fgvc_aircraft.parquet",
+ "standard_sha256": "3be1b3d7020dda69fa90ee08e35d4ad1c49817bc4a2d1a45630709143cab2c1a",
+ "rows": 6667,
+ "dim": 1152,
+ "units": 6667,
+ "units_expected": 6667,
+ "rows_per_split": {
+  "train": 3334,
+  "val": 3333
+ },
+ "norm_min": 13.921840022115003,
+ "norm_median": 17.652621080681307,
+ "norm_max": 20.0978461146935,
+ "features_sha256": "d3b3354686349d9fcd1199d40b1b4bf12400fa128834825a908e8a753dccd810",
+ "cache_settings": {
+  "encoder": "siglip2",
+  "model_id": "google/siglip2-so400m-patch16-256",
+  "feature": "SiglipVisionModel pooler_output (attention-pooled; = get_image_features), not normalised",
+  "transform": "ProcessorTransform(SiglipImageProcessor {\n  \"do_convert_rgb\": null,\n  \"do_normalize\": true,\n  \"do_rescale\": true,\n  \"do_resize\": true,\n  \"image_mean\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"image_processor_type\": \"SiglipImageProcessor\",\n  \"image_std\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"resample\": 2,\n  \"rescale_factor\": 0.00392156862745098,\n  \"size\": {\n    \"height\": 256,\n    \"width\": 256\n  }\n}\n)",
+  "library": "transformers 5.10.1 @ e8708ab72d125807e45b36fb7d4e0aacbb59f379",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet",
+   "manifest_sha256": "9af38fef740a6820580206bc69cb50e1df992af8e173645aab096fc07c2a9d90",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/siglip2/features_gpu/siglip2",
+   "chunks": 1
+  }
+ ],
+ "rank": {
+  "rows": 6667,
+  "dim": 1152,
+  "eigenvalues_smallest_4": [
+   1.1426235378209867e-06,
+   2.4786730491104608e-06,
+   2.6270713933810336e-06,
+   2.681335669026724e-06
+  ],
+  "eigenvalue_largest": 6.021841426124958,
+  "smallest_over_second_smallest": 0.4609819508995138,
+  "numerical_rank_1e-12": 1152,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

@@ -1,0 +1,1 @@
+start 2026-11-13T08:55:54+02:00 job 23696065 node nid005766 code 6245a80 encoder bioclip2 manifest /flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/bioclip2

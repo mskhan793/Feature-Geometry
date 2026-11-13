@@ -1,0 +1,12 @@
+{
+ "combinations": 32,
+ "complete": 32,
+ "complete_by_status": {
+  "new": 24,
+  "reuse": 4,
+  "c1": 4
+ },
+ "pending": [],
+ "float32_gb_complete": 27.44,
+ "float32_gb_new": 20.97
+}

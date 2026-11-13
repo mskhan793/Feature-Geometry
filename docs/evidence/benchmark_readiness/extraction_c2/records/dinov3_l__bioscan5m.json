@@ -1,0 +1,69 @@
+{
+ "encoder": "dinov3_l",
+ "dataset": "bioscan5m",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_trainval.parquet",
+ "manifest_sha256": "f5681c423ef44b21af9b716360e0cee7c11b4b5eff9908f787725cafad3a4e6b",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/bioscan5m.parquet",
+ "standard_sha256": "4f0cb0acf61d5f28cf1017959983839083cc17426903916a88235da84ecc2971",
+ "rows": 303960,
+ "dim": 1024,
+ "units": 303960,
+ "units_expected": 303960,
+ "rows_per_split": {
+  "train": 289203,
+  "val": 14757
+ },
+ "norm_min": 10.927670982128964,
+ "norm_median": 16.003923310016823,
+ "norm_max": 17.455557536647003,
+ "features_sha256": "984c78e90a3f53649fa1de98237188bba568fb75b7c095597f9e33ba5a9591d1",
+ "cache_settings": {
+  "model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+  "library": "transformers 5.10.1",
+  "torch": "2.10.0+rocm7.0",
+  "feature_dim": 1024
+ },
+ "sources": [
+  {
+   "v1_cache": "/scratch/project_462001534/aqua_v1/bioscan/cache_dinov3",
+   "v1_index": "/scratch/project_462001534/aqua_v1/bioscan/bioscan_index.parquet",
+   "v1_index_sha256": "b4d9b4466838e829c4695f0aa605fd69aa3433d2b4b685cc26dcae8638c0af6f",
+   "splits_read": [
+    "train",
+    "val"
+   ]
+  }
+ ],
+ "rank": {
+  "rows": 303960,
+  "dim": 1024,
+  "eigenvalues_smallest_4": [
+   1.3357075144517439e-17,
+   1.5130030152403089e-05,
+   6.850293941541211e-05,
+   0.0008054541866134094
+  ],
+  "eigenvalue_largest": 17.624377690552176,
+  "smallest_over_second_smallest": 8.828188053806322e-13,
+  "numerical_rank_1e-12": 1023,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors",
+  "key": "norm.weight/bias",
+  "constraint_rel_abs_max": 8.716748024973587e-07,
+  "constraint_rel_abs_median": 1.6691133658074006e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 1.0000000000000004,
+  "variance_along_inv_w": 3.5087656975504106e-18
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

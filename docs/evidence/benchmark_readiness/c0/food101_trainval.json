@@ -1,0 +1,20 @@
+{
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/manifests/food101.parquet",
+ "manifest_sha256": "49f40a785dab08399f6148975f0253c63ef9640bac4d68a078100106c78cb718",
+ "splits": [
+  "train",
+  "val"
+ ],
+ "images": 75750,
+ "images_per_split": {
+  "train": 68174,
+  "val": 7576
+ },
+ "archives": {
+  "/scratch/project_462001534/feature_geometry/benchmark_sources/food101/food-101.tar.gz": "d97d15e438b7f4498f96086a4f7e2fa42a32f2712e87d3295441b2b6314053a4"
+ },
+ "content_checked": true,
+ "hdf5_sha256": "9735204570f5b465233bfd5151a84fade7a78d47897f90e68f9088cb71125e15",
+ "hdf5_bytes": 3851174728,
+ "extraction_manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/food101_trainval.parquet"
+}

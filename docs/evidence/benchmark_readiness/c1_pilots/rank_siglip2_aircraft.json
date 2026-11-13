@@ -1,0 +1,14 @@
+{
+ "rows": 6667,
+ "dim": 1152,
+ "eigenvalues_smallest_4": [
+  1.1426235379242625e-06,
+  2.4786730491381643e-06,
+  2.62707139337355e-06,
+  2.6813356690362803e-06
+ ],
+ "eigenvalue_largest": 6.021841426124959,
+ "smallest_over_second_smallest": 0.46098195093602734,
+ "numerical_rank_1e-12": 1152,
+ "rank_measurable": true
+}

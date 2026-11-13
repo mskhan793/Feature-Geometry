@@ -1,0 +1,20 @@
+{
+ "rows": 6667,
+ "dim": 1024,
+ "eigenvalues_smallest_4": [
+  9.462497390005231e-14,
+  0.0010199650888116523,
+  0.00391281449582362,
+  0.007075533471855718
+ ],
+ "eigenvalue_largest": 317.2033456027675,
+ "smallest_over_second_smallest": 9.277275755614205e-11,
+ "numerical_rank_1e-12": 1023,
+ "rank_measurable": true,
+ "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov2-large/snapshots/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/model.safetensors",
+ "key": "layernorm.weight/bias",
+ "constraint_rel_abs_max": 9.263167532469295e-07,
+ "constraint_rel_abs_median": 2.058915726710571e-07,
+ "abs_cos_smallest_eigvec_vs_inv_w": 0.9999999999998117,
+ "variance_along_inv_w": 1.1299117396346411e-13
+}

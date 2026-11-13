@@ -1,0 +1,5 @@
+start 2026-11-13T08:55:54+02:00 job 23696063 node nid007820 code 6245a80 encoder dinov2_l manifest /flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/dinov2_l
+extract done 2026-11-13T08:56:31+02:00
+PASS {"cache_dir": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/dinov2_l/features_gpu/dinov2_l", "encoder": "dinov2_l", "manifest_rows": 512, "rows_covered": 512, "chunks_ok": 1, "dims": [1024], "problems": []}
+{"full": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/dinov2_l/features_gpu/dinov2_l", "prefix": "/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/dinov2_l/features_cpu256/dinov2_l", "rows": 256, "tf32": [false, false], "max_abs_diff": 0.0012726187705993652, "mean_abs_diff": 8.680552302599114e-06, "max_rel_norm_diff": 4.237482698954409e-06, "bitwise_equal": false}
+end 2026-11-13T08:59:43+02:00

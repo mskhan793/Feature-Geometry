@@ -1,0 +1,58 @@
+{
+ "encoder": "siglip2",
+ "dataset": "finbenthic2",
+ "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+ "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/finbenthic2.parquet",
+ "standard_sha256": "18470975fc46e1575ebad91c2ba35a896d8c3b0bd135e5ae385f42c93e7e9376",
+ "rows": 186284,
+ "dim": 1152,
+ "units": 9631,
+ "units_expected": 9631,
+ "rows_per_split": null,
+ "norm_min": 16.278106494016733,
+ "norm_median": 18.803024439911216,
+ "norm_max": 20.855488705284678,
+ "features_sha256": "c3361c28812e18e8a316ecb449674930734f28349f77a49739072cad0fed712a",
+ "cache_settings": {
+  "encoder": "siglip2",
+  "model_id": "google/siglip2-so400m-patch16-256",
+  "feature": "SiglipVisionModel pooler_output (attention-pooled; = get_image_features), not normalised",
+  "transform": "ProcessorTransform(SiglipImageProcessor {\n  \"do_convert_rgb\": null,\n  \"do_normalize\": true,\n  \"do_rescale\": true,\n  \"do_resize\": true,\n  \"image_mean\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"image_processor_type\": \"SiglipImageProcessor\",\n  \"image_std\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"resample\": 2,\n  \"rescale_factor\": 0.00392156862745098,\n  \"size\": {\n    \"height\": 256,\n    \"width\": 256\n  }\n}\n)",
+  "library": "transformers 5.10.1 @ e8708ab72d125807e45b36fb7d4e0aacbb59f379",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/finbenthic2/full_selection.parquet",
+   "manifest_sha256": "f3a22b5ec20e5f99cc5715869c7c18f5b87587944c950865ff09fd041d1ecac1",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/finbenthic2/siglip2/features_gpu/siglip2",
+   "chunks": 23
+  }
+ ],
+ "rank": {
+  "rows": 186284,
+  "dim": 1152,
+  "eigenvalues_smallest_4": [
+   5.642589886872911e-07,
+   1.265709963319723e-06,
+   1.330366704407201e-06,
+   1.364649805805712e-06
+  ],
+  "eigenvalue_largest": 14.843910029780567,
+  "smallest_over_second_smallest": 0.4458043351474806,
+  "numerical_rank_1e-12": 1152,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

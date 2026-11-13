@@ -1,0 +1,23 @@
+{
+ "names": "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet",
+ "rows": 512,
+ "a": [
+  "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet=/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_a/bioclip2/features_gpu/bioclip2"
+ ],
+ "b": [
+  "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_train512.parquet=/scratch/project_462001534/feature_geometry/benchmark_c1/bioscan512_b/bioclip2/features_gpu/bioclip2"
+ ],
+ "settings": {
+  "encoder": "bioclip2",
+  "model_id": "hf-hub:imageomics/bioclip-2",
+  "feature": "open_clip model.visual(x), not normalised",
+  "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeConvertMode()\n    MaybeToTensor()\n    Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])\n)",
+  "tf32": false
+ },
+ "max_abs_diff": 0.0,
+ "mean_abs_diff": 0.0,
+ "max_rel_norm_diff": 0.0,
+ "p99_rel_norm_diff": 0.0,
+ "min_cosine": 0.9999999999999998,
+ "bitwise_equal_rows": 512
+}

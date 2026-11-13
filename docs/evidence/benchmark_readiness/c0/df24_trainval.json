@@ -1,0 +1,20 @@
+{
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/manifests/df24.parquet",
+ "manifest_sha256": "60bd131d57c10a8c99670e0995e90484dda798fdcba0a4ad026905757e2da67f",
+ "splits": [
+  "train",
+  "val"
+ ],
+ "images": 266273,
+ "images_per_split": {
+  "train": 239727,
+  "val": 26546
+ },
+ "archives": {
+  "/scratch/project_462001534/feature_geometry/benchmark_sources/df24/DF20-300px.tar.gz": "b7b572179c3e99dfdfaed4b75872cb6cc59ad8d7dccab331906687ca6bce3b5a"
+ },
+ "content_checked": true,
+ "hdf5_sha256": "00265cc7b93e36d523d92d55f373559a44c95cdc3d5c5b6402fedc199fd8d9dd",
+ "hdf5_bytes": 6114597824,
+ "extraction_manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/df24_trainval.parquet"
+}

@@ -1,0 +1,20 @@
+{
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/manifests/fgvc_aircraft.parquet",
+ "manifest_sha256": "3be1b3d7020dda69fa90ee08e35d4ad1c49817bc4a2d1a45630709143cab2c1a",
+ "splits": [
+  "train",
+  "val"
+ ],
+ "images": 6667,
+ "images_per_split": {
+  "train": 3334,
+  "val": 3333
+ },
+ "archives": {
+  "/scratch/project_462001534/feature_geometry/benchmark_sources/fgvc_aircraft/fgvc-aircraft-2013b.tar.gz": "e4e323d410e29f0370c81eabdcbb0e2b813acea1de22891b70b58ff41bfc9834"
+ },
+ "content_checked": true,
+ "hdf5_sha256": "9d3b1ad161b5aef0d9c5d0bc1358d23f19407eac60d8fc64497e458756e80cb9",
+ "hdf5_bytes": 1839385016,
+ "extraction_manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet"
+}

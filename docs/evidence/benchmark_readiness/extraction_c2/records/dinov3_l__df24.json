@@ -1,0 +1,68 @@
+{
+ "encoder": "dinov3_l",
+ "dataset": "df24",
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/df24_trainval.parquet",
+ "manifest_sha256": "e00c165b30584353e7780b5288ea369f43c7f627b8c2ff7852bd277dafd326d4",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/df24.parquet",
+ "standard_sha256": "60bd131d57c10a8c99670e0995e90484dda798fdcba0a4ad026905757e2da67f",
+ "rows": 266273,
+ "dim": 1024,
+ "units": 159026,
+ "units_expected": 159026,
+ "rows_per_split": {
+  "train": 239727,
+  "val": 26546
+ },
+ "norm_min": 10.7556830588111,
+ "norm_median": 16.47191646214358,
+ "norm_max": 17.9078198248019,
+ "features_sha256": "b411cefc94b65e46c062ce48f792778b5a5007dcd3584c41f61904e3860b8e20",
+ "cache_settings": {
+  "encoder": "dinov3_l",
+  "model_id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "feature": "pooler_output (final-norm CLS token)",
+  "transform": "Compose(\n      ToImage()\n      Resize(size=[256, 256], interpolation=InterpolationMode.BILINEAR, antialias=True)\n      ToDtype(scale=True)\n      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)\n)",
+  "library": "transformers 5.10.1 @ ea8dc2863c51be0a264bab82070e3e8836b02d51",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/df24_trainval.parquet",
+   "manifest_sha256": "e00c165b30584353e7780b5288ea369f43c7f627b8c2ff7852bd277dafd326d4",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/df24/dinov3_l/features_gpu/dinov3_l",
+   "chunks": 33
+  }
+ ],
+ "rank": {
+  "rows": 266273,
+  "dim": 1024,
+  "eigenvalues_smallest_4": [
+   -3.2268394333613095e-17,
+   3.0070713439846946e-05,
+   0.00015154852671278224,
+   0.0018167177205994848
+  ],
+  "eigenvalue_largest": 27.71932409993234,
+  "smallest_over_second_smallest": -1.0730837629829556e-12,
+  "numerical_rank_1e-12": 1023,
+  "rank_measurable": true,
+  "weights": "/scratch/project_462001534/aqua_v1/scratch_muhamkha/hf_cache/hub/models--facebook--dinov3-vitl16-pretrain-lvd1689m/snapshots/ea8dc2863c51be0a264bab82070e3e8836b02d51/model.safetensors",
+  "key": "norm.weight/bias",
+  "constraint_rel_abs_max": 9.009031561178073e-07,
+  "constraint_rel_abs_median": 1.6501714816072988e-07,
+  "abs_cos_smallest_eigvec_vs_inv_w": 1.0,
+  "variance_along_inv_w": 3.314202031742502e-18
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_equal_standard_trainval": true,
+  "no_test_ids": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}

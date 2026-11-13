@@ -1,0 +1,1 @@
+start 2026-11-13T08:55:54+02:00 job 23696064 node nid005765 code 6245a80 encoder bioclip2 manifest /flash/project_462001534/feature_geometry/benchmark/extract/fgvc_aircraft_trainval.parquet out /scratch/project_462001534/feature_geometry/benchmark_c1/aircraft/bioclip2

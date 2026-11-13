@@ -1,0 +1,22 @@
+start 2026-11-13T01:11:58+02:00 job 23691096 node nid002450 code ce65c80 manifest /flash/project_462001534/feature_geometry/benchmark/manifests/bioscan5m.parquet
+{
+ "manifest": "/flash/project_462001534/feature_geometry/benchmark/manifests/bioscan5m.parquet",
+ "manifest_sha256": "4f0cb0acf61d5f28cf1017959983839083cc17426903916a88235da84ecc2971",
+ "splits": [
+  "train",
+  "val"
+ ],
+ "images": 303960,
+ "images_per_split": {
+  "train": 289203,
+  "val": 14757
+ },
+ "archives": {
+  "/scratch/project_462001534/aqua_v1/bioscan/zips": "zip folder"
+ },
+ "content_checked": false,
+ "hdf5_sha256": "0ba0a0911eb642b11bd7656dade29676c86be954f7e73d8fa242e794afcd28d8",
+ "hdf5_bytes": 2473410632,
+ "extraction_manifest": "/flash/project_462001534/feature_geometry/benchmark/extract/bioscan5m_trainval.parquet"
+}
+end 2026-11-13T01:15:31+02:00

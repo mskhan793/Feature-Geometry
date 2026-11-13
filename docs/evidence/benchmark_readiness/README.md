@@ -1,4 +1,4 @@
-# Evidence — benchmark readiness (task.md 8538df5, Stage A + Stage B smoke test)
+# Evidence — benchmark readiness (task.md 8538df5, Stage A + Stage B smoke test) and train+val extraction (task.md d57a630)
 
 - **`datasets/<dataset>.json`** — one per dataset (8). Each records:
   - source files with sha256 and the manifest sha256;
@@ -26,3 +26,20 @@
     (which stopped at the Aircraft MD5 check after all downloads had finished), then verified by job 23687216:
     `archives.tsv` with sizes, MD5, sha256, gzip test; content tables; split files.
   - Local copies of the split files and content tables: `~/Documents/Research/Feature_geometry_data/benchmark/sources/`.
+
+## Extraction task d57a630 (C0–C3)
+
+- **`c0/`** — the DF24 300-px and SigLIP 2 weight download (job 23690625 log) and the five packing reports
+  (`<dataset>_trainval.json`: images per split, archive sha256, content check, HDF5 bytes and sha256; jobs
+  23691093–23691097).
+- **`df24_licence/`** — the DF24 dataset authors' README at commit c5c19b41 (sha256 a41abaf8…). Its licence section
+  reads: BSD; data, metadata and models for non-commercial research only.
+- **`c1_pilots/`** — the C1 checks (job 23696166) and pilot logs:
+  - v1 BIOSCAN-5M cache equivalence (`v1_equivalence_<encoder>.json`);
+  - 512-image repeat comparisons (`repeat_<encoder>.json`);
+  - Aircraft rank / LayerNorm audits (`rank_<encoder>_aircraft.json`);
+  - the pilot extraction summary.
+- **`c2_plan/`, `extraction_c2/`** — the C2 plan, the 32 C3 records, the completion matrix and the resources (see
+  `extraction_c2/README.md`).
+- **`duplicates/`** — exact-duplicate groups of CIFAR-100 and Food-101, with two candidate rules not applied
+  (`scripts/benchmark/duplicate_groups.py`).

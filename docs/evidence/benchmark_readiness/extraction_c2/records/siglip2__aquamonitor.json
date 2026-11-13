@@ -1,0 +1,58 @@
+{
+ "encoder": "siglip2",
+ "dataset": "aquamonitor",
+ "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+ "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+ "standard": "/flash/project_462001534/feature_geometry/benchmark/manifests/aquamonitor.parquet",
+ "standard_sha256": "d491d144b7c672cd70501d9b6f94db60b2fbc998536eec33c8d1c17f7b0f3e3e",
+ "rows": 836159,
+ "dim": 1152,
+ "units": 42165,
+ "units_expected": 42165,
+ "rows_per_split": null,
+ "norm_min": 15.407266182028593,
+ "norm_median": 18.02223644276765,
+ "norm_max": 20.394867654930454,
+ "features_sha256": "f76457d82476cc82cc1f95d679d3ab776c11515a7d6bcc71d9326685bb9ddf21",
+ "cache_settings": {
+  "encoder": "siglip2",
+  "model_id": "google/siglip2-so400m-patch16-256",
+  "feature": "SiglipVisionModel pooler_output (attention-pooled; = get_image_features), not normalised",
+  "transform": "ProcessorTransform(SiglipImageProcessor {\n  \"do_convert_rgb\": null,\n  \"do_normalize\": true,\n  \"do_rescale\": true,\n  \"do_resize\": true,\n  \"image_mean\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"image_processor_type\": \"SiglipImageProcessor\",\n  \"image_std\": [\n    0.5,\n    0.5,\n    0.5\n  ],\n  \"resample\": 2,\n  \"rescale_factor\": 0.00392156862745098,\n  \"size\": {\n    \"height\": 256,\n    \"width\": 256\n  }\n}\n)",
+  "library": "transformers 5.10.1 @ e8708ab72d125807e45b36fb7d4e0aacbb59f379",
+  "torch": "2.10.0+rocm7.0",
+  "tf32": false
+ },
+ "sources": [
+  {
+   "manifest": "/flash/project_462001534/feature_geometry/aquamonitor/full_selection.parquet",
+   "manifest_sha256": "123e21c798947727e7631cdd32e48f9afa694d89a118bbc03f1f79002e84a8fd",
+   "cache": "/scratch/project_462001534/feature_geometry/benchmark_c2/aquamonitor/siglip2/features_gpu/siglip2",
+   "chunks": 103
+  }
+ ],
+ "rank": {
+  "rows": 836159,
+  "dim": 1152,
+  "eigenvalues_smallest_4": [
+   4.3255679490345394e-07,
+   9.128801136549933e-07,
+   9.531743343139931e-07,
+   9.757482276577422e-07
+  ],
+  "eigenvalue_largest": 10.22085818846629,
+  "smallest_over_second_smallest": 0.4738374606185485,
+  "numerical_rank_1e-12": 1152,
+  "rank_measurable": true
+ },
+ "checks": {
+  "ids_unique": true,
+  "ids_in_standard": true,
+  "units_equal_expected": true,
+  "rows_equal_manifest": true,
+  "float32": true,
+  "all_finite": true,
+  "norms_positive": true
+ },
+ "pass": true
+}
