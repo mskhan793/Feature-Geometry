@@ -4,7 +4,7 @@
 # first 256 images run afterwards in a CPU job (check_extraction.sh), so the GPU node is released when encoding ends.
 #
 # Usage: sbatch [--partition P --time T] extract_encoder.sh CODE_DIR ENCODER MANIFEST SOURCE_FLAG SOURCE OUT_DIR
-#   ENCODER: bioclip2 | dinov2_l | dinov3_l | siglip2 (src/encoders/frozen_encoders.py)
+#   ENCODER: bioclip2 | dinov2_l | dinov3_l | siglip2 | ijepa_h14 (src/encoders/frozen_encoders.py)
 #   SOURCE_FLAG SOURCE: --hdf5 FILE.h5 (manifest img + hdf5_row) | --cifar-dir DIR (manifest img = source_id)
 #   Features go to OUT_DIR/features_gpu/ENCODER; a rerun with the same OUT_DIR resumes.
 #SBATCH --job-name=fg_extract
