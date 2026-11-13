@@ -1,0 +1,32 @@
+{
+ "per_group": {
+  "I-JEPA gates": {
+   "hours": 0.04,
+   "gpu_h": 0.0,
+   "core_h": 0.32,
+   "billed_cpu_core_h": 0.32,
+   "energy_kwh": 0.0,
+   "jobs": 1,
+   "states": {
+    "COMPLETED": "1"
+   }
+  },
+  "geometry replication": {
+   "hours": 3.81,
+   "gpu_h": 0.0,
+   "core_h": 121.93,
+   "billed_cpu_core_h": 121.93,
+   "energy_kwh": 0.0,
+   "jobs": 102,
+   "states": {
+    "COMPLETED": "102"
+   }
+  }
+ },
+ "total": {
+  "gpu_h": 0.0,
+  "core_h": 122.25,
+  "billed_cpu_core_h": 122.25,
+  "energy_kwh": 0.0
+ }
+}

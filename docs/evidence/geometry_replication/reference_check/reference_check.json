@@ -1,0 +1,3088 @@
+{
+ "tolerance_rel": 1e-09,
+ "ignored_key_words": [
+  "seconds",
+  "wall",
+  "rss",
+  "cohort",
+  "out",
+  "time",
+  "path",
+  "log",
+  "cache",
+  "manifest",
+  "code"
+ ],
+ "total_mismatches": 62,
+ "runs": {
+  "finbenthic2/fold0/geometry": {
+   "reference": "docs/evidence/finbenthic2_full_geometry/folds/fold0",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 5670,
+     "mismatches": 0,
+     "max_abs_diff": 5.329070518200751e-15,
+     "max_rel_diff": 8.197033038971947e-15,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 980,
+     "mismatches": 8,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "r0/component_sizes",
+       "new": "{\"0\": 151, \"1\": 33}",
+       "ref": "{\"0\": 33, \"1\": 151}"
+      },
+      {
+       "key": "r1/component_sizes",
+       "new": "{\"0\": 42, \"1\": 5}",
+       "ref": "{\"0\": 5, \"1\": 42}"
+      },
+      {
+       "key": "r26/component_sizes",
+       "new": "{\"0\": 298, \"1\": 111}",
+       "ref": "{\"0\": 111, \"1\": 298}"
+      },
+      {
+       "key": "r27/component_sizes",
+       "new": "{\"0\": 75, \"1\": 33}",
+       "ref": "{\"0\": 33, \"1\": 75}"
+      },
+      {
+       "key": "r122/component_sizes",
+       "new": "{\"0\": 15, \"1\": 1}",
+       "ref": "{\"0\": 1, \"1\": 15}"
+      }
+     ],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 0,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 288,
+     "mismatches": 0,
+     "max_abs_diff": 9.992007221626409e-16,
+     "max_rel_diff": 2.7581342698187487e-15,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 720,
+     "mismatches": 0,
+     "max_abs_diff": 7.105427357601002e-14,
+     "max_rel_diff": 2.0844866128122034e-15,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 4749,
+     "mismatches": 0,
+     "max_abs_diff": 4.670255293603987e-10,
+     "max_rel_diff": 3.0866838595644154e-11,
+     "first_mismatches": [],
+     "columns_compared": 62,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 1960,
+     "mismatches": 0,
+     "max_abs_diff": 3.772981926886132e-12,
+     "max_rel_diff": 1.2780844045804689e-12,
+     "first_mismatches": [],
+     "columns_compared": 29,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 667,
+     "mismatches": 0,
+     "max_abs_diff": 1.3369572116062045e-10,
+     "max_rel_diff": 8.288054331214986e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 8,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[0]",
+       "new": "Elmis_aen10",
+       "ref": "Elmis_aen173"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[1]",
+       "new": "Elmis_aen101",
+       "ref": "Elmis_aen175"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[2]",
+       "new": "Elmis_aen102",
+       "ref": "Elmis_aen176"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[3]",
+       "new": "Elmis_aen106",
+       "ref": "Elmis_aen177"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_1[0]",
+       "new": "Elmis_aen173",
+       "ref": "Elmis_aen10"
+      }
+     ],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 16,
+   "max_rel_diff": 3.0866838595644154e-11
+  },
+  "finbenthic2/fold0/overlap": {
+   "reference": "docs/evidence/bhattacharyya_overlap/finbenthic2",
+   "files": {
+    "classes_pcs16.csv": {
+     "compared": 396,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "classes_pcs64.csv": {
+     "compared": 396,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "classes_pcs8.csv": {
+     "compared": 396,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "pairs_pcs16.csv": {
+     "compared": 27090,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 45,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "pairs_pcs64.csv": {
+     "compared": 24570,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 41,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "pairs_pcs8.csv": {
+     "compared": 27090,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 45,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "summary.json": {
+     "compared": 395,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 74,
+     "leaves_only_in_new": 1
+    }
+   },
+   "files_missing_in_new": [
+    "orientation_pcs16.json",
+    "orientation_pcs64.json"
+   ],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold0/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/finbenthic2/fold0",
+   "files": {
+    "classes.csv": {
+     "compared": 156,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 612,
+     "mismatches": 0,
+     "max_abs_diff": 4.3655745685100555e-11,
+     "max_rel_diff": 9.755692525169743e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 9,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 9.755692525169743e-13
+  },
+  "finbenthic2/fold0/lw": {
+   "reference": "docs/evidence/lw_fit/finbenthic2/fold0",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 4410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 4410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 360,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 900,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold0/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/finbenthic2/fold0",
+   "files": {
+    "perclass.csv": {
+     "compared": 9648,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2042,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold0/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/finbenthic2/fold0",
+   "files": {
+    "perclass.csv": {
+     "compared": 6192,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1241,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 2248,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold1/geometry": {
+   "reference": "docs/evidence/finbenthic2_full_geometry/folds/fold1",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 5355,
+     "mismatches": 0,
+     "max_abs_diff": 2.6645352591003757e-15,
+     "max_rel_diff": 9.227471523797303e-15,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 966,
+     "mismatches": 11,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "r26/component_sizes",
+       "new": "{\"0\": 290, \"1\": 120}",
+       "ref": "{\"0\": 120, \"1\": 290}"
+      },
+      {
+       "key": "r27/component_sizes",
+       "new": "{\"0\": 80, \"1\": 26}",
+       "ref": "{\"0\": 26, \"1\": 80}"
+      },
+      {
+       "key": "r56/component_sizes",
+       "new": "{\"0\": 53, \"1\": 87}",
+       "ref": "{\"0\": 87, \"1\": 53}"
+      },
+      {
+       "key": "r57/component_sizes",
+       "new": "{\"0\": 11, \"1\": 27}",
+       "ref": "{\"0\": 27, \"1\": 11}"
+      },
+      {
+       "key": "r62/component_sizes",
+       "new": "{\"0\": 86, \"1\": 90}",
+       "ref": "{\"0\": 90, \"1\": 86}"
+      }
+     ],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 0,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 280,
+     "mismatches": 0,
+     "max_abs_diff": 1.6653345369377348e-15,
+     "max_rel_diff": 9.227471523797303e-15,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 700,
+     "mismatches": 0,
+     "max_abs_diff": 7.815970093361102e-14,
+     "max_rel_diff": 3.2473303783035686e-15,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 4686,
+     "mismatches": 0,
+     "max_abs_diff": 4.4778403207601514e-10,
+     "max_rel_diff": 1.1779558519767094e-11,
+     "first_mismatches": [],
+     "columns_compared": 62,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 1932,
+     "mismatches": 0,
+     "max_abs_diff": 7.955858194463872e-13,
+     "max_rel_diff": 1.1779558519767094e-11,
+     "first_mismatches": [],
+     "columns_compared": 29,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 658,
+     "mismatches": 0,
+     "max_abs_diff": 2.34194885706529e-10,
+     "max_rel_diff": 4.146711296215376e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 16,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[0]",
+       "new": "Elmis_aen1",
+       "ref": "Elmis_aen176"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[1]",
+       "new": "Elmis_aen101",
+       "ref": "Elmis_aen177"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[2]",
+       "new": "Elmis_aen102",
+       "ref": "Elmis_aen178"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_0[3]",
+       "new": "Elmis_aen103",
+       "ref": "Elmis_aen179"
+      },
+      {
+       "key": "/montage_specimens/Elmis_aenea/component_1[0]",
+       "new": "Elmis_aen176",
+       "ref": "Elmis_aen1"
+      }
+     ],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 27,
+   "max_rel_diff": 1.1779558519767094e-11
+  },
+  "finbenthic2/fold1/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/finbenthic2/fold1",
+   "files": {
+    "classes.csv": {
+     "compared": 156,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 6.548361852765083e-11,
+     "max_rel_diff": 1.3662167315360453e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 1.3662167315360453e-12
+  },
+  "finbenthic2/fold1/lw": {
+   "reference": "docs/evidence/lw_fit/finbenthic2/fold1",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 350,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 900,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 39,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold1/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/finbenthic2/fold1",
+   "files": {
+    "perclass.csv": {
+     "compared": 9380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 1953,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold1/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/finbenthic2/fold1",
+   "files": {
+    "perclass.csv": {
+     "compared": 6020,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1195,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 2191,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold2/geometry": {
+   "reference": "docs/evidence/finbenthic2_full_geometry/folds/fold2",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 5049,
+     "mismatches": 0,
+     "max_abs_diff": 7.993605777301127e-15,
+     "max_rel_diff": 8.946395819470551e-15,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 952,
+     "mismatches": 8,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "r30/component_sizes",
+       "new": "{\"0\": 143, \"1\": 86}",
+       "ref": "{\"0\": 86, \"1\": 143}"
+      },
+      {
+       "key": "r31/component_sizes",
+       "new": "{\"0\": 39, \"1\": 20}",
+       "ref": "{\"0\": 20, \"1\": 39}"
+      },
+      {
+       "key": "r50/component_sizes",
+       "new": "{\"0\": 141, \"1\": 106}",
+       "ref": "{\"0\": 106, \"1\": 141}"
+      },
+      {
+       "key": "r51/component_sizes",
+       "new": "{\"0\": 49, \"1\": 16}",
+       "ref": "{\"0\": 16, \"1\": 49}"
+      },
+      {
+       "key": "r92/component_sizes",
+       "new": "{\"0\": 26, \"1\": 192}",
+       "ref": "{\"0\": 192, \"1\": 26}"
+      }
+     ],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 0,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 272,
+     "mismatches": 0,
+     "max_abs_diff": 7.771561172376096e-16,
+     "max_rel_diff": 1.915716665555453e-15,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 680,
+     "mismatches": 0,
+     "max_abs_diff": 6.394884621840902e-14,
+     "max_rel_diff": 1.9162300819623163e-15,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 4619,
+     "mismatches": 0,
+     "max_abs_diff": 4.069988790433854e-10,
+     "max_rel_diff": 2.6719696357642257e-11,
+     "first_mismatches": [],
+     "columns_compared": 62,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 1904,
+     "mismatches": 0,
+     "max_abs_diff": 3.720912467031212e-13,
+     "max_rel_diff": 1.0412543973864727e-11,
+     "first_mismatches": [],
+     "columns_compared": 29,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 649,
+     "mismatches": 0,
+     "max_abs_diff": 2.523847797419876e-10,
+     "max_rel_diff": 1.0783814105370325e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 8,
+   "max_rel_diff": 2.6719696357642257e-11
+  },
+  "finbenthic2/fold2/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/finbenthic2/fold2",
+   "files": {
+    "classes.csv": {
+     "compared": 156,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 614,
+     "mismatches": 0,
+     "max_abs_diff": 1.3096723705530167e-10,
+     "max_rel_diff": 6.415657527818293e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 6.415657527818293e-13
+  },
+  "finbenthic2/fold2/lw": {
+   "reference": "docs/evidence/lw_fit/finbenthic2/fold2",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 3927,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 3927,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 340,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 900,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 39,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold2/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/finbenthic2/fold2",
+   "files": {
+    "perclass.csv": {
+     "compared": 9112,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 1942,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold2/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/finbenthic2/fold2",
+   "files": {
+    "perclass.csv": {
+     "compared": 5848,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1201,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 2188,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold3/geometry": {
+   "reference": "docs/evidence/finbenthic2_full_geometry/folds/fold3",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 5355,
+     "mismatches": 0,
+     "max_abs_diff": 5.329070518200751e-15,
+     "max_rel_diff": 4.618675477135729e-15,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 966,
+     "mismatches": 6,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "r70/component_sizes",
+       "new": "{\"0\": 151, \"1\": 41}",
+       "ref": "{\"0\": 41, \"1\": 151}"
+      },
+      {
+       "key": "r71/component_sizes",
+       "new": "{\"0\": 37, \"1\": 9}",
+       "ref": "{\"0\": 9, \"1\": 37}"
+      },
+      {
+       "key": "r80/component_sizes",
+       "new": "{\"0\": 37, \"1\": 115}",
+       "ref": "{\"0\": 115, \"1\": 37}"
+      },
+      {
+       "key": "r81/component_sizes",
+       "new": "{\"0\": 9, \"1\": 28}",
+       "ref": "{\"0\": 28, \"1\": 9}"
+      },
+      {
+       "key": "r90/component_sizes",
+       "new": "{\"0\": 215, \"1\": 92}",
+       "ref": "{\"0\": 92, \"1\": 215}"
+      }
+     ],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 0,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 280,
+     "mismatches": 0,
+     "max_abs_diff": 1.2212453270876722e-15,
+     "max_rel_diff": 2.3661141365460953e-15,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 700,
+     "mismatches": 0,
+     "max_abs_diff": 7.105427357601002e-14,
+     "max_rel_diff": 2.7547046560777803e-15,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 4684,
+     "mismatches": 0,
+     "max_abs_diff": 2.6057023205794394e-10,
+     "max_rel_diff": 2.4164358460937595e-10,
+     "first_mismatches": [],
+     "columns_compared": 62,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 1932,
+     "mismatches": 0,
+     "max_abs_diff": 1.1959322421262186e-12,
+     "max_rel_diff": 2.4164358460937595e-10,
+     "first_mismatches": [],
+     "columns_compared": 29,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 658,
+     "mismatches": 0,
+     "max_abs_diff": 1.914486347232014e-10,
+     "max_rel_diff": 1.1167487030151888e-10,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 6,
+   "max_rel_diff": 2.4164358460937595e-10
+  },
+  "finbenthic2/fold3/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/finbenthic2/fold3",
+   "files": {
+    "classes.csv": {
+     "compared": 156,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 6.184563972055912e-11,
+     "max_rel_diff": 2.5590502853119767e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 2.5590502853119767e-12
+  },
+  "finbenthic2/fold3/lw": {
+   "reference": "docs/evidence/lw_fit/finbenthic2/fold3",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 350,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 900,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 39,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold3/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/finbenthic2/fold3",
+   "files": {
+    "perclass.csv": {
+     "compared": 9380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2025,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold3/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/finbenthic2/fold3",
+   "files": {
+    "perclass.csv": {
+     "compared": 6020,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1243,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 2233,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold4/geometry": {
+   "reference": "docs/evidence/finbenthic2_full_geometry/folds/fold4",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 5355,
+     "mismatches": 0,
+     "max_abs_diff": 7.105427357601002e-15,
+     "max_rel_diff": 5.930306258075496e-15,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 966,
+     "mismatches": 4,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [
+      {
+       "key": "r96/component_sizes",
+       "new": "{\"0\": 103, \"1\": 38}",
+       "ref": "{\"0\": 38, \"1\": 103}"
+      },
+      {
+       "key": "r97/component_sizes",
+       "new": "{\"0\": 26, \"1\": 7}",
+       "ref": "{\"0\": 7, \"1\": 26}"
+      },
+      {
+       "key": "r104/component_sizes",
+       "new": "{\"0\": 55, \"1\": 85}",
+       "ref": "{\"0\": 85, \"1\": 55}"
+      },
+      {
+       "key": "r105/component_sizes",
+       "new": "{\"0\": 15, \"1\": 24}",
+       "ref": "{\"0\": 24, \"1\": 15}"
+      }
+     ],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 0,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 280,
+     "mismatches": 0,
+     "max_abs_diff": 6.661338147750939e-16,
+     "max_rel_diff": 1.4364416061603371e-15,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 700,
+     "mismatches": 0,
+     "max_abs_diff": 6.394884621840902e-14,
+     "max_rel_diff": 1.7346147924908332e-15,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 4684,
+     "mismatches": 1,
+     "max_abs_diff": 0.0006853931787059999,
+     "max_rel_diff": 0.24896907216495617,
+     "first_mismatches": [
+      {
+       "key": "r36/G2_tied_split_ari_val_median",
+       "new": 0.0034383181615002,
+       "ref": 0.0027529249827942
+      }
+     ],
+     "columns_compared": 62,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 1932,
+     "mismatches": 0,
+     "max_abs_diff": 9.089395902606157e-13,
+     "max_rel_diff": 8.288558964671402e-12,
+     "first_mismatches": [],
+     "columns_compared": 29,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 653,
+     "mismatches": 0,
+     "max_abs_diff": 3.1604940886609256e-10,
+     "max_rel_diff": 1.9682862353436615e-11,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 5,
+   "max_rel_diff": 0.24896907216495617
+  },
+  "finbenthic2/fold4/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/finbenthic2/fold4",
+   "files": {
+    "classes.csv": {
+     "compared": 156,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 5.820766091346741e-11,
+     "max_rel_diff": 8.8714349615653e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 8.8714349615653e-13
+  },
+  "finbenthic2/fold4/lw": {
+   "reference": "docs/evidence/lw_fit/finbenthic2/fold4",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 4165,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 350,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 1050,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 39,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold4/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/finbenthic2/fold4",
+   "files": {
+    "perclass.csv": {
+     "compared": 9380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2032,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "finbenthic2/fold4/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/finbenthic2/fold4",
+   "files": {
+    "perclass.csv": {
+     "compared": 6020,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1243,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 2226,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold0/geometry": {
+   "reference": "docs/evidence/aquamonitor_full_geometry/folds/fold0",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 7380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 1804,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 186,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 328,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 820,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 6061,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 67,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 2870,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 33,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 762,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold0/overlap": {
+   "reference": "docs/evidence/bhattacharyya_overlap/aquamonitor",
+   "files": {
+    "classes_pcs16.csv": {
+     "compared": 451,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "classes_pcs64.csv": {
+     "compared": 451,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "classes_pcs8.csv": {
+     "compared": 451,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": [
+      "label16",
+      "label8"
+     ]
+    },
+    "pairs_pcs16.csv": {
+     "compared": 35260,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 45,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "pairs_pcs64.csv": {
+     "compared": 35260,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 45,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "pairs_pcs8.csv": {
+     "compared": 35260,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 45,
+     "columns_only_in_ref": [
+      "label16_a",
+      "label16_b",
+      "label8_a",
+      "label8_b"
+     ]
+    },
+    "summary.json": {
+     "compared": 395,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 74,
+     "leaves_only_in_new": 1
+    }
+   },
+   "files_missing_in_new": [
+    "orientation_pcs16.json",
+    "orientation_pcs64.json"
+   ],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold0/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/aquamonitor/fold0",
+   "files": {
+    "classes.csv": {
+     "compared": 168,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 5.238689482212067e-10,
+     "max_rel_diff": 6.957555468630076e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 9,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 6.957555468630076e-13
+  },
+  "aquamonitor/fold0/lw": {
+   "reference": "docs/evidence/lw_fit/aquamonitor/fold0",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 2100,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold0/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/aquamonitor/fold0",
+   "files": {
+    "perclass.csv": {
+     "compared": 10988,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2056,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold0/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/aquamonitor/fold0",
+   "files": {
+    "perclass.csv": {
+     "compared": 7052,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1281,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 3058,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold1/geometry": {
+   "reference": "docs/evidence/aquamonitor_full_geometry/folds/fold1",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 7380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 1804,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 188,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 328,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 820,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 6060,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 67,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 2870,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 33,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 762,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold1/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/aquamonitor/fold1",
+   "files": {
+    "classes.csv": {
+     "compared": 168,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 2.3283064365386963e-10,
+     "max_rel_diff": 1.835131256502537e-12,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 1.835131256502537e-12
+  },
+  "aquamonitor/fold1/lw": {
+   "reference": "docs/evidence/lw_fit/aquamonitor/fold1",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 2100,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold1/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/aquamonitor/fold1",
+   "files": {
+    "perclass.csv": {
+     "compared": 10988,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2080,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold1/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/aquamonitor/fold1",
+   "files": {
+    "perclass.csv": {
+     "compared": 7052,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1281,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 3058,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold2/geometry": {
+   "reference": "docs/evidence/aquamonitor_full_geometry/folds/fold2",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 7020,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 1760,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 183,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 320,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 800,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 5915,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 67,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 2800,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 33,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 746,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold2/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/aquamonitor/fold2",
+   "files": {
+    "classes.csv": {
+     "compared": 168,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 614,
+     "mismatches": 0,
+     "max_abs_diff": 5.820766091346741e-10,
+     "max_rel_diff": 2.1474508194771188e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 2.1474508194771188e-13
+  },
+  "aquamonitor/fold2/lw": {
+   "reference": "docs/evidence/lw_fit/aquamonitor/fold2",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 5460,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 5460,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 400,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 2100,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold2/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/aquamonitor/fold2",
+   "files": {
+    "perclass.csv": {
+     "compared": 10720,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2070,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold2/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/aquamonitor/fold2",
+   "files": {
+    "perclass.csv": {
+     "compared": 6880,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1287,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 3038,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold3/geometry": {
+   "reference": "docs/evidence/aquamonitor_full_geometry/folds/fold3",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 7380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 1804,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 184,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 328,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 820,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 6060,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 67,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 2870,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 33,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 765,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold3/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/aquamonitor/fold3",
+   "files": {
+    "classes.csv": {
+     "compared": 168,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 8.731149137020111e-10,
+     "max_rel_diff": 2.485395458175899e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 2.485395458175899e-13
+  },
+  "aquamonitor/fold3/lw": {
+   "reference": "docs/evidence/lw_fit/aquamonitor/fold3",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 2100,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold3/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/aquamonitor/fold3",
+   "files": {
+    "perclass.csv": {
+     "compared": 10988,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2092,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold3/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/aquamonitor/fold3",
+   "files": {
+    "perclass.csv": {
+     "compared": 7052,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1281,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 3044,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold4/geometry": {
+   "reference": "docs/evidence/aquamonitor_full_geometry/folds/fold4",
+   "files": {
+    "class_pairs.csv": {
+     "compared": 7380,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.csv": {
+     "compared": 1804,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 11,
+     "columns_only_in_ref": []
+    },
+    "component_metadata.json": {
+     "compared": 184,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "nearest_class.csv": {
+     "compared": 328,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 8,
+     "columns_only_in_ref": []
+    },
+    "per_class_geometry.csv": {
+     "compared": 820,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 20,
+     "columns_only_in_ref": []
+    },
+    "per_class_modality.csv": {
+     "compared": 6057,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 67,
+     "columns_only_in_ref": []
+    },
+    "per_class_summary.csv": {
+     "compared": 2870,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 33,
+     "columns_only_in_ref": []
+    },
+    "results.json": {
+     "compared": 766,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    },
+    "selection.json": {
+     "compared": 51,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold4/fda": {
+   "reference": "docs/evidence/pca_fda_gbc/folds/aquamonitor/fold4",
+   "files": {
+    "classes.csv": {
+     "compared": 168,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 4,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 613,
+     "mismatches": 0,
+     "max_abs_diff": 4.656612873077393e-10,
+     "max_rel_diff": 2.8532714209303225e-13,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 2.8532714209303225e-13
+  },
+  "aquamonitor/fold4/lw": {
+   "reference": "docs/evidence/lw_fit/aquamonitor/fold4",
+   "files": {
+    "alpha_curve.csv": {
+     "compared": 3520,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs16.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pairs_lw_pcs64.csv": {
+     "compared": 5740,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "perclass.csv": {
+     "compared": 410,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 9,
+     "columns_only_in_ref": []
+    },
+    "perclass_curve.csv": {
+     "compared": 2100,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 7,
+     "columns_only_in_ref": []
+    },
+    "pooled.csv": {
+     "compared": 640,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 14,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 40,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold4/coupled": {
+   "reference": "docs/evidence/coupled_rscm_vs_lw/extension/runs/aquamonitor/fold4",
+   "files": {
+    "perclass.csv": {
+     "compared": 10988,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 75,
+     "columns_only_in_ref": []
+    },
+    "summary.json": {
+     "compared": 2068,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 0,
+     "leaves_only_in_new": 0
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  },
+  "aquamonitor/fold4/pooling": {
+   "reference": "docs/evidence/balanced_taxonomic_pooling/runs/aquamonitor/fold4",
+   "files": {
+    "perclass.csv": {
+     "compared": 7052,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "columns_compared": 53,
+     "columns_only_in_ref": [
+      "condition_pool_near",
+      "condition_pool_tax",
+      "donor_classes",
+      "donor_df",
+      "donors",
+      "identity_scale_pool_near",
+      "identity_scale_pool_tax",
+      "level",
+      "near_donors",
+      "near_tax_jaccard",
+      "pool_tax_vs_lw_ci95",
+      "pool_tax_vs_lw_logdet_part",
+      "pool_tax_vs_lw_maha_part",
+      "pool_tax_vs_lw_mean",
+      "pool_tax_vs_lw_median",
+      "rank",
+      "status_pool_near",
+      "status_pool_tax",
+      "taxonomy_ci95",
+      "taxonomy_logdet_part",
+      "taxonomy_maha_part",
+      "taxonomy_mean",
+      "taxonomy_median",
+      "taxonomy_vs_nearest_ci95",
+      "taxonomy_vs_nearest_logdet_part",
+      "taxonomy_vs_nearest_maha_part",
+      "taxonomy_vs_nearest_mean",
+      "taxonomy_vs_nearest_median",
+      "val_loglik_pool_near",
+      "val_loglik_pool_tax"
+     ]
+    },
+    "summary.json": {
+     "compared": 1281,
+     "mismatches": 0,
+     "max_abs_diff": 0.0,
+     "max_rel_diff": 0.0,
+     "first_mismatches": [],
+     "leaves_only_in_ref": 3058,
+     "leaves_only_in_new": 5
+    }
+   },
+   "files_missing_in_new": [],
+   "mismatches": 0,
+   "max_rel_diff": 0.0
+  }
+ }
+}

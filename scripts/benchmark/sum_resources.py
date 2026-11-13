@@ -17,7 +17,8 @@ from pathlib import Path
 import pandas as pd
 
 GROUPS = {"fg_c0_dl": "C0 download", "fg_pack": "C0 packing", "fg_c1_": "C1 pilots", "fg_c1_checks": "C1 checks", "fg_c2_": "C2 GPU extraction",
-          "fg_c2chk_": "C2 CPU checks", "fg_c3_": "C3 records"}
+          "fg_c2chk_": "C2 CPU checks", "fg_c3_": "C3 records",
+          "fg_repl_": "geometry replication", "fg_ijepa_": "I-JEPA gates"}
 
 
 def tres(s: str, key: str) -> int:
