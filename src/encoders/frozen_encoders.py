@@ -12,6 +12,11 @@ added for the eight-dataset benchmark (task.md 8538df5; docs/evidence/benchmark_
   task's checkpoint policy), the checkpoint's own ``SiglipImageProcessor`` (256 x 256 bilinear, rescale, mean/std 0.5),
   feature ``SiglipVisionModel`` ``pooler_output`` = the attention-pooled image embedding that
   ``SiglipModel.get_image_features`` returns (SigLIP has no further projection).
+- ``ijepa_h14`` (task.md 3b897b0): the authors' I-JEPA ViT-H/14 target encoder (src/encoders/ijepa.py), feature = mean
+  of the final-layer patch tokens; transform = the VISSL linear-evaluation test transform the paper's evaluation used
+  (vissl@09270ed, imagenet1k linear config: Resize 256 (torchvision default bilinear), CenterCrop 224, ImageNet
+  mean/std), the same for every dataset (the paper's CIFAR-100 runs resized to 224 x 224 instead; not used here, so
+  that one transform serves all eight datasets, as for the other encoders).
 
 Transformers checkpoints are loaded at the pinned ``REVISIONS``; BioCLIP 2 through open_clip's hf-hub loader, whose
 cached ``refs/main`` is 2957b322 on LUMI (open_clip takes no revision argument).
@@ -33,6 +38,7 @@ MODEL_IDS = {
     "dinov2_l": "facebook/dinov2-large",
     "dinov3_l": "facebook/dinov3-vitl16-pretrain-lvd1689m",
     "siglip2": "google/siglip2-so400m-patch16-256",
+    "ijepa_h14": "https://dl.fbaipublicfiles.com/ijepa/IN1K-vit.h.14-300e.pth.tar (target_encoder)",
 }
 REVISIONS = {"dinov2_l": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c", "dinov3_l": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
              "siglip2": "e8708ab72d125807e45b36fb7d4e0aacbb59f379"}
@@ -67,7 +73,16 @@ def load_encoder(name: str) -> tuple[nn.Module, Callable, dict]:
     if name not in MODEL_IDS:
         raise ValueError(f"unknown encoder {name}; known: {sorted(MODEL_IDS)}")
     model_id = MODEL_IDS[name]
-    if name == "bioclip2":
+    if name == "ijepa_h14":
+        from torchvision import transforms as T
+
+        from src.encoders.ijepa import load_target_encoder
+
+        encoder, sha = load_target_encoder()
+        transform = T.Compose([T.Resize(256), T.CenterCrop(224), T.ToTensor(), T.Normalize(IMAGENET_MEAN, IMAGENET_STD)])
+        library = f"facebookresearch/ijepa@52c1ae9 (vendored, unmodified); target_encoder safetensors sha256 {sha}"
+        feature = "mean of final-layer (LayerNorm) patch tokens of the target encoder"
+    elif name == "bioclip2":
         import open_clip
 
         model, _, transform = open_clip.create_model_and_transforms(model_id)
