@@ -1,0 +1,20 @@
+{
+ "imagenet_classes": 1000,
+ "source": "torchvision ResNet50_Weights.IMAGENET1K_V1 categories",
+ "food101": {
+  "classes": 101,
+  "candidate_classes": 9
+ },
+ "oxford_pets": {
+  "classes": 37,
+  "candidate_classes": 18
+ },
+ "cifar100": {
+  "classes": 100,
+  "candidate_classes": 63
+ },
+ "fgvc_aircraft": {
+  "classes": 100,
+  "candidate_classes": 0
+ }
+}

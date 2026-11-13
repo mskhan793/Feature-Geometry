@@ -1,0 +1,339 @@
+dataset,class,candidate,imagenet_names
+food101,apple_pie,False,
+food101,baby_back_ribs,False,
+food101,baklava,False,
+food101,beef_carpaccio,False,
+food101,beef_tartare,False,
+food101,beet_salad,False,
+food101,beignets,False,
+food101,bibimbap,False,
+food101,bread_pudding,False,
+food101,breakfast_burrito,True,burrito
+food101,bruschetta,False,
+food101,caesar_salad,False,
+food101,cannoli,False,
+food101,caprese_salad,False,
+food101,carrot_cake,False,
+food101,ceviche,False,
+food101,cheese_plate,True,plate
+food101,cheesecake,False,
+food101,chicken_curry,False,
+food101,chicken_quesadilla,False,
+food101,chicken_wings,False,
+food101,chocolate_cake,False,
+food101,chocolate_mousse,False,
+food101,churros,False,
+food101,clam_chowder,False,
+food101,club_sandwich,False,
+food101,crab_cakes,False,
+food101,creme_brulee,False,
+food101,croque_madame,False,
+food101,cup_cakes,True,cup
+food101,deviled_eggs,False,
+food101,donuts,False,
+food101,dumplings,False,
+food101,edamame,False,
+food101,eggs_benedict,False,
+food101,escargots,False,
+food101,falafel,False,
+food101,filet_mignon,False,
+food101,fish_and_chips,False,
+food101,foie_gras,False,
+food101,french_fries,False,
+food101,french_onion_soup,False,
+food101,french_toast,False,
+food101,fried_calamari,False,
+food101,fried_rice,False,
+food101,frozen_yogurt,False,
+food101,garlic_bread,False,
+food101,gnocchi,False,
+food101,greek_salad,False,
+food101,grilled_cheese_sandwich,False,
+food101,grilled_salmon,False,
+food101,guacamole,True,guacamole
+food101,gyoza,False,
+food101,hamburger,False,
+food101,hot_and_sour_soup,False,
+food101,hot_dog,False,
+food101,huevos_rancheros,False,
+food101,hummus,False,
+food101,ice_cream,True,ice cream
+food101,lasagna,False,
+food101,lobster_bisque,False,
+food101,lobster_roll_sandwich,False,
+food101,macaroni_and_cheese,False,
+food101,macarons,False,
+food101,miso_soup,False,
+food101,mussels,False,
+food101,nachos,False,
+food101,omelette,False,
+food101,onion_rings,False,
+food101,oysters,False,
+food101,pad_thai,False,
+food101,paella,False,
+food101,pancakes,False,
+food101,panna_cotta,False,
+food101,peking_duck,False,
+food101,pho,False,
+food101,pizza,True,pizza
+food101,pork_chop,False,
+food101,poutine,False,
+food101,prime_rib,False,
+food101,pulled_pork_sandwich,False,
+food101,ramen,False,
+food101,ravioli,False,
+food101,red_velvet_cake,True,velvet
+food101,risotto,False,
+food101,samosa,False,
+food101,sashimi,False,
+food101,scallops,False,
+food101,seaweed_salad,False,
+food101,shrimp_and_grits,False,
+food101,spaghetti_bolognese,False,
+food101,spaghetti_carbonara,True,carbonara
+food101,spring_rolls,False,
+food101,steak,False,
+food101,strawberry_shortcake,True,strawberry
+food101,sushi,False,
+food101,tacos,False,
+food101,takoyaki,False,
+food101,tiramisu,False,
+food101,tuna_tartare,False,
+food101,waffles,False,
+oxford_pets,Abyssinian,False,
+oxford_pets,Bengal,False,
+oxford_pets,Birman,False,
+oxford_pets,Bombay,False,
+oxford_pets,British_Shorthair,False,
+oxford_pets,Egyptian_Mau,False,
+oxford_pets,Maine_Coon,False,
+oxford_pets,Persian,True,persian cat
+oxford_pets,Ragdoll,False,
+oxford_pets,Russian_Blue,False,
+oxford_pets,Siamese,True,siamese cat
+oxford_pets,Sphynx,False,
+oxford_pets,american_bulldog,False,
+oxford_pets,american_pit_bull_terrier,False,
+oxford_pets,basset_hound,True,basset
+oxford_pets,beagle,True,beagle
+oxford_pets,boxer,True,boxer
+oxford_pets,chihuahua,True,chihuahua
+oxford_pets,english_cocker_spaniel,True,cocker spaniel
+oxford_pets,english_setter,True,english setter
+oxford_pets,german_shorthaired,False,
+oxford_pets,great_pyrenees,True,great pyrenees
+oxford_pets,havanese,False,
+oxford_pets,japanese_chin,False,
+oxford_pets,keeshond,True,keeshond
+oxford_pets,leonberger,False,
+oxford_pets,miniature_pinscher,True,miniature pinscher
+oxford_pets,newfoundland,True,newfoundland
+oxford_pets,pomeranian,True,pomeranian
+oxford_pets,pug,True,pug
+oxford_pets,saint_bernard,True,saint bernard
+oxford_pets,samoyed,True,samoyed
+oxford_pets,scottish_terrier,False,
+oxford_pets,shiba_inu,False,
+oxford_pets,staffordshire_bull_terrier,False,
+oxford_pets,wheaten_terrier,True,soft coated wheaten terrier
+oxford_pets,yorkshire_terrier,True,yorkshire terrier
+cifar100,apple,True,custard apple
+cifar100,aquarium_fish,False,
+cifar100,baby,False,
+cifar100,bear,True,brown bear; american black bear; ice bear; sloth bear
+cifar100,beaver,True,beaver
+cifar100,bed,False,
+cifar100,bee,True,bee eater; bee
+cifar100,beetle,True,tiger beetle; ground beetle; long horned beetle; leaf beetle; dung beetle; rhinoceros beetle
+cifar100,bicycle,True,bicycle built for two
+cifar100,bottle,True,beer bottle; pill bottle; pop bottle; water bottle; wine bottle
+cifar100,bowl,True,mixing bowl; soup bowl
+cifar100,boy,False,
+cifar100,bridge,True,steel arch bridge; suspension bridge
+cifar100,bus,True,school bus
+cifar100,butterfly,True,cabbage butterfly; sulphur butterfly
+cifar100,camel,True,arabian camel
+cifar100,can,True,can opener; milk can
+cifar100,castle,True,castle
+cifar100,caterpillar,False,
+cifar100,cattle,False,
+cifar100,chair,True,barber chair; folding chair; rocking chair
+cifar100,chimpanzee,True,chimpanzee
+cifar100,clock,True,analog clock; digital clock; wall clock
+cifar100,cloud,False,
+cifar100,cockroach,True,cockroach
+cifar100,couch,True,studio couch
+cifar100,crab,True,dungeness crab; rock crab; fiddler crab; king crab; hermit crab
+cifar100,crocodile,True,african crocodile
+cifar100,cup,True,measuring cup; cup
+cifar100,dinosaur,False,
+cifar100,dolphin,False,
+cifar100,elephant,True,indian elephant; african elephant
+cifar100,flatfish,False,
+cifar100,forest,False,
+cifar100,fox,True,wire haired fox terrier; red fox; kit fox; arctic fox; grey fox; fox squirrel
+cifar100,girl,False,
+cifar100,hamster,True,hamster
+cifar100,house,True,house finch
+cifar100,kangaroo,False,
+cifar100,keyboard,True,computer keyboard; typewriter keyboard
+cifar100,lamp,True,table lamp
+cifar100,lawn_mower,True,lawn mower
+cifar100,leopard,True,leopard; snow leopard
+cifar100,lion,True,sea lion; lion
+cifar100,lizard,True,frilled lizard; alligator lizard; green lizard
+cifar100,lobster,True,american lobster; spiny lobster
+cifar100,man,False,
+cifar100,maple_tree,False,
+cifar100,motorcycle,False,
+cifar100,mountain,True,greater swiss mountain dog; bernese mountain dog; mountain bike; mountain tent
+cifar100,mouse,True,mouse
+cifar100,mushroom,True,mushroom
+cifar100,oak_tree,False,
+cifar100,orange,True,orange
+cifar100,orchid,False,
+cifar100,otter,True,otter
+cifar100,palm_tree,False,
+cifar100,pear,False,
+cifar100,pickup_truck,True,pickup
+cifar100,pine_tree,False,
+cifar100,plain,False,
+cifar100,plate,True,plate rack; plate
+cifar100,poppy,False,
+cifar100,porcupine,True,porcupine
+cifar100,possum,False,
+cifar100,rabbit,True,wood rabbit
+cifar100,raccoon,False,
+cifar100,ray,True,electric ray
+cifar100,road,False,
+cifar100,rocket,False,
+cifar100,rose,False,
+cifar100,sea,True,sea snake; sea anemone; sea slug; sea lion; sea urchin; sea cucumber
+cifar100,seal,False,
+cifar100,shark,True,great white shark; tiger shark
+cifar100,shrew,False,
+cifar100,skunk,True,skunk
+cifar100,skyscraper,False,
+cifar100,snail,True,snail
+cifar100,snake,True,thunder snake; ringneck snake; hognose snake; green snake; king snake; garter snake; water snake; vine snake; night snake; sea snake
+cifar100,spider,True,black and gold garden spider; barn spider; garden spider; wolf spider; spider monkey; spider web
+cifar100,squirrel,True,fox squirrel; squirrel monkey
+cifar100,streetcar,True,streetcar
+cifar100,sunflower,False,
+cifar100,sweet_pepper,False,
+cifar100,table,True,dining table; pool table; table lamp
+cifar100,tank,True,maillot tank suit; tank
+cifar100,telephone,True,cellular telephone; dial telephone
+cifar100,television,True,television
+cifar100,tiger,True,tiger shark; tiger cat; tiger; tiger beetle
+cifar100,tractor,True,tractor
+cifar100,train,True,bullet train
+cifar100,trout,False,
+cifar100,tulip,False,
+cifar100,turtle,True,leatherback turtle; mud turtle; box turtle
+cifar100,wardrobe,True,wardrobe
+cifar100,whale,True,grey whale; killer whale
+cifar100,willow_tree,False,
+cifar100,wolf,True,wolf spider; timber wolf; white wolf; red wolf
+cifar100,woman,False,
+cifar100,worm,True,worm fence
+fgvc_aircraft,707-320,False,
+fgvc_aircraft,727-200,False,
+fgvc_aircraft,737-200,False,
+fgvc_aircraft,737-300,False,
+fgvc_aircraft,737-400,False,
+fgvc_aircraft,737-500,False,
+fgvc_aircraft,737-600,False,
+fgvc_aircraft,737-700,False,
+fgvc_aircraft,737-800,False,
+fgvc_aircraft,737-900,False,
+fgvc_aircraft,747-100,False,
+fgvc_aircraft,747-200,False,
+fgvc_aircraft,747-300,False,
+fgvc_aircraft,747-400,False,
+fgvc_aircraft,757-200,False,
+fgvc_aircraft,757-300,False,
+fgvc_aircraft,767-200,False,
+fgvc_aircraft,767-300,False,
+fgvc_aircraft,767-400,False,
+fgvc_aircraft,777-200,False,
+fgvc_aircraft,777-300,False,
+fgvc_aircraft,A300B4,False,
+fgvc_aircraft,A310,False,
+fgvc_aircraft,A318,False,
+fgvc_aircraft,A319,False,
+fgvc_aircraft,A320,False,
+fgvc_aircraft,A321,False,
+fgvc_aircraft,A330-200,False,
+fgvc_aircraft,A330-300,False,
+fgvc_aircraft,A340-200,False,
+fgvc_aircraft,A340-300,False,
+fgvc_aircraft,A340-500,False,
+fgvc_aircraft,A340-600,False,
+fgvc_aircraft,A380,False,
+fgvc_aircraft,ATR-42,False,
+fgvc_aircraft,ATR-72,False,
+fgvc_aircraft,An-12,False,
+fgvc_aircraft,BAE 146-200,False,
+fgvc_aircraft,BAE 146-300,False,
+fgvc_aircraft,BAE-125,False,
+fgvc_aircraft,Beechcraft 1900,False,
+fgvc_aircraft,Boeing 717,False,
+fgvc_aircraft,C-130,False,
+fgvc_aircraft,C-47,False,
+fgvc_aircraft,CRJ-200,False,
+fgvc_aircraft,CRJ-700,False,
+fgvc_aircraft,CRJ-900,False,
+fgvc_aircraft,Cessna 172,False,
+fgvc_aircraft,Cessna 208,False,
+fgvc_aircraft,Cessna 525,False,
+fgvc_aircraft,Cessna 560,False,
+fgvc_aircraft,Challenger 600,False,
+fgvc_aircraft,DC-10,False,
+fgvc_aircraft,DC-3,False,
+fgvc_aircraft,DC-6,False,
+fgvc_aircraft,DC-8,False,
+fgvc_aircraft,DC-9-30,False,
+fgvc_aircraft,DH-82,False,
+fgvc_aircraft,DHC-1,False,
+fgvc_aircraft,DHC-6,False,
+fgvc_aircraft,DHC-8-100,False,
+fgvc_aircraft,DHC-8-300,False,
+fgvc_aircraft,DR-400,False,
+fgvc_aircraft,Dornier 328,False,
+fgvc_aircraft,E-170,False,
+fgvc_aircraft,E-190,False,
+fgvc_aircraft,E-195,False,
+fgvc_aircraft,EMB-120,False,
+fgvc_aircraft,ERJ 135,False,
+fgvc_aircraft,ERJ 145,False,
+fgvc_aircraft,Embraer Legacy 600,False,
+fgvc_aircraft,Eurofighter Typhoon,False,
+fgvc_aircraft,F-16A/B,False,
+fgvc_aircraft,F/A-18,False,
+fgvc_aircraft,Falcon 2000,False,
+fgvc_aircraft,Falcon 900,False,
+fgvc_aircraft,Fokker 100,False,
+fgvc_aircraft,Fokker 50,False,
+fgvc_aircraft,Fokker 70,False,
+fgvc_aircraft,Global Express,False,
+fgvc_aircraft,Gulfstream IV,False,
+fgvc_aircraft,Gulfstream V,False,
+fgvc_aircraft,Hawk T1,False,
+fgvc_aircraft,Il-76,False,
+fgvc_aircraft,L-1011,False,
+fgvc_aircraft,MD-11,False,
+fgvc_aircraft,MD-80,False,
+fgvc_aircraft,MD-87,False,
+fgvc_aircraft,MD-90,False,
+fgvc_aircraft,Metroliner,False,
+fgvc_aircraft,Model B200,False,
+fgvc_aircraft,PA-28,False,
+fgvc_aircraft,SR-20,False,
+fgvc_aircraft,Saab 2000,False,
+fgvc_aircraft,Saab 340,False,
+fgvc_aircraft,Spitfire,False,
+fgvc_aircraft,Tornado,False,
+fgvc_aircraft,Tu-134,False,
+fgvc_aircraft,Tu-154,False,
+fgvc_aircraft,Yak-42,False,
