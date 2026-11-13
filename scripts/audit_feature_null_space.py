@@ -22,6 +22,8 @@ from pathlib import Path
 import numpy as np
 from safetensors.numpy import load_file
 
+from src.features.null_space import layernorm_constraint, spectrum
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -30,23 +32,12 @@ def main():
     ap.add_argument("--key-prefix", default="norm")
     ap.add_argument("--out", required=True, type=Path)
     a = ap.parse_args()
-    x = np.concatenate([np.load(f) for f in sorted(a.cache.glob("chunk_*.npy"))]).astype(np.float64)
-    cov = np.cov(x, rowvar=False)
-    eig, vec = np.linalg.eigh(cov)
-    out = {"rows": int(len(x)), "dim": int(x.shape[1]), "eigenvalues_smallest_4": eig[:4].tolist(),
-           "eigenvalue_largest": float(eig[-1]), "smallest_over_second_smallest": float(eig[0] / eig[1]),
-           "numerical_rank_1e-12": int((eig > 1e-12 * eig[-1]).sum()), "rank_measurable": bool(len(x) > x.shape[1])}
+    x = np.concatenate([np.load(f) for f in sorted(a.cache.glob("chunk_*.npy"))])
+    out, cov, vec = spectrum(x)
     if a.weights:
         tensors = load_file(a.weights)
-        w = tensors[f"{a.key_prefix}.weight"].astype(np.float64)
-        b = tensors[f"{a.key_prefix}.bias"].astype(np.float64)
-        assert w.shape == (x.shape[1],), (w.shape, x.shape)
-        constraint = ((x - b) / w).sum(1)
-        rel = np.abs(constraint) / np.linalg.norm((x - b) / w, axis=1)
-        v = (1 / w) / np.linalg.norm(1 / w)
-        out |= {"weights": str(a.weights), "key": f"{a.key_prefix}.weight/bias",
-                "constraint_rel_abs_max": float(rel.max()), "constraint_rel_abs_median": float(np.median(rel)),
-                "abs_cos_smallest_eigvec_vs_inv_w": float(abs(vec[:, 0] @ v)), "variance_along_inv_w": float(v @ cov @ v)}
+        out |= {"weights": str(a.weights), "key": f"{a.key_prefix}.weight/bias"}
+        out |= layernorm_constraint(x, tensors[f"{a.key_prefix}.weight"], tensors[f"{a.key_prefix}.bias"], cov, vec)
     a.out.parent.mkdir(parents=True, exist_ok=True)
     a.out.write_text(json.dumps(out, indent=1))
     print(json.dumps(out, indent=1))

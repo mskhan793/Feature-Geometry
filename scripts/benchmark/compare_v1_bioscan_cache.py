@@ -16,7 +16,6 @@ Usage: compare_v1_bioscan_cache.py --v1-index INDEX --v1-cache DIR --split train
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 from pathlib import Path
 
@@ -24,26 +23,9 @@ import numpy as np
 import pandas as pd
 
 from src.features.feature_lookup import features_by_name
+from src.features.v1_bioscan_cache import load_v1
 
 REL_TOL, COS_TOL = 1e-4, 0.999999
-
-
-def ids_sha1(ids) -> str:
-    return hashlib.sha1("\n".join(map(str, ids)).encode()).hexdigest()
-
-
-def load_v1(cache: Path, split: str, ids: list[str]) -> tuple[np.ndarray, dict]:
-    folder = cache / "frozen_fp32" / split
-    parts, pos, first = [], 0, None
-    for m in sorted(folder.glob("meta_*.json")):
-        meta = json.loads(m.read_text())
-        first = first or meta
-        assert meta["n_split"] == len(ids) and meta["img_sha1"] == ids_sha1(ids), f"{m}: does not match the v1 index"
-        assert meta["start"] == pos, f"{m}: gap at {pos}"
-        parts.append(np.load(m.with_name(m.name.replace("meta_", "rows_").replace(".json", ".npy"))))
-        pos = meta["end"]
-    assert pos == len(ids), f"cache covers {pos} of {len(ids)} rows"
-    return np.concatenate(parts), first
 
 
 def main():
