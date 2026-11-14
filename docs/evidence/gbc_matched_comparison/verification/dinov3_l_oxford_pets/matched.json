@@ -1,0 +1,1786 @@
+{
+ "encoder": "dinov3_l",
+ "dataset": "oxford_pets",
+ "partition": "official",
+ "source": "/home/aijyu/Documents/Research/Feature_geometry_data/gbc_matched/verify_inputs/dinov3_l/oxford_pets/official/fda",
+ "leakage_gate": {
+  "classes": 37,
+  "unit_counts_equal_cohort": true,
+  "test_rows_dropped_before_lookup": 0
+ },
+ "dims_used": [
+  8,
+  16,
+  32
+ ],
+ "dims_omitted": [],
+ "fda_rank": 36,
+ "arms": {
+  "pca64": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.1548807530832273,
+    "gbc_train_common": -0.1548807530832273,
+    "gbc_val_common": -0.09518060069549053,
+    "mean_bc_train": 0.00011627684165407454,
+    "mean_bc_val": 7.145690742904694e-05,
+    "mean_bc_val_minus_train": -4.481993422502761e-05,
+    "ratio_val_over_train": 0.61454117958959,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -9.068309116283481e-10,
+     -2.051228497248342e-17,
+     3.135336409250948e-11
+    ],
+    "share_pairs_bc_val_above_train": 0.3483483483483483,
+    "spearman_distance_train_vs_val": 0.8975566474027772,
+    "top20_hardest_retained": 11,
+    "mean_term_median_train_val": [
+     29.368372326892043,
+     32.16063350451732
+    ],
+    "cov_term_median_train_val": [
+     0.27121705409581826,
+     0.3313152588513907
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 1.2396824997247812e-05,
+      "mean_bc_val": 4.33660449780713e-09
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.00012221284260589328,
+      "mean_bc_val": 7.553991147616403e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.09673576650771958,
+    "gbc_train_common": -0.09673576650771958,
+    "gbc_val_common": -0.0030103738952711595,
+    "mean_bc_train": 7.26244493301198e-05,
+    "mean_bc_val": 2.260040461915285e-06,
+    "mean_bc_val_minus_train": -7.036440886820452e-05,
+    "ratio_val_over_train": 0.031119553852203465,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -9.31034676242523e-10,
+     -2.1874533264766457e-15,
+     6.351051539611578e-15
+    ],
+    "share_pairs_bc_val_above_train": 0.2012012012012012,
+    "spearman_distance_train_vs_val": 0.7496195206603162,
+    "top20_hardest_retained": 11,
+    "mean_term_median_train_val": [
+     30.06426150959748,
+     34.93540123904286
+    ],
+    "cov_term_median_train_val": [
+     1.7453949191390075,
+     3.5392438966472444
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 2.0176215858616715e-05,
+      "mean_bc_val": 1.058864545936359e-10
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 7.562149124277713e-05,
+      "mean_bc_val": 2.389179580513039e-06
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 0,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": NaN,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "pca8": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -12.879107634364052,
+    "gbc_train_common": -12.879107634364052,
+    "gbc_val_common": -11.494664197951765,
+    "mean_bc_train": 0.009668999725498537,
+    "mean_bc_val": 0.008629627776240064,
+    "mean_bc_val_minus_train": -0.0010393719492584727,
+    "ratio_val_over_train": 0.89250470795676,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -6.35256759994128e-05,
+     -3.030119857126551e-15,
+     0.00010286560930075602
+    ],
+    "share_pairs_bc_val_above_train": 0.4369369369369369,
+    "spearman_distance_train_vs_val": 0.8765448813898274,
+    "top20_hardest_retained": 19,
+    "mean_term_median_train_val": [
+     17.19905904051272,
+     17.91896408345466
+    ],
+    "cov_term_median_train_val": [
+     0.04965189337027545,
+     0.0825324705363467
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.01769901701983621,
+      "mean_bc_val": 0.020174414994774334
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.009210141594393527,
+      "mean_bc_val": 0.007969925649466678
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -10.630336879305748,
+    "gbc_train_common": -10.630336879305748,
+    "gbc_val_common": -7.220764375431849,
+    "mean_bc_train": 0.007980733392872183,
+    "mean_bc_val": 0.0054209942758497364,
+    "mean_bc_val_minus_train": -0.002559739117022447,
+    "ratio_val_over_train": 0.6792601643216623,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -0.00020139185272872057,
+     -7.9353857223372e-12,
+     1.0552630209519871e-05
+    ],
+    "share_pairs_bc_val_above_train": 0.36486486486486486,
+    "spearman_distance_train_vs_val": 0.8253695342940195,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     17.109813642682028,
+     18.149700031577794
+    ],
+    "cov_term_median_train_val": [
+     0.3082807378128739,
+     0.5121126937452112
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.014285906171345184,
+      "mean_bc_val": 0.009847644326238612
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.007620437805530871,
+      "mean_bc_val": 0.005168042844398943
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -8.256826189404437,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda8": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -6.617710283530309,
+    "gbc_train_common": -6.617710283530309,
+    "gbc_val_common": -15.459373351973557,
+    "mean_bc_train": 0.004968250963611343,
+    "mean_bc_val": 0.011606136150130298,
+    "mean_bc_val_minus_train": 0.006637885186518955,
+    "ratio_val_over_train": 2.3360607656771792,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     5.047041719193098e-52,
+     2.0127050649536563e-21,
+     4.541301112030559e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.9534534534534534,
+    "spearman_distance_train_vs_val": 0.8157592205726034,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     93.5753286240312,
+     46.546278546971905
+    ],
+    "cov_term_median_train_val": [
+     0.0276443007785758,
+     0.10471144937264575
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.00989024727193533,
+      "mean_bc_val": 0.039480570961449496
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.004686994031707115,
+      "mean_bc_val": 0.0100133113037692
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -7.405712594652088,
+    "gbc_train_common": -7.405712594652088,
+    "gbc_val_common": -11.04948686853858,
+    "mean_bc_train": 0.005559844290279345,
+    "mean_bc_val": 0.0082954105619659,
+    "mean_bc_val_minus_train": 0.0027355662716865552,
+    "ratio_val_over_train": 1.4920221014947006,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.5778562445906016e-65,
+     2.5746770919672402e-24,
+     9.666921748741612e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.9084084084084084,
+    "spearman_distance_train_vs_val": 0.8487800602848343,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     85.6843481250543,
+     51.033654633381474
+    ],
+    "cov_term_median_train_val": [
+     0.1931232875508355,
+     0.47615025028401353
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.011192464447184091,
+      "mean_bc_val": 0.024208231581081166
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.00523798028131336,
+      "mean_bc_val": 0.007386106503730742
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -7.757558958621916,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "pca16": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -2.7302537443639774,
+    "gbc_train_common": -2.7302537443639774,
+    "gbc_val_common": -2.1715482153981287,
+    "mean_bc_train": 0.0020497400483213044,
+    "mean_bc_val": 0.0016302914530015981,
+    "mean_bc_val_minus_train": -0.0004194485953197061,
+    "ratio_val_over_train": 0.7953649802260407,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -4.549370644396185e-07,
+     -1.6156988536337264e-19,
+     2.5700628988313426e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.46396396396396394,
+    "spearman_distance_train_vs_val": 0.8892146692351853,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     20.307874265199516,
+     21.38814041239161
+    ],
+    "cov_term_median_train_val": [
+     0.0614772650425643,
+     0.13855212385033905
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.001145269153591302,
+      "mean_bc_val": 0.00010190144024373845
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0021014240994487333,
+      "mean_bc_val": 0.0017176280251591904
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -2.1767864114746303,
+    "gbc_train_common": -2.1767864114746303,
+    "gbc_val_common": -0.8284935530660786,
+    "mean_bc_train": 0.0016342240326386113,
+    "mean_bc_val": 0.0006219921569565155,
+    "mean_bc_val_minus_train": -0.0010122318756820956,
+    "ratio_val_over_train": 0.3806039713858874,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -7.560072275789702e-07,
+     -7.432369887107405e-14,
+     1.1437772589185937e-08
+    ],
+    "share_pairs_bc_val_above_train": 0.33933933933933935,
+    "spearman_distance_train_vs_val": 0.7867094902051109,
+    "top20_hardest_retained": 17,
+    "mean_term_median_train_val": [
+     23.319189445365502,
+     25.94460241509367
+    ],
+    "cov_term_median_train_val": [
+     0.6475576038488302,
+     1.0826855958578658
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0017584476349796496,
+      "mean_bc_val": 0.00019399694966134527
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0016271255410762657,
+      "mean_bc_val": 0.000646449025944811
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -1.3040280092427237,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda16": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.8587188871551623,
+    "gbc_train_common": -0.8587188871551623,
+    "gbc_val_common": -2.2562392011578014,
+    "mean_bc_train": 0.0006446838492155873,
+    "mean_bc_val": 0.0016938732741424935,
+    "mean_bc_val_minus_train": 0.0010491894249269064,
+    "ratio_val_over_train": 2.627447975008986,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     2.490708517153359e-50,
+     7.529716010173283e-29,
+     2.4099967382123313e-14
+    ],
+    "share_pairs_bc_val_above_train": 0.9894894894894894,
+    "spearman_distance_train_vs_val": 0.7602308782613367,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     125.89099548275547,
+     63.90562924157453
+    ],
+    "cov_term_median_train_val": [
+     0.0448199232404071,
+     0.1493663199923993
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0006599664070349345,
+      "mean_bc_val": 0.015364434827601874
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.000643810560197339,
+      "mean_bc_val": 0.0009126983282305288
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -1.0270278041158822,
+    "gbc_train_common": -1.0270278041158822,
+    "gbc_val_common": -1.403233172049139,
+    "mean_bc_train": 0.0007710418949818936,
+    "mean_bc_val": 0.0010534783573942486,
+    "mean_bc_val_minus_train": 0.00028243646241235494,
+    "ratio_val_over_train": 1.3663049495111903,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.2698121795863251e-68,
+     1.5713730223166873e-32,
+     4.028662031996471e-13
+    ],
+    "share_pairs_bc_val_above_train": 0.9309309309309309,
+    "spearman_distance_train_vs_val": 0.8044128108674784,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     118.63323953703923,
+     70.48883066232196
+    ],
+    "cov_term_median_train_val": [
+     0.46533367655694136,
+     1.0134941403846298
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0016694328462853146,
+      "mean_bc_val": 0.00905500569479238
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0007197052691931267,
+      "mean_bc_val": 0.000596248223828641
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -1.3259117549631347,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "pca32": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.7106031717141382,
+    "gbc_train_common": -0.7106031717141382,
+    "gbc_val_common": -0.5497550273157644,
+    "mean_bc_train": 0.000533485864650254,
+    "mean_bc_val": 0.00041272899948630964,
+    "mean_bc_val_minus_train": -0.00012075686516394424,
+    "ratio_val_over_train": 0.7736456143161152,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -4.315173390285667e-09,
+     -4.879992122938641e-21,
+     2.1992590719399017e-08
+    ],
+    "share_pairs_bc_val_above_train": 0.46396396396396394,
+    "spearman_distance_train_vs_val": 0.858181455908908,
+    "top20_hardest_retained": 14,
+    "mean_term_median_train_val": [
+     25.646709528581543,
+     27.431823591681958
+    ],
+    "cov_term_median_train_val": [
+     0.11273301876597344,
+     0.1685384485826233
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0001704772172281119,
+      "mean_bc_val": 2.8642400850123197e-06
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0005542292159315191,
+      "mean_bc_val": 0.00043614984288066944
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.5189799459467894,
+    "gbc_train_common": -0.5189799459467894,
+    "gbc_val_common": -0.08693751624791934,
+    "mean_bc_train": 0.0003896245840441362,
+    "mean_bc_val": 6.526840559153104e-05,
+    "mean_bc_val_minus_train": -0.00032435617845260516,
+    "ratio_val_over_train": 0.16751613800667545,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -2.4392485849254003e-09,
+     -3.854542216599767e-15,
+     7.979734556467481e-12
+    ],
+    "share_pairs_bc_val_above_train": 0.2897897897897898,
+    "spearman_distance_train_vs_val": 0.7533242726330395,
+    "top20_hardest_retained": 12,
+    "mean_term_median_train_val": [
+     28.97213917554695,
+     32.446429507951606
+    ],
+    "cov_term_median_train_val": [
+     1.1302359783917981,
+     1.9170637720698678
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.00023060213259815067,
+      "mean_bc_val": 5.2512583235992425e-06
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0003987115812696211,
+      "mean_bc_val": 6.86979568639843e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -0.042152405974017766,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda32": {
+   "role": "primary",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.08200901733701875,
+    "gbc_train_common": -0.08200901733701875,
+    "gbc_val_common": -0.20621081595252672,
+    "mean_bc_train": 6.156833133409816e-05,
+    "mean_bc_val": 0.00015481292488928432,
+    "mean_bc_val_minus_train": 9.324459355518617e-05,
+    "ratio_val_over_train": 2.51448953601159,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     2.8261772156690597e-59,
+     8.888399645264132e-37,
+     4.583917502420067e-22
+    ],
+    "share_pairs_bc_val_above_train": 0.9984984984984985,
+    "spearman_distance_train_vs_val": 0.7594472018207519,
+    "top20_hardest_retained": 14,
+    "mean_term_median_train_val": [
+     158.28010701485016,
+     82.61522775608968
+    ],
+    "cov_term_median_train_val": [
+     0.07836374890326064,
+     0.2059164877147026
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 4.5682553968972225e-06,
+      "mean_bc_val": 0.001605121643040289
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 6.482547853050964e-05,
+      "mean_bc_val": 7.193814099494121e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.10261169750139734,
+    "gbc_train_common": -0.10261169750139734,
+    "gbc_val_common": -0.0828018211143619,
+    "mean_bc_train": 7.703580893498299e-05,
+    "mean_bc_val": 6.216352936513657e-05,
+    "mean_bc_val_minus_train": -1.4872279569846424e-05,
+    "ratio_val_over_train": 0.8069432933144327,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     4.1172136140512756e-78,
+     1.4643092577056674e-39,
+     2.7291184360868928e-19
+    ],
+    "share_pairs_bc_val_above_train": 0.9354354354354354,
+    "spearman_distance_train_vs_val": 0.7688286115020116,
+    "top20_hardest_retained": 12,
+    "mean_term_median_train_val": [
+     141.92456527911054,
+     86.39083521623176
+    ],
+    "cov_term_median_train_val": [
+     1.040859806396739,
+     2.030956506905458
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 2.697974764972778e-05,
+      "mean_bc_val": 0.0004216204705965788
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 7.989615529414042e-05,
+      "mean_bc_val": 4.1623132723339864e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -0.035017690745575765,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda8_raw": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -7.192432626872829,
+    "gbc_train_common": -7.192432626872829,
+    "gbc_val_common": -16.047842940313007,
+    "mean_bc_train": 0.005399724194348971,
+    "mean_bc_val": 0.012047930135370125,
+    "mean_bc_val_minus_train": 0.006648205941021154,
+    "ratio_val_over_train": 2.2312121326453616,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     4.746838587483254e-56,
+     5.887839485547053e-23,
+     7.095426525061581e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.963963963963964,
+    "spearman_distance_train_vs_val": 0.845395652102825,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     97.4354493930341,
+     50.574519061147285
+    ],
+    "cov_term_median_train_val": [
+     0.02639520450766655,
+     0.09978745344008086
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.01122711958526432,
+      "mean_bc_val": 0.03911436194564263
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.005066730172010952,
+      "mean_bc_val": 0.01050127688906884
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -7.701341536743762,
+    "gbc_train_common": -7.701341536743762,
+    "gbc_val_common": -11.20632614753575,
+    "mean_bc_train": 0.00578178794049832,
+    "mean_bc_val": 0.008413157768420233,
+    "mean_bc_val_minus_train": 0.002631369827921913,
+    "ratio_val_over_train": 1.4551135141935214,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.8771892430264397e-72,
+     3.032599962736427e-24,
+     7.269828370457667e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.9039039039039038,
+    "spearman_distance_train_vs_val": 0.8479865533601825,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     84.06469104682964,
+     50.38094156651762
+    ],
+    "cov_term_median_train_val": [
+     0.1868358306102321,
+     0.48566712125013056
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.011063830884792469,
+      "mean_bc_val": 0.02461050569822302
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0054799569151100826,
+      "mean_bc_val": 0.00748759502957436
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -7.757558958621912,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda8_shrink0.5": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -6.450486703683637,
+    "gbc_train_common": -6.450486703683637,
+    "gbc_val_common": -16.525727239582437,
+    "mean_bc_train": 0.0048427077354982265,
+    "mean_bc_val": 0.012406702131818647,
+    "mean_bc_val_minus_train": 0.007563994396320417,
+    "ratio_val_over_train": 2.5619349358778147,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.588824769778048e-47,
+     1.6065619935175675e-20,
+     1.750230553678263e-05
+    ],
+    "share_pairs_bc_val_above_train": 0.978978978978979,
+    "spearman_distance_train_vs_val": 0.8247361992647245,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     98.35839023632869,
+     44.53040796530975
+    ],
+    "cov_term_median_train_val": [
+     0.025731787441817852,
+     0.10234396215416194
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.009775125682959887,
+      "mean_bc_val": 0.039623262890150744
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0045608552813575605,
+      "mean_bc_val": 0.010851470088485382
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -6.9396897370571935,
+    "gbc_train_common": -6.9396897370571935,
+    "gbc_val_common": -11.897697914378366,
+    "mean_bc_train": 0.0052099772800729685,
+    "mean_bc_val": 0.0089322056414252,
+    "mean_bc_val_minus_train": 0.003722228361352233,
+    "ratio_val_over_train": 1.7144423403896494,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.0987418215086511e-55,
+     4.0619434097027634e-23,
+     2.647600113095315e-05
+    ],
+    "share_pairs_bc_val_above_train": 0.933933933933934,
+    "spearman_distance_train_vs_val": 0.8475380476800821,
+    "top20_hardest_retained": 17,
+    "mean_term_median_train_val": [
+     90.46057270150663,
+     49.2119015212119
+    ],
+    "cov_term_median_train_val": [
+     0.1618624362702005,
+     0.4436329685917188
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.009939478130421557,
+      "mean_bc_val": 0.023571535116603228
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.004939720088624477,
+      "mean_bc_val": 0.008095672528557885
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -7.589082010700475,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda8_shrink2": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -6.973870740356321,
+    "gbc_train_common": -6.973870740356321,
+    "gbc_val_common": -14.05354458886689,
+    "mean_bc_train": 0.005235638693961202,
+    "mean_bc_val": 0.010550709150800969,
+    "mean_bc_val_minus_train": 0.005315070456839767,
+    "ratio_val_over_train": 2.0151713606537025,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.962016205729842e-72,
+     9.558290400516203e-23,
+     8.137328770372695e-07
+    ],
+    "share_pairs_bc_val_above_train": 0.9039039039039038,
+    "spearman_distance_train_vs_val": 0.8082876464632957,
+    "top20_hardest_retained": 19,
+    "mean_term_median_train_val": [
+     84.82735658834753,
+     47.91882066656011
+    ],
+    "cov_term_median_train_val": [
+     0.03329301438682545,
+     0.1022313961288583
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.009654487821988182,
+      "mean_bc_val": 0.03850576561685142
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.004983133029502517,
+      "mean_bc_val": 0.008953277352740943
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -7.703405886131589,
+    "gbc_train_common": -7.703405886131589,
+    "gbc_val_common": -9.567178787767677,
+    "mean_bc_train": 0.005783337752351042,
+    "mean_bc_val": 0.007182566657483241,
+    "mean_bc_val_minus_train": 0.0013992289051322003,
+    "ratio_val_over_train": 1.2419414125629071,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -3.1131084698048766e-38,
+     4.8831309052662785e-27,
+     1.6369220994126983e-06
+    ],
+    "share_pairs_bc_val_above_train": 0.8273273273273273,
+    "spearman_distance_train_vs_val": 0.8441679790058233,
+    "top20_hardest_retained": 19,
+    "mean_term_median_train_val": [
+     77.26756014929823,
+     52.7024735440111
+    ],
+    "cov_term_median_train_val": [
+     0.22975568821554845,
+     0.5238719167187025
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.01136526210446736,
+      "mean_bc_val": 0.023583622999052176
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.005464370646515823,
+      "mean_bc_val": 0.006245363437965016
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -7.893430611307075,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda16_raw": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.9893861747552228,
+    "gbc_train_common": -0.9893861747552228,
+    "gbc_val_common": -2.471246712110346,
+    "mean_bc_train": 0.000742782413479897,
+    "mean_bc_val": 0.0018552903244071668,
+    "mean_bc_val_minus_train": 0.0011125079109272698,
+    "ratio_val_over_train": 2.4977574734372454,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.3273327757979586e-56,
+     1.3321507688250418e-30,
+     8.724720682460703e-14
+    ],
+    "share_pairs_bc_val_above_train": 0.9924924924924925,
+    "spearman_distance_train_vs_val": 0.8100873968624305,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     134.22816446722337,
+     68.13363018605534
+    ],
+    "cov_term_median_train_val": [
+     0.041494494242080945,
+     0.14786456400198428
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0008580263595846586,
+      "mean_bc_val": 0.01582596271669753
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0007361970451310536,
+      "mean_bc_val": 0.0010569661877048602
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -1.116539089830872,
+    "gbc_train_common": -1.116539089830872,
+    "gbc_val_common": -1.5374729072307831,
+    "mean_bc_train": 0.0008382425599330871,
+    "mean_bc_val": 0.0011542589393624498,
+    "mean_bc_val_minus_train": 0.0003160163794293628,
+    "ratio_val_over_train": 1.37699872869088,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     3.485004755410947e-67,
+     2.0088884030744295e-32,
+     1.9388834033312517e-12
+    ],
+    "share_pairs_bc_val_above_train": 0.9324324324324325,
+    "spearman_distance_train_vs_val": 0.7940872684974319,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     118.64962002837774,
+     70.17424497729054
+    ],
+    "cov_term_median_train_val": [
+     0.4511398378404574,
+     1.0227163819606555
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0018936250630634077,
+      "mean_bc_val": 0.009354921821639797
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0007779349883256403,
+      "mean_bc_val": 0.0006856496318037442
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -1.3259117549631303,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda16_shrink0.5": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.8622586154756584,
+    "gbc_train_common": -0.8622586154756584,
+    "gbc_val_common": -2.5627039337029007,
+    "mean_bc_train": 0.0006473413029096535,
+    "mean_bc_val": 0.0019239519021793548,
+    "mean_bc_val_minus_train": 0.0012766105992697012,
+    "ratio_val_over_train": 2.9720827228721913,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.4316393249687025e-48,
+     4.357677842118575e-28,
+     1.0101778057647596e-13
+    ],
+    "share_pairs_bc_val_above_train": 0.996996996996997,
+    "spearman_distance_train_vs_val": 0.7774328848581197,
+    "top20_hardest_retained": 19,
+    "mean_term_median_train_val": [
+     133.96081836512982,
+     62.69747590568892
+    ],
+    "cov_term_median_train_val": [
+     0.0370271398305419,
+     0.14289411485429504
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0007436603901561257,
+      "mean_bc_val": 0.01665510849265671
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.000641837355066998,
+      "mean_bc_val": 0.001082171525580649
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.9993738547765706,
+    "gbc_train_common": -0.9993738547765706,
+    "gbc_val_common": -1.619101648966659,
+    "mean_bc_train": 0.0007502806717541821,
+    "mean_bc_val": 0.0012155417785034977,
+    "mean_bc_val_minus_train": 0.0004652611067493155,
+    "ratio_val_over_train": 1.620116076909617,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.066575288133376e-60,
+     3.0976406986233578e-31,
+     1.8929938082350117e-12
+    ],
+    "share_pairs_bc_val_above_train": 0.954954954954955,
+    "spearman_distance_train_vs_val": 0.8072548769305655,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     126.16616316078802,
+     67.72082346034941
+    ],
+    "cov_term_median_train_val": [
+     0.39557533958094737,
+     0.9321247090346372
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0016579706134911497,
+      "mean_bc_val": 0.008878180720743017
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0006984126750834983,
+      "mean_bc_val": 0.0007776766960898108
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -1.2877144450149138,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda16_shrink2": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.8882088218332047,
+    "gbc_train_common": -0.8882088218332047,
+    "gbc_val_common": -1.834752667184449,
+    "mean_bc_train": 0.0006668234398147183,
+    "mean_bc_val": 0.0013774419423306674,
+    "mean_bc_val_minus_train": 0.0007106185025159493,
+    "ratio_val_over_train": 2.065677149431639,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     4.500872570540801e-55,
+     9.051346369178023e-30,
+     5.1891490445135e-15
+    ],
+    "share_pairs_bc_val_above_train": 0.9594594594594594,
+    "spearman_distance_train_vs_val": 0.7460518673806767,
+    "top20_hardest_retained": 17,
+    "mean_term_median_train_val": [
+     113.11173017304388,
+     65.543235250229
+    ],
+    "cov_term_median_train_val": [
+     0.057059737571828195,
+     0.1515496004021388
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.0005343371390247306,
+      "mean_bc_val": 0.012392030452903996
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.0006743940855741462,
+      "mean_bc_val": 0.0007480368845836203
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -1.1344666038630422,
+    "gbc_train_common": -1.1344666038630422,
+    "gbc_val_common": -1.2191586094846198,
+    "mean_bc_train": 0.0008517016545518335,
+    "mean_bc_val": 0.0009152842413548197,
+    "mean_bc_val_minus_train": 6.358258680298643e-05,
+    "ratio_val_over_train": 1.0746535908004589,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -3.3587978439706787e-59,
+     3.2238818038176333e-35,
+     1.377154387815764e-13
+    ],
+    "share_pairs_bc_val_above_train": 0.8588588588588588,
+    "spearman_distance_train_vs_val": 0.7933335303492332,
+    "top20_hardest_retained": 18,
+    "mean_term_median_train_val": [
+     108.42651340621569,
+     73.73242302756795
+    ],
+    "cov_term_median_train_val": [
+     0.5602523743320216,
+     1.1244784025084584
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 0.002178687358370932,
+      "mean_bc_val": 0.008259666050078343
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 0.000775873900047885,
+      "mean_bc_val": 0.0004956052808563326
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -1.3766953698030455,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda32_raw": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.09214682069377893,
+    "gbc_train_common": -0.09214682069377893,
+    "gbc_val_common": -0.24766431504144137,
+    "mean_bc_train": 6.917929481514934e-05,
+    "mean_bc_val": 0.00018593417045153257,
+    "mean_bc_val_minus_train": 0.00011675487563638323,
+    "ratio_val_over_train": 2.687714162862722,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     4.716725432293184e-65,
+     4.2910506582101995e-38,
+     1.4600836783826383e-21
+    ],
+    "share_pairs_bc_val_above_train": 0.9984984984984985,
+    "spearman_distance_train_vs_val": 0.8192947826026025,
+    "top20_hardest_retained": 16,
+    "mean_term_median_train_val": [
+     165.1275061851836,
+     85.51425135604387
+    ],
+    "cov_term_median_train_val": [
+     0.06278212059246754,
+     0.1824597172785891
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 7.655873170366668e-06,
+      "mean_bc_val": 0.0019477645917645166
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 7.269491890913693e-05,
+      "mean_bc_val": 8.525814637650489e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.10621763112127303,
+    "gbc_train_common": -0.10621763112127303,
+    "gbc_val_common": -0.10771662585407898,
+    "mean_bc_train": 7.974296630726203e-05,
+    "mean_bc_val": 8.086833772828753e-05,
+    "mean_bc_val_minus_train": 1.1253714210254839e-06,
+    "ratio_val_over_train": 1.0141124850646923,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     7.395355232688441e-75,
+     2.960146838126535e-39,
+     1.4094088180002264e-18
+    ],
+    "share_pairs_bc_val_above_train": 0.9369369369369369,
+    "spearman_distance_train_vs_val": 0.754398435815622,
+    "top20_hardest_retained": 14,
+    "mean_term_median_train_val": [
+     140.5852605852885,
+     84.48407808848941
+    ],
+    "cov_term_median_train_val": [
+     1.008662185077453,
+     2.0213356555290067
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 3.2479585317116666e-05,
+      "mean_bc_val": 0.0005629094670453241
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 8.244373093527034e-05,
+      "mean_bc_val": 5.3323130338742584e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -0.03501769074557476,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda32_shrink0.5": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.07734203091561909,
+    "gbc_train_common": -0.07734203091561909,
+    "gbc_val_common": -0.26307827232404724,
+    "mean_bc_train": 5.80645877744888e-05,
+    "mean_bc_val": 0.0001975062104534889,
+    "mean_bc_val_minus_train": 0.00013944162267900015,
+    "ratio_val_over_train": 3.401491649618927,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.613790325008313e-56,
+     2.1910769017715636e-35,
+     2.548016161287249e-21
+    ],
+    "share_pairs_bc_val_above_train": 0.9984984984984985,
+    "spearman_distance_train_vs_val": 0.7684356764921747,
+    "top20_hardest_retained": 14,
+    "mean_term_median_train_val": [
+     166.37541258560844,
+     79.2815825557365
+    ],
+    "cov_term_median_train_val": [
+     0.0664132476618739,
+     0.18698436652982758
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 4.48302700245e-06,
+      "mean_bc_val": 0.0020957209784140222
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 6.112639124717673e-05,
+      "mean_bc_val": 8.903679514145847e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.09775935542347737,
+    "gbc_train_common": -0.09775935542347737,
+    "gbc_val_common": -0.10095204142115119,
+    "mean_bc_train": 7.339290947708512e-05,
+    "mean_bc_val": 7.578982088675014e-05,
+    "mean_bc_val_minus_train": 2.39691140966504e-06,
+    "ratio_val_over_train": 1.0326586236564634,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     1.8691391309957217e-69,
+     3.6111594761797237e-38,
+     8.4294136094397e-19
+    ],
+    "share_pairs_bc_val_above_train": 0.9669669669669669,
+    "spearman_distance_train_vs_val": 0.7716476449846608,
+    "top20_hardest_retained": 13,
+    "mean_term_median_train_val": [
+     149.48574459400277,
+     83.46132549441224
+    ],
+    "cov_term_median_train_val": [
+     0.9221797050654743,
+     1.8981195814648826
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 3.087948157525e-05,
+      "mean_bc_val": 0.000498565266060736
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 7.582224821433284e-05,
+      "mean_bc_val": 5.163122401966524e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -0.035194998126781826,
+    "ratio_status": "no common pairs"
+   }
+  },
+  "fda32_shrink2": {
+   "role": "sensitivity",
+   "spherical": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.08865712892798606,
+    "gbc_train_common": -0.08865712892798606,
+    "gbc_val_common": -0.1599893519509244,
+    "mean_bc_train": 6.655940610209164e-05,
+    "mean_bc_val": 0.00012011212608928257,
+    "mean_bc_val_minus_train": 5.355271998719093e-05,
+    "ratio_val_over_train": 1.8045853039170678,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     7.422564208206216e-62,
+     9.270985095112538e-38,
+     1.0958168633752002e-22
+    ],
+    "share_pairs_bc_val_above_train": 0.9864864864864865,
+    "spearman_distance_train_vs_val": 0.7504112402242287,
+    "top20_hardest_retained": 15,
+    "mean_term_median_train_val": [
+     144.80244153191083,
+     84.60125408302548
+    ],
+    "cov_term_median_train_val": [
+     0.10143323930996215,
+     0.2352444675990028
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 7.1584712459083335e-06,
+      "mean_bc_val": 0.0012472373103521027
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 6.995374523673068e-05,
+      "mean_bc_val": 5.570497270283572e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "diagonal": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 666,
+    "pairs_common": 666,
+    "gbc_train_all": -0.11963938531599887,
+    "gbc_train_common": -0.11963938531599887,
+    "gbc_val_common": -0.07545282269973717,
+    "mean_bc_train": 8.981935834534449e-05,
+    "mean_bc_val": 5.6646263288090975e-05,
+    "mean_bc_val_minus_train": -3.317309505725352e-05,
+    "ratio_val_over_train": 0.6306687592923231,
+    "ratio_status": "ok",
+    "delta_bc_p10_median_p90": [
+     -2.324496569082968e-73,
+     5.756051459577665e-42,
+     4.3965019839755805e-20
+    ],
+    "share_pairs_bc_val_above_train": 0.8783783783783784,
+    "spearman_distance_train_vs_val": 0.7620478929403416,
+    "top20_hardest_retained": 13,
+    "mean_term_median_train_val": [
+     131.50629769671457,
+     90.32707872840643
+    ],
+    "cov_term_median_train_val": [
+     1.2140646797785806,
+     2.1661618164986294
+    ],
+    "by_min_val_units": {
+     "5-9": {
+      "pairs": 36,
+      "mean_bc_train": 3.5095884900325e-05,
+      "mean_bc_val": 0.0002446859256853677
+     },
+     "10-19": {
+      "pairs": 630,
+      "mean_bc_train": 9.294641397077418e-05,
+      "mean_bc_val": 4.590113972253231e-05
+     },
+     ">=20": {
+      "pairs": 0
+     }
+    }
+   },
+   "full": {
+    "pairs_total": 666,
+    "pairs_train_valid": 666,
+    "pairs_val_valid": 0,
+    "pairs_common": 0,
+    "gbc_train_all": -0.03545932272800776,
+    "ratio_status": "no common pairs"
+   }
+  }
+ },
+ "matched": {
+  "pca8_vs_fda8": {
+   "spherical": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -12.879107634364052,
+    "gbc_val_pca": -11.494664197951765,
+    "mean_bc_train_pca": 0.009668999725498537,
+    "mean_bc_val_pca": 0.008629627776240064,
+    "ratio_pca": 0.89250470795676,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -6.617710283530309,
+    "gbc_val_fda": -15.459373351973557,
+    "mean_bc_train_fda": 0.004968250963611343,
+    "mean_bc_val_fda": 0.011606136150130298,
+    "ratio_fda": 2.3360607656771792,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.004700748761887194,
+    "fda_minus_pca_mean_bc_val": 0.002976508373890234,
+    "spearman_distance_pca_vs_fda_train": 0.54076731193436,
+    "spearman_distance_pca_vs_fda_val": 0.6081713258388081
+   },
+   "diagonal": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -10.630336879305748,
+    "gbc_val_pca": -7.220764375431849,
+    "mean_bc_train_pca": 0.007980733392872183,
+    "mean_bc_val_pca": 0.0054209942758497364,
+    "ratio_pca": 0.6792601643216623,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -7.405712594652088,
+    "gbc_val_fda": -11.04948686853858,
+    "mean_bc_train_fda": 0.005559844290279345,
+    "mean_bc_val_fda": 0.0082954105619659,
+    "ratio_fda": 1.4920221014947006,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.0024208891025928377,
+    "fda_minus_pca_mean_bc_val": 0.002874416286116164,
+    "spearman_distance_pca_vs_fda_train": 0.6163825829414089,
+    "spearman_distance_pca_vs_fda_val": 0.5617634385408394
+   },
+   "full": {
+    "status": "no common pairs",
+    "pairs_matched": 0
+   }
+  },
+  "pca16_vs_fda16": {
+   "spherical": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -2.7302537443639774,
+    "gbc_val_pca": -2.1715482153981287,
+    "mean_bc_train_pca": 0.0020497400483213044,
+    "mean_bc_val_pca": 0.0016302914530015981,
+    "ratio_pca": 0.7953649802260407,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -0.8587188871551623,
+    "gbc_val_fda": -2.2562392011578014,
+    "mean_bc_train_fda": 0.0006446838492155873,
+    "mean_bc_val_fda": 0.0016938732741424935,
+    "ratio_fda": 2.627447975008986,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.0014050561991057172,
+    "fda_minus_pca_mean_bc_val": 6.358182114089535e-05,
+    "spearman_distance_pca_vs_fda_train": 0.806966624389492,
+    "spearman_distance_pca_vs_fda_val": 0.8385329180563142
+   },
+   "diagonal": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -2.1767864114746303,
+    "gbc_val_pca": -0.8284935530660786,
+    "mean_bc_train_pca": 0.0016342240326386113,
+    "mean_bc_val_pca": 0.0006219921569565155,
+    "ratio_pca": 0.3806039713858874,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -1.0270278041158822,
+    "gbc_val_fda": -1.403233172049139,
+    "mean_bc_train_fda": 0.0007710418949818936,
+    "mean_bc_val_fda": 0.0010534783573942486,
+    "ratio_fda": 1.3663049495111903,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.0008631821376567177,
+    "fda_minus_pca_mean_bc_val": 0.00043148620043773306,
+    "spearman_distance_pca_vs_fda_train": 0.727189605766107,
+    "spearman_distance_pca_vs_fda_val": 0.6699395882225521
+   },
+   "full": {
+    "status": "no common pairs",
+    "pairs_matched": 0
+   }
+  },
+  "pca32_vs_fda32": {
+   "spherical": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -0.7106031717141382,
+    "gbc_val_pca": -0.5497550273157644,
+    "mean_bc_train_pca": 0.000533485864650254,
+    "mean_bc_val_pca": 0.00041272899948630964,
+    "ratio_pca": 0.7736456143161152,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -0.08200901733701875,
+    "gbc_val_fda": -0.20621081595252672,
+    "mean_bc_train_fda": 6.156833133409816e-05,
+    "mean_bc_val_fda": 0.00015481292488928432,
+    "ratio_fda": 2.51448953601159,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.0004719175333161558,
+    "fda_minus_pca_mean_bc_val": -0.00025791607459702535,
+    "spearman_distance_pca_vs_fda_train": 0.8364465806113405,
+    "spearman_distance_pca_vs_fda_val": 0.8205242430603434
+   },
+   "diagonal": {
+    "status": "ok",
+    "pairs_matched": 666,
+    "gbc_train_pca": -0.5189799459467894,
+    "gbc_val_pca": -0.08693751624791934,
+    "mean_bc_train_pca": 0.0003896245840441362,
+    "mean_bc_val_pca": 6.526840559153104e-05,
+    "ratio_pca": 0.16751613800667545,
+    "ratio_status_pca": "ok",
+    "gbc_train_fda": -0.10261169750139734,
+    "gbc_val_fda": -0.0828018211143619,
+    "mean_bc_train_fda": 7.703580893498299e-05,
+    "mean_bc_val_fda": 6.216352936513657e-05,
+    "ratio_fda": 0.8069432933144327,
+    "ratio_status_fda": "ok",
+    "fda_minus_pca_mean_bc_train": -0.0003125887751091532,
+    "fda_minus_pca_mean_bc_val": -3.1048762263944637e-06,
+    "spearman_distance_pca_vs_fda_train": 0.7100034416849693,
+    "spearman_distance_pca_vs_fda_val": 0.6894180830738869
+   },
+   "full": {
+    "status": "no common pairs",
+    "pairs_matched": 0
+   }
+  }
+ },
+ "regression": {
+  "compared": "gbc_train_all, gbc_val_common vs saved summary",
+  "max_rel_diff": 6.165859072226229e-14
+ },
+ "paper_vs_code": {
+  "pairs": 666,
+  "gbc_paper_train": -0.1548807530832273,
+  "gbc_code_train": -0.16374476682627964,
+  "spearman_bc_paper_vs_code": 0.9973334608858954
+ }
+}

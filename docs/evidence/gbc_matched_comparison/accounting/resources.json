@@ -1,0 +1,29 @@
+{
+ "per_group": {
+  "matched GBC": {
+   "hours": 0.27,
+   "gpu_h": 0.0,
+   "core_h": 1.07,
+   "billed_cpu_core_h": 1.07,
+   "energy_kwh": 0.0,
+   "jobs": 80,
+   "states": {
+    "COMPLETED": "80"
+   }
+  }
+ },
+ "total": {
+  "gpu_h": 0.0,
+  "core_h": 1.07,
+  "billed_cpu_core_h": 1.07,
+  "energy_kwh": 0.0
+ },
+ "per_account": {
+  "project_462001824": {
+   "gpu_h": 0.0,
+   "core_h": 1.07,
+   "billed_cpu_core_h": 1.07,
+   "energy_kwh": 0.0
+  }
+ }
+}

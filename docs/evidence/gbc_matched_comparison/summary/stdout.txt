@@ -1,0 +1,14 @@
+
+- Pair sets of train and val differ (train-valid > common): spherical 0, diagonal 0, full 1070 of 1280 run x arm rows; full with no common pair: 175
+- Full form, differing pair sets with both ratios defined: 917; previous ratio > 1 but matched ratio <= 1: 0; previous <= 1 but matched > 1: 33
+- Spherical pca64: ratio > 1 in 6 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical pca8: ratio > 1 in 10 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical pca16: ratio > 1 in 7 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical pca32: ratio > 1 in 9 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical fda8: ratio > 1 in 50 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical fda16: ratio > 1 in 43 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical fda32: ratio > 1 in 39 of 80 runs; not reported (train mean BC < 1e-6) in 0
+- Spherical d = 8, matched: 80 of 80 runs eligible; FDA mean BC train < PCA in 76, val < PCA in 74; FDA ratio > PCA ratio in 66
+- Spherical d = 16, matched: 80 of 80 runs eligible; FDA mean BC train < PCA in 76, val < PCA in 74; FDA ratio > PCA ratio in 67
+- Spherical d = 32, matched: 80 of 80 runs eligible; FDA mean BC train < PCA in 75, val < PCA in 75; FDA ratio > PCA ratio in 61
+- Spherical fda16, runs with both strata: 60; val/train ratio higher for low-support pairs (5-9) than for >= 20 in 18
