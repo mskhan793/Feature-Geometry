@@ -1,0 +1,15 @@
+JobID|JobName|Account|Partition|State|Start|End|ElapsedRaw|AllocCPUS|AllocTRES
+23711578|fg_c2_finbenthic2_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:20|2026-11-13T20:26:57|457|112|billing=112,cpu=112,energy=59315,gres/gpu:mi250=8,mem=240G,node=1
+23711579|fg_c2chk_finbenthic2_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:37:01|2026-11-13T20:41:27|266|32|billing=32,cpu=32,mem=64G,node=1
+23711580|fg_c2_aquamonitor_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:20|2026-11-13T20:47:13|1673|112|billing=112,cpu=112,energy=251258,gres/gpu:mi250=8,mem=240G,node=1
+23711581|fg_c2chk_aquamonitor_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:58:01|2026-11-13T21:04:03|362|32|billing=32,cpu=32,mem=64G,node=1
+23711582|fg_c2_bioscan5m_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:20|2026-11-13T20:31:28|728|112|billing=112,cpu=112,gres/gpu:mi250=8,mem=240G,node=1
+23711583|fg_c2chk_bioscan5m_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:37:01|2026-11-13T20:40:42|221|32|billing=32,cpu=32,mem=64G,node=1
+23711584|fg_c2_df24_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:20|2026-11-13T20:30:16|656|112|billing=112,cpu=112,energy=43863,gres/gpu:mi250=8,mem=240G,node=1
+23711585|fg_c2chk_df24_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:37:01|2026-11-13T20:42:27|326|32|billing=32,cpu=32,mem=64G,node=1
+23711586|fg_c2_food101_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:20|2026-11-13T20:24:40|320|112|billing=112,cpu=112,energy=62804,gres/gpu:mi250=8,mem=240G,node=1
+23711587|fg_c2chk_food101_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:26:30|2026-11-13T20:32:11|341|32|billing=32,cpu=32,mem=64G,node=1
+23711588|fg_c2_oxford_pets_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:23|2026-11-13T20:21:39|136|112|billing=112,cpu=112,energy=32765,gres/gpu:mi250=8,mem=240G,node=1
+23711589|fg_c2chk_oxford_pets_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:26:30|2026-11-13T20:31:01|271|32|billing=32,cpu=32,mem=64G,node=1
+23711590|fg_c2_cifar100_ijepa_h14|project_462001534|standard-g|COMPLETED|2026-11-13T20:19:23|2026-11-13T20:22:46|203|112|billing=112,cpu=112,energy=152956,gres/gpu:mi250=8,mem=240G,node=1
+23711591|fg_c2chk_cifar100_ijepa_h14|project_462001534|small|COMPLETED|2026-11-13T20:26:30|2026-11-13T20:35:06|516|32|billing=32,cpu=32,mem=64G,node=1

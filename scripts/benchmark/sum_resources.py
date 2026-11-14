@@ -45,9 +45,13 @@ def main():
     tot = t.groupby("group")[["hours", "gpu_h", "core_h", "billed_cpu_core_h", "energy_kwh"]].sum().round(2)
     tot["jobs"] = t.groupby("group").size()
     tot["states"] = t.groupby("group").State.agg(lambda s: dict(s.value_counts()))
-    a.out.with_suffix(".json").write_text(json.dumps({"per_group": tot.to_dict(orient="index"),
-                                                      "total": tot[["gpu_h", "core_h", "billed_cpu_core_h", "energy_kwh"]].sum().round(2).to_dict()},
-                                                     indent=1, default=str))
+    summary = {"per_group": tot.to_dict(orient="index"),
+               "total": tot[["gpu_h", "core_h", "billed_cpu_core_h", "energy_kwh"]].sum().round(2).to_dict()}
+    if "Account" in t:  # listings saved with the Account field: totals per billed project
+        acc = t.groupby("Account")[["gpu_h", "core_h", "billed_cpu_core_h", "energy_kwh"]].sum().round(2)
+        summary["per_account"] = acc.to_dict(orient="index")
+        print(acc.to_string())
+    a.out.with_suffix(".json").write_text(json.dumps(summary, indent=1, default=str))
     print(tot.to_string())
     print("total", tot[["gpu_h", "core_h", "billed_cpu_core_h", "energy_kwh"]].sum().round(2).to_dict())
 

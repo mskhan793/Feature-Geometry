@@ -1,0 +1,18 @@
+{
+ "combinations": 40,
+ "tasks": 480,
+ "tasks_done": 480,
+ "runs": {
+  "wrote output": 480,
+  "did not finish": 3
+ },
+ "class_fits_ok": 730994,
+ "class_fits_unreliable": 24900,
+ "class_fits_failed": 9213,
+ "class_fits_not_eligible": 27448,
+ "class_fits_not_applicable": 19330,
+ "class_fits_not_run": 85480,
+ "pair_scores_ok": 77638270,
+ "pair_scores_not_eligible": 6074180,
+ "contrast_numerical_failures": 18421
+}

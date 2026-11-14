@@ -1,0 +1,19 @@
+analysis,arm,status,count
+coupled,class_scm,not defined (n <= d),22748
+coupled,coupled,failed: numerically singular,5
+coupled,coupled_no_pooling,failed: numerically singular,9203
+fda,full,not eligible,3988820
+geometry,G2_diag,unreliable,2096
+geometry,G2_full,ineligible,630
+geometry,G2_full,unreliable,3938
+geometry,G2_tied,unreliable,2880
+geometry,G3_full,ineligible,1985
+geometry,G3_full,unreliable,6786
+geometry,G3_tied,ineligible,15
+geometry,G3_tied,unreliable,9200
+geometry,GD_tied,not applicable (no source field),19330
+lw,sample,not eligible,2070
+overlap,full,not eligible,2085360
+pooling,coupled,failed: numerically singular,5
+pooling,pool_near,not run (author instruction),42740
+pooling,pool_tax,not run (author instruction),42740

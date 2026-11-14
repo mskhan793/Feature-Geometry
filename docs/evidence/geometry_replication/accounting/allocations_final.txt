@@ -1,0 +1,13 @@
+2026-11-14T10:39:37+02:00
+Data updated: 2026-11-14 10:10:02
+Project             |                    CPU (used/allocated)|               GPU (used/allocated)|           Storage (used/allocated)
+--------------------------------------------------------------------------------------------------------------------------------------
+project_462001118   |             10463/0    (N/A) core/hours|          5370/0    (N/A) gpu/hours|          75585/0    (N/A) TB/hours
+project_462001122   |              2712/0    (N/A) core/hours|         51522/0    (N/A) gpu/hours|          49519/0    (N/A) TB/hours
+project_462001534   |           4109/5000  (82.2%) core/hours|     39642/40000  (99.1%) gpu/hours|      5304/100000   (5.3%) TB/hours
+project_462001539   |                 0/0    (N/A) core/hours|          5164/0    (N/A) gpu/hours|              0/0    (N/A) TB/hours
+project_462001555   |                 0/0    (N/A) core/hours|           106/0    (N/A) gpu/hours|             45/0    (N/A) TB/hours
+project_462001610   |                 8/0    (N/A) core/hours|             2/0    (N/A) gpu/hours|             37/0    (N/A) TB/hours
+project_462001797   |             0/10000   (0.0%) core/hours|        420/5000   (8.4%) gpu/hours|        393/90000   (0.4%) TB/hours
+project_462001805   |             0/50000   (0.0%) core/hours|         0/75000   (0.0%) gpu/hours|         0/100000   (0.0%) TB/hours
+project_462001824   |        55012/500000  (11.0%) core/hours|        993/5000  (19.9%) gpu/hours|          0/22000   (0.0%) TB/hours

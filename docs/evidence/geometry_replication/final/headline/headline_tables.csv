@@ -1,0 +1,1203 @@
+table,dataset,encoder,setting,mean,min,max,partitions,partitions_ci_above_0,partitions_ci_below_0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",aquamonitor,dinov3_l,pcs8,0.2777683787095665,0.2611112872585299,0.3210562502029352,5.0,5,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",bioscan5m,dinov3_l,pcs8,0.1104166642044286,0.1104166642044286,0.1104166642044286,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",cifar100,dinov3_l,pcs8,0.1490011033224827,0.1490011033224827,0.1490011033224827,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",df24,dinov3_l,pcs8,-0.1250464367988451,-0.1250464367988451,-0.1250464367988451,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",fgvc_aircraft,dinov3_l,pcs8,-0.0009596391890437,-0.0009596391890437,-0.0009596391890437,1.0,0,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",finbenthic2,dinov3_l,pcs8,0.0574415660353378,0.0001487288277511,0.1165959284803921,5.0,2,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",food101,dinov3_l,pcs8,0.1523959146396212,0.1523959146396212,0.1523959146396212,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",oxford_pets,dinov3_l,pcs8,-0.0881437907300524,-0.0881437907300524,-0.0881437907300524,1.0,0,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",aquamonitor,dinov2_l,pcs8,0.0955877456077098,0.0597315366079186,0.1206418698806954,5.0,3,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",bioscan5m,dinov2_l,pcs8,0.0851711008882072,0.0851711008882072,0.0851711008882072,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",cifar100,dinov2_l,pcs8,0.1539472755722421,0.1539472755722421,0.1539472755722421,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",df24,dinov2_l,pcs8,-0.0666640386943524,-0.0666640386943524,-0.0666640386943524,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",fgvc_aircraft,dinov2_l,pcs8,-0.0671995101050238,-0.0671995101050238,-0.0671995101050238,1.0,0,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",finbenthic2,dinov2_l,pcs8,0.0318124482608698,-0.0884830904717224,0.106356371462986,5.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",food101,dinov2_l,pcs8,0.1902814269615994,0.1902814269615994,0.1902814269615994,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",oxford_pets,dinov2_l,pcs8,0.1151961695025689,0.1151961695025689,0.1151961695025689,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",aquamonitor,bioclip2,pcs8,0.0975769763438445,-0.0933375394850115,0.1885404970108221,5.0,4,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",bioscan5m,bioclip2,pcs8,0.0376549210420555,0.0376549210420555,0.0376549210420555,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",cifar100,bioclip2,pcs8,0.0579282427722286,0.0579282427722286,0.0579282427722286,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",df24,bioclip2,pcs8,-0.1734285594853211,-0.1734285594853211,-0.1734285594853211,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",fgvc_aircraft,bioclip2,pcs8,-1.0765766850420473,-1.0765766850420473,-1.0765766850420473,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",finbenthic2,bioclip2,pcs8,0.0765377306411529,-0.0126974315916468,0.1328632007715695,5.0,3,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",food101,bioclip2,pcs8,0.1292943365704658,0.1292943365704658,0.1292943365704658,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",oxford_pets,bioclip2,pcs8,-0.1908431072498094,-0.1908431072498094,-0.1908431072498094,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",aquamonitor,siglip2,pcs8,0.1429858997722739,0.0623644231511187,0.1796142456795537,5.0,4,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",bioscan5m,siglip2,pcs8,0.1171437211307825,0.1171437211307825,0.1171437211307825,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",cifar100,siglip2,pcs8,0.1565697767738885,0.1565697767738885,0.1565697767738885,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",df24,siglip2,pcs8,-0.093509213275514,-0.093509213275514,-0.093509213275514,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",fgvc_aircraft,siglip2,pcs8,-0.9591553641929528,-0.9591553641929528,-0.9591553641929528,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",finbenthic2,siglip2,pcs8,0.1152495079601164,0.0790202278882966,0.1610275848810902,5.0,4,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",food101,siglip2,pcs8,0.3793465103791054,0.3793465103791054,0.3793465103791054,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",oxford_pets,siglip2,pcs8,0.0977648065843126,0.0977648065843126,0.0977648065843126,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",aquamonitor,ijepa_h14,pcs8,1.188214808711639,1.151638550040751,1.2146945925495694,5.0,5,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",bioscan5m,ijepa_h14,pcs8,0.1126018191856785,0.1126018191856785,0.1126018191856785,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",cifar100,ijepa_h14,pcs8,0.1254843169429144,0.1254843169429144,0.1254843169429144,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",df24,ijepa_h14,pcs8,-0.113320366609621,-0.113320366609621,-0.113320366609621,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",fgvc_aircraft,ijepa_h14,pcs8,-0.3783765392229494,-0.3783765392229494,-0.3783765392229494,1.0,0,1
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",finbenthic2,ijepa_h14,pcs8,0.1338567104646657,0.0895022308390624,0.1641278022490331,5.0,5,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",food101,ijepa_h14,pcs8,0.1716391196507606,0.1716391196507606,0.1716391196507606,1.0,1,0
+"Mixture: G2_tied - G1_full, class-macro held-out log-likelihood, 8 PCs (reliable fits)",oxford_pets,ijepa_h14,pcs8,0.0564914402961452,0.0564914402961452,0.0564914402961452,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",aquamonitor,dinov3_l,pcs16,0.516414512064306,0.3985705037057498,0.6291308553357076,5.0,5,0
+"Mixture: G2_tied - G1_full, 16 PCs",bioscan5m,dinov3_l,pcs16,0.0185753082831499,0.0185753082831499,0.0185753082831499,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",cifar100,dinov3_l,pcs16,0.1759482661985427,0.1759482661985427,0.1759482661985427,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",df24,dinov3_l,pcs16,-0.5034289128967111,-0.5034289128967111,-0.5034289128967111,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",fgvc_aircraft,dinov3_l,pcs16,-1.344375716818801,-1.344375716818801,-1.344375716818801,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",finbenthic2,dinov3_l,pcs16,0.0105237676940176,-0.1217244704035933,0.0707042680241222,5.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",food101,dinov3_l,pcs16,0.2325966773385051,0.2325966773385051,0.2325966773385051,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",oxford_pets,dinov3_l,pcs16,0.0422975664513462,0.0422975664513462,0.0422975664513462,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",aquamonitor,dinov2_l,pcs16,0.1085953993178876,0.0414320814368446,0.1563395776607733,5.0,4,0
+"Mixture: G2_tied - G1_full, 16 PCs",bioscan5m,dinov2_l,pcs16,0.0153459294984419,0.0153459294984419,0.0153459294984419,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",cifar100,dinov2_l,pcs16,0.1877782607352654,0.1877782607352654,0.1877782607352654,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",df24,dinov2_l,pcs16,-0.3767600871649519,-0.3767600871649519,-0.3767600871649519,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",fgvc_aircraft,dinov2_l,pcs16,-1.943928436483854,-1.943928436483854,-1.943928436483854,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",finbenthic2,dinov2_l,pcs16,-0.1214656344589076,-0.187036383209141,0.0313286964118823,5.0,0,4
+"Mixture: G2_tied - G1_full, 16 PCs",food101,dinov2_l,pcs16,0.2756529293793737,0.2756529293793737,0.2756529293793737,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",oxford_pets,dinov2_l,pcs16,0.0766487893593065,0.0766487893593065,0.0766487893593065,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",aquamonitor,bioclip2,pcs16,0.2069571823316439,0.1120749586990716,0.3877500771528108,5.0,2,0
+"Mixture: G2_tied - G1_full, 16 PCs",bioscan5m,bioclip2,pcs16,-0.0273232601798729,-0.0273232601798729,-0.0273232601798729,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",cifar100,bioclip2,pcs16,0.0695149727657852,0.0695149727657852,0.0695149727657852,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",df24,bioclip2,pcs16,-0.6361766650194522,-0.6361766650194522,-0.6361766650194522,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",fgvc_aircraft,bioclip2,pcs16,,,,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",finbenthic2,bioclip2,pcs16,-0.0815052238614072,-0.2668375346572711,-0.0012736704859605,5.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",food101,bioclip2,pcs16,0.1331639026267292,0.1331639026267292,0.1331639026267292,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",oxford_pets,bioclip2,pcs16,-0.1713747943701617,-0.1713747943701617,-0.1713747943701617,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",aquamonitor,siglip2,pcs16,0.2898714322755562,0.1471730682706428,0.4084073857906204,5.0,3,0
+"Mixture: G2_tied - G1_full, 16 PCs",bioscan5m,siglip2,pcs16,0.129236620725356,0.129236620725356,0.129236620725356,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",cifar100,siglip2,pcs16,0.1533289338825456,0.1533289338825456,0.1533289338825456,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",df24,siglip2,pcs16,-0.4367269029501948,-0.4367269029501948,-0.4367269029501948,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",fgvc_aircraft,siglip2,pcs16,-2.3653020385487094,-2.3653020385487094,-2.3653020385487094,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",finbenthic2,siglip2,pcs16,-0.1141187119485612,-0.4050811270044352,0.0398629386451958,5.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",food101,siglip2,pcs16,0.6288786206454974,0.6288786206454974,0.6288786206454974,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",oxford_pets,siglip2,pcs16,-0.071615149849542,-0.071615149849542,-0.071615149849542,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",aquamonitor,ijepa_h14,pcs16,1.2644951223467065,1.1021349502464983,1.5072177595994112,5.0,5,0
+"Mixture: G2_tied - G1_full, 16 PCs",bioscan5m,ijepa_h14,pcs16,0.1748938909751454,0.1748938909751454,0.1748938909751454,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",cifar100,ijepa_h14,pcs16,0.1502373126063074,0.1502373126063074,0.1502373126063074,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",df24,ijepa_h14,pcs16,-0.4319358732668738,-0.4319358732668738,-0.4319358732668738,1.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",fgvc_aircraft,ijepa_h14,pcs16,-0.6850279974011456,-0.6850279974011456,-0.6850279974011456,1.0,0,0
+"Mixture: G2_tied - G1_full, 16 PCs",finbenthic2,ijepa_h14,pcs16,-0.0601522781137622,-0.1694940446630217,0.0408105402736369,5.0,0,1
+"Mixture: G2_tied - G1_full, 16 PCs",food101,ijepa_h14,pcs16,0.2408269760903311,0.2408269760903311,0.2408269760903311,1.0,1,0
+"Mixture: G2_tied - G1_full, 16 PCs",oxford_pets,ijepa_h14,pcs16,-0.2752413104208391,-0.2752413104208391,-0.2752413104208391,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",aquamonitor,dinov3_l,pcs8,0.0206421948195918,-0.1952610241624,0.1955623004517606,5.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",bioscan5m,dinov3_l,pcs8,0.1541902515286773,0.1541902515286773,0.1541902515286773,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",cifar100,dinov3_l,pcs8,0.3763121920180179,0.3763121920180179,0.3763121920180179,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",df24,dinov3_l,pcs8,-0.4937432546870826,-0.4937432546870826,-0.4937432546870826,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",fgvc_aircraft,dinov3_l,pcs8,-2.7827916806282444,-2.7827916806282444,-2.7827916806282444,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",finbenthic2,dinov3_l,pcs8,-0.1305039995764599,-0.2291146708809396,0.0254694647077286,5.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",food101,dinov3_l,pcs8,0.7200223639403441,0.7200223639403441,0.7200223639403441,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",oxford_pets,dinov3_l,pcs8,-0.3687009191245353,-0.3687009191245353,-0.3687009191245353,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",aquamonitor,dinov2_l,pcs8,-0.0280048594209746,-0.2345676633472144,0.1034841348068163,5.0,0,0
+"Mixture: G2_full - G1_full, 8 PCs",bioscan5m,dinov2_l,pcs8,0.3897192848871573,0.3897192848871573,0.3897192848871573,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",cifar100,dinov2_l,pcs8,0.6079869961299793,0.6079869961299793,0.6079869961299793,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",df24,dinov2_l,pcs8,-0.2325697433172461,-0.2325697433172461,-0.2325697433172461,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",fgvc_aircraft,dinov2_l,pcs8,-2.1771608622667267,-2.1771608622667267,-2.1771608622667267,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",finbenthic2,dinov2_l,pcs8,0.0322993645038014,-0.1053635346492602,0.1408339894525329,5.0,0,0
+"Mixture: G2_full - G1_full, 8 PCs",food101,dinov2_l,pcs8,0.9308263701765264,0.9308263701765264,0.9308263701765264,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",oxford_pets,dinov2_l,pcs8,0.0684755607483662,0.0684755607483662,0.0684755607483662,1.0,0,0
+"Mixture: G2_full - G1_full, 8 PCs",aquamonitor,bioclip2,pcs8,-0.0333600043260424,-0.2613174544800888,0.188568686521457,5.0,1,1
+"Mixture: G2_full - G1_full, 8 PCs",bioscan5m,bioclip2,pcs8,0.0538427731983015,0.0538427731983015,0.0538427731983015,1.0,0,0
+"Mixture: G2_full - G1_full, 8 PCs",cifar100,bioclip2,pcs8,0.2128714221439159,0.2128714221439159,0.2128714221439159,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",df24,bioclip2,pcs8,-0.6190720278760632,-0.6190720278760632,-0.6190720278760632,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",fgvc_aircraft,bioclip2,pcs8,-5.416768810882084,-5.416768810882084,-5.416768810882084,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",finbenthic2,bioclip2,pcs8,0.6174407621431669,0.3297549113796626,0.7961986043532648,5.0,4,0
+"Mixture: G2_full - G1_full, 8 PCs",food101,bioclip2,pcs8,0.2813538418945133,0.2813538418945133,0.2813538418945133,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",oxford_pets,bioclip2,pcs8,-0.5292991955631272,-0.5292991955631272,-0.5292991955631272,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",aquamonitor,siglip2,pcs8,0.1192209286136799,-0.5494262283775091,0.3801174444337497,5.0,3,0
+"Mixture: G2_full - G1_full, 8 PCs",bioscan5m,siglip2,pcs8,0.2302833860189742,0.2302833860189742,0.2302833860189742,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",cifar100,siglip2,pcs8,0.4696739841457917,0.4696739841457917,0.4696739841457917,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",df24,siglip2,pcs8,-0.5779294654505763,-0.5779294654505763,-0.5779294654505763,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",fgvc_aircraft,siglip2,pcs8,-4.657717091678422,-4.657717091678422,-4.657717091678422,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",finbenthic2,siglip2,pcs8,0.2897543568750511,0.0383311170897,0.4562193096548264,5.0,3,0
+"Mixture: G2_full - G1_full, 8 PCs",food101,siglip2,pcs8,0.4796586458153092,0.4796586458153092,0.4796586458153092,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",oxford_pets,siglip2,pcs8,-0.2246810683437745,-0.2246810683437745,-0.2246810683437745,1.0,0,0
+"Mixture: G2_full - G1_full, 8 PCs",aquamonitor,ijepa_h14,pcs8,1.476647565504943,1.255285923760496,1.691152366283408,5.0,5,0
+"Mixture: G2_full - G1_full, 8 PCs",bioscan5m,ijepa_h14,pcs8,0.4698817933343152,0.4698817933343152,0.4698817933343152,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",cifar100,ijepa_h14,pcs8,0.5028233852676857,0.5028233852676857,0.5028233852676857,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",df24,ijepa_h14,pcs8,-0.4262105513411657,-0.4262105513411657,-0.4262105513411657,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",fgvc_aircraft,ijepa_h14,pcs8,-6.632256828990095,-6.632256828990095,-6.632256828990095,1.0,0,1
+"Mixture: G2_full - G1_full, 8 PCs",finbenthic2,ijepa_h14,pcs8,0.6544279477530004,0.4606058408993901,0.8687363585075911,5.0,5,0
+"Mixture: G2_full - G1_full, 8 PCs",food101,ijepa_h14,pcs8,0.3695839704951822,0.3695839704951822,0.3695839704951822,1.0,1,0
+"Mixture: G2_full - G1_full, 8 PCs",oxford_pets,ijepa_h14,pcs8,-0.1516420171247978,-0.1516420171247978,-0.1516420171247978,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",aquamonitor,dinov3_l,pcs8,21.0,18.0,24.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",bioscan5m,dinov3_l,pcs8,83.0,83.0,83.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",cifar100,dinov3_l,pcs8,39.0,39.0,39.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",df24,dinov3_l,pcs8,37.0,37.0,37.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",fgvc_aircraft,dinov3_l,pcs8,8.0,8.0,8.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",finbenthic2,dinov3_l,pcs8,7.6,6.0,9.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",food101,dinov3_l,pcs8,45.0,45.0,45.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",oxford_pets,dinov3_l,pcs8,1.0,1.0,1.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",aquamonitor,dinov2_l,pcs8,15.2,12.0,20.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",bioscan5m,dinov2_l,pcs8,74.0,74.0,74.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",cifar100,dinov2_l,pcs8,34.0,34.0,34.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",df24,dinov2_l,pcs8,57.0,57.0,57.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",fgvc_aircraft,dinov2_l,pcs8,7.0,7.0,7.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",finbenthic2,dinov2_l,pcs8,6.8,6.0,8.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",food101,dinov2_l,pcs8,56.0,56.0,56.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",oxford_pets,dinov2_l,pcs8,2.0,2.0,2.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",aquamonitor,bioclip2,pcs8,15.8,13.0,19.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",bioscan5m,bioclip2,pcs8,55.0,55.0,55.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",cifar100,bioclip2,pcs8,13.0,13.0,13.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",df24,bioclip2,pcs8,23.0,23.0,23.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",finbenthic2,bioclip2,pcs8,9.4,8.0,12.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",food101,bioclip2,pcs8,53.0,53.0,53.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",aquamonitor,siglip2,pcs8,16.4,14.0,18.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",bioscan5m,siglip2,pcs8,93.0,93.0,93.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",cifar100,siglip2,pcs8,39.0,39.0,39.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",df24,siglip2,pcs8,86.0,86.0,86.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",finbenthic2,siglip2,pcs8,8.6,7.0,12.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",food101,siglip2,pcs8,95.0,95.0,95.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",oxford_pets,siglip2,pcs8,6.0,6.0,6.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",aquamonitor,ijepa_h14,pcs8,30.8,28.0,32.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",bioscan5m,ijepa_h14,pcs8,116.0,116.0,116.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",cifar100,ijepa_h14,pcs8,31.0,31.0,31.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",df24,ijepa_h14,pcs8,36.0,36.0,36.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",fgvc_aircraft,ijepa_h14,pcs8,2.0,2.0,2.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",finbenthic2,ijepa_h14,pcs8,7.8,5.0,10.0,5.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",food101,ijepa_h14,pcs8,57.0,57.0,57.0,1.0,0,0
+"Classes labelled 'mixture-supported split (exploratory)', 8 PCs",oxford_pets,ijepa_h14,pcs8,7.0,7.0,7.0,1.0,0,0
+Classes analysed at 8 PCs,aquamonitor,dinov3_l,pcs8,40.8,40.0,41.0,5.0,,
+Classes analysed at 8 PCs,bioscan5m,dinov3_l,pcs8,531.0,531.0,531.0,1.0,,
+Classes analysed at 8 PCs,cifar100,dinov3_l,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,df24,dinov3_l,pcs8,889.0,889.0,889.0,1.0,,
+Classes analysed at 8 PCs,fgvc_aircraft,dinov3_l,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,finbenthic2,dinov3_l,pcs8,35.0,34.0,36.0,5.0,,
+Classes analysed at 8 PCs,food101,dinov3_l,pcs8,101.0,101.0,101.0,1.0,,
+Classes analysed at 8 PCs,oxford_pets,dinov3_l,pcs8,37.0,37.0,37.0,1.0,,
+Classes analysed at 8 PCs,aquamonitor,dinov2_l,pcs8,40.8,40.0,41.0,5.0,,
+Classes analysed at 8 PCs,bioscan5m,dinov2_l,pcs8,531.0,531.0,531.0,1.0,,
+Classes analysed at 8 PCs,cifar100,dinov2_l,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,df24,dinov2_l,pcs8,889.0,889.0,889.0,1.0,,
+Classes analysed at 8 PCs,fgvc_aircraft,dinov2_l,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,finbenthic2,dinov2_l,pcs8,35.0,34.0,36.0,5.0,,
+Classes analysed at 8 PCs,food101,dinov2_l,pcs8,101.0,101.0,101.0,1.0,,
+Classes analysed at 8 PCs,oxford_pets,dinov2_l,pcs8,37.0,37.0,37.0,1.0,,
+Classes analysed at 8 PCs,aquamonitor,bioclip2,pcs8,40.8,40.0,41.0,5.0,,
+Classes analysed at 8 PCs,bioscan5m,bioclip2,pcs8,531.0,531.0,531.0,1.0,,
+Classes analysed at 8 PCs,cifar100,bioclip2,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,df24,bioclip2,pcs8,889.0,889.0,889.0,1.0,,
+Classes analysed at 8 PCs,fgvc_aircraft,bioclip2,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,finbenthic2,bioclip2,pcs8,35.0,34.0,36.0,5.0,,
+Classes analysed at 8 PCs,food101,bioclip2,pcs8,101.0,101.0,101.0,1.0,,
+Classes analysed at 8 PCs,oxford_pets,bioclip2,pcs8,37.0,37.0,37.0,1.0,,
+Classes analysed at 8 PCs,aquamonitor,siglip2,pcs8,40.8,40.0,41.0,5.0,,
+Classes analysed at 8 PCs,bioscan5m,siglip2,pcs8,531.0,531.0,531.0,1.0,,
+Classes analysed at 8 PCs,cifar100,siglip2,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,df24,siglip2,pcs8,889.0,889.0,889.0,1.0,,
+Classes analysed at 8 PCs,fgvc_aircraft,siglip2,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,finbenthic2,siglip2,pcs8,35.0,34.0,36.0,5.0,,
+Classes analysed at 8 PCs,food101,siglip2,pcs8,101.0,101.0,101.0,1.0,,
+Classes analysed at 8 PCs,oxford_pets,siglip2,pcs8,37.0,37.0,37.0,1.0,,
+Classes analysed at 8 PCs,aquamonitor,ijepa_h14,pcs8,40.8,40.0,41.0,5.0,,
+Classes analysed at 8 PCs,bioscan5m,ijepa_h14,pcs8,531.0,531.0,531.0,1.0,,
+Classes analysed at 8 PCs,cifar100,ijepa_h14,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,df24,ijepa_h14,pcs8,889.0,889.0,889.0,1.0,,
+Classes analysed at 8 PCs,fgvc_aircraft,ijepa_h14,pcs8,100.0,100.0,100.0,1.0,,
+Classes analysed at 8 PCs,finbenthic2,ijepa_h14,pcs8,35.0,34.0,36.0,5.0,,
+Classes analysed at 8 PCs,food101,ijepa_h14,pcs8,101.0,101.0,101.0,1.0,,
+Classes analysed at 8 PCs,oxford_pets,ijepa_h14,pcs8,37.0,37.0,37.0,1.0,,
+"Source-group model GD_tied - G1_full, 8 PCs (AquaMonitor only)",aquamonitor,dinov3_l,pcs8,0.4550182258356023,0.4029238005087697,0.4935603832248337,5.0,5,0
+"Source-group model GD_tied - G1_full, 8 PCs (AquaMonitor only)",aquamonitor,dinov2_l,pcs8,0.1195360263290713,0.0785282748982609,0.1389128173076287,5.0,4,0
+"Source-group model GD_tied - G1_full, 8 PCs (AquaMonitor only)",aquamonitor,bioclip2,pcs8,0.1775784510880776,0.1546310708719228,0.1943628048944619,5.0,5,0
+"Source-group model GD_tied - G1_full, 8 PCs (AquaMonitor only)",aquamonitor,siglip2,pcs8,0.2913531918208975,0.2060684640739934,0.3535326023198619,5.0,5,0
+"Source-group model GD_tied - G1_full, 8 PCs (AquaMonitor only)",aquamonitor,ijepa_h14,pcs8,1.4595605525568487,1.4035808936135503,1.4996141999872887,5.0,5,0
+"Within-class effective rank at n = 30, class median (native)",aquamonitor,dinov3_l,native,14.241723031228377,13.836597340323683,14.594471550930535,5.0,,
+"Within-class effective rank at n = 30, class median (native)",bioscan5m,dinov3_l,native,20.378536332865263,20.378536332865263,20.378536332865263,1.0,,
+"Within-class effective rank at n = 30, class median (native)",cifar100,dinov3_l,native,21.85643465316692,21.85643465316692,21.85643465316692,1.0,,
+"Within-class effective rank at n = 30, class median (native)",df24,dinov3_l,native,19.218899618440208,19.218899618440208,19.218899618440208,1.0,,
+"Within-class effective rank at n = 30, class median (native)",fgvc_aircraft,dinov3_l,native,11.58596594709101,11.58596594709101,11.58596594709101,1.0,,
+"Within-class effective rank at n = 30, class median (native)",finbenthic2,dinov3_l,native,16.689731155181903,16.402165326215734,16.928512672134758,5.0,,
+"Within-class effective rank at n = 30, class median (native)",food101,dinov3_l,native,19.64630787418021,19.64630787418021,19.64630787418021,1.0,,
+"Within-class effective rank at n = 30, class median (native)",oxford_pets,dinov3_l,native,20.711341441652078,20.711341441652078,20.711341441652078,1.0,,
+"Within-class effective rank at n = 30, class median (native)",aquamonitor,dinov2_l,native,15.825726392368988,15.461535327079362,16.00806455392839,5.0,,
+"Within-class effective rank at n = 30, class median (native)",bioscan5m,dinov2_l,native,19.11534738192296,19.11534738192296,19.11534738192296,1.0,,
+"Within-class effective rank at n = 30, class median (native)",cifar100,dinov2_l,native,21.295288445079628,21.295288445079628,21.295288445079628,1.0,,
+"Within-class effective rank at n = 30, class median (native)",df24,dinov2_l,native,18.98946149810857,18.98946149810857,18.98946149810857,1.0,,
+"Within-class effective rank at n = 30, class median (native)",fgvc_aircraft,dinov2_l,native,8.27633981077037,8.27633981077037,8.27633981077037,1.0,,
+"Within-class effective rank at n = 30, class median (native)",finbenthic2,dinov2_l,native,16.199933328128502,15.968664605521816,16.51312428534459,5.0,,
+"Within-class effective rank at n = 30, class median (native)",food101,dinov2_l,native,18.799883444212075,18.799883444212075,18.799883444212075,1.0,,
+"Within-class effective rank at n = 30, class median (native)",oxford_pets,dinov2_l,native,18.19756853166311,18.19756853166311,18.19756853166311,1.0,,
+"Within-class effective rank at n = 30, class median (native)",aquamonitor,bioclip2,native,14.570087642002756,14.369147950262882,14.856747208277016,5.0,,
+"Within-class effective rank at n = 30, class median (native)",bioscan5m,bioclip2,native,18.41953015390235,18.41953015390235,18.41953015390235,1.0,,
+"Within-class effective rank at n = 30, class median (native)",cifar100,bioclip2,native,20.949602557133723,20.949602557133723,20.949602557133723,1.0,,
+"Within-class effective rank at n = 30, class median (native)",df24,bioclip2,native,19.64475593845175,19.64475593845175,19.64475593845175,1.0,,
+"Within-class effective rank at n = 30, class median (native)",fgvc_aircraft,bioclip2,native,21.88470717756328,21.88470717756328,21.88470717756328,1.0,,
+"Within-class effective rank at n = 30, class median (native)",finbenthic2,bioclip2,native,10.90197785774206,10.558571621770076,11.147008803866312,5.0,,
+"Within-class effective rank at n = 30, class median (native)",food101,bioclip2,native,21.145268065370367,21.145268065370367,21.145268065370367,1.0,,
+"Within-class effective rank at n = 30, class median (native)",oxford_pets,bioclip2,native,19.28395837897794,19.28395837897794,19.28395837897794,1.0,,
+"Within-class effective rank at n = 30, class median (native)",aquamonitor,siglip2,native,10.096800567719717,9.708787175240795,10.599151695045204,5.0,,
+"Within-class effective rank at n = 30, class median (native)",bioscan5m,siglip2,native,16.939679996566007,16.939679996566007,16.939679996566007,1.0,,
+"Within-class effective rank at n = 30, class median (native)",cifar100,siglip2,native,18.365793638513303,18.365793638513303,18.365793638513303,1.0,,
+"Within-class effective rank at n = 30, class median (native)",df24,siglip2,native,19.018531716199156,19.018531716199156,19.018531716199156,1.0,,
+"Within-class effective rank at n = 30, class median (native)",fgvc_aircraft,siglip2,native,20.853271589056384,20.853271589056384,20.853271589056384,1.0,,
+"Within-class effective rank at n = 30, class median (native)",finbenthic2,siglip2,native,9.84252764939806,9.608286016080925,10.090982786167771,5.0,,
+"Within-class effective rank at n = 30, class median (native)",food101,siglip2,native,20.21475105657152,20.21475105657152,20.21475105657152,1.0,,
+"Within-class effective rank at n = 30, class median (native)",oxford_pets,siglip2,native,20.193595254742718,20.193595254742718,20.193595254742718,1.0,,
+"Within-class effective rank at n = 30, class median (native)",aquamonitor,ijepa_h14,native,7.512985177183594,7.194588037490745,7.706592789037708,5.0,,
+"Within-class effective rank at n = 30, class median (native)",bioscan5m,ijepa_h14,native,15.251464880531598,15.251464880531598,15.251464880531598,1.0,,
+"Within-class effective rank at n = 30, class median (native)",cifar100,ijepa_h14,native,15.69464096246324,15.69464096246324,15.69464096246324,1.0,,
+"Within-class effective rank at n = 30, class median (native)",df24,ijepa_h14,native,17.035757649322928,17.035757649322928,17.035757649322928,1.0,,
+"Within-class effective rank at n = 30, class median (native)",fgvc_aircraft,ijepa_h14,native,10.81238465489055,10.81238465489055,10.81238465489055,1.0,,
+"Within-class effective rank at n = 30, class median (native)",finbenthic2,ijepa_h14,native,8.183248224524258,7.880926938498511,8.394547336301642,5.0,,
+"Within-class effective rank at n = 30, class median (native)",food101,ijepa_h14,native,20.47031256375193,20.47031256375193,20.47031256375193,1.0,,
+"Within-class effective rank at n = 30, class median (native)",oxford_pets,ijepa_h14,native,18.73777215605526,18.73777215605526,18.73777215605526,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",aquamonitor,dinov3_l,native,0.2426138092278406,0.2367978169749464,0.2460341720208238,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",bioscan5m,dinov3_l,native,0.1191625136994211,0.1191625136994211,0.1191625136994211,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",cifar100,dinov3_l,native,0.1053803726433716,0.1053803726433716,0.1053803726433716,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",df24,dinov3_l,native,0.1422680244029064,0.1422680244029064,0.1422680244029064,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",fgvc_aircraft,dinov3_l,native,0.3187931611010537,0.3187931611010537,0.3187931611010537,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",finbenthic2,dinov3_l,native,0.2088498992997255,0.2027877368034349,0.21253826897635,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",food101,dinov3_l,native,0.123010191461328,0.123010191461328,0.123010191461328,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",oxford_pets,dinov3_l,native,0.1256354600101629,0.1256354600101629,0.1256354600101629,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",aquamonitor,dinov2_l,native,0.2206012257737527,0.2161799174869787,0.2241418057227709,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",bioscan5m,dinov2_l,native,0.1405256888622038,0.1405256888622038,0.1405256888622038,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",cifar100,dinov2_l,native,0.1260913520383343,0.1260913520383343,0.1260913520383343,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",df24,dinov2_l,native,0.1476417678138555,0.1476417678138555,0.1476417678138555,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",fgvc_aircraft,dinov2_l,native,0.3866597392958671,0.3866597392958671,0.3866597392958671,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",finbenthic2,dinov2_l,native,0.2329282276006445,0.2289361705319553,0.2399672578562806,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",food101,dinov2_l,native,0.129843423173937,0.129843423173937,0.129843423173937,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",oxford_pets,dinov2_l,native,0.1617227304497868,0.1617227304497868,0.1617227304497868,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",aquamonitor,bioclip2,native,0.2421933738012327,0.2394755408957551,0.2454253841289626,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",bioscan5m,bioclip2,native,0.1383282057705909,0.1383282057705909,0.1383282057705909,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",cifar100,bioclip2,native,0.1155046192539742,0.1155046192539742,0.1155046192539742,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",df24,bioclip2,native,0.117424291960938,0.117424291960938,0.117424291960938,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",fgvc_aircraft,bioclip2,native,0.1178754595449644,0.1178754595449644,0.1178754595449644,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",finbenthic2,bioclip2,native,0.3700971004592845,0.3602212777591568,0.3833387932897148,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",food101,bioclip2,native,0.0961250027955189,0.0961250027955189,0.0961250027955189,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",oxford_pets,bioclip2,native,0.1445516144891629,0.1445516144891629,0.1445516144891629,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",aquamonitor,siglip2,native,0.3681272578554914,0.3502801658053515,0.3791284711155107,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",bioscan5m,siglip2,native,0.1550013731570849,0.1550013731570849,0.1550013731570849,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",cifar100,siglip2,native,0.1444996457929047,0.1444996457929047,0.1444996457929047,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",df24,siglip2,native,0.1275299698501169,0.1275299698501169,0.1275299698501169,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",fgvc_aircraft,siglip2,native,0.1372020606050684,0.1372020606050684,0.1372020606050684,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",finbenthic2,siglip2,native,0.3763127401130595,0.3688608436652369,0.3848026736702742,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",food101,siglip2,native,0.1009220287765449,0.1009220287765449,0.1009220287765449,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",oxford_pets,siglip2,native,0.1178694319226913,0.1178694319226913,0.1178694319226913,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",aquamonitor,ijepa_h14,native,0.3904588489565984,0.3724176778791327,0.4059850939496852,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",bioscan5m,ijepa_h14,native,0.1829628801605029,0.1829628801605029,0.1829628801605029,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",cifar100,ijepa_h14,native,0.1995718895089114,0.1995718895089114,0.1995718895089114,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",df24,ijepa_h14,native,0.1654945812384874,0.1654945812384874,0.1654945812384874,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",fgvc_aircraft,ijepa_h14,native,0.317960589630621,0.317960589630621,0.317960589630621,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",finbenthic2,ijepa_h14,native,0.4197881867823876,0.413809217021179,0.4230520104620887,5.0,,
+"Within-class top-1 eigenvalue share, class median (native)",food101,ijepa_h14,native,0.0929253056390778,0.0929253056390778,0.0929253056390778,1.0,,
+"Within-class top-1 eigenvalue share, class median (native)",oxford_pets,ijepa_h14,native,0.1362694097595465,0.1362694097595465,0.1362694097595465,1.0,,
+"Spearman(d' val, radius separation), native",aquamonitor,dinov3_l,native,0.7598239010739707,0.6869287432015813,0.8113517093998956,5.0,,
+"Spearman(d' val, radius separation), native",bioscan5m,dinov3_l,native,0.700295111957417,0.700295111957417,0.700295111957417,1.0,,
+"Spearman(d' val, radius separation), native",cifar100,dinov3_l,native,0.547256311309555,0.547256311309555,0.547256311309555,1.0,,
+"Spearman(d' val, radius separation), native",df24,dinov3_l,native,0.6931790540445488,0.6931790540445488,0.6931790540445488,1.0,,
+"Spearman(d' val, radius separation), native",fgvc_aircraft,dinov3_l,native,0.7347966872499597,0.7347966872499597,0.7347966872499597,1.0,,
+"Spearman(d' val, radius separation), native",finbenthic2,dinov3_l,native,0.7720499214479706,0.7463929110428598,0.8015959607353214,5.0,,
+"Spearman(d' val, radius separation), native",food101,dinov3_l,native,0.7097736680395885,0.7097736680395885,0.7097736680395885,1.0,,
+"Spearman(d' val, radius separation), native",oxford_pets,dinov3_l,native,0.5332140066930566,0.5332140066930566,0.5332140066930566,1.0,,
+"Spearman(d' val, radius separation), native",aquamonitor,dinov2_l,native,0.7701440407779029,0.7136933612914719,0.8197791315761667,5.0,,
+"Spearman(d' val, radius separation), native",bioscan5m,dinov2_l,native,0.7698994346033724,0.7698994346033724,0.7698994346033724,1.0,,
+"Spearman(d' val, radius separation), native",cifar100,dinov2_l,native,0.531726598568455,0.531726598568455,0.531726598568455,1.0,,
+"Spearman(d' val, radius separation), native",df24,dinov2_l,native,0.6959509605061351,0.6959509605061351,0.6959509605061351,1.0,,
+"Spearman(d' val, radius separation), native",fgvc_aircraft,dinov2_l,native,0.7327679916660869,0.7327679916660869,0.7327679916660869,1.0,,
+"Spearman(d' val, radius separation), native",finbenthic2,dinov2_l,native,0.7825373819375152,0.7537770947913296,0.8245178649047582,5.0,,
+"Spearman(d' val, radius separation), native",food101,dinov2_l,native,0.6984938879134864,0.6984938879134864,0.6984938879134864,1.0,,
+"Spearman(d' val, radius separation), native",oxford_pets,dinov2_l,native,0.6611395988654728,0.6611395988654728,0.6611395988654728,1.0,,
+"Spearman(d' val, radius separation), native",aquamonitor,bioclip2,native,0.6985366043743342,0.6037877771397274,0.7612524271031147,5.0,,
+"Spearman(d' val, radius separation), native",bioscan5m,bioclip2,native,0.4635838439275094,0.4635838439275094,0.4635838439275094,1.0,,
+"Spearman(d' val, radius separation), native",cifar100,bioclip2,native,0.5505766354936309,0.5505766354936309,0.5505766354936309,1.0,,
+"Spearman(d' val, radius separation), native",df24,bioclip2,native,0.4823947200406911,0.4823947200406911,0.4823947200406911,1.0,,
+"Spearman(d' val, radius separation), native",fgvc_aircraft,bioclip2,native,0.9099257090371708,0.9099257090371708,0.9099257090371708,1.0,,
+"Spearman(d' val, radius separation), native",finbenthic2,bioclip2,native,0.7365244100523636,0.6985660379712771,0.7673112604814147,5.0,,
+"Spearman(d' val, radius separation), native",food101,bioclip2,native,0.8050371435876511,0.8050371435876511,0.8050371435876511,1.0,,
+"Spearman(d' val, radius separation), native",oxford_pets,bioclip2,native,0.6664697523215634,0.6664697523215634,0.6664697523215634,1.0,,
+"Spearman(d' val, radius separation), native",aquamonitor,siglip2,native,0.6337374069394652,0.5892857387703054,0.6646007330360142,5.0,,
+"Spearman(d' val, radius separation), native",bioscan5m,siglip2,native,0.7890799054407764,0.7890799054407764,0.7890799054407764,1.0,,
+"Spearman(d' val, radius separation), native",cifar100,siglip2,native,0.6297257241418764,0.6297257241418764,0.6297257241418764,1.0,,
+"Spearman(d' val, radius separation), native",df24,siglip2,native,0.742976488684974,0.742976488684974,0.742976488684974,1.0,,
+"Spearman(d' val, radius separation), native",fgvc_aircraft,siglip2,native,0.621654969572819,0.621654969572819,0.621654969572819,1.0,,
+"Spearman(d' val, radius separation), native",finbenthic2,siglip2,native,0.7203356591994388,0.6765675902433617,0.76020956277569,5.0,,
+"Spearman(d' val, radius separation), native",food101,siglip2,native,0.6305744723097509,0.6305744723097509,0.6305744723097509,1.0,,
+"Spearman(d' val, radius separation), native",oxford_pets,siglip2,native,0.3886405303749264,0.3886405303749264,0.3886405303749264,1.0,,
+"Spearman(d' val, radius separation), native",aquamonitor,ijepa_h14,native,0.6973637413785394,0.677141196543472,0.734037814873203,5.0,,
+"Spearman(d' val, radius separation), native",bioscan5m,ijepa_h14,native,0.7069503357701661,0.7069503357701661,0.7069503357701661,1.0,,
+"Spearman(d' val, radius separation), native",cifar100,ijepa_h14,native,0.6225807703050281,0.6225807703050281,0.6225807703050281,1.0,,
+"Spearman(d' val, radius separation), native",df24,ijepa_h14,native,0.74286859498691,0.74286859498691,0.74286859498691,1.0,,
+"Spearman(d' val, radius separation), native",fgvc_aircraft,ijepa_h14,native,0.7808725487489452,0.7808725487489452,0.7808725487489452,1.0,,
+"Spearman(d' val, radius separation), native",finbenthic2,ijepa_h14,native,0.7602685051400684,0.7309303710347805,0.8042109095010794,5.0,,
+"Spearman(d' val, radius separation), native",food101,ijepa_h14,native,0.8394338611426445,0.8394338611426445,0.8394338611426445,1.0,,
+"Spearman(d' val, radius separation), native",oxford_pets,ijepa_h14,native,0.3037789579097872,0.3037789579097872,0.3037789579097872,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",aquamonitor,dinov3_l,pcs64,0.7704486251378887,0.7014499557264181,0.8110154761115813,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",bioscan5m,dinov3_l,pcs64,0.7361727177855469,0.7361727177855469,0.7361727177855469,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",cifar100,dinov3_l,pcs64,0.5895847132683374,0.5895847132683374,0.5895847132683374,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",df24,dinov3_l,pcs64,0.7150472655683359,0.7150472655683359,0.7150472655683359,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",fgvc_aircraft,dinov3_l,pcs64,0.7476747006437375,0.7476747006437375,0.7476747006437375,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",finbenthic2,dinov3_l,pcs64,0.7832433719615407,0.760148503655542,0.8086166498325994,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",food101,dinov3_l,pcs64,0.7266218204384169,0.7266218204384169,0.7266218204384169,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",oxford_pets,dinov3_l,pcs64,0.5353770787843226,0.5353770787843226,0.5353770787843226,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",aquamonitor,dinov2_l,pcs64,0.7911158810862415,0.7341300945769024,0.8297322593629893,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",bioscan5m,dinov2_l,pcs64,0.8005161235042156,0.8005161235042156,0.8005161235042156,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",cifar100,dinov2_l,pcs64,0.5785429345946973,0.5785429345946973,0.5785429345946973,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",df24,dinov2_l,pcs64,0.7197589548178198,0.7197589548178198,0.7197589548178198,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",fgvc_aircraft,dinov2_l,pcs64,0.7247880776519483,0.7247880776519483,0.7247880776519483,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",finbenthic2,dinov2_l,pcs64,0.7989276207928898,0.7729727672369499,0.8376879732979221,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",food101,dinov2_l,pcs64,0.7224531928311329,0.7224531928311329,0.7224531928311329,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",oxford_pets,dinov2_l,pcs64,0.6741346457435782,0.6741346457435782,0.6741346457435782,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",aquamonitor,bioclip2,pcs64,0.7066573863724479,0.6155263648445669,0.7643127398333719,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",bioscan5m,bioclip2,pcs64,0.4797297458643896,0.4797297458643896,0.4797297458643896,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",cifar100,bioclip2,pcs64,0.629318537375607,0.629318537375607,0.629318537375607,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",df24,bioclip2,pcs64,0.5107759074518012,0.5107759074518012,0.5107759074518012,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",fgvc_aircraft,bioclip2,pcs64,0.9199756622969169,0.9199756622969169,0.9199756622969169,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",finbenthic2,bioclip2,pcs64,0.7461437219720126,0.7064998304114554,0.7746670327788184,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",food101,bioclip2,pcs64,0.8135781392549912,0.8135781392549912,0.8135781392549912,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",oxford_pets,bioclip2,pcs64,0.6687574115807369,0.6687574115807369,0.6687574115807369,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",aquamonitor,siglip2,pcs64,0.6425492697450401,0.6004720411541361,0.672465444896448,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",bioscan5m,siglip2,pcs64,0.7964160772713694,0.7964160772713694,0.7964160772713694,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",cifar100,siglip2,pcs64,0.6322028750593721,0.6322028750593721,0.6322028750593721,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",df24,siglip2,pcs64,0.7543171035838921,0.7543171035838921,0.7543171035838921,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",fgvc_aircraft,siglip2,pcs64,0.6432382746681544,0.6432382746681544,0.6432382746681544,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",finbenthic2,siglip2,pcs64,0.7250127105817373,0.6822700365536201,0.7666351633189376,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",food101,siglip2,pcs64,0.6665102381993354,0.6665102381993354,0.6665102381993354,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",oxford_pets,siglip2,pcs64,0.4170230064809091,0.4170230064809091,0.4170230064809091,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",aquamonitor,ijepa_h14,pcs64,0.6823523273877654,0.6607711035684061,0.7056624153798926,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",bioscan5m,ijepa_h14,pcs64,0.71642711741154,0.71642711741154,0.71642711741154,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",cifar100,ijepa_h14,pcs64,0.6507064729119336,0.6507064729119336,0.6507064729119336,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",df24,ijepa_h14,pcs64,0.7600007592320921,0.7600007592320921,0.7600007592320921,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",fgvc_aircraft,ijepa_h14,pcs64,0.7832304562201197,0.7832304562201197,0.7832304562201197,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",finbenthic2,ijepa_h14,pcs64,0.7719900819684321,0.742531115328729,0.8116721327538543,5.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",food101,ijepa_h14,pcs64,0.8623885647791257,0.8623885647791257,0.8623885647791257,1.0,,
+"Overlap: Spearman(d' val, spherical Bhattacharyya distance), 64 PCs",oxford_pets,ijepa_h14,pcs64,0.3550953846385078,0.3550953846385078,0.3550953846385078,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",aquamonitor,dinov3_l,pcs64,0.8154285325549979,0.8009828535146569,0.830331105661612,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",bioscan5m,dinov3_l,pcs64,0.7407298999356996,0.7407298999356996,0.7407298999356996,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",cifar100,dinov3_l,pcs64,0.679355867804143,0.679355867804143,0.679355867804143,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",df24,dinov3_l,pcs64,0.8417588078752541,0.8417588078752541,0.8417588078752541,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",fgvc_aircraft,dinov3_l,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",finbenthic2,dinov3_l,pcs64,0.7108952482547968,0.6746480655776008,0.7536224473917046,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",food101,dinov3_l,pcs64,0.707601070610514,0.707601070610514,0.707601070610514,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",oxford_pets,dinov3_l,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",aquamonitor,dinov2_l,pcs64,0.8490194465051036,0.8265862847554042,0.8644711736255762,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",bioscan5m,dinov2_l,pcs64,0.8204512934757379,0.8204512934757379,0.8204512934757379,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",cifar100,dinov2_l,pcs64,0.6118539155017318,0.6118539155017318,0.6118539155017318,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",df24,dinov2_l,pcs64,0.8463943909179661,0.8463943909179661,0.8463943909179661,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",fgvc_aircraft,dinov2_l,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",finbenthic2,dinov2_l,pcs64,0.7259843899504385,0.68672092525166,0.7943819275554984,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",food101,dinov2_l,pcs64,0.7322738909734778,0.7322738909734778,0.7322738909734778,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",oxford_pets,dinov2_l,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",aquamonitor,bioclip2,pcs64,0.8161292935051977,0.8032699154175831,0.83140919943115,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",bioscan5m,bioclip2,pcs64,0.5790922532838916,0.5790922532838916,0.5790922532838916,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",cifar100,bioclip2,pcs64,0.7505456367012715,0.7505456367012715,0.7505456367012715,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",df24,bioclip2,pcs64,0.6804170388904578,0.6804170388904578,0.6804170388904578,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",fgvc_aircraft,bioclip2,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",finbenthic2,bioclip2,pcs64,0.6893591188862057,0.6319554508460057,0.7616002051127009,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",food101,bioclip2,pcs64,0.8691817624819766,0.8691817624819766,0.8691817624819766,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",oxford_pets,bioclip2,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",aquamonitor,siglip2,pcs64,0.7562274492780853,0.7312721700848415,0.7712665982059845,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",bioscan5m,siglip2,pcs64,0.7963479698537586,0.7963479698537586,0.7963479698537586,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",cifar100,siglip2,pcs64,0.7748788827002848,0.7748788827002848,0.7748788827002848,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",df24,siglip2,pcs64,0.8583338101039236,0.8583338101039236,0.8583338101039236,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",fgvc_aircraft,siglip2,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",finbenthic2,siglip2,pcs64,0.767318612398474,0.7438628088553128,0.7982914386962363,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",food101,siglip2,pcs64,0.7622385854176972,0.7622385854176972,0.7622385854176972,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",oxford_pets,siglip2,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",aquamonitor,ijepa_h14,pcs64,0.7474526471283767,0.7124016417605841,0.7759366101596084,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",bioscan5m,ijepa_h14,pcs64,0.7762655668387837,0.7762655668387837,0.7762655668387837,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",cifar100,ijepa_h14,pcs64,0.7839334484604894,0.7839334484604894,0.7839334484604894,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",df24,ijepa_h14,pcs64,0.8497160974012135,0.8497160974012135,0.8497160974012135,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",fgvc_aircraft,ijepa_h14,pcs64,,,,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",finbenthic2,ijepa_h14,pcs64,0.7173578156212823,0.6465147296481629,0.7764968165268015,5.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",food101,ijepa_h14,pcs64,0.8901283063892819,0.8901283063892819,0.8901283063892819,1.0,,
+"Overlap: Spearman(d' val, full Bhattacharyya distance), 64 PCs (pairs with >= 2d units)",oxford_pets,ijepa_h14,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",aquamonitor,dinov3_l,pcs64,0.4815386687399574,0.4796589923330841,0.4832518797172943,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",bioscan5m,dinov3_l,pcs64,0.3039508016063357,0.3039508016063357,0.3039508016063357,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",cifar100,dinov3_l,pcs64,0.4043417659760218,0.4043417659760218,0.4043417659760218,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",df24,dinov3_l,pcs64,0.3623773007438295,0.3623773007438295,0.3623773007438295,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",fgvc_aircraft,dinov3_l,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",finbenthic2,dinov3_l,pcs64,0.4303040860964299,0.4245649326245163,0.4378428834555065,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",food101,dinov3_l,pcs64,0.3490454951212941,0.3490454951212941,0.3490454951212941,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",oxford_pets,dinov3_l,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",aquamonitor,dinov2_l,pcs64,0.5012753787478956,0.4979218640721918,0.5035513281919158,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",bioscan5m,dinov2_l,pcs64,0.3732460805759085,0.3732460805759085,0.3732460805759085,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",cifar100,dinov2_l,pcs64,0.3644505533195041,0.3644505533195041,0.3644505533195041,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",df24,dinov2_l,pcs64,0.3676589736947009,0.3676589736947009,0.3676589736947009,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",fgvc_aircraft,dinov2_l,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",finbenthic2,dinov2_l,pcs64,0.5687856039504153,0.5594900263644732,0.5749114842700704,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",food101,dinov2_l,pcs64,0.419835405578953,0.419835405578953,0.419835405578953,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",oxford_pets,dinov2_l,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",aquamonitor,bioclip2,pcs64,0.4976167542202824,0.4938079817278773,0.5014257626124246,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",bioscan5m,bioclip2,pcs64,0.1534820407842603,0.1534820407842603,0.1534820407842603,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",cifar100,bioclip2,pcs64,0.3856356163137354,0.3856356163137354,0.3856356163137354,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",df24,bioclip2,pcs64,0.2103823971043396,0.2103823971043396,0.2103823971043396,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",fgvc_aircraft,bioclip2,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",finbenthic2,bioclip2,pcs64,0.6772738111127118,0.6679342088101643,0.6863607748368892,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",food101,bioclip2,pcs64,0.405009553385527,0.405009553385527,0.405009553385527,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",oxford_pets,bioclip2,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",aquamonitor,siglip2,pcs64,0.5224211706938908,0.5193916846869451,0.5249124514866395,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",bioscan5m,siglip2,pcs64,0.392366383401638,0.392366383401638,0.392366383401638,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",cifar100,siglip2,pcs64,0.382619184859636,0.382619184859636,0.382619184859636,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",df24,siglip2,pcs64,0.3352474478422209,0.3352474478422209,0.3352474478422209,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",fgvc_aircraft,siglip2,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",finbenthic2,siglip2,pcs64,0.5431589803350252,0.5317582258087808,0.5496423169691105,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",food101,siglip2,pcs64,0.2215485135080615,0.2215485135080615,0.2215485135080615,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",oxford_pets,siglip2,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",aquamonitor,ijepa_h14,pcs64,0.6773403619924274,0.672947628561311,0.6812942076353415,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",bioscan5m,ijepa_h14,pcs64,0.5205234678227125,0.5205234678227125,0.5205234678227125,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",cifar100,ijepa_h14,pcs64,0.5969117031708469,0.5969117031708469,0.5969117031708469,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",df24,ijepa_h14,pcs64,0.6199104178824166,0.6199104178824166,0.6199104178824166,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",fgvc_aircraft,ijepa_h14,pcs64,,,,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",finbenthic2,ijepa_h14,pcs64,0.7023947051059924,0.6934203530234576,0.7060398049635794,5.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",food101,ijepa_h14,pcs64,0.6233479574849788,0.6233479574849788,0.6233479574849788,1.0,,
+"Overlap: median covariance-term share, full form, 64 PCs",oxford_pets,ijepa_h14,pcs64,,,,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",aquamonitor,dinov3_l,pcs64,0.9991740966375164,0.999104408064332,0.9992803052956012,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",bioscan5m,dinov3_l,pcs64,0.9981794589288469,0.9981794589288469,0.9981794589288469,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",cifar100,dinov3_l,pcs64,0.9966771045010392,0.9966771045010392,0.9966771045010392,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",df24,dinov3_l,pcs64,0.9994775376617598,0.9994775376617598,0.9994775376617598,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",fgvc_aircraft,dinov3_l,pcs64,0.9934368731837202,0.9934368731837202,0.9934368731837202,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",finbenthic2,dinov3_l,pcs64,0.9980078925739816,0.9976780807579216,0.9982924639963896,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",food101,dinov3_l,pcs64,0.9981868008811696,0.9981868008811696,0.9981868008811696,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",oxford_pets,dinov3_l,pcs64,0.9973334608858954,0.9973334608858954,0.9973334608858954,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",aquamonitor,dinov2_l,pcs64,0.9995648332891348,0.9995512681766804,0.9996042071075067,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",bioscan5m,dinov2_l,pcs64,0.9978482247598452,0.9978482247598452,0.9978482247598452,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",cifar100,dinov2_l,pcs64,0.9991633997670712,0.9991633997670712,0.9991633997670712,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",df24,dinov2_l,pcs64,0.9991568106109572,0.9991568106109572,0.9991568106109572,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",fgvc_aircraft,dinov2_l,pcs64,0.9931347507790184,0.9931347507790184,0.9931347507790184,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",finbenthic2,dinov2_l,pcs64,0.9988613087655556,0.998777465023024,0.998948084571907,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",food101,dinov2_l,pcs64,0.9971734212208924,0.9971734212208924,0.9971734212208924,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",oxford_pets,dinov2_l,pcs64,0.9954737222591054,0.9954737222591054,0.9954737222591054,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",aquamonitor,bioclip2,pcs64,0.9993175690151068,0.999236320159644,0.9994125656880772,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",bioscan5m,bioclip2,pcs64,0.999167307960743,0.999167307960743,0.999167307960743,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",cifar100,bioclip2,pcs64,0.9956716309061396,0.9956716309061396,0.9956716309061396,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",df24,bioclip2,pcs64,0.9994306036430396,0.9994306036430396,0.9994306036430396,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",fgvc_aircraft,bioclip2,pcs64,0.9993096718976964,0.9993096718976964,0.9993096718976964,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",finbenthic2,bioclip2,pcs64,0.9985332901064472,0.9983858664474538,0.9986936185020756,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",food101,bioclip2,pcs64,0.999045628694353,0.999045628694353,0.999045628694353,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",oxford_pets,bioclip2,pcs64,0.9996053588730934,0.9996053588730934,0.9996053588730934,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",aquamonitor,siglip2,pcs64,0.9987632415805948,0.9986109728185126,0.9989103304802378,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",bioscan5m,siglip2,pcs64,0.9976434064990368,0.9976434064990368,0.9976434064990368,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",cifar100,siglip2,pcs64,0.9976601916102472,0.9976601916102472,0.9976601916102472,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",df24,siglip2,pcs64,0.9997894831196956,0.9997894831196956,0.9997894831196956,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",fgvc_aircraft,siglip2,pcs64,0.9991698952334156,0.9991698952334156,0.9991698952334156,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",finbenthic2,siglip2,pcs64,0.9974791341922906,0.9970040487213802,0.9981987553999276,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",food101,siglip2,pcs64,0.9996081542773912,0.9996081542773912,0.9996081542773912,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",oxford_pets,siglip2,pcs64,0.9992860306282544,0.9992860306282544,0.9992860306282544,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",aquamonitor,ijepa_h14,pcs64,0.9883543310869688,0.9864443291673616,0.9895166991985268,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",bioscan5m,ijepa_h14,pcs64,0.9953376164697582,0.9953376164697582,0.9953376164697582,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",cifar100,ijepa_h14,pcs64,0.997905618698012,0.997905618698012,0.997905618698012,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",df24,ijepa_h14,pcs64,0.9991137323862388,0.9991137323862388,0.9991137323862388,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",fgvc_aircraft,ijepa_h14,pcs64,0.9931169745483268,0.9931169745483268,0.9931169745483268,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",finbenthic2,ijepa_h14,pcs64,0.9962959052958096,0.9959639255336058,0.9968323596018802,5.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",food101,ijepa_h14,pcs64,0.9991977426398584,0.9991977426398584,0.9991977426398584,1.0,,
+"Overlap: paper vs code-release spherical Spearman, 64 PCs",oxford_pets,ijepa_h14,pcs64,0.9988161172411156,0.9988161172411156,0.9988161172411156,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,dinov3_l,pca16,0.8034574452854673,0.7476159897656585,0.8379394241152726,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,dinov3_l,pca16,0.7819647183582603,0.7819647183582603,0.7819647183582603,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,dinov3_l,pca16,0.7705385016714688,0.7705385016714688,0.7705385016714688,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",df24,dinov3_l,pca16,0.7738395817612841,0.7738395817612841,0.7738395817612841,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,dinov3_l,pca16,0.7505027855124144,0.7505027855124144,0.7505027855124144,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,dinov3_l,pca16,0.8154038866663187,0.7862193320382935,0.84596059290098,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",food101,dinov3_l,pca16,0.8100859978506031,0.8100859978506031,0.8100859978506031,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,dinov3_l,pca16,0.6216184124966576,0.6216184124966576,0.6216184124966576,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,dinov2_l,pca16,0.8275041209144028,0.800680410466216,0.8590789680299795,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,dinov2_l,pca16,0.8345709609816285,0.8345709609816285,0.8345709609816285,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,dinov2_l,pca16,0.7282088910790098,0.7282088910790098,0.7282088910790098,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",df24,dinov2_l,pca16,0.76260818408134,0.76260818408134,0.76260818408134,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,dinov2_l,pca16,0.7399244907446156,0.7399244907446156,0.7399244907446156,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,dinov2_l,pca16,0.8351619482192195,0.8126607064695822,0.8676393396488148,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",food101,dinov2_l,pca16,0.8127859852262141,0.8127859852262141,0.8127859852262141,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,dinov2_l,pca16,0.6910461249765283,0.6910461249765283,0.6910461249765283,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,bioclip2,pca16,0.7595624091157613,0.6956796884428268,0.7999406711150271,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,bioclip2,pca16,0.5464586842890461,0.5464586842890461,0.5464586842890461,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,bioclip2,pca16,0.7647849645990406,0.7647849645990406,0.7647849645990406,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",df24,bioclip2,pca16,0.6154881320267386,0.6154881320267386,0.6154881320267386,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,bioclip2,pca16,0.9364664086885276,0.9364664086885276,0.9364664086885276,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,bioclip2,pca16,0.7832217380209017,0.7467668096921383,0.8108746863352264,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",food101,bioclip2,pca16,0.8655665999362231,0.8655665999362231,0.8655665999362231,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,bioclip2,pca16,0.7099189888900297,0.7099189888900297,0.7099189888900297,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,siglip2,pca16,0.666808115228774,0.6382429073852381,0.6936672291593416,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,siglip2,pca16,0.8243302626852601,0.8243302626852601,0.8243302626852601,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,siglip2,pca16,0.6970788637196604,0.6970788637196604,0.6970788637196604,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",df24,siglip2,pca16,0.808009018229218,0.808009018229218,0.808009018229218,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,siglip2,pca16,0.6995606054861438,0.6995606054861438,0.6995606054861438,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,siglip2,pca16,0.7638402194202233,0.7246161341994288,0.7993922645324147,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",food101,siglip2,pca16,0.7749293800191854,0.7749293800191854,0.7749293800191854,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,siglip2,pca16,0.5942008268371403,0.5942008268371403,0.5942008268371403,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,ijepa_h14,pca16,0.7190976646453169,0.6945843675352602,0.7424589254659661,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,ijepa_h14,pca16,0.7583852384224864,0.7583852384224864,0.7583852384224864,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,ijepa_h14,pca16,0.7286072144327115,0.7286072144327115,0.7286072144327115,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",df24,ijepa_h14,pca16,0.7907332851408604,0.7907332851408604,0.7907332851408604,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,ijepa_h14,pca16,0.7965542684466839,0.7965542684466839,0.7965542684466839,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,ijepa_h14,pca16,0.8127951568504959,0.7917569289248231,0.8441932152157183,5.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",food101,ijepa_h14,pca16,0.9245925613675416,0.9245925613675416,0.9245925613675416,1.0,,
+"PCA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,ijepa_h14,pca16,0.4302918039049974,0.4302918039049974,0.4302918039049974,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,dinov3_l,fda16,0.5992732292485627,0.4732705635471447,0.7507820541657919,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,dinov3_l,fda16,0.6588576645778483,0.6588576645778483,0.6588576645778483,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,dinov3_l,fda16,0.6360606821814748,0.6360606821814748,0.6360606821814748,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",df24,dinov3_l,fda16,0.7570706981608413,0.7570706981608413,0.7570706981608413,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,dinov3_l,fda16,0.5696201319685552,0.5696201319685552,0.5696201319685552,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,dinov3_l,fda16,0.7367465543750107,0.7115514173942917,0.7677925748105777,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",food101,dinov3_l,fda16,0.6385988402140665,0.6385988402140665,0.6385988402140665,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,dinov3_l,fda16,0.4410834412096939,0.4410834412096939,0.4410834412096939,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,dinov2_l,fda16,0.6845810860271546,0.5549633041270247,0.802147222473416,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,dinov2_l,fda16,0.6934531815419401,0.6934531815419401,0.6934531815419401,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,dinov2_l,fda16,0.534707874589618,0.534707874589618,0.534707874589618,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",df24,dinov2_l,fda16,0.7663078362944985,0.7663078362944985,0.7663078362944985,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,dinov2_l,fda16,0.6589638999431828,0.6589638999431828,0.6589638999431828,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,dinov2_l,fda16,0.7743830784366079,0.7152868713074004,0.8045814767188014,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",food101,dinov2_l,fda16,0.6811007458019259,0.6811007458019259,0.6811007458019259,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,dinov2_l,fda16,0.7278099824300408,0.7278099824300408,0.7278099824300408,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,bioclip2,fda16,0.658476424408631,0.530446545621377,0.8497878818249573,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,bioclip2,fda16,0.6272829705555487,0.6272829705555487,0.6272829705555487,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,bioclip2,fda16,0.8079161789195707,0.8079161789195707,0.8079161789195707,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",df24,bioclip2,fda16,0.7521515704210212,0.7521515704210212,0.7521515704210212,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,bioclip2,fda16,0.9248157111474936,0.9248157111474936,0.9248157111474936,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,bioclip2,fda16,0.7865558161356198,0.7436444417099768,0.8454431518387304,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",food101,bioclip2,fda16,0.7980199075493514,0.7980199075493514,0.7980199075493514,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,bioclip2,fda16,0.7176940893503666,0.7176940893503666,0.7176940893503666,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,siglip2,fda16,0.6515061144895025,0.534704035158567,0.7464471379928177,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,siglip2,fda16,0.6902940921313023,0.6902940921313023,0.6902940921313023,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,siglip2,fda16,0.7707439687039367,0.7707439687039367,0.7707439687039367,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",df24,siglip2,fda16,0.7564432622423317,0.7564432622423317,0.7564432622423317,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,siglip2,fda16,0.6421262320544479,0.6421262320544479,0.6421262320544479,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,siglip2,fda16,0.8104753172905589,0.781815162509991,0.8304267164526324,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",food101,siglip2,fda16,0.6833658927167712,0.6833658927167712,0.6833658927167712,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,siglip2,fda16,0.7387945734509297,0.7387945734509297,0.7387945734509297,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",aquamonitor,ijepa_h14,fda16,0.6276972910400112,0.4969911266753308,0.7611601473994154,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",bioscan5m,ijepa_h14,fda16,0.6527072995220143,0.6527072995220143,0.6527072995220143,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",cifar100,ijepa_h14,fda16,0.5726471699515591,0.5726471699515591,0.5726471699515591,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",df24,ijepa_h14,fda16,0.7026753349736075,0.7026753349736075,0.7026753349736075,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",fgvc_aircraft,ijepa_h14,fda16,0.8161372737259709,0.8161372737259709,0.8161372737259709,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",finbenthic2,ijepa_h14,fda16,0.7699444631733593,0.7528766044474072,0.8099156129614578,5.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",food101,ijepa_h14,fda16,0.67515752607089,0.67515752607089,0.67515752607089,1.0,,
+"FDA-GBC d = 16: Spearman(spherical distance, d' val)",oxford_pets,ijepa_h14,fda16,0.4816158675386957,0.4816158675386957,0.4816158675386957,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,dinov3_l,pca16,0.8803314134763394,0.8241915645607095,0.9876579373836956,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,dinov3_l,pca16,0.7534950785834028,0.7534950785834028,0.7534950785834028,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,dinov3_l,pca16,0.94388737758092,0.94388737758092,0.94388737758092,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,dinov3_l,pca16,0.7373094840611291,0.7373094840611291,0.7373094840611291,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,dinov3_l,pca16,0.9850351676427744,0.9850351676427744,0.9850351676427744,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,dinov3_l,pca16,0.9228668916946716,0.8801601198768548,0.9992547725444704,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,dinov3_l,pca16,0.9253664008192748,0.9253664008192748,0.9253664008192748,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,dinov3_l,pca16,0.7953649802260417,0.7953649802260417,0.7953649802260417,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,dinov2_l,pca16,0.9135703607254028,0.8474111413736242,1.049405072245425,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,dinov2_l,pca16,0.7656949754102957,0.7656949754102957,0.7656949754102957,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,dinov2_l,pca16,0.9704055427886488,0.9704055427886488,0.9704055427886488,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,dinov2_l,pca16,0.7411683251515824,0.7411683251515824,0.7411683251515824,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,dinov2_l,pca16,1.0366390721029275,1.0366390721029275,1.0366390721029275,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,dinov2_l,pca16,0.9105359162609136,0.8590781606488613,0.977218564611993,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,dinov2_l,pca16,0.9555584148419904,0.9555584148419904,0.9555584148419904,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,dinov2_l,pca16,0.5647396675058147,0.5647396675058147,0.5647396675058147,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,bioclip2,pca16,0.9228255824558048,0.8152649158099586,1.0615911707354295,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,bioclip2,pca16,0.7189811502913125,0.7189811502913125,0.7189811502913125,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,bioclip2,pca16,0.9165017172322912,0.9165017172322912,0.9165017172322912,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,bioclip2,pca16,0.8068442992560126,0.8068442992560126,0.8068442992560126,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,bioclip2,pca16,1.0223219427587993,1.0223219427587993,1.0223219427587993,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,bioclip2,pca16,0.9137174731224188,0.8699177468796049,0.9719940169186356,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,bioclip2,pca16,0.9462762966632836,0.9462762966632836,0.9462762966632836,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,bioclip2,pca16,0.8424263830790851,0.8424263830790851,0.8424263830790851,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,siglip2,pca16,0.9209516862565648,0.8279673478458889,1.0149538093014845,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,siglip2,pca16,0.7629419089482203,0.7629419089482203,0.7629419089482203,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,siglip2,pca16,0.9700521411898152,0.9700521411898152,0.9700521411898152,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,siglip2,pca16,0.7414371087268341,0.7414371087268341,0.7414371087268341,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,siglip2,pca16,0.9941660242426068,0.9941660242426068,0.9941660242426068,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,siglip2,pca16,0.9335460119032838,0.8404563038833431,1.0551850822302955,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,siglip2,pca16,0.923650051644375,0.923650051644375,0.923650051644375,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,siglip2,pca16,0.8101751605012671,0.8101751605012671,0.8101751605012671,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,ijepa_h14,pca16,0.8410003075750672,0.797474587549091,0.8855415526561001,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,ijepa_h14,pca16,0.7509980123269773,0.7509980123269773,0.7509980123269773,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,ijepa_h14,pca16,0.9182812776132846,0.9182812776132846,0.9182812776132846,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,ijepa_h14,pca16,0.7217584576667564,0.7217584576667564,0.7217584576667564,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,ijepa_h14,pca16,1.0316627823356948,1.0316627823356948,1.0316627823356948,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,ijepa_h14,pca16,0.9037981500490038,0.8350221769144395,0.9844984294029824,5.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,ijepa_h14,pca16,0.9438588875224438,0.9438588875224438,0.9438588875224438,1.0,,
+PCA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,ijepa_h14,pca16,0.8523809848568942,0.8523809848568942,0.8523809848568942,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,dinov3_l,fda16,0.942056112865776,0.8243273411591514,1.111842452048112,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,dinov3_l,fda16,0.7098450942928045,0.7098450942928045,0.7098450942928045,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,dinov3_l,fda16,0.9978448982174528,0.9978448982174528,0.9978448982174528,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,dinov3_l,fda16,0.7509465460592937,0.7509465460592937,0.7509465460592937,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,dinov3_l,fda16,1.4959477464984543,1.4959477464984543,1.4959477464984543,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,dinov3_l,fda16,1.3161721475921353,1.0809280826289618,1.6173813575918314,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,dinov3_l,fda16,0.9462790104599464,0.9462790104599464,0.9462790104599464,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,dinov3_l,fda16,2.6274479750089856,2.6274479750089856,2.6274479750089856,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,dinov2_l,fda16,0.9387475976669548,0.8471266251605989,1.0558412845708376,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,dinov2_l,fda16,0.6799015592005495,0.6799015592005495,0.6799015592005495,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,dinov2_l,fda16,1.0067421330545998,1.0067421330545998,1.0067421330545998,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,dinov2_l,fda16,0.7214022773056991,0.7214022773056991,0.7214022773056991,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,dinov2_l,fda16,2.203036980930705,2.203036980930705,2.203036980930705,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,dinov2_l,fda16,1.4415057159577178,1.3093554173343598,1.677071939911946,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,dinov2_l,fda16,0.98594262986395,0.98594262986395,0.98594262986395,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,dinov2_l,fda16,1.1019908921877497,1.1019908921877497,1.1019908921877497,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,bioclip2,fda16,0.9446366238691356,0.842096847801451,1.0539330976503885,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,bioclip2,fda16,0.5422785686318147,0.5422785686318147,0.5422785686318147,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,bioclip2,fda16,0.9610978600251252,0.9610978600251252,0.9610978600251252,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,bioclip2,fda16,0.7419759411345521,0.7419759411345521,0.7419759411345521,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,bioclip2,fda16,1.7530101429742109,1.7530101429742109,1.7530101429742109,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,bioclip2,fda16,1.2399189224784133,1.183725035693676,1.3447543630759644,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,bioclip2,fda16,0.9904780055410612,0.9904780055410612,0.9904780055410612,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,bioclip2,fda16,1.781102344982045,1.781102344982045,1.781102344982045,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,siglip2,fda16,0.9555844310570716,0.8526218334230253,1.1759145742521662,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,siglip2,fda16,0.679978831701813,0.679978831701813,0.679978831701813,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,siglip2,fda16,0.8947718046986681,0.8947718046986681,0.8947718046986681,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,siglip2,fda16,0.761457943828354,0.761457943828354,0.761457943828354,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,siglip2,fda16,1.5970838208080742,1.5970838208080742,1.5970838208080742,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,siglip2,fda16,1.3246489566926969,1.2055244392549036,1.4421071200913431,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,siglip2,fda16,0.9969522422993052,0.9969522422993052,0.9969522422993052,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,siglip2,fda16,1.5219143088297202,1.5219143088297202,1.5219143088297202,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),aquamonitor,ijepa_h14,fda16,1.0035696302327408,0.8654191699854136,1.146449692109793,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),bioscan5m,ijepa_h14,fda16,0.7788311600425298,0.7788311600425298,0.7788311600425298,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),cifar100,ijepa_h14,fda16,0.956329871645649,0.956329871645649,0.956329871645649,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),df24,ijepa_h14,fda16,0.7435216783465614,0.7435216783465614,0.7435216783465614,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),fgvc_aircraft,ijepa_h14,fda16,2.381346252660176,2.381346252660176,2.381346252660176,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),finbenthic2,ijepa_h14,fda16,1.4601640653706998,1.2551889749240053,1.6982017813618568,5.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),food101,ijepa_h14,fda16,1.0382698633459533,1.0382698633459533,1.0382698633459533,1.0,,
+FDA-GBC d = 16: val / train GBC ratio (optimism > 1),oxford_pets,ijepa_h14,fda16,1.2607812379046148,1.2607812379046148,1.2607812379046148,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",aquamonitor,dinov3_l,pcs64,39.4,39.0,40.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",bioscan5m,dinov3_l,pcs64,509.0,509.0,509.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",cifar100,dinov3_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",df24,dinov3_l,pcs64,876.0,876.0,876.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",fgvc_aircraft,dinov3_l,pcs64,94.0,94.0,94.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",finbenthic2,dinov3_l,pcs64,34.6,34.0,35.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",food101,dinov3_l,pcs64,96.0,96.0,96.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",oxford_pets,dinov3_l,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",aquamonitor,dinov2_l,pcs64,39.4,38.0,40.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",bioscan5m,dinov2_l,pcs64,507.0,507.0,507.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",cifar100,dinov2_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",df24,dinov2_l,pcs64,874.0,874.0,874.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",fgvc_aircraft,dinov2_l,pcs64,95.0,95.0,95.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",finbenthic2,dinov2_l,pcs64,34.6,34.0,35.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",food101,dinov2_l,pcs64,98.0,98.0,98.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",oxford_pets,dinov2_l,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",aquamonitor,bioclip2,pcs64,39.0,38.0,40.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",bioscan5m,bioclip2,pcs64,510.0,510.0,510.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",cifar100,bioclip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",df24,bioclip2,pcs64,884.0,884.0,884.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",fgvc_aircraft,bioclip2,pcs64,52.0,52.0,52.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",finbenthic2,bioclip2,pcs64,33.0,32.0,34.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",food101,bioclip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",oxford_pets,bioclip2,pcs64,35.0,35.0,35.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",aquamonitor,siglip2,pcs64,38.0,37.0,39.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",bioscan5m,siglip2,pcs64,493.0,493.0,493.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",cifar100,siglip2,pcs64,99.0,99.0,99.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",df24,siglip2,pcs64,862.0,862.0,862.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",fgvc_aircraft,siglip2,pcs64,99.0,99.0,99.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",finbenthic2,siglip2,pcs64,32.8,32.0,34.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",food101,siglip2,pcs64,90.0,90.0,90.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",oxford_pets,siglip2,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",aquamonitor,ijepa_h14,pcs64,36.8,35.0,39.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",bioscan5m,ijepa_h14,pcs64,489.0,489.0,489.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",cifar100,ijepa_h14,pcs64,96.0,96.0,96.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",df24,ijepa_h14,pcs64,774.0,774.0,774.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",fgvc_aircraft,ijepa_h14,pcs64,14.0,14.0,14.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",finbenthic2,ijepa_h14,pcs64,32.6,32.0,33.0,5.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",food101,ijepa_h14,pcs64,99.0,99.0,99.0,1.0,,
+"LW per class, 64 PCs: classes where LW has the best held-out fit",oxford_pets,ijepa_h14,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes",aquamonitor,dinov3_l,pcs64,40.8,40.0,41.0,5.0,,
+"LW per class, 64 PCs: classes",bioscan5m,dinov3_l,pcs64,531.0,531.0,531.0,1.0,,
+"LW per class, 64 PCs: classes",cifar100,dinov3_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",df24,dinov3_l,pcs64,889.0,889.0,889.0,1.0,,
+"LW per class, 64 PCs: classes",fgvc_aircraft,dinov3_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",finbenthic2,dinov3_l,pcs64,35.0,34.0,36.0,5.0,,
+"LW per class, 64 PCs: classes",food101,dinov3_l,pcs64,101.0,101.0,101.0,1.0,,
+"LW per class, 64 PCs: classes",oxford_pets,dinov3_l,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes",aquamonitor,dinov2_l,pcs64,40.8,40.0,41.0,5.0,,
+"LW per class, 64 PCs: classes",bioscan5m,dinov2_l,pcs64,531.0,531.0,531.0,1.0,,
+"LW per class, 64 PCs: classes",cifar100,dinov2_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",df24,dinov2_l,pcs64,889.0,889.0,889.0,1.0,,
+"LW per class, 64 PCs: classes",fgvc_aircraft,dinov2_l,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",finbenthic2,dinov2_l,pcs64,35.0,34.0,36.0,5.0,,
+"LW per class, 64 PCs: classes",food101,dinov2_l,pcs64,101.0,101.0,101.0,1.0,,
+"LW per class, 64 PCs: classes",oxford_pets,dinov2_l,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes",aquamonitor,bioclip2,pcs64,40.8,40.0,41.0,5.0,,
+"LW per class, 64 PCs: classes",bioscan5m,bioclip2,pcs64,531.0,531.0,531.0,1.0,,
+"LW per class, 64 PCs: classes",cifar100,bioclip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",df24,bioclip2,pcs64,889.0,889.0,889.0,1.0,,
+"LW per class, 64 PCs: classes",fgvc_aircraft,bioclip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",finbenthic2,bioclip2,pcs64,35.0,34.0,36.0,5.0,,
+"LW per class, 64 PCs: classes",food101,bioclip2,pcs64,101.0,101.0,101.0,1.0,,
+"LW per class, 64 PCs: classes",oxford_pets,bioclip2,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes",aquamonitor,siglip2,pcs64,40.8,40.0,41.0,5.0,,
+"LW per class, 64 PCs: classes",bioscan5m,siglip2,pcs64,531.0,531.0,531.0,1.0,,
+"LW per class, 64 PCs: classes",cifar100,siglip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",df24,siglip2,pcs64,889.0,889.0,889.0,1.0,,
+"LW per class, 64 PCs: classes",fgvc_aircraft,siglip2,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",finbenthic2,siglip2,pcs64,35.0,34.0,36.0,5.0,,
+"LW per class, 64 PCs: classes",food101,siglip2,pcs64,101.0,101.0,101.0,1.0,,
+"LW per class, 64 PCs: classes",oxford_pets,siglip2,pcs64,37.0,37.0,37.0,1.0,,
+"LW per class, 64 PCs: classes",aquamonitor,ijepa_h14,pcs64,40.8,40.0,41.0,5.0,,
+"LW per class, 64 PCs: classes",bioscan5m,ijepa_h14,pcs64,531.0,531.0,531.0,1.0,,
+"LW per class, 64 PCs: classes",cifar100,ijepa_h14,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",df24,ijepa_h14,pcs64,889.0,889.0,889.0,1.0,,
+"LW per class, 64 PCs: classes",fgvc_aircraft,ijepa_h14,pcs64,100.0,100.0,100.0,1.0,,
+"LW per class, 64 PCs: classes",finbenthic2,ijepa_h14,pcs64,35.0,34.0,36.0,5.0,,
+"LW per class, 64 PCs: classes",food101,ijepa_h14,pcs64,101.0,101.0,101.0,1.0,,
+"LW per class, 64 PCs: classes",oxford_pets,ijepa_h14,pcs64,37.0,37.0,37.0,1.0,,
+Pooled LW alpha (native),aquamonitor,dinov3_l,native,0.00102382865654,0.0010229270825538,0.0010253055742806,5.0,,
+Pooled LW alpha (native),bioscan5m,dinov3_l,native,0.0003718837112149,0.0003718837112149,0.0003718837112149,1.0,,
+Pooled LW alpha (native),cifar100,dinov3_l,native,0.0142017412533883,0.0142017412533883,0.0142017412533883,1.0,,
+Pooled LW alpha (native),df24,dinov3_l,native,0.0009583744329471,0.0009583744329471,0.0009583744329471,1.0,,
+Pooled LW alpha (native),fgvc_aircraft,dinov3_l,native,0.005287616150621,0.005287616150621,0.005287616150621,1.0,,
+Pooled LW alpha (native),finbenthic2,dinov3_l,native,0.006943383728287,0.006816312803167,0.0070865719505063,5.0,,
+Pooled LW alpha (native),food101,dinov3_l,native,0.0043458066058767,0.0043458066058767,0.0043458066058767,1.0,,
+Pooled LW alpha (native),oxford_pets,dinov3_l,native,0.0622467400430672,0.0622467400430672,0.0622467400430672,1.0,,
+Pooled LW alpha (native),aquamonitor,dinov2_l,native,0.0012218582253402,0.0012174224356765,0.0012236644161706,5.0,,
+Pooled LW alpha (native),bioscan5m,dinov2_l,native,0.0003870637683449,0.0003870637683449,0.0003870637683449,1.0,,
+Pooled LW alpha (native),cifar100,dinov2_l,native,0.0237818724923867,0.0237818724923867,0.0237818724923867,1.0,,
+Pooled LW alpha (native),df24,dinov2_l,native,0.0014908613336388,0.0014908613336388,0.0014908613336388,1.0,,
+Pooled LW alpha (native),fgvc_aircraft,dinov2_l,native,0.0056047728792298,0.0056047728792298,0.0056047728792298,1.0,,
+Pooled LW alpha (native),finbenthic2,dinov2_l,native,0.0064134902227248,0.0063032143504226,0.0065039312388489,5.0,,
+Pooled LW alpha (native),food101,dinov2_l,native,0.005108766885576,0.005108766885576,0.005108766885576,1.0,,
+Pooled LW alpha (native),oxford_pets,dinov2_l,native,0.0859881086176137,0.0859881086176137,0.0859881086176137,1.0,,
+Pooled LW alpha (native),aquamonitor,bioclip2,native,0.0011443469581951,0.0011412737613563,0.0011488223288662,5.0,,
+Pooled LW alpha (native),bioscan5m,bioclip2,native,0.0005903362264903,0.0005903362264903,0.0005903362264903,1.0,,
+Pooled LW alpha (native),cifar100,bioclip2,native,0.0030485644566961,0.0030485644566961,0.0030485644566961,1.0,,
+Pooled LW alpha (native),df24,bioclip2,native,0.0008823311728005,0.0008823311728005,0.0008823311728005,1.0,,
+Pooled LW alpha (native),fgvc_aircraft,bioclip2,native,0.0315975879236548,0.0315975879236548,0.0315975879236548,1.0,,
+Pooled LW alpha (native),finbenthic2,bioclip2,native,0.0025044156431473,0.0024924185899007,0.0025149847280849,5.0,,
+Pooled LW alpha (native),food101,bioclip2,native,0.0013809920832148,0.0013809920832148,0.0013809920832148,1.0,,
+Pooled LW alpha (native),oxford_pets,bioclip2,native,0.0185366119005808,0.0185366119005808,0.0185366119005808,1.0,,
+Pooled LW alpha (native),aquamonitor,siglip2,native,0.0003285899707759,0.0003275952645778,0.0003295302646378,5.0,,
+Pooled LW alpha (native),bioscan5m,siglip2,native,0.0002373890704758,0.0002373890704758,0.0002373890704758,1.0,,
+Pooled LW alpha (native),cifar100,siglip2,native,0.0020869348021941,0.0020869348021941,0.0020869348021941,1.0,,
+Pooled LW alpha (native),df24,siglip2,native,0.0004161877886056,0.0004161877886056,0.0004161877886056,1.0,,
+Pooled LW alpha (native),fgvc_aircraft,siglip2,native,0.0299814293048705,0.0299814293048705,0.0299814293048705,1.0,,
+Pooled LW alpha (native),finbenthic2,siglip2,native,0.0019634045042781,0.0019405112276567,0.0019780559407612,5.0,,
+Pooled LW alpha (native),food101,siglip2,native,0.001149159405682,0.001149159405682,0.001149159405682,1.0,,
+Pooled LW alpha (native),oxford_pets,siglip2,native,0.0217145800845682,0.0217145800845682,0.0217145800845682,1.0,,
+Pooled LW alpha (native),aquamonitor,ijepa_h14,native,0.0004499029218975,0.0004487214156411,0.0004505452954994,5.0,,
+Pooled LW alpha (native),bioscan5m,ijepa_h14,native,0.0001340336193576,0.0001340336193576,0.0001340336193576,1.0,,
+Pooled LW alpha (native),cifar100,ijepa_h14,native,0.0009628592938961,0.0009628592938961,0.0009628592938961,1.0,,
+Pooled LW alpha (native),df24,ijepa_h14,native,0.000344412531283,0.000344412531283,0.000344412531283,1.0,,
+Pooled LW alpha (native),fgvc_aircraft,ijepa_h14,native,0.0041788287408508,0.0041788287408508,0.0041788287408508,1.0,,
+Pooled LW alpha (native),finbenthic2,ijepa_h14,native,0.0013528955701682,0.0013391798068457,0.0013707752078607,5.0,,
+Pooled LW alpha (native),food101,ijepa_h14,native,0.0009303119686871,0.0009303119686871,0.0009303119686871,1.0,,
+Pooled LW alpha (native),oxford_pets,ijepa_h14,native,0.0261432542771672,0.0261432542771672,0.0261432542771672,1.0,,
+Best grid alpha by macro val log-likelihood (native),aquamonitor,dinov3_l,native,0.01,0.01,0.01,5.0,,
+Best grid alpha by macro val log-likelihood (native),bioscan5m,dinov3_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),cifar100,dinov3_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),df24,dinov3_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),fgvc_aircraft,dinov3_l,native,0.03,0.03,0.03,1.0,,
+Best grid alpha by macro val log-likelihood (native),finbenthic2,dinov3_l,native,0.01,0.01,0.01,5.0,,
+Best grid alpha by macro val log-likelihood (native),food101,dinov3_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),oxford_pets,dinov3_l,native,0.1,0.1,0.1,1.0,,
+Best grid alpha by macro val log-likelihood (native),aquamonitor,dinov2_l,native,0.03,0.03,0.03,5.0,,
+Best grid alpha by macro val log-likelihood (native),bioscan5m,dinov2_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),cifar100,dinov2_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),df24,dinov2_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),fgvc_aircraft,dinov2_l,native,0.03,0.03,0.03,1.0,,
+Best grid alpha by macro val log-likelihood (native),finbenthic2,dinov2_l,native,0.03,0.03,0.03,5.0,,
+Best grid alpha by macro val log-likelihood (native),food101,dinov2_l,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),oxford_pets,dinov2_l,native,0.1,0.1,0.1,1.0,,
+Best grid alpha by macro val log-likelihood (native),aquamonitor,bioclip2,native,0.0003,0.0003,0.0003,5.0,,
+Best grid alpha by macro val log-likelihood (native),bioscan5m,bioclip2,native,0.0003,0.0003,0.0003,1.0,,
+Best grid alpha by macro val log-likelihood (native),cifar100,bioclip2,native,0.0001,0.0001,0.0001,1.0,,
+Best grid alpha by macro val log-likelihood (native),df24,bioclip2,native,0.0001,0.0001,0.0001,1.0,,
+Best grid alpha by macro val log-likelihood (native),fgvc_aircraft,bioclip2,native,0.001,0.001,0.001,1.0,,
+Best grid alpha by macro val log-likelihood (native),finbenthic2,bioclip2,native,0.0003,0.0003,0.0003,5.0,,
+Best grid alpha by macro val log-likelihood (native),food101,bioclip2,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),oxford_pets,bioclip2,native,0.001,0.001,0.001,1.0,,
+Best grid alpha by macro val log-likelihood (native),aquamonitor,siglip2,native,2e-05,0.0,0.0001,5.0,,
+Best grid alpha by macro val log-likelihood (native),bioscan5m,siglip2,native,0.0001,0.0001,0.0001,1.0,,
+Best grid alpha by macro val log-likelihood (native),cifar100,siglip2,native,0.0001,0.0001,0.0001,1.0,,
+Best grid alpha by macro val log-likelihood (native),df24,siglip2,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),fgvc_aircraft,siglip2,native,0.0003,0.0003,0.0003,1.0,,
+Best grid alpha by macro val log-likelihood (native),finbenthic2,siglip2,native,0.0001,0.0001,0.0001,5.0,,
+Best grid alpha by macro val log-likelihood (native),food101,siglip2,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),oxford_pets,siglip2,native,0.001,0.001,0.001,1.0,,
+Best grid alpha by macro val log-likelihood (native),aquamonitor,ijepa_h14,native,0.0001,0.0001,0.0001,5.0,,
+Best grid alpha by macro val log-likelihood (native),bioscan5m,ijepa_h14,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),cifar100,ijepa_h14,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),df24,ijepa_h14,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),fgvc_aircraft,ijepa_h14,native,0.0003,0.0003,0.0003,1.0,,
+Best grid alpha by macro val log-likelihood (native),finbenthic2,ijepa_h14,native,0.0001,0.0001,0.0001,5.0,,
+Best grid alpha by macro val log-likelihood (native),food101,ijepa_h14,native,0.0,0.0,0.0,1.0,,
+Best grid alpha by macro val log-likelihood (native),oxford_pets,ijepa_h14,native,0.001,0.001,0.001,1.0,,
+"Coupled RSCM - per-class LW, class macro, 64 PCs",aquamonitor,dinov3_l,pca64,0.0503039885785592,-0.1561040735261605,0.3465200559736647,5.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",bioscan5m,dinov3_l,pca64,0.1446498887219465,0.1446498887219465,0.1446498887219465,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",cifar100,dinov3_l,pca64,0.0893400876744637,0.0893400876744637,0.0893400876744637,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",df24,dinov3_l,pca64,0.4606348163898114,0.4606348163898114,0.4606348163898114,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",fgvc_aircraft,dinov3_l,pca64,7.16975450670113,7.16975450670113,7.16975450670113,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",finbenthic2,dinov3_l,pca64,0.3568684863710535,0.0168576188065575,0.7632292057195671,5.0,3,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",food101,dinov3_l,pca64,0.0258995020393512,0.0258995020393512,0.0258995020393512,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",oxford_pets,dinov3_l,pca64,0.391365562100484,0.391365562100484,0.391365562100484,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",aquamonitor,dinov2_l,pca64,0.2636930485183753,0.0851361614546588,0.6274510564126833,5.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",bioscan5m,dinov2_l,pca64,0.1368308111673829,0.1368308111673829,0.1368308111673829,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",cifar100,dinov2_l,pca64,0.1682151199715276,0.1682151199715276,0.1682151199715276,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",df24,dinov2_l,pca64,0.1921195841982596,0.1921195841982596,0.1921195841982596,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",fgvc_aircraft,dinov2_l,pca64,1.2338804109277026,1.2338804109277026,1.2338804109277026,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",finbenthic2,dinov2_l,pca64,0.3332603861287641,-0.0348858936205636,0.6756433281821024,5.0,3,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",food101,dinov2_l,pca64,0.0056245634288175,0.0056245634288175,0.0056245634288175,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",oxford_pets,dinov2_l,pca64,-0.7189073258297174,-0.7189073258297174,-0.7189073258297174,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, 64 PCs",aquamonitor,bioclip2,pca64,0.4868439354323979,0.225903305625508,0.7171769819739104,5.0,4,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",bioscan5m,bioclip2,pca64,0.1974576326358962,0.1974576326358962,0.1974576326358962,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",cifar100,bioclip2,pca64,0.0787280480636155,0.0787280480636155,0.0787280480636155,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",df24,bioclip2,pca64,1.003757055488514,1.003757055488514,1.003757055488514,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",fgvc_aircraft,bioclip2,pca64,3.596784298491739,3.596784298491739,3.596784298491739,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",finbenthic2,bioclip2,pca64,0.9575469436990643,0.6065502299206835,1.4038359318555411,5.0,5,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",food101,bioclip2,pca64,0.0984007828716196,0.0984007828716196,0.0984007828716196,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",oxford_pets,bioclip2,pca64,1.5491969548942102,1.5491969548942102,1.5491969548942102,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",aquamonitor,siglip2,pca64,0.4299471021098199,-0.0325946268266785,0.6626505426737033,5.0,4,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",bioscan5m,siglip2,pca64,0.2106151219814727,0.2106151219814727,0.2106151219814727,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",cifar100,siglip2,pca64,0.0621986886841072,0.0621986886841072,0.0621986886841072,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",df24,siglip2,pca64,1.8723086480657545,1.8723086480657545,1.8723086480657545,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",fgvc_aircraft,siglip2,pca64,6.089273946520613,6.089273946520613,6.089273946520613,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",finbenthic2,siglip2,pca64,0.7093223181860365,-0.3424088688571841,2.599219939528456,5.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",food101,siglip2,pca64,0.0342308473860782,0.0342308473860782,0.0342308473860782,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",oxford_pets,siglip2,pca64,2.005394570580937,2.005394570580937,2.005394570580937,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",aquamonitor,ijepa_h14,pca64,-0.9509802783124022,-1.128543317013556,-0.680023047008072,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, 64 PCs",bioscan5m,ijepa_h14,pca64,0.1901990501251757,0.1901990501251757,0.1901990501251757,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",cifar100,ijepa_h14,pca64,0.0425184709161581,0.0425184709161581,0.0425184709161581,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",df24,ijepa_h14,pca64,1.579330332127552,1.579330332127552,1.579330332127552,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",fgvc_aircraft,ijepa_h14,pca64,9.85478308621717,9.85478308621717,9.85478308621717,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",finbenthic2,ijepa_h14,pca64,0.6073587066111057,-0.0897191540577441,2.3543868100083696,5.0,0,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",food101,ijepa_h14,pca64,0.1380938905007405,0.1380938905007405,0.1380938905007405,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, 64 PCs",oxford_pets,ijepa_h14,pca64,1.3487825861449274,1.3487825861449274,1.3487825861449274,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",aquamonitor,dinov3_l,native,-86.49706138264972,-102.43240554530398,-66.72771867582989,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",bioscan5m,dinov3_l,native,-70.26042360452459,-70.26042360452459,-70.26042360452459,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",cifar100,dinov3_l,native,-137.6298313950789,-137.6298313950789,-137.6298313950789,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",df24,dinov3_l,native,80.03302321744337,80.03302321744337,80.03302321744337,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",fgvc_aircraft,dinov3_l,native,5.730538030969871,5.730538030969871,5.730538030969871,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, native",finbenthic2,dinov3_l,native,-396.59897357064295,-455.575451870684,-368.4656578444985,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",food101,dinov3_l,native,-453.7929551986976,-453.7929551986976,-453.7929551986976,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",oxford_pets,dinov3_l,native,-115.61233137247432,-115.61233137247432,-115.61233137247432,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",aquamonitor,dinov2_l,native,-63.721459045598216,-72.71274465269228,-46.41297388811168,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",bioscan5m,dinov2_l,native,-114.80913602503604,-114.80913602503604,-114.80913602503604,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",cifar100,dinov2_l,native,-95.11144495133271,-95.11144495133271,-95.11144495133271,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",df24,dinov2_l,native,-32.13791168455297,-32.13791168455297,-32.13791168455297,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",fgvc_aircraft,dinov2_l,native,-210.48926772605668,-210.48926772605668,-210.48926772605668,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",finbenthic2,dinov2_l,native,-452.00379794802177,-499.2158491586524,-397.4253463306249,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",food101,dinov2_l,native,-466.61003654167337,-466.61003654167337,-466.61003654167337,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",oxford_pets,dinov2_l,native,-196.80063855630831,-196.80063855630831,-196.80063855630831,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",aquamonitor,bioclip2,native_all,130.37918257446293,124.44921053552142,138.57173629882686,5.0,5,0
+"Coupled RSCM - per-class LW, class macro, native",bioscan5m,bioclip2,native_all,124.54961554410482,124.54961554410482,124.54961554410482,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",cifar100,bioclip2,native_all,-7.397982164663359,-7.397982164663359,-7.397982164663359,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",df24,bioclip2,native_all,324.4937533801491,324.4937533801491,324.4937533801491,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",fgvc_aircraft,bioclip2,native_all,546.2281736925355,546.2281736925355,546.2281736925355,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",finbenthic2,bioclip2,native_all,-224.9930374822687,-259.37067060605546,-187.42266546539403,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",food101,bioclip2,native_all,60.49018188619075,60.49018188619075,60.49018188619075,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",oxford_pets,bioclip2,native_all,321.288187723976,321.288187723976,321.288187723976,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",aquamonitor,siglip2,native_all,-174.15849739444965,-228.3989379208269,-122.65495099836691,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",bioscan5m,siglip2,native_all,103.64236670368756,103.64236670368756,103.64236670368756,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",cifar100,siglip2,native_all,-6.045373824778755,-6.045373824778755,-6.045373824778755,1.0,0,0
+"Coupled RSCM - per-class LW, class macro, native",df24,siglip2,native_all,844.1557646088103,844.1557646088103,844.1557646088103,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",fgvc_aircraft,siglip2,native_all,916.4087623429784,916.4087623429784,916.4087623429784,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",finbenthic2,siglip2,native_all,-773.1707650724412,-841.086007548044,-703.1211246759091,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",food101,siglip2,native_all,238.99961838712449,238.99961838712449,238.99961838712449,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",oxford_pets,siglip2,native_all,394.6368590083844,394.6368590083844,394.6368590083844,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",aquamonitor,ijepa_h14,native,-455.2075812225792,-621.5556782255434,-306.9611247759667,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",bioscan5m,ijepa_h14,native,173.64194156261593,173.64194156261593,173.64194156261593,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",cifar100,ijepa_h14,native,-205.66413184191916,-205.66413184191916,-205.66413184191916,1.0,0,1
+"Coupled RSCM - per-class LW, class macro, native",df24,ijepa_h14,native,1286.647115609784,1286.647115609784,1286.647115609784,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",fgvc_aircraft,ijepa_h14,native,1439.252061301493,1439.252061301493,1439.252061301493,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",finbenthic2,ijepa_h14,native,-565.7175983854046,-672.6731011113493,-472.03241522330217,5.0,0,5
+"Coupled RSCM - per-class LW, class macro, native",food101,ijepa_h14,native,580.2617987420746,580.2617987420746,580.2617987420746,1.0,1,0
+"Coupled RSCM - per-class LW, class macro, native",oxford_pets,ijepa_h14,native,781.6976913433831,781.6976913433831,781.6976913433831,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",aquamonitor,dinov3_l,native,185.403261899989,180.07604071825003,198.0808840063702,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",bioscan5m,dinov3_l,native,216.91947479629377,216.91947479629377,216.91947479629377,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",cifar100,dinov3_l,native,198.67535986172024,198.67535986172024,198.67535986172024,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",df24,dinov3_l,native,195.32828192283003,195.32828192283003,195.32828192283003,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",fgvc_aircraft,dinov3_l,native,325.341394857335,325.341394857335,325.341394857335,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",finbenthic2,dinov3_l,native,262.0106011645188,251.44837189014007,266.1252896487399,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",food101,dinov3_l,native,167.83051212328922,167.83051212328922,167.83051212328922,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",oxford_pets,dinov3_l,native,160.24437745327404,160.24437745327404,160.24437745327404,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",aquamonitor,dinov2_l,native,225.9524100292429,211.31569312901365,237.158909164051,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",bioscan5m,dinov2_l,native,237.396265068708,237.396265068708,237.396265068708,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",cifar100,dinov2_l,native,333.81874404821554,333.81874404821554,333.81874404821554,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",df24,dinov2_l,native,173.150198871727,173.150198871727,173.150198871727,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",fgvc_aircraft,dinov2_l,native,276.9978862113509,276.9978862113509,276.9978862113509,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",finbenthic2,dinov2_l,native,341.3257284930549,338.2132780537939,347.1523588143888,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",food101,dinov2_l,native,198.1468021961345,198.1468021961345,198.1468021961345,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",oxford_pets,dinov2_l,native,106.88018898811532,106.88018898811532,106.88018898811532,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",aquamonitor,bioclip2,native_all,143.36593393107992,130.5051334777142,149.24668955206147,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",bioscan5m,bioclip2,native_all,98.60277875600778,98.60277875600778,98.60277875600778,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",cifar100,bioclip2,native_all,95.26571207589694,95.26571207589694,95.26571207589694,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",df24,bioclip2,native_all,105.99525747933144,105.99525747933144,105.99525747933144,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",fgvc_aircraft,bioclip2,native_all,158.70086976952294,158.70086976952294,158.70086976952294,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",finbenthic2,bioclip2,native_all,249.3007408646609,238.8166485525038,259.8240485698432,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",food101,bioclip2,native_all,49.33779509421705,49.33779509421705,49.33779509421705,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",oxford_pets,bioclip2,native_all,188.3958934602734,188.3958934602734,188.3958934602734,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",aquamonitor,siglip2,native_all,182.15743732104096,170.64967146945128,188.5836306791878,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",bioscan5m,siglip2,native_all,175.13324085443446,175.13324085443446,175.13324085443446,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",cifar100,siglip2,native_all,187.2114875388412,187.2114875388412,187.2114875388412,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",df24,siglip2,native_all,219.3725354524765,219.3725354524765,219.3725354524765,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",fgvc_aircraft,siglip2,native_all,290.56325250171864,290.56325250171864,290.56325250171864,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",finbenthic2,siglip2,native_all,290.4392970955063,267.01297489508323,326.8542648078116,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",food101,siglip2,native_all,121.55469273090506,121.55469273090506,121.55469273090506,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",oxford_pets,siglip2,native_all,246.68982497147888,246.68982497147888,246.68982497147888,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",aquamonitor,ijepa_h14,native,191.5042294379168,183.87477602728643,206.5788717058464,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",bioscan5m,ijepa_h14,native,228.97719157249784,228.97719157249784,228.97719157249784,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",cifar100,ijepa_h14,native,145.54137464359758,145.54137464359758,145.54137464359758,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",df24,ijepa_h14,native,300.8226415355592,300.8226415355592,300.8226415355592,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",fgvc_aircraft,ijepa_h14,native,513.8206922323452,513.8206922323452,513.8206922323452,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",finbenthic2,ijepa_h14,native,206.9379372170105,190.0088280793329,237.59622449691395,5.0,5,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",food101,ijepa_h14,native,58.59608256449688,58.59608256449688,58.59608256449688,1.0,1,0
+"Pooling at LW shrinkage - per-class LW, class macro, native",oxford_pets,ijepa_h14,native,328.1098452946006,328.1098452946006,328.1098452946006,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",aquamonitor,dinov3_l,pca16,0.0739206384771694,0.0597650093354824,0.0799818800121448,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",bioscan5m,dinov3_l,pca16,0.0057913709647517,0.0057913709647517,0.0057913709647517,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",cifar100,dinov3_l,pca16,-3.6230321721617246e-08,-3.6230321721617246e-08,-3.6230321721617246e-08,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",df24,dinov3_l,pca16,0.0250145847988468,0.0250145847988468,0.0250145847988468,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",fgvc_aircraft,dinov3_l,pca16,-0.0002766790420479,-0.0002766790420479,-0.0002766790420479,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",finbenthic2,dinov3_l,pca16,0.0308608647984488,0.0268116126251261,0.037953921314856,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",food101,dinov3_l,pca16,2.8812644829853613e-07,2.8812644829853613e-07,2.8812644829853613e-07,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",oxford_pets,dinov3_l,pca16,0.0003126178978094,0.0003126178978094,0.0003126178978094,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",aquamonitor,dinov2_l,pca16,0.0934268539947151,0.0784464356011215,0.1109277984923833,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",bioscan5m,dinov2_l,pca16,0.0071412512743557,0.0071412512743557,0.0071412512743557,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",cifar100,dinov2_l,pca16,1.846979411105927e-06,1.846979411105927e-06,1.846979411105927e-06,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",df24,dinov2_l,pca16,0.0217341337363574,0.0217341337363574,0.0217341337363574,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",fgvc_aircraft,dinov2_l,pca16,0.00018920421613,0.00018920421613,0.00018920421613,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",finbenthic2,dinov2_l,pca16,0.0241533048065265,0.0192481478531761,0.0287971041148275,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",food101,dinov2_l,pca16,6.765281414678354e-07,6.765281414678354e-07,6.765281414678354e-07,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",oxford_pets,dinov2_l,pca16,-0.0001705918771957,-0.0001705918771957,-0.0001705918771957,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",aquamonitor,bioclip2,pca16,0.0493869092766339,0.0420223437434547,0.0617609422635166,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",bioscan5m,bioclip2,pca16,0.0077431510685121,0.0077431510685121,0.0077431510685121,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",cifar100,bioclip2,pca16,-9.684267123852232e-07,-9.684267123852232e-07,-9.684267123852232e-07,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",df24,bioclip2,pca16,-0.001743019312155,-0.001743019312155,-0.001743019312155,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",fgvc_aircraft,bioclip2,pca16,9.462051080433626e-05,9.462051080433626e-05,9.462051080433626e-05,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",finbenthic2,bioclip2,pca16,0.0010513486879837,-0.0069212336661171,0.0084861522422692,5.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",food101,bioclip2,pca16,4.0893084579436454e-07,4.0893084579436454e-07,4.0893084579436454e-07,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",oxford_pets,bioclip2,pca16,7.968540388435995e-05,7.968540388435995e-05,7.968540388435995e-05,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",aquamonitor,siglip2,pca16,0.0406636340507184,0.037665931213706,0.0461500500137187,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",bioscan5m,siglip2,pca16,0.0121968445703571,0.0121968445703571,0.0121968445703571,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",cifar100,siglip2,pca16,9.915558622494713e-07,9.915558622494713e-07,9.915558622494713e-07,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",df24,siglip2,pca16,0.0077513430953262,0.0077513430953262,0.0077513430953262,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",fgvc_aircraft,siglip2,pca16,-0.0004068791046789,-0.0004068791046789,-0.0004068791046789,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",finbenthic2,siglip2,pca16,0.0233317268624777,0.0088838364923582,0.0330772528994903,5.0,4,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",food101,siglip2,pca16,9.687557419910584e-07,9.687557419910584e-07,9.687557419910584e-07,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",oxford_pets,siglip2,pca16,-0.0005750527314547,-0.0005750527314547,-0.0005750527314547,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",aquamonitor,ijepa_h14,pca16,0.0707500148050588,0.0486359891490443,0.0825770671211074,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",bioscan5m,ijepa_h14,pca16,0.016823074483194,0.016823074483194,0.016823074483194,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",cifar100,ijepa_h14,pca16,1.1470617207482897e-06,1.1470617207482897e-06,1.1470617207482897e-06,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",df24,ijepa_h14,pca16,0.0350463594107889,0.0350463594107889,0.0350463594107889,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",fgvc_aircraft,ijepa_h14,pca16,5.506350476483535e-05,5.506350476483535e-05,5.506350476483535e-05,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",finbenthic2,ijepa_h14,pca16,0.0014624305718882,-0.0090321310670204,0.0078353271391789,5.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",food101,ijepa_h14,pca16,1.321936217919327e-07,1.321936217919327e-07,1.321936217919327e-07,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 16 PCs",oxford_pets,ijepa_h14,pca16,-0.0008353082944402,-0.0008353082944402,-0.0008353082944402,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",aquamonitor,dinov3_l,pca64,0.1933558487073572,0.1641785058692439,0.2171764508697417,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",bioscan5m,dinov3_l,pca64,0.0446309034040114,0.0446309034040114,0.0446309034040114,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",cifar100,dinov3_l,pca64,-1.4954598293174897e-07,-1.4954598293174897e-07,-1.4954598293174897e-07,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",df24,dinov3_l,pca64,0.0930479724663711,0.0930479724663711,0.0930479724663711,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",fgvc_aircraft,dinov3_l,pca64,-4.8945578727172657e-05,-4.8945578727172657e-05,-4.8945578727172657e-05,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",finbenthic2,dinov3_l,pca64,0.06272511029626,0.0399087187138027,0.0954446189166902,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",food101,dinov3_l,pca64,-1.6385048149543412e-06,-1.6385048149543412e-06,-1.6385048149543412e-06,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",oxford_pets,dinov3_l,pca64,-0.0008936517147625,-0.0008936517147625,-0.0008936517147625,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",aquamonitor,dinov2_l,pca64,0.3394945510667467,0.2837826966841976,0.4013967087487903,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",bioscan5m,dinov2_l,pca64,0.0464985556368926,0.0464985556368926,0.0464985556368926,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",cifar100,dinov2_l,pca64,-4.800456022338365e-06,-4.800456022338365e-06,-4.800456022338365e-06,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",df24,dinov2_l,pca64,0.1065136952609421,0.1065136952609421,0.1065136952609421,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",fgvc_aircraft,dinov2_l,pca64,0.0012574107724255,0.0012574107724255,0.0012574107724255,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",finbenthic2,dinov2_l,pca64,0.0524222008014701,0.0371570916554652,0.0752038811613513,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",food101,dinov2_l,pca64,-9.999771474273457e-07,-9.999771474273457e-07,-9.999771474273457e-07,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",oxford_pets,dinov2_l,pca64,-0.0024004920114241,-0.0024004920114241,-0.0024004920114241,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",aquamonitor,bioclip2,pca64,0.1645534336285052,0.1058616474586409,0.1924377777444962,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",bioscan5m,bioclip2,pca64,0.0648337231032603,0.0648337231032603,0.0648337231032603,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",cifar100,bioclip2,pca64,1.1551120189544843e-07,1.1551120189544843e-07,1.1551120189544843e-07,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",df24,bioclip2,pca64,0.0016500981150189,0.0016500981150189,0.0016500981150189,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",fgvc_aircraft,bioclip2,pca64,0.0003520310464342,0.0003520310464342,0.0003520310464342,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",finbenthic2,bioclip2,pca64,-0.0186966903622822,-0.0272669239744401,-0.0134735154099435,5.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",food101,bioclip2,pca64,1.2939611330615833e-06,1.2939611330615833e-06,1.2939611330615833e-06,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",oxford_pets,bioclip2,pca64,-0.001018511639852,-0.001018511639852,-0.001018511639852,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",aquamonitor,siglip2,pca64,0.1491036991600526,0.0958346248689059,0.1879262163511978,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",bioscan5m,siglip2,pca64,0.0598943219572644,0.0598943219572644,0.0598943219572644,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",cifar100,siglip2,pca64,1.0637437217747622e-05,1.0637437217747622e-05,1.0637437217747622e-05,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",df24,siglip2,pca64,0.0648754098137238,0.0648754098137238,0.0648754098137238,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",fgvc_aircraft,siglip2,pca64,-0.0003353801442231,-0.0003353801442231,-0.0003353801442231,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",finbenthic2,siglip2,pca64,0.0666166922799063,0.043328323982646,0.0843940719527853,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",food101,siglip2,pca64,2.511049719626453e-06,2.511049719626453e-06,2.511049719626453e-06,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",oxford_pets,siglip2,pca64,-0.0032604289034249,-0.0032604289034249,-0.0032604289034249,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",aquamonitor,ijepa_h14,pca64,0.1787598937348793,0.1345259962214411,0.2342919483311323,5.0,5,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",bioscan5m,ijepa_h14,pca64,0.1005732130219941,0.1005732130219941,0.1005732130219941,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",cifar100,ijepa_h14,pca64,-2.2377143163039955e-06,-2.2377143163039955e-06,-2.2377143163039955e-06,1.0,0,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",df24,ijepa_h14,pca64,0.1292754589835323,0.1292754589835323,0.1292754589835323,1.0,1,0
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",fgvc_aircraft,ijepa_h14,pca64,-0.0013391804239419,-0.0013391804239419,-0.0013391804239419,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",finbenthic2,ijepa_h14,pca64,-0.0291046035894814,-0.040789492211581,-0.012584444056025,5.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",food101,ijepa_h14,pca64,-5.30627511249865e-06,-5.30627511249865e-06,-5.30627511249865e-06,1.0,0,1
+"Balanced - specimen-weighted pooling, class macro, 64 PCs",oxford_pets,ijepa_h14,pca64,-0.0020845012325867,-0.0020845012325867,-0.0020845012325867,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",aquamonitor,dinov3_l,pca64,0.251645183410954,-0.0223883765155638,0.5495696706233164,5.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",bioscan5m,dinov3_l,pca64,0.5973244644161632,0.5973244644161632,0.5973244644161632,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",cifar100,dinov3_l,pca64,0.2435746876700693,0.2435746876700693,0.2435746876700693,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",df24,dinov3_l,pca64,0.0795201363541456,0.0795201363541456,0.0795201363541456,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",fgvc_aircraft,dinov3_l,pca64,4.839224409588903,4.839224409588903,4.839224409588903,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",finbenthic2,dinov3_l,pca64,0.6443387594531556,0.3372987524385334,0.9594935890034312,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",food101,dinov3_l,pca64,0.1275675813302858,0.1275675813302858,0.1275675813302858,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",oxford_pets,dinov3_l,pca64,-0.6769239852365878,-0.6769239852365878,-0.6769239852365878,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",aquamonitor,dinov2_l,pca64,0.4193016171262989,0.1437584324293534,0.732854323042035,5.0,3,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",bioscan5m,dinov2_l,pca64,0.3629506954083538,0.3629506954083538,0.3629506954083538,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",cifar100,dinov2_l,pca64,0.4308904709913708,0.4308904709913708,0.4308904709913708,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",df24,dinov2_l,pca64,-0.4794975387088895,-0.4794975387088895,-0.4794975387088895,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",fgvc_aircraft,dinov2_l,pca64,-0.7888553650203797,-0.7888553650203797,-0.7888553650203797,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",finbenthic2,dinov2_l,pca64,0.5376720406421864,0.2266158929821677,0.7785254643599733,5.0,4,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",food101,dinov2_l,pca64,0.1507661475788763,0.1507661475788763,0.1507661475788763,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",oxford_pets,dinov2_l,pca64,-1.367893713915537,-1.367893713915537,-1.367893713915537,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",aquamonitor,bioclip2,pca64,1.2016213484422695,0.7742470093683901,1.5926057673499308,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",bioscan5m,bioclip2,pca64,0.2818924504455906,0.2818924504455906,0.2818924504455906,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",cifar100,bioclip2,pca64,0.2482520810305127,0.2482520810305127,0.2482520810305127,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",df24,bioclip2,pca64,-0.082114729850324,-0.082114729850324,-0.082114729850324,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",fgvc_aircraft,bioclip2,pca64,1.6055373310395409,1.6055373310395409,1.6055373310395409,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",finbenthic2,bioclip2,pca64,1.9873011303270127,1.24052568448039,2.5572563070836742,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",food101,bioclip2,pca64,0.1453282118448144,0.1453282118448144,0.1453282118448144,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",oxford_pets,bioclip2,pca64,1.347132328984569,1.347132328984569,1.347132328984569,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",aquamonitor,siglip2,pca64,0.3996328456496846,0.0770792269529265,0.5612819104961423,5.0,3,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",bioscan5m,siglip2,pca64,-0.004928870065785,-0.004928870065785,-0.004928870065785,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",cifar100,siglip2,pca64,0.0208333035510707,0.0208333035510707,0.0208333035510707,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",df24,siglip2,pca64,0.2415756679128936,0.2415756679128936,0.2415756679128936,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",fgvc_aircraft,siglip2,pca64,2.1166096645104537,2.1166096645104537,2.1166096645104537,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",finbenthic2,siglip2,pca64,1.5756421575976058,0.6148521468070622,3.671775931840363,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",food101,siglip2,pca64,-0.1668392329049426,-0.1668392329049426,-0.1668392329049426,1.0,0,1
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",oxford_pets,siglip2,pca64,0.0375853101859102,0.0375853101859102,0.0375853101859102,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",aquamonitor,ijepa_h14,pca64,-0.8369269157995436,-0.9335328833521526,-0.6335942157036237,5.0,0,2
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",bioscan5m,ijepa_h14,pca64,0.0998402667318076,0.0998402667318076,0.0998402667318076,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",cifar100,ijepa_h14,pca64,-0.057117189078718,-0.057117189078718,-0.057117189078718,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",df24,ijepa_h14,pca64,0.9141046213034612,0.9141046213034612,0.9141046213034612,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",fgvc_aircraft,ijepa_h14,pca64,6.795226737472823,6.795226737472823,6.795226737472823,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",finbenthic2,ijepa_h14,pca64,0.5566738889123128,-0.1696087651537371,2.2021822911671896,5.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",food101,ijepa_h14,pca64,-0.0214951380426825,-0.0214951380426825,-0.0214951380426825,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, 64 PCs",oxford_pets,ijepa_h14,pca64,0.3174828590460247,0.3174828590460247,0.3174828590460247,1.0,0,0
+"Balanced pooled covariance - per-class LW, class macro, native",aquamonitor,dinov3_l,native,191.30913745939372,186.29462193456345,203.62124483524607,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",bioscan5m,dinov3_l,native,220.41250141196736,220.41250141196736,220.41250141196736,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",cifar100,dinov3_l,native,199.819418600276,199.819418600276,199.819418600276,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",df24,dinov3_l,native,198.926263649488,198.926263649488,198.926263649488,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",fgvc_aircraft,dinov3_l,native,337.5904324289963,337.5904324289963,337.5904324289963,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",finbenthic2,dinov3_l,native,265.51610741627536,254.50254260816823,269.818423628746,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",food101,dinov3_l,native,168.52470694714174,168.52470694714174,168.52470694714174,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",oxford_pets,dinov3_l,native,162.96810630319638,162.96810630319638,162.96810630319638,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",aquamonitor,dinov2_l,native,231.9038485539185,217.82149407024468,244.5167559443196,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",bioscan5m,dinov2_l,native,240.4887164583137,240.4887164583137,240.4887164583137,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",cifar100,dinov2_l,native,335.9314044266471,335.9314044266471,335.9314044266471,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",df24,dinov2_l,native,177.8214979597419,177.8214979597419,177.8214979597419,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",fgvc_aircraft,dinov2_l,native,288.65742693021224,288.65742693021224,288.65742693021224,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",finbenthic2,dinov2_l,native,344.8947700064,341.4630990455348,351.2413335440822,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",food101,dinov2_l,native,199.05731239435127,199.05731239435127,199.05731239435127,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",oxford_pets,dinov2_l,native,110.22228916914186,110.22228916914186,110.22228916914186,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",aquamonitor,bioclip2,native_all,146.4718356244,133.81392233118777,152.61130692387593,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",bioscan5m,bioclip2,native_all,100.56013585039108,100.56013585039108,100.56013585039108,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",cifar100,bioclip2,native_all,95.52515562464656,95.52515562464656,95.52515562464656,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",df24,bioclip2,native_all,106.38773483181804,106.38773483181804,106.38773483181804,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",fgvc_aircraft,bioclip2,native_all,160.68884910145243,160.68884910145243,160.68884910145243,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",finbenthic2,bioclip2,native_all,254.9379116918326,244.19466118551216,265.2015552280185,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",food101,bioclip2,native_all,49.35895403109382,49.35895403109382,49.35895403109382,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",oxford_pets,bioclip2,native_all,190.0653806090054,190.0653806090054,190.0653806090054,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",aquamonitor,siglip2,native_all,187.44723339029787,176.54297206244854,193.98258517213836,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",bioscan5m,siglip2,native_all,177.12414053073263,177.12414053073263,177.12414053073263,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",cifar100,siglip2,native_all,187.61789628489169,187.61789628489169,187.61789628489169,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",df24,siglip2,native_all,220.95627652888035,220.95627652888035,220.95627652888035,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",fgvc_aircraft,siglip2,native_all,294.5858005519912,294.5858005519912,294.5858005519912,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",finbenthic2,siglip2,native_all,293.9530586070836,269.2300630239209,333.39931659132714,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",food101,siglip2,native_all,121.6690992553558,121.6690992553558,121.6690992553558,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",oxford_pets,siglip2,native_all,247.89244816479885,247.89244816479885,247.89244816479885,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",aquamonitor,ijepa_h14,native,194.6432960297912,184.77251298565795,211.43513462519692,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",bioscan5m,ijepa_h14,native,231.34853382038503,231.34853382038503,231.34853382038503,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",cifar100,ijepa_h14,native,145.42042730356195,145.42042730356195,145.42042730356195,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",df24,ijepa_h14,native,304.7759363185231,304.7759363185231,304.7759363185231,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",fgvc_aircraft,ijepa_h14,native,520.1999963517668,520.1999963517668,520.1999963517668,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",finbenthic2,ijepa_h14,native,211.76289563131704,194.2835857594761,245.2472846261564,5.0,5,0
+"Balanced pooled covariance - per-class LW, class macro, native",food101,ijepa_h14,native,58.22515998316049,58.22515998316049,58.22515998316049,1.0,1,0
+"Balanced pooled covariance - per-class LW, class macro, native",oxford_pets,ijepa_h14,native,329.0948873714435,329.0948873714435,329.0948873714435,1.0,1,0
+"Median d' (val units, train centroid direction), all eligible pairs",finbenthic2,dinov3_l,native,5.408630386159158,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",finbenthic2,dinov2_l,native,4.008071905142058,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",finbenthic2,bioclip2,native,3.1205945484474125,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",finbenthic2,siglip2,native,3.4684968261616667,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",finbenthic2,ijepa_h14,native,2.225704799017734,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",aquamonitor,dinov3_l,native,5.587753318505639,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",aquamonitor,dinov2_l,native,5.478894520835543,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",aquamonitor,bioclip2,native,4.997200678118093,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",aquamonitor,siglip2,native,4.062550891713751,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",aquamonitor,ijepa_h14,native,2.7799177482157584,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",bioscan5m,dinov3_l,native,8.190440281376034,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",bioscan5m,dinov2_l,native,7.407809461585627,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",bioscan5m,bioclip2,native,14.059517560694973,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",bioscan5m,siglip2,native,6.841279479106195,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",bioscan5m,ijepa_h14,native,4.226699818358616,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",df24,dinov3_l,native,8.463860950487037,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",df24,dinov2_l,native,8.18527846008111,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",df24,bioclip2,native,11.15656988945073,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",df24,siglip2,native,8.158977673096214,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",df24,ijepa_h14,native,4.0011160901176925,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",food101,dinov3_l,native,8.36453182657004,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",food101,dinov2_l,native,7.59347987722204,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",food101,bioclip2,native,6.335785012508643,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",food101,siglip2,native,9.666237687953046,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",food101,ijepa_h14,native,3.381650556076294,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",oxford_pets,dinov3_l,native,10.111825109995724,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",oxford_pets,dinov2_l,native,12.667453603277991,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",oxford_pets,bioclip2,native,8.152032493922444,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",oxford_pets,siglip2,native,9.655666680121096,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",oxford_pets,ijepa_h14,native,6.233526372616389,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",cifar100,dinov3_l,native,6.506769754361189,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",cifar100,dinov2_l,native,6.265380136986517,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",cifar100,bioclip2,native,6.394537482156423,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",cifar100,siglip2,native,6.648434115326284,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",cifar100,ijepa_h14,native,3.9855527561614346,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",fgvc_aircraft,dinov3_l,native,11.505520261848396,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",fgvc_aircraft,dinov2_l,native,10.243044128767275,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",fgvc_aircraft,bioclip2,native,5.003367053706107,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",fgvc_aircraft,siglip2,native,12.72182432821057,,,,,
+"Median d' (val units, train centroid direction), all eligible pairs",fgvc_aircraft,ijepa_h14,native,1.1708814749370882,,,,,
+Share of pairs with d' < 1,finbenthic2,dinov3_l,native,0.0020185043714455,,,,,
+Share of pairs with d' < 1,finbenthic2,dinov2_l,native,0.0039962651727357,,,,,
+Share of pairs with d' < 1,finbenthic2,bioclip2,native,0.0171988795518207,,,,,
+Share of pairs with d' < 1,finbenthic2,siglip2,native,0.010409982174688,,,,,
+Share of pairs with d' < 1,finbenthic2,ijepa_h14,native,0.0826041931924284,,,,,
+Share of pairs with d' < 1,aquamonitor,dinov3_l,native,0.0019637273295809,,,,,
+Share of pairs with d' < 1,aquamonitor,dinov2_l,native,0.0022201375859912,,,,,
+Share of pairs with d' < 1,aquamonitor,bioclip2,native,0.0029393370856785,,,,,
+Share of pairs with d' < 1,aquamonitor,siglip2,native,0.0083802376485303,,,,,
+Share of pairs with d' < 1,aquamonitor,ijepa_h14,native,0.0229330831769856,,,,,
+Share of pairs with d' < 1,bioscan5m,dinov3_l,native,0.0009593859929645,,,,,
+Share of pairs with d' < 1,bioscan5m,dinov2_l,native,0.0022741001314714,,,,,
+Share of pairs with d' < 1,bioscan5m,bioclip2,native,0.0001065984436627,,,,,
+Share of pairs with d' < 1,bioscan5m,siglip2,native,0.0022669935685605,,,,,
+Share of pairs with d' < 1,bioscan5m,ijepa_h14,native,0.0086273673737696,,,,,
+Share of pairs with d' < 1,df24,dinov3_l,native,0.0001672088286261,,,,,
+Share of pairs with d' < 1,df24,dinov2_l,native,0.0003420180585534,,,,,
+Share of pairs with d' < 1,df24,bioclip2,native,2.5334671003962343e-05,,,,,
+Share of pairs with d' < 1,df24,siglip2,native,0.0003597523282562,,,,,
+Share of pairs with d' < 1,df24,ijepa_h14,native,0.0131993635930643,,,,,
+Share of pairs with d' < 1,food101,dinov3_l,native,0.0,,,,,
+Share of pairs with d' < 1,food101,dinov2_l,native,0.0,,,,,
+Share of pairs with d' < 1,food101,bioclip2,native,0.0,,,,,
+Share of pairs with d' < 1,food101,siglip2,native,0.0,,,,,
+Share of pairs with d' < 1,food101,ijepa_h14,native,0.0009900990099009,,,,,
+Share of pairs with d' < 1,oxford_pets,dinov3_l,native,0.0,,,,,
+Share of pairs with d' < 1,oxford_pets,dinov2_l,native,0.0,,,,,
+Share of pairs with d' < 1,oxford_pets,bioclip2,native,0.0,,,,,
+Share of pairs with d' < 1,oxford_pets,siglip2,native,0.0,,,,,
+Share of pairs with d' < 1,oxford_pets,ijepa_h14,native,0.003003003003003,,,,,
+Share of pairs with d' < 1,cifar100,dinov3_l,native,0.0,,,,,
+Share of pairs with d' < 1,cifar100,dinov2_l,native,0.0,,,,,
+Share of pairs with d' < 1,cifar100,bioclip2,native,0.0,,,,,
+Share of pairs with d' < 1,cifar100,siglip2,native,0.0,,,,,
+Share of pairs with d' < 1,cifar100,ijepa_h14,native,0.0006060606060606,,,,,
+Share of pairs with d' < 1,fgvc_aircraft,dinov3_l,native,0.0163636363636363,,,,,
+Share of pairs with d' < 1,fgvc_aircraft,dinov2_l,native,0.1422222222222222,,,,,
+Share of pairs with d' < 1,fgvc_aircraft,bioclip2,native,0.0109090909090909,,,,,
+Share of pairs with d' < 1,fgvc_aircraft,siglip2,native,0.0016161616161616,,,,,
+Share of pairs with d' < 1,fgvc_aircraft,ijepa_h14,native,0.4313131313131313,,,,,
+Median nearest-class d',finbenthic2,dinov3_l,native,2.280984285344528,,,,,
+Median nearest-class d',finbenthic2,dinov2_l,native,1.665924870864752,,,,,
+Median nearest-class d',finbenthic2,bioclip2,native,1.1992959219000563,,,,,
+Median nearest-class d',finbenthic2,siglip2,native,1.3162072115820105,,,,,
+Median nearest-class d',finbenthic2,ijepa_h14,native,0.8142002063129199,,,,,
+Median nearest-class d',aquamonitor,dinov3_l,native,2.320475221765223,,,,,
+Median nearest-class d',aquamonitor,dinov2_l,native,2.010693766819585,,,,,
+Median nearest-class d',aquamonitor,bioclip2,native,1.78073837360697,,,,,
+Median nearest-class d',aquamonitor,siglip2,native,1.3694700835119735,,,,,
+Median nearest-class d',aquamonitor,ijepa_h14,native,1.0507328466408208,,,,,
+Median nearest-class d',bioscan5m,dinov3_l,native,1.613165081827144,,,,,
+Median nearest-class d',bioscan5m,dinov2_l,native,1.22772115270331,,,,,
+Median nearest-class d',bioscan5m,bioclip2,native,2.8651411986510102,,,,,
+Median nearest-class d',bioscan5m,siglip2,native,1.1145307289028088,,,,,
+Median nearest-class d',bioscan5m,ijepa_h14,native,0.6910730739082321,,,,,
+Median nearest-class d',df24,dinov3_l,native,1.9172319563037592,,,,,
+Median nearest-class d',df24,dinov2_l,native,1.5871147284041836,,,,,
+Median nearest-class d',df24,bioclip2,native,2.999142200604767,,,,,
+Median nearest-class d',df24,siglip2,native,1.59880809163984,,,,,
+Median nearest-class d',df24,ijepa_h14,native,0.5646735324963706,,,,,
+Median nearest-class d',food101,dinov3_l,native,4.301252997401543,,,,,
+Median nearest-class d',food101,dinov2_l,native,3.429835191392147,,,,,
+Median nearest-class d',food101,bioclip2,native,3.1894494907881,,,,,
+Median nearest-class d',food101,siglip2,native,5.110010672442086,,,,,
+Median nearest-class d',food101,ijepa_h14,native,1.683723622591822,,,,,
+Median nearest-class d',oxford_pets,dinov3_l,native,5.582200569363269,,,,,
+Median nearest-class d',oxford_pets,dinov2_l,native,4.999106808571135,,,,,
+Median nearest-class d',oxford_pets,bioclip2,native,3.340406737791322,,,,,
+Median nearest-class d',oxford_pets,siglip2,native,4.38426970558084,,,,,
+Median nearest-class d',oxford_pets,ijepa_h14,native,3.1270708966310874,,,,,
+Median nearest-class d',cifar100,dinov3_l,native,3.774703387264487,,,,,
+Median nearest-class d',cifar100,dinov2_l,native,3.79816612061531,,,,,
+Median nearest-class d',cifar100,bioclip2,native,2.993321644198065,,,,,
+Median nearest-class d',cifar100,siglip2,native,3.220496984276247,,,,,
+Median nearest-class d',cifar100,ijepa_h14,native,1.7318608936241708,,,,,
+Median nearest-class d',fgvc_aircraft,dinov3_l,native,0.6427352040274447,,,,,
+Median nearest-class d',fgvc_aircraft,dinov2_l,native,0.2392389191697121,,,,,
+Median nearest-class d',fgvc_aircraft,bioclip2,native,0.9758881660579036,,,,,
+Median nearest-class d',fgvc_aircraft,siglip2,native,2.3378926597816543,,,,,
+Median nearest-class d',fgvc_aircraft,ijepa_h14,native,0.0463632035598942,,,,,

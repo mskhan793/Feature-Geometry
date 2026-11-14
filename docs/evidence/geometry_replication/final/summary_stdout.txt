@@ -1,0 +1,43 @@
+{'done': 480}
+analysis                coupled   fda geometry    lw overlap pooling
+encoder   dataset                                                   
+bioclip2  aquamonitor      done  done     done  done    done    done
+          bioscan5m        done  done     done  done    done    done
+          cifar100         done  done     done  done    done    done
+          df24             done  done     done  done    done    done
+          fgvc_aircraft    done  done     done  done    done    done
+          finbenthic2      done  done     done  done    done    done
+          food101          done  done     done  done    done    done
+          oxford_pets      done  done     done  done    done    done
+dinov2_l  aquamonitor      done  done     done  done    done    done
+          bioscan5m        done  done     done  done    done    done
+          cifar100         done  done     done  done    done    done
+          df24             done  done     done  done    done    done
+          fgvc_aircraft    done  done     done  done    done    done
+          finbenthic2      done  done     done  done    done    done
+          food101          done  done     done  done    done    done
+          oxford_pets      done  done     done  done    done    done
+dinov3_l  aquamonitor      done  done     done  done    done    done
+          bioscan5m        done  done     done  done    done    done
+          cifar100         done  done     done  done    done    done
+          df24             done  done     done  done    done    done
+          fgvc_aircraft    done  done     done  done    done    done
+          finbenthic2      done  done     done  done    done    done
+          food101          done  done     done  done    done    done
+          oxford_pets      done  done     done  done    done    done
+ijepa_h14 aquamonitor      done  done     done  done    done    done
+          bioscan5m        done  done     done  done    done    done
+          cifar100         done  done     done  done    done    done
+          df24             done  done     done  done    done    done
+          fgvc_aircraft    done  done     done  done    done    done
+          finbenthic2      done  done     done  done    done    done
+          food101          done  done     done  done    done    done
+          oxford_pets      done  done     done  done    done    done
+siglip2   aquamonitor      done  done     done  done    done    done
+          bioscan5m        done  done     done  done    done    done
+          cifar100         done  done     done  done    done    done
+          df24             done  done     done  done    done    done
+          fgvc_aircraft    done  done     done  done    done    done
+          finbenthic2      done  done     done  done    done    done
+          food101          done  done     done  done    done    done
+          oxford_pets      done  done     done  done    done    done

@@ -1,0 +1,3 @@
+encoder	dataset	partition	analysis	cohort	caches	extra	meta
+bioclip2	bioscan5m	official	lw	/flash/project_462001534/feature_geometry/replication/cohorts/bioscan5m.parquet	/scratch/project_462001534/aqua_v1/bioscan/bioscan_index.parquet=/scratch/project_462001534/aqua_v1/bioscan/cache_bioclip2	--pcs 64 16	--fields
+dinov2_l	df24	official	lw	/flash/project_462001534/feature_geometry/replication/cohorts/df24.parquet	/flash/project_462001534/feature_geometry/benchmark/extract/df24_trainval.parquet=/scratch/project_462001534/feature_geometry/benchmark_c2/df24/dinov2_l/features_gpu/dinov2_l	--pcs 64 16	--fields

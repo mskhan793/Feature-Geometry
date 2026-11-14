@@ -1,0 +1,70 @@
+{
+ "per_group": {
+  "C2 CPU checks": {
+   "hours": 0.64,
+   "gpu_h": 0.0,
+   "core_h": 20.47,
+   "billed_cpu_core_h": 20.47,
+   "energy_kwh": 0.0,
+   "jobs": 7,
+   "states": {
+    "COMPLETED": "7"
+   }
+  },
+  "C2 GPU extraction": {
+   "hours": 1.16,
+   "gpu_h": 4.64,
+   "core_h": 0.0,
+   "billed_cpu_core_h": 0.0,
+   "energy_kwh": 0.17,
+   "jobs": 7,
+   "states": {
+    "COMPLETED": "7"
+   }
+  },
+  "I-JEPA gates": {
+   "hours": 0.33,
+   "gpu_h": 0.37,
+   "core_h": 4.98,
+   "billed_cpu_core_h": 4.98,
+   "energy_kwh": 0.05,
+   "jobs": 14,
+   "states": {
+    "COMPLETED": "14"
+   }
+  },
+  "geometry replication": {
+   "hours": 92.87,
+   "gpu_h": 0.0,
+   "core_h": 5374.92,
+   "billed_cpu_core_h": 5374.92,
+   "energy_kwh": 0.0,
+   "jobs": 483,
+   "states": {
+    "COMPLETED": "480",
+    "CANCELLED by 10023001": "2",
+    "FAILED": "1"
+   }
+  }
+ },
+ "total": {
+  "gpu_h": 5.01,
+  "core_h": 5400.37,
+  "billed_cpu_core_h": 5400.37,
+  "energy_kwh": 0.22
+ },
+ "per_account": {
+  "project_462001534": {
+   "gpu_h": 5.0,
+   "core_h": 1662.83,
+   "billed_cpu_core_h": 1662.83,
+   "energy_kwh": 0.21
+  },
+  "project_462001824": {
+   "gpu_h": 0.0,
+   "core_h": 3737.55,
+   "billed_cpu_core_h": 3737.55,
+   "energy_kwh": 0.0
+  }
+ }
+}

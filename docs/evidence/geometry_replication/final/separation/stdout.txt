@@ -1,0 +1,33 @@
+dprime_median
+encoder        bioclip2  dinov2_l  dinov3_l  ijepa_h14  siglip2
+dataset                                                        
+aquamonitor       4.997     5.479     5.588      2.780    4.063
+bioscan5m        14.060     7.408     8.190      4.227    6.841
+cifar100          6.395     6.265     6.507      3.986    6.648
+df24             11.157     8.185     8.464      4.001    8.159
+fgvc_aircraft     5.003    10.243    11.506      1.171   12.722
+finbenthic2       3.121     4.008     5.409      2.226    3.468
+food101           6.336     7.593     8.365      3.382    9.666
+oxford_pets       8.152    12.667    10.112      6.234    9.656
+share_dprime_below_1
+encoder        bioclip2  dinov2_l  dinov3_l  ijepa_h14  siglip2
+dataset                                                        
+aquamonitor       0.003     0.002     0.002      0.023    0.008
+bioscan5m         0.000     0.002     0.001      0.009    0.002
+cifar100          0.000     0.000     0.000      0.001    0.000
+df24              0.000     0.000     0.000      0.013    0.000
+fgvc_aircraft     0.011     0.142     0.016      0.431    0.002
+finbenthic2       0.017     0.004     0.002      0.083    0.010
+food101           0.000     0.000     0.000      0.001    0.000
+oxford_pets       0.000     0.000     0.000      0.003    0.000
+nearest_class_dprime_median
+encoder        bioclip2  dinov2_l  dinov3_l  ijepa_h14  siglip2
+dataset                                                        
+aquamonitor       1.781     2.011     2.320      1.051    1.369
+bioscan5m         2.865     1.228     1.613      0.691    1.115
+cifar100          2.993     3.798     3.775      1.732    3.220
+df24              2.999     1.587     1.917      0.565    1.599
+fgvc_aircraft     0.976     0.239     0.643      0.046    2.338
+finbenthic2       1.199     1.666     2.281      0.814    1.316
+food101           3.189     3.430     4.301      1.684    5.110
+oxford_pets       3.340     4.999     5.582      3.127    4.384
